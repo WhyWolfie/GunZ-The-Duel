@@ -1,6 +1,6 @@
 # GunZ-The-Duel
 GunZ The Duel Releases | by Wolfie<br>
-Added [1] Maps<br>
+Added [32] Maps<br>
 Arena.rar	<br>
 BasketBall.rar	<br>
 CFHamMo.rar	<br>
