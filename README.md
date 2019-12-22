@@ -1,5 +1,6 @@
 # GunZ-The-Duel
 GunZ The Duel Releases | by Wolfie<br>
+Discord: "🐾🐺𝓦𝓸𝓵𝓯𝓲𝓮🐺🐾#5821"<br>
 Added [32] Maps<br>
 Arena.rar	<br>
 BasketBall.rar	<br>
