@@ -8,3 +8,6 @@ GunZ The Duel Releases <br>
 - [tools/mrs]<br>
 - [source/multi-language]<br>
 - [website/emisand_gunz_admin_panel_v3]<br>
+
+
+Archive: https://t.me/gunztheduel
