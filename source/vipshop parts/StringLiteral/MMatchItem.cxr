@@ -1,0 +1,284 @@
+// type
+#define MICTOK_TYPE_MELEE		_CXR("melee")
+#define MICTOK_TYPE_RANGE		_CXR("range")
+#define MICTOK_TYPE_EQUIP		_CXR("equip")
+#define MICTOK_TYPE_CUSTOM		_CXR("custom")
+#define MICTOK_TYPE_TICKET		_CXR("ticket")
+#define MICTOK_TYPE_AVATAR		_CXR("avatar")
+#define MICTOK_TYPE_COMMUNITY	_CXR("community")
+#define MICTOK_TYPE_LONGBUFF	_CXR("longbuff")
+
+
+// restrict sex
+#define MICTOK_RES_SEX_M	_CXR("m")
+#define MICTOK_RES_SEX_F	_CXR("f")
+#define MICTOK_RES_SEX_A	_CXR("a")
+
+// slot type
+#define MICTOK_SLOT_NONE		_CXR("none")
+#define MICTOK_SLOT_MELEE		_CXR("melee")
+#define MICTOK_SLOT_RANGE		_CXR("range")
+#define MICTOK_SLOT_CUSTOM		_CXR("custom")
+#define MICTOK_SLOT_HEAD		_CXR("head")
+#define MICTOK_SLOT_CHEST		_CXR("chest")
+#define MICTOK_SLOT_HANDS		_CXR("hands")
+#define MICTOK_SLOT_LEGS		_CXR("legs")
+#define MICTOK_SLOT_FEET		_CXR("feet")
+#define MICTOK_SLOT_FINGER		_CXR("finger")
+#define MICTOK_SLOT_EXTRA		_CXR("extra")
+#define MICTOK_SLOT_AVATAR		_CXR("avatar")
+#define MICTOK_SLOT_COMMUNITY	_CXR("community")
+#define MICTOK_SLOT_LONGBUFF	_CXR("longbuff")
+
+// Spend Item Type
+#define MICTOK_SPEND_TYPE_NORMAL	_CXR("normal")
+#define MICTOK_SPEND_TYPE_LONGBUFF	_CXR("longbuff")
+#define MICTOK_SPEND_TYPE_SHORTBUFF	_CXR("shortbuff")
+#define MICTOK_SPEND_TYPE_COMMUNITY _CXR("community")
+
+// Avatar Item Mesh
+#define MICTOK_AVATAR_HEAD			_CXR("avatar_head")
+#define MICTOK_AVATAR_CHEST			_CXR("avatar_chest")
+#define MICTOK_AVATAR_HAND			_CXR("avatar_hand")
+#define MICTOK_AVATAR_LEGS			_CXR("avatar_legs")
+#define MICTOK_AVATAR_FEET			_CXR("avatar_feet")
+
+// weapon type
+#define MICTOK_WEAPON_DAGGER		_CXR("dagger")
+#define MICTOK_WEAPON_DUALDAGGER	_CXR("dualdagger")
+#define MICTOK_WEAPON_KATANA		_CXR("katana")
+#define MICTOK_WEAPON_GREATSWORD	_CXR("greatsword")
+#define MICTOK_WEAPON_DOUBLEKATANA	_CXR("doublekatana")
+
+#define MICTOK_WEAPON_PISTOL		_CXR("pistol")
+#define MICTOK_WEAPON_PISTOLX2		_CXR("pistolx2")
+#define MICTOK_WEAPON_REVOLVER		_CXR("revolver")
+#define MICTOK_WEAPON_REVOLVERX2	_CXR("revolverx2")
+#define MICTOK_WEAPON_SMG			_CXR("smg")
+#define MICTOK_WEAPON_SMGX2			_CXR("smgx2")
+#define MICTOK_WEAPON_SHOTGUN		_CXR("shotgun")
+#define MICTOK_WEAPON_SAWEDSHOTGUN	_CXR("sawedshotgun")
+#define MICTOK_WEAPON_RIFLE			_CXR("rifle")
+#define MICTOK_WEAPON_MACHINEGUN	_CXR("machinegun")
+#define MICTOK_WEAPON_ROCKET		_CXR("rocket")
+#define MICTOK_WEAPON_SNIFER		_CXR("snifer")
+
+#define MICTOK_WEAPON_MEDKIT		_CXR("medkit")
+#define MICTOK_WEAPON_CLAYMORE		_CXR("claymore")
+#define MICTOK_WEAPON_REPAIRKIT		_CXR("repairkit")
+#define MICTOK_WEAPON_BULLETKIT		_CXR("bulletkit")
+#define MICTOK_WEAPON_FLASHBANG		_CXR("flashbang")
+#define MICTOK_WEAPON_FRAG			_CXR("frag")
+#define MICTOK_WEAPON_SMOKE			_CXR("smoke")
+#define MICTOK_WEAPON_SKILL			_CXR("skill")
+#define MICTOK_WEAPON_FOOD			_CXR("food")
+#define MICTOK_WEAPON_POTION		_CXR("potion")
+#define MICTOK_WEAPON_TRAP			_CXR("trap")
+#define MICTOK_WEAPON_DYNAMITE		_CXR("dynamite")
+
+
+
+// enchant
+#define MICTOK_WEAPON_ENCHANT_FIRE		_CXR("enchant_fire")
+#define MICTOK_WEAPON_ENCHANT_COLD		_CXR("enchant_cold")
+#define MICTOK_WEAPON_ENCHANT_LIGHTNING	_CXR("enchant_lightning")
+#define MICTOK_WEAPON_ENCHANT_POISION	_CXR("enchant_poison")
+
+
+// true false
+#define MICTOK_TRUE			_CXR("true")
+#define MICTOK_FALSE		_CXR("false")
+
+// ticket type
+#define MICTOK_TICKET_TYPE_ADMISSION	_CXR("admission")
+#define MICTOK_TICKET_TYPE_CHANGEHEAD	_CXR("change_head")
+
+
+// Damage Type
+#define MICTOK_DAMAGE_TYPE_FIRE			_CXR("fire")
+#define MICTOK_DAMAGE_TYPE_COLD			_CXR("cold")
+#define MICTOK_DAMAGE_TYPE_POISION		_CXR("poision")
+#define MICTOK_DAMAGE_TYPE_LIGHTNING	_CXR("lightning")
+#define MICTOK_DAMAGE_TYPE_HEAL			_CXR("heal")
+#define MICTOK_DAMAGE_TYPE_REPAIR		_CXR("repair")
+#define MICTOK_DAMAGE_TYPE_HASTE		_CXR("haste")
+
+
+// effect
+#define MECTOK_EFFECT		_CXR("EFFECT")
+#define MECTOK_ID			_CXR("id")
+#define MECTOK_NAME			_CXR("name")
+#define MECTOK_AREA			_CXR("area")
+#define MECTOK_TIME			_CXR("time")
+#define MECTOK_MOD_HP		_CXR("mod_hp")
+#define MECTOK_MOD_AP		_CXR("mod_ap")
+#define MECTOK_MOD_MAXWT	_CXR("mod_maxwt")
+#define MECTOK_MOD_SF		_CXR("mod_sf")
+#define MECTOK_MOD_FR		_CXR("mod_fr")
+#define MECTOK_MOD_CR		_CXR("mod_cr")
+#define MECTOK_MOD_PR		_CXR("mod_pr")
+#define MECTOK_MOD_LR		_CXR("mod_lr")
+#define MECTOK_RES_AP		_CXR("res_ap")
+#define MECTOK_RES_FR		_CXR("res_fr")
+#define MECTOK_RES_CR		_CXR("res_cr")
+#define MECTOK_RES_PR		_CXR("res_pr")
+#define MECTOK_RES_LR		_CXR("res_lr")
+#define MECTOK_STUN			_CXR("stun")
+#define MECTOK_KNOCKBACK	_CXR("knockback")
+#define MECTOK_SMOKE		_CXR("smoke")
+#define MECTOK_FLASH		_CXR("flash")
+#define MECTOK_TEAR			_CXR("tear")
+#define MECTOK_FLAME		_CXR("flame")
+
+
+// item
+#define MICTOK_ITEM				_CXR("ITEM")
+#define MICTOK_ID				_CXR("id")
+#define MICTOK_NAME				_CXR("name")
+#define MICTOK_TOTALPOINT		_CXR("totalpoint")
+#define MICTOK_TYPE				_CXR("type")
+#define MICTOK_RES_SEX			_CXR("res_sex")
+#define MICTOK_RES_LEVEL		_CXR("res_level")
+#define MICTOK_SLOT				_CXR("slot")
+#define MICTOK_WEAPON			_CXR("weapon")
+#define MICTOK_SPEND_TYPE		_CXR("spendtype")
+#define MICTOK_EFFECT_LEVEL		_CXR("effect_level")
+#define MICTOK_WEIGHT			_CXR("weight")
+#define MICTOK_BOUNTY_PRICE		_CXR("bt_price")
+#define MICTOK_ISCASHITEM		_CXR("iscashitem")
+#define MICTOK_ISSTAFFITEM		_CXR("isstaffitem")
+#define MICTOK_DELAY			_CXR("delay")
+#define MICTOK_EFFECT_ID		_CXR("effect_id")
+#define MICTOK_CONTROLLABILITY	_CXR("ctrl_ability")
+#define MICTOK_MAGAZINE			_CXR("magazine")
+#define MICTOK_MAXBULLET		_CXR("maxbullet")
+#define MICTOK_RELOADTIME		_CXR("reloadtime")
+#define MICTOK_SLUGOUTPUT		_CXR("slug_output")
+#define MICTOK_GADGET_ID		_CXR("gadget_id")
+#define MICTOK_HP				_CXR("hp")
+#define MICTOK_AP				_CXR("ap")
+#define MICTOK_MAXWT			_CXR("maxwt")
+#define MICTOK_SF				_CXR("sf")
+#define MICTOK_FR				_CXR("fr")
+#define MICTOK_CR				_CXR("cr")
+#define MICTOK_PR				_CXR("pr")
+#define MICTOK_LR				_CXR("lr")
+#define MICTOK_LIMITSPEED		_CXR("limitspeed")
+#define MICTOK_LIMITJUMP		_CXR("limitjump")
+#define MICTOK_LIMITTUMBLE		_CXR("limittumble")
+#define MICTOK_LIMITWALL		_CXR("limitwall")
+#define MICTOK_RANGE			_CXR("range")
+#define MICTOK_ANGLE			_CXR("angle")
+
+#define MICTOK_ADDED_HP			_CXR("addedHP")
+#define MICTOK_ADDED_AP			_CXR("addedAP")
+#define MICTOK_DAMAGE			_CXR("damage")
+#define MICTOK_ITEMPOWER		_CXR("itempower")
+#define MICTOK_DAMAGE_TYPE		_CXR("damagetype")
+#define MICTOK_DAMAGE_TIME		_CXR("damagetime")
+#define MICTOK_LIFETIME			_CXR("lifetime")
+
+#define MICTOK_COLOR			_CXR("color")
+#define MICTOK_DESC				_CXR("desc")
+
+#define MICTOK_MESH_NAME				_CXR("mesh_name")
+#define MICTOK_IMAGE_ID					_CXR("image_id")
+#define MICTOK_BULLET_IMAGE_ID			_CXR("bullet_image_id")
+#define MICTOK_MAGAZINE_IMAGE_ID		_CXR("magazine_image_id")
+
+#define MICTOK_SOUND_RELOAD				_CXR("snd_reload")
+#define MICTOK_SOUND_FIRE				_CXR("snd_fire")
+#define MICTOK_SOUND_DRYFIRE			_CXR("snd_dryfire")
+#define MICTOK_SOUND_WEAPON_FIBER		_CXR("snd_weapon_fiber")
+
+#define MICTOK_BONUS_XP_SOLO			_CXR("xp_solo_bonus")
+#define MICTOK_BONUS_XP_TEAM			_CXR("xp_team_bonus")
+#define MICTOK_BONUS_XP_QUEST			_CXR("xp_quest_bonus")
+
+#define MICTOK_BONUS_BP_SOLO			_CXR("bp_solo_bonus")
+#define MICTOK_BONUS_BP_TEAM			_CXR("bp_team_bonus")
+#define MICTOK_BONUS_BP_QUEST			_CXR("bp_quest_bonus")
+#define MICTOK_BONUS_SPENDABLE			_CXR("spendable")
+
+#define MICTOK_TICKET_TYPE				_CXR("ticket_type")
+
+#define MICTOK_MAX_RENT_PERIOD			_CXR("rent_period")
+
+/*
+== XML 기술 설명 ==
++ zitem.xml 설명
+
++ 태그이름 : ITEM
++ attribute 설명
+id : 아이템 아이디(int)
+name : 아이템 이름(string[128])
+mesh_name : 메쉬 이름(str[256]) , weapon.xml의 name항목의 이름
+totalpoint : 종합 점수(int)
+type : 종류(melee, range, equip, custom)
+res_sex : 성별 제한사항(m, f, a)
+res_level : 레벨 제한사항(int) , 제한이 없을경우 0으로 세팅하도록 한다.
+slot : 슬롯(none, melee, range, head, chest, hands, legs, feet, finger, custom)
+weapon : 무기타입(none, dagger, katana, pistol, smg, shotgun, rifle, machinegun, 
+                  rocket, snifer, medkit, flashbang, frag, smoke, 
+				  enchant_fire, enchant_cold, enchant_lightning, enchant_poison)
+weight : 무게(int)
+bt_price : 판매가(int)
+iscashitem : 캐쉬아이템인지 여부(true, false)
+damage : 데미지(int)
+delay : 딜레이(int)
+effect_id : 이펙트 아이디(int) , effect.xml의 항목과 연동되는 ID
+ctrl_ability : 제어성(int)
+magazine : 장탄수(int)
+reloadtime : 장전시간(int)
+slug_output : 탄피적출(true, false)
+gadget_id : 옵션 아이디(int)
+hp : hp 캐릭터 수정치(int)
+ap : ap 캐릭터 수정치(int)
+maxwt : max wt 캐릭터 수정치(int)
+sf : sf 캐릭터 수정치(int)
+fr : fr 캐릭터 수정치(int)
+cr : cr 캐릭터 수정치(int)
+pr : pr 캐릭터 수정치(int)
+lr : lr 캐릭터 수정치(int)
+desc : 설명(string[65535])
+color : 색깔(color)
+image_id : ui에서 보이는 image 아이디(int) , 지금은 쓰이지 않음
+bullet_image_id : ui에서 보이는 bullet 이미지 아이디(int) , 지금은 쓰이지 않음
+magazine_image_id : ui에서 보이는 magazine 이미지 아이디(int) , 지금은 쓰이지 않음
+snd_reload : reload때 나오는 사운드 이름(str[128])
+snd_fire : fire때 나오는 사운드 이름(str[128])
+snd_dryfire : dryfire 때 나오는 사운드 이름(str[128])
+snd_weapon_fiber : 무기의 재질(쇠, 고무 등)의 사운드(str[128])
+range : melee 공격의 범위(int)
+rent_period : 기간제 바운티 아이템의 최대 기간 정보 (날짜단위)(int)
+
++ effect.xml 설명
+
+- 태그이름 : EFFECT
++ attribute 설명
+id : 이펙트 아이디(int)
+name : 이펙트 이름(string[128])
+area : 이펙트 영역(int)
+time : 이펙트 시간(msec)
+mod_hp : hp 수정치 
+mod_ap : ap 수정치
+mod_maxwt : max wt 수정치
+mod_sf : sf 수정치
+mod_fr : fr 수정치
+mod_cr : cr 수정치
+mod_pr : pr 수정치
+mod_lr : lr 수정치
+res_ap : ap 저항판정
+res_fr : fr 저항판정
+res_cr : cr 저항판정
+res_pr : pr 저항판정
+res_lr : lr 저항판정
+stun : stun 수정치
+knockback : knockback 수정치
+smoke : smoke 수정치
+flash : flash 수정치
+tear : tear 수정치
+flame : frame 수정치
+
+duplicate : 중복 착용 여부.(true, false)
+ */
