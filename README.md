@@ -1,6 +1,5 @@
 # GunZ-The-Duel
-GunZ The Duel Releases | by Wolfie<br>
-Discord: Wolfie#6077<br>
+GunZ The Duel Releases <br>
 If you want to contact me hit me up <br>
 [includes]<br>
 - [maps | 200+]<br>
