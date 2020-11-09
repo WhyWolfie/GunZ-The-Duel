@@ -1,0 +1,5 @@
+AuthName "Logs"
+AuthType Basic
+
+order deny,allow
+deny from all
