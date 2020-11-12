@@ -15,4 +15,3 @@ GunZ The Duel Releases <br>
 
 
 credits too everyone who work on it! <br>
-Archive: https://t.me/gunztheduel
