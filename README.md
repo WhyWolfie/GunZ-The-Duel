@@ -24,6 +24,7 @@ GunZ The Duel Releases <br>
 - Gunz Emulator 2013: https://github.com/WhyWolfie/Gunz2013 
 - FGunZ: https://github.com/WhyWolfie/FGunZ
 - TrinityGunZ: https://github.com/WhyWolfie/TrinityGunZ
+- Gregon13Source: https://github.com/WhyWolfie/Gregon13Source
 
 <b>[clients]</b><br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
