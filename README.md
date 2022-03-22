@@ -18,9 +18,19 @@ GunZ The Duel Releases <br>
 - https://github.com/x1nixmzeng/ZPatchBuilder <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
 
-<b>[clients]</b>
+<b>[clients]</b><br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
+
+<b>[official]</b><br>
+- https://gz.masanggames.co.kr/
+- https://store.steampowered.com/app/242720/GunZ_2_The_Second_Duel/
+- http://gunz.kaybo1.com/ (shutdown)
+
+<b>[servers]</b><br>
+- freestylegunz: https://fgunz.net/
+- universgamers: https://universegunz.net/
+- internationalgunz: https://igunz.net/
 
 <b>[includes]</b><br>
 - [maps | 200+]<br>
