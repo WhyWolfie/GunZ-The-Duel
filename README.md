@@ -1,5 +1,18 @@
 # GunZ-The-Duel
 GunZ The Duel Releases <br>
+[githubs] <br>
+- https://github.com/mataha/gunz-replay <br>
+- https://github.com/x1nixmzeng/z3ResEx <br>
+- https://github.com/Theoretical/Infamous <br>
+- https://github.com/Gunz2Dev/Gunz2Shark <br>
+- https://github.com/MrSuicideFish/GunZ-proto <br>
+- https://github.com/LostMyCode/three-gunz <br>
+- https://github.com/goweiwen/blender-elu-importer <br>
+- https://github.com/zkxjzmswkwl/Gunzpedia <br>
+- https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ <br>
+- https://github.com/x1nixmzeng/ZPatchBuilder <br>
+- https://github.com/tannous94/GunZ-simple-web <br>
+
 [includes]<br>
 - [maps | 200+]<br>
 - [tools/3dsmax 2014]<br>
