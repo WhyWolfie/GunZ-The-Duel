@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CrashU">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Administrator\Desktop\Crash\CrashU\CrashU.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\Administrator\Desktop\Crash\CrashU\CrashU.suo">
+</Property><Property Name="Date" Value="יום ראשון 16 מאי 2010">
+</Property><Property Name="Time" Value="11:46">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CrashU.sln" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\Crash\CrashU\CrashU.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="CrashU.suo" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\Crash\CrashU\CrashU.suo.old">
+</Event><Event ErrorLevel="0" Project="CrashU" Source="CrashU\CrashU.vcproj" Description="Converting project file 'C:\Documents and Settings\Administrator\Desktop\Crash\CrashU\CrashU\CrashU.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CrashU" Source="CrashU\CrashU.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="CrashU" Source="CrashU\CrashU.vcproj" Description="Done converting to new project file 'C:\Documents and Settings\Administrator\Desktop\Crash\CrashU\CrashU\CrashU.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CrashU" Source="CrashU\CrashU.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CrashU.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CrashU.sln" Description="Converted">
+</Event></UpgradeLog>
