@@ -1,5 +1,7 @@
-# GunZ-The-Duel
+# GunZ The Duel
 GunZ The Duel Releases <br>
+![gunz logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
+
 Want to learn GunZ ?
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
 
