@@ -18,6 +18,9 @@ GunZ The Duel Releases <br>
 - https://github.com/x1nixmzeng/ZPatchBuilder <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
 
+<b>[source]</b>
+- OldGunz(2007source) https://github.com/WhyWolfie/source2007
+
 <b>[clients]</b><br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
