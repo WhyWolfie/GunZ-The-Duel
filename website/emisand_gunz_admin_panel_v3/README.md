@@ -1,5 +1,3 @@
-[!alt text](https://i.imgur.com/t5E7lof.png)
-
 This admin panel has been coded only by Emisand for Ragezone
 
 If you want to upload it at another website, please ask Emisand by PM at ragezone.com first.
