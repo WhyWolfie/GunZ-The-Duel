@@ -6,6 +6,7 @@ GunZ The Duel Releases <br>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
 
 <b>[githubs]</b> <br>
+- https://github.com/Asunaya/refinedgunz <br>
 - https://github.com/mataha/gunz-replay <br>
 - https://github.com/x1nixmzeng/z3ResEx <br>
 - https://github.com/Theoretical/Infamous <br>
