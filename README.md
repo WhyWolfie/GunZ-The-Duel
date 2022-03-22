@@ -1,5 +1,8 @@
 # GunZ-The-Duel
 GunZ The Duel Releases <br>
+Want to learn GunZ ?
+- https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
+
 [githubs] <br>
 - https://github.com/mataha/gunz-replay <br>
 - https://github.com/x1nixmzeng/z3ResEx <br>
