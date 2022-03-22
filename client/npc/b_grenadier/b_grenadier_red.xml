@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="b_grenadier_red" filename="gz_adum_grenadier.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="gz_adum_grenadier_idle.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="run"		filename="gz_adum_grenadier_run.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="suffer1"		filename="gz_adum_grenadier_suffer1.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer2"		filename="gz_adum_grenadier_suffer2.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3"		filename="gz_adum_grenadier_suffer3.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	
+	<AddAnimation name="shoot"	filename="gz_adum_grenadier_throw.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	
+	<AddAnimation name="lightningstun"		filename="gz_adum_grenadier_lightning.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="blast_soar"		filename="gz_adum_grenadier_blast.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="blast_fall"		filename="gz_adum_grenadier_blast_fall.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_down"		filename="gz_adum_grenadier_blast_drop.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="standup"		filename="gz_adum_grenadier_blast_stand.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_thrust"	filename="gz_adum_grenadier_blast_dagger.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_thrustdown" filename="gz_adum_grenadier_blast_drop_dagger.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="die"		filename="gz_adum_grenadier_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 	</AddAnimation>
+
+
+</xml>
