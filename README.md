@@ -18,6 +18,10 @@ Want to learn GunZ ?
 - https://github.com/x1nixmzeng/ZPatchBuilder <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
 
+[clients]
+- ObeliskGunZ: https://archive.org/details/obelisk-gun-z
+- Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
+
 [includes]<br>
 - [maps | 200+]<br>
 - [tools/3dsmax 2014]<br>
@@ -33,3 +37,7 @@ Want to learn GunZ ?
 
 
 credits too everyone who work on it! <br>
+[resources]
+- https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
+- https://forum.ragezone.com/f311/ (gunz forum - still active)
+
