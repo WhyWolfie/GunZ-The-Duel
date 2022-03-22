@@ -2,10 +2,10 @@
 GunZ The Duel Releases <br>
 ![gunz logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
 
-Want to learn GunZ ?
+<b>Want to learn GunZ ?</b>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
 
-[githubs] <br>
+<b>[githubs]</b> <br>
 - https://github.com/mataha/gunz-replay <br>
 - https://github.com/x1nixmzeng/z3ResEx <br>
 - https://github.com/Theoretical/Infamous <br>
@@ -18,11 +18,11 @@ Want to learn GunZ ?
 - https://github.com/x1nixmzeng/ZPatchBuilder <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
 
-[clients]
+<b>[clients]</b>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
 
-[includes]<br>
+<b>[includes]</b><br>
 - [maps | 200+]<br>
 - [tools/3dsmax 2014]<br>
 - [tools/3dsmax 2010]<br>
@@ -35,9 +35,10 @@ Want to learn GunZ ?
 - [database/mysql4.0]<br>
 - [database/sql2000]<br>
 
-
-credits too everyone who work on it! <br>
-[resources]
+<b>[resources]</b>
 - https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
 - https://forum.ragezone.com/f311/ (gunz forum - still active)
+
+
+credits too everyone who work on it! <br>
 
