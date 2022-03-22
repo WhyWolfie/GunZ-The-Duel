@@ -25,6 +25,7 @@ GunZ The Duel Releases <br>
 - FGunZ: https://github.com/WhyWolfie/FGunZ
 - TrinityGunZ: https://github.com/WhyWolfie/TrinityGunZ
 - Gregon13Source: https://github.com/WhyWolfie/Gregon13Source
+- ChallengeQuest: https://github.com/WhyWolfie/ChallengeQuest
 
 <b>[clients]</b><br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
@@ -39,6 +40,7 @@ GunZ The Duel Releases <br>
 - freestylegunz: https://fgunz.net/
 - universgamers: https://universegunz.net/
 - internationalgunz: https://igunz.net/
+- ragegunz/fxpgunz: http://ragegunz.com/ / https://fxpgunz.com/
 
 <b>[includes]</b><br>
 - [maps | 200+]<br>
