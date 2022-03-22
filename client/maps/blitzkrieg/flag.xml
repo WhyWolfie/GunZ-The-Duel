@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<XML>
+	<FLAG NAME="obj_flag_hunter2.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="10000"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_hunter004.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_hunter4.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="10000"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_hunter005.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_adum4.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="10000"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_adum003.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_adum5.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="10000"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_adum2.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_adum006.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_adum007.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag2_hunter008.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+	<FLAG NAME="obj_flag_hunter009.elu" DIRECTION="0" POWER="10.0">
+		<WINDTYPE TYPE="1" DELAY="100"/>
+	</FLAG>
+</XML>

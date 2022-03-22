@@ -1,0 +1,195 @@
+Starting BSP Export...
+object pass_Blitzkrieg_Map_Building_04 : pass_Blitzkrieg_Map_Building_04: 176 ver / 122 face 
+object pass_Blitzkrieg_Map_Building_07 : pass_Blitzkrieg_Map_Building_07: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_21 : pass_Blitzkrieg_Map_Building_21: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_23 : pass_Blitzkrieg_Map_Building_23: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_25 : pass_Blitzkrieg_Map_Building_25: 49 ver / 44 face 
+object pass_Blitzkrieg_Map_Building_26 : pass_Blitzkrieg_Map_Building_26: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_27 : pass_Blitzkrieg_Map_Building_27: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_28 : pass_Blitzkrieg_Map_Building_28: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_29 : pass_Blitzkrieg_Map_Building_29: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_30 : pass_Blitzkrieg_Map_Building_30: 176 ver / 122 face 
+object pass_Blitzkrieg_Map_Building_31 : pass_Blitzkrieg_Map_Building_31: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_32 : pass_Blitzkrieg_Map_Building_32: 49 ver / 44 face 
+object pass_Blitzkrieg_Map_Building_33 : pass_Blitzkrieg_Map_Building_33: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_34 : pass_Blitzkrieg_Map_Building_34: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_35 : pass_Blitzkrieg_Map_Building_35: 50 ver / 30 face 
+object pass_Blitzkrieg_Map_Building_37 : pass_Blitzkrieg_Map_Building_37: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_45 : pass_Blitzkrieg_Map_Building_45: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_46 : pass_Blitzkrieg_Map_Building_46: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_47 : pass_Blitzkrieg_Map_Building_47: 123 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_49 : pass_Blitzkrieg_Map_Building_49: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_50 : pass_Blitzkrieg_Map_Building_50: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_51 : pass_Blitzkrieg_Map_Building_51: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_52 : pass_Blitzkrieg_Map_Building_52: 176 ver / 122 face 
+object pass_Blitzkrieg_Map_Building_53 : pass_Blitzkrieg_Map_Building_53: 49 ver / 44 face 
+object pass_Blitzkrieg_Map_Building_54 : pass_Blitzkrieg_Map_Building_54: 90 ver / 54 face 
+object pass_Blitzkrieg_Map_Building_55 : pass_Blitzkrieg_Map_Building_55: 50 ver / 30 face 
+object pass_Blitzkrieg_Map_Building_56 : pass_Blitzkrieg_Map_Building_56: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_57 : pass_Blitzkrieg_Map_Building_57: 49 ver / 44 face 
+object pass_Blitzkrieg_Map_Building_58 : pass_Blitzkrieg_Map_Building_58: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_60 : pass_Blitzkrieg_Map_Building_60: 176 ver / 122 face 
+object pass_Blitzkrieg_Map_Building_61 : pass_Blitzkrieg_Map_Building_61: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_67 : pass_Blitzkrieg_Map_Building_67: 176 ver / 122 face 
+object pass_Blitzkrieg_Map_Building_68 : pass_Blitzkrieg_Map_Building_68: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_69 : pass_Blitzkrieg_Map_Building_69: 177 ver / 130 face 
+object pass_Blitzkrieg_Map_Building_70 : pass_Blitzkrieg_Map_Building_70: 63 ver / 40 face 
+object pass_Blitzkrieg_Map_Building_72 : pass_Blitzkrieg_Map_Building_72: 87 ver / 52 face 
+object pass_Blitzkrieg_Map_Building_73 : pass_Blitzkrieg_Map_Building_73: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_74 : pass_Blitzkrieg_Map_Building_74: 167 ver / 90 face 
+object pass_Blitzkrieg_Map_Building_75 : pass_Blitzkrieg_Map_Building_75: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_76 : pass_Blitzkrieg_Map_Building_76: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_77 : pass_Blitzkrieg_Map_Building_77: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_78 : pass_Blitzkrieg_Map_Building_78: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_79 : pass_Blitzkrieg_Map_Building_79: 49 ver / 44 face 
+object pass_Blitzkrieg_Map_Building_80 : pass_Blitzkrieg_Map_Building_80: 49 ver / 44 face 
+object pass_Blitzkrieg_Map_Building_81 : pass_Blitzkrieg_Map_Building_81: 122 ver / 102 face 
+object pass_Blitzkrieg_Map_Building_82 : pass_Blitzkrieg_Map_Building_82: 113 ver / 80 face 
+object pass_Blitzkrieg_Map_Building_83 : pass_Blitzkrieg_Map_Building_83: 57 ver / 36 face 
+object pass_Blitzkrieg_Map_Building_84 : pass_Blitzkrieg_Map_Building_84: 18 ver / 6 face 
+object pass_Blitzkrieg_Map_Building_85 : pass_Blitzkrieg_Map_Building_85: 84 ver / 36 face 
+object pass_Blitzkrieg_Map_Building_86 : pass_Blitzkrieg_Map_Building_86: 92 ver / 41 face 
+object pass_Blitzkrieg_Map_Building_87 : pass_Blitzkrieg_Map_Building_87: 83 ver / 57 face 
+object pass_Blitzkrieg_Map_Building_88 : pass_Blitzkrieg_Map_Building_88: 106 ver / 74 face 
+object pass_Blitzkrieg_Map_Building_89 : pass_Blitzkrieg_Map_Building_89: 29 ver / 13 face 
+object pass_Blitzkrieg_Map_Building_91 : pass_Blitzkrieg_Map_Building_91: 93 ver / 56 face 
+object pass_Blitzkrieg_Map_Building_92 : pass_Blitzkrieg_Map_Building_92: 63 ver / 40 face 
+object pass_Blitzkrieg_Map_Building_93 : pass_Blitzkrieg_Map_Building_93: 239 ver / 204 face 
+object pass_Blitzkrieg_Map_Building_94 : pass_Blitzkrieg_Map_Building_94: 66 ver / 48 face 
+object pass_Blitzkrieg_Map_Building_95 : pass_Blitzkrieg_Map_Building_95: 177 ver / 130 face 
+object pass_Blitzkrieg_Map_Building_96 : pass_Blitzkrieg_Map_Building_96: 129 ver / 87 face 
+object pass_Blitzkrieg_Map_Building_97 : pass_Blitzkrieg_Map_Building_97: 129 ver / 87 face 
+object pass_Blitzkrieg_Map_Building_98 : pass_Blitzkrieg_Map_Building_98: 177 ver / 130 face 
+object pass_Blitzkrieg_Map_Building_99 : pass_Blitzkrieg_Map_Building_99: 177 ver / 130 face 
+object pass_Blitzkrieg_Map_Building_100 : pass_Blitzkrieg_Map_Building_100: 177 ver / 130 face 
+object pass_Blitzkrieg_Map_Building_101 : pass_Blitzkrieg_Map_Building_101: 146 ver / 100 face 
+object pass_Blitzkrieg_Map_Building_102 : pass_Blitzkrieg_Map_Building_102: 152 ver / 136 face 
+object pass_BOX_BUILD2 : pass_BOX_BUILD2: 136 ver / 102 face 
+object pass_BOX_BUILD3 : pass_BOX_BUILD3: 208 ver / 156 face 
+object pass_BOX_BUILD4 : pass_BOX_BUILD4: 136 ver / 102 face 
+object pass_BOX_BUILD : pass_BOX_BUILD: 256 ver / 192 face 
+object hnav_004 : hnav_004: 380 ver / 428 face 
+NaviMesh: 380 ver / 428 face 
+object hide_box : hide_box: 296 ver / 292 face 
+object hide_box008 : hide_box008: 769 ver / 850 face 
+object Object01 : Object01: 0 ver / 0 face 
+object Object03 : Object03: 0 ver / 0 face 
+object pass_flagpole006 : pass_flagpole006: 39 ver / 39 face 
+object pass_flagpole007 : pass_flagpole007: 39 ver / 39 face 
+object pass_flagpole009 : pass_flagpole009: 39 ver / 39 face 
+object pass_flagpole010 : pass_flagpole010: 39 ver / 39 face 
+object pass_flagpole4 : pass_flagpole4: 39 ver / 39 face 
+object pass_flagpole3 : pass_flagpole3: 39 ver / 39 face 
+object pass_flagpole5 : pass_flagpole5: 39 ver / 39 face 
+object pass_flagpole : pass_flagpole: 39 ver / 39 face 
+RSBsp Info : 6876 faces
+Scene Dimension ( 18446.9 10609.6 2685.3 )
+Export Objects.
+Export Objects : BlitzKrieg_obj_sky_box.elu 
+Export Objects : BlitzKrieg_obj_flag_hunter2.elu 
+Export Objects : BlitzKrieg_obj_flag_hunter004.elu 
+Export Objects : BlitzKrieg_obj_flag_hunter4.elu 
+Export Objects : BlitzKrieg_obj_flag_hunter005.elu 
+Export Objects : BlitzKrieg_obj_flag_adum4.elu 
+Export Objects : BlitzKrieg_obj_flag_adum003.elu 
+Export Objects : BlitzKrieg_obj_flag_adum5.elu 
+Export Objects : BlitzKrieg_obj_flag_adum2.elu 
+Export Objects : BlitzKrieg_obj_flag_adum006.elu 
+Export Objects : BlitzKrieg_obj_flag_adum007.elu 
+Export Objects : BlitzKrieg_obj_flag2_hunter008.elu 
+Export Objects : BlitzKrieg_obj_flag_hunter009.elu 
+Export description.. 
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+AXIS0
+POSITION0
+COMPARE0
+AXIS1
+POSITION1
+COMPARE1
+Saving Source Data.
+CSG union - 2 objects
+construct object subtree hide_box ( 334 source polygon ) : total 82 faces splitted 70 leaf nodes 311 nodes 741 polygons
+construct object subtree hide_box008 ( 911 source polygon ) : total 870 faces splitted 302 leaf nodes 1201 nodes 3050 polygons
+0 faces eliminated. (solid)
+4116 source polygons remain
+optimized 2238 polygons remain
+Generating Convex polygons...
+Optimize Polygon 6876 -> 5692 
+Constructing Collision BspTree. ( 2238 source polygons )
+Collision Bsp Info : total 4797 faces splitted 330 leaf nodes 5045 nodes 12974 polygons
+Constructing OcTree. ( 5692 source polygons )
+Octree Info : total 1263 faces splitted 52 leaf nodes 103 nodes 6955 polygons
+Constructing BspTree. ( 5692 source polygons )
+RSBsp Info : total 10192 faces splitted 6260 leaf nodes 12519 nodes 15884 polygons
+Constructing Bsp Bounding Volumes.
+Saving Bsp information.
+C:\Users\gabrino.MAIETDEV\Desktop\새 폴더\깃발추가\BlitzKrieg.RS file saved
+C:\Users\gabrino.MAIETDEV\Desktop\새 폴더\깃발추가\BlitzKrieg.RS.bsp file saved
+C:\Users\gabrino.MAIETDEV\Desktop\새 폴더\깃발추가\BlitzKrieg.RS.col file saved
+Exporting takes 0 minutes and     32 seconds.
+Done.
