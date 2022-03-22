@@ -26,6 +26,9 @@ GunZ The Duel Releases <br>
 - TrinityGunZ: https://github.com/WhyWolfie/TrinityGunZ
 - Gregon13Source: https://github.com/WhyWolfie/Gregon13Source
 - ChallengeQuest: https://github.com/WhyWolfie/ChallengeQuest
+- NationalGunZ: https://github.com/WhyWolfie/NationalGunZ
+- Repack-Aren: https://github.com/WhyWolfie/Repack-Aren
+- GFZSource: https://github.com/WhyWolfie/GZF-Source
 
 <b>[clients]</b><br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
