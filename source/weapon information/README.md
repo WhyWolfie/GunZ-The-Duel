@@ -8,5 +8,7 @@ MMatchItemDesc* pItemDesc = MGetMatchItemDescMgr()->GetItemDesc(pCharacter->GetI
 sprintf(szWeaponInfo, "(Damage %d / Delay %d)", pItemDesc->m_nDamage.Ref(), pItemDesc->m_nDelay.Ref());
 TextRelative(pDC, 00.f / 800.f, 00.f / 600.f, szWeaponInfo);
 }
+<br>
+![gunz logo](https://i.imgur.com/7XOHNz5.png)
 
 <b> Credits too GunzFactor </b>
