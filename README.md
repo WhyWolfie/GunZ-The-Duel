@@ -40,7 +40,10 @@ GunZ The Duel Releases <br>
 - freestylegunz: https://fgunz.net/
 - universgamers: https://universegunz.net/
 - internationalgunz: https://igunz.net/
-- ragegunz/fxpgunz: http://ragegunz.com/ / https://fxpgunz.com/
+- ragegunz/fxpgunz: http://ragegunz.com/ / https://fxpgunz.com/ / https://www.gunz2034.net/
+- oldschoolgunz: https://www.oldschoolgunz.com/
+- gunzduels: https://gunzduels.com/
+- enigmagunz: https://eggunz.com/
 
 <b>[includes]</b><br>
 - [maps | 200+]<br>
