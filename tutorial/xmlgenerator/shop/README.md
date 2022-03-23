@@ -16,3 +16,5 @@
 
 
 <b> Well done ~ whole 'zitem.xml' into the shop 😅 </b>
+
+<b> Credits too Steven Corndog / StevenUGG (old creator of eurogunz -> universe gamers gunz) </b>
