@@ -84,14 +84,20 @@ SQL Management Studio Express Installed!<br>
 ![acc](https://i.imgur.com/A3G5jVp.png)<br>
 2. right mouse on 'dbo.Account' -> Open Table <br>
 ![acc2](https://i.imgur.com/i5TGRmB.png)<br>
-3. Fill in the tables
-4. UserID: Test - UGradeID 255 - PGradeID 0 - RegDate: 3/23/2022 12:00:00 AM - Name: Test
-5. Then you click on the other table so you now have a line
-6. Close the tab (dbo.Account) -> Reopen (dbo.Account)
-7. Look at 'AID' ID and remember that ID for me it is '2'
-8. Close the tab (dbo.Account) 
-9. Scroll down if you find (dbo.Login) -> Open Table 
+3. Fill in the tables <br>
+![acc3](https://i.imgur.com/7TbwETq.png)<br>
+4. UserID: Test - UGradeID 255 - PGradeID 0 - RegDate: 3/23/2022 12:00:00 AM - Name: Test <br>
+![acc4](https://i.imgur.com/YLXrCXU.png) <br>
+5. Then you click on the other table so you now have a line <br>
+6. Close the tab (dbo.Account) -> Reopen (dbo.Account)<br>
+![acc6](https://i.imgur.com/92AGM3B.png)<br>
+7. Look at 'AID' ID and remember that ID for me it is '2'<br>
+![acc7](https://i.imgur.com/gkfK6Ae.png)<br>
+8. Close the tab (dbo.Account) <br>
+9. Scroll down if you find (dbo.Login) -> Open Table <br>
+![acc8](https://i.imgur.com/eR7sms5.png)<br>
 10. UserID: Test - AID (ur ID for me it was '2') - Password: 123(ur choice) - lastconndate: 3/23/2022 12:00:00 AM - 127.0.0.1 (localhost)
+![acc9](https://i.imgur.com/TOkhzu7.png)<br>
 11. Close the tab (dbo.Login)
 
 
