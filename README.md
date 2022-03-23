@@ -38,6 +38,17 @@ GunZ The Duel Releases <br>
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
 - Gunz2: https://files.trinityent.net/?dir=GunZ%202
 
+<b>[tutorials]</b>
+- Movements: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
+- MRSDecompiler Ultimate: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/MRSDecompiler%20Ultimate
+- Gunnycrypt: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/gunnycrypt
+- pro mrs gui: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/pro_mrs_gui
+- odbc: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/odbc
+- sql2005: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005
+- map xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
+- shop xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
+
+
 <b>[fixes]</b>
 - Enter login matchserver crash(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
 - Cant buy db fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
