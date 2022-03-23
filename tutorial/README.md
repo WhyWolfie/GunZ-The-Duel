@@ -15,6 +15,7 @@
 - .MRS Files Decompile/Compile: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs
 - Pro MRS GUI: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/pro_mrs_gui
 - GunnyCrypt: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/gunnycrypt
+- GMD: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/debug/GMD
 
 <b>[Others]</b><br>
 
