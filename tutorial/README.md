@@ -1,12 +1,15 @@
-<b> Creating GunZ Server </b>
-Setup SQL first
+<b>[Creating GunZ Server] </b> <br>
+
+<b>[1: Setup SQL first]</b>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005
 
-Setup of ODBC
+<b>[2: Setup of ODBC] </b> <br>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/odbc
 
-.MRS Files Decompile/Compile
+<b>[.MRS Files Decompile/Compile]</b> <br>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs
 
-Learning GunZ Movements?
+<b>[Others]</b>
+
+<b>[Learning GunZ Movements?]</b> <br>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
