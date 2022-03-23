@@ -98,6 +98,17 @@ SQL Management Studio Express Installed!<br>
 ![acc8](https://i.imgur.com/eR7sms5.png)<br>
 10. UserID: Test - AID (ur ID for me it was '2') - Password: 123(ur choice) - lastconndate: 3/23/2022 12:00:00 AM - 127.0.0.1 (localhost)
 ![acc9](https://i.imgur.com/TOkhzu7.png)<br>
-11. Close the tab (dbo.Login)
+11. Close the tab (dbo.Login) <br>
+12. Well done your account is now created 🙃 <br>
+
+<b>[Setup connection of the server]</b>
+1. find 'dbo.ServerStatus' -> Open Table <br>
+2. Fill in the table <br>
+3. ServerID: 1 - CurrPlayer: 0 - MaxPlayer: 50 (ur choice) - Time: 3/23/2022 12:00:00 AM - IP: 127.0.0.1 (localhost) - Port: 6000 - ServerName: GunZ <br>
+3-2. Opened: 1 - Type: 4 - AgentIP: 127.0.0.1 -> Press other table and close it <br>
+4. Well done your server is now created 🙃 <br>
+
+
+
 
 
