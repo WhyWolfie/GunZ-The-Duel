@@ -1,5 +1,19 @@
+<b>[GZMap Installation</b><br>
+![gzmap](https://i.imgur.com/w9IoyVw.jpg)<br>
+![gzmap2](https://i.imgur.com/MsKE6Vm.jpg)<br>
+![gzmap3](https://i.imgur.com/gwDtOne.jpg)<br>
 
+<b>[Fluid Studios Radiosity Procesor]</b><br>
+![fluid](https://i.imgur.com/5vKzNLs.gif)<br>
+![fluid2](https://i.imgur.com/S20COWW.jpg)<br>
 
+<b>[GTKRadiant Preferences]</b><br>
+![gtk](https://i.imgur.com/NFhon8G.jpg)<br>
+![gtk2](https://i.imgur.com/npYngKg.jpg)<br>
+![gtk3](https://i.imgur.com/alVCLx0.jpg)<br>
+![gtk4](https://i.imgur.com/yCK6ErO.jpg)<br>
+![gtk5](https://i.imgur.com/QN1KcjK.jpg)<br>
+![gtk6](https://i.imgur.com/lIrvGXy.jpg)<br>
 
 <b>[z FSRad (lightmap settings)]</b><br>
 ![fs](https://i.imgur.com/x6L9v8o.jpg)<br>
