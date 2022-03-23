@@ -1,5 +1,5 @@
 <b> [Files]</b><br>
-- 
+- https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/Tools/xmlgenerator/Shop%20Maker.zip <br>
 <b> [Shop Generator] </b> <br>
 1. Open 'Shop Maker.exe' <br>
 ![shop](https://i.imgur.com/Sh2rUVj.png)<br>
