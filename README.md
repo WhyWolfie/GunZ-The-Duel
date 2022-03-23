@@ -33,6 +33,7 @@ GunZ The Duel Releases <br>
 <b>[clients]</b><br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
+- Gunz2: https://files.trinityent.net/?dir=GunZ%202
 
 <b>[fixes]</b>
 - Enter login matchserver crash(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
@@ -68,6 +69,7 @@ GunZ The Duel Releases <br>
 <b>[resources]</b>
 - https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
 - https://forum.ragezone.com/f311/ (gunz forum - still active)
+- https://files.trinityent.net/
 
 
 credits too everyone who work on it! <br>
