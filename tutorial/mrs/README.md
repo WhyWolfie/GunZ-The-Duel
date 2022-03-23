@@ -1,6 +1,6 @@
-Tutorial .MRS Files Unpack/Pack (Compile/Decompile)
-Get first: https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/Tools/MRS/MRSDecompiler%20Ultimate.zip
-Extract zip folder
+Tutorial .MRS Files Unpack/Pack (Compile/Decompile)<br>
+Get first: https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/Tools/MRS/MRSDecompiler%20Ultimate.zip <br>
+Extract zip folder <br>
 
 <b>[Decompile .MRS Files]</b><br>
 1. Open -> MRSDecompiler Ultimate.exe <br>
