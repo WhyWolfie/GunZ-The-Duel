@@ -8,6 +8,7 @@
 
 <b>[Maps]</b><br>
 - GTKRadiant: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/gtkradiant
+- GMD: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/debug/GMD
 
 <b>[Client]</b><br>
 - Zitem.xml -> Shop.xml generator(lazyway): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
@@ -15,7 +16,6 @@
 - .MRS Files Decompile/Compile: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs
 - Pro MRS GUI: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/pro_mrs_gui
 - GunnyCrypt: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/gunnycrypt
-- GMD: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/debug/GMD
 
 <b>[Others]</b><br>
 
