@@ -76,4 +76,5 @@ GunZ The Duel Releases <br>
 
 
 credits too everyone who work on it! <br>
-
+My goal is to make gunz alive again and new people to learn how to make your own gunz server <br>
+- #GunZNeverDie <br>
