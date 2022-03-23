@@ -11,7 +11,7 @@
 ![shop4](https://i.imgur.com/IfEfjWc.png)<br>
 5. File -> Save <br>
 ![shop5](https://i.imgur.com/0uCWQju.png)<br>
-6. Replace MatchServer -> 'Shop.xml' ('not in system.mrs by bad') 🤣 <br>
+6. Replace MatchServer(folder) -> 'Shop.xml' ('not in system.mrs my bad') 🤣 <br>
 ![shop6](https://i.imgur.com/JsjeBuZ.png)<br>
 
 
