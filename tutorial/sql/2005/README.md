@@ -21,3 +21,12 @@
 ![sql7](https://i.imgur.com/E21KrtO.png)<br>
 8. Completed!<br>
 ![sql8](https://i.imgur.com/7kKc8R5.png)<br>
+
+<b>[Login into SQL Server 2005]</b><br>
+1. Check your Username<br>
+![sqlserver](https://i.imgur.com/3LhjlMK.png)<br>
+2. Authentication -> SQL Server Authentication<br>
+![sqlserver2](https://i.imgur.com/yt6H207.png) <br>
+3. Login: SA - Password: YOURPWD<br>
+4. Press -> Remember Password -> Connect<br>
+![sqlserver3](https://i.imgur.com/cnBXCSW.png)<br>
