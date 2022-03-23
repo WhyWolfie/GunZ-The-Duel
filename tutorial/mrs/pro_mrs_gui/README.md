@@ -1,6 +1,7 @@
 <b> [Pro MRS GUI Encryption] </b> <br>
 [Files you need] <br>
 - https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/Tools/MRS/MRS_GUI.zip <br>
+- system.mrs (original file from the client 1.5)
 
 1. Open MRS_GUI.exe <br>
 ![gui](https://i.imgur.com/spTW4ME.png)<br>
@@ -20,10 +21,10 @@
 10. generated 'system.mrs' -> remove 'system' folder <br>
 11. try now too 'Decompile' system.mrs again (wont work coz encrypted now) <br>
 ![gui8](https://i.imgur.com/G4D2kad.png)<br> 
-12. Click on 'Decompile (Encrypted MRS)
+12. Click on 'Decompile (Encrypted MRS) <br>
 ![gui9](https://i.imgur.com/iisd4uv.png) <br>
 
-<b> Well done you did it :) </b>
+<b> Well done you did it :) </b> <br>
 
 
 - Credits to Yuri Lopes (Ryokusei) Writting this tool~
