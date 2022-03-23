@@ -19,8 +19,23 @@
 ![sqll6](https://i.imgur.com/tUPCNbC.png)<br>
 7. Press -> Next > <br>
 ![sqll7](https://i.imgur.com/MGPweUL.png)<br>
-
-
+8. Fill in your name or Skip -> Next > <br>
+![sqll8](https://i.imgur.com/rx3lNEj.png) <br>
+9. Press -> Next > <br>
+![sqll9](https://i.imgur.com/1Weh7Y0.png) <br>
+10. Turn on Mixed Mode -> Enter Your Password -> Next >
+![sqll10](https://i.imgur.com/Uh9UfGd.png) <br>
+11. Press -> Next > <br>
+![sqll11](https://i.imgur.com/FuCHRJ1.png) <br>
+12. Press -> Next > <br>
+![sqll12](https://i.imgur.com/j5Jt4A5.png) <br>
+13. Press -> Install <br>
+![sqll13](https://i.imgur.com/m3LJNki.png) <br>
+14. Press -> Next >> <br>
+![sqll14](https://i.imgur.com/j6tKAq1.png) <br>
+15. Last time press -> Finish <br>
+[sqll15](https://i.imgur.com/Q89l2fx.png) <br>
+SQL Server Installed!
 
 <b>[Setup - SQL Management Studio Express]</b><br>
 1. Click on Next ><br>
@@ -39,6 +54,7 @@
 ![sql7](https://i.imgur.com/E21KrtO.png)<br>
 8. Completed!<br>
 ![sql8](https://i.imgur.com/7kKc8R5.png)<br>
+SQL Management Studio Express Installed!
 
 <b>[Login into SQL Server 2005]</b><br>
 1. Check your Username<br>
