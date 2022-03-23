@@ -103,9 +103,12 @@ SQL Management Studio Express Installed!<br>
 
 <b>[Setup connection of the server]</b>
 1. find 'dbo.ServerStatus' -> Open Table <br>
+![server](https://i.imgur.com/OD97okS.png)<br>
 2. Fill in the table <br>
-3. ServerID: 1 - CurrPlayer: 0 - MaxPlayer: 50 (ur choice) - Time: 3/23/2022 12:00:00 AM - IP: 127.0.0.1 (localhost) - Port: 6000 - ServerName: GunZ <br>
-3-2. Opened: 1 - Type: 4 - AgentIP: 127.0.0.1 -> Press other table and close it <br>
+![server2](https://i.imgur.com/CUcfGn1.png)<br>
+3. ServerID: 1 - CurrPlayer: 0 - MaxPlayer: 50 (ur choice) - Time: 3/23/2022 12:00:00 AM - IP: 127.0.0.1 (localhost) - Port: 6000 <br>
+3-2. Opened: 1 - Type: 4 - AgentIP: 127.0.0.1 - ServerName: GunZ -> Press other table and close it <br>
+![server3](https://i.imgur.com/xCwPjij.png)<br>
 4. Well done your server is now created 🙃 <br>
 
 
