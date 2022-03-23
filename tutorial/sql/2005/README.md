@@ -4,6 +4,24 @@
 - Alternative SQL Server/Express(2005) Link: https://archive.org/details/SQLEXPR (both files)
 - .NET Framework 2.0: https://www.microsoft.com/en-US/download/details.aspx?id=16614 (If you cant install)
 
+<b>[Setup - SQL Server Express]</b><br>
+1. Press Setup -> Extracting Files <br>
+![sqll](https://i.imgur.com/nl9KbWF.png)<br>
+2. Press -> Yes <br>
+![sqll2](https://i.imgur.com/PyEKOnf.png)<br>
+3. Click on -> I accept the licensing terms and conditions -> Next ><br>
+![sqll3](https://i.imgur.com/XmYFKhS.png)<br>
+4. Press -> Install <br>
+![sqll4](https://i.imgur.com/FPKqk4X.png)<br>
+5. Press -> Next > <br>
+[!sqll5](https://i.imgur.com/uMBQXIh.png)<br>
+6. Press -> Next > <br>
+[!sqll6](https://i.imgur.com/tUPCNbC.png)<br>
+7. Press -> Next > <br>
+[!sqll7](https://i.imgur.com/MGPweUL.png)<br>
+
+
+
 <b>[Setup - SQL Management Studio Express]</b><br>
 1. Click on Next ><br>
 ![sql](https://i.imgur.com/AV00KFi.png)<br>
