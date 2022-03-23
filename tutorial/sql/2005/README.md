@@ -14,11 +14,11 @@
 4. Press -> Install <br>
 ![sqll4](https://i.imgur.com/FPKqk4X.png)<br>
 5. Press -> Next > <br>
-[!sqll5](https://i.imgur.com/uMBQXIh.png)<br>
+![sqll5](https://i.imgur.com/uMBQXIh.png)<br>
 6. Press -> Next > <br>
-[!sqll6](https://i.imgur.com/tUPCNbC.png)<br>
+![sqll6](https://i.imgur.com/tUPCNbC.png)<br>
 7. Press -> Next > <br>
-[!sqll7](https://i.imgur.com/MGPweUL.png)<br>
+![sqll7](https://i.imgur.com/MGPweUL.png)<br>
 
 
 
