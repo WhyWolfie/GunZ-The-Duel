@@ -34,6 +34,9 @@ GunZ The Duel Releases <br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
 
+<b>[fixes]</b>
+- Enter login matchserver crash(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
+
 <b>[official]</b><br>
 - https://gz.masanggames.co.kr/
 - https://store.steampowered.com/app/242720/GunZ_2_The_Second_Duel/
