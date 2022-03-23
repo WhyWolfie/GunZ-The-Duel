@@ -10,6 +10,9 @@
 - GTKRadiant: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/gtkradiant
 - GMD: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/debug/GMD
 
+<b>[Portforward]</b><br>
+Port: 80 (webserver), 9000,6000,7777,7778,7779,5100,8900 (MatchServer/Locator/Agent)<br>
+
 <b>[Client]</b><br>
 - Zitem.xml -> Shop.xml generator(lazyway): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
 - Map Generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
