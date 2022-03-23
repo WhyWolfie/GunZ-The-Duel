@@ -84,7 +84,7 @@ GunZ The Duel Releases <br>
 - https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
 - https://forum.ragezone.com/f311/ (gunz forum - still active)
 - https://files.trinityent.net/
-
+- https://gunz.chat / https://discord.com/invite/xMWZxZSmwq (active community)
 
 credits too everyone who work on it! <br>
 My goal is to make gunz alive again and new people to learn how to make your own gunz server <br>
