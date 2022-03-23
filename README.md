@@ -2,10 +2,13 @@
 GunZ The Duel Releases <br>
 ![gunz logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
 
-<b>Want to learn GunZ ?</b>
+<b>Want To Learn GunZ ?</b>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
 
-<b>[githubs]</b> <br>
+<b>How To Make GunZ (Client/Server/DB)</b> <br>
+- https://www.youtube.com/watch?v=qTIk722vrKE <br>
+
+<b>[github]</b> <br>
 - https://github.com/Asunaya/refinedgunz <br>
 - https://github.com/mataha/gunz-replay <br>
 - https://github.com/x1nixmzeng/z3ResEx <br>
