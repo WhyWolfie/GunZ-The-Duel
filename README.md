@@ -37,6 +37,7 @@ GunZ The Duel Releases <br>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
 - Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
 - Gunz2: https://files.trinityent.net/?dir=GunZ%202
+- Zer0nis (clean version: 1.5): https://github.com/ZER0NIS/Gunz-Base
 
 <b>[tutorials]</b>
 - Movements: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
