@@ -24,4 +24,5 @@
 11. Generated a new file 'system.mrs' so it's encrypted with the new .MRS encryption <br>
 12. If you tried to 'Decompile Selected Item(s)' it would not work (so you know it's encrypted) <br>
 <b> If that works, you can now change all files from the client with new encryption code, one by one file </b> <br>
-  <b>Credits too Gunblade (gunnycrypt)</b><br>
+ 
+- <b>Credits too Gunblade (gunnycrypt)</b><br>
