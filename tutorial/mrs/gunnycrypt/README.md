@@ -1,6 +1,9 @@
 <b> [Gunnycrypt encryption/decryption] </b><br>
 <b> Server protection of the files </b> <br>
 
+[Video]<br>
+- https://www.youtube.com/watch?v=qXGwBLxi2Iw
+
 [Files you need]<br>
 <b> https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/Tools/MRS/MRSDecompiler%20Ultimate.zip <b/> <br>
 <b> https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/Tools/MRS/GunnyCrypt_v1.zip <b/> <br>
