@@ -34,8 +34,8 @@
 14. Press -> Next >> <br>
 ![sqll14](https://i.imgur.com/j6tKAq1.png) <br>
 15. Last time press -> Finish <br>
-[sqll15](https://i.imgur.com/Q89l2fx.png) <br>
-SQL Server Installed!
+![sqll15](https://i.imgur.com/Q89l2fx.png) <br>
+SQL Server Installed!<br>
 
 <b>[Setup - SQL Management Studio Express]</b><br>
 1. Click on Next ><br>
@@ -54,7 +54,7 @@ SQL Server Installed!
 ![sql7](https://i.imgur.com/E21KrtO.png)<br>
 8. Completed!<br>
 ![sql8](https://i.imgur.com/7kKc8R5.png)<br>
-SQL Management Studio Express Installed!
+SQL Management Studio Express Installed!<br>
 
 <b>[Login into SQL Server 2005]</b><br>
 1. Check your Username<br>
