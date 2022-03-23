@@ -6,8 +6,9 @@
 <b>[2: Setup of ODBC] </b> <br>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/odbc
 
-<b>[.MRS Files Decompile/Compile]</b> <br>
-- https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs
+<b>[Client]</b>
+- Zitem.xml -> Shop.xml generator(lazyway): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
+- .MRS Files Decompile/Compile: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs
 
 <b>[Others]</b>
 
