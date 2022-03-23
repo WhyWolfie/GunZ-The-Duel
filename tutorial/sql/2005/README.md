@@ -5,6 +5,12 @@
 - .NET Framework 2.0: https://www.microsoft.com/en-US/download/details.aspx?id=16614 (If you cant install)
 - Database (GunZ 1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/1.5
 
+[Include]
+- SQL Server installation
+- Database Setup
+- Account Setup
+- Server Setup (localhost)
+
 <b>[Setup - SQL Server Express]</b><br>
 1. Press Setup -> Extracting Files <br>
 ![sqll](https://i.imgur.com/nl9KbWF.png)<br>
