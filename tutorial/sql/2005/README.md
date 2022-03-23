@@ -65,3 +65,33 @@ SQL Management Studio Express Installed!<br>
 3. Login: SA - Password: YOURPWD<br>
 4. Press -> Remember Password -> Connect<br>
 ![sqlserver3](https://i.imgur.com/cnBXCSW.png)<br>
+
+<b>[Setup Database]</b>
+1. Database -> New Database... <br>
+![db](https://i.imgur.com/oVtXpHe.png) <br>
+2. Database name: 'GunzDB' -> Press on Ok <br>
+![db2](https://i.imgur.com/jMDOs5p.png) <br>
+3. Database created 'GunzDB' <br>
+![db3](https://i.imgur.com/zqavfs4.png) <br>
+4. Extract 'GunZDBFixed.zip' drag GunZDBFixed.sql in Microsoft SQL Server Management Studio Express <br>
+![db4](https://i.imgur.com/K2nN6Vg.png) <br>
+5. Set on 'GunzDB' -> After click on 'Execute' will load for a few mins
+6. You will see this message 'Msg 3701, Level 11, State 5, Line 21' few 1 row (s) affected, so it's loaded
+![db5](https://i.imgur.com/Y58QyOU.png) <br>
+
+<b>[Setup Account]</b><br>
+1. GunzDB -> Tables -> dbo.Account<br>
+![acc](https://i.imgur.com/A3G5jVp.png)<br>
+2. right mouse on 'dbo.Account' -> Open Table <br>
+![acc2](https://i.imgur.com/i5TGRmB.png)<br>
+3. Fill in the tables
+4. UserID: Test - UGradeID 255 - PGradeID 0 - RegDate: 3/23/2022 12:00:00 AM - Name: Test
+5. Then you click on the other table so you now have a line
+6. Close the tab (dbo.Account) -> Reopen (dbo.Account)
+7. Look at 'AID' ID and remember that ID for me it is '2'
+8. Close the tab (dbo.Account) 
+9. Scroll down if you find (dbo.Login) -> Open Table 
+10. UserID: Test - AID (ur ID for me it was '2') - Password: 123(ur choice) - lastconndate: 3/23/2022 12:00:00 AM - 127.0.0.1 (localhost)
+11. Close the tab (dbo.Login)
+
+
