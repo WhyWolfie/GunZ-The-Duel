@@ -3,6 +3,7 @@
 - SQL Server Express(x64): https://download.cnet.com/Microsoft-SQL-Server-2005-Express-Edition-Service-Pack-4/3001-10254_4-75452276.html
 - Alternative SQL Server/Express(2005) Link: https://archive.org/details/SQLEXPR (both files)
 - .NET Framework 2.0: https://www.microsoft.com/en-US/download/details.aspx?id=16614 (If you cant install)
+- Database (GunZ 1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/1.5
 
 <b>[Setup - SQL Server Express]</b><br>
 1. Press Setup -> Extracting Files <br>
