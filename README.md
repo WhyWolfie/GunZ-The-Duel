@@ -66,6 +66,7 @@ GunZ The Duel Releases <br>
 - oldschoolgunz: https://www.oldschoolgunz.com/
 - gunzduels: https://gunzduels.com/
 - enigmagunz: https://eggunz.com/
+- revengegunz(brazil): https://www.revengegunz.com.br/
 
 <b>[includes]</b><br>
 - [maps | 200+]<br>
