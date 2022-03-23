@@ -17,7 +17,7 @@
 ![sql5](https://i.imgur.com/mkJPI3F.png)<br>
 6. Press -> Yes <br>
 ![sql6](https://i.imgur.com/IUC58sF.png)<br>
-7. Waiting...
+7. Waiting...<br>
 ![sql7](https://i.imgur.com/E21KrtO.png)<br>
-8. Completed!
+8. Completed!<br>
 ![sql8](https://i.imgur.com/7kKc8R5.png)<br>
