@@ -36,6 +36,7 @@ GunZ The Duel Releases <br>
 
 <b>[fixes]</b>
 - Enter login matchserver crash(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
+- Cant buy db fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/fixes/cant%20buy(1.5)
 
 <b>[official]</b><br>
 - https://gz.masanggames.co.kr/
