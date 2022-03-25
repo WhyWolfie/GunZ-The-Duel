@@ -8,5 +8,5 @@
       if(MEvent::GetRButtonState()) return;
 
 [video] <br>
-
+right mouse -> slash </br>
 https://www.youtube.com/watch?v=TRWjoJX5A3A
