@@ -1,4 +1,4 @@
-<b>[xampp installation tutorial</b><br>
+<b>[xampp installation tutorial]</b><br>
 [files]<br>
   - https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/1.7.3/xampp-win32-1.7.3.exe/download (xampp-win32-1.7.3.exe)
   - alternative: https://archive.org/details/xampp-win32-1.7.3
