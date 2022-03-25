@@ -9,9 +9,9 @@
 3. Start -> XAMPP Control Panel
 4. Install the apache, do not start the apache yet!
 5. Go to your php.ini location at: C:\xampp\php\php.ini
-6. Find short_open_tag till you see this : Short_open_tag = Off -> On
-7. Find php_mssql.dll till you see this : ;extension=php_mssql.dll -> extension=php_mssql.dll
-8. If you are using PDO MSSQL find this : ;extension=php_pdo_mssql.dll -> extension=php_pdo_mssql.dll
+6. Find short_open_tag till you see this: Short_open_tag = Off -> On
+7. Find php_mssql.dll till you see this, remove ';': ;extension=php_mssql.dll -> extension=php_mssql.dll
+8. If you are using PDO MSSQL find this, remove ';': ;extension=php_pdo_mssql.dll -> extension=php_pdo_mssql.dll
 9. Start the apache!
 10. Go to your htdocs located at : C:\xampp\htdocs
 11. Make a file called 'index.php' (without the '')
