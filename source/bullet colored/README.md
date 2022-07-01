@@ -1,5 +1,6 @@
+<b> bullet colored </b> <br>
+![map](https://i.imgur.com/mMVqkfp.png) <br>
 
-<b> bullet colored </b>
 [search these in ZCombatInterface.cpp]
 
       MMatchCharItemParts nParts = pCharacter->GetItems()->GetSelectedWeaponParts();
@@ -41,9 +42,14 @@
 [I forgot to tell you that declare nMaxCurrBullet in ZCharacter for "struct ZCharacterStatus"
 example]
 
-[example]
+[example] <br>
+
       int nMaxCurrBullet 
       
       nMaxCurrBullet(0),
+      
+      
+      
+<b> Credits too Jorklenis2 </b>
       
 
