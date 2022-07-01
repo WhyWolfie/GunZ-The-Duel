@@ -457,14 +457,210 @@ Replace with:
             break; 
         } 
 
+14. CSCommon > MClient.cpp
+Find:
+        
+          case MC_LOCAL_ECHO:
+            if(pCommand->GetParameter(szMessage, 0, MPT_STR, sizeof(szMessage))==false) break;
+            OutputMessage(szMessage, MZMOM_LOCALREPLY);
+          break; 
+
+Replace with:
+
+          case MC_LOCAL_ECHO:
+            //if(pCommand->GetParameter(szMessage, 0, MPT_STR, sizeof(szMessage))==false) break;
+            //OutputMessage(szMessage, MZMOM_LOCALREPLY);
+          break; 
 
 
+15. CSCommon > MMatchServer__OnCommand.cpp
+Find:
+
+         case MC_MATCH_LOGIN:
+            {
+                char szUserID[ MAX_USERID_STRING_LEN ];
+                char szPassword[ MAX_USER_PASSWORD_STRING_LEN ];
+                int nCommandVersion = 0;
+                unsigned long nChecksumPack = 0;
+                if (pCommand->GetParameter(szUserID, 0, MPT_STR, MAX_USERID_STRING_LEN )==false) break;
+                if (pCommand->GetParameter(szPassword, 1, MPT_STR, MAX_USER_PASSWORD_STRING_LEN )==false) break;
+                if (pCommand->GetParameter(&nCommandVersion, 2, MPT_INT)==false) break;
+                if (pCommand->GetParameter(&nChecksumPack, 3, MPT_UINT)==false) break;
+                MCommandParameter* pLoginParam = pCommand->GetParameter(4);
+                if (pLoginParam->GetType() != MPT_BLOB) break;
+                void *pLoginBlob = pLoginParam->GetPointer();
+                if( NULL == pLoginBlob )
+                {
+                    // Hacker°¡ BlobÀÇ Å©±â¸¦ Á¶Á¤ÇÏ¸é MCommand¸¦ ¸¸µé¶§ Blobµ¥ÀÌÅÍ°¡ NULLÆ÷ÀÎÅÍ¸¦ °¡Áú¼ö ÀÖ´Ù.
+                    break;
+                }
+                char *szEncryptMD5Value = (char *)MGetBlobArrayElement(pLoginBlob, 0);
+                
+                OnMatchLogin(pCommand->GetSenderUID(), szUserID, szPassword, nCommandVersion, nChecksumPack, szEncryptMD5Value);
+            }
+           break; 
+
+Replace with:
+
+        case MC_MATCH_LOGIN:
+            {
+                char szUserID[ MAX_USERID_STRING_LEN ];
+                char szPassword[ MAX_USER_PASSWORD_STRING_LEN ];
+                int nCommandVersion = 0;
+                unsigned long nChecksumPack = 0;
+                if (pCommand->GetParameter(szUserID, 0, MPT_STR, MAX_USERID_STRING_LEN )==false) break;
+                if (pCommand->GetParameter(szPassword, 1, MPT_STR, MAX_USER_PASSWORD_STRING_LEN )==false) break;
+                if (pCommand->GetParameter(&nCommandVersion, 2, MPT_INT)==false) break;
+                if (pCommand->GetParameter(&nChecksumPack, 3, MPT_UINT)==false) break;
+                MCommandParameter* pLoginParam = pCommand->GetParameter(4);
+                if (pLoginParam->GetType() != MPT_BLOB) break;
+                void *pLoginBlob = pLoginParam->GetPointer();
+                if( NULL == pLoginBlob )
+                {
+                    // Hacker°¡ BlobÀÇ Å©±â¸¦ Á¶Á¤ÇÏ¸é MCommand¸¦ ¸¸µé¶§ Blobµ¥ÀÌÅÍ°¡ NULLÆ÷ÀÎÅÍ¸¦ °¡Áú¼ö ÀÖ´Ù.
+                    break;
+                }
+                
+                // Patch
+                if (MGetBlobArraySize(pLoginBlob) != (8 + MAX_MD5LENGH)) {
+                    break;
+                }
+                
+                char *szEncryptMD5Value = (char *)MGetBlobArrayElement(pLoginBlob, 0);
+                
+                OnMatchLogin(pCommand->GetSenderUID(), szUserID, szPassword, nCommandVersion, nChecksumPack, szEncryptMD5Value);
+            }
+            break; 
+            
+16. Gunz > ZGame.cpp
+Find:
+
+        int ZGame::SelectSlashEffectMotion(ZCharacter* pCharacter)
+        {
+                if(pCharacter==NULL) return SEM_None; 
+            
+Replace with:
+
+        int ZGame::SelectSlashEffectMotion(ZCharacter* pCharacter)
+        {
+            if(pCharacter==NULL || pCharacter->GetSelectItemDesc() == NULL) return SEM_None;             
+            
+            
+17. 27 are all located within CSCommon > MMatchCDMgr.cpp            
+Find: 
+
+        strSQL.Format(g_szDB_GET_LOGININFO, szUserID); 
+       
+Replace with:
+
+        string strUserID = m_DBFilter.Filtering( string(szUserID) );
+        strSQL.Format(g_szDB_GET_LOGININFO, &strUserID[0]); 
+   
+
+18.
+Find: 
+
+        strSQL.Format(g_szDB_GET_LOGININFO_NETMARBLE2, szUserID, poutPassword); 
+        
+Replace with:
+
+        string strUserID = m_DBFilter.Filtering( string(szUserID) );
+        strSQL.Format(g_szDB_GET_LOGININFO_NETMARBLE2, &strUserID[0], poutPassword); 
+
+19.
+Find:
+
+        strSQL.Format(g_szDB_CREATE_ACCOUNT, szUserID, szPassword, nCert, szName, nAge, nSex); 
+
+Replace with:
+
+        string strUserID = m_DBFilter.Filtering( string(szUserID) );
+        string strPassword = m_DBFilter.Filtering( string(szPassword) );
+        string strName = m_DBFilter.Filtering( string(szName) );
+        strSQL.Format(g_szDB_CREATE_ACCOUNT, &strUserID[0], &strPassword[0], nCert, &strName[0], nAge, nSex);   
+
+20.
+Find:
+
+        strSQL.Format(g_szDB_CREATE_ACCOUNT_NETMARBLE, szUserID, szPassword, nAge, nSex, nCCode); 
 
 
+Replace with:
+        
+         string strUserID = m_DBFilter.Filtering( string(szUserID) );
+         string strPassword = m_DBFilter.Filtering( string(szPassword) );    
+         strSQL.Format(g_szDB_CREATE_ACCOUNT_NETMARBLE, &strUserID[0], &strPassword[0], nAge, nSex, nCCode);
+
+21.
+Find:
+
+        strSQL.Format( g_szCheckDuplicateCharName, szNewName ); 
+        
+Replace with:
+
+        string strNewName = m_DBFilter.Filtering( string(szNewName) );
+        strSQL.Format( g_szCheckDuplicateCharName, &strNewName[0] ); 
 
 
+22.
+Find:
 
+        strSQL.Format(g_szDB_CREATE_CHAR, nAID, nCharIndex, szNewName,  nSex, nHair, nFace, nCostume); 
+        
+Replace with:
 
+        string strNewName = m_DBFilter.Filtering( string(szNewName) );
+        strSQL.Format(g_szDB_CREATE_CHAR, nAID, nCharIndex, &strNewName[0],  nSex, nHair, nFace, nCostume); 
+
+23.
+Find:
+
+        strSQL.Format(g_szDB_DELETE_CHAR, nAID, nCharIndex, szCharName); 
+        
+Replace with:
+
+        string strCharName = m_DBFilter.Filtering( string(szCharName) );
+        strSQL.Format(g_szDB_DELETE_CHAR, nAID, nCharIndex, &strCharName[0]); 
+
+24.
+Find:
+
+        strSQL.Format(g_szDB_UPDATE_LAST_CONNDATE, szIP, szUserID); 
+
+Replace with:
+
+        string strUserID = m_DBFilter.Filtering( string(szUserID) );
+        strSQL.Format(g_szDB_UPDATE_LAST_CONNDATE, szIP, &strUserID[0]); 
+
+25.
+Find:
+
+        strSQL.Format(g_szDB_CREATE_CLAN, szClanName, nMasterCID, nMember1CID, nMember2CID, nMember3CID, nMember4CID); 
+
+Replace with:
+
+        string strClanName = m_DBFilter.Filtering( string(szClanName) );
+        strSQL.Format(g_szDB_CREATE_CLAN, &strClanName[0], nMasterCID, nMember1CID, nMember2CID, nMember3CID, nMember4CID); 
+
+26.
+Find:
+
+        strSQL.Format(g_szDB_RESERVE_CLOSE_CLAN, nCLID, szClanName, nMasterCID, strDeleteDate.c_str() ); 
+
+Replace with:
+
+        string strClanName = m_DBFilter.Filtering( string(szClanName) );
+        strSQL.Format(g_szDB_RESERVE_CLOSE_CLAN, nCLID, &strClanName[0], nMasterCID, strDeleteDate.c_str() ); 
+
+27.
+Find:
+
+        strSQL.Format(g_szDB_EXPEL_CLAN_MEMBER, nCLID, nAdminGrade, szMember); 
+
+Replace with:
+
+        string strMember = m_DBFilter.Filtering( string(szMember) );
+        strSQL.Format(g_szDB_EXPEL_CLAN_MEMBER, nCLID, nAdminGrade, &strMember[0]); 
 
 
 Credits to: Solaire
