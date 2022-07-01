@@ -1,4 +1,7 @@
 <b> Players Online Channel </b>
+
+![icon](https://i.imgur.com/2FB20rg.png) <br>
+
 [Search: struct MCHANNELLISTNODE]
     
     int nOnlinePlayers;
