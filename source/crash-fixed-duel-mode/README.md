@@ -14,3 +14,6 @@ New Code:
 
      if (pObserver && pObserver->IsVisible() && pObserver->GetTargetCharacter()->GetUID() != MUID(0, 0))
         uidTarget = pObserver->GetTargetCharacter()->GetUID();
+
+
+Credits to: Orby
