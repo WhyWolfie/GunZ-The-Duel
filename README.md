@@ -2,6 +2,9 @@
 GunZ The Duel Releases <br>
 ![gunz logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
 
+<b> Have something important to upload on my Github project, you can always ask questions and add me on Discord. </b>
+- Discord: Duzopy#5653
+
 <b>Want To Learn GunZ ?</b>
 - https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
 
@@ -39,6 +42,8 @@ GunZ The Duel Releases <br>
 - Gunz2: https://files.trinityent.net/?dir=GunZ%202
 - Zer0nis (clean version: 1.5): https://github.com/ZER0NIS/Gunz-Base
 - Jetman (clean version: 1.5): https://github.com/Jetman823/Gunz1.5
+- Jur13n (clean/edited version 1.5) https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw
+
 
 <b>[tutorials]</b>
 - Movements: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
