@@ -37,18 +37,17 @@ Allows a hacker to crash another player's client.
 17 - 27 SQL exploits
 Allows a hacker to take full control over your database.
 
-
 1. CSCommon > MServer.cpp
 Find:
 
-    case MC_NET_CLEAR:
-        {
-            MUID uid;
-            if (pCommand->GetParameter(&uid, 0, MPT_UID)==false) break;
-            OnNetClear(uid);
-            return true;
-        }
-        break; 
+        case MC_NET_CLEAR:
+            {
+                MUID uid;
+                if (pCommand->GetParameter(&uid, 0, MPT_UID)==false) break;
+                OnNetClear(uid);
+                return true;
+            }
+            break; 
 
 Replace:
 
