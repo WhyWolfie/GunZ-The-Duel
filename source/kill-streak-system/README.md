@@ -2,18 +2,18 @@ I made a simple Kill Streaks and it works very well, since I'm not going to use 
 Not a 100% finished code but it serves as a basis for you to complement your form.
 
 
-Open: MSharedCommandTable.cpp
+MSharedCommandTable.cpp
 ----------------------------------------------------
 
       C(MC_PEER_KILL_STREAKS, "Peer.Kill.Streaks", "Kill Streaks System", MCDT_PEER2PEER)
           P(MPT_STR, "szName")
           P(MPT_INT, "nStreaks")
 
-Open: MSharedCommandTable.h
+MSharedCommandTable.h
 -------------------------------------------------   
       #define MC_PEER_KILL_STREAKS                    50000
 
-Open: ZGame.cpp
+ZGame.cpp
 -------------------------------------------------   
       case MC_PEER_KILL_STREAKS:
           {
@@ -60,16 +60,16 @@ Line: 5883
         ZPostKillStreaks(szAttacker, nStreaks);
       }
 
-Open: ZGlobal.cpp
+ZGlobal.cpp
 ---------------------------
     int nStreaks = 0;
 
 
-Open: ZGlobal.h
+ZGlobal.h
 ------------------------
     extern int nStreaks;
 
-Open: ZPost.h
+ZPost.h
 ---------------------
     inline void ZPostKillStreaks(const char* szName, int nStreaks)
     {
