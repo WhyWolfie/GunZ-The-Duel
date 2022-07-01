@@ -164,25 +164,261 @@ Replace with:
 
 5. CSCommon > MMatchServer__OnCommand.cpp
 
+Find:
+
+        case MC_MATCH_REGISTERAGENT:
+            {
+                char szIP[128];
+                int nTCPPort, nUDPPort;
+
+                if (pCommand->GetParameter(&szIP, 0, MPT_STR, sizeof(szIP) ) == false) break;
+                if (pCommand->GetParameter(&nTCPPort, 1, MPT_INT) == false) break;
+                if (pCommand->GetParameter(&nUDPPort, 2, MPT_INT) == false) break;
+
+                OnRegisterAgent(pCommand->GetSenderUID(), szIP, nTCPPort, nUDPPort);
+            } 
+
+Replace with:
+
+        case MC_MATCH_REGISTERAGENT:
+            {
+                char szIP[128];
+                int nTCPPort, nUDPPort;
+
+                if (pCommand->GetParameter(&szIP, 0, MPT_STR, sizeof(szIP) ) == false) break;
+                if (pCommand->GetParameter(&nTCPPort, 1, MPT_INT) == false) break;
+                if (pCommand->GetParameter(&nUDPPort, 2, MPT_INT) == false) break;
+
+                // Not the best way to patch, but working for now
+                if (strstr(szIP, "%")) {
+                    break;
+                }
+                
+                OnRegisterAgent(pCommand->GetSenderUID(), szIP, nTCPPort, nUDPPort);
+            } 
+
+6. CSCommon > MMatchServer__OnCommand.cpp
+Find:
+
+        case MC_NET_BANPLAYER_FLOODING :
+            {
+                MUID uidPlayer;
+                
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                if (MGetServerConfig()->IsUseBlockFlooding())
+                {
+                    MMatchObject* pObj = GetObject( uidPlayer );
+                    if( pObj && pObj->GetDisconnStatusInfo().GetStatus() == MMDS_CONNECTED)
+                    {
+                        if( pObj->GetAccountName() ) {
+                            LOG(LOG_PROG,"Ban Player On Flooding - (MUID:%d%d, ID:%s)"
+                                , uidPlayer.High, uidPlayer.Low, pObj->GetAccountName());
+                        } else {
+                            LOG(LOG_PROG,"Ban Player On Flooding - (MUID:%d%d, ID:%s)"
+                                , uidPlayer.High, uidPlayer.Low);
+                        }
+                        
+                        pObj->DisconnectHacker( MMHT_COMMAND_FLOODING );
+                    }
+                    else
+                    {
+                        LOG(LOG_PROG,"Ban Player On Flooding - Can't Find Object");
+                    }
+                }
+            }
+            break; 
+
+Replace with:
+
+        case MC_NET_BANPLAYER_FLOODING :
+            {
+                /*MUID uidPlayer;
+                
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                if (MGetServerConfig()->IsUseBlockFlooding())
+                {
+                    MMatchObject* pObj = GetObject( uidPlayer );
+                    if( pObj && pObj->GetDisconnStatusInfo().GetStatus() == MMDS_CONNECTED)
+                    {
+                        if( pObj->GetAccountName() ) {
+                            LOG(LOG_PROG,"Ban Player On Flooding - (MUID:%d%d, ID:%s)"
+                                , uidPlayer.High, uidPlayer.Low, pObj->GetAccountName());
+                        } else {
+                            LOG(LOG_PROG,"Ban Player On Flooding - (MUID:%d%d, ID:%s)"
+                                , uidPlayer.High, uidPlayer.Low);
+                        }
+                        
+                        pObj->DisconnectHacker( MMHT_COMMAND_FLOODING );
+                    }
+                    else
+                    {
+                        LOG(LOG_PROG,"Ban Player On Flooding - Can't Find Object");
+                    }
+                }*/
+            }
+            break; 
+
+7. CSCommon > MMatchServer__OnCommand.cpp
+Find:
+
+        case MC_MATCH_DUELTOURNAMENT_REQUEST_JOINGAME :
+            {
+                MUID uidPlayer;
+                MDUELTOURNAMENTTYPE nType;
+
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                pCommand->GetParameter(&nType, 1, MPT_INT);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() )    {
+                    ResponseDuelTournamentJoinChallenge(uidPlayer, nType);
+                }
+
+            }
+            break; 
+
+Replace with:
+
+        case MC_MATCH_DUELTOURNAMENT_REQUEST_JOINGAME :
+            {
+                //MUID uidPlayer;
+                MDUELTOURNAMENTTYPE nType;
+
+                //pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                pCommand->GetParameter(&nType, 1, MPT_INT);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() )    {
+                    ResponseDuelTournamentJoinChallenge(pCommand->GetSenderUID(), nType);
+                }
+
+            }
+            break;
+
+
+8. CSCommon > MMatchServer__OnCommand.cpp
+Find: 
+
+        case MC_MATCH_DUELTOURNAMENT_REQUEST_CANCELGAME :
+            {
+                MUID uidPlayer;
+                MDUELTOURNAMENTTYPE nType;
+
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                pCommand->GetParameter(&nType, 1, MPT_INT);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() )    {
+                    ResponseDuelTournamentCancelChallenge(uidPlayer, nType);
+                }
+            }
+            break; 
+
+Replace with:
+
+        case MC_MATCH_DUELTOURNAMENT_REQUEST_CANCELGAME :
+            {
+                //MUID uidPlayer;
+                MDUELTOURNAMENTTYPE nType;
+
+                //pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                pCommand->GetParameter(&nType, 1, MPT_INT);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() )    {
+                    ResponseDuelTournamentCancelChallenge(pCommand->GetSenderUID(), nType);
+                }
+            }
+            break; 
+            
+            
+9. CSCommon > MMatchServer__OnCommand.cpp
+Find: 
+
+       case MC_MATCH_DUELTOURNAMENT_REQUEST_SIDERANKING_INFO :
+            {
+                MUID uidPlayer;
+
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() ){
+                    ResponseDuelTournamentCharSideRanking(uidPlayer);
+                }
+            }
+            break; 
+
+Replace with:
+
+        case MC_MATCH_DUELTOURNAMENT_REQUEST_SIDERANKING_INFO :
+            {
+                //MUID uidPlayer;
+
+                //pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() ){
+                    ResponseDuelTournamentCharSideRanking(pCommand->GetSenderUID());
+                }
+            }
+            break; 
+
+10. CSCommon > MMatchServer__OnCommand.cpp
+Find: 
+
+        case MC_MATCH_DUELTOURNAMENT_GAME_PLAYER_STATUS :
+            {
+                MUID uidPlayer;
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() ){
+                    ResponseDuelTournamentCharStatusInfo(uidPlayer, pCommand);
+                }
+            }
+            break; 
+
+Replace with: 
+
+            case MC_MATCH_DUELTOURNAMENT_GAME_PLAYER_STATUS :
+            {
+                //MUID uidPlayer;
+                //pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+                if( MGetServerConfig()->IsEnabledDuelTournament() ){
+                    ResponseDuelTournamentCharStatusInfo(pCommand->GetSenderUID(), pCommand);
+                }
+            }
+            break; 
+
+11. CSCommon > MMatchServer__OnCommand.cpp
+Find: 
+
+        case MC_MATCH_CHANNEL_REQUEST_PLAYER_LIST:
+            {
+                MUID uidPlayer, uidChannel;
+                int nPage;
+
+                pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                pCommand->GetParameter(&uidChannel, 1, MPT_UID);
+                pCommand->GetParameter(&nPage, 2, MPT_INT);
+
+                OnChannelRequestPlayerList(uidPlayer, uidChannel, nPage);
+            }
+            break; 
+            
+Replace with:
+
+        case MC_MATCH_CHANNEL_REQUEST_PLAYER_LIST:
+            {
+                MUID /*uidPlayer, */uidChannel;
+                int nPage;
+
+                //pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+                pCommand->GetParameter(&uidChannel, 1, MPT_UID);
+                pCommand->GetParameter(&nPage, 2, MPT_INT);
+
+                OnChannelRequestPlayerList(pCommand->GetSenderUID(), uidChannel, nPage);
+            }
+            break; 
+
+
+
 
 
 
 
 Credits to: Solaire
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
