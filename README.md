@@ -24,6 +24,7 @@ GunZ The Duel Releases <br>
 - https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ <br>
 - https://github.com/x1nixmzeng/ZPatchBuilder <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
+- https://github.com/emisandgunz/gunzcord <br>
 
 <b>[source]</b>
 - OldGunz(2007source): https://github.com/WhyWolfie/source2007
