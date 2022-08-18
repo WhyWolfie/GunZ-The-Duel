@@ -1,0 +1,510 @@
+/** Header Start **/
+#head_bg {
+  background: url(images/head_bg.png) repeat-x;
+  height: 166px;
+}
+#header {
+  background: url(images/header.png) no-repeat;
+  width: 900px;
+  height: 118px;
+  margin: 0 auto;
+}
+#logo {
+  background: url(images/logo.png) no-repeat;
+  width: 264px;
+  height: 80px;
+  position: relative;
+  top: 21px;
+}
+input[type="submit"] {
+   font: bold 11px/12px verdana,arial,serif;
+}
+/** End Of Header **/
+
+/** Navigation Start **/
+#nav {
+  background: url(images/nav.png) no-repeat;
+  width: 900px;
+  height: 40px;
+  margin: 0 auto;
+}
+#nav ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  width: 768px;
+  margin: 0 auto;
+  position: relative;
+  top: 1px;
+}
+#nav ul li {
+  float: left;
+}
+#nav ul li a {
+  background: url(images/button_bg.png) no-repeat;
+  width: 96px;
+  height: 37px;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 3px 2px 3px #000;
+}
+#nav ul li a:hover {
+  background: url(images/button_bg_over.png) no-repeat;
+  width: 96px;
+  height: 37px;
+  color: #00c012;
+}
+/** End Of Navigation **/
+
+/** Body Start **/
+#body {
+  width: 900px;
+  margin: 0 auto;
+}
+.tbl_title {
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: 3px 2px 3px #000;
+}
+#login {
+  background: url(images/login_bg.png) no-repeat;
+  width: 208px;
+  height: 185px;
+}
+.logbbg {
+  background: url(images/logbbg.png) no-repeat;
+  width: 133px;
+  height: 20px;
+  border: 0;
+  color: #a6a3a3;
+  display: block;
+  text-indent: 2px;
+  margin-top: 2px;
+}
+.login_button {
+  background: url(images/login_button.png) no-repeat;
+  width: 41px;
+  height: 20px;
+  display: block;
+  border: 0;
+  position: relative;
+  left: 0px;
+  float: right;
+}
+.login_button:hover {
+  background: url(images/login_button_over.png) no-repeat;
+  width: 41px;
+  height: 20px;
+  display: block;
+}
+#loginf {
+  background: url(images/loginf.png) no-repeat;
+  width: 180px;
+  height: 49px;
+  text-align: center;
+  text-shadow: 3px 2px 3px #000;
+}
+#loginf a {
+  color: #0fcb18;
+}
+#loginf a:hover {
+  color: #d34c1d;
+}
+#server_player_status {
+  background: url(images/server_player_status.png) no-repeat;
+  width: 400px;
+  height: 52px;
+  margin: 0 auto;
+  text-shadow: 3px 2px 3px #000;
+}
+.spsline {
+  height: 100%;
+  border-left: 1px solid #000;
+  border-right: 1px solid #434343;
+  margin: 0;
+  padding: 0;
+}
+#trailer {
+  background: url(images/tra_inf.png) no-repeat;
+  width: 207px;
+  height: 165px;
+}
+#links {
+  background: url(images/links.png) no-repeat;
+  width: 206px;
+  height: 179px;
+}
+#top5ranks {
+  background: url(images/top5ranks.png) no-repeat;
+  width: 451px;
+  height: 154px;
+  margin-top: 16px;
+}
+.rkslink a {
+  text-decoration: none;
+}
+.rkslink a:hover {
+  text-decoration: underline;
+}
+.
+#top5pr_title {
+  position: relative;
+  left: 12px;
+  top: 14px;
+  font-weight: bold;
+  text-shadow: 3px 2px 3px #000;
+}
+#news_updates_head {
+  background: url(images/tbl_head.png) no-repeat;
+  width: 451px;
+  height: 41px;
+}
+.tbl_title_pos {
+  font-weight: bold;
+  text-shadow: 3px 2px 3px #000;
+  position: relative;
+  left: 11px;
+  top: 12px;
+  font-size: 11px;
+}
+#news_updates_body {
+  background: url(images/tbl_body.png) repeat-y;
+  width: 451px;
+  min-height: 41px;
+  font-size: 11px;
+  color:#c8c5c5;
+}
+.tbl_pos {
+  position: relative;
+  left: 11px;
+  bottom: 5px;
+  width: 425px;
+}
+.tbl_pos a {
+  color: yellow;
+}
+.tbl_pos a:hover {
+  color: orange;
+}
+#news_updates_footer {
+  background: url(images/tbl_footer.png) no-repeat;
+  width: 451px;
+  height: 25px;
+}
+#server_info {
+  background: url(images/tra_inf.png) no-repeat;
+  width: 207px;
+  height: 165px;
+}
+#tbl_head {
+  background: url(images/tbl_head.png) no-repeat;
+  width: 451px;
+  height: 41px;
+}
+#tbl_body {
+  background: url(images/tbl_body.png) repeat-y;
+  width: 451px;
+  min-height: 41px;
+  font-size: 11px;
+  color:#c8c5c5;
+}
+#tbl_footer {
+  background: url(images/tbl_footer.png) no-repeat;
+  width: 451px;
+  height: 25px;
+}
+.stfb {
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+  background-color: #101010;
+  width: 432px;
+  height: 13px;
+}
+.staff td {
+  border: 1px solid #101010;
+}
+#regs {
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: #CC0000;
+  text-shadow: 3px 2px 3px #000;
+}
+.rankings td {
+  border: 1px solid #101010;
+}
+.ranks_link {
+  position: relative;
+  right: 50px;
+  float: right;
+}
+.ranks_link a {
+  color: #33CC00;
+  text-decoration: none;
+}
+.ranks_link a:hover {
+  text-decoration: underline;
+}
+.loggeduser {
+  font-size: 12px;
+  padding-top: 5px;
+}
+.loggeduser a {
+  color: #CC3300;
+}
+.loggeduser a:hover {
+  color: #CC0000;
+  text-decoration: none;
+}
+.logged_dline {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #252525;
+  font-size: 11px;
+}
+.logged_links ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 1px;
+}
+.logged_links ul li {
+  float: left;
+}
+.logged_links ul li a {
+  padding: 0 3px;
+}
+.admin_button {
+  background: url(images/admin.png) no-repeat;
+  width: 47px;
+  height: 19px;
+  display: block;
+}
+.admin_button:hover{
+  background: url(images/admin_on.png) no-repeat;
+  width: 47px;
+  height: 19px;
+}
+.user_button {
+  background: url(images/user.png) no-repeat;
+  width: 47px;
+  height: 19px;
+  display: block;
+}
+.user_button:hover{
+  background: url(images/user_on.png) no-repeat;
+  width: 47px;
+  height: 19px;
+}
+.gm_button {
+  background: url(images/gm.png) no-repeat;
+  width: 47px;
+  height: 19px;
+  display: block;
+}
+.gm_button:hover{
+  background: url(images/gm_on.png) no-repeat;
+  width: 47px;
+  height: 19px;
+}
+.logdu {
+  color: #FF9900;
+}
+.legends {
+  text-align: center;
+  font-size: 11px;
+  position: relative;
+  bottom: 2px;
+}
+.tbl_colbor {
+  background-color: #101010;
+  border: 1px solid #303030;
+  color: #B0B0B0;
+}
+.forgpaser {
+  text-align: center;
+  padding-top: 10px;
+  color: #CC0000;
+  text-shadow: 3px 2px 3px #000;
+  font-weight: bold;
+}
+.dotted_line {
+  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #252525;
+  position: relative;
+  bottom: 5px;
+}
+.tbl_errmes {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 9px;
+  color: #CC0000;
+  text-shadow: 3px 2px 3px #000;
+  font-weight: bold;
+}
+.adm_tit {
+  text-shadow: 3px 2px 3px #000;
+  font-weight: bold;
+  color: #00CC00;
+}
+#admin {
+  width: 425px;
+  height: 40px;
+  margin: 0 auto;
+}
+#admin ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 1px;
+  right: 3px;
+}
+#admin ul li {
+  float: left;
+}
+#admin ul li a {
+  height: 20px;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  color: #00CC00;
+  text-shadow: 3px 2px 3px #000;
+  padding: 0 14px;
+}
+#admin ul li a:hover {
+  height: 30px;
+  color: #FFF;
+}
+.paging_links {
+  color: #585858;
+}
+.paging_links  a{
+  color: #FFCC33;
+  width: 20px;
+}
+#newestitem {
+  background: url(images/newestitem.png) no-repeat;
+  width: 149px;
+  height: 135px;
+  margin: 0 auto;
+}
+.nwstitm {
+  background: url(images/itembg.png) no-repeat;
+  width: 102px;
+  height: 84px;
+  display: block;
+  position: relative;
+  left: 9px;
+  top: 7px;
+}
+ .paginate {font-family:Arial, Helvetica, sans-serif;}
+ .paginate a {background-color:#282828;padding:2px 5px 2px 5px;margin:2px;border:1px solid #585858;text-decoration:none;color:#33CCCC;}
+ .paginate a:hover, .paginate a:active {border: 1px solid #999;color:#33CCCC;}
+ .paginate span.current {margin: 2px;padding: 2px 5px 2px 5px;border: 1px solid #999;font-weight: bold;background-color: #484848;color: #FFF;}
+ .paginate span.disabled {padding:2px 5px 2px 5px;margin:2px;border:1px solid #303030;color:#303030;}
+/** End Of Body **/
+
+/** Item Shop Start **/
+.itmshp_button {
+  background-color: #C0C0C0;
+  border: 1px solid #686868;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30px;
+  font-size: 11px;
+}
+.itemshp {
+  background: url(images/itembg.png) no-repeat;
+  width: 102px;
+  height: 84px;
+  display: block;
+}
+.itemshp_pos {
+  position: relative;
+  left: 8px;
+  top: 8px;
+}
+.item_info {
+  color: #989898;
+  line-height: 15px;
+  font-size: 83%;
+}
+#items_nav {
+  position: relative;
+  bottom: 3px;
+  width: 429px;
+  position: relative;
+  right: 2px;
+}
+#items_nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  right: 6px;
+}
+#items_nav ul li {
+  display:inline;
+  padding: 0 7px;
+  float: left;
+}
+#items_nav ul li a {
+  background: #202020;
+  width: 100%;
+  height: 30px;
+  padding: 0 9px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: 3px 2px 3px #000;
+  display: block;
+  border: 1px dotted #383838;
+  border-bottom: 1px solid #383838;
+}
+#items_nav ul li a:hover {
+  background: #181818;
+  color: #B0B0B0;
+}
+.items div {display: none;}
+.items div:target {display: block;}
+.items div:not(:target) {display: none;}
+.items div:target {display: block;}
+/** Item Shop End **/
+
+/** Footer Start **/
+#footer {
+  text-align: center;
+  font-size: 11px;
+  color: #949393;
+  text-shadow: 3px 2px 3px #000;
+}
+#footer_line {
+  margin-top: 50px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #252525;
+}
+.dark_light_line {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #252525;
+  position: relative;
+  bottom: 4px;
+}
+#footer a {
+  color: #ff0030;
+  padding-top: 5px;
+  text-decoration: none;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+/** Footer End **/
