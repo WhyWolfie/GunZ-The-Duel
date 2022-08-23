@@ -109,6 +109,10 @@ GunZ The Duel Releases <br>
 - gunz render: https://www.youtube.com/watch?v=Wi5PlpP1wk8
 - how to rig stuff and more (3ds max 2014): https://www.youtube.com/watch?v=WHajSJ9QEdA
 
+<b>(others)</b>
+- how to add custom maps: https://www.youtube.com/watch?v=hqSnAsM6ezc
+- how to add a encryption with gunnycrypt: https://www.youtube.com/watch?v=qXGwBLxi2Iw
+
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
 - k-style intermediate moves: https://www.youtube.com/watch?v=7MOrAi5_gRw
