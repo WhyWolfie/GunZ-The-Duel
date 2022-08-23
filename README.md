@@ -98,6 +98,7 @@ GunZ The Duel Releases <br>
 - creating a animated sword: https://www.youtube.com/watch?v=nbOWyAVfnt0
 - creating gladius sword: https://www.youtube.com/watch?v=ilTBnLPP6W8
 - import elu blender and export obj: https://www.youtube.com/watch?v=nFDcCrKLdVc
+- import custom item in your game: https://www.youtube.com/watch?v=48gPuvo8pWA
 
 <b>(3ds max)</b>
 - 3ds max gunz: https://www.youtube.com/watch?v=S0LH4cWkC54
