@@ -26,6 +26,9 @@ GunZ The Duel Releases <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
 - https://github.com/emisandgunz/gunzcord <br>
 
+<b>[sql]</b>
+- GunzDBFixed: https://archive.org/details/gun-zdbfixed_202011
+
 <b>[source]</b>
 - OldGunz(2007source): https://github.com/WhyWolfie/source2007
 - Gunz Emulator 2013: https://github.com/WhyWolfie/Gunz2013 
@@ -55,6 +58,19 @@ GunZ The Duel Releases <br>
 - sql2005: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005
 - map xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
 - shop xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
+
+<b>[items]</b>
+- articgunz: https://archive.org/details/articgunz
+- cgunz: https://archive.org/details/cgunz
+- darkgunz: https://archive.org/details/darkgunz
+- dualitygunz: https://archive.org/details/dualitygunz
+- enigmagunz: https://archive.org/details/enigmagunz
+- eurogunz: https://archive.org/details/eurogunz
+- fgunz: https://archive.org/details/fgunz
+- mtg-gunz: https://archive.org/details/gunz-mtg
+- mocrogunz: https://archive.org/details/mocrogunz
+- mundialgunz: https://archive.org/details/mundialgunz
+- raulgunz: https://archive.org/details/raulgunz
 
 
 <b>[fixes]</b>
