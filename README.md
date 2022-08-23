@@ -131,6 +131,21 @@ GunZ The Duel Releases <br>
 - blinkdash: https://www.youtube.com/watch?v=ivfg7RUyG2Q
 - quickblocks: https://www.youtube.com/watch?v=yBjiZNJVQgU
 - basic k-style guide 2020: https://www.youtube.com/watch?v=cLoTieAVV8E
+- gunz maps: https://www.youtube.com/watch?v=LRBCupfqZb4
+
+<b>(gunz soundtracks)</b>
+- character selection: https://www.youtube.com/watch?v=4SMyQPz7rtk
+- game lobby: https://www.youtube.com/watch?v=ABEVoZL6P8I
+- the duel: https://www.youtube.com/watch?v=MK_zQsRF3MY
+- ost once again: https://www.youtube.com/watch?v=aZjB_msGeDQ
+- ost assassin: https://www.youtube.com/watch?v=rnP4gfi9KZ0
+- lets rock: https://www.youtube.com/watch?v=Itxx_VVzpuk
+- ryswick style: https://www.youtube.com/watch?v=8MmBvaGD-IU
+- vague words: https://www.youtube.com/watch?v=WXcbzXb8ObM
+- ost trance mission tmix: https://www.youtube.com/watch?v=i-bPo6ctdaM
+- ost hardcore: https://www.youtube.com/watch?v=8Pr5TY5wApE
+- ost x-fighter: https://www.youtube.com/watch?v=Q79twuvEO44
+- ost walk away: https://www.youtube.com/watch?v=HNC5WrgR0xA
 
 <b>(documentary)</b>
 - this game could've been the best esport ever: https://www.youtube.com/watch?v=gMPJ38mSkt0
@@ -150,6 +165,7 @@ GunZ The Duel Releases <br>
 - gaudigz: https://www.youtube.com/c/GaudiGz
 - papa pencho: https://www.youtube.com/c/PAPAPENCHOGAMING
 - nascimentofps: https://www.youtube.com/c/NascimentoFPS
+- airking990: https://www.youtube.com/user/Airking090
 
 <b>[items]</b>
 - articgunz: https://archive.org/details/articgunz
