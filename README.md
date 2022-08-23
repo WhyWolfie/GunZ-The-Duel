@@ -166,6 +166,10 @@ GunZ The Duel Releases <br>
 - papa pencho: https://www.youtube.com/c/PAPAPENCHOGAMING
 - nascimentofps: https://www.youtube.com/c/NascimentoFPS
 - airking990: https://www.youtube.com/user/Airking090
+- acerized: https://www.youtube.com/c/Acerized
+
+<b>(famous youtubers)</b>
+- daequan: https://www.youtube.com/watch?v=dSdlUwdHbEA
 
 <b>[items]</b>
 - articgunz: https://archive.org/details/articgunz
