@@ -58,11 +58,10 @@ GunZ The Duel Releases <br>
 - Repack-Aren: https://github.com/WhyWolfie/Repack-Aren
 - GFZSource: https://github.com/WhyWolfie/GZF-Source
 - 2005 Source & Old Patches: https://archive.org/details/gunz.-7z
-- NationalGunZ(client/server/source): https://archive.org/details/national-gunz-source-client-server-files
-
 
 <b>[clients]</b><br>
 - Jur13n (clean/edited version 1.5) https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw
+- NationalGunZ(client/server/source): https://archive.org/details/national-gunz-source-client-server-files
 - Phoenix (2008 client): https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112
 - Zer0nis (clean version: 1.5): https://github.com/ZER0NIS/Gunz-Base
 - Jetman (clean version: 1.5): https://github.com/Jetman823/Gunz1.5
@@ -81,6 +80,8 @@ GunZ The Duel Releases <br>
 - GunZ2034: https://archive.org/details/gun-z-2034-client
 - TrinityGunZ: https://archive.org/details/trinity-gun-z
 - GunZ MTG V8: https://archive.org/details/setup-gunz-mtg-v-8_202011
+- UltimateGunz: https://archive.org/details/Ultimategunz
+- TrinityGunz: https://archive.org/details/trinity-gun-z
 
 <b>[tutorials]</b>
 - Movements: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
