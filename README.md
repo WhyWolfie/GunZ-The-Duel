@@ -143,6 +143,7 @@ GunZ The Duel Releases <br>
 - http://gunz.kaybo1.com/ (shutdown)
 
 <b>[servers]</b><br>
+- gunz 2it: https://gunz.2it.in/
 - freestylegunz: https://fgunz.net/
 - universgamers: https://universegunz.net/
 - internationalgunz: https://igunz.net/
