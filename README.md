@@ -29,6 +29,21 @@ GunZ The Duel Releases <br>
 <b>[sql]</b>
 - GunzDBFixed: https://archive.org/details/gun-zdbfixed_202011
 
+<b>[tools]</b>
+- visual all runtimes: https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020
+- visual studio .NET 2003: https://archive.org/details/visual-studio.-net-2003
+
+<b>[gunz2]</b>
+- client: https://archive.org/details/gunz-2
+- others: https://archive.org/details/gunz2_20120524.7z
+- realspace3 engine: https://archive.org/details/gunz-2-real-space-3-engine
+- realspace3 engine p2: https://archive.org/details/gunz-2-real-space-3-engine-p-2
+- realspace3 engine p3: https://archive.org/details/gunz-2-real-space-3-engine-p-3
+- standalone edition: https://archive.org/details/gun-z-2-standalone-edition_202011
+- standalone edition #2: https://archive.org/details/gun-z-2-standalone-edition
+- SDK: https://archive.org/details/sdk_20201112
+- DATA: https://archive.org/details/data_20201112_202011
+
 <b>[source]</b>
 - OldGunz(2007source): https://github.com/WhyWolfie/source2007
 - Gunz Emulator 2013: https://github.com/WhyWolfie/Gunz2013 
