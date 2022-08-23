@@ -134,12 +134,18 @@ GunZ The Duel Releases <br>
 - the world's most technical third-person shooter: https://www.youtube.com/watch?v=zvC67kmYxPA
 
 <b>(active youtube channels)</b>
-- GunLin: https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos
-- 손혜주(Plays Masangsoft): https://www.youtube.com/channel/UC3L3N4vgndLU0QoLcB1j9gA/videos
-- Crusader John Gaming: https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos
-- MagicFingers: https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg
+- gunlin: https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos
+- 손혜주(plays masangsoft): https://www.youtube.com/channel/UC3L3N4vgndLU0QoLcB1j9gA/videos
+- crusader john gaming: https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos
+- magicfingers: https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg
 - fxpgunz: https://www.youtube.com/channel/UCWGnCS_AxKxM72aF6t6SPKQ/videos
 - gunzdeveloper: https://www.youtube.com/channel/UCnKN3Z_hKT9bVUXlTccBr6w
+- cristina kitty: https://www.youtube.com/channel/UCFy-7mZAEYeLZsc1ppJedaQ/videos
+- vitor komatsu: https://www.youtube.com/c/VitorKomatsu/
+- gunz m2o gaming: https://www.youtube.com/channel/UCAF9RbJrm9B3EDb0ZA_h4Sw
+- gaudigz: https://www.youtube.com/c/GaudiGz
+- papa pencho: https://www.youtube.com/c/PAPAPENCHOGAMING
+- nascimentofps: https://www.youtube.com/c/NascimentoFPS
 
 <b>[items]</b>
 - articgunz: https://archive.org/details/articgunz
