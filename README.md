@@ -93,18 +93,32 @@ GunZ The Duel Releases <br>
 - map xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
 - shop xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
 
-<b>[video tutorials]</b><br>
+<b>[video tutorials - will update it in the future]</b><br>
 <b>(blender)</b>
 - creating a animated sword: https://www.youtube.com/watch?v=nbOWyAVfnt0
 - creating gladius sword: https://www.youtube.com/watch?v=ilTBnLPP6W8
 - import elu blender and export obj: https://www.youtube.com/watch?v=nFDcCrKLdVc
 - import custom item in your game: https://www.youtube.com/watch?v=48gPuvo8pWA
 
+<b>(photoshop)</b>
+- how to change gunz dash color: https://www.youtube.com/watch?v=kmxnjpJj6CM
+- how to change color of gunz items: https://www.youtube.com/watch?v=3Og8E55FyNg
+
 <b>(3ds max)</b>
 - 3ds max gunz: https://www.youtube.com/watch?v=S0LH4cWkC54
 - gunz render: https://www.youtube.com/watch?v=Wi5PlpP1wk8
 - how to rig stuff and more (3ds max 2014): https://www.youtube.com/watch?v=WHajSJ9QEdA
 
+<b>(gameplay)</b>
+- latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
+- k-style intermediate moves: https://www.youtube.com/watch?v=7MOrAi5_gRw
+- gunz basics: https://www.youtube.com/watch?v=zmXK5rYRZ4M
+- gdhs guide: https://www.youtube.com/watch?v=H6SLeru0l4A
+
+<b>(documentary)</b>
+- this game could've been the best esport ever: https://www.youtube.com/watch?v=gMPJ38mSkt0
+- how glitches created an accidental success: https://www.youtube.com/watch?v=SfAHpQrj0o8
+- the world's most technical third-person shooter: https://www.youtube.com/watch?v=zvC67kmYxPA
 
 <b>[items]</b>
 - articgunz: https://archive.org/details/articgunz
