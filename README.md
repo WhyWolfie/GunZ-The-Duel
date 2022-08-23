@@ -28,10 +28,13 @@ GunZ The Duel Releases <br>
 
 <b>[sql]</b>
 - GunzDBFixed: https://archive.org/details/gun-zdbfixed_202011
+- SQL(2005 x64bit)Server/Express: https://archive.org/details/SQLEXPR
+- SQL(2005 x32bit)Server/Express: https://archive.org/details/sqlserver-2005-ssmsee_202203
 
 <b>[tools]</b>
 - visual all runtimes: https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020
 - visual studio .NET 2003: https://archive.org/details/visual-studio.-net-2003
+- DXSDK June 10: https://archive.org/details/dxsdk-jun-10
 
 <b>[gunz2]</b>
 - client: https://archive.org/details/gunz-2
@@ -54,15 +57,30 @@ GunZ The Duel Releases <br>
 - NationalGunZ: https://github.com/WhyWolfie/NationalGunZ
 - Repack-Aren: https://github.com/WhyWolfie/Repack-Aren
 - GFZSource: https://github.com/WhyWolfie/GZF-Source
+- 2005 Source & Old Patches: https://archive.org/details/gunz.-7z
+- NationalGunZ(client/server/source): https://archive.org/details/national-gunz-source-client-server-files
+
 
 <b>[clients]</b><br>
-- ObeliskGunZ: https://archive.org/details/obelisk-gun-z
-- Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
-- Gunz2: https://files.trinityent.net/?dir=GunZ%202
+- Jur13n (clean/edited version 1.5) https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw
+- Phoenix (2008 client): https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112
 - Zer0nis (clean version: 1.5): https://github.com/ZER0NIS/Gunz-Base
 - Jetman (clean version: 1.5): https://github.com/Jetman823/Gunz1.5
-- Jur13n (clean/edited version 1.5) https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw
+- Gunz2: https://files.trinityent.net/?dir=GunZ%202
 
+<b>[custom clients]</b>
+- ObeliskGunZ: https://archive.org/details/obelisk-gun-z
+- Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
+- Competitive V3: https://archive.org/details/gunz-competitive-v-3-install
+- FXP GunZ (update): https://archive.org/details/fxp-gun-z-updated
+- FXP GunZ (installer): https://archive.org/details/fxp-gun-z
+- MasangsoftGunz: https://archive.org/details/gun-zsetup-masang
+- MaximoGunz: https://archive.org/details/maximo-gun-z
+- VinaGunzV12: https://archive.org/details/vinagun-zv-12-1
+- FreestyleGunZV8: https://archive.org/details/freestyle-gun-z-v-8-installer
+- GunZ2034: https://archive.org/details/gun-z-2034-client
+- TrinityGunZ: https://archive.org/details/trinity-gun-z
+- GunZ MTG V8: https://archive.org/details/setup-gunz-mtg-v-8_202011
 
 <b>[tutorials]</b>
 - Movements: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
