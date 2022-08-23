@@ -93,6 +93,17 @@ GunZ The Duel Releases <br>
 - map xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
 - shop xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
 
+<b>[video tutorials]</b>
+<b>(blender)</b>
+- creating a animated sword: https://www.youtube.com/watch?v=nbOWyAVfnt0
+- import elu blender and export obj: https://www.youtube.com/watch?v=nFDcCrKLdVc
+
+<b>(3ds max)</b>
+- 3ds max gunz: https://www.youtube.com/watch?v=S0LH4cWkC54
+- gunz render: https://www.youtube.com/watch?v=Wi5PlpP1wk8
+- how to rig stuff and more (3ds max 2014): https://www.youtube.com/watch?v=WHajSJ9QEdA
+
+
 <b>[items]</b>
 - articgunz: https://archive.org/details/articgunz
 - cgunz: https://archive.org/details/cgunz
