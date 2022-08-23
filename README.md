@@ -114,6 +114,19 @@ GunZ The Duel Releases <br>
 - k-style intermediate moves: https://www.youtube.com/watch?v=7MOrAi5_gRw
 - gunz basics: https://www.youtube.com/watch?v=zmXK5rYRZ4M
 - gdhs guide: https://www.youtube.com/watch?v=H6SLeru0l4A
+- draft of gunz: https://www.youtube.com/watch?v=W100yqPiBA4
+- complete k-style guide 2: https://www.youtube.com/watch?v=3ZXC-8pFZGk
+- complete k-style guide 3: https://www.youtube.com/watch?v=1fs5UMY96iE
+- art of the massive gunz gladiator: https://www.youtube.com/watch?v=tvQ_jEgkHMY
+- tbf tutorial by divinecrave: https://www.youtube.com/watch?v=goxXyvRIH50
+- tbf tutorial by mujunstyle: https://www.youtube.com/watch?v=Gi_G_HUOcJ8
+- in depth angle and phase: https://www.youtube.com/watch?v=IZeSQaThDcQ
+- devioks gunz guide slash placement: https://www.youtube.com/watch?v=rISQGontAT8
+- latedash: https://www.youtube.com/watch?v=Sv3IHX_fUG4
+- blockrush and gdhs combos: https://www.youtube.com/watch?v=jhQyrMIW2OQ
+- blinkdash: https://www.youtube.com/watch?v=ivfg7RUyG2Q
+- quickblocks: https://www.youtube.com/watch?v=yBjiZNJVQgU
+- basic k-style guide 2020: https://www.youtube.com/watch?v=cLoTieAVV8E
 
 <b>(documentary)</b>
 - this game could've been the best esport ever: https://www.youtube.com/watch?v=gMPJ38mSkt0
