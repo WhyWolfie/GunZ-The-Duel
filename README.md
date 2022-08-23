@@ -105,7 +105,6 @@ GunZ The Duel Releases <br>
 - mundialgunz: https://archive.org/details/mundialgunz
 - raulgunz: https://archive.org/details/raulgunz
 
-
 <b>[fixes]</b>
 - Enter login matchserver crash(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
 - Cant buy db fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
@@ -124,19 +123,6 @@ GunZ The Duel Releases <br>
 - gunzduels: https://gunzduels.com/
 - enigmagunz: https://eggunz.com/
 - revengegunz(brazil): https://www.revengegunz.com.br/
-
-<b>[includes]</b><br>
-- [maps | 200+]<br>
-- [tools/3dsmax 2014]<br>
-- [tools/3dsmax 2010]<br>
-- [tools/patchbuilder]<br>
-- [tools/mrs]<br>
-- [source/multi-language]<br>
-- [website/emisand_gunz_admin_panel_v3]<br>
-- [database/07]<br>
-- [database/1.5]<br>
-- [database/mysql4.0]<br>
-- [database/sql2000]<br>
 
 <b>[resources]</b>
 - https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
