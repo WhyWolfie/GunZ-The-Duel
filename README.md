@@ -93,9 +93,10 @@ GunZ The Duel Releases <br>
 - map xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
 - shop xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
 
-<b>[video tutorials]</b>
+<b>[video tutorials]</b><br>
 <b>(blender)</b>
 - creating a animated sword: https://www.youtube.com/watch?v=nbOWyAVfnt0
+- creating gladius sword: https://www.youtube.com/watch?v=ilTBnLPP6W8
 - import elu blender and export obj: https://www.youtube.com/watch?v=nFDcCrKLdVc
 
 <b>(3ds max)</b>
