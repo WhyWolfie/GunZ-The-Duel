@@ -1,0 +1,75 @@
+td		{ font-family: ±¼¸², Arial; font-size: 9pt }
+td.tinytitle		{ font-family: Arial, ±¼¸²; font-size: 8pt }
+li		{ font-size: 9pt; font-family: ±¼¸², Arial; list-style-type: square; }
+p		{ font-family: ±¼¸², Arial; font-size: 9pt }
+
+a		{ color: #FFCC66; }
+a:hover		{ color: #FFFFFF; }
+a:active		{ color: #FFCC66; }
+
+.menuhead	{ font-size: 10pt; color:#FFC432; }
+.menuhead a	{ text-decoration:none; }
+.menuhead a:hover	{ text-decoration:underline; }
+.menuhead a:active	{ text-decoration:underline; }
+
+body		{ color:#D0D0D0; background=#000000; margin-top: 0px; margin-left: 0px }
+
+p.small		{ font-family: Verdana, Arial; font-size: 8pt }
+p.title		{ font-family: ±¼¸², Arial; font-size: 10pt; color: #FFCC66; font-weight: bold }
+p.mark		{ font-family: ±¼¸², Arial; font-size: 9pt; color: #FFCC66 }
+p.desc		{ font-family: ±¼¸², Arial; font-size: 9pt;color: #FFFFFF }
+
+INPUT,SELECT,TEXTAREA { color:#303030; font-family:±¼¸²,arial,Helvetica; font-size:9pt }
+
+td.static		{ background-color:#444444 }
+table.outline { background-color:#000000 }
+
+.author	{ color: #FFFFFF; font-weight : bold; font-family: ±¼¸², Arial; font-size: 11pt; }
+.small		{ font-family: ±¼¸², Arial; font-size: 8pt }
+.sub_title	{ font-family: µ¸¿ò, Arial; color: #FFCC66; font-weight : bold; font-size:11pt }
+.admin	{ color: #FFCC66; font-weight : none; }
+
+td.admin		a { color:#FFDD88; text-decoration:none; font-weight:bold; }
+td.admin		a:hover { color:#FFFFFF; text-decoration:none,underline; font-weight:bold; }
+td.admin		a:active { color:#FFDD88; text-decoration:none; font-weight:bold; }
+
+td.list a	{ color:#E0E0E0; text-decoration:none; }
+td.list a:hover	{ text-decoration:underline; }
+td.list a:active	{ text-decoration:none; }
+
+td.reply a	{ color:#E0E0E0; text-decoration:none; }
+td.reply a:hover	{ text-decoration:underline; }
+td.reply a:active	{ text-decoration:none; }
+
+td.content 	{  }
+td.content a	{ text-decoration:underline; }
+td.content a:hover	{ text-decoration:underline; }
+td.content a:active	{ text-decoration:underline; }
+
+td.mf_write_static { background-color:#000044 }
+td.mf_view_comment_static { background-color:#222222 }
+
+table.main	{ background-image: url('/web/20031011061503im_/http://www.gunzonline.com/images/back.jpg'); }
+
+
+/*
+     FILE ARCHIVED ON 06:15:03 Oct 11, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:08:15 Aug 24, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 97.479
+  exclusion.robots: 0.185
+  exclusion.robots.policy: 0.169
+  RedisCDXSource: 1.005
+  esindex: 0.016
+  LoadShardBlock: 78.671 (3)
+  PetaboxLoader3.datanode: 103.102 (4)
+  CDXLines.iter: 13.837 (3)
+  load_resource: 74.519
+  PetaboxLoader3.resolve: 21.961
+*/
