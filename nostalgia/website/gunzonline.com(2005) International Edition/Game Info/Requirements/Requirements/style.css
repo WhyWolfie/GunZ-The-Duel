@@ -1,0 +1,148 @@
+/*
+	GunZ The Duel: International Edition Website CSS
+*/
+
+a:link
+{
+	color: #FFFFFF;
+	text-decoration:underline;
+}
+
+a:visited
+{
+	color: #FFFFFF;
+	text-decoration:underline;
+}
+
+a:hover
+{
+	color: #FFCC00;
+	text-decoration:underline;
+}
+
+a:active
+{
+	color: #FFCC00;
+	text-decoration:none;
+}
+
+table, tr, td, select, input, div, form
+{
+	font-family: verdana;
+	font-size: 8pt;
+	line-height: 10pt;
+}
+
+input
+{
+	border: solid 1px;
+	border-color: #808080;
+}
+
+body
+{
+	font-family: verdana;
+	font-size: 8pt;
+	line-height: 24pt;
+	color: #e0e0e0;
+	background-color: #000000;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding: 0;
+}
+
+.tiny
+{
+	font-family: Verdana, Tahoma;
+	font-size: 7pt;
+}
+
+.flag
+{
+	font-family: Verdana, Tahoma;
+	font-size: 7pt;
+	background-color: #00FFFF;
+	color: #FF0000;
+}
+
+.small
+{
+	font-family: Verdana, Tahoma;
+	font-size: 7pt;
+}
+
+.title
+{
+	font-family: Verdana;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #6DCFF6;
+}
+
+.mf_category
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #808080;
+}
+
+.author
+{
+	font-family: Verdana;
+	font-size: 6pt;
+}
+
+a.m_menu img
+{
+	border-top-width: 0px;
+	display: block;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-right-width: 0px
+}
+
+a.m_menu img.m_menu
+{
+	display: none
+}
+
+a.m_menu:hover
+{
+	position: relative
+}
+
+a.m_menu:hover img
+{
+	display: none
+}
+
+a.m_menu:hover img.m_menu
+{
+	display: block
+}
+
+a.submenu:link
+{
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+a.submenu:visited
+{
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+a.submenu:hover
+{
+	color: #FFFFFF;
+	text-decoration:underline;
+}
+
+a.submenu:active
+{
+	color: #FFFFFF;
+	text-decoration:none;
+}
