@@ -204,6 +204,7 @@ GunZ The Duel Releases <br>
 - enigmagunz: https://eggunz.com/
 - revengegunz(brazil): https://www.revengegunz.com.br/
 - emperialgunz: https://www.emperialgunz.com/
+- mtg gunz: https://gunz.mtgvn.net/
 
 <b>[resources]</b>
 - https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
