@@ -154,13 +154,15 @@ GunZ The Duel Releases <br>
 
 <b>(active youtube channels)</b>
 - gunlin: https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos
-- 손혜주(plays masangsoft): https://www.youtube.com/channel/UC3L3N4vgndLU0QoLcB1j9gA/videos
+- 손혜주(masangsoft): https://www.youtube.com/channel/UC3L3N4vgndLU0QoLcB1j9gA/videos
+- 건즈평가사 (masangsoft): https://www.youtube.com/channel/UCljaHynSadfY5DvlTFowWfQ
 - crusader john gaming: https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos
 - magicfingers: https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg
 - fxpgunz: https://www.youtube.com/channel/UCWGnCS_AxKxM72aF6t6SPKQ/videos
 - gunzdeveloper: https://www.youtube.com/channel/UCnKN3Z_hKT9bVUXlTccBr6w
 - cristina kitty: https://www.youtube.com/channel/UCFy-7mZAEYeLZsc1ppJedaQ/videos
 - vitor komatsu: https://www.youtube.com/c/VitorKomatsu/
+- vitor macedo: https://www.youtube.com/c/k1ngVitin
 - gunz m2o gaming: https://www.youtube.com/channel/UCAF9RbJrm9B3EDb0ZA_h4Sw
 - gaudigz: https://www.youtube.com/c/GaudiGz
 - papa pencho: https://www.youtube.com/c/PAPAPENCHOGAMING
