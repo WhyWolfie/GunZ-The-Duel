@@ -1,0 +1,3627 @@
+Gunz the Duel: ijji Edition Guide
+By: Kyle Kercher (Kistrael)
+Version: 0.9 (Updated 3/18/2007 11:25PM)
+
+             _____________________________________________________
+            / _________________________________________________  /
+           / /              __       __     __       __       / /
+          / /  ________    / /      / /    /  \     / /      / /
+         / /  /_____  /   / /      / /    / /\ \   / /      / /
+        / /        / /   / /      / /    / /  \ \ / /      / /
+       / /________/ /   / /______/ /    / /    \ V /      / /___________
+      /____________/   /__________/    /_/      \_/      /_____________/
+
+                 T H E  D U E L - i j j i  E D I T I O N
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
++-----------------+
+| Revision History|
++-----------------+
+
+Version 0.5  -  11/06/05  -  First version of the FAQ.
+
+Version 0.6  -  11/16/05  -  Added 'reload' and turn off/on messages to
+                             controls. Added Q&A about Port map, and Debug
+                             mode. Changed 'adventure' mode to 'quest' mode.
+                             Added cartwheel to The Basics. Added a Glitch
+                             section. Split up Gameplay Tips into sections:
+                             Deathmatch Tips, Team Deathmatch Tips,
+                             Map-specific Tips, Weapon-specific Tips and
+                             Tactics. Added more gameplay tips. Minor
+                             corrections.
+
+Version 0.7  -  12/06/05  -  Reorganized the FAQ to streamline it better. Added
+                             Equipment section. Added Guns to the Equipment
+                             Section. Added skeleton for Melee and Tossables to
+                             Equipment Section. Added Gunz Update Section.
+
+Version 0.7a -  12/07/05  -  Fixed there being two section 11s. While I was at
+                             it, I renumbered the sections so it was more like
+                             a formal outline.
+
+Version 0.8  -  ??/??/06  -  Split the Map-Specific Tips section into
+                             individual maps. Added more to Map-Specific Tips.
+                             Added more to Weapon-Specific Tips. Finished the
+                             Guns and Melee Section rough version.
+                            
+Version 0.9  -  3/18/2007 -  Total FAQ overhaul. Changed FAQ (Section: IF.),
+                             added ATT/DEF, RS, swapshot, etc.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+I. Introduction
+
+    IA. What is Gunz the Duel?
+    IB. Why the FAQ?
+    IC. Does GunZ the Duel have an official website?
+    ID. Where can I download Gunz the Duel?
+    IE. What are the system requirements for Gunz the Duel?
+    IF. Frequently Asked Questions
+    IG. Unlockables
+
+II. Getting Started
+
+    IIA. Creating Your Character
+    IIB. The Lobby
+    IIC. Intrusion
+    IID. Match types
+    IIE. Game Intrusion
+    IIF. Experience and bounty
+
+III. The Basics
+
+    IIIA. Keyboard Layout
+    IIIB. Basic Movement
+        IIIB1. Tumble
+        IIIB2. Dash
+        IIIB3. Air Tumble
+        IIIB4. Air Dash
+        IIIB5. Guard
+        IIIB6. Massive Strike
+        IIIB7. Stun
+        IIIB8. Safe Fall
+        IIIB9. Wall Jump
+        IIIB10. Wall Run (Vertical)
+        IIIB11. Wall Run (Horizontal)
+        IIIB12. Wall Hang
+        IIIB13. Wall Flip
+
+IV. Chat Commands
+
+    IVA. Slash Commands
+    IVB. Clan Commands
+    IVC. Color Commands
+    IVD. Miscellaneous
+
+V. Playing the Game
+
+    VA. General Gameplay Etiquette
+        VA1. Game Rules
+            VA1a. Rejoin Games
+            VA1b. Bowing
+            VA1c. Killswapping
+            VA1d. Lineswapping
+            VA1e. Naked Games
+            VA1f. Regional Games
+            VA1g. Attack and Defense
+    VB. General Gameplay Tips
+        VB1. Deathmatch Tips
+        VB2. Team Deathmatch Tips
+        VB3. Map-specific Tips
+            VB3a. Arena
+            VB3b. Castle
+            VB3c. Dungeon
+            VB3d. Factory
+            VB3e. Garden
+            VB3f. Island
+            VB3g. Mansion
+            VB3h. Port
+            VB3i. Prison
+            VB3j. Prison II
+            VB3k. Ruin
+            VB3l. Shrine
+            VB3m. Stairway
+            VB3n. Station
+            VB3o. Town
+        VB4. Weapon-specific Tip
+            VB4a. Guns
+            VB4b. Gun Combinations
+            VB4b. Melee
+            VB4c. Bullets VS Rockets
+            VB4d. The Art of Grenading
+        VB5. Tactics
+            VB5a. Spray N' Pray
+            VB5b. Stun N' Gun
+            VB5c. Lunge N' Gun
+            VB5d. Camping and Sniping
+           
+VI. Korean Style (K-Style)
+
+        VIA. Movement
+            VIA1. Jump-Dashing
+            VIA2. Pogo
+            VIA3. canceling
+            VIA4. Multiple Wall Jumping
+            VIA5. Multiple Wall Running
+            VIA6. Propel
+        VIB. Attacks
+            VIB1. Void Step (VS)
+            VIB2. Light Step (LS)
+            VIB3. Slashshot (SS)
+            VIB4. Butterfly (BF, Bfly)
+            VIB5. Jump Shoot Dash (JSD)
+            VIB6. Halfstep (HS)
+            VIB7. Half-Half Step (HHS)
+            VIB8. Flash Step (FS)
+            VIB9. Swapshot
+            VIB10. Reloadshot (RS)
+        VIC. Instant Kills
+        VID. Miscellaneous
+            VID1. Quickmedding
+            VID2. Superdash
+            VID3. Slide Dance
+            VID4. Hangjump
+
+VII. Equipment
+
+        VIIA. Guns
+            VIIA1. Pistols
+            VIIA2. Revolvers
+            VIIA3. Shotguns
+            VIIA4. SMGs
+            VIIA5. Rifles
+            VIIA6. Rocketlaunchers
+            VIIA7. Machineguns
+        VIIB. Melee
+            VIIB1. Daggers
+            VIIB2. Kodachi
+            VIIB3. Swords
+        VIIC. Tossables
+            VIIC1. Frag Grenade
+            VIIC2. Flash Grenade
+            VIIC3. Smoke Grenade
+            VIIC4. Medical Kit
+        VIIC5. Repair Kit
+
+VIII. Glitches
+
+IX. Quest Mode
+
+X. General Philosophy
+
+    XA. On Style
+
+XI. Contact Information
+
+XII. Disclaimer
+
+XIII. Credits
+
+XIV. The Ish List
+
+---------------
+1. Introduction
+---------------
+
+  ==========================
+  IA. What is Gunz the Duel?
+  ==========================
+
+Gunz the Duel (or simply 'Gunz') is a free online game made by the Korean
+company, MAIET Entertainment. Gunz is third-person online battle royale where
+you can use an array of firearms, swords, daggers to maim your opponents, and
+also utilize an assortment of physics-defying acrobatics. Think of it like a
+Matrix free-for-all, including air-dashing, wall-running, and tumbling.
+
+  ================
+  IB. Why the FAQ?
+  ================
+
+I got fed up with there being no official guide, and other FAQs seemed to be
+lacking. I don't claim to be an expert with Gunz and I don't consider myself
+truly pro. I do however like the game and have a large body of knowledge at
+my disposal, so I would like to help other people who have come across it.
+
+My ultimate goal with this FAQ is to bring all the information pertaining to
+Gunz into one place so it's easily accessible and searchable. This guide is
+easy to search. If you want to find a specific title, copy the text from the
+index and use the find function.
+
+This guide will be updated as it needs to be, hopefully, and as new information
+is released.
+
+  ================================================
+  IC. Does Gunz the Duel have an official website?
+  ================================================
+
+Gunz's official website is http://www.gunzonline.com. It list the versions of
+Gunz the Duel. The version we'll be discussing is Ijji's version, found at
+http://gunz.ijji.com. While all the version are essentially the same in game
+mechanics, any questions dealing with any version but Ijji's will promptly be
+ignored.
+
+  =======================================
+  ID. Where can I download Gunz the Duel?
+  =======================================
+
+Gunz can be downloaded at http://gunz.ijji.com, by clicking the "GUNZ CLIENT
+DOWNLOAD" (http://game.ijji.com/download.nhn?m=arcade&gameId=u_gunz) icon. It's
+big, you can't miss it. Before you download the game, you'll have to make an
+account for ijji, which will become your game account.
+
+  =======================================================
+  IE: What are the system requirements for Gunz the Duel?
+  =======================================================
+
+Minimal requirements:
+
+OS: Windows 98/XP/2000
+Direct X: 9.0 or higher.
+CPU: Pentium III (500 Mhz)
+Memory: 256mb
+Graphics Card: Direct3D 9.0 Compatible (Riva TNT)
+Sound Card: Direct3DSound Compatible
+Mouse: Windows Compatible (Wheel Mouse recommended)
+
+  ==============================
+  IF. Frequently Asked Questions
+  ==============================
+
+ Q. Wasn't this guide about International Gunz?
+ A. Yes, the previous version of this guide was about iGunz. Since the collapse
+ of iGunz however, everyone migrated to Ijji's version. I have since changed my
+ guide to reflect this. There is no use in having a guide to International
+ Gunz, which is essentially abandonware. After being in beta since '05, it's
+ quite obvious that MAIET has no intention of making International a
+ full-fledged final release. As of this being written, the only people who are
+ playing International are people who have been IP blocked from Ijji's
+ version. Regardless of whether this guide is for International or Ijji, all
+ the same rules apply, however.
+
+ Q. There are parts missing to this guide that were in the previous version,
+ what happened to them?
+ A. I've removed certain parts, like the story section. While I originally
+ included it for the sake of completion of the backstory, MAIET has admitted
+ that the story provided has nothing to do with the game itself and will most
+ likely never be expanded upon.
+
+ Q. Why do you take so damned long to update your FAQ?
+ A. Because I'd rather be playing Gunz than writing about Gunz. As much as I
+ love Gunz, writing a large, all-encompassing, elaborate FAQ is not quite an
+ easy thing to do, especially in a game that tends to be as fast-paced and
+ organic as Gunz.
+
+ Q. At what level do I stop getting new items?
+ A. You stop getting clothing at lvl 30, and new weapons at lvl 50.
+
+ Q. How come I'm losing experience when I die?
+ A. When you suicide from either falling into a pit, or typing /suicide,
+ you'll lose a certain chunk of points from your experience. If you happen to
+ be killed by someone who is significantly lower in levels, you will also lose
+ experience when you die. If someone knocks you into a pit however, you usually
+ won't lose exp, but it's not unheard of to occasionally lose experience. If
+ you play in training mode, no exp will be lost or gained, so you can die all
+ you want.
+
+ Q. HAO DO SPINNY THIGN W/ SWORD?
+ A. Do not ever ask me a question like that.
+
+ Q. I saw this person doing a thing with their sword or gun, etc?
+ A. Check the techniques section.
+
+ Q. You forgot to add so-and-so glitch.
+ A. There are and have been quite a few glitches in the Gunz community that I
+ personally feel shouldn't become "public" knowledge, or at least readily
+ available.
+
+ Q. What keyboard/mouse combination do you recommend for Gunz?
+ A. Most people use whatever keyboard/mice that initially came with their
+ computer. I own a Logitech G15 keyboard and a Razer Copperhead mouse.
+
+ Q. My ping from others is always 999/ I can talk with others, but I cannot see
+ their movements/ I keep getting agent errors!
+ A. The original source of this Q/A was the now-defunct International Gunz
+ forums.
+
+ Source: http://www.gunzonline.com/forum/forum_posts.asp?TID=8&PN=1
+
+If you cannot communicate with another player, his ping will display as 999
+(use TAB to see the status). If you see this problem but you are able to
+interact with other players, then your network is fine. But if you cannot see
+other players' movements, it means that there is a problem with interacting
+with other players. Many people call this situation "Ping 999 problem".
+Original GunZ supports players under NAT/Firewall/IP Sharing Router network,
+but unfortunately it is not the case for International Edition, because doing
+so requires high-end hosting servers. Currently we plan to implement the
+support by official release date. Until then the users of NAT or Firewall may
+have problem with playing GunZ properly. If you're behind Firewall, please
+contact with your network administrator or ISP to resolve this problem.
+
+If you're using IP sharing router, however, there is a way to resolve the
+situation. GunZ supports "Port Forwarding", and you can set the feature with
+your IP sharing router. Most IP sharing router support "Port Forwarding" (To
+learn how to set up Port Forwarding, please refer your router manual). After
+making changes, press "option" in game and check network configuration. Enter
+port number from the router into the port number option box. (This tip may
+come in handy in improving network performance even after the support for
+NAT/Firewall/IP Sharing Router becomes available.)
+
+Source: http://gunzonline.com/forum/forum_posts.asp?TID=20036&PN=1
+
+* Check to see if you have a firewall enabled, this maybe the default windows
+XP firewall or an external item like a router, if so check to see if this
+program or hardware allows the same port as gunz wants to use to pass through.
+
+* If you do not use a router or firewall and the problem is appearing from
+using the modem directly, some company stocked modems feature built in
+firewalls (like most Microsoft cable modems do), these can only be edited by
+the ISP, a program they gave you or on there special website with management
+tools (not many have this problem though)
+
+* Try changing the port that gunz uses by going into the gunz menu and editing
+ the number, some people have had good luck with this method for unknown
+reasons, maybe your pc hates port 7700.
+
+* If you use a router or a firewall that supports the same sort of features,
+make sure ports 7700 are open as well as any other port you change to in the
+gunz menu, this has helped alot of people.
+
+* If your internet speed is slow, your max players per game is limited by quite
+ a bit, some 512/128 internet users may find there fine with 8 players but lag
+ to 999 for everyone if in a 16 player game.
+
+* Some times, all you need to do is relogin into the game ** If this is your
+first time getting 999 Pings.
+
+* For more information on Networking, check this post :
+http://gunzonline.com/forum/forum_posts.asp?TID=20025&PN =1
+
+
+        ===============
+        IG: Unlockables
+        ===============
+
+ Veteran Channel
+ ---------------
+
+  *Ruins map
+  *Assassin game mode
+
+ Expert Channel
+ --------------
+
+ * Port map
+ * Dungeon map
+ * Castle map
+ * Berserker game mode
+
+ Elite Channel
+ -------------
+
+ * Lost Shrine map
+ * Stairway
+
+-------------------
+II. Getting Started
+-------------------
+
+The first step in being able to play Gunz is actually being able to download
+it, isn't it? Again, we're assuming we're talking about the Ijji version of
+Gunz, so do not ask me about other versions.
+
+The first thing you need to know is that Ijji's website uses extensive Java
+and flash on their website, so your only choice is to use Internet Explorer, or
+Firefox's IE Tab to view the website. AGAIN, INTERNET EXPLORER OR IE TAB ONLY.
+
+  =====================
+  IIA. Creating Your Account
+  =====================
+
+1: Go to http://ijji.com using Internet Explorer or Firefox's IE Tab add-on.
+2: Click "Sign Up now!" in orange letters, on the right side of the screen.
+3: Fill out the information in the fields to get your account made.
+4: Once you've had your account activated, go to http://gunz.ijji.com
+5: Click "PLAY LIVE" in the round orange button on the page.
+6: Sign in to your account, this will begin installing Gunz on your computer.
+
+From this point on, when you want to play Gunz, you must sign in on Ijji's Gunz
+site and click the "PLAY LIVE" button. This activates the Gunz Launcher and
+lists announcements. Press START when you want to begin running Gunz.
+
+  ============================
+  IIB. Creating Your Character
+  ============================
+
+The game will begin loading and when finished, will prompt you to select which
+server you'll be playing on.
+
+ Servers
+ -------
+
+ * 2 CLANWAR servers
+ * 2 MATCH servers
+ * 5 QUEST servers
+
+The first thing to do is to make your character, so click CREATE. Give your
+character a name. You can even use alt codes and put spaces in your name using
+alt+0160, or other alt characters if you want, though they tend to be
+annoying and inconvenient.
+
+ +-------+ If you use alt+0160 at the END of your name, (space)^9 will appear
+ |WARNING| at the end of your name, and the text you type inside the lobby will
+ +-------+ automatically be written in yellow. This may sound cool at first,
+ but it ruins the way your name looks and the yellow font is annoying.
+
+If the name you pick has invalid alt characters you get the error: nomsg-1.
+After picking a name you can customize your character's gender and looks. Once
+you've chosen your looks, you can also choose your class. There are six
+classes available:
+
+ CLASSES
+ -------
+
+ * Axium Gun Knight
+ * Axium Gun Priest
+ * Axium Assassin
+ * Travia Gun Fighter
+ * Travia Doctor
+ * Travia Scout
+
+Which class you choose ultimately affects nothing; the only difference is their
+default equipment. The Travia Doctor is generally held as the best class,
+because you can sell the extra items for new weapons and armor right off the
+bat and have extra cash to work with.
+
+The next time you log in, you can select your character from this screen,
+create a new one, or delete it. You can create as many as 4 characters per
+account. If you want to create more, you can always open a new account.
+
+Your character's life is determined by how much HP (Hit Points) they have. Once
+ you run out of HP, you are dead. Depending on the gamemode is how you'll
+respawn. All characters have a default 100 HP. AP (Armor Points) is additional
+soak life gained from your armor and additional equipment. WT (Weight) is how
+much your character can carry.
+
+Your character has specific slots for specific equipment. All of your
+equipment's combined weight must be 100 or less, or you will be unable to
+fight.
+
+ Slots
+ -----
+
+ * Head: Hats
+ * Body: Shirts, jackets
+ * Legs: Pants
+ * Hands: Gloves
+ * Feet: Shoes, boots
+ * Melee: Sword, dagger, kodachi
+ * Gun 1: Pistols, revolvers, smgs, etc.
+ * Gun 2: Pistols, revolvers, smgs, etc.
+ * Item 1: Kits, grenades, enchantments
+ * Item 2: Kits, grenades, enchantments
+ * Finger 1: Rings
+ * Finger 2: Rings
+
+        ==============
+        IIC. The Lobby
+        ==============
+
+The Lobby is a general hub area from which you can chat, select your game, or
+change your equipment or options. Chat and games are divided into channels. You
+can select new channels on the top bar of the screen. All in all, it's quite
+similar to Battlenet. Under General channels, there are:
+
+ Channels
+ --------
+
+ * Three Free channels           (lvl. 1+)
+ * Two Entry Level channels      (lvl. 1~5)
+ * Two Beginner channels         (lvl. 6~10)
+ * Two Veteran channels          (lvl. 11~20)
+ * Two Expert channels           (lvl. 21-34)
+ * Two Elite channels            (lvl. 35+)
+
+When you first join, you will be placed in one of the Entry Level channels, and
+as you level up, you'll be placed in the others accordingly. You cannot go into
+a different level channel (ex. a lvl 9 cannot join the Entry Level channel).
+HOWEVER, if a person continually stays in that specific channel, they can
+continue to level past that channel's level limit. People with Elite channel
+levels can join Expert channel games, however, but not visa versa.
+
+There are two other main channels; Private and Clan. Private is a personal
+channel you can create, and Clan channels are for, of course, clans. If your
+character reaches expert level, you will no longer be able to join Entry-Level
+channels with new characters, and will have to join Free Channels. Free
+channels are for any level to play. If you are new and low leveled, I
+suggest not playing in Free channels, as anyone would be able to come in and
+slaughter you unless you specifically limit the game to a certain level.
+
+Games are channel specific as well. For example, if you are lvl. 3 and made a
+game in the Entry Level channel, someone from Beginner wouldn't be able to find
+it on his/her channel.
+
+On the lower right-hand side of the screen, there is a box that lists who is
+currently in your channel, in your friends group, or in your clan. A green 'L'
+indicates that they are in the Lobby. A blue 'G' means that they have joined a
+game, but haven't started playing. A red 'P' means they are currently in-game
+and are playing.
+
+In the lower left-hand side of the screen, it lists stats about your character:
+
+ Stats
+ -----
+
+ * Name: Character's name.
+ * Clan: The clan you are in, if any.
+ * Level: Your character's current level.
+ * Experience: How much experience your character has.
+ * Bounty: How much cash your character has.
+ * HP: The maximum amount of HP you have.
+ * AP: The maximum amount of AP you have
+ * WT: Expressed at #/100.
+
+Most of the screen is dominated by the game selector. Under that are three
+buttons: Join, Create and Play Now! Clicking 'Join' will send you to the game
+you've chosen, clicking 'Join Now!' will instantly find you a game to play, and
+'Create' will let you create your own game. There are a few kinds of Gunz
+games.
+
+        ===========
+        IID. Match types
+        ===========
+
+Match refers to what game mode you'll be playing in. Matches have different
+general rules and formats. From the Wikipedia page.
+
+ * Deathmatch - The standard game type found in many shooters. All players
+fend for themselves. The first person to reach a specified number of kills
+wins. The game ends when a player reaches the number of kills equal to the
+number of rounds. The symbol of Deathmatch is a skull.
+
+ * Deathmatch + Berserker - The first person who gets a kill at the start of
+the game is selected as the Berserker. The Berserker can be easily identified
+by him or her glowing blue. This player's guns will be more powerful during
+this mode, but their health will slowly drain during the match. The Berserker
+must defeat other players to regain health. Any player that defeats the
+Berserker will in turn become Berserker and regain full health. The previous
+Berserker will become a normal player upon respawning. The symbol of Berserker
+is a skull with flames in the eye sockets.
+
+ * Team Deathmatch - Players are divided into two teams in which they work
+together to defeat the opposing team. Each round, both teams fight each other
+- if a player dies, they can not respawn until the round is over, where their
+team or the opposing team is defeated. There is no specified kill limit. The
+symbol of Team Deathmatch is two skulls.
+
+ * Team Deathmatch + Extreme - Players are divided into two teams in which they
+work together to defeat the opposing team. Victory is obtained by the team who
+reaches the objective number of kills (which can be set at the beginning of the
+ game) first. Unlike Team Deathmatch, players do not have to wait until the
+round is over to respawn. The symbol of Team Deathmatch Extreme is a single
+skull, followed by a pile of skulls behind it.
+
+ * Assassination - Similar to Team Deathmatch, however, one person on each team
+is randomly selected as a target. A team must defeat the targeted player on the
+other team to win. The symbol of Assassination is a purple circle with two
+orange borders, resemblant of an aiming reticle.
+
+ * Gladiator - Same as Deathmatch, except players are only allowed to use melee
+weapons. The symbol of Gladiator is a vertical and diagonal sword clashing
+together.
+
+ * Team Gladiator - Team Deathmatch with Gladiator rules. The symbol of Team
+Gladiator is a vertical and two diagonal swords clashing together.
+
+ * Training - Similar to Deathmatch, but no experience or bounty is gained from
+kills, and experience is not lost through suicides or from level difference.
+The symbol of Training is an arm.
+
+ * Duel Mode - Players are involved in a tournament setting, where players
+actively fight 1 vs 1 (one-on-one) battles, and move up the ranks until the
+objective amount of kills is obtained. The symbol for Duel Mode is a pistol
+pointed to the right. Observers cannot talk to the current duelists.
+
+ * Quest - A gameplay mode available only on Quest Mode servers. It is not
+fully available in any GunZ version yet. It pits players in a team of up to
+four against NPC monsters which get harder as players level up. Currently there
+are around 23 monster types; the only ones currently being tested, however, are
+five types of Goblin. The progression of standard scenarios is very
+straight-forward; destroy every NPC in a room to advance to the next room.
+After all rooms have been cleared, items gained throughout the mission are
+distributed to each participant remaining. In addition to standard scenarios,
+there are more difficult special scenarios, gained through the sacrifice of
+quest items in different combinations in the waiting room. Special scenarios
+involve fighting bosses and much harder enemies. NPC attacks in any scenario
+can be physical or magical depending on the monster, with magic abilities
+having various effects, from healing NPCs, to slowing down players. Currently,
+from stage 4 and onward (regardless of quest level), the team can acquire
+pieces of meat (raw meat, seasoned meat, and steak) in Quest Mode. Items that
+may drop later range from quest items, to Monster Bible information, to event
+items, to equipment.
+
+ * Clan War - A gameplay type available only to specific Clan War servers. This
+pits clans against equally numbered and similarly leveled clans for ranking.
+There are seven rounds of three minute games in a Clan War. When playing a
+Clan War game, players do not lose experience from being beaten by those that
+are much lower level than them; they also get 1.5 times the experience as
+normal. When starting a Clan War, the map is selected at random.
+
+        ===================
+        IIE. Game Intrusion
+        ===================
+
+The intrusion screen is where you join the game you selected, or to set the
+options of a game you are creating. Creating your own game is rather simple.
+Click create while on the lobby screen. Select your game's name and password,
+if you'd like to have a passworded game.
+
+ Intrusion
+ ---------
+
+ * Match: What kind of game it will be; deathmatch, team deathmatch,
+gladiator...
+ * Map: Where you want your game to be held.
+ * Players: How many people you want in your game.
+ * Rounds: The max kills a single person can get until the game you made
+resets. If playing a TDM, this will be how many matches you will play.
+
+ Options
+ -------
+
+ * Time Limit: How long your game will run for.
+ * Intrusion: Toggles the option of people being able to intrude in your game
+once you've started it.
+ * Friendly Damage: Like the name implies, toggles whether people on your team
+can damage you or not.
+ * Level Restrictions: This tweeks the level gap between people who can join
+your game. You might want this in the Expert and Elite channels.
+
+        ==========================
+        IIF. Experience and Bounty
+        ==========================
+
++-----+----------+
+|Level|Experience|
++-----+----------+
+1     |0---------
+2     |200       |
+3     |800        > Entry
+4     |1800      |
+5     |3200------
+6     |5000------
+7     |7200      |
+8     |9800       > Beginner
+9     |12800     |
+10    |16200-----
+11    |20000-----
+12    |24200     |
+13    |28800     |
+14    |33800     |
+15    |39200      > Veteran
+16    |45000     |
+17    |51200     |
+18    |57800     |
+19    |64800     |
+20    |72200-----
+21    |80000-----
+22    |88200     |
+23    |96800     |
+24    |105800    |
+25    |115200    |
+26    |125000    |
+27    |135200     > Expert
+28    |145800    |
+29    |156800    |
+30    |168200    |
+31    |180000    |
+32    |192200    |
+33    |204800    |
+34    |217800----
+35    |231200----
+36    |245000    |
+37    |259200    |
+38    |273800    |
+39    |288800    |
+40    |304200    |
+41    |320000    |
+42    |336200     > Elite
+43    |352800    |
+44    |369800    |
+45    |387200    |
+46    |405000    |
+47    |423200    |
+48    |441800    |
+49    |460800    |
+50    |580200    |
+-----------------+
+
+Once you've reached level 50, you've gone about as far as anyone needs to go,
+at least for the time being. You no longer receive new items past level 50.
+
+Bounty is measured as 1.2X your opponent's level per kill, with a maximum of
+twice your level. Specific maps also alter how much experience you get.
+
+---------------
+III. The Basics
+---------------
+
+        =====================
+        IIIA: Keyboard Layout
+        =====================
+
+The basic default set-up of Gunz uses the WASD keyboard layout found in many
+shooters.
+
+ Default keys
+ ------------
+
+ * Forward:             W
+ * Backward:            S
+ * Strafe Left:         A
+ * Strafe Right:        D
+ * Jump:                Spacebar
+ * Shoot/slash:         Left-mouse click, left ctrl
+ * Second Slash:        Right-mouse click
+ * Guard:               Shift, L+R mouse click
+ * Reload:              R
+ * Melee:               1
+ * Primary Gun:         2
+ * Secondary Gun:       3
+ * Item #1:             4
+ * Item #2:             5
+ * /Bow                 6
+ * /Wave                7
+ * /Laugh               8
+ * /Cry                 9
+ * /Dance               0
+ * Taunt:               `
+ * Prev. Weapon:        Q, Wheel Up
+ * Next Weapon:         E, Wheel Down
+ * Chat:                Return
+ * Team Chat:           '
+ * Main Menu:           ESC
+ * Game Status:         Tab
+ * Toggle msgs:         V
+ * F1-F8:               Macros
+ * Screenshot:          F11
+ * Record game:         F12
+
+Your character's aim and orientation is also controlled by the mouse. For mouse
+control, mouse sensitivity is entirely up to you, however, you will want to
+have it at least a moderate level. Many players, after playing Gunz for a
+period of time, will tweak their sensitivity even higher. It's not uncommon for
+vets and pros to have their mouse sensitivity tweeked to the max.
+
+As for keyboard, most people use default controls. HOWEVER, if this if this is
+uncomfortable to you and you can't adapt to them, feel free to change the
+set-up to whatever feels most comfortable to you. A common alternative is to
+switch Melee, Primary Gun, and Secondary Gun from 123 to QEF. This helps if you
+have smaller hands and can't reach 123 without much difficulty. QEF is a
+popular alternative to 123, as is 1QE. Ultimately, it's all about how
+comfortable you feel when you play, so customability is up to you.
+
+I personally suggest against using the scrollwheel as your main means of
+switching. Later in the game, when your survival depends on how quickly you can
+swap between weapons, scrollwheeling may hamper your performance. Using it for
+certain moves is fine, but using it for all your switching will leave you
+searching for a weapon as you are pelted with bullets.
+
+        ====================
+        IIIB. Basic Movement
+        ====================
+
+This part assumes that you've taken time to look at the WASD layout mentioned
+above. I'm not going to waste time or space with a part on how to walk left,
+right, backwards, forwards, diagonally or jumping, etc.
+
+This section is about, of course, basic movement, the moves you will learn
+before all others. Some of these will be later replaced by more efficient
+moves, but until then, this is what you should know to get you started.
+
+                -=-=-=-=-=-=-
+                IIIB1. Tumble
+                -=-=-=-=-=-=-
+
+To tumble, double-tap the direction you would like to go. You must be equipped
+with a gun, grenade, or medpack to tumble. Tumbling is the most basic of
+movements, asides from walking. You will find dashing (IIB2. Dash) with a
+melee will be much more useful.
+
+                -=-=-=-=-=-
+                IIIB2. Dash
+                -=-=-=-=-=-
+
+To dash, double-tap the direction you would like to go while equipped with a
+melee weapon (sword, kodachi, or knife). Dashing is a better way of moving than
+tumbling; you move faster and the movements are shorter. You are highly
+maneuverable while dashing, and you can switch directions quickly. The dash is
+the basis of the Korean-Style (K-Style) movements, which we'll discuss later in
+this guide.
+
+                -=-=-=-=-=-=-=-=-
+                IIIB3. Air Tumble
+                -=-=-=-=-=-=-=-=-
+
+To air tumble, jump and then double tap the direction you would like to go. It
+goes without saying, there are two ways to air tumble: while moving or from a
+stationary position. You must be equipped with a gun or grenade to tumble.
+
+                -=-=-=-=-=-=-=-
+                IIIB4. Air Dash
+                -=-=-=-=-=-=-=-
+
+To air dash, you must have a melee weapon equipped. Jump and then double-tap
+the direction you would like to go. This will cause you to burst in the
+direction you press. If you are high enough in the air, you can dash multiple
+times, if not many times.
+
+                -=-=-=-=-=-=
+                IIIB5. Guard
+                -=-=-=-=-=-=
+
+Pressing SHIFT while equipped with a sword or kodachi (not a dagger!) you can
+block blade attacks and bullets aimed at the upper part of your body. You will
+raise your blade for a few moments and deflect bullets, or block a blade. If
+you block another sword attack while guarding, you can instantly perform a
+massive strike (IIB6. Massive Strike)! While the guard is useful for frontal
+attacks, you can still be attacked from any other direction. You also cannot
+block any shots to your legs while you block, so be warned. If you turtle
+(constantly holding block), expect people to nail you in the legs.
+
+You cannot perform any other special action while guarding, such as dashing. A
+quick note: sometimes the block tends to stick for some reason or another, so
+if you are still blocking even though you let go of the key, just wait a few
+seconds for it to let go.
+
+                -=-=-=-=-=-=-=-=-=-=-
+                IIIB6. Massive Strike
+                -=-=-=-=-=-=-=-=-=-=-
+
+While equipped with a Melee weapon, press and hold attack (left-click). Your
+character will perform a charging animation and your blade will begin to glow.
+Once your weapon is fully charged, unleash a massive strike by pressing attack
+again. This attack will deal more damage than a regular Melee strike, and will
+also stun your opponent momentarily. Later in the game, you will find there to
+be many complexities to massives strikes, their uses, and how they are used on
+you.
+
+                -=-=-=-=-=-
+                IIIB7. Stun
+                -=-=-=-=-=-
+
+While equipped with a sword or dagger, right-mouse click at your opponent. This
+will make you perform an attack which can be used to stun your opponent. With a
+sword or kodachi, it will cause you to bat your opponent up into the air, fall
+and hit the ground (uppercut). If using a dagger, your character will rush
+forward in a straight line and knock down your opponent (dagger thrust). These
+moves go by many names. Additionally: dagger thrusts do damage, while uppercuts
+do not.
+
+                -=-=-=-=-=-=-=-=
+                IIIB8. Safe Fall
+                -=-=-=-=-=-=-=-=
+
+If you happened to be stunned by an opponent, quickly press jump (space)! If
+knocked into the air by a sword, you will backflip and land on your feet. If
+knocked down by a dagger, this will allow you to recover from being pushed
+over. This is crucial to know if you're up against someone who likes to use
+Stun n' Gun tactics. Whiling safe falling will allow you to recover from the
+attack, you will be unable to control your fall until you touch ground. If
+someone uppercuts you into a pit, even safe falling will not save you from
+dying, though should you momentarily touch ground, you will be able to
+recover.
+
+                -=-=-=-=-=-=-=-=
+                IIIB9. Wall Jump
+                -=-=-=-=-=-=-=-=
+
+Jump towards a wall and press jump again once you're against the wall. This
+will cause you to backflip off the wall. By holding a direction as you flip
+off, you can move slightly in that direction. You can cancel the jump by
+slashing with a melee weapon. You can wall jump any direction.
+
+                -=-=-=-=-=-=-=-=-=-=-=-=-=-
+                IIIB10. Wall Run (Vertical)
+                -=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Run towards a wall and press jump once you're against the wall. This will
+cause you to run straight up the wall and flip off. You can jump off earlier
+by pressing jump. By holding a direction as you flip off, you can move
+slightly in that direction. Again, slashing with melee will cancel the jump.
+
+                -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                IIIB11. Wall Run (Horizontal)
+                -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+While running diagonally at a wall, press jump. The angle should be
+approximately 45 degrees, or else you'll just bounce off the wall. This should
+make your character run up the wall and across it. You will run a certain
+amount of time before flipping off of it. To cancel the wall run early, press
+jump to jump off, or slash to drop off the wall. If you have difficulty doing
+it with melee weapons, try using a gun while attempting it. It's much easier
+to perform while having a gun in-hand.
+
+                -=-=-=-=-=-=-=-=-=-=
+                IIIB12. Wall Hanging
+                -=-=-=-=-=-=-=-=-=-=
+
+If you are equipped with a melee weapon, jump at a wall and press second attack
+(right click). Your character will stick their weapon into the wall and hang
+there. This is perfect for saving yourself from a fall into Hell. Once you've
+stuck your sword into the wall, you can press jump and your character will jump
+straight up from their hanging position. Once you've jumped, press secondary
+attack again, which will make your character once again stab the wall. You can
+do this repeatedly do climb up a wall or pull yourself out from a pit. I
+wouldn't suggest "hanging around" for a long time, as it makes you a very easy
+ target.
+
+-----------------
+IV. Chat Commands
+-----------------
+
+        ===================
+        IVA. Slash Commands
+        ===================
+
+Enter into the chatbox while in the lobby, or while in-game while playing.
+
+/help                           Show a list of chatting commands (broken).
+/whisper <name> <message>       Whisper that message to a specific person.
+/r <message>                    Reply to the last whisper you received.
+/report (or /112)               Report details of the chatting (broken).
+/qj (or /go)                    Start a game right away in any room.
+/chatmake <name>                Makes a chatroom.
+/chatjoin <name>                Joins the mentioned chatroom.
+/chatleave                      Leaves the mentioned chatroom.
+/chatinvite <name>              Invites that person to your chatroom
+#                               Use in chatbar to talk in clan chat.
+@                               Use in chatbar to talk in chatroom.
+/follow <name>                  Join <name>'s game, if in the same lobby.
+
+The following can be used only in-game, while playing.
+
+/kick                           Opens up the kick menu, then select a name.
+/kick <name>                    Start a vote to kick <name>
+/taunt                          Makes a taunting motion.
+/salute                         Character bows to salute.
+/wave                           Character waves hands.
+/laugh                          Character laughs.
+/cry                            Character cries.
+/dance                          Character dances.
+/suicide                        You kill yourself. You will lose XP.
+!                               Use in chatbar to talk in teamchat.
+'                               Opens teamchat bar.
+
+        ==================
+        IVB. Clan Commands
+        ==================
+
+A clan is a group that share a similar purpose. Using this function, you can
+chat with your clan members where ever you are. You can also join a "Clan-War"
+with clan members.
+
+ Requirements
+ ------------
+
+ * The clan master needs 1000 BP to organize a clan.
+ * The clan master is required to acquire four members in order to form a clan.
+ * Both the clan master or promoter should be at the level of 10 or above.
+ * The maximum number of clan members is 64.
+
+Once all the conditions above are met, the clan master and the promoter can
+create a clan gathered around the same server and channel. Upon activating the
+"Clan List" you would see a menu, "Create a Clan" on the screen as you have
+not joined a clan yet. Press the menu to activate the dialogue channel for
+clan creation.
+
+With the exception of /clan leave and /clan msg, clan commands are only usable
+by the clan master or an admin.
+
+/clan open <Clan Name>                  Start a new clan.
+/clan close <Clan Name>                 Close the clan currently open.
+/clan invite <name>                     Invite the person to your clan.
+/clan leave                             Voluntarily withdraw from the clan.
+/clan dismiss <name>                    Force that person to leave the clan.
+/clan promote <name> <authority>        Promotes <name> to admin.
+/clan msg <message>                     Send a message to your clan. Same as #.
+
+        ====================
+        IVC. Color Commands
+        ====================
+
+You can used colored font in any chat in the game. Type ^#, the # being the
+color of what you want your font to be. Do not use a space after the number. As
+one might think, there are people with elaborately colored macros, and some
+specifically made to distract you.
+
+ Colors
+ ------
+
+ * ^0: Dark Gray
+ * ^1: Red
+ * ^2: Green
+ * ^3: Blue
+ * ^4: Yellow
+ * ^5: Dark red
+ * ^6: Dark green
+ * ^6: Dark blue
+ * ^7: Dark yellow
+ * ^8: Brown
+ * ^9: White
+
+There are no (known) color commands for orange (admin/chatroom) or light blue
+(clanchat). The regular font color is also a different shade of white than ^9.
+
+        ==================
+        IVD. Miscellaneous
+        ==================
+
+COMING SOON
+
+-------------------
+V. Playing the Game
+-------------------
+
+I shouldn't even have to put this in here, but since some people obviously need
+to be reminded, I put this here.
+
+        ==============================
+        VA. General Gameplay Etiquette
+        ==============================
+
+ * THE GOLDEN RULE: Do not act towards people in a way you wouldn't want them
+to act towards you. I cannot repeat this enough. Do not be an ass. You may be a
+15 year old, but try not to act like one.
+
+   Offensive
+   ---------
+
+   * Namecalling
+   * Complaining
+   * Corpseshooting
+   * Harassment
+   * Spamming
+   * Cheating
+
+ * If spamming requests in the lobby for killswapping didn't work the first
+five
+times, what makes you think spamming it another 15 times will work?
+
+ * Stop complaining, nobody wants to hear it. As Nothingxs said on the
+GunzOnline forum:
+
+"I'm just going to close any threads that argue if we should have slashshooting
+or not. I'm also going to close any threads where all you do is whine about how
+people spray and how little skill it takes to do such.
+
+If they're killing you, THEY'RE not doing something wrong. YOU ARE. Learn, get
+better and adapt. Complain here and you'll watch me lock your thread.
+Neither are going away, they're going to stay forever. If you have ideas on how
+to EXPAND on the game, then you can make a thread about that in the SUGGESTIONS
+SECTION. If you're just going to condemn how people play and the people who try
+to learn or play in that style, then please go whine about it to your friends
+on AIM instead.
+
+Noone (sic) cares how unbalanced you think it is if all you're going to do is
+whine at the top of your lungs. We've had a few big threads and countless
+smaller ones about it, already. Enough is enough."
+
+ * Nobody likes drama. Do not get ticked off because someone killed you. Chill
+out, go make a sandwich. Do not be a vindictive punk and try to get someone
+kicked because they're better than you. Follow the Golden Rule and you'll be
+fine.
+
+ * Some people will hate you for typekilling, or 'tking,' which is killing
+someone while they\u2019re typing. It's generally frowned upon to kill someone
+when
+they're typing, but then again it's the typer's fault for standing there. The
+solution? Type when you're dead or don't complain when someone kills you. You
+can tell someone is typing if a speech bubble appears over their head, but
+it's not always visible.
+
+If someone sees you typing and decides to pass you by instead of killing you,
+return the favor and don't shoot them in the back. I usually won't kill someone
+who's typing, but don't put it past other people. Most of the time, the same
+people who TK complain when they get TK'd themselves.
+
+ * Do not complain about what weapons an opponent is using. If you died, you
+died, and should move on. Instead of complaining that you got daggershanked in
+a corner, you should instead try to avoid getting yourself shanked. Likewise,
+this can be said of all weapons: quit bellyaching and adapt.
+
+                ===============
+                VA1. Game Rules
+                ===============
+
+These are self-imposed rules set by the room creator. They are not reinforced
+by MAIET, ijji, or the Gunz program itself.
+
+                        ==================
+                        VA1a. Rejoin Games
+                        ==================
+
+"# rejoin," is a game when the time is set to infinite and the kill limit is
+set to whatever number suits the game (usually the highest).
+
+Everybody plays normally until a person gets 5 kills before the limit, at
+which the person will exit the game into the intrusion screen, and then rejoin.
+This will reset their kill count and they will join the game with 0 kills,
+0 deaths. The purpose of this is to continually keep the game going with
+everybody getting as much experience as possible.
+
+If someone doesn't seem to be paying attention or is ignoring the rules, kick
+them. As a player in the game, it is your responsibility to help keeping the
+game going and voting 'y.' If you see people saying that they can't start the
+vote, do it yourself.
+
+Before, people would DM until the game ended, but recently, rejoin games have
+become the norm.
+
+                        ============
+                        VA1b. Bowing
+                        ============
+
+Bow rules are the rules applied inside most informal duels and sometimes in
+Duel mode. "Bow rules" are straight forward: all duels are 1 versus 1 and you
+must bow to a person before you engage them. The other person must acknowledge
+your bow by bowing back. Wait a moment after your opponent bows and then fight.
+Bow rules are usually done in gladiator games, team games, or in 1vs1
+situations.
+
+                        ==================
+                        VA1c. Killswapping
+                        ==================
+
+Killswapping, also called 'swapping,' is what the name implies: you and
+another player take turns killing each other for experience. This works well
+at lower levels, since the gap between levels is small. At higher levels,
+there are much better ways to get experience than by trading kills.
+
+                        ==================
+                        VA1d. Lineswapping
+                        ==================
+
+The same thing as killswapping, but instead of using only two people,
+lineswapping is done with multiple people. Most of the time, lineswapping is
+done as a Town deathmatch. People get into a line in front of the clocktower
+and take their turns killing the person in front of them. The first person
+gets killed by the second. The second stands where the first person was, and
+then the third person kills them. Order isn't usually stressed too much while
+doing this, because people respawn at different locations and it may take
+them longer to get back into the line. You are expected to wait your turn,
+however. People killing out of turn, or randomly shooting others, is
+prohibited. Lineswaps tend to become chaotic quickly if a person disrupts it.
+
+                        =================
+                        VA1e. Naked Games
+                        =================
+
+Simply put, you join the game naked. NO SHIRT, NO PANTS, NO GLOVES, NO BOOTS.
+Joining a game with shoes and boots on is NOT naked. Nobody particularly
+cares whether or not you have rings on, because you can't actually see the
+rings on the person and the gains by rings is small compared to most other
+equipment. Kills and experience come pretty fast. I suggest using high ammo
+spray weapons, or low ammo power weapons. Machineguns and rockets rule these
+games.
+
+Naked games also tend to be Berserk to make kills even easier and are
+usually # rejoin games.
+
+                        ====================
+                        VA1f. Regional Games
+                        ====================
+
+In an effort to keep pings low, there are regional games. Most list countries,
+such as "USA/Canada" or they may even go as far as to list their time zone. If
+making your own regional game is problematic, you can make one in a private
+channel. This will hopefully reduce the number of people outside your region.
+
+                        ========================
+                        VA1g. Attack and Defense
+                        ========================
+
+Attack and Defense is a game mode unto itself and my personal favorite rules.
+Attack and Defense is when a person makes a MANSION team deathmatch and take
+turns each round, attacking each other's bases. The defending team may only
+stay in the area from the spawn point to the ledge of that level at the end of
+the hallway, and no further. The attacking team has free range of the whole
+mansion.
+
+ About ATT and DEF
+ -----------------
+
+ * USE 5 MINUTE TIME LIMITS ONLY! I cannot stress this enough! 5 minutes is
+more than enough time for either team to wipe each other out. Anything more
+than 5 minutes increases the chance of the attacking team camping and
+potshotting.
+
+ * Red team always goes first.
+
+ * Do NOT turn off team balance! 'Nuff said.
+
+ * Discourage cheaters: Kick them immediately, regardless of which team they're
+on at the time. Cheating encourages more cheating, which may cause the
+non-attacking team to leave the base in revenge. At this point, all chaos
+breaks loose until people stay in the base again.
+
+ * If a long period of time has gone by without the attacking team committing
+to attacking the defending team, the defending team can warn the attackers by
+starting a countdown from 10. If the attackers have not initiated an invasion
+by 0, the defending team can leave the base to attack.
+
+ * Despite what some people say, the defending party CANNOT wallslash beyond
+the ledge. It's not wholly uncommon for defending people to bounce in between
+the walls. You cannot pass the ledge. Period. Falling down occasionally
+happens and that's an understandable accident, but bouncing off the walls is
+not legal. Kick 'em.
+
+        =========================
+        VB. General Gameplay Tips
+        =========================
+
+ Ping
+ ----
+
+ One cannot play Gunz itself without knowing about ping! Unfortunate, but
+ inevitable. In Gunz, how damage is dealt is by "packets," meaning while you
+ are technically shooting bullets at people, those bullets are packets of data.
+ How long it takes for data from one computer to be sent to another computer is
+ ping. Ping works both ways, like a P2P program. If your opponent's ping to you
+ is 100, then your ping to them is also 100.
+
+ Ping is measured in milliseconds, meaning 100 ping is equal to 1ms. That being
+ said, the lower the ping, the better. The closer someone lives to you, the
+ better your ping will be to each other, and visa versa, the farther you live
+ from each other, the higher ping will be. Obviously then, someone who lives
+ next door to you will have significantly lower ping to you than someone who
+ lives on an entirely different continent.
+
+ How does this effect you? This will effect how you play and how you deal
+ damage. Since ping is the delay between packets you send (damage), you will
+ have to adjust your aim accordingly. If your opponent has 100 ping, there will
+ be a 1ms delay between where you shoot and where your opponent will be.
+ Shooting where your opponent will be, instead of where you actually see them,
+ is called Lead Shooting.
+
+ I'll expand upon this at a later date.
+
+
+ * If you're an AP freak and don't care about weight, the best non-premium
+setup you can use for a male character is:
+
+   * Miz Leather Coat             (WT: 20 AP: 28)
+   * Miz Leather Trousers         (WT: 15 AP: 25)
+   * Ares Iron Shoes              (WT: 8  AP: 20)
+   * Ares Iron Gloves             (WT: 8  AP: 15)
+   * Altema's Ring                (WT: 2  AP: 10)
+   * Altema's Ring                (WT: 2  AP: 10)
+
+ * Equip different weapons for different situations.
+
+    ====================
+    VB1. Deathmatch Tips
+    ====================
+
+
+ * When playing a gladiator game in a map with pits, i.e. Dungeon, Island,
+dagger users will try to use the thrust attack to their advantage. They'll
+repeatedly try to thrust you into a pit. A good, but slightly risky way to deal
+with them is to wait at the edge of a pit and wait until they try to thrust
+you, and jump over them. Hopefully they'll go sailing into the abyss. If not,
+turn around and attack them while they stand at the edge. The most important
+thing to remember is that you have to preemptively predict when they'll START
+to do the pullback animation for the push; by the time you see them pulling
+back to thrust you won't have the time to jump over them and they'll hit your
+legs. Another tactic is to stand so that you're parallel with the walkway you
+fall onto. People will repeatedly try to thrust or juggle you over the edge,
+but so long as you have plenty of room to recover from the fall, you'll be
+fine. Since they'll be trying to juggle you, you can get right up in their
+faces and slash them.
+
+It is also common to have people with swords who will do nothing but spam the
+uppercut as well. Unfortunately, the uppercut has a wide berth, so you have a
+large chance of being hit into the air unless you attack them from behind. The
+best way to deal with these kinds of people is to simply leave them alone and
+attack them when they're not around a pit. Not surprisingly, people who tend
+to spam the uppercut attack will still try to repeatedly uppercut you even
+when they're not around a pit! Waiting on the beach portion of the Island is a
+good place to attack these people; without their pits, they're usually very
+easy to kill.
+
+If you're in a deathmatch against people who use these tactics, shoot them
+from a distance. They'll usually stop uppercutting after you've pelted them
+with a hail of bullets.
+
+
+ * Always be aware of enemies. Just because you don't see them doesn't mean
+they aren't there. Be sure to check that people aren't following you.
+
+ * Don't underestimate the power of controlled spraying. Taking your time, aim
+correctly, and only fire when you're sure you'll get a shot. Wildly blasting
+into a room will get you owned by someone who is more agile. I predict where
+someone is going to be and fire for that spot. This works great for shotguns
+and rocketlaunchers.
+
+ * I've talked with a few people who say that level means nothing. I feel
+this is incorrect. While level is not always a good indication of skill,
+there is a difference between levels. For example, my character was
+level 25 and I was in a dungeon. A level 36 came up behind me and popped
+me twice with a pair of Minic 567 MK.IIs, and I dropped. The instant I
+turned level 18, I bought a Maxwell LX30 and went into a game. I've
+never killed so many people so fast before, with so little effort. These
+people were all in the same level range as I was. "Yes, yes, that doesn't
+mean blah-blah-blah," no, levels can make a difference if you know how to
+equip yourself for victory.
+
+ * You should equip yourself differently for different kinds of games, or
+even different maps. k-Style in a DM usually won't do too well, while
+spraying works wonders. In a TDM or 1vs1, k-Style is the best route.
+
+ * Avoid getting in between opponents like the plague! Getting in between
+enemies means you're going to get pelted with a hail of bullets and
+chances are both opponents will attempt to kill you instead of each other!
+
+ * Predict when your enemy is going to reload and rush them! This provides a
+ great opportunity to get a few shots in.
+
+ * I've started using this tactic, with varying degrees of success in 1vs1:
+forcing your enemy to play your game. One of the more common ways to do this is
+to back up quickly while facing your enemy. This gap will force your enemy to
+follow you, and usually in a straight line. This makes it very easy to fire a
+few shots with a higher degree of success than if done from close range.
+
+
+                =========================
+                VB2. Team Deathmatch Tips
+                =========================
+
+
+ * The best way to fight is in a pack, assuming your rival team splits up like
+most do, your whole team should be able to take out multiple single people
+fairly quickly.
+
+ * Falling back and spraying or camping when your teammates are fighting
+DRASTICALLY LOWERS THE CHANCE OF WINNING. THIS IS MADE WORSE ESPECIALLY WHEN
+THE OTHER TEAM FIGHTS AS A PACK. Mediocre players can overcome players of
+better caliber if they know how to work well as a team.
+
+ * Baiting the enemy is a tactic that every team should learn. Having one
+player distract the enemy while a fellow teammate comes up from behind, or
+attacks from around a corner, will quickly help to dismember the enemy. For
+example, person #1 will lure an enemy towards them, but person #2 is waiting
+around the corner with a massive attack ready. Person #2 hits the enemy and
+then both persons #1 and #2 riddle the enemy with bullets.
+
+ * If someone is chasing an enemy and they go into a confined space like a
+hallway, try to get to the other side of the hallway and come in from the other
+side.
+
+                ======================
+                VB3. Map-specific Tips
+                ======================
+
+There's something to be said about knowing your battlefield. Knowing maps like
+the back of your hand gives you a keen advantage over those who don't. Learn
+all the angles, shortcuts and ways to turn the tide of battle in your favor.
+
+                        ===========
+                        VB3a. Arena
+                        ===========
+
+ * The majority of gladiator games take place here. It's rare that people fight
+in gladiator anywhere but here.
+
+ * There is an experience cap, so you won't earn as much as you might in other
+levels. If you're planning on leveling, you'll have to go elsewhere.
+
+ * Knowing how to wallclimb or wallrun is essential, because you will
+eventually find yourself respawning between two pits. You'll know who fell
+into the pit you see people suiciding.
+
+ * This is an excellent place to learn to do multiple wallruns, because of the
+large wall that surrounds the arena. Practice by running around the entire map.
+
+ * Fighting here is much different than any other map: most of the level is
+open space, so there's no where to hide. You'd better be agile, or learn how
+to use what little cover there is.
+
+                        ============
+                        VB3b. Castle
+                        ============
+
+ * The raised hallway is easily the best killspot in the whole level. With such
+a confined space and considering how long it is, it's the best place in the
+whole level to spray. Machinegun/rifle/rockets recommended.
+
+ * Under the raised hallway is a nook in the wall. People like to hide in the
+nook and lob grenades up through the half-circle opening into the hallway.
+I've been repeatedly killed by some people just because they always hit me
+with a grenade.
+
+ * People like to camp the nooks in the end of the hallway, usually with a
+massive strike, since it juts out just enough to cover you. Everytime I run
+into the hallway, I shoot a rocket at both sides as I approach. I'll hit
+someone every 1 out of 4 times
+
+                        =============
+                        VB3c. Dungeon
+                        =============
+
+ * The dungeon stage is an excellent place to see who really has skills with
+wallclimbing. People will intentionally jump over the edge and will wallslash
+(fly) on the wall they dropped over until someone gets near them. The person
+wallslashing will then pop up over the edge, shoot the person and drop back
+down over the edge. Since this can be done infinitely, it's a great guerilla
+tactic. The dungeon stage is an excellent place to learn how to fly and
+slashshot.
+
+ * Since you'll most likely come across a few people who use the previous
+mentioned tactic, there are a few ways to kill them.
+
+ Tactic
+ ------
+
+   * Get their rhythm down, then launch a rocket at the edge of the cliff when
+they're going to pop up. If you're lucky and you timed correctly, you'll hit
+them. You can also do this with grenades, but this requires better timing.
+
+   * Take the fight to them; jump over the edge and fly on the wall. Since
+you're
+slashing the wall, you can also hit them. In between slashing up the wall, turn
+and slash them if they are next to you, while you jump. If they happen to be
+far below you or above you, slash the wall, dash backwards and fire a shot at
+them, then dash forward and slash up the wall again. This move requires good
+timing and aim, or else you'll fall into the pit.
+
+   * Spam the sword or kodachi's right-click uppercut right at the edge, to bat
+the person off the wall when they pop up. You can also wait at the edge and
+hold block. Should they happen to wallslash in front of you, you will deflect
+their blade and they'll drop. Deflecting their sword will also stun them. You
+might also get a chance to massive from them hitting your sword. Immediately
+hit them with it.
+
+ * You can make a quick escape by causing yourself to wallrun into the pit and
+safely landing on a crystal. Go to the largest wall in the level (it's the one
+with the double staircase), and wallrun on that walkway's wall. Wallrun until
+you're halfway up the lower staircase and then flip off. You'll land safely on
+a crystal that's jutting out low on the wall. The * isyou and the # is the
+crystal on which you should hopefully be landing. It's crucial that you launch
+off the very end of the stairs, or you'll fallshort and into the pit. If you
+don't time it correctly and realize you're going to miss the wall, slash to
+cancel your fall and dash towards the crystal.
+
+  _____________| |__
+  | ||||            |
+  | -----------------
+  | |||| <---*      |
+  ----------------| |
+#         PIT     | |
+
+ * Of course, since this stage has one gigantic pit, everyone will be
+attempting to knock you off. Again, avoid that by attacking directly from
+behind or by shooting from afar.
+
+ * The pillar room is of course, a room with rows of large pillars reaching
+from the ground to the ceiling. There are a few things about this room that
+make it interesting.
+
+ Interests
+ ---------
+
+   * It's one of the better places for 1vs1 on this map.
+
+   * It's not infrequent in TDMs that the fight will break out here as opposed
+to the pit room.
+
+   * The huge walls on either sides of the pillars provide great practice for
+multiple wallruns.
+
+   * You can get the drop on people, literally. Climb up the pillars and hang
+at
+the top of the pillar with your melee. The pillar should conceal your whole
+body and allow you to see far. Drop death on them from above, or wait until
+they pass and shoot them in the back!
+
+                        =============
+                        VB3d. Factory
+                        =============
+
+ * It looks more like an industrial complex than a factory. This is a pretty
+open space, since it's all one "room." There are cramped places, like near the
+truck and under the building.
+
+ * The heal points respawn relatively fast, so hit them as often as you can to
+keep your health high. I once went into a veteran channel deathmatch and
+finished the game with a 30/0 score because I was constantly running between
+health spawns.
+
+ * Since everything is square and box-shaped, try to wallrun as often as you
+can to get away from people.
+
+                        ============
+                        VB3e. Garden
+                        ============
+
+ * Again, another small map.
+
+      ============
+      VB3f. Island
+      ============
+
+ * If you go into either the Island or the Dungeon, be wary that people will
+just spam the secondary attacks, even if they aren't over the pit areas. Use
+this to your advantage: recover quickly and hit them back! Back yourself into a
+nook in a wall if you're in the Island, especially on the lower ledges in the
+pit area. The only place you'll be uppercutted is into the wall, where you can
+recover from the fall and start again.
+
+ * In the area with the pits, there are high ledges around the perimeter on the
+walls. This is a great spot for sniping, and it also gives you access to the
+whole pit area. You can leap from the ledge and airdash all the way to the
+bottom of the other side to pick up health or armor. I like to single a person
+out and drop from above on top of them.
+
+ *  The beach area is basically the only other 'area' on this map. If you can't
+handle being slapped into the pit, then attack people here. The people who
+knock you into pits, for some reason or another, will still uppercut you even
+though there is no place for you to fall.
+
+      =============
+      VB3g. Mansion
+      =============
+
+ * The Mansion stage's lower level is a good place to rack up quick kills.
+
+____              _____
+    |____________|
+___                ____
+   |              |
+   |^ #        # ^|
+   ||            ||
+   || #        # ||
+   ||            ||
+   || #        # ||
+   |  *        *  |
+   |_____________ |
+
+ Kills
+ -----
+
+   * On the bottom level there are the walls and the pillars (#s) that run
+parallel to them. People will generally cluster up between the walls and the
+pillars, forming a nice straight line for a burst of fire from a rifle or
+rocket salvo. The problem with this is where you stand. If you stand to the
+north where the hallways lead off to the rooms and the basement, people will
+sneak up behind you from the upper level or the basement. I have invariably
+been killed whenever standing there. The best place to stand is on the south
+side next to the very last pillar. Stand facing the pillar, so you can see if
+anybody is coming down the hall, or is jumping off the staircase. If you stand
+back in the nook only facing the hallway, you will be killed very easily since
+you won't see people jumping off the staircase. When you turn lvl 18,
+immediately buy the Maxwell LX30. Assuming you're in a game with no other
+lvl 18s, and you try this tactic, you will mow everyone else down.
+
+
+ * There are two chandeliers hanging from the ceiling which are great sniping
+spots, provided that everyone is too dumb to look up. I wouldn't suggest
+hanging around too long from these spots.
+
+To get on the chandelier directly above the angel statue, simply stand on the
+head, jump, and wallhang onto it. You can jump up from there. The second
+chandelier above the stairs is much harder to reach. To reach the other, you
+have to wallslash up the nearest pillar and airdash out to it. I find it
+easiest to wallslash up the pillar by facing towards the direction of the room
+with the angel statue. You can also jump from the third floor balcony, but this
+is usually a little trickier.
+
+                        ==========
+                        VB3h. Port
+                        ==========
+
+ * A very claustrophobic map, modeled on a European port town. With a series of
+alleys taking up most of the level, there aren't a lot of areas to get into a
+full fight. Watch your back, because people tend to run up behind you.
+
+ * The best places to get into a full out fight is at the creek, since it's
+open enough to allow for free movement.
+
+                        ============
+                        VB3i. Prison
+                        ============
+
+ * Comprised mostly of hallways.
+
+                        ===============
+                        VB3j. Prison II
+                        ===============
+
+ * Comprised mostly of hallways.
+
+                        ==========
+                        VB3j. Ruin
+                        ==========
+
+ * This map is similar to the Arena, but with one key difference: the lower
+part is disected with a series of walls like a small labarynth.
+
+                        =============
+                        VB3l. Station
+                        =============
+
+ * Divided into two very large rooms with a wall bisecting them from top to
+bottom.
+
+                        ==========
+                        VB3m. Town
+                        ==========
+
+
+ * This map is perfect for clanwars, because it's open and both sides have a
+common meet-point near the corner near the clock. It's perfect for multiple
+wallrun practice.
+
+ * This map will be, in fact, the one you are in the most. Whether it's due
+to 1vs1s, clan wars, or general fighting, you will most likely be in this map
+more times than not.
+
+                =========================
+                VB4. Weapon-specific Tips
+                =========================
+
+ * I label certain guns as automatics, despite that all guns repeatedly fire if
+you hold down left-click. This just makes them easier to categorize for
+specific situations. All guns I label as automatics have less than a 130 rate
+of fire, meaning SMGs, rifles and machineguns. Swapping and reloadshot have no
+bearing on this analysis.
+
+ * There are two kinds of every gun: a gun with more ammo, but less power, and
+a gun with less ammo, but more power.
+
+ * If someone knocks you down or juggles you, immediately press the spacebar
+(jump). You will flip out of it and land on your feet. You cannot control the
+fall unfortunately, and while this won't save you from falling into pits, it
+will save you from being daggered repeatedly. This is great against people who
+make daggering their style, because they will still aim for the place on the
+ground where they expected you to fall. Landing and unleashing a pointblank
+ blast from a shotty or a staccato from a rifle will do wonders.
+
+ * If being repeatedly daggered by someone, start attempting to dash while
+still on the ground. Dash so that you will not be in his dagger's path.
+Hopefully when you begin to get up, you'll slide away from him before he can
+get the stab in. Even if he/she manages to hit you when you slide out, you'll
+have more time to recover. If you're hitting space (jump) when you attempt to
+slide out, there's a good chance you'll recover right away even if you get hit
+again. Always remember that pressing space will save you from being daggered.
+
+ * Frag Grenades are usually a waste unless you throw them into a crowd, or
+you've managed to become a good grenadier. 1vs1, their effect depends on how
+good you are at deceiving your enemy. In other words, if you are pro with
+grenades, they are excellent at damage and pressuring the enemy. If you're not
+good with grenades, they're a waste of weight and you probably won't be able to
+use them to their full potential.
+
+ * Flashbangs (flash grenade) are nuisances, not deadly, inefficient, and don't
+particularly help. While they may serve as a good distraction for you to escape
+if you're low on health, using them offensively is a waste of weight. Most
+people when hit with a flashbang will randomly dash and jump everywhere to
+avoid getting hit until the effects wear off. I've even managed to kill 2
+people while blinded by flashbangs.
+
+ * Smoke grenades, along with being not deadly, are utterly useless and cause
+the game to lag. People can just rush through the smoke and continue fighting,
+or they can just watch their crosshairs until it turns red, indicating they're
+aimed at an enemy, and shoot through the smoke. If you must use them, toss
+three instead of one, because it covers a much larger area.
+
+                        ==========
+                        VB4a. Guns
+                        ==========
+
+ * If you're one-on-one with someone and use some sort of automatic, don't just
+hold down on the trigger and hope you'll hit them. You'll waste ammo quickly,
+and your accuracy will be way off. Instead, fire short bursts and fire only
+when you're sure you'll hit. Likewise, reload whenever possible, as you may
+need all your shots.
+
+ * The key to using heavy weapons like the machinegun and rocketlauncher is to
+swap them in and out quicky for melee, so you can keep moving at a fast pace.
+You can't wallrun with them in use, but you can initiate a wallrun with a melee
+and then pull out your weapon.
+
+ * If debating over which shotgun maker to go with, go with Breaker. Avengers
+notoriously low ammo clip will leave you out to hang in a clinch. Use Avenger
+as a backup weapon in the Weapon 2 slot.
+
+ * Once you turn lvl 18, the Maxwell LX30 is a must. With a 40 round clip, 160
+bullet cache, and fastest rate of fire of any gun up to that point, it is the
+best automatic you'll get until later, the Maxwell LX44.
+
+ * You cannot equip two of the same weapon in both slots, i.e. you can't equip
+two Breaker 7s, so don't buying two of them. You can equip two of the same kits
+or grenades however.
+
+ * If you're using an official crosshair, notice how it gets larger when you
+fire? This is recoil. All guns in the game recoil, and this affects aim,
+especially on SMGs. A good way to increase your chances of hitting your
+opponent is to do short bursts if your gun has automatic fire (SMGs, assault
+rifles machineguns), or pausing in between single shots (pistols, revolvers).
+
+ * Pistols and revolvers are basically the same kind of weapon with two
+different specialties; pistols have a larger clip, shoot/reload faster, but
+have less power than revolvers. Revolvers have a smaller clip, take a
+relatively long time to reload, but have the strongest single shot of any
+bullet-using weapon. Revolvers are also heavier. I personally recommend
+revolvers, because the damage they do more than makes up for their weight and
+speed.
+
+ *  Many people say that rocketlaunchers are only mid-range weapons but I
+disagree. They can be used at mid-range or long-range, provided you like
+sniping, or have
+very good timing. The problem with rockets is that they travel at a set speed,
+while bullets hit instantly.
+
+      ======================
+      VB4b. Gun Combinations
+      ======================
+
+Inevitably someone will ask me what weapon combination is best. No particular
+combination is best; it really depends on your personal playing style. If
+you're a pro, chances are you can make almost any weapon combination work for
+you. Some people can just pick up weapons easily and adapt. This is a list of
+more common weapon combinations.
+
+Please note, some weapons ARE innately more effective than others. SMGs are
+nearly non-existant in expert channels, and pistols almost always take a back
+seat to revolvers.
+
+  Weapon effectiveness chart
+  --------------------------
+
+               +---+---+---+---+---+---+---+
+               | P | R | S | S | R | R | M |
+               | i | e | h | M | i | o | a |
+               | s | v | o | G | f | c | c |
+               | t | o | t |   | l | k | h |
+               | o | l | g |   | e | e | i |
+               | l | v | u |   |   | t | n |
+               |   | e | n |   |   |   | e |
+               |   | r |   |   |   |   |   |
++--------------+---+---+---+---+---+---+---+
+|    Pistol    | U | U | O | N | O | E | O |
++--------------+---------------------------+
+|   Revolver   | U | X | X | N | E | X | O |
++--------------+---------------------------+
+|    Shotgun   | O | X | X | O | X | X | E |
++--------------+---------------------------+
+|     SMG      | N | N | O | N | O | U | O |
++--------------+---------------------------+
+|    Rifle     | O | E | X | O | E | E | E |
++--------------+---------------------------+
+|Rocketlauncher| E | X | X | U | E | X | E |
++--------------+---------------------------+
+|  Machinegun  | O | O | E | O | E | E | E |
++--------------+---------------------------+
+
+ Graph key
+ ---------
+
+   * U: Useless
+   * N: Not effective
+   * O: Okay
+   * E: Effective
+   * X: Extremely effective
+
+ * Rifle, shotgun    (close/far)
+   Example: Maxwell LX30, Breaker 6
+
+This is an a set up that is becoming more popular for obvious reasons: it
+provides close-range and long-range firepower. It works very well in large
+areas like Dungeon, where you might have to fire upon someone from a distance,
+but be extremely close to someone on stairs.
+
+ * SMG, rifle    (spray combination)
+   Example: Renard V x2, Maxwell LX30
+
+These are great to spray with, but tend to waste ammo very quickly and it's
+horrible to do slashshot with, as both tend to chip away damage instead of
+dealing large chunks. This combination also provides close/far firepower, but
+not a whole lot of power per bullet. Expect extended gunfights.
+
+ * Revolver, shotgun    (slashshot combination)
+   Example: Phantom Cruise N x2, Avenger
+
+This is a popular combination for experts and pros. It's great to slashshot
+with, since you can use both weapons to do so. Both weapons have the ability to
+dish out huge chunks of damage, especially when you get into the later levels.
+This combination works even better once you get Minic 567 mk. IIs and an
+Avenger mk. II This combination combines the power and ammo of revolvers with
+the power and spread and power of a shotgun. Since this is a relatively
+light-weight combination, people also like to add recovery items and grenades
+onto this.
+
+ * Shotgun, rocketlauncher    (Slashshot combination II)
+   Example: Breaker 7, Maxwell RW-77
+
+Both weapons rely on large spread damage to make up for inaccuracy, but still
+produce copious amounts of damage. While rocketlaunchers aren't good to use in
+melee-range, it's not often that you'll hit yourself if you're doing it right.
+You'll tear through ammo very fast on this combo, so I suggest you know how to
+reload in a tactical manner.
+
+ +----+ To use this setup effectively, equip the rocket as your primary weapon
+ |HINT| and your shotgun as your secondary weapon. You switch from rocket to
+ +----+ shotgun faster than you switch to shotgun to rocket because of the
+ difference in switch delays. Fire the rocket at them first and pop them with
+ your shotgun.
+
+ * Shotgun, shotgun    (shotgun combat)
+   Example: Breaker 8, Breaker 7
+
+By far the most commonplace combination, and also extremely deadly. Shotguns
+are the most powerful single-shot weapon in the game, the latter Breakers and
+both Avengers being able to dish out over 100 damage at pointblank range. Along
+with being able to dole out critical damage at close range, the spread makes
+them hard weapons to dodge at midrange because of the 12 pellet spread. As if
+they weren't powerful enough, the in/famous reloadshot reduces their delay to
+roughly the speed of a revolver. Shotgun? ShotFUN!
+
+ * Revolver, revolver   (revolver-specific)
+   Example: Zaurus B, Minic 567 mk II
+
+This weapon combo is used occasionally. While not as powerful as using two
+shotguns, it packs a definite punch. This setup is not for everyone, however.
+Because you have to learn how to lead, you may not make every shot you think
+you did. The upside to this however, is that you have a lot of ammo.
+
+ +----+ Of course, switching between revolvers lowers the delay between shots
+ |HINT| but you can decrease the delay even further by constantly moving while
+ +----+ you swapshot with revolvers. Try it, you'll see a definite difference.
+
+ * Machinegun, rocketlauncher   (power-house)
+   Example: Nico MG-K8, Maxwell RW-77
+
+This combination is almost exclusively used in naked games, with a few
+exceptions. This is a very heavy combination and you'll have to make up for it
+with wearing light armor, or no armor, depending on accessories. Your most
+effective attack range will be mid to long range.
+
+ * Rocketlauncher, rocketlauncher   (explosive)
+ * Example: Maxwell RW-77, Maxwell RW-66
+
+Some people prefer this over shotgun/shotgun for a few reasons. One is the
+single-hit splash damage, as opposed to a spreadshot like a shotgun. Rockets
+also make it easier to hit lagging targets. Finally, the sound of someone
+swapshotting rockets is intimidating. The problem is that this is very heavy. I
+don't suggest using this if you are new to rockets, or else you might end up
+killing yourself often. Then people will laugh. And call you a noob. N' stuff.
+
+ +----+ Rocketeering is very different from other weapon styles. If you plan on
+ |HINT| becoming a good rocket user, you should learn about their uses and what
+ +----+ you have to do to avoid noobing it up. Read sections VIB10. Swapshot
+ and VB4c. Bullets VS Rockets.
+
+ Other weapon combos
+ -------------------
+
+ * Pistol, pistol: No. Most damage goes to AP.
+ * Pistol, revolver: Better than above, but not great. Use revolver as weapon
+1.
+ * Pistol, SMG: Do revolver, SMG instead.
+ * Revolver, SMG: Interesting combination, but not very popular.
+ * SMG, SMG: All spray, only good in close, not a lot of power.
+ * Rifle, rifle: Not a lot of power per bullet, but very good for hallway
+spray.
+Shoot from one rifle until you run out, then switch to the other.
+ * Machinegun, machinegun: Incredibly heavy, all spray. To use this combo
+you'll have to wear very light armor. It does however, do one thing very well:
+drops mofos at mid-range. You'll only have to reload twice for 480 shots. Two
+people walking side-by-side with dual MGs produce a veritable wall of bullets.
+
+      ===========
+      VB4c. Melee
+      ===========
+
+You can't talk about Gunz if you don't talk about melee weapons. K-style and
+d-style dominate bladed weapon combat, so you'd better learn how to become
+proficient with one fast.
+
+ * Daggers, swords, and kodachi balance out power and speed.
+ * Daggers are the quickest melee and can stab very quickly, but are weak
+weapons. The secondary attack is a push-thrust. This can be used to knock
+people over.
+ * Kodachi are a pair of swords and are slower than daggers, but stronger. The
+secondary attack is a spinning slash that launches the enemy into the air.
+Kodachi are the heaviest class of melee weapons.
+ * Swords are stronger than kodachi, but are slower with regular slashes. The
+secondary slash is faster The secondary attack is an upward slash that launches
+an enemy into the hair.
+
+  Balance of speed and power
+  --------------------------
+ +------------------------+
+ |STRONGER===============>|
+ +------------------------+
+ |Dagger---Kodachi---Sword|
+ +------------------------+
+ |<=================FASTER|
+ +------------------------+
+
+      ========================
+      VB4c. Bullets VS Rockets
+      ========================
+
+Before deciding to use rockets, you must know certain things about rockets
+which makes them much different from any other weapon in the game.
+Rocketlaunchers are a unique gun in Gunz, in that they do not fire bullets. It
+obviously fires (launches) rockets. Most of you probably already knew this, but
+some people need to have these things explained to them. To see more data
+specifically on rocketlaunchers themselves, go to VIIA6. Rocketlauncher.
+
+When someone fires a gun, the bullet hits are instant. Left-click, and the
+bullets are where you pointed your crosshair. Rockets are not instant, however;
+rockets fire in a straight line at a set speed, and so they take time to hit a
+target.  All rockets travel the same speed, whether they were fired from the
+level 10 Maxwell RW-66, or the level 50 Walcom L2. On contact with any surface,
+they explode like any good rocket should. If a fired rocket does not come into
+contact with anything, it self-detonates after about 10 full seconds.
+
+The splash damage that rocketlaunchers do is unique within itself, since it's
+the only weapon besides (obviously) grenades that explode. Along with this,
+rockets have VERY little ammo, second to shotguns. These two factors, along
+with lag, will effect how you fight with rockets.
+
+When fighting with rockets, the best way to assure hitting your target is to
+use the splash damage the explosion does to hit your target. Instead of firing
+the rockets at the person (or aiming ahead in case of lag), you should aim for
+ the ground of where they will be next or possibly whatever object is nearest
+to them, i.e. walls, pillars, etc. This takes less prediction skill than
+one might think, since the splash makes up for slight inaccuracies. Shooting
+rockets directly at someone should be only when you are absolutely sure they
+will hit. As mentioned, they have very little ammo and a long reload time, so
+every shot must count. Since your opponent will almost always be moving, they
+can very easily avoid your rockets, should you fire them straight at the
+person.
+
+What one must account for when firing rockets is the angle of the shot and the
+timing of the hit. It's much harder to put an accurate rocket on a specific
+spot from across the map. The farther you are from your target, the more
+shallow the angle of the shot is, and the longer the rocket takes to get there
+ as well. This makes it incredibly difficult to do long-range shots without
+having to climb to higher ground or tweek your shot timing. Likewise, uneven
+ground is bad for you fire on, like stairs, since the angle of the stairs is
+sometimes parallel to where you need to shoot.
+
+ +---------------+
+ |45 degree angle|
+ +---------------+
+
+ O
+/T-r= -
+ ^      -
+/ \       -*HIT*
+----------------
+
+ +---------------+
+ |22 degree angle|
+ +---------------+
+
+ O
+/T-r= -
+ ^       ¯  -
+/ \            ¯  -*HIT*
+------------------------
+
+ +---------------+
+ |11 degree angle|
+ +---------------+
+
+ O
+/T-r= -
+ ^        ¯   -
+/ \               ¯   -   _*HIT*
+--------------------------------
+
+The longer the shot, the harder it is to judge timing and accuracy. The only
+way to compensate for distance is to climb higher (or sometimes drop lower),
+thus making the angle steeper.
+
+While having a lot of distance between you and your enemies makes it harder
+to time the shot, you shouldn't dismiss the idea of rocket sniping. Places like
+Stairway, Dungeon, and Island make great places to snipe people with rockets.
+Climb to the highest point you can find, wait until the person gets into a
+fight with another player, and rain rockets onto them.
+
+Since rockets have a slower firing rate, you should learn how to swapshot them
+if you're dual wielding them. Rockets also have a special kind of swapshot
+specific to that weapon because of the delay. Check out VIB10. Swapshot for
+information on rocket swapshots.
+
+When it's all said and done, rockets can be an excellent weapon choice, so long
+as you know how to use it properly, and know how to work around the drawbacks.
+
+      ==========================
+      VB4d. The Art of Grenading
+      ==========================
+
+Using grenades is something that was frowned upon up until recently, because of
+how bad people were with them. Now it's starting to become much more common
+that enemies you might face will not only have grenades, but also use them
+competently.
+
+Unfortunately for any aspiring grenadiers, the art of grenading, like k-style,
+is something that's hard to teach.
+
+There are two very important things to know about grenadiering:
+
+ * You must have a rudimentary idea of geometry and how angles work.
+ * A throw should only be done when you are sure you can throw without being
+damaged.
+
+That being said, there are only two kinds of throws for grenades: direct and
+indirect. A direct throw is when you lob a grenade DIRECTLY at an opponent.
+This kind of throw should rarely be done, and ONLY when an opponent is not
+directly focused on you. An indirect throw is when you do not directly throw a
+grenade at an opponent, but instead ricochet it off other surfaces.
+
+    ============
+    VB5. Tactics
+    ============
+
+In this section, I will give you general tips towards defeating several
+different kinds of opponents, who will be known mostly by the tactics or matter
+of fighting they use. Though most opponents are not nearly as one-dimensional
+as this section would make it seem, these help for you to improvise your
+attacks and give you an edge rather than just blindly fighting. You can easily
+get an advantage on your opponents if you learn how to read their attacks and
+patterns. Use these tactics yourself, or learn how to fight against them.
+
+  You should investigate this thoroughly.
+
+      ===================
+      VB5a. Spray N' Pray
+      ===================
+
+This is by far the most common "tactic," if it could be called one. This is
+what is generally meant by 'sprayer.' It pretty much rules the lower-leveled
+channels and doesn't stay effective for long, but you might still be surprised
+occasionally by someone doing it in higher level channels. It goes without
+saying that having this person on your team in a team deathmatch is more bane
+than boon.
+
+It's not much of a tactic, so much as just shooting wildly with a fast weapon.
+For the most part, this tactic is a waste of time, because the shot-to-kill
+ratio is so high. It's best used by shooting into a crowd of people, or people
+who have lined up nicely. You might get lucky and manage to kill a few people,
+but that's the extent of it. One of the best places to do this are hallways and
+corridors.
+
+ How to spot
+ -----------
+ 
+ * May tumble directions, or even just walk.
+ * Usually not very agile, might not even jump.
+ * May or may not lag.
+ * Tends to use rapidfire weapons, i.e. rifles or SMGs.
+ * Liberal with the trigger, tends to waste ammo quickly.
+ * Somehow manages to usually kill you through sheer luck.
+ * Usually not much skill, if any.
+ * Generally noob.
+
+ How to beat
+ -----------
+
+People who usually use this method of combat are nothing if not sluggishly
+slow. Some may have learned to dash with melee, at which point their moving
+ability increases, but not their firing mobility. Though they may be slow, at
+all costs, avoid getting into their range of fire. They tend to continuously
+shoot, making anything within their range and damage cone pretty much Swiss
+cheese.
+
+Their usual weakness revolves around two points: what weapons they are using
+and how mobile they are, and any combination of these two points. Should they
+use SMGs, you are usually safe from a far distance, since SMGs really do spray
+bullets all over the place. Should they use rifles, long range will not be a
+good idea, since rifles tend to be superbly accurate. In either case, the real
+secret to beating these kinds of players is that you should remain extremely
+close to them and always out of their line of fire. Since they're usually not
+very mobile, a quick Butterfly, Flashstep and a powerful weapon will usually
+fell them fast. Try closing in from the side, rapidly Butterfly and then
+finish them off with a shot or two from revolvers or shotguns. If they are
+agile, the same tips apply, but instead of being constantly slow, they'll be
+slow when firing their weapon since they tend to stay on the ground when
+firing.
+
+When all else fails, a surprise reloadshot will always put the hurt on.
+
+      =================
+      VB5b. Stun N' Gun
+      =================
+
+This is a fairly easy tactic to use. While equipped with melee, charge up for
+a massive strike. Dash up to your opponent and hit them with the massive
+strike, then immediately switch to your gun and shoot them from point-blank
+range while they're stunned. A shotgun or rifle usually does well, because
+they can do significant damage in a short period of time. If your enemy is
+also using a sword, block their slash to use the massive strike.
+
+ How to spot
+ -----------
+
+ * Only attacks when they have a massive.
+ * Usually hides behind objects while they charge.
+ * Tends to use rapidfire weapons, i.e. rifles or SMGs.
+ * Usually not much skill, if any.
+ * Tends to Spray n' Pray if this tactic fails.
+
+ How to beat
+ -----------
+
+The key to beating these kinds of players is rather simple, but depends mostly
+on how observant you are. They usually won't appear until they have a massive
+ready and glowing, so catching them requires that you see them while they start
+charging their massive, or before they massive you. Should you see them while
+charging, simply riddle them with bullets. If they are going to massive you,
+move away quickly, or hope you can block their massive. Once they've attacked
+and (hopefully) missed you, they'll be unable to attack for approximately 1.5
+seconds while they recover from the strike. At this point, strike them back
+with a weapon like a shotgun or revolvers, or even spike them since you'll
+have an easy target.
+
+      ==================
+      VB5c. Lunge N' Gun
+      ==================
+
+This is very similar to the above method, but it exclusively revolves around a
+dagger's right-click attack: the dagger thrust (or dagger lunge). Just as
+annoying as the previous two kinds of people, sometimes moreso because of their
+persistance. Doing this will definitely land you in the "dagger noob" category.
+
+ How to spot
+ -----------
+
+  * May be mobile, depending on if they dash.
+  * Almost always has their dagger out.
+  * Doesn't usually hide, tends to run right up to you.
+  * Tends to use rapidfire weapons, i.e. rifles or SMGs.
+  * Usually not much skill, if any.
+  * Tends to Spray n' Pray if this tactic fails.
+
+ How to beat
+ -----------
+
+This person's method of combat hinges solely on one thing: the chance that when
+they lunge at you, you will fall down and not get up, so they can shoot you on
+the ground. They may just run right up to you and attempt the lunge, or may
+try to soften you up with shanking you a few times first. In either case, as
+long as you see them coming, you have a good chance of avoiding it. If you see
+them coming, wait until they thrust and then shoot them, or constantly move
+backwards so you can shoot them while they come at you.
+
+Should you happen to get hit by the lunge, spam the jump key (spacebar) and
+you'll flip out of it. If they do hit you and you recover, they might even
+shoot the ground where they thought where you'd land. Shoot them as soon as
+you recover. Again, just like massives, knowing where they are is key in
+beating them.
+
+      =========================
+      VB5d. Camping and Sniping
+      =========================
+
+Since both camping and sniping involve the same basic kind of attack pattern, I
+will simply combine these two. Camping is a word used quite a bit in PC gaming
+and if you aren't familiar with it by now, you must be living under a rock.
+
+Camping is defined as: "...computer gaming jargon for the practice of a player
+staying in one area of the game world waiting for enemies or useful objects to
+appear or to come to the player rather than actively seeking them out. Players
+camp in order to gain an advantage over their opponents."
+
+This applies to Gunz in that, your opponent is going to pick a spot to sit
+that will most likely give them a tactical advantage over you, whether it be
+from height or initiative. It may simply be quicker to jump into the fray to
+get faster kills, at the expense of more deaths, rather than to take long
+periods to time to get a single effective kill.
+
+ Camping spots
+ -------------
+
+ * The stairwells in the Mansion basement. It's popular to sit waiting with a
+dagger, so they can lunge you from around the corner. They can still lunge you
+because their angle of sight allows them to stay hidden.
+
+ *  The general area behind the Mansion's stairs. A lot of combat goes on in
+this part of the mansion, so staying there may simply be easier and allow the
+enemies to come to you
+
+ * The ledges in Island makes perfect places to snipe from, whether with rifle,
+revolvers, or rockets.
+
+ * The elevated corridor in the Castle. Either side of the corridor presents a
+great place to camp, since you're enclosed on two sides, but you can look
+either direction. People frequently run down the corridor.
+
+ * Around corners of unpopulated areas.
+
+ How to spot
+ -----------
+
+ * Will tend to stay in the same spot, will leave if damaged.
+ * Melee attacks: sword/kodachi flip, dagger lunge, or massive.
+ * Gun attacks: Spray, spam, pointblank shotgun blasts.
+ * Uses the surrounding environment to conceal him/herself.
+
+ How to beat
+ -----------
+
+Beating someone that's camping is difficult to be precise about, simply because
+of how versatile camping is, and how organic Gunz itself is. Killing someone
+that's camping requires you to be faster than your opponent, sneakier than your
+opponent, or simply know where they are. People tend to give themselves away,
+either because of clothing like long coats, or motions like switching between
+weapons. If you see something around a corner, chances are they're waiting for
+you.
+
+If your opponent is on a high ledge, it may be near impossible to sneak up on
+them. In this case, the only way to flush them from their spot is to damage
+them with long-range fire. A long-range weapon or a well-placed nade may do
+the trick. If they happen to see you before you get a chance to damage them, it
+may be best to take cover and come back. So long as they have the advantage of
+the ledge, they'll be gone before you can reach them.
+
+If your opponent is camping a hallway or stairwell, it's much easier to flush
+them out. Throwing a grenade off the wall into the stairwell or down the
+corridor will almost always move them out of their spot long enough for you to
+get close and finish them off. Sneaking up on them is easy as well. Confined
+spaces restrict their movement as well as yours, so getting close to them will
+be very easy. Once you've infiltrated their personal space, you're on even
+ground with them and from that point it's simply a matter of skill and luck.
+
+If you don't have grenades or any explosive weapons, you'll have to use what
+you have. Charge your enemy from the opposite side of where he/she's standing
+and come in at an angle so you face your opponent. If you're fast, RS them in
+the legs with a shotgun.
+
+--------------------------
+VI. Korean Style (k-Style)
+--------------------------
+
+It won't be long into your Gunz career until you come across 'k-Style.' What is
+k-Style? k-Style is a style of play that came from Korean gamers in Gunz; it is
+highly agile, relies on rapid attacks, and quickly switching in between melee
+and firearms.
+
+At first, k-Style was an oversight in the game's code, which allowed players to
+cancel attacks by slashing, switching weapons, or blocking. This expanded from
+a few simple tricks into a whole playing style, and eventually became a part of
+the game itself.
+
+Now you might be saying to yourself, "OMG KSTYLE IZ DA GLITCH I NO KSTYLE CUZ
+ITS CHEAP!!!11/one." Well, that's all fine and dandy, but the problem with that
+ill-wrought theory is this: k-Style is now an integral part of Gunz. In fact,
+it is now programmed AROUND by MAIET, leaving it intact.
+
+While it's always up to individual skill, knowing at least some parts of
+k-Style will provide you an advantage over those who do not. Merely knowing how
+to do advanced technique will not make you pro however, as the application of
+these techniques are as important as knowing how to do them. The difference
+between a newbie k-Styler and a pro k-Style is staggering.
+The following is a list of the most common k-Style techniques. I am not going
+to list "combo" moves, or list different names for the same technique (i.e.
+calling Slashshot 'Fullstep') or adding a single keystroke onto a technique.
+You and your friends can make up all the fake -step names you want, but they
+won't be added. For this reason, moves like "Million Step" will be nothing but
+a footnote (Million Step is simply an HHS with a rifle).
+
+Unfortunately, many of these moves cannot be really "taught," so much as
+"learned," since you will have to take into account speed and timing: something
+which cannot be easy conveyed via text. Finding a good teacher will help you,
+finding a good clan is even better.
+
+Note: All k-Style moves assume you have a melee equipped unless stated.
+
+  =============
+  VIA. Movement
+  =============
+
+      ==================
+      VIA1. Jump-Dashing
+      ==================
+
+Same thing as noted in 'IIB4. Air Dash,' but I felt it had to be added again to
+highlight the relevence to k-Style. For the beginning to intermediate k-Styler,
+jump-dashing is the best way to get around.
+
+Steps:
+  1: Jump
+  2: Dash (any direction)
+
+Difficulty: *
+
+Notes: If you happen to do this very quickly, to others (and in replays) it
+will appear that you will be sliding along the ground.
+
+Practice: Go find an open space and drill yourself in dashing different ways.
+I suggest left/right, forwards/backwards, and then clockwise/counterclockwise.
+
+      ==========
+      VIA2. Pogo
+      ==========
+
+Pogo-ing is a variation of jump-dashing that allows you to maintain dashing
+speed via momentum, even with your gun out.
+
+Steps:
+  1: Jump
+  2: Dash (hold direction)
+  3: Jump (each time you hit the ground)
+
+Difficulty: *
+
+Notes: Not hard to do by any standard, but it has some use. This move uses the
+momentum from the dash to maintain speed when you jump, therefore you can still
+keep moving at a quick pace in a given direction, even with your gun out. You
+will immediately lose all momentum if you change directions.
+
+      ===============
+      VIA3. Canceling
+      ===============
+
+Canceling is stopping a particular movement by canceling it using another move
+with a higher priority. By canceling, it allows you to tack on more to an
+otherwise regular move. Most canceling involves either slashing, blocking, or
+switching.
+
+For example: slashshot allows you to slash with a sword/kodachi, switch your
+melee out for a gun and shoot when you land. The block in Butterfly cancels
+the slash animation, but
+still allows the slash to go through. This is the basic component of k-Style
+and advanced moves.
+
+This all depends on what particular movement you're doing.
+
+  ...IF wallrunning: Jump or slash or block
+  ...IF jumping: Slash
+  ...IF slashing: Block
+
+For example, a wallrun canceled into a slashshot:
+
+  1: Start the wallrun
+  2: Press jump to cancel the wallrun. You'll flip off the wall.
+  3: While flipping, slash to cancel the flip and hold the slash.
+  4: While canceling the flip, switch to a gun and the gun will fire.
+
+That's three cancels in a row.
+
+Difficulty: Varies
+
+Notes: As I've said, canceling is the basic component of k-Style attacks and
+movement. Learning this is essential. Some k-Style attacks combine multiple
+cancels in a row, like a flashstep. The secondary attack (right-click) can
+also be used for SOME cancels.
+
+      ===========================
+      VIA4. Multiple Wall Jumping
+      ===========================
+
+I call this "wallslashing." This move basically allows you to fly, and scale
+walls more efficiently than a vertical wallrun would. Those who are great at
+this move won't touch the ground unless they want to.
+
+Steps:
+  1: Jump (towards a wall)
+  2: Slash
+  3: Dash (towards the wall)
+  4: Repeat
+
+  OR...
+
+  1: Jump
+  2: Dash
+  3: Slash
+  4: Switch (to gun)
+  5: Switch (to melee)
+
+Difficulty: **
+
+Notes: To optimize this, slashing and jumping must be done near
+simultaneously. If done too slowly, you will wall flip instead of climb up the
+wall.
+
+What most people neglect to recognize is that this move can be done facing
+parallel to the wall, or even facing away from the wall. This makes it easier
+to return fire on an opponent who may be below you or behind you. A caveat: if
+your camera is facing DOWN or UP, you will not be able to catch the wall and
+you will fall.
+
+Some multiple walljumps actually involve full flips instead of just
+wallslashing. There are a few instances when it's more helpful to flip off a
+wall. For instance, horizontally wallrunning down a wall in the alley, then
+flipping off the wall at the end of the alley.
+
+This also is doable with a dagger, but more difficult since the stab will cause
+you to bounce off the wall instead of climb straight up it.
+
+Practice: Go find some walls and practice climbing up one, then climbing up
+one and jump over to another. If you're really serious, practice not touching
+the ground. Town and Arena are good playgrounds, since they offer plenty of
+even, flat walls for you to use.
+
+      ===========================
+      VIA5. Multiple Wall Running
+      ===========================
+
+Exactly like the name implies: running on multiple walls consecutively. Very
+Matrix. This is helpful for positioning yourself for aerial attacks, especially
+rockets from above.
+
+Steps:
+  1: Start normal wallrun
+  2: Jump (off the wall)
+  3: Slash (to cancel the jump)
+  4: Dash (towards the wall at ~23-45 degrees)
+  5: Jump, jump (tap twice quickly when on the wall to start new run)
+
+Difficulty: ****
+
+Notes: This move, while easy in concept, is incredibly hard to master. The
+hardest part of this whole move is learning exactly what angle to approach
+the wall at, then being able to grab the wall. This will most likely take days
+for you to become slightly proficient at. Just like multiple wall jumping, if
+you are looking up or down, this will not work.
+
+Strangely, some walls are much easier to wallrun off than others. If you're
+having trouble, sometimes quickly turning away and back towards the wall as you
+jump off it will help you angle yourself better for the next run. Pressing
+space more than once may also help if your timing is off.
+
+Surprisingly, using a dagger makes it much easier to do multiple runs. As with
+regular wallruns, attempting to do multiple wallruns with a gun is incredibly
+easy to do as well. Try dashing at the wall with your sword, but switching to
+your gun so you can double-tap jump and grip the wall.
+
+Practice: Go to the Town or Arena and practice multiple wallruns on the same
+wall. Practicing going the same direction on a single long wall, like in the
+Arena, is easier to start with. Then you can go into Town and practice
+mulitiple
+wallrunning back and forth on the same wall. Once you've gotten that down,
+practice wallrunning around the entire Arena or off multiple walls in town.
+
+      ============
+      VIA6. Propel
+      ============
+
+This move is to get you off the ground very quickly, and "propel" you into the
+air, with just a single slash.
+
+Steps:
+  1: Approach wall at ~23-45 degree angle.
+  2: Jump (towards the wall, you can either dash or just forward jump)
+  3: Slash (the wall as soon as you touch it)
+
+Difficulty: **
+
+Notes: This isn't a particularly hard move to do, but it's effective for
+getting you airborn fast. The hardest part of this move is gauging your
+distance to the wall and timing the slash, and that's about it.
+
+In reality, propel is a canceling move that happens fast enough that it
+appears to be one move. What propel really is, is a wallrun that gets almost
+instantly cancelled with a jump slash.
+
+Practice: Any wall will do fine, but Town is usually the best.
+
+  ============
+  VIB. Attacks
+  ============
+
+      ===============
+      VIB1. Void Step
+      ===============
+
+A dashing block-slash. The main purpose to use this is if you're new to
+k-Style, and need to learn how the mechanics of butterfly works.
+
+Steps:
+  1: Dash
+  2: Slash
+  3: Block (at the end of the slash)
+
+Difficulty: *
+
+Notes: This is basically a canceling-dash. By repeatedly using this move, you
+do a quick burst forward followed by a block-slash. The timing in this move
+needs to be a bit slower than normal canceling, since the blocking animation
+will override the slash very quickly. Despite being a stepping stone for
+another move, it actually has its uses. Depending on your skills, this can used
+in melee combat, and to counter Butterfly if they happen to come straight at
+you.
+
+      ================
+      VIB2. Light Step
+      ================
+
+This is an advanced jump-slash, or perhaps an easier Flashstep.
+
+Steps:
+  1: Jump
+  2: Dash
+  3: Slash
+  4: Dash
+
+Difficulty: **
+
+Notes: A simple move to do, but it has its uses. First of all, this move is
+very similar to Flashstep, in that it allows you to dash twice in succession
+but also attacking in between. It is best used by dashing one direction, but
+using the second dash another direction.
+
+      ===============
+      VIB3. Slashshot
+      ===============
+
+The single most recognized move of k-Style. It's designed to slash a person
+with a sword while almost simultaneously blasting them with your weapon of
+choice. At long range, it's used to confuse movement.
+
+Steps:
+  1: Jump
+  2: Dash
+  3: Slash (and hold)
+  4: Switch (to gun)
+  5: Gun fires
+
+Difficulty: ***
+
+Notes: While this is technically a melee-to-close-range move for offensive
+attacks, it's not uncommon to have people who do it at mid-range and
+long-range as evasive maneuvers. Generally, the best weapons to use for
+slashshot are shotguns and rocketlaunchers, since they have a large damage
+radius, but occasionally you'll see people do it with revolvers, pistols,
+or automatics. People who use automatics will usually use them to chip life
+away, as opposed to powerful single shots. Revolvers and pistols are
+popular with some people, but accuracy is a must.
+
+Once you've mastered doing this forwards, it is imperative that you learn how
+to do it sideways, and then learn how to jump to one side then slashshot the
+other way. It's far more common and also more effective if it's used sideways
+rather than forwards. There are many ways to use this move besides just
+sideways: you can do it off walls and use it to climb up them.
+
+It's not uncommon to break this move up as well. An application to learn is how
+to jump in and slash with your sword, but then to dash backwards and shoot
+before people can react.
+
+Once you've learned how this works, you can pretty much understand how
+other techniques work from here on.
+
+      ===============
+      VIB4. Butterfly
+      ===============
+
+Another well-known move of k-style, it practically dominates melee combat and
+is one of the few melee-only k-style moves that don't involve switching
+weapons to cancel. In gladiator matches, you're guaranteed to see players
+butterflying around each other like a dance, trying to chip off their
+opponent's HP.
+
+Steps:
+  1: Jump
+  2: Dash
+  3: Slash
+  4: Block
+ 
+Difficulty: ***
+
+Notes: Butterfly is technically an easy move to do, it's just very difficult
+to master. You're doing a light step that gets canceled with a block
+
+Practice: The best way to know you're butterflying right is to do it against
+a wall and watch your slashes appear. Any large wall will do.
+
+      =========
+      VIB5. JSD
+      =========
+
+An alternative to Slashshot, but involves no actual canceling. It's a bit
+slower because of that fact, but because it's also useable by dagger, it
+has its redeeming qualities.
+
+Steps:
+  1: Jump
+  2: Switch (to gun)
+  3: Shoot
+  4: Switch (to melee)
+  5: Dash
+  6: Gun fires
+
+Difficulty: ***
+
+Notes: I find this move actually harder to perform and utilize than slashshot.
+
+      ===============
+      VIB6. Half Step
+      ===============
+
+A Half Step is an evolved form of Slashshot, using an extra streakless dash
+after the shot as an evasive maneuver.
+
+Steps:
+  1: Jump
+  2: Dash
+  3: Slash
+  4: Switch (to gun)
+  5: Dash
+
+Difficulty: ***
+
+Notes: The difficulty with this move besides performing it, is trying to make
+sure your shots land where you want them to. The shot will fire as soon as you
+land, right before the second dash comes out, but depending on how you perform
+this technique, it may fire during the second dash. I feel this is one of the
+moves that it's okay to use scrollwheel on.
+
+      ====================
+      VIB7. Half-Half Step
+      ====================
+
+As if Half Step wasn't good enough, there's Half-Half Step. This move not only
+uses a streakless dash, but a jump right before, causing a sort of bouncing
+movement.
+
+Steps:
+  1: Jump
+  2: Dash
+  3: Slash
+  4: Switch (to gun)
+  5: Jump
+  6: Dash
+
+Difficulty: ****
+
+Notes: The most difficult part about this move is getting the extra jump into
+it.
+
+      ===============
+      VIB8. Flashstep
+      ===============
+
+This happens to be my favorite attack. This doubles as an attack and also a
+movement technique, so it's incredibly useful. Because it slashes, you can use
+it for an alternative aerial melee attack (like butterfly), because of the dash
+you can use it as an alternative to dashing altogether, and you can also scale
+walls with it faster than normal wall climbing.
+
+Steps:
+  1: Jump
+  2: Dash
+  3: Slash
+  4: Switch (to gun)
+  5: Switch (to melee)
+
+  OR...
+
+  6: Dash
+
+Difficulty: ***
+
+Notes: If you happen to do this very quickly, to others (and in replays) it
+will appear that you will be sliding along the ground.
+
+Practice: Go find an open space and drill yourself in dashing different ways.
+I suggest left/right, forwards/backwards, and then clockwise/counterclockwise.
+
+      ===============
+      VIB9. Swapshot
+      ===============
+
+Using a non-automatic weapon, this technique produces faster fire in slower
+weapons. Revolvers, rockets, and especially shotguns benefit well from this.
+It's easy to do, and that makes it efficient for dishing out damage faster.
+    
+Steps:
+  1: Pull out weapon 1
+  2: Hold left-click (gun fires)
+  3: Switch to weapon 2 (gun fires)
+  4: Switch to weapon 1 (gun fires), etc.
+
+Difficulty: **
+
+Notes: This move is actually different depending on what weapon you're using
+at the time. Shotguns are easy to swapshot, since their switching time leaves
+enough delay that you don't have to worry timing it - hold left click and swap
+like hell!
+
+ +--------------+ Nothing's scarier than the sound of a 10 shot rocket salvo.
+ |ROCKETLAUNCHER| Rockets are very easy to swapshot, but they do require a
+ +--------------+ slower switch. Once the first rocket fires, switch to the
+ second. If you do it too fast, you might end up canceling the shot.
+
+ One of the unique things about rockets is that you can spam a 1-2 combo of
+ rockets if you time it just right. While holding the first rocketlauncher
+ left-click and hold. As soon as the rocket fires, press weapon 2. If you time
+ it just right, you'll fire two rockets faster than you normally could if you
+ just swapshotted them. This only works for the first two rockets, and
+ continuing to swapshot will only send them at their normal rate of fire.
+
+ +--------+ Again, revolvers are different than shotguns when swapshotting. 
+ |REVOLVER| Switching between weapons too quickly will cancel the shots very
+ +--------+ easily, so you have to take your time while doing it. You can
+ speed up the shots however: constantly moving while you swapshot produces
+ faster firing rates than when you stand still. Rock your character backwards
+ and forwards while you fire. Swapshotting revolver shots can drop enemies
+ very fast, provided you can aim.
+
+      =================
+      VIB10. Reloadshot
+      =================
+    
+If swapshot didn't do it for you, there's reloadshot (RS). Reloadshot is an
+advanced swapshot, in that it allows you to fire your gun even faster than
+it would normally. Once you've gotten to expert channel, many people know
+this. While it is possible to RS with weapons other than shotguns, the timing
+is much different and much harder to perfect. A direct RS is enough to either
+critically damage a full-health player, and outright kill most people who are
+already wounded.
+         
+Steps:
+  1: Pull out shotgun 1
+  2: Hold left-click (gun fires)
+  3: Tap reload immediately
+  4: Switch to shotgun 2 (gun fires)
+  5: Tap reload immediately
+  6: Switch to shotgun 1 (gun fires), etc
+  
+Difficulty: ****
+
+Notes: Initially, very hard to learn, but it becomes second nature quickly.
+The reason why it's ranked as **** difficult is that it takes the average
+person a few days to actually pick it up to a functional level.
+
+What is going on in this technique is that you're firing your shotgun, and
+the reload cancels the delay on switching. Once you switch, you're firing
+again and canceling the post-shot delay with another reload.
+
+Practice: To simplify the explanation for this, do the following:
+
+  1: Pull out shotgun 1
+  2: Left click and press R simultaneously, hold left click
+  3: Press weapon 2 and R simultaneously
+  4: Press weapon 1 and R simultaneously
+
+While this is a much-simplified explanation of how to do it, you'll learn
+it quicker than just following the step directions. The real key taps for
+this technique is more precise. The rhythm for this move is like a gallop.
+When you can continuously do this, then you've learned it correctly.
+
+  ==================
+  VIC. Instant Kills
+  ==================
+
+Instant Kills, also known as Insta-kills, are a series of techniques and
+combos that, if performed correctly, can critically injure or outright kill
+an opponent.
+
+INFORMATION COMING SOON
+
+  ==================
+  VID. Miscellaneous
+  ==================
+
+      ==================
+      VID1. Quickmedding
+      ==================
+     
+While not complex by any means, this technique drastically decreases the time
+it takes you to drop medkits and therefore keeps you alive longer.
+
+Steps:  
+  1: Hold W (forward) and run straight into a wall. 
+  2: Take out medkit #1, left-click simultaneously
+  3: Take out medkit #2, left-click simultaneously
+
+Difficulty: *
+
+Practice: The only thing you really need to know about this technique is that
+you can only med stream different kinds of meds, not the same kind. Basically
+switch between different kits while pressing left-click at the same time you
+press whichever key you use meds for. This also works for grenades to a small
+degree.
+
+      ===============
+      VID2. Superdash
+      ===============
+
+Useless Move #1. It's an air dash, but with no dashing animation.
+
+Steps:
+  1: Fall for 3 seconds
+  2: Dash repeatedly
+
+Difficulty: *
+
+Notes: The most interesting thing about this move is that it can be done with
+a gun in hand, but you'll still dash. This is applicable in that you can reload
+while in the air and moving very fast.
+
+This is a glitch of course, but some people use it to great effect. There is
+actually different timing for the fall between male and female characters;
+females are able to dash a few fractions of a second earlier than males can.
+
+Practice: There are only three areas where you can do this without having to
+use collision glitches: Island, Stairway, and Dungeon. All three of these areas
+have pits, which make them vertically large levels.
+
+      =================
+      VID3. Slide Dance
+      =================
+
+Useless Move #2. It locks your character animation while you slide.
+
+Steps:
+  1: Slash
+  2: Block (at the end of the slashing animation)
+  3: Jump (your character shouldn't show it jumping)
+  4: Tap any direction
+  5: Any emote
+
+  OR...
+
+  4: Dash any direction
+  5: Any emote
+
+  OR...
+
+  6: Right-click (uppercut)
+  7: Cancel the right-click with a block.
+  8: Continue sliding.
+
+Difficulty: ****
+
+Notes: This has no applicable use besides being amusing. It's also very hard
+to pull off because of the very exact timing. You must slash, then block at the
+end of the slashing animation, then press jump. Your character should not jump,
+but should just stand there. When you press a direction, your character should
+slide that direction, not run. If you just tap a direction, you'll slide in
+that direction slowly, and you can change directions by just taping another
+direction.
+
+You can also double-tap a direction to dash in a direction, and you'll slide
+very quickly. The difference is that you can't change directions like you can
+with a single tap of a direction.
+
+Optionally, you can use an emote while you're doing this and they should
+continue sliding while emoting. The longer the emote animation, the longer you
+will slide for.
+
+To cancel the slide, press secondary attack (uppercut). Likewise, you can keep
+sliding by canceling the uppercut with a block, and then pressing whatever
+direction you want to go.
+
+      ==============
+      VID4. Hangjump
+      ==============
+
+Useless Move #3. Jumping multiple times in a row with your sword above your
+head.
+
+Steps:
+  1: Hold right-click (melee equipped)
+  2: Hold any direction
+  3: Jump
+
+Difficulty: *
+
+Notes: I'm sure this goes by other names, but it's nothing to debate over,
+since this move is practically worthless beyond entertaining. You're
+wallhanging, but with no wall, so you continually jump with your melee held
+above your head.
+
+--------------
+VII. Equipment
+--------------
+
+I never realized how much a pain making an items section was until I made one
+myself. Anyway, items marked with a * means they're items worth taking a look
+at, because they're either very powerful or unique.
+
+  ==========
+  VIIA. Guns
+  ==========
+
+    ==============
+    VIIA1. Pistols
+    ==============
+
+A fair-damage weapon with decent repeat rate; often a starting weapon. They
+are fairly accurate, more accurate than revolvers but not as threatening on
+the damage scale. They have a decent critical rate. The weapon's greatest
+strength is that it is adequate in close, mid and long ranges.
+
+ * The Good: Larger clip than revolvers, quicker fire.
+ * The Bad: Does less damage than revolvers. Highest level revolver has only 6
+more bullets and the same power as the level 26.
+
++---------------+-----+-------+--------+-------+--------+-------+
+|  WEAPON NAME  | LVL | PRICE | WEIGHT | CLIP  | DAMAGE | DELAY |
++---------------+-----+-------+--------+-------+--------+-------+
+| Raptor 50     |  0  |  20   |   7    | 10/60 |   7    |  250  |
++---------------+-----------------------------------------------+
+| Raptor 50 X2  |  0  |  40   |   14   | 10/60 |   14   |  250  |
++---------------+-----------------------------------------------+
+| Raptor 80     |  5  |  200  |   7    | 12/72 |   8    |  200  |
++---------------+-----------------------------------------------+
+| Raptor 80 X2  |  7  |  360  |   14   | 12/72 |   16   |  200  |
++---------------+-----------------------------------------------+
+| Raven 5       |  6  |  300  |   8    | 10/60 |   10   |  250  |
++---------------+-----------------------------------------------+
+| Raven 5 X2    |  8  |  540  |   16   | 10/60 |   20   |  250  |
++---------------+-----------------------------------------------+
+| Raptor 120    | 10  |  500  |   7    | 12/72 |   9    |  200  |
++---------------+-----------------------------------------------+
+| Raptor 120 X2 | 12  |  900  |   14   | 12/72 |   18   |  200  |
++---------------+-----------------------------------------------+
+| Raven 6       | 14  |  800  |   8    | 14/84 |   12   |  220  |
++---------------+-----------------------------------------------+
+| Raven 6 X2    | 16  |  1440 |   16   | 14/84 |   24   |  220  |
++---------------+-----------------------------------------------+
+| Raptor 160    | 24  |  2500 |   8    | 13/78 |   11   |  180  |
++---------------+-----------------------------------------------+
+| Raptor 160 X2 | 26  |  4500 |   16   | 13/78 |   22   |  180  |
++---------------+-----------------------------------------------+
+| Raven 7       | 32  |  5000 |   9    | 15/90 |   13   |  210  |
++---------------+-----------------------------------------------+
+|*Raven 7 X2    | 34  |  9000 |   18   | 15/90 |   26   |  210  |
++---------------+-----------------------------------------------+
+| Raptor 200    | 40  |  8000 |   8    | 14/84 |   11   |  160  |
++---------------+-----------------------------------------------+
+|*Raptor 200 X2 | 42  | 14400 |   16   | 14/84 |   22   |  160  |
++---------------+-----------------------------------------------+
+
+    ================
+    VIIA2. Revolvers
+    ================
+
+A high-damage weapon with few rounds. They have an incredibly good critical
+rate, often ignoring AP entirely. Can be dual wielded. An alternative series of
+Revolvers, the Dynax series, offers higher clip size and refire rate at the
+cost of some damage. They are somewhat accurate and thus can be used fairly
+well at close and long range, but their real strength lies in mid range combat.
+
+ * The Good: Large damage per bullet, fairly accurate.
+ * The Bad: Heavier than pistols, slower.
+
++-----------------------+-----+-------+--------+-------+--------+-------+
+|      WEAPON NAME      | LVL | PRICE | WEIGHT | CLIP  | DAMAGE | DELAY |
++-----------------------+-----+-------+--------+-------+--------+-------+
+| Minic 567             |  0  |  20   |   8    | 6/48  |  16    |  400  |
++-----------------------+-----------------------------------------------+
+| Minic 567 X2          |  0  |  40   |   16   | 6/48  |  32    |  400  |
++-----------------------+-----------------------------------------------+
+| Dynax 7000            |  5  |  220  |   7    | 8/64  |  14    |  300  |
++-----------------------+-----------------------------------------------+
+| Dynax 7000 X2         |  7  |  396  |   14   | 8/64  |  28    |  300  |
++-----------------------+-----------------------------------------------+
+| Minic 567 Limited     |  7  |  340  |   8    | 6/48  |  18    |  400  |
++-----------------------+-----------------------------------------------+
+| Minic 567 Limited X2  |  9  |  612  |   16   | 6/48  |  36    |  400  |
++-----------------------+-----------------------------------------------+
+| Zaurus A              |  10 |  550  |   7    | 6/48  |  20    |  400  |
++-----------------------+-----------------------------------------------+
+| Zaurus A X2           |  12 |  990  |   14   | 6/48  |  40    |  400  |
++-----------------------+-----------------------------------------------+
+| Phantom Cruise        |  16 |  1200 |   9    | 6/48  |  22    |  400  |
++-----------------------+-----------------------------------------------+
+| Phantom Cruise X2     |  18 |  2160 |   18   | 6/48  |  44    |  400  |
++-----------------------+-----------------------------------------------+
+| Phantom Cruise N      |  21 |  2500 |   8    | 6/48  |  23    |  400  |
++-----------------------+-----------------------------------------------+
+| Phantom Cruise N X2   |  23 |  4500 |   16   | 6/48  |  46    |  400  |
++-----------------------+-----------------------------------------------+
+| Dynax 8000            |  26 |  4000 |   7   | 8/64   |  18    |  300  |
++-----------------------+-----------------------------------------------+
+| Dynax 8000 X2         |  28 |  7200 |   14  | 8/64   |  36    |  300  |
++-----------------------+-----------------------------------------------+
+| Minic 567 Mk. II      |  34 |  7000 |   8   | 6/48   |  25    |  400  |
++-----------------------+-----------------------------------------------+
+|*Minic 567 Mk. II X2   |  36 | 12600 |   16  | 6/48   |  50    |  400  |
++-----------------------+-----------------------------------------------+
+| Zaurus B              |  42 | 12000 |   8   | 6/48   |  25    |  360  |
++-----------------------+-----------------------------------------------+
+|*Zaurus B X2           |  46 | 21600 |   16  | 6/48   |  50    |  360  |
++-----------------------+-----------------------------------------------+
+
+    ===============
+    VIIA3. Shotguns
+    ===============
+
+This weapon blasts out 12 low-damage pellets at a slow refire rate. The
+standard shotgun is called the "Breaker". The advanced version, the "Avenger",
+displays much higher firepower at the expense of reduced ammo. The weapon is
+very inaccurate. Shotgun blasts are soaked up easily by AP due to the low
+critical rate on the pellets. Its potential and damage are highest in close
+range combat.
+
+The Good: Very powerful in close range combat, good for k-Style.
+The Bad: Low ammo capacity, range-limited.
+
++-----------------+-------+-------+-------+-------+-------+-------+
+|  WEAPON NAME    | LEVEL | PRICE |WEIGHT | CLIP  |DAMAGE |DELAY  |
++-----------------+-------+-------+-------+-------+-------+-------+
+| Breaker 3       |   5   |  200  |  15   | 3/15  |  6    | 1100  |
++-----------------+-----------------------------------------------+
+| Breaker 5       |   10  |  800  |  18   | 5/25  |  6    | 1000  |
++-----------------+-----------------------------------------------+
+| Breaker 6       |   15  |  1600 |  20   | 5/25  |  7    | 1000  |
++-----------------+-----------------------------------------------+
+| Breaker 7       |   30  |  8000 |  20   | 5/25  |  8    | 1000  |
++-----------------+-----------------------------------------------+
+|*Avenger         |   30  |  9000 |  15   | 2/10  |  10   | 1200  |
++-----------------+-----------------------------------------------+
+|*Breaker 8       |   45  | 20000 |  20   | 5/25  |  9    | 1000  |
++-----------------+-----------------------------------------------+
+|*Avenger Mk. II  |   45  | 24000 |  16   | 2/10  |  11   | 1200  |
++-----------------+-----------------------------------------------+
+
+    ===========
+    VIIA4. SMGs
+    ===========
+
+Sprays out bullets at low accuracy at a 80 to 120ms delay. The dual wield
+versions are very powerful during the first 10 levels or so. Multiple different
+models offer different fire rates, weapon damage, accuracy, weight and clip
+size. They are close to mid range weapons, as they are hard to dodge at
+mid-range due to the "damage cone". It's often used in deathmatches.
+
+The Good: Fast spray, good damage.
+The Bad: Heavy, horribly inaccurate.
+
++-----------------+-------+-------+-------+-------+-------+-------+
+| WEAPON NAME     | LEVEL | PRICE |WEIGHT | CLIP  |DAMAGE | DELAY |
++-----------------+-------+-------+-------+-------+-------+-------+
+| Renard          |   0   |  30   |  15   |32/160 |   7   |  90   |
++-----------------+-----------------------------------------------+
+| Renard X2       |   0   |  60   |  30   |32/160 |  14   |  90   |
++-----------------+-----------------------------------------------+
+| Walcom S5       |   10  |  750  |  15   |36/180 |   8   |  90   |
++-----------------+-----------------------------------------------+
+| Walcom S5 X2    |   13  |  1350 |  30   |36/180 |  16   |  90   |
++-----------------+-----------------------------------------------+
+| Ellan           |   10  |  700  |  12   |60/300 |   5   |  90   |
++-----------------+-----------------------------------------------+
+| Ellan X2        |   12  |  1260 |  24   |60/300 |  10   |  90   |
++-----------------+-----------------------------------------------+
+| Renard V        |   24  |  2800 |  15   |32/160 |   7   |  85   |
++-----------------+-----------------------------------------------+
+| Renard V X2     |   27  |  5040 |  30   |32/160 |  14   |  85   |
++-----------------+-----------------------------------------------+
+| Walcom S6       |   24  |  2800 |  16   |36/180 |   9   |  95   |
++-----------------+-----------------------------------------------+
+| Walcom S6 X2    |   27  |  5040 |  32   |36/180 |  18   |  95   |
++-----------------+-----------------------------------------------+
+| New Renard V    |   36  |  5600 |  15   |40/200 |   8   |  80   |
++-----------------+-----------------------------------------------+
+| New Renard V X2 |   39  | 10080 |  30   |40/200 |  16   |  80   |
++-----------------+-----------------------------------------------+
+| Walcom XL       |   36  |  5800 |  14   |32/160 |   9   |  95   |
++-----------------+-----------------------------------------------+
+| Walcom XL X2    |   39  | 10440 |  28   |32/160 |  18   |  95   |
++-----------------+-----------------------------------------------+
+| Renard VI       |   45  | 12000 |  14   |40/200 |   8   |  80   |
++-----------------+-----------------------------------------------+
+|*Renard VI X2    |   48  | 21600 |  28   |40/200 |  16   |  80   |
++-----------------+-----------------------------------------------+
+| Walcom XLS      |   45  | 12000 |  14   |32/160 |  11   |  95   |
++-----------------+-----------------------------------------------+
+|*Walcom XLS X2   |   48  | 21600 |  28   |32/160 |  22   |  95   |
++-----------------+-----------------------------------------------+
+
+    =============
+    VIIA5. Rifles
+    =============
+
+The most accurate weapon also has the pleasure of having the gun with the best
+fire rate. The most accurate and quick to fire model, the Maxwell, is also the
+most popular, although other models offer more damage per bullet and varying
+clip sizes. It does decent damage and is suitable at close and mid range,
+although it is most useful at long range.
+
+The Good: Good fire rates, good for putting a bullet *THERE*
+The Bad: Eats ammo quickly.
+
++-------------------+-------+-------+-------+------+------+-----+
+|  WEAPON NAME      | LEVEL | PRICE |WEIGHT | CLIP |DAMAGE|DELAY|
++-------------------+-------+-------+-------+------+------+-----+
+| Nico R2           |   5   |  400  |  15   |32/160|  11  | 120 |
++---------------------------------------------------------------+
+| Nico R5           |  10   |  1500 |  18   |32/160|  12  | 110 |
++---------------------------------------------------------------+
+| walcom Warrior 77 |  15   |  2800 |  20   |34/120|  15  | 100 |
++---------------------------------------------------------------+
+|*Maxwell LX30      |  18   |  3000 |  20   |40/200|  13  |  80 |
++---------------------------------------------------------------+
+| Nico R6           |  26   |  6000 |  18   |36/160|  15  |  90 |
++---------------------------------------------------------------+
+| Maxwell LX40      |  34   | 12000 |  20   |40/200|  14  |  80 |
++---------------------------------------------------------------+
+| Nico R7           |  42   | 24000 |  18   |40/200|  16  |  90 |
++---------------------------------------------------------------+
+|*Walcom Warrior 88 |  50   | 28000 |  20   |32/160|  19  | 100 |
++---------------------------------------------------------------+
+
+
+    =====================
+    VIIA6. Rocketlauncher
+    =====================
+
+Shoots high damaging rockets that do splash damage with a low critical rate,
+and thus soaked up easily by AP. There are two versions, a high-ammo,
+mid-damage lighter model set with a decent fire rate, and a low-ammo,
+high-damage heavier model set with a slower fire rate. The user cannot run up
+walls and recieves a movement speed penalty of -10%. Strictly a mid range
+weapon, as being too close may result in damaging oneself and being too far
+makes it very predictable. It's often used in deathmatches.
+
+The Good: Large area of splash damage, largest damage in game.
+The Bad: Slow rate of fire, heavy. No wall runs, -10% speed.
+
++----------------+-------+-------+-------+-------+-------+-------+
+|  WEAPON NAME   | LEVEL | PRICE |WEIGHT | CLIP  |DAMAGE |DELAY  |
++----------------+-------+-------+-------+-------+-------+-------+
+|Maxwell RW-66   |   10  | 2000  |  30   | 4/16  |  30   | 1000  |
++----------------+-----------------------------------------------+
+|Walcom L1       |   15  | 3200  |  30   | 3/12  |  50   | 1200  |
++----------------+-----------------------------------------------+
+|Maxwell RW-77   |   20  | 5200  |  28   | 5/20  |  35   |  900  |
++----------------+-----------------------------------------------+
+|Walcom L1 mk. II|   30  | 12000 |  30   | 3/12  |  55   | 1200  |
++----------------+-----------------------------------------------+
+|Maxwell RW-88   |   40  | 24000 |  28   | 5/20  |  36   |  800  |
++----------------+-----------------------------------------------+
+|*Walcom L2      |   50  | 50000 |  25   | 4/16  |  55   | 1200  |
++----------------+-----------------------------------------------+
+
+    =================
+    VIIA7. Machinegun
+    =================
+
+The biggest automatic weapon is available only to characters who have achieved
+levels 25 and higher. The user cannot run up walls and recieves a movement
+speed penalty of -10%. This gun is the most inaccurate machine gun, shooting at
+medium delay, but the biggest advantage is its huge clip size it rarely, if
+ever, needs to reload, and thus can be held down and fired for a very long
+time before needing to reload. There is only one model, and each new
+machinegun simply increases the damage dealt per bullet by 1. Close to mid
+range weapon, particularly because they are hard to dodge at mid-range due to
+the "damage cone". It's often used in deathmatches.
+
+The Good: Decent fire rate, rarely needs to be reloaded. Produces a veritable
+ wall of bullets.
+The Bad: Heavy; no wallruns, -10% speed. Long reload time. For every 10 levels,
+ you only gain 1+ to damage.
+
++-------------+-------+-------+-------+-------+-------+-------+
+| NAME        | LEVEL | PRICE |WEIGHT | CLIP  |DAMAGE |DELAY  |
++-------------+-------+-------+-------+-------+-------+-------+
+|*Nico MG-K8  |   25  | 8000  |  28   |120/240|  16   |  100  |
++-------------+------------------------------------------------
+| Nico MG-K9  |   35  | 16000 |  28   |120/240|  17   |  100  |
++-------------+------------------------------------------------
+| Nico MG-KX  |   45  | 32000 |  28   |120/240|  18   |  100  |
++-------------+------------------------------------------------
+
+  ==========
+  VIIB. Melee
+  ==========
+
+    =============
+    VIIB1. Dagger
+    =============
+
+Dagger: Stabs opponents. The primary attack is a stab and can has uses from
+stopping enemies from attacking, persuading enemies to draw their melee weapon
+or infinitely stabbing enemies in a corner. The alternate attack is a lunge
+that knocks your opponent back severely and leaves him open for enemy fire,
+although this attack has terrible recovery and can easily be safe-falled. You
+can use it to climb walls by jumping at a wall and right clicking.
+Close range. Daggers cannot block.
+
+The Good: VERY fast, easy to repeatedly shank people.
+The Bad: Can't block, everybody will hate you. Secondary attack leaves you wide
+ open.
+
++-----------------------+-------+-------+-------+-------+-------+
+|   NAME                | LEVEL | PRICE |WEIGHT |DAMAGE |DELAY  |
++-----------------------+-------+-------+-------+-------+-------+
+| Rusty Dagger          |   0   |    20 |   5   |   8   |  366  |
++---------------------------------------------------------------+
+| Iron Dagger           |   5   |   200 |   5   |   9   |  356  |
++---------------------------------------------------------------+
+| Military Dagger       |   9   |   400 |   6   |  11   |  356  |
++---------------------------------------------------------------+
+| Light-weight Dagger   |  18   |  1000 |   4   |  10   |  346  |
++---------------------------------------------------------------+
+| High-end Dagger       |  27   |  2500 |   6   |  12   |  351  |
++---------------------------------------------------------------+
+| Phantom Slaying Dagger|  36   |  5000 |   4   |  13   |  356  |
++---------------------------------------------------------------+
+| Warlord's Gutripper   |  45   | 10000 |   6   |  14   |  346  |
++---------------------------------------------------------------+
+
+    ============
+    VIIB2. Sword
+    ============
+  
+Sword: Slashes at opponents. The primary attack is a normal slash which can be
+done three times for an attack string. The alternate attack is an uppercut that
+sends your opponent flying into the air (they cannot move even if they
+safe-fall in mid-air, and thus uppercutting people off into pits is a popular
+tactic, particularly in Dungeon where there are many suitable spots where the
+player is nearly invincible as long as he/she is uppercuting), which leaves
+your enemies prone mid air or on the floor if they did not safe fall, where
+they can be shot or followed up with a mid-air attack. You can use it to climb
+walls by jumping at a wall and right-clicking. Close range.
+
+The Good: Most single powerful melee strike, lighter than kodachi.
+The Bad: Slower than kodachi, has a only three hit combo.
+
++---------------------+-------+-------+-------+-------+-------+
+|   NAME              | LEVEL | PRICE |WEIGHT |DAMAGE | DELAY |
++---------------------+-------+-------+-------+-------+-------+
+| Rusty Sword         |   0   |  20   |  10   |   15  |  359  |
++-------------------------------------------------------------+
+| Iron Sword          |   5   |  300  |  10   |   16  |  359  |
++-------------------------------------------------------------+
+| Military Sword      |  10   |  600  |  12   |   18  |  349  |
++-------------------------------------------------------------+
+| Light-Weight Sword  |  20   |  1500 |   9   |   15  |  339  |
++-------------------------------------------------------------+
+| High-Class Sword    |  30   |  3600 |  13   |   20  |  339  |
++-------------------------------------------------------------+
+| Devil Slayer        |  40   |  7200 |  11   |   22  |  339  |
++-------------------------------------------------------------+
+| YONG-WOL-RANG       |  50   | 15000 |  12   |   24  |  329  |
++-------------------------------------------------------------+
+
+    ==============
+    VIIB3. Kodachi
+    ==============
+
+Kodachi: Two swords instead of one. The primary attack consists of a very
+quick slash with very low delay that can be repeated often if timed
+correctly, or can be done five times as an attack string. The alternate
+attack is a quick cross-slash that knocks your enemies into the air much
+like a sword uppercut. It has shorter range than normal swords.
+
+The Good: Faster than swords, has a five hit combo.
+The Bad: Heaviest of all melee and yet still inferior to swords
+
++---------------------------------------------------------------+
+|     WEAPON NAME       | LEVEL | PRICE |WEIGHT |DAMAGE | DELAY |
++---------------------------------------------------------------+
+|Iron Kodachi           |   10  |   850 |  18   |  14   |  290  |
++---------------------------------------------------------------+
+|Light-Weight Kodachi   |   21  |  2000 |  14   |  15   |  280  |
++---------------------------------------------------------------+
+|High-End Kodachi       |   32  |  5000 |  18   |  16   |  280  |
++---------------------------------------------------------------+
+|Red Blood              |   43  | 10000 |  20   |  18   |  260  |
++---------------------------------------------------------------+
+
+  ===============
+  VIIC. Tossables
+  ===============
+
+    ====================
+    VIIC1. Frag Grenades
+    ====================
+
+Frag Grenade: Thrown and after a set amount of time blows up, dealing damage to
+anyone in the vicinity of the explosion. At full health it is almost impossible
+to be killed by a single grenade unless you are standing on the grenade with
+100 HP and 0 AP.
+
+The Good: Great for flushing people out.
+The Bad: These should only be added if you have spare weight.
+
++-------------+-----+-------+--------+------+--------+-------+
+| WEAPON NAME | LVL | PRICE | WEIGHT | CLIP | DAMAGE | DELAY |
++-------------+----------------------------------------------+
+|Canox FG1    |  0  |  200  |   2    |   2  |  100   |  1500 |
++-------------+----------------------------------------------+
+|Canox FG2    | 11  |  500  |   3    |   3  |  100   |  1500 |
++-------------+----------------------------------------------+
+|Canox FG3    | 22  |  1000 |   4    |   4  |  100   |  1500 |
++-------------+----------------------------------------------+
+|Canox FG4    | 33  |  2000 |   5    |   5  |  100   |  1500 |
++-------------+----------------------------------------------+
+|Canox FG5    | 44  |  4000 |   6    |   6  |  100   |  1500 |
++-------------+----------------------------------------------+
+
+    ====================
+    VIIC2. Flash Grenade
+    ====================
+
+Flash Grenade: Bursts into a flash of light, blinding and deafening anyone in
+the vicinity.
+
+The Good: Good to lob into a crowd of noobs or people with sensitive hearing.
+The Bad: Utterly useless otherwise.
+
++-------------+-----+-------+--------+------+-------+
+| WEAPON NAME | LVL | PRICE | WEIGHT | CLIP | DELAY |
++-------------+-------------------------------------+
+|Canox FB1    |  0  |  200  |   2    |   2  |  1500 |
++-------------+-------------------------------------+
+|Canox FB2    | 10  |  400  |   3    |   3  |  1500 |
++-------------+-------------------------------------+
+|Canox FB3    | 20  |  1000 |   4    |   4  |  1500 |
++-------------+-------------------------------------+
+|Canox FB4    | 30  |  2000 |   5    |   5  |  1500 |
++-------------+-------------------------------------+
+|Canox FB5    | 40  |  4000 |   6    |   6  |  1500 |
++---------------------------------------------------+
+
+    ====================
+    VIIC3. Smoke Grenade
+    ====================
+
+Smoke Grenade: Releases a cloud of smoke, blurring the vision of that area. It
+also has the effect of making the area "laggy", and if someone were to
+wallclimb near the area, they would lose control and fall if not careful.
+
+The Good: ???
+The Bad: Completely useless unless used en masse. Also causes lag.
+
++-------------+-----+-------+--------+------+-------+
+| WEAPON NAME | LVL | PRICE | WEIGHT | CLIP | DELAY |
++-------------+-------------------------------------+
+|Canox SG1    |  0  |  200  |   2    |   2  |  1500 |
++-------------+-------------------------------------+
+|Canox SG2    | 10  |  400  |   3    |   3  |  1500 |
++-------------+-------------------------------------+
+|Canox SG3    | 20  |  1000 |   4    |   4  |  1500 |
++-------------+-------------------------------------+
+|Canox SG4    | 30  |  2000 |   5    |   5  |  1500 |
++-------------+-------------------------------------+
+|Canox SG5    | 40  |  4000 |   6    |   6  |  1500 |
++---------------------------------------------------+
+
+    ==================
+    VIIC4. Medical Kit
+    ==================
+
+Medical Kit: Tosses a red med kit onto the ground. Running over it restores a
+minimal amount of HP.
+
+The Good: Heals HP.
+The Bad: Heals nowhere near enough HP, best used with Repair Kits.
+
++------------------+-----+-------+--------+------+-------+
+|    WEAPON NAME   | LVL | PRICE | WEIGHT | CLIP | DELAY |
++------------------+-------------------------------------+
+|Medical Kit MK-1  |  0  |  400  |   5    |   2  | 1000  |
++------------------+-------------------------------------+
+|Medical Kit MK-2  |  20 |  5000 |   6    |   3  | 1000  |
++------------------+-------------------------------------+
+|Medical Kit MK-3  |  40 | 20000 |   7    |   4  | 1000  |
++------------------+-------------------------------------+
+
+
+    =================
+    VIIC5. Repair Kit
+    =================
+
+Medical Kit: Tosses a green repair kit onto the ground. Running over it
+restores a minimal amount of AP.
+
+The Good: Heals AP.
+The Bad: Heals nowhere near enough AP, best used with Medical Kits.
+
++------------------+-----+-------+--------+------+-------+
+|    WEAPON NAME   | LVL | PRICE | WEIGHT | CLIP | DELAY |
++------------------+-------------------------------------+
+|Repair Kit MK-1   |  0  |  400  |   5    |   2  | 1000  |
++------------------+-------------------------------------+
+|Repair Kit MK-2   |  20 |  5000 |   6    |   3  | 1000  |
++------------------+-------------------------------------+
+|Repair Kit MK-3   |  40 | 20000 |   7    |   4  | 1000  |
++------------------+-------------------------------------+
+
+--------------
+VIII. Glitches
+--------------
+
+ * The Island is full of invisible floors, especially on ledges.
+
+ * One of the small wooden bridges on the Island map has an invisible floor
+right under the edge of the hole.
+
+ * When you uppercut someone on the ground, it makes the "connect" noise but
+does
+ no damage.
+
+ * Many small alleys, especially in the Town map, are full of zero-g spots. You
+can cartwheel between the walls repeatedly and never touch ground. You'll float
+in between the two walls, flipping over and over. You can also wallslash
+between them repeatedly.
+
+ * Wallrun Pause: Charge up a massive strike, and wallrun up the wall on a
+flight of stairs. Unleash the massive strike once your character is touching
+the stairs when they run. Your character should freeze in place for about 2-3
+seconds but their legs will still be running. For an added glitch,when you
+freeze, continue holding left-click and swap out your sword for a gun. When you
+eventually jump off the wall, your gun will swap out and fire. If you continue
+slashing with your sword, you should cancel the direction and be able to land
+on another surface.
+
+ * If you wallrun on the Dungeon's stairs, you'll run across the doorway like
+it was a wall! You can even pause on the doorway too, just like it was a wall.
+
+ * By standing directly on top of and looking at a flashbang, you can nullify
+it blinding you. The only thing you'll get is the annoying ringing-ear sound.
+
+--------------
+IX. Quest Mode
+--------------
+
+ INFORMATION COMING SOON
+
+---------------------
+X. General Philosophy
+---------------------
+
+In this part of the FAQ, I'm going to expound on some of my opinions about Gunz
+and about the general Gunz community.
+
+  ==============
+  XA. On 'Style'
+  ==============
+
+Playing style is something that gets discussed quite often in the Gunz
+community, with the popularity of k-style, and more recently d-style. It's
+getting to the point where people know how to k-style fairly well just as they
+get in to Expert Channel. It's very common, by the mid-20s, that nearly
+everyone
+you will see uses k-style. Everyone puts their own spin and variety into their
+own particular style of play, but in the strictest sense, it still falls under
+the broad term of k-style. Whether you are slashshotting on the ground,
+slashshotting to the sides, or jumping off the wall while slashshotting an an
+opponent below, you are still in fact, k-styling. Giving names to particular
+branches of style is extraneous and unnessecary: you are simply a k-styler who
+uses a certain pattern as a method of attack.
+
+But what is a 'style?' The dictionary defines style as: "The way in which
+something is said, done, expressed, or performed: a style of speech and
+writing." This pertains to Gunz in that, you must learn this particular style
+of play. You do not automatically learn how to slashshot, as you would in other
+games. You learn to do this.
+
+People will say, 'What of e-style?" To be quite blunt, e-style is a misnomer,
+and in fact should not even exist, nor should anyone refer to themselves as an
+e-styler. If you are a k-styler and are reading this, what were you before you
+started to k-style? You did not butterfly, you did not use slashshot. You most
+probably used automatics and tumbled. You might have been advanced enough that
+you switched to melee to run. You were what some people refer to as an
+e-styler. Did you think you had a style back then? Most likely no, you were
+just shooting to survive and using whatever came to mind to get your kill. You
+did not learn anything, because there was nothing to learn; no moves, no
+complicated sequence of keys to tap, no timing. Would it not be fair to say,
+since you had nothing to learn, that there simply was no style?
+
+Calling e-style a style would be very much like calling 'bald' a haircolor.
+A more appropriate comparison would be like martial art styles. If you did not
+do Tae Kwon Do, or had never practiced in a dojo in any particular style, what
+would you call yourself? The lack of style does not make it another style.
+
+So what is a 'style' in terms of Gunz? The most general definition of style in
+this context, is that you have a model of fighting with a general moveset of
+techniques based around your melee weapon, since it affects how you move.
+Notice, I do not mention tactics or firearms. You can k-style with a rifle,
+rockets, or even SMGs if you want, though their effectiveness varies depending
+upon the situationn. Likewise, tactics also change depending on the situation,
+and will tend to change very quickly.
+
+The thing about k-style that most critics do not see is k-style's adaptability.
+They see it as just people jumping around while slashing, blocking, or firing.
+People who say such things don't seem to realize that k-style is versatile and
+can be used in any environment in the game. It's much easier to see the power
+of k-style when the practicioner knows full well the inherent weaknesses of
+k-style. Knowing your weaknesses makes you stronger than being ignorant of
+them.
+
+Tactics, of course, are entirely situational, and therefore saying that, "If
+so-and-so does X, I will do Y," will more likely than not fail in the long-run.
+Remember, you are playing against other people, who may or may not be as
+clever as you. This is not an AI. "If X, then Y" is too rigid a thought-process
+in the fast-paced, action that is Gunz the Duel. The best "tactic" is total
+adaptability, not holding strictly to any particular method of combat. Do not
+misunderstand me, learning many tactics are a good thing, but do not expect to
+utilize them in every situation. Your "hide behind the wall and take potshots"
+tactic works great until you get a pointblank shot with an Avenger. Be organic!
+
+Knowing the traps of your own methods of combat, as well as your enemy's, is as
+important as knowing the drawbacks of their weapons. Every weapon in the game
+has a weakness that is inherent to them, and you should learn to use this to
+your advantage. Shotguns of course, are not particularly effective at long
+range. The same can be said of SMGs. Rifles do not do large portions of damage
+per shot, so their power relies solely on being able to connect many weak
+bullets to you in a short amount of time. Since how a person fights is mostly
+based around what weapons they use, overcoming their weapons is a good first
+step to defeating your opponent.
+
+Your combat effectiveness relies on realizing your opponent's weaknesses,
+whether inherent to weapons or tactics, and then exploiting them aggressively.
+Be like water.
+
+-----------------------
+XI. Contact Information
+-----------------------
+
+  If there's any information that needs to be corrected, you have
+any questions, or would like to add to the FAQ, feel free to e-mail me. Be
+sure to put Gunz in the subject line! Do not e-mail me questions that have
+already been asked in the FAQ, because I won't reply.
+
+    E-mail: Kistrael at gmail dot com
+    AIM: Kistrael
+    Gunz: Kistrael
+    Server: Match West
+    Clan: [GameFAQs]
+
+---------------
+XII. Disclaimer
+---------------
+
+Gunz the Duel is trademark and copyright their respective owners, ijji,
+NHN, and MAIET entertainment inc. Feel free to save or print this for your
+own personal use. This FAQ is not to be reposted or rehosted without my
+permission.
+
+  Places hosting this FAQ as of 3/1/07
+  -------------------------------------
+ 
+ * GameFAQs
+ * CheatCC
+ * DHL.net
+
+------------
+XIII. Credit
+------------
+
+I'd like to thank Dino for letting me use his Advanced Techniques Guide to
+supplement mine. I'd like to thank Heocon for helping with the glitches. I'd
+like to thank my friends on Gunz, the Gunz Forums, and GameFAQs Gunz forum.
+I'd also like to thank my cats for keeping my lap warm while I typed this up,
+and Digitally Imported (www.di.fm) for entertaining my ears.
+
+Gunz Wikipedia
+  http://en.wikipedia.org/wiki/Gunz
+
+StrategyWiki
+  http://strategywiki.org/wiki/GunZ_The_Duel
+
+GameFAQs Gunz board
+  http://boards.gamefaqs.com/gfaqs/gentopic.php?board=928753
+ 
+UltraEdit
+  http://www.ultraedit.com  
+
+Dallas Scott and AstroBlue's FAQ-writing Guide for the layout.
+  http://members.optusnet.com.au/astroblue/writing_guide.txt
+
+Players: Heocon, Cowfix, Czechy, CheezeWhiz, and all my friends on the
+GameFAQs Gunz board.
+
+----------------
+XIV. The Ishlist
+----------------
+
+ * The assholes at http://www.pcigre.com/content/view/8578/42/ for stealing my
+guide. At least the guy left my name in it. I can't even contact them, because
+I don't speak Slavic.
+
+ ^ ^
+{o,o} +----------------------+
+|)__) + END OF DOCUMENT. RLY.|
+-"-"- +----------------------+
