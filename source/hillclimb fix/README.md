@@ -1,11 +1,11 @@
 <b> hillclimb fix</b>
 [find code]
 
-      if ( zStatus.m_bRButtonPressed == true ) return; //  if (MEvent::GetRButtonState()) return;
+      if ( zStatus.m_bRButtonPressed == true ) return; 
 
 [replace code]
 
-      if(MEvent::GetRButtonState()) return;
+      //  if (MEvent::GetRButtonState()) return;
 
 [video] <br>
 right mouse -> slash </br>
