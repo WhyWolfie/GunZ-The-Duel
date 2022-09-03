@@ -1,0 +1,361 @@
+ _________________________ ____   ___   ___   __________________________
+|     GunZ: The Duel      |    |_|   |_|   |_|                          \
+|                         |                                              \
+|       Dagger FAQ        |                                               \
+|_________________________|________________________________________________\
+Copyright 2005-2006 Michael Najman
+
+"GunZ: The Duel" is trademarked and copyrighted by MAIET entertainment Inc. 
+In no way am I affiliated with MAIET.
+This may be not be reproduced under any circumstances except for personal, 
+private use. It may not be placed on any web site or otherwise distributed
+publicly without advance written permission. Use of this guide on any other
+web site or as a part of any public display is strictly prohibited, and a
+violation of copyright.
+                                                                               
+=================
+Table of Contents
+=================
+
+1.) Introduction
+
+2.) Basics
+   2a.) The stab
+   2b.) The lunge
+   2c.) The dash
+   2d.) The cling
+   2e.) Massive strike
+   2f.) Wall Stabbing
+
+3.) Dagger-only techniques
+   3a.) Dagger Flash
+   3b.) Dagger Machine
+   3c.) Void Step
+   3d.) Quick Cling
+   3e.) One-two Stab
+   3f.) Massive Fake
+   3g.) Massive Dash
+   3h.) Glitch Strike
+   3i.) Glitch Evade (the one and only!)
+   3j.) Wall Raid
+   3k.) "Invisible lunge" theory
+
+4.) Dagger and gun techniques
+   4a.) JSD
+   4b.) Fade Shooting
+   4c.) Yoyo Hop
+   4d.) JSF
+   4e.) Yoyo Dash
+   4f.) Yoyo Half
+   4g.) Yoyo Quarter
+
+5.) Conclusion
+
+================
+1.) Introduction
+================
+
+Hey...Some of you may know me as Selryam, or ParadigmShift89...Some of you may
+not know me at all. For those of you who don't know me, I'm known among
+GameFAQs and many who face me as "a dagger pro." I'm writing this FAQ in
+order to teach people the ways of the dagger. Many think the dagger is a weapon
+used only by newbies who take advantage of the stun. However, these people fail
+to realize that there are two breeds of dagger users; those who don't know
+how to use daggers effectively, and those who do. Hopefully, this guide will
+teach those who don't know how to use daggers, and will further aid those who
+do. I'll include tips after each maneuver, from the simplest to the hardest.
+
+This is my first FAQ, so don't jump down my throat if it's not the greatest...
+
+I'd like to thank FatherPrim for the idea of a dagger FAQ, and for some of his
+moves. You can find his dagger guide here:
+http://www.gunzfactor.com/forums/showthread.php?t=1793
+
+==========
+2.) Basics
+==========
+
+Here you'll learn the fundamentals of the dagger.
+
+2a.) The stab.
+-Key combination: Left click.
+Possibly the most basic of all basics, it's the daggers primary attack.
+It's a short stab with little recovery time that can be chained
+indefinitely. That's all there is to it.
+--Tips: You pretty much want to always stab. Stab after every dash and every
+  wall jump. It's your only attack, and there are no major consequences for
+  stabbing too much.
+
+2b.) The lunge.
+-Key combination: Right click.
+Many know and fear this move. If there was a single factor defining between
+newbies and pros, this would be it. The newbies use it all the time, while the
+pros know when to use it in order to attain maximum effectiveness. The lunge is
+the dagger right click attack. After about half a second, it propels you
+forward about 2 in-game yards, after which there is a recovery period. Unlike
+the sword and kodachi secondary attacks, this one damages the opponent and
+pushes him/her back. It also has a shorter safe fall time.
+--Tips: Lunge when your opponent won't expect it. This will cause for a higher
+  safe fall miss rate. If you decide to use this attack, MAKE SURE YOU DON'T
+  MISS. If you miss, the large recovery time on both sides of the attack, as
+  well as the predictability of the lunge motion, will almost ensure your
+  demise.
+
+2c.) The dash.
+-Key combination: Double tap any direction.
+This move is universal between melee weapons. It is quite possibly the most
+valuable move at your disposal. The dash allows for a short, rapid motion in
+one direction. Since daggers can't block, evasion plays a much larger role.
+--Tips: Don't underestimate the dash. It comes in handy. As explained earlier,
+  you should stab after almost every dash; it provides for a moving attack and
+  a dash that ends more quickly, allowing for more erratic movement.
+
+2d.) The cling.
+-Key combination: In the air, hold right click.
+This move should be used if you don't know how to multi wall jump, or if you're
+trying to maintain a massive strike you have charged while multi wall jumping.
+Basically, you dig your dagger forward above your head. If it touches any
+solid surface (i.e a wall), you will hang there. To climb up, keep holding
+right click, hold forward, and jump. To jump off, simply jump. To drop, release
+the right mouse button.
+--Tips: Meh...don't use this so much if you can multi-wall jump.
+
+2.e) Massive strike.
+-Key combination: Hold left click until charge finishes. Click again to attack.
+This is simply a stronger dagger attack that causes your opponent to be
+stunned. However, it has more recovery time, and while holding one, you are
+unable to stab regularly. This can cause problems when attempting to cancel.
+--Tips: Don't do this over a cliff. If you massive in the air, you're stuck in
+  that animation, no matter what; doing this over a cliff will kill you. Trust
+  me...I speak from experience. It's also a good tactic to switch to a gun and
+  shoot your opponent while s/he is stunned, since they can't do anything
+  about it.
+
+2.f) Wall Stabbing
+-Key combination: Jump off a wall, stab
+Normally, when you jump off of a wall, you're unable to do anything besides
+switch weapons and shoot. However, when you stab, it frees your character
+to dash, tumble, and aim further.
+--Tips: Remember to stab after wall jumping. If you're used to using swords,
+  it isn't the same. Jump first, then stab, then dash back to the wall. Rinse
+  and repeat for best results.
+
+==========================
+3.) Dagger-only techniques
+==========================
+
+Here are the dagger-only techs, in no particular order.
+
+3a.) The Dagger Flash
+-Key combination: Jump, dash, stab, dash, stab.
+This is probably my favorite technique. It allows for two dashes in one jump
+with minimal recovery time. It's not as fast as continuous dashing, but it's
+more erratic, therefore making you harder to hit.
+--Tips: This works pretty well against butterfliers, and it's good for dodging
+  bullets, too. It's well coupled with what FatherPrim calls "Space Invading."
+  This is a *Left > Forward > Right > Forward* motion. You can do one half of
+  a space invasion in one dagger flash, so it divides evenly. This is also good
+  for circling your opponent.
+
+3b.) Dagger Machine
+-Key combination: jump, quick dash, stab.
+This is basically the dagger version of a high speed butterfly.
+It's a jump that's cancelled on the way up into a dash, which is then cancelled
+by a stab. This is one of those techniques that's hard to understand until its
+seen.
+--Tips: This also is good for space invading and circling, and it provides for 
+  a different kind of erratic movement than dagger flashing.
+
+3c.) Void step
+-Key combination: dash, stab.
+FatherPrim calls this "reverse stabbing." I call it by it's sword name, because
+It's not much different at all. It's a ground dash cancel.
+--Tips: Use this to confuse your opponent. Fake dashing one way, then switch
+  off to dashing another. Also, can be used for moving and attacking. More
+  useful than it seems.
+
+3d.) Quick cling
+-Key combination: (in air) left click, hold right click.
+This is one of those not very useful, but nifty moves. Like an easter egg. This
+cancels any other animation into a cling animation, providing for a
+"quick cling."
+--Tips: Since you're not going to be clinging very often, you're not going to
+  be quick clinging often, either. Use this if you're just fooling around.
+
+3e.) One-two stab
+-Key combination: Left click, right click
+This links the regular stab into the lunge. The stab "drawing back" animation
+occurs as the same time as the lunge "preparation" animation.
+--Tips: It's very useful if you know when to use it, and can use it
+  efficiently. Until you can do that, it's a waste, because you're going
+  to get yourself shot. This attack suffers from the same problems as the
+  lunge, so KNOW WHEN TO USE IT. It's a good stab combo finisher. You can also
+  link a void step into it by dashing first, then cancelling the dash with a
+  stab.
+
+3f.) Massive fake
+-Key combination: left click (hold), right click.
+You start to charge, but then break off into a lunge. This will score a
+surprisingly high hit rate.
+--Tips: Don't use this too much; your opponent may catch on, rendering it
+  useless.
+
+3g.) Massive dash
+-Key combination: (right before the opponent massives) dash
+This technique will send you dashing in whichever direction you were massived
+until the stun recovery time is over.
+--Tips: This is an invaluable maneuver. Many will try to shoot you while
+  stunned, seeing how you're a sitting duck. Make them aim for their kills.
+
+3h.) Glitch strike
+-Key combination: Turn just before a massive strike.
+This will cause the direction of the massive strike to come at your opponent
+from a different place than it should. For example, if you turn to the left
+(your opponent is now at your right) before you strike, the massive will come
+in from their left. This works in all directions.
+--Tips: Try to use this whenever you massive strike. It's effective no matter
+  how you look at it.
+
+3i.) Glitch evade (Perfected by me :D)
+-Key combination: (while stunned) turn horizontally 45 degrees from your
+ opponent as s/he strikes.
+Ah, yes, the coveted glitch evade, described in all its glory. This has saved
+my life many a time, and can turn the tide of battles. This is also a technique
+that's hard to understand unless seen. Basically, try to keep your camera 45
+degrees away from your opponent at all times while stunned, if you predict a
+massive strike is coming. The strike will not affect you in any way whatsoever.
+--Tips: A life saver. Use it when you need to every time. It will always work
+  if you're stunned while the massive comes. VERY USEFUL, as daggers cannot
+  glitch block.
+
+3j.) Wall raid (by FatherPrim)
+-Key combination: (while wall running) stab, jump.
+Start a wall run, then left click and jump shortly afterwards. Instead of
+falling off the wall, the wall run should continue. Make sure the camera stays
+at a wall-running angle at all times. FatherPrim can do this many times on the
+same wall; I can get one. When I try again, the wall boots me off. He's
+explained it to me, but I just can't seem to get it. How does he do it...?
+--Tips: It's a neat surprise attack when you're near a wall. If you can link
+  it like Prim can, it can do serious damage.
+
+3k.) "Invisible lunge" theory (both Prim and me)
+-Key combination: lunge
+Prim and I have a theory about the dagger lunge. The attack itself is separate
+from the attack animation. So if your lunge is stopped mid-way by an oncoming
+attack, or certain walls, the animation will show you getting hit or stopping,
+but the attack will connect to an unsuspecting opponent on the receiving end.
+See "Dagger gatling" in Prim's FAQ.
+--Tips: This works on the walls with holes near the large pillar in Battle
+  Arena. If you can find any other places in which this works, tell me.
+
+=============================
+4.) Dagger and gun techniques
+=============================
+
+This section contains techniques that are done using both a dagger and guns.
+
+4a.) JSD
+-Key combination: Jump, shoot, switch to dagger, dash, switch to gun.
+This is probably the most standard dagger and gun technique. It's very similar
+to slashshooting...in fact, I've played games where people thought I was SSing,
+even though I was JSDing. This move is a little difficult to comprehend unless
+seen...It allows for shooting while evading, with emphasis on evading, so it's
+harder to land a shot.
+--Tips: I'm sorry, but you have to learn this one for yourself. It takes
+  experience to know when to JSD. The best I can say is to use it in mid/close
+  range encounters.
+
+4b.) Fade shooting (by Prim)
+-Key combination: Dash one direction (jump), switch to weapon, tumble other
+ direction (jump)
+The "(jump)"s mean that you can throw a jump in there if you feel it's
+necessary. This technique was intended for weapons with low delay, such as
+pistols or rifles. It gets a lot of shots off in a short amount of time and
+has a fairly high level of evasion. Fade shooting is surprisingly fast, if done
+correctly. It allows for better accuracy than JSD while evading; however, the
+emphasis is more on accuracy than evasion, and is therefore more likely to get
+you hit (but not much more likely).
+--Tips: I'd say to use this for mid-range encounters. Use it a few times in a
+  row, but any more and the enemy is likely to catch on. Prim says that you can
+  "use it to put some large distance between you and an angry butterfly. You'll
+  want to tilt the camera so it looks like you're tumbling diagonally, [which]
+  gives you a better view of your attacker or target."
+
+4c.) Yoyo hopping (by Prim)
+-Key combination: Dash, jump, switch to gun, | dash (that's right, dash with a 
+ gun out) and shoot, jump, repeat from |.
+Although it's possible to do a dash with a gun out without dash jumping first,
+doing so makes the timing much more difficult to find. This technique is just
+wow. It's shooting and evading at the same time. Not one then the other, AT THE
+SAME TIME. I recommend switching back to a dagger every other jump, because if
+you mess up, you'll dash instead of tumble. You have to dash with the gun out
+at about the peak of the jump. I did this technique a few times without
+realizing it, while I was attempting to fade shoot...I thought I messed up the
+tumble... >_> <_<. This maneuver has both accuracy and evasion.
+--Tips: It WILL take a while to figure out the timing. Don't give up, it's an
+  invaluable technique. This one also comes with experience. You'll learn when
+  and where to use it over time.
+
+4d.) JSF
+-Key combination: Jump, shoot, switch to dagger, dash, stab, dash.
+JSF stands for Jump Shoot Flash. It's a combination of JSD and Dagger Flash.
+The first part is the JSD, the extra stab and dash is the Flash. This takes
+a JSD and adds an extra element of evasion. Requires semi-quick fingers.
+--Tips: Although possible, it's harder to do with with a shotgun because it
+  takes longer to switch out. Mix this up with JSD to keep your enemy confused.
+
+4e.) Yoyo Dash
+-Key combination: Jump (and switch to weapon), dash at animation change.
+So you can yoyo hop, huh? Take it to the next level with the Yoyo Dash. The
+weapon switch, although unnecessary, helps a LOT when it comes to timing the
+dash, since the jump animation changes at about the same time that the "taking
+out weapon" animation. This technique is simply dashing with a gun out, without
+taking out your dagger for safety. Think of it like quickswitching and shooting
+without being a sitting duck. Excellent technique for those with good aim,
+since you fire off a lot of shots in a short amount of time.
+--Tips: Once you get good enough, you can yoyo dash from gun to gun. Jump and
+  switch to a gun, click and hold, yoyo dash, repeat. Hold the left mouse
+  button for as long as you want to keep shooting.
+
+4f.) Yoyo Half
+-Key combination: Jump (and switch to weapon), dash at animation change, switch
+ to dagger, dash.
+You think you're tough with your Yoyo Dash? Try this out for size. After
+shooting, switch to a dagger and dash. In my opinion, this is one of the best
+looking dagger techniques. An analogy would be JSD:Yoyo Dash::JSF:Yoyo Half.
+--Tips: Just like JSF, mix this with Yoyo Dash to keep your opponent guessing.
+  Those who can't aim so well (like me
+ T_T) can use this to make up for their
+  lack of accuracy with evasion.
+
+
+4g.) Yoyo Quarter
+-Key combination: Jump (and switch to weapon), dash at animation change, switch
+ to dagger, dash, stab, dash.
+Now this one it just plain nuts. You need lightning fast fingers as well as
+timing. From a yoyo half, stab and dash again. You have to do each thing right
+after the previous thing finishes, or else you won't dash again before reaching
+the floor. Although this move is possible, personally...I think it's more
+work than it's worth. But it's up to you.
+--Tips: Since you fire the least out of all the yoyo techniques with Yoyo
+  Quarter, I suggest it for those who don't place so much emphasis on shots,
+  and more on evasion. I also suggest this for close encounter fights, since
+  you get that unexpected stab in.
+
+==============
+5.) Conclusion
+==============
+
+No matter how fast you may be, accuracy trumps all. If you can't hit your
+opponent, you're not going to kill him/her.
+
+Remember to adapt. If you stick with one technique, or don't use your
+surroundings to the fullest, you're not going to reach your potential.
+
+Remember the fundamentals. If you can't do a basic move correctly, the more
+advanced techniques based on that move will be flawed as well.
+
+When facing a sword user, aim for the feet. This will give them a massive
+strike if they block, but you won't be stunned. If they strike, you can attack
+during the recovery time.
+Restore Page
