@@ -1,0 +1,1223 @@
+1111111111 111111111 111111111 111111111 111111111 111111111 111111111 11111111
+ _________________________________________________
+|       Author: Mike Cavanaugh (BigMac8000)       |  
+|       First Draft: April 27 2007                | 
+|       Version 1.0                               | 
+|       Email: FroZombie@gmail.com                |
+|_________________________________________________| 
+
+****NOTE****
+Hey all, this is my first faq, so bear with me. Right now it's rough,
+unpolished and needs reworking. I was going to do it all quickly, but
+this project is proving a bit too difficult... so I'm putting up what
+I have as of now and am going to fix it later. It needs a better index
+and less abstraction, but you get the idea.
+
+***************************************************************************
+Quest Mode Faq
+***************************************************************************
+
+Table of Contents
+To easily navigate this guide, use ctrl + f and use the following code(s).
+
+Introduction.........................(C1)
+     -General Tactics and Terminology
+Equipment............................(C2)
+Quest Mode Items.....................(C3)
+Rewards..............................(C5)
+Frequently Asked Questions...........(C6)
+Techniques...........................(C7)
+Enemies..............................(C8)
+Bosses...............................(C9)
+Is it worth it?......................(C10)
+Credits..............................(C11)
+Good Links...........................(C12)
+Stuff to do Later....................(C13)
+
+
+****************************************************************************
+1. Introduction (C1)
+****************************************************************************
+
+GENERAL TACTICS and TERMINOLOGY
+
+These are general, all purpose tactics that you will NEED to use to survive.
+They are in order of how I deem them as important, but it isn't too harsh. You
+could swap a few.
+
+
+1. Manage your aggro and your "Tails" appropriately.
+
+-What is a tail? 
+Tails are any foe that is following you. At any given moment,
+you have a tail. If you don't have a tail, great, but you almost always do. In
+fact, I'm gonna say you always do because you should CONSIDER that you always
+do. Generally the majority of your tail is soldiers, kings, or any type of
+goblin. The good thing about tails is that they are dumb and without the
+other enemies, you could probably dispatch them with a knife. Be wary of a 
+fewthings though. Teammates can run into your tails, and you can run into 
+yourteammates. Should you ever bump into a teammate, be fearful, because 
+their tail is around. It could be half the enemies in the room for all 
+you know, so regard bumping into teammates as a bad omen. Tails generally 
+aren't a big problem unless you make a glaring mistake, like getting 
+too carefree or getting  stunned/slowed/caught on a wall. Also, always 
+recognize that you have a tail at all times, even if you aren't aware 
+of it. Most of the time you have something homing in on you, even if 
+you haven't seen it yet.
+
+ -What is aggro?
+Enemies that are looking to hurt you, rather than your buddy. If you are alone,
+you've aggroed everything. Good job. Anything with a ranged attack should be
+prioritized in your aggro list as high priority. Mages and Wizards especially.
+How do you manage it? You stay aware of who's looking at you. If you see a
+mage in front of you, and you are avoiding enemies, which way do you run? You
+run away from the enemies following you and you never run at a straight line
+toward a mage and you don't zig when you should zag. In fact, it's mostly 
+better to simply keep working your way around mages or wizards rather than go
+left then right or right then left. They don't "lead" you when they fire, so 
+you might end up just walking back into it.
+
+*THE IMPORTANT PART*
+Enemies "Aggro" the closest thing to them, always. If you're alone in the room
+than everything is aiming at you, no matter what you're doing, since you're the
+closest. Take this into account, because it means being alone multiplies your
+problems.
+
+If everyone else dies, every enemy in the room suddenly is aware of you and 
+is actively moving towards you and is firing every ranged attack they can at 
+you. Even that guy who isn't rendered in your screen is working towards you. 
+If you see 20 arrows fly by, generally it means your buddy has succumbed and 
+now all those mages who savegely tore him apart, are now looking to crucify 
+you,  long range style. Start doing circles and running perpendicular to their 
+firing pattern. Even if you just know generally where they are, start doing 
+a big circle.
+
+2. Using Butterfly or the Dagger, or, how I learned to love my melee weapons.
+
+Butterflying is a bit harder to do but will cause more damage with this trick,
+and dagger is easier but riskier.
+
+Every enemy you face has one big weakness. They don't attack horizontally. That
+means if they are facing you within a 45 degree angle, they usually can't hurt
+you. Not only can they not hurt you, they won't attempt to. This leads to a fun
+little trick you should practice in mansion, and perfect in dungeon.
+
+*DAGGER ONLY*
+Get a substantial tail, draw your dagger. Strafe right or left, but swing your
+mouse the opposite direction. For instance if you strafe right, look left.
+Strafe left, look right. Most people strafe right and look left because it's 
+easier. Start doing a circle around your enemies, adjusting for their 
+"shuffling ranks". Stay mid range for your dagger but keep swinging. They won't
+hurt you (especially goblins) and there isn't much they can do to you. This
+works well with guns as well, when you are in small quarters and want to keep
+yourself away from other enemies. It isn't fullproof, a stun or a missed swing
+can still connect, but generally you'll just outwalk them. Kings you have to
+move a bit faster for, and the boss a LOT faster, but generally you can kill
+anything doing this. Just remember to stay calm, walk and not dash (it's 
+possible to get them a little crazy dashing too much) and just keep slashing.
+
+The trick is to stay calm and beware of people behind you. If you walk
+constantly without slowing down, you'll be outside their attack range and if
+they try to initiate a swing or a slice, it won't have been started until you
+are outside it's horizontal reach.
+
+*Short Version*
+Think of a clock. The enemies are the center of the clock. You rotate around
+the outside and as long as you stay in front of the hands, you'll be ok. The
+enemies attack in straight lines, like hands. Stay in front of the hand and
+move slowly but continuously and you'll be able to melee indefinitely. Always
+be 10-15 minutes ahead of the hand and you'll be fine.
+
+It works on mages too, but I don't reccomend getting close or they will swipe
+and that move is fast enough to catch you. Mages are evil like that. However
+it works extremely well with guns and large groups of mages. Hold the trigger
+and don't get dizzy doing circles.
+
+In time this trick becomes second nature and you'll use it in fragments to 
+deadly effect.
+
+as for butterflying... see an advanced guide. I can't do it justice and it's
+very difficult, but rewarding.
+
+3. Using Melee weapons in more dire circumstances.
+
+Sometimes that Dagger trick won't work so well. There are mages scattered 
+around or superion is breathing down your neck. If you have a dagger or a sword
+you can simply dash, jump, slash the edge of a group, then keep doing hit and
+run passes. It's riskier but when you've got nothing you might get lucky. If
+you can butterfly, great, but most people can't. With a dagger you can 
+continuously strike repeatedly as you pass by, doing triangles around your 
+foes. Generally just jumping to the outside of a group and skimming the outside
+is best, jumping through the middle is tricky (but sometimes neccesary). Just
+remember to not committ to a full on attack. Your trying to stay alive more 
+than you are trying to do damage. It's too easy to get in close and then get
+swatted repeatedly, rather than get in and out clean with some enemies damaged.
+
+4. Don't Neglect Your Grenades.
+It's easy to forget you have 8 grenades. Get used to using them frequently and
+whatever you do, don't save them until the end. Whenever you get an opportunity
+send a nade out there. They do more damage than you think. Try dropping one
+grenade between your legs sometime to see, at full health, and it'll nearly 
+kill you. You can also get headshots with grenades. You can use them against 
+the boss as well and if you are good at pooling enemies, you can farm enemies 
+while still hurting the boss.
+
+They also are a great alternative to using your Dagger. Generally avoiding
+using your melee weapons is choice because it isn't as risky.
+
+5. Don't Forget What You're Here For - GRAB THE CHEST!
+It's easy to forget. You're here for Large Skulls more than anything else. When
+you kill a King, make sure to CHECK to see if it dropped a chest. Never forget
+this.
+
+6. Making a Rooms.
+When you make a room, you should make it descriptive.
+
+Dungeon Lvl 3, be 25+ or Kick.
+Dungeon Lvl 2, be 13+ or Kick.
+
+I know you don't like kicking, no one does. But you have to. You can't enter
+Dungeon levels with characters under the limits. You don't have to explain it
+to them. If they ask, tell them to go to www.gamefaqs.com/ and learn something.
+
+7. Momentum Jumping
+Ever notice sometimes you have trouble stopping after a jump? You'll notice it
+a lot when you are on steps. Your character will slide and you'll momentarily
+lose control of everything except jumping again. This is something both to be
+aware of, and to utilize.
+
+The instant you land, your character slides a bit. You slide a bit more if you
+dashed before you landed. It's small, but it's enough to put some distance
+between you and everything else. Whenever you are in tight spaces, you should
+be continuously jumping. You get slightly more speed and that moment you are
+in the air, is a moment you are safe. It'll also disrupt mages aiming at you
+from afar, and may cause them to miss. Combined with dashing and other aerial
+maneuvers, you can evade and move much faster. You are forced to account for
+momentum jumping, so it is wise to utilize it when you are the ground, and 
+cheat it when you are in the air.
+
+Should you fall victim to a mistimed momentum jump (say while fleeing an enemy
+on some steps), don't panic, draw your melee, jump again, slice and dash to 
+freedom. It will become second nature and will certainly save you a lot of
+time and effort.
+
+8. Aim Low
+That's right, don't aim for the head. This was something I learned early on
+that made much more energy efficient. You can aim for the head, but you'll 
+miss with a lot of your shots. In fact, certain enemies you can aim just above 
+the nose and miss everytime. Aim for the waist to leg area and you'll hit 
+much more. The exception is when you are using pistols, but good luck with
+that. Mages you should definitely hit just where the robe starts to work its
+way inwards.
+
+****************************************************************************
+2. Equipment (C2)
+****************************************************************************
+
+Ah, my favorite section.
+
+Equipment for Quest Mode is simpler than you'd think. There are a lot of 
+choices you are forced to make in this mode that you aren't in normal fighting. 
+Fighting against live people is dynamic and unsystematic. However in Quest 
+mode it is very clear cut - there are weapons that are clearly better designed
+for killing hordes. I'm going to discuss pros and cons of all weapons then 
+I'm going to address what you should have, regardless. Also there are some 
+tactics in here that may benefit your PvP game.
+
+**Great Tip**
+Don't be afraid to double up.
+Like AR's? Bring 2. Fighting the boss, concerned about ammo? Bring 2 machine 
+guns. Sound ludicrous? It shouldn't. This gets greatly overlooked, so I felt
+the need to put it right at the top. I used two AR's from 18 on, with great
+success.
+
+The ONE thing you have to keep in mind regarding this trick - You CAN'T hold
+two of the same MODEL weapon. For instance, you can't bring two level 18
+maxwells. HOWEVER you can bring the level 18 Maxwell, and the Nico R6 assault 
+rifle. This... is a great trick that often gets glazed over.
+
+Armor + Accessories
+HP Rings. There is nothing better. Most of the time you'll have armor left
+when you die. Armor is nowhere near as important as HP. Buy them as soon as you
+can. +18 hp is almost 20% more life and that means more often than not when
+the going gets rough, you'll still have a safety net. Your armor barely ever
+runs out and since the power ups are scattered around, you might as well get
+them there. However you are always losing HP and 20% more life is HUGE when
+you think about it. After you put them on, next time you are in a round down
+to your tiny life, realize that normally you'd be dead now. Also take into 
+account this - normally, when you die, you have armor left. Also some people
+will say buy the 20,000 dollar better HP rings at 30, but for +4 hp, the
+additional 4 pounds of weight could be better used holstering 4 grenades.
+Speaking of grenades....
+
+Grenades
+Bring as many as you can carry. I can't praise this enough. When the going gets
+rough or when opportunity strikes, grenades are a safe simple alternative to
+your main weapons. They do much more damage than the rocket launchers and you
+can carry a lot of them. 8 pounds and you can kill a large mob easy. They
+really come in handy when you're alone. Very naturally you'll learn to pool
+your enemies for the kill. The trick is to learn to throw them correctly so
+they land exactly where you want them to. Once you do, they'll easily soften
+up any mob. I highly, highly reccomend this technique because it'll maximize
+your damage potential. Keep this in mind - one grenade equals one pound. If you
+buy a bunch of grenades then you can always use them to max your weight. I 
+also actively make space for grenades and never like to leave home without 4
+even on the low levels. Also when you've burnt all your ammo and you are down
+to your knife or sword, it sure beats taking the risk and if you get lucky you
+can easily score some ammo powerups. Don't second guess this one, just get used
+to it.
+
+**Grenade Tricks and Tips**
+
+-Throwing
+One thing to keep in mind when throwing a grenade. Depending on which way you
+are moving when you throw a grenade, will change it's path. For instance if you
+are backpeddling, the grenade will be much closer to you. If you are moving
+forward you'll throw the grenade with more force and it'll end up away from
+you. Try to keep in mind what direction your pitching it. Often times you can
+creep one around a corner like this.
+                  + 
+                 + +
+                    __++   
+                   /  \  ++
+                   \__/     ++    (+=path and detonation)                       
+
+  (where you end up)*<-------- -* (You as you begin your throw)
+
+-Dropping
+My favorite tactic for dealing with trails. Backpeddle, look at the group. If
+you've got some clearance, draw a nade, be sure to be moving backwards, look at
+the ground and throw your nade. It will bounce, roll a bit with you, then stop
+dead. You'll have maybe two seconds to get away from it, so continue
+backpeddling. The group will walk right on top of it and into ideal position.
+This trick works great for when you're farming under difficult conditions, like
+bosses, and allows you to focus on evasion, with a bit of at twist.
+
+-On steps
+If you are running up a set of steps, keep this in mind. If you throw a grenade
+directly at a set of steps, they'll hit the steps as if they hit a wall. If you
+are fleeing up a set of steps, recklessly throw a grenade in front of you. It
+will hit the steps, end up well behind you, where enemies following you are 
+waiting. If you run past some mages, it's a great parting shot. It also may
+disrupt mages as it tosses them around.
+
+-Bouncing
+When you throw a grenade the first bounce will make it fly uncontrollably far.
+The best way to avoid this is to pitch it downwards at 45 degrees or less. By
+controlling the first bounce you can effectively throw grenades at closer
+ranges and not have them bounce too far. This works especially well in the
+stair level of dungeons, since you'll be fighting from a height for a while.
+
+HP + Armor Kits
+I'd say these are pretty much useless. Generally they are only going to come in
+handy when you are absolutely alone, which is the worst time to use them. More
+often than not you are better off keeping to the offense and letting your
+enemies drop HP + Ammo + Armor. It's hard enough to grab the health when it's
+made available to you, let alone stop, drop and pickup. The worst part, they 
+are abnormally heavy which will kill your weapon selections.
+
+Some people pray by them, especially people who butterfly. If that is the case
+then I praise your talent, but I still don't reccomend it to the average
+player. If you know enough about the game to survive like that, you'll know
+enough to violate my guide when your supposed to.
+
+Sword VS Dagger
+
+The big debate. Swords are clearly better (shocker) BUT not neccesarily
+better for you. Can you butterfly? Do you even know what I'm talking about?
+
+If you are shaky in your butterfly and you sword skills, don't bring a sword. 
+You can use the extra weight to carry more grenades and then you'll focus
+on evasion. Only the skilled know how to appropriately block attacks and
+set up for using a sword. If you aren't so well versed with a sword I highly
+reccomend just skipping it and going dagger. Blocking is great, but much more
+difficult in this mode rather than in normal combat. In normal combat twelve
+guys aren't swinging at you at once (unless, well, you did something to annoy
+that many people).
+
+I don't reccomend using the secondary attack on the dagger. It'll get you
+killed unceremoniously. Others will laugh or get pissed at you for being a
+N00b. You might get away with using the sword knock-up, but I don't think
+it'll save you any trouble and it's still risky.
+
+Let your own skill be your guide. With the dagger, once you learn to evade
+properly you can tag enemies and actually kill things when you've run out of
+ammunition, but with a sword you can block and survive much longer.
+Personally, I use a Dagger. I WISH I was as good with a sword as all those
+K-Stylers and people who can repeatedly block boss attacks, but I just 
+assume not take the risk because honestly, I'm not that good yet. Keep in
+mind though that a sword can do everything a dagger can if you are skilled
+with it but it also can hinder you greatly if you are not skilled with it.
+You'll take more hits trying to block rather than evade and it'll slow your
+game down. 
+Sprayers are king. Generally they provide more ammo, firepower and speed of
+kills than any other weapons. They also come with much more ammo.
+
+Assault Rifles
+Honestly I've had more success with the lvl 18 rifle (the Walcom) than any
+other weapon. I can't praise it enough. It's got a high rate of fire, you get
+it at 18 and will use it forever. Also assault rifles get great ammo 
+efficiency because they are extremely good at mid range attacks and the 
+Walcom gets one very cool benefit. It'll literally push mages away from you
+(alloying two more seconds of crucial attack if your rushing by one). I carried
+two assault for a while and was very pleased with. The only major flaw that I
+found was that, as is such with many weapons, refilling its ammo is extremely
+difficult. Also rifles come with an extremely large amount of ammo in the form
+of extra clips and often times you won't reach the bottom before a normal 
+round is over. Be wary of one thing though - newer rifles are not always better
+than old. The Walcom at 18 is by far the best rifle in overall stats. It never
+left my set up after 18.
+
+The big combatant to Assault Rifles is revolvers. Generally the unholy
+triumvirite is Machine Guns, Rifles and Revolvers. Pick any two or double up
+on any one. However of the choices I'd say Revolvers are the advanced choice
+and the Rifles the easier, more friendly, choice compared to the revolvers. You
+can kill efficiently with both but the revolvers might edge out should you use
+swapshot or reload shot effectively. However most people don't so sticking with
+the Maxwell is definitely choice.
+
+Shotguns
+Low ammo efficiency, low ammo, you have to be close to utilize. Yada, yada,
+yada, you get the idea.
+
+GREAT for PVP. Bad for quest.
+
+They do have efficient damage though at times, so if you're stuck with one,
+make sure to maximize the damage you get out of them when you need to.
+
+SMG's
+Very good early on. The beginning SMG's are much lighter than their later
+counterparts (or at least you have less to strap on) and these provide good
+damage dealing. Coupled with an AR you have a strong combination and efficient
+firepower till your 18. Also SMG's come with more ammo which is great. There is
+a drawback though. As you get higher in levels you'll notice the weight of the
+SMG's more and more and eventually they'll become too cumbersome to use. Also
+they are not ammo efficient (at least not nearly as well as the AR's are) and
+you'll start to notice it greatly as you get better. However they are great in
+the beginning.
+
+Oh and never get a single uzi, ever. Slow down with 2 and it's like having
+double the firepower without a decrease in ammo. If you need accuracy, make
+your alternate a pistol or an AR.
+
+However, once you reach 18 these become fairly useless. They still are good,
+just not as good as your alternative choices. Revolvers take out the need for
+an alternative as well as doubling up on AR's.
+
+Pistols / Moreso Revolvers
+I don't reccomend automatics. You need to be able to spit death and automatics
+will slow you down. The revolvers are "ok". They are a stellar light weapon 
+however and are great when you have constraints on what you can carry. If you
+like using SMG's they are a great couplement because the revolvers will give
+you solid range. However ammo constraints cripple them greatly and practically
+waste an ammo power up. Generally pistols aren't that great though, if you are
+going to use them, make sure to have a primary weapon that is ammo efficient
+because pistols, once emptied, should stay empty.
+
+The upside to pistols is this. The ;ater revolvers are fantastic, as a late
+blooming weapon pistols are great. You can also aim at specific parts of
+enemies anatomy in hopes of scoring more damage, but I've found that incredibly
+difficult given the games damage allocation per body part. I have heard these
+weapons are very effective, but I've never thought they edged out over the
+Maxwell. Also the revolvers accuracy is unquestionable making them an effective
+ranged death dealer. Later on in your characters life, the revolvers will be
+able to annihilate most any type of foe within the 6 shots made available per
+reload.
+
+I did some more research into the hows and why's of Pistols and I came up with
+this. During the boss fight they don't get many advantages that you're looking
+for, so the choice of revolver or assault rifle is ambiguous. You can go either
+way.
+
+However there is one thing that makes revolvers a unique choice. For those of
+you who are advanced Gunz players, you may know of two techniques called 
+"swap shot" and "reload shot". These take the cooldown off the revolvers
+allowing them to be fired much faster than normal, making them true death
+dealers. However if you do not use these techniques the revolvers lose a bit of
+their edge. They are good choice if you know how to use them, but my personal
+preference is still the Maxwell AR. Let yourself experiment with both and 
+decide for yourself.
+
+Rocket Launchers
+I'm mixed when it comes to these. I have to say I use the Nico
+Machine Gun much more because you can solidly eliminate enemies to farm more
+ammo as well as directly hurt the boss. The damage is also very lackluster 
+when an actual grenade does double the damage. They also don't get a ton of
+starting ammo. However they can be used effectively, but make SURE to herd
+your enemies into a tight group or else your wasting your ammo. It'd be best
+to start farming ammo right when you start using it and keep that mentality of
+keeping your ammo high and flowing. Also the reduced speed is something you 
+have to learn to manage effectively.
+
+If you are going to use a Rocket Launcer, keep this in mind. The damage isn't
+as high as a normal grenade, so you have to use its one major strength
+edgewise. This weapon does about 50 damage. The level 28 revolver does nearly
+the same damage. What's the difference?
+
+The Rocket Launcher can hit entire mobs.
+
+Thinking of it this way, you manage to hit, say, in a gloriously well groomed
+shot, 10 people, that's 50 damage x 10 people. That's 500 damage. You need to
+exploit this, because the Rocket Launcher does not get a lot of ammo and if you
+are gonna kill anything, you need to kill EVERYTHING. I also reccomend aiming
+at the ground at the enemies feet rather than the enemy itself.
+
+Machine Guns
+At 25, this is a great investment. It's got fairly substantial power and it
+really will help your performance during the boss fight. Also if you properly
+manage ammo powerups you can keep firing for a long time. I used this and the
+Walcom steadily after 25 and I never regretted it. It greatly adds to your 
+longevity as a fighter since one ammo upgrade gives you half your total ammo
+for that weapon back. It's a great boss killer and the best for ammo
+efficiency. The one reccomendation I have is that you bring something that is
+a bit faster on the kill, because if you see a wizard or a mage that needs to
+go this won't kill them with any haste.
+
+Also doubling up on this one isn't such a bad idea. Keep in mind you can't buy
+two of the same Machine Guns, but you can buy two different models and hold
+both. This is a nice trick for the boss since ammo is so scarce.
+
+Armor
+Generally as a rule of thumb, I bought the lighter armor. This is because as
+far as armor goes, I don't think I ever ran out of armor before I ran out of
+health. So I went light and I removed my gloves because 5 ap in the grand 
+scheme of things was paltry compared to running out of ammo. What killed me
+more, running out of ammo or running out of armor? Did I ever run out of armor?
+No, I didn't, I died with plenty armor left.
+
+****************************************************************************
+3. Quest Mode Items (C3)
+****************************************************************************
+
+This is the part that confuses everybody. Most people pick these things up
+through trial and error but when you're a n00b, there's no way you can know
+what to do with the items you're getting.
+
+Here's the rundown of the basic items you'll need.
+
+Torn Page 13.
+
+Activates level 2 when it's used alone. You can buy them in the store for 
+100 bucks. The catch is you have to be 13 or higher to enter or to use one.
+
+Torn Page 25.
+Activates level 3 when it's used alone. You can buy them in the store for
+500 bucks. The catch is you have to be 25 or higher to enter or to use one.
+
+Torn Page 41.
+Activates level 4 when it's used alone. You can buy them in the store for
+1000 bucks. The catch is you have to be 41 or higher to enter or to use one.
+
+Torn Page 65.
+These I have little experience with, but I presume that they activate level
+5 when activated and I've heard they can only be dropped, not bought.
+
+**IMPORTANT SUM UP OF PAGES**
+You can't be in a room that's using a page # that's higher than you're level
+#. If a room kicks you, they should be just beating you to the "quit" button.
+To use a page, drag and drop it. You'll see the level change and that's about
+it. There isn't any other combinations, despite all the items you'll be 
+getting. Oh, well, except for this one. Also, it won't work if you try to mix
+it up with anything else. So don't.
+
+Large Skull + Skeleton = SUPERION THE TAINTED
+'Nuff said. Oh and you get Large Skulls from Kings. Skeletons dolls, everywhere
+else.
+
+****************************************************************************
+4. Levels
+****************************************************************************
+
+DUNGEON LEVELS
+
+LEVEL 1
+Easy. If you can't beat this one, you just need practice.
+
+LEVEL 2
+This one's a bit more tricky. You still need just practice mainly, but here's
+some quick tips. When you get to the stage with the staircase, immediately get
+to the staircase at the other end as fast as possible. In doing so, you allow
+yourself the only place in this entire area you are allowed to stop at, while
+also utilizing the only point where you can defend from almost all the spawn
+points (minus the one is right on that platform). I advise not lingering to
+long on it should it be overwhelmed. Instead if it gets flooded, leave, then
+immediately return. They'll get stuck on the way back up and you can do this
+indefinitely.
+
+LEVEL 3
+This one is composed of 5 stages. On a side note, from the Wizards you
+may pick up a Mysterious Skull.
+
+Stage 1
+You'll recognize this as stage 2 from Level 2. It has more enemies. This one
+is easy and if it isn't, you need to downgrade or practice harder. It is so
+easy after a while you'll die of boredom. Literally you'll just kill and kill
+until your health runs out and you won't care anymore. If you see someone die
+they are either bored, having a bad run, or is a n00b. Usually its the former.
+If it isn't, you'll know because they'll get uppity about it.
+
+Stage 2
+This one is harder because it is comprised of only mages and soldiers. Use
+the stairway tactic again, but be prepared to abandon it should you get 
+overrun. Take into account your teams weaponry and act accordingly. Try to
+stay in this area as long as possible as the amount of mages in this level is
+astounding and you are in the best possible place to defeat them. Be more aware
+that the mages coming up the steps in the middle are going to be aiming at you.
+You'll quickly realize that standing too far to the left will get you pummeled
+and that you need to be aware of it. Dodging is more important this time around
+and generally you'll need to have this level down solid to win.
+
+**Special Tactic (from earlier)**
+Remember, you can't fall off. At the start dash to the end of the level, and
+wall run or slash cancel your way up the wall to the top of the steps. This is
+the only place in the entire level that provides cover. Also enemies will 
+become lodged on the stairs below in abundance. Mages especially will be snared
+by this. You can also back up on the steps while looking down, to provide cover
+where your shots go over the steps and the enemies arrows hit them. You can 
+also avoid mage homing balls by simply backing up and letting them be destroyed
+by the steps. Soldiers will get caught but will eventually break free. You can
+attempt to annihilate them before they reach you, but be ready to clear out.
+Depending on enemies you can either just fall to the bottom of the wall and
+immediately run back up (the enemies will see that your below them, run down
+the steps while you run up, the second your feet touch the top steps, they'll
+run back up... but get stuck on the stairs again). If the area is too crowded
+however, I suggest going into melee, leaping off the wall and dashing to the
+other end of the stage, killing any opportunities you run across, then running
+IMMEDIATELY back. This will resort the enemies and allow you to easily dispatch
+the remaining foes.
+
+Stage 3
+This one is much more difficult than previous levels. It becomes crowded very 
+quickly and even the skilled can be toppled here by one bad mistake. Humble
+yourself here - if you get low on health, stop being the center of attention.
+Be careful of bad edges of the stage as they can be decieving and there is
+one glitched wall. The glitched wall will cause you a lot of trouble and will
+probably get you killed once or twice. I reccomend relying on your grenades at
+the choke point in the center and to work together with your teammates. As a
+rule most stages you are better off fighting for yourself and away from your
+friends but in this one you have to be aware of your team. If you are bumping
+into someone at the center you need to clear out of there. If you are all 
+hiding on one end of the stage you should take the initiative. Whatever you do,
+don't keep a long trail of enemies behind you for too long. It won't effect
+you, but one of your teammates will eventually find it and get themselves hurt.
+This level is a free for all though and there isn't much you can do to prepare.
+
+Stage 4
+You should know this stage pretty well as it's basically the same but with an
+abundance of enemies now. More of everything, including Kings. The golden rule
+of this level is this.
+
+Pick up the chests, without fail. You're here for those skulls!
+
+The entire point of doing this is to get the boss level. You will learn to beat
+this level with ease but will also forget to make sure to get the chests. It is
+extremely important.
+
+Keep on your toes and watch your back. If you run into a teammate get away fast
+because he's got a tail. Focus, as always on this level, on the mages first and
+foremost. If someone says "I'm killing the mages", great, say nothing and kill
+the mages. It's your job to kill the mages, because it's everyones job. Once
+you annihilate the mages, this level is smooth sailing (as long as you didn't
+get stupid, sloppy, or bored and got tagged). You can afford to leave one or
+two around and if you find you have a trail of ten soldiers, focus on them
+simply because having too big of a tail is dangerous.
+
+Stage 5
+Wizards are top priority. Mages a close second. If surrounded by mages, just
+keep moving and keep their attention - your buddies should be dwindling their
+numbers fast. 15 seconds of holding the mages attention and probably your 
+teammates have seriously done some damage. If you get slowed by the wizards,
+drop whatever strategem you were working on, switch to melee and dash hard.
+When it wears off, continue to dash to work yourself away from the enemies
+that have gained on you. Keep your eyes peeled for Kings because they are once
+again on the prowl. Luckily this level is small and you can get used to them,
+but beware of spawns. If you haven't seen them and are wondering why, you 
+should assume they are gonna spawn on top of you or have and are right behind
+you. Be wary of one thing especially in this level - bumping into teammates
+tails. You can get hit on swings meant for them, walk right into a mob by
+backpeddling or simply get confused at what aggro is whose.
+
+Levels 4+5
+I really don't know. Feel free to contribute.
+
+**Special Tactic**
+Using a "Lure". If you have a skilled player he should go to the opposite end 
+of the spawn point and do circles, while focusing on nothing more than keeping
+a large mob over there. More people spawn on the opposite end than on the 
+spawn point, where most of your team is hiding. Even should this lure die, 
+you'll have greatly diminished their numbers within a minute or so. 
+Also if you clear out one side, your team can stand safely in the middle, 
+throw grenades and fire mid range weapons from safety. Also since the Wizards
+are practically immobilized you'll be continuously opening gaps for your team 
+to kill them and kill them they will. Generally this level can be completed as 
+long as you have one to two skillful players who keep their heads above water.
+
+******************************************************************************
+5. Rewards (C5)
+******************************************************************************
+Humongous Bone.
+You get this occasionally from the boss. It has no use, other than to annoy
+you. If you know what it does, send me an email, and I'll credit you.
+
+Mysterious Skull
+You get these from Wizards, they are also useless. With nothing to match them
+to, they never activate. Might come into play in further updates.
+
+Small Skulls
+Sell. I'm not "kidding" you. I have 99 of them constantly and they do nothing.
+
+Skeleton Dolls
+Used in conjunction with Large Skulls. You'll have an overabundance of these,
+so don't be afraid to sell them. You'll never need more than 10 at one time.
+
+Large Skulls
+These are the best drop you can get, besides boss item drops. These allow you
+to take on Superion the Tainted. They are valuable.
+
+**DEBATE TOPIC**
+What do you do with Large Skulls? Do you keep them and run, or use them with 
+the group who got it?
+
+Here comes the hard part. You'll never beat the boss pre-25, unless you're an
+amazing butterflyer, cheater, or all around amazing player. I haven't seen it
+happen yet.
+
+So here in lies the problem. There are 2 things you can do with Large Skulls.
+
+1. Horde them till you can beat the boss.
+2. Use the XP bonus to the benefit of the group and for practice.
+
+What will your group say to do with them?
+They'll say freaking use it. Why? Because they outnumber you, and if you walk
+away, they don't get anything. They don't get the experience nor do they get
+the skull. So they will ALWAYS pressure you to use it. If you can, avoid this
+before hand by agreeing that whoever gets the skull will decide what to do with
+it. There is nothing wrong with keeping it for yourself and waiting for a more
+opportune group.
+
+In all my time playing, I've wasted maybe 50 Large Skulls. In the end I
+realized that that was 50 potential items lost. Sure I got better at fighting
+the boss, but I also denied myself and other people the shot at the exclusive
+items. The experience was undoubtably good, but you can join a "Shower Room
+Berserker" and make that kind of experience very quickly. Sure the items are
+temporary... but they sure are a nice show piece.
+
+Don't be pressured into anything because or you will regret it. If anyone
+starts kicking and screaming, they aren't mature enough to know why. Besides in
+the time spent arguing over it, you could've scored another one. You should use
+them a couple of times, but the boss isn't anything special and if you're 
+reading this guide, by the end, you'll know soon enough what you're missing.
+The more levels you do the better you'll get at the boss, the boss really isn't
+anything you aren't used to, just more of the same.
+
+****************************************************************************
+6. Frequently Asked Questions (C6)
+****************************************************************************
+
+Gotta get some questions first.
+
+****************************************************************************
+7. Techniques
+****************************************************************************
+
+There are a few techniques that have been reccomended to me and that I've seen
+firsthand accomplish otherwise difficult feats.
+
+****************************************************************************
+8. Enemies (C8)
+****************************************************************************
+
+Skeletons
+Your average baddie. Most of the time you'll ignore these guys until the end,
+or when you're annoyed by them. They have a shield which will block your 
+attacks with a resounding clang. This just makes them more annoying and 
+generally you'll find your killing them since they are in your way of a mage.
+Their attack does sting though so don't get careless - they swing pretty quick
+and will do so immediately when you are in range. 
+
+Skeleton Mage.
+Will be regarded as "mages" from here on in. These guys are top priority. Once
+you are comfortable killing the soldiers you'll be focusing on these guys.
+They have three major attacks that you should make yourself familiar with.
+
+ -Arrows
+This is by far the most annoying attack in the game. This is why you attack the
+mages before anyone else. You can barely see them coming and they move very
+quickly. In hordes mages will become extremely problematic. Seek cover from
+this attack whenever you can and be concious of it during every battle. They
+fire in a straight line with only a little deviation, so try to circle them
+and rotate left or right as you approach them. If you see a number of mages
+collected, I guarantee you one of them is already sending a volley at you. If
+you look at a group of mages and you see them, immediately start evading,
+you'll thank yourself.
+
+*important note about arrows*
+They always use this attack first and it's usually heralded by them pointing,
+but most of the time the arrows are in the air before they signal this attack.
+So if you see them pointing they've already let the arrows fly and you need to
+move immediately. However it has a cool down so once they release their arrows
+you can usual suppress them (I mean exterminate them with extreme prejudice)
+before they get another volley. You should dash straight at them and pump them
+full of lead enough so to kill them.
+
+ -Floating Things
+These are annoying. You are going to bump into these regardless of what you do.
+They also sometimes let these go as a revenge move for killing them. If you 
+make them run into a wall or manage to get far enough away so they clip a 
+corner, they dissapear. You can outrun them just barely but you have to keep 
+moving. You can try moving in circles but eventually they are going to clip 
+you. One easy way to avoid them if they are in your way is to simply jump over
+them and do a tumble/dash. It becomes a matter of simple practice to avoid them
+and judging when it is an acceptable loss to run into them rather than 
+painstakingly avoid them (and getting yourself in trouble).
+
+-Swipe
+This is their cheap move. Usually you won't encounter this but when you do you
+won't see it coming. If you've got a sword you can block it but generally when
+you are that close they've spawned on top of you and are just going to smack
+you one. Make them pay for it. Best thing to do is just keeps out of arms
+reach of the mages, whenever possible.
+
+Skeleton Soldiers
+Will be hereby referred to as "Soldiers". These guys are normal skeletons on
+steroids. They run very quickly and rabidly attack you with their sole move, an
+overhead slice. Deceptively simple foes but when you encounter these guys in 
+you should make it a habit of moving no matter what. It is so easy for one of 
+them to spawn behind you when you weren't paying attention, or to switch 
+targets from a nearby friend. So once you know they are on the map, keep 
+dashing and tumbling and checking your back. You should never stop moving 
+unless your in a safe zone (somewhere where your back is to something and no 
+way they can sneak up on you). They take a number of rounds to take down 
+regrettably so don't committ to killing one unless you are absolutely sure 
+he's gonna die before he gets to you. If they get in range of attack, give up 
+and let it go. It's really, really easy to want to take a hit in exchange for 
+its death, but it'll sting more than its worth when you could just as easily 
+run and finish it from safety. Get in the habit of keeping your distance and
+hope to god nothing slows you down.
+
+**Important Notes**
+Never, EVER try to jump OVER them. Not only can you get stuck on their heads,
+the overhead swing is effective directly above them. If you try to jump a mob
+you can end up dead, fast. Instead practice zig zagging in front of them.
+They have impressive vertical range for their attack, but the horizontal range
+is pitiful. In fact, if you do a perfect circle they probably won't hit you 
+which is a good tactic if you are using a dagger or are butterflying.
+
+Skeleton Kings
+This isn't their official name but it's easier to type. They are huge foes that
+drop Large Skulls. More important than any tactics to kill it, the number one
+thing you should be doing when you see them is making sure when they die to 
+pick up a chest if they should leave one behind. This is the whole point of
+doing quest mode dungeon and it is so easy to let the monotony of killing make
+you forget that these guys are what you are here for.
+
+Back to killing them. They attack much like soldiers but instead of an overhead
+slice they attack with a baseball bat type swing with an abundantly large 
+sword. This attack is fast, way faster than the soldiers swing so don't let him
+get the chance to wing you. If you see him going to wing you, block because by
+that point your chances of evading are slim. When in doubt cut right in front
+of him and get behind him because the swing isn't fast enough to catch you if 
+you dash at him. I say dash, not tumble. If you're in this guys range you 
+should have your melee weapon out and be getting your distance from him. 
+Generally you'll be herding these guys with soldiers but make sure to keep an
+eye out for them.
+
+*Important King Notes*
+Once you know Kings are on the map, don't ever stop moving. You can only outrun
+them if you're dashing / tumbling or momentum jumping. Normal running is barely
+fast enough and if they are with soldiers they'll be pushing him forward so
+running isn't going to help. When they are on the map keep dashing and doing
+everything faster than you normally would. The exception is once they die to 
+make SURE you pick up their chest should they drop one. It takes a little time
+once the King is dead for the item to spawn, so I reccomend getting some 
+distance its body and you, then returning once you know it's going to spawn 
+soon. I can't stress enough this though - at any given moment one is, has, or
+is going to be on your tail and if you aren't full on running, you may find 
+yourself hit by a mysteriously appearing blade and then mobbed by soldiers.
+Also if you're using a heavy weapon be sure to take into account your reduced
+speed as they'll quickly close the gap between your back and you.
+
+Wizards
+General:
+You won't encounter these foes until you reach level 3 quests and only in the
+final battle of that level. However they will quickly become top priority to
+eliminate, even higher than mobs of Mages. They have a few major attacks. They
+have curiously high hit points, more than a soldier, so you're gonna need to
+really pound them when you see them. Draw your best weapon and burn a clip into
+them. You need to protect yourself and your team from these guys. The only time
+you shouldn't drop everything to kill one is when they are surrounded by normal
+mages, in which case you should finnagle a proper angle of attack in which to
+score a hit (without being flagged down by an armada of arrows).
+
+Attacks:
+      -Slow (..you the hell down)
+Whenever there is a wizard around you'll see your first real status effect.
+Stars and circles will appear above your head and suddenly your movement speed
+will be reduced about 50%. This is DEADLY to you because whatever level you are
+in you are constantly evading. Should this effect befall you, IMMEDIATELY and
+WITHOUT HESITATION draw your melee weapon and dash as HARD as you can. Forget
+everything you were doing and put it off for the next five seconds until the
+effect wears off then immediately regain your distance, then continue. Mages,
+Soldiers, whatever, they'll find you an easy target if you aren't fighting this
+effect.
+
+      -Stun / Lightning
+You'll see them summoning a lightning bolt by a crackling shield in front of
+them. You won't see it hit you, but you'll see it stun you momentarily. It is
+similar to a massive strike stun that the goblin mages give you, but not as
+harsh; However this of course is bad enough, so be aware of it and when you are 
+attacking Wizards, try to isolate them as best you can so you won't be mobbed
+should this attack connect with you. Once again this attack doesn't really hit
+a horizontal range so as long as you are outside it's normal attack range 
+you'll probably evade it. If it's in a corner it's a bit trickier but you'll
+manage.
+
+****************************************************************************
+9. BOSSES (C9)
+****************************************************************************
+ _________________________
+|                         | 
+|  	Goblin King       |
+|_________________________| 
+
+Easy. Will add later, but basically bring something with enough ammo and
+keep circling him. His attacks are fairly simple, he's basically an
+overgrown shaman. The biggest things are being careful and keeping your
+distance. Don't prioritize an attack over your health and you should make
+it out of this one clean. Also keep in mind that the mages can stun you
+and now, more than ever, it is important to avoid them.
+
+Other than that, it shouldn't be nearly as difficult as...
+
+ _________________________
+|                         | 
+|  Superion The Tainted   |
+|_________________________| 
+
+Welcome to Hell my friends.
+
+General:
+Take a good long look at the guy. You've made it this far, you're probably 
+frustrated about how hard it was to just get here.
+
+Forget all that, it was important practice which you'll need here.
+
+His health bar is enormous, many a group has emptied, efficiently, every clip
+they've had into this fiend and ne'er saw his life bar sufficiently drop. 
+You'll witness that event firsthand a few times when your low enough of a
+level. I wouldn't attempt this boss seriously until 25 since the weapons 
+available to you, while competent in their damage estimates, are not enough
+to diminish his health with the ammunition made available to you at spawn.
+Also it is unlikely you'll be able to farm enough ammo to keep up a fight.
+Unless you are more than the average joe with a melee weapon, you're gonna get
+backed into a corner and be forced to fight tooth and nail for life and ammo.
+
+He is faster than a King (or seems it) so you'll need to be dashing liberally.
+Luckily the stage slows him down, but don't think the minions around will. He
+plows through them like they aren't there. They'll slow you down for sure, but
+they definitely won't trip him up like they do you. 
+
+He has two main attacks, one you should be familiar with.
+
+-King Strike
+Same strike as a king except it stings more and seems a bit faster. It isn't
+actually any faster, but you generally won't see his body movements as clearly
+since his shoulder is 15 feet above you. You won't see it coming and will have
+to resort to blocking again. The difference between the King strike and his, 
+besides the damage, is that he's not afraid to do it again and again. If you 
+are caught off guard and he clocks you, don't think its over, he will swing
+again, whether or not you actually evade is up to you. If you hear yourself
+get hit, don't think, just MOVE. Also I think it may be possible to block this,
+as a last resort. However, I've never dared to attempt such madness.
+
+-Sword Fireball
+Here's what is going to keep you on your toes. LUCKILY you CAN see this one
+coming. Moreso you should KNOW it's coming rather than see it coming. Whenever
+you gain sufficient distance from the boss (or are unlucky enough to have a
+teamie set him up for it) you'll see him ground himself (his feet shift) and 
+he'll set up for a much larger swing. This swing is PRECEDED by the actual 
+attack. Meaning the attack comes flying at you well before he actually swings.
+It sweeps across the area extremely fast and is about as damaging as his strike
+depending on how bad you've been hit. I don't believe you can block this, but
+I need to investigate that more properly (as in general, I don't screw around
+and test this guy).
+
+Tactics:
+Together with his super high health, his damage potential and the longevity of
+this fight, more often than not you are going to fail in defeating him. There
+is a few things you can do to try and terminate him, but none of them are 
+"easy". First have someone side-dash around him constantly. He attacks in 
+vertical lines, not horizontal. You can dash in a circle around him with 
+relative safety. I say relative because if someone grabs his attention and he
+swings at them, they'll surely avoid it, and you're probably gonna walk right
+into it. Not only that, he'll be at the tail end of the attack and be ready
+while you are still stunned. That's death. Keep on your toes, memorize the
+land layout and know it intuitively, keep dashing and avoid teammates. Also be
+aware should he become crowded with lesser enemies - you can't efficiently dash
+over soldiers and they will be your undoing. Give him some space to follow you
+a tad to remove those elements and have your team keep a fair distance to
+ensure that you'll keep his aggro should you need to distance yourself avoiding
+enemies or rounding a pillar.
+
+Tactics (continued)
+There is an alternative for the skilled. I've seen it done where someone who
+was butterflying or using a knife can simply circle him while attacking.
+However individuals who are that skilled generally don't need this FAQ. Should
+one of your teammates seem quietly confident enough to butterfly, encourage him
+or her to do so. However remind them that should he be struck, to abandon the
+tactic and return to traditional tactics. An efficient butterflyer can circle
+the boss, keep his aggro, and cause damage to him, while keeping your team 
+freed from fear of death while they shoot from a safe range. However should
+this tactic fail, the person die, or need to give up, your team should be 
+prepared to shift back to running and gunning again.
+
+ _____________________________
+|                             | 
+|    Aneramon The Wicked      |
+|_____________________________|
+
+This guy will keep you on your toes. Good Luck.
+
+General:
+
+I don't have as much experience with this one as I'd like, but here goes.
+Forgive me for any inconsistencies - Mysterious skulls are not easy to come
+by and when I do fight this guy, I'm not taking "notes".
+
+The trick to this guy, is doing the same strategy you would for that level,
+and with dealing with Wizards in general. Luckily this guy appears to have
+less health than Superion and by the time you get to this guy you'll have
+plenty of ability at dishing it out. It also may simply be that since this
+guy is practically stationary, you'll be hitting him much more.
+
+Unfortunately that's the only thing that really is easier about this boss.
+
+He spawns an enormous amount of Wizards to accompany him, along with 
+other assorted minions. The wizards however will quickly begin to cause a
+serious problem - your entire team will be getting slowed without mercy.
+Also, since Wizards take more damage to kill, they are gonna drain your
+ammo, and although Aneramon isn't as hardy as superion, you're still gonna 
+need to ammo farm at one point to keep the battle up.
+
+Attacks
+
+-Lightning Blast
+He (she?) spits out a number of lightning bolts in a wave. They go in a
+straight line perpendicular to you. They come at you in this pattern:
+     
+     +Boss
+
+ | | | | |
+ | | | | |   <---Bolts
+
+     *You
+
+They aren't particularly damaging... but they can be hard to avoid.
+I'm sure you avid gamers are scoffing at the idea of this attack since
+it's so easy and common... however, the attack is a little broken.
+More than once you're going to walk right through one of the bolts and
+wonder, what happened?
+
+The trick is, the bolts hit faster than they appear, meaning they hit
+you physically before the image ever gets to you - much like superions
+fireballs - if you see these coming you have to clear the bolts pattern
+before the animation actually gets to you - however even then, it's
+pretty forgiving. Sometimes you'll have enough time to completely
+circumvent this attack by going all the way around it - which you
+may find commonplace if you're the one holding him/her.
+
+-swipe
+Much like the mage swipe, this boss can swipe at you. It's annoying and
+a reminder to not get too close... but it's not as fast as Superions
+home run slice, so don't be afraid of this one unless your bumbling
+around Aneramon.
+
+-Slow/Stun?
+I'm not sure if it's the boss stunning / slowing you, or the abundance
+of Wizards. Generally I've been the one holding whenever I face this one,
+so I'm not really sure. More on this later.
+
+Tactics:
+
+Stick with the same strategies for Superion and for this level. Luckily,
+this level benefits your strategy immensely when manipulated, and will 
+cripple you if you don't manipulate it. When the round starts, get some
+fast to go up and start holding his attention. What you want is for him to
+stay near the end of the level, while your team manages the middle part of
+the bridge. They, from afar, can easily attack the boss and use up their
+primary ammo. Those of who are afar, be ammo efficent - don't miss. The
+bosses lightning attack, more often than not, will fly harmlessly into
+a wall or other direction. Very rarely will it happen to put your team in
+danger. This strategy works very well, my first attempt on this boss and
+we were almost successful. However unless your very, very fast, you're 
+gonna start dwindling health. The person holding is eventually gonna have
+to swap somebody out, and that's going to be tricky. Best thing to do is
+agree on this - should someone run out of ammo, they should begin holding.
+If the holder sees another person in his zone, he should make sure he's
+lost the aggro, then leave. Two people shouldn't try to hold for too long
+since it's very dangerous. Should the holder get into trouble, they should
+flee and someone should take over IMMEDIATELY.
+
+This is a basic tactic, but it works fairly well. More to come on this one
+as I experiment with the boss.
+
+****************************************************************************
+**Guidelines For All Bosses**
+****************************************************************************
+
+1. Have a competent team. You can't have any weak links in the chain. You'll 
+need every single round pumped into him to have a chance and if someone dies
+before they do so, then they've already put a dent at your chance for success.
+Accidents happen, but usually one accident isn't fatal. If someone dies in the
+first 30 seconds, you picked somebody wrong for the team or are just plain
+unlucky. Everyone on the team should be responsible for their own life - 
+if you can keep your entire team alive long enough for them to expend their
+ammo AND hit with it, you're well on your way to victory even should 2 of
+your teammates die directly after. On an another note - I'm talking to you,
+not to your team. If you die with any more ammo than what you were saving
+to farm, you need to focus on staying alive next time.
+
+2. Teamwork
+Everyone says there is no "I" in team. I think everyone is full of themselves.
+You need to think for yourself in this one. Given the way the game is played,
+everyones fighting for their own life. If you're playing good, you won't even
+see your teammates (unless one is butterflying around him). Instead, USE your
+teammates. Whoever is closest to Superion, and thusly holding his aggro, 
+should "hold" him rather than doing damage. If someone else is "holding" him, 
+you should be concerned with hurting him from afar.This should all go unsaid.
+Bosses switch aggro in the blink of an eye, a drop of the hat, and always 
+when you least expect it. Keep in mind he'll attack whoever is closest.
+However if you maintain these guidelines for yourself, everyone will work 
+together without even having to say anything. In fact, the only thing that
+should be said, ever, during this entire match, is if someone dies they 
+should update you on your teammates health status. That's  the only 
+"talking" I've ever found remotely useful. Otherwise, indirectly or not, 
+you're gonna slow the living person down because they can't help but read. 
+If you have to chat, open a chat channel or whisper.
+
+3. Farming Powerups and Killing Mages.
+You won't beat a boss, even if you pump every round that every teammate has
+into him, without scoring a powerup. You HAVE to get some yellow powerups 
+flowing. You ALSO need to kill the mages. These fights are long. Really long. 
+The mages are your enemy because they will slowly wear you down as the round 
+goes on with arrows. This, luckily, serves a dual purpose, since generally it's 
+mages who drop the powerups. Also if the area becomes vacant of mages, you 
+need to kill some normal enemies so that new enemies will spawn, meaning 
+mages. Generally, I'd save a little ammo from your killing weapons, to farm
+some for your ammo-efficient weapon. I'd suggest 1 clip from your AR should be
+saved for farming and don't let your team tell you otherwise. Save that clip,
+kill 5 mages with it, and with any luck you'll be back in business.
+
+4. Plan Appropriately and Remain Ammo Efficient.
+*Short Version*
+Get the latest Machine Gun(s). Pray for Ammo powerups.
+
+*Long Version*
+Why you say? Because 1 yellow powerup gives you effectively half your ammo
+back. Which you'll be in dire need of if you are on the road to victory. Also
+as a guideline I'd keep a half a clip of that machine gun so you can use it
+to farm ammo + health. I know it's hard, your dead teammates will be screaming 
+at you to get back into the fight. They'll kick and claw and yelp. But that is
+why they're dead and you're not. Someone should be maintaining aggro and if you 
+are alone, good luck trying to farm. Get far away from the boss, find a mage,
+kill it, cross your fingers for ammo (or possibly badly needed health).
+
+Keep this in mind as well - ammo is more important than health. You can win
+with more ammo, you can only stay alive longer to get ammo with more health.
+Also the time it takes to grab the health, to focus on how to get to it and
+usually turning your back on the boss, all usually means a mage is gonna shave
+that 10 life off you as soon as you get it. It's an annoying truth.
+
+In Regards To Other Equipment.
+Most of the information in the "Equipment" section still applies, but some
+things need to be emphasized or added on.
+
+Keep in mind you are fighting an incredibly hardy boss and you'll need every
+drop of ammunition.
+
+You'll need the following, without question.
+ ____________________________________________________________________
+|                                                                    |
+| HP Rings. (you don't want to spend too much time gathering health) |
+| Grenades (many as you can, makes farming easier and more fruitful) |
+| Machine Gun. The yellow powerups make this a no brainer.           |
+|____________________________________________________________________|
+
+Aside from that, think ammo efficiency for your secondary weapon. Weapons with
+high starting ammo counts especially are great, because once this runs dry you
+should use any yellow powerups you get for your big gun (which gives you more
+damage per ammo powerup).
+
+I reccomend AR's, and I've heard Revolvers are fine choices. The level 28
+revolver might just be as good as the Maxwell, or so I've heard. I stick with
+my Maxwell, but don't let me stop you. Experiment.
+
+5. Don't forget to puck up the (beep)'ing ITEM.
+... you know you've seen somebody do it. Also don't sweat the drop. Half the
+time you will get something you can't use, 3/4 times you won't get it, and the
+other times, well, you're gonna lose anyway. Focus on XP + valuable killing
+experience.
+
+6. Don't kick people just before the boss dies.
+It won't change anything. 
+
+****************************************************************************
+10. Is it worth it? (C10)
+****************************************************************************
+The boss doesn't always drop an item you know. You also have a 1/4 chance of
+getting that item. You also have a much stronger chance than you'd like, to
+pickup an item that's intended for the opposite sex of your character. Yeah,
+it'll happen a few times. There isn't anything you can do about that. Also, you
+could get yet another boss item and have to start this whole cycle over again.
+Yeah it's hard.
+
+If you don't have a clan that can annihilate this boss with, I'd start looking
+for one, or stop question entirely.
+
+****************************************************************************
+11. CREDITS (C11)
+****************************************************************************
+
+For What these Guys Said (hopefully link doesn't die)
+http://boards.gamefaqs.com/gfaqs/genmessage.php?board=928753&topic=35063638
+
+From the Message Board:
+Asleep - For telling me why revolvers rock (swapshotting).
+DarkFeenix
+KawuFix - For pointing out StrategyWiki (thank god for you)
+
+****************************************************************************
+12. Good Links (C12)
+****************************************************************************
+
+KawuFix pointed this link out to me, and it is a great database for
+items, their uses, where to find them, and drop ratings. I wish I knew how
+these people got this info...
+
+http://strategywiki.org/wiki/GunZ_The_Duel
+
+
+
+
+
+****************************************************************************
+STUFF TO DO LATER (C13)
+****************************************************************************
+Mysterious Skull + Skeleton Doll = Anemeron The Wicked
+Devil's Dictionary + Enormously Huge Bone = Lich the Dragon
+
+New Bosses
+Dungeon - Large Skull + Skeleton Doll = Superion The Tainted
+Mansion - Crimson Necklace + Goblin Skull = (forgot name)
+
+Mansion stuff (Short Guide)
+
+New bosses
+Lich?
+
+Technique Section 
+"Hanging"
+"Lure"
+"Hold / Taunt / Stall"
+"Aiming for the head of Kings"
+*****************************************************************************
