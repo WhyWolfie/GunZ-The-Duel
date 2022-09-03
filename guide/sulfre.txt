@@ -1,0 +1,2582 @@
+
+    ;WWWWWWW                                                         WW,
+   WW;                ;.           ::     ;oCCCCCC1.              ;WWW
+   WW                .WW           WW  ZWWc;;;;;;;7WWW          WWWc
+   WW             WW  WW           WW  WW.          WW       ,WWW
+   WW             WW  WW           WW  WW:          WW     ZWW;
+   WWK           WWW  WW;         DWW  WWi          WW  ;WWWO
+     ZWWWWWWWWWWWo     .KWWWWWWWWWC    ZW           AW  WWKmpWWWWWWWWWW1
+
+
+FAQ by Daryl Legaspi
+Version: 0.27
+gfaqs boards: sulfre
+iGunZ: Sulfre/Remedi
+ijjiGunZ: Kill/Ironcraft
+email: daryl.legaspi@gmail.com
+
+
+=====================================================
+  Table of Contents
+=====================================================
+
+  I0.    Introduction
+  II0.   Symbol Legend
+  III0.  Basic Conmmands
+    III0a.     During Combat
+    III0b.     Chat Box
+    III0c.     Color Text
+  IV0.   Etiquette
+  V0.    Proper Names of Interest
+  VI0.   General Strategy
+    VI0a.      Aiming
+    VI0b.      Spamming
+    VI0c.      Evading
+    VI0d.      Massive Strike
+  VII0.  Equipment and Items
+    VII0a.     Ranged Weapons
+    VII0b.     Melee Weapons
+    VII0c.     Armor
+    VII0d.     Accessories
+    VII0e.     Quest Items
+  VIII0. Move Cancels
+  IX0.   Universal Tech
+  X0.    K-style
+    X0a.       Offensive/Defensive Tech
+    X0b.       Navigational Tech
+  XI0.   D-style
+  XII0.  Levels
+  XIII0. Quest Enemies
+    XIII0a.    Monsters
+    XIII0b.    Bosses
+  XIV0.  House Rules
+    XIV0a.     Attack and Defend
+    XIV0b.     Bow Duels
+    XIV0c.     Insta Duels
+    XIV0d.     Region Specific
+  XV0.   Replays
+    XV0a.      Recording Replays
+    XV0b.      Viewing Replays
+  XVI0.  Terminology
+    XVI0a.     Glossary
+    XVI0b.     Shorthand
+  XVII0. Frequently Asked Questions
+  END.   Acknowledgements
+
+=====================================================
+  Introduction                                     I0
+=====================================================
+
+  GunZ: the Duel (henceforth simply GunZ) is an online third person shooter
+  game with a few exceptional features (some glitches) that set it apart
+  in the genre.  On the surface it appears to be the standard dodge, aim,
+  and shoot at people TPS, and essentially that appearance is correct.
+  However, the depth (read: real value) of this game comes in the form of move
+  combos and technique cancels that would not be out of place in a 2D fighter.
+
+  An actual game story exists outside the game with in-game references to
+  that story (starting classes, item descriptions, etc.), but this story is
+  forgettable.  The music is largely mediocre, the graphics are dated, and
+  the weapons do not reflect their real life counterparts in damage/control,
+  but the gameplay is such that these problems detract very little from the fun
+  (yes, this includes the narrator's voice).
+
+  Endure the moderate learning curve and you may find an enjoyable
+  deterrent from ordinary (read: well-coded) shooters.
+
+=====================================================
+  Symbol Legend                                   II0
+=====================================================
+
+-| Cancel with
+-> Follow with
+
+=====================================================
+  Basic Commands                                 III0
+=====================================================
+  =============
+  During Combat  III0a
+  =============
+  *based on default settings
+
+  W     - Forward
+  A     - Left
+  S     - Backward
+  D     - Right
+  R     - Reload
+  V     - Toggle general chat (On/Off)
+  Q     - Previous Item
+  E     - Next Item
+  1     - Melee Weapon
+  2     - Primary Ranged Weapon
+  3     - Secondary Ranged Weapon
+  4     - Item 1
+  5     - Item 2
+  6     - /bow
+  7     - /wave
+  8     - /laugh
+  9     - /cry
+  0     - /dance
+  `     - /taunt
+  Shift - block
+  Ctrl  - attack
+  Tab   - view game record
+  Enter - begin general chat message
+  '     - begin team chat message
+  f1-f8 - macro msg keys (set macros at the options menu)
+  f11   - begin/end replay (don't forget to always end replay before
+  leaving a room!)
+  f12   - screenshot frame
+  ========
+  Chat Box  III0b
+  ========
+  /h                        - view commands
+  /w (target name) (msg)    - whisper target
+  /r (msg)                  - reply to last player who whispered
+  /chatmake (room name)     - create chatroom
+  /chatinvite (target name) - invite target to current chatroom
+  /chataccept               - accept chatinvite targeted at you
+  /chatjoin (room name)     - request to join chatroom
+  /chatselect               - (no current data)
+  @ (msg)                   - chat in current chatroom
+  /chat (msg)               - chat in current chatroom
+  # (msg)                   - clan chat
+
+  (in game room)
+  /kick                     - initiate kick
+  /suicide                  - suicide (exp loss occurs)
+  /bow                      - bow
+  /salute                   - bow
+  /laugh                    - laugh
+  /taunt                    - taunt
+  /cry                      - cry
+  /dance                    - dance (or what the developers pass off for a
+  dance anyways)
+
+  (in team match)
+  ! (msg)                   - team chat
+  ==========
+  Color Text  III0c
+  ==========
+  Begin a message with "^(number value 0-9)" without the quotes to change
+  the color of the proceeding text.
+
+  [Example]
+  ^1My 'hp' was red.
+  In the above example the whole phrase, "My 'hp' was red.", would be in red
+  colored text.
+
+  ^9My 'hp' was ^1red^9.
+  In this second example "My 'hp' was" would appear in white colored text
+  while "red" appeared in red colored text.  The period would be colored
+  white.
+
+  Color/Number chart:
+  ^1 - Red
+  ^2 - Green
+  ^3 - Blue
+  ^4 - Yellow
+  ^5 - Dark red
+  ^6 - Dark green
+  ^7 - Dark blue
+  ^8 - Dark yellow
+  ^9 - White
+  ^0 - Gray
+
+=====================================================
+  Etiquette                                       IV0
+=====================================================
+
+  Whether you decide to be an ass or not is up to you of course, but I find
+  that there is a correlation between being an ass and being kicked out of
+  the game.
+
+  1.  Prioritize your bandwidth towards the game to minimize lag between
+  you and the other players.
+  2.  Do not type in a match if you are not willing to risk being killed in
+  the process.
+  3.  Do not type-kill unless the typing player does so deliberately to
+  interfere with the match flow.
+  4.  Rejoin matches that the majority of players want to keep going.
+  Early rejoining is suggested as to give the others a chance to /kick those
+  unwilling to rejoin.
+  5.  Adhere to the game room's 'house rules' if applicable (should be
+  written in game room title).
+  6.  Adhere to any prearranged rules between you and your opponent.
+  7.  Do not attack opponents bowing before combat.  Give some form of
+  acknowledgement (returning the bow is the most widely accepted form of
+  acknowledgement and respect)
+  8.  Do not speak falsely about a player to get a votekick accepted (ie
+  saying someone hacks because you don't like him)
+
+=====================================================
+  Proper Names of Interest                         V0
+=====================================================
+
+These are names from the story that do not affect the gameplay much, if at
+all.
+
+Ares - Designer of men's armor
+
+Battle of Sun - A battle in which Elia's troops protected Menlo
+
+Bics - Designer of women's armor
+
+Blue Whistle - The gangs known as the Headache of the Empire
+
+Canopus - The God of Flame
+
+Canox - Weapons' manufacturer.
+
+Elia - A princess whose troops protected Menlo during the battle of Sun
+
+Emperor Altema - An emperor whose troops' morale rose when Elia's troops
+courageously protected Menlo during the battle of Sun
+
+Enia - The God of Water and Ice
+
+Eternal Blue - Outlaw crew of the seas
+
+FMT - A system
+
+Giston - The God of Earth
+
+Gray Dust - The elite troops of the empire
+
+Great Emperor of Ryswick - Great emperor after which a ring was named
+
+Gunners Heaven - A private organization of the Republic
+
+Havani - The main city of outlaws
+
+Healing Hands - The Republic support forces
+
+Icon - Designers of men's ceremonial wear
+
+Iron Calvary - A group for which powerful magicians designed a ring
+
+Iron Crow - The center of the Havani
+
+Leonics - Developers of the "Breaker" shotgun series
+
+L-Star - Designer of women's armor
+
+Maxwell - Weapons' manufacturer
+
+McField - A signature inscribed on the FMT ring. Possibly the scientist who
+created the FMT system
+
+Menlo - Something or someone that Elia's troops defended during the battle
+of Sun
+
+Miz - Producer of men's armor
+
+Moon Dynasty - Dynasty that hands down the Dark Karma sword and the Dark-Sun
+Matrial Dagger
+
+Nico - Weapons' manufacturer
+
+Phantom Breed - A spy crew
+
+Pierre - A brave commander who was killed in battle.
+
+Red Blood Dynasty - Dynasty of which the Red Blood kodachi are a symbol
+
+Renaut - Designer of men's armor
+
+Rex - Supplier of women's armor
+
+Storm Civil War - Not much is known about this war as there is little
+reference to it
+
+Urike - Women's armor designer
+
+Venico - Designer of men's armor
+
+Vinz - Designer of armor
+
+Walcom - Weapons' manufacturer
+
+Winscar - The Lord of Wind and Sky
+
+=====================================================
+  General Strategy                                VI0
+=====================================================
+GunZ requires a certain amount of strategy (assuming your opponent is at
+all competent).  Don't worry though; if you can't dazzle them with brilliance
+them baffle them with bull****. Best luck...
+
+
+  ======
+  Aiming  VI0a
+  ======
+  Aiming is probably the most important skill to develop, but it can also
+  be the most difficult (yes, it can be more difficult than learning to
+  dbfhhrs+ or whatever crazy steps people are coming up with nowadays) because
+  of the factors involved.  There are three main things to consider while 
+  taking aim. First, where your bullets are going to go.  Second, what your 
+  opponent is doing.  Third, where your opponent actually is.
+
+  Where your bullets go will greatly affect what your bullets hit.  Go by
+  where your crosshair is aimed (should you choose to use a visible one)
+  and not where your gun barrel is pointing.
+
+  Observe what your opponent is doing and try to anticipate his next few
+  steps. If you don't know what he's doing then you don't know where he's
+  going, and if you don't know where he's going you will not know how much to 
+  lead.
+
+  Finally, consider your opponent's ping and make your best guess at where
+  he actually will be when you fire or strike. This is a lot like what you
+  considered previously only a few steps ahead of that to compensate for
+  lag.
+  ========
+  Spamming  VI0b
+  ========
+  If you have a lagging opponent that you know is low on hp then you may
+  want to practice "spamming".  Fire whatever weapons you have as rapidly as
+  you can in that opponent's general direction and pray something hits.  There
+  are situations where it would behoove you to grab your nades and unload all
+  you got on the crowds' faces.
+
+  It is important to note that the difference between spamming and firing
+  in quick succession is the precision of your aim.
+  =======
+  Evading  VI0c
+  =======
+  Although it is possible to have a fair amount of success in Gunz with
+  minimal evasion (mostly due to others incompetence in aiming), learning
+  to evade often expands Gunz' otherwise limited gameplay.
+
+  Always keep in mind that the more you are evading the less you are
+  attacking (even with such techniques as slashshot).  Consequently, it is
+  important to adjust the balance according to the opponent(s) you are 
+  fighting.
+  =============
+  Massive Stike  VI0d
+  =============
+  Oh boy, unfortunately its not as simple as unleashing a massive strike on
+  someone's face and unloading your smg's.  The angle at which your
+  opponent is facing will determine whether your massive strike connects or
+  not.  Thus you must make your best judgement at what angle to throw your 
+  massive strike according to which angle you think your opponent will assume.
+
+  If you happen to be the one getting massived you will be fortunate to be
+  caught in a dash.  These will cause you to be stunned while sliding and will
+  make you less vulnerable to pb's and instakills.
+
+  If you believe your opponent is about to throw a massive strike, you
+  should change your angle of view according to how you think your opponent
+  will face. I believe there are more in-depth faqs about MS'ology so it might
+  behoove you to do a bit of study and experiment.
+
+=====================================================
+  Equipment and Items                            VII0
+=====================================================
+
+  =======
+  Example
+  =======
+
+  Item Name - Cost
+  Wt - Stat Gain/Damage
+  Description
+  ==============
+  Ranged Weapons  VII0a
+  ==============
+  The lower the number for controllability the more accurate the weapon is.
+
+  Pistols
+  =======
+  Dual-wield pistols shoot two bullets each fire.  Missing one bullet will
+  of course result in half the damage.
+
+  Raptor 50 - lvl 0 - 20bp
+  Weight:7 Clip:10x6 Damage:8 Delay:250 Controllability:30
+  This pistol has been used since a long time ago in the empire.  Its
+  production has been discontinued.  Manufactured by Walcom.
+
+  Raptor 50 x2 - lvl 0 - 40bp
+  Weight:14 Clip:10x6 Damage:16 Delay:250 Controllability:36
+  These pistols have been used since a long time ago in the empire.  Their
+  production has been discontinued.  Manufactured by Walcom.
+
+  Raptor 80 - lvl 5 - 200bp
+  Weight:7 Clip:12x6 Damage:8 Delay:200 Controllability:25
+  A revised model of the Raptor 50.  Its performance slightly improved but
+  the appearance has not changed from the old version.  Its production was
+  announced to be stopped quite early as its competition released a new
+  product.  Manufactured by Walcom.
+
+  Raptor 80 x2 - lvl 7 - 360bp
+  Weight:14 Clip:12x6 Damage:16 Delay:200 Controllability:30
+  Revised models of the Raptor 50.  The performance improved slightly but
+  the appearance has not changed from the old version.  Manufactured by Walcom.
+
+  Raven 5 - lvl 6 - 300bp
+  Weight:8 Clip:10x6 Damage:10 Delay:250 Controllability:40
+  This pistol was produced to be supplied to the battlefront of the
+  Republic. Manufactured by Maxwell.
+
+  Raven 5 x2 - lvl 8 - 550bp
+  Weight:16 Clip:10x6 Damage:20 Delay:250 Controllability:48
+  These pistols were produced to be supplied to the battlefront of the
+  Republic.  Manufactured by Maxwell.
+
+  Raptor 120 - lvl 10 - 500bp
+  Weight:7 Clip:12x6 Damage:9 Delay:200 Controllability:25
+  It was developed to be supplied to the military.  Its accuracy has been
+  improved from the Raptor 80.  Manufactured by Walcom.
+
+  Raptor 120 x2 - lvl 12 - 900bp
+  Weight:14 Clip:12x6 Damage:18 Delay:200 Controllability:30
+  It was developed to be supplied to the military. Its accuracy has been
+  improved from the Raptor 80s. Manufactured by Walcom.
+
+  Raven 6 - lvl 14 - 800bp
+  Weight:8 Clip:14x6 Damage:12 Delay:220 Controllability:40
+  The follow-up model of the Raven 5.  It's performance has improved but
+  its manufacture failed to make it lighter.  Manufactured by Maxwell.
+
+  Raven 6 x2 - lvl 16 - 1,440bp
+  Weight:16 Clip:14x6 Damage:24 Delay:220 Controllability:48
+  The follow-up models of the Raven 5. The performance has been improved
+  but its manufacturer failed to make it lighter. Manufactured by Maxwell.
+
+  Raptor 160 - lvl 24 - 2,500bp
+  Weight:8 Clip:13x6 Damage:11 Delay:180 Controllability:25
+  The follow-up model of the Raptor 120.  It has more firepower, better
+  performance and an excellent rate of fire.
+
+  Raptor 160 x2 - lvl 26 - 4,500bp
+  Weight:16 Clip:13x6 Damage:22 Delay:180 Controllability:30
+  The follow-up model of the Raptor 120.  They have more firepower, better
+  performance and an excellent rate of fire.
+
+  Raven 7 - lvl 32 - 5,000bp
+  Weight:9 Clip:15x6 Damage:13 Delay:210 Controllability:40
+  The Raven 7 has more firepower and a better rate of fire but it still has
+  some drawbacks in terms of accuracy and weight.
+
+  Raven 7 x2 - lvl 34 - 9,000bp
+  Weight:18 Clip:15x6 Damage:26 Delay:210 Controllability:48
+  The Raven 7s have more fire power and a better rate of fire but they
+  still have some drawbacks in terms of accuracy and weight.
+
+  Raptor 200 - lvl 40 - 8,000bp
+  Weight:8 Clip:14x6 Damage:11 Delay:160 Controllability:25
+  The Raptor series won confidence with it's high rate of fire and
+  accuracy. This weapon shows the advanced development capability of Walcom.
+
+  Raptor 200 x2 - lvl 42 - 14,400bp
+  Weight:16 Clip:14x6 Damage:22 Delay:160 Controllability:30
+  The Raptor series won confidence with it's high rate of fire and
+  accuracy. These weapons show the advanced development capability of Walcom.
+
+  Adventurer Pistol x2 - lvl 0
+  Weight:12 Clip:12x6 Damage:18 Delay:250 Controllability:36
+  These pistols are mainly used by novice adventurers.
+
+  Ridic Hunter Pistol x2 - lvl 0
+  Weight:12 Clip:13x6 Damage:16 Delay:240 Controllability:36 AP:2
+  These strange pistols raise AP for the person who wears it.
+
+  Iris Pistol x2 - lvl 7
+  Weight:12 Clip:12x6 Damage:20 Delay:220 Controllability:36
+  These are pistols that the Republic's soldiers used to use. It was named
+  after their residence.
+
+  Iron Crow Pistol x2 - lvl 15
+  Weight:14 Clip:13x6 Damage:24 Delay:200 Controllability:36
+  Pistols used in Iron Crow, the center of the Havani.
+
+  Revolvers
+  =========
+  Dual-wield revolvers shoot two bullets each fire.  Missing one bullet
+  will of course result in half the damage.
+
+  Minic 567 - lvl 0 - 20bp
+  Weight:8 Clip:6x8 Damage:16 Delay:400 Controllability:60
+  This legendary revolver was produced by Maxwell and supplied to the
+  general infantry of the Republic. Its production is now discontinued.
+
+  Minic 567 x2 - lvl 0 - 40bp
+  Weight:16 Clip:6x8 Damage:32 Delay:400 Controllability:72
+  These legendary revolvers were produced by Maxwell and supplied to the
+  general infantry of the Republic.  Its production is now discontinued.
+
+  Dynax 7000 - lvl 5 - 220bp
+  Weight:7 Clip:8x8 Damage:14 Delay:300 Controllability:60
+  The first of the lightweight revolvers from Canox.  Though it's
+  production has been discontinued, the second-hand dynax is still a popular
+  gun.
+
+  Dynax 7000  x2 - lvl 7 - 396bp
+  Weight:14 Clip:8x8 Damage:28 Delay:300 Controllability:72
+  The first of the lightweight revolvers from Canox. Though their
+  production has been discontinued, the second-hand Dynax is still a popular
+  gun.
+
+  Minic 567 Limited - lvl 7 - 340bp
+  Weight:8 Clip:6x8 Damage:18 Delay:400 Controllability:50
+  This model was produced in order to commemorate the fifth anniversary of
+  Maxwell's Minic.  It is more powerful than the original.
+
+  Minic 567 Limited x2 - lvl 9 - 612bp
+  Weight:16 Clip:6x8 Damage:36 Delay:400 Controllability:60
+  These were produced in order to commemorate the fifth aniversary of
+  Maxwell's Minic. They have more firepower that the originals.
+
+  Zaurus A - lvl 10 - 550bp
+  Weight:7 Clip:6x8 Damage:20 Delay:400 Controllability:60
+  This revolver was developed to supply the military.  Manufactured by
+  Walcom.
+
+  Zaurus A x2 - lvl 12 - 990bp
+  Weight:14 Clip:6x8 Damage:40 Delay:400 Controllability:72
+  These revolvers were developed to supply the military. Manufactured by
+  Walcom.
+
+  Phantom Cruise - lvl 16 - 1,200bp
+  Weight:9 Clip:6x8 Damage:22 Delay:400 Controllability:70
+  High-end revolver made by Nico.  Its upgraded design draws a lot of
+  attention.
+
+  Phantom Cruise x2 - lvl 18 - 2,160bp
+  Weight:18 Clip:6x8 Damage:44 Delay:400 Controllability:84
+  High-end revolvers made by Nico. Its upgraded design draws a lot of
+  attention.
+
+  Phantom Cruise N - lvl 21 - 2,500bp
+  Weight:8 Clip:6x8 Damage:23 Delay:400 Controllability:65
+  Phantom Cruise's slightly upgraded model.  Its performance has slightly
+  improved.
+
+  Phantom Cruise N x2 - lvl 23 - 4,500bp
+  Weight:16 Clip:6x8 Damage:46 Delay:400 Controllability:78
+  Phantom Cruise's minor upgraded models.  The performance has slightly
+  improved.
+
+  Dynax 8000 - lvl 26 - 4,000bp
+  Weight:7 Clip:8x8 Damage:18 Delay:300 Controllability:60
+  Lightweight revolver made by Canox. This is the follow-up model of the
+  Dynax 7000, its performance has remarkably improved.
+
+  Dynax 8000 x2 - lvl 28 - 7,200bp
+  Weight:14 Clip:8x8 Damage:36 Delay:300 Controllability:72
+  Lightweight revolvers made by Canox.  These are the follow-up models of
+  the Dynax 7000, their performance has remarkably improved.
+
+  Minic 567 MK.II - lvl 34 - 7,000bp
+  Weight:8 Clip:6x8 Damage:25 Delay:400 Controllability:50
+  This is an upgraded model of the commemorative fifth anniversary Minic
+  567. It packs more power than the original one.
+
+  Minic 567 MK.II x2 - lvl 36 - 12,600bp
+  Weight:16 Clip:6x8 Damage:50 Delay:400 Controllability:60
+  This is the upgraded models of the commemorative fifth anniversary Minic
+  567.  They pack more power than the original ones.
+
+  Zaurus B - lvl 42 - 12,000bp
+  Weight:8 Clip:6x8 Damage:25 Delay:360 Controllability:50
+  The Zaurus Type B is the most powerful handgun money can buy. It also has
+  better accuracy.
+
+  Zaurus B x2 - lvl 46 - 21,600bp
+  Weight:16 Clip:6x8 Damage:50 Delay:360 Controllability:60
+  The Zaurus Type Bs are the most powerful handgun money can buy.  They
+  also have better accuracy.
+
+  Iris Revolver x2 - lvl 7 - 26G
+  Weight:12 Clip:6x8 Damage:38 Delay:360 Controllability:36
+  Revolvers that the Republic's soldiers used to use. It was named after
+  their residence.
+
+  Iron Crow Revolver x2 - lvl 15 - 37G
+  Weight:14 Clip:8x8 Damage:42 Delay:360 Controllability:36
+  Revolvers used in Iron Crow, the center of the Havani.
+
+  Gold Hound x2 - lvl 24 - (varies on rental time)
+  Weight:16 Clip:6x8 Damage:48 Delay:450 Controllability:80
+  The most powerful revolvers of their class. Developed mainly focusing on
+  firepower. It is difficult for beginners to use it due to it's slow
+  firing rate and strong recoil.
+
+  Submachine Guns
+  ===============
+  SMG's reload time: 3(single), 5(dual-wield)
+
+  Renard - lvl 0 - 30bp
+  Weight:15 Clip:32x5 Damage:7 Delay:90
+  This old submachine gun was produced by Canox. Its production has been
+  discontinued.
+
+  Renard x2 - lvl 0 - 60bp
+  Weight:30 Clip:32x5 Damage:14 Delay:90
+  These old submachine guns were produced by Canox.  Its production has
+  been discontinued.
+
+  Walcom S5 - lvl 10 - 750bp
+  Weight:15 Clip:36x5 Damage:8 Delay:90
+  This submachine gun produced by Walcom are quite popular. They have
+  better firepower and a larger ammo capacity.
+
+  Walcom S5 x2 - lvl 13 - 1,350bp
+  Weight:30 Clip:36x5 Damage:16 Delay:90
+  These submachine guns produced by Walcom are quite popular.  They have
+  better firepower and a larger ammo capacity.
+
+  Ellan - lvl 10 - 700bp
+  Weight:12 Clip:60x5 Damage:5 Delay:90
+  Canox's small submachine gun. This was manufactured with a focus on
+  better mobility.
+
+  Ellan x2 - lvl 12 - 1,260bp
+  Weight:24 Clip:60x5 Damage:10 Delay:90
+  Canox's small submachine guns.  These were manufactured with focus on
+  better mobility.
+
+  Renard V - lvl 24 - 2,800bp
+  Weight:15 Clip:32x5 Damage:7 Delay:85
+  Follow-up model of the once widely-popular Renard. It has better accuracy
+  and a higher rate of fire.
+
+  Renard V x2 - lvl 27 - 5,040bp
+  Weight:30 Clip:32x5 Damage:14 Delay:85
+  Follow-up model of the once widely popular Renards.  They have better
+  accuracy and a higher rate of fire.
+
+  Walcom S6 - lvl 24 - 2,800bp
+  Weight:16 Clip:36x5 Damage:9 Delay:95
+  The follow-up model of the Walcom S5. It has more firepower and better
+  stability compared with its previous model.
+
+  Walcom S6 x2 - lvl 27 - 5,040bp
+  Weight:32 Clip:36x5 Damage:18 Delay:95
+  The follow-up models of Walcom's S5.  They have more firepower and better
+  stability compared with its previous models.
+
+  New Renard V - lvl 36 - 5,600bp
+  Weight:15 Clip:40x5 Damage:8 Delay:80
+  New version of the popular Renard V produced by Canox.
+
+  New Renard V x2 - lvl 39 - 10,080bp
+  Weight:30 Clip:40x5 Damage:16 Delay:80
+  New version of the popular Renard V produced by Canox.
+
+  Walcom XL - lvl 36 - 5,800bp
+  Weight:14 Clip:32x5 Damage:9 Delay:95
+  This model was produced in order to commemorate the 70th anniversary of
+  Walcom. It has a lightweight body and it is called 'the Exterminator'.
+
+  Walcom XL x2 - lvl 39 - 10,440bp
+  Weight:28 Clip:32x5 Damage:18 Delay:95
+  These models were produced in order to commemorate the 70th anniversary
+  of Walcom.  It has a lightweight body and it is called 'the Exterminator'.
+
+  Renard VI - lvl 45 - 12,000bp
+  Weight:14 Clip:40x5 Damage:8 Delay:80
+  This new model was produced by Canox whose popularity was dented by
+  Walcom XL.
+
+  Renard VI x2 - lvl 48 - 21,600bp
+  Weight:28 Clip:40x5 Damage:16 Delay:80
+  These new models were produced by Canox whose popularity was dented by
+  Walcom XL.
+
+  Walcom XLS - lvl 45 - 12,000bp
+  Weight:14 Clip:32x5 Damage:11 Delay:95
+  Upgrade to the Walcom XL. The only difference from the old model is
+  enhanced fire power.
+
+  Walcom XLS x2 - lvl 48 - 21,600bp
+  Weight:28 Clip:32x5 Damage:22 Delay:95
+  Upgrades to Walcom XL.  The only difference from the old models are
+  enhanced firepower.
+
+  Adventurer SMG x2 - lvl 0
+  Weight:28 Clip:40x5 Damage:14 Delay:85
+
+  Iris SMG x2 - lvl 7
+  Weight:28 Clip:40x5 Damage:16 Delay:95
+  SMGs that the Republic's soldiers used to use.
+
+  Iron Crow SMG x2 - lvl 15
+  Weight:28 Clip:40x5 Damage:16 Delay:90
+  SMGs used in Iron Crow, the center of the Havani.
+
+  Rifles
+  ======
+  Rifle reload time: 6
+
+  Nico R2 - lvl 5 - 400bp
+  Weight:15 Clip:32x5 Damage:11 Delay:120
+  Rifle produced by Nico in the early days.
+
+  Nico R5 - lvl 10 - 1,500bp
+  Weight:18 Clip:32x5 Damage:12 Delay:110
+  One of the most popular rifles among the Republican army.
+
+  Walcom Warrior 77 - lvl 15 - 2,800bp
+  Weight:20 Clip:24x5 Damage:15 Delay:100
+  Produced by Walcom, it has the drawback of being difficult to use but it
+  has relatively strong power.
+
+  Maxwell LX30 - lvl 18 - 3,000bp
+  Weight:20 Clip:40x5 Damage:13 Delay:80
+  Produced by Maxwell, this weapon has stable grip, good operability, and a
+  high rate of fire.
+
+  Nico R6 - lvl 26 - 6,000bp
+  Weight:18 Clip:36x5 Damage:15 Delay:90
+  Follow-up model of popular R5 of Nico. With its improved fire power, it
+  is popular among R5 maniacs.
+
+  Maxwell LX44 - lvl 34 - 12,000bp
+  Weight:20 Clip:40x5 Damage:14 Delay:80
+  Rifle with a higher fire rate than LX30. It has a stable grip with high
+  accuracy.
+
+  Nico R7 - lvl 42- 24,000bp
+  Weight:18 Clip:40x5 Damage:16 Delay:90
+  Nico's new rifle with better fire power.
+
+  Walcom Warrior 88 - lvl 50 - 48,000bp
+  Weight:20 Clip:32x5 Damage:19 Delay:100
+  Still not easy to use but, this new product by Walcom is produced to
+  focus on stronger fire power.
+
+  Iris Rifle - lvl 7
+  Weight:18 Clip:36x5 Damage:15 Delay:110
+  Rifle that the Republic's soldiers used to use. It was named after their
+  residence.
+
+  Iron Crow Rifle - lvl 15
+  Weight:18 Clip:36x5 Damage:16 Delay:100
+  Rifle used in Iron Crow, the center of the Havani.
+
+  Prime TX - lvl 24
+  Weight:18 Clip:36x5 Damage:17 Delay:100
+  A rifle focused on fire rate and stability. Its stable and controllable
+  recoil makes it an excellent choice to use.
+
+  Shotguns
+  ========
+  Shotgun reload time: 5
+
+  Breaker 3 - lvl 5 - 200bp
+  Weight:15 Clip:3x5 Damage:6 Delay:1,100
+  Pump action shotgun produced by Leonics, who has specialized in the
+  production of shotguns for ages.  Its production has been discontinued.
+
+  Breaker 5 - lvl 10 - 800bp
+  Weight:18 Clip:5x5 Damage:6 Delay:1,000
+  Pump action type shotgun produced by Leonics. Though made a long time
+  ago, it is still very popular.
+
+  Breaker 6 - lvl 15 - 1,600bp
+  Weight:20 Clip:5x5 Damage:7 Delay:1,000
+  Leonic's new shotgun which was released quite recently.
+
+  Breaker 7 - lvl 30 - 8,000bp
+  Weight:20 Clip:5x5 Damage:8 Delay:1,000
+  Leonics's 7th model adopted a new design different from the existing
+  Breaker series.
+
+  Avenger - lvl 30 - 9,000bp
+  Weight:15 Clip:2x5 Damage:10 Delay:1,200
+  Shotgun introduced by Nico as a monumental product.  This weapon has
+  strong destructive power.  It's only drawback,is it can only load a small
+  number of bullets.
+
+  Breaker 8 - lvl 45 - 20,000bp
+  Weight:20 Clip:5x5 Damage:9 Delay:1,000
+  New shotgun produced by Leonics, who is quite famous for the Breaker
+  series of shotguns.
+
+  Avenger MKII - lvl 45 - 24,000bp
+  Weight:16 Clip:2x5 Damage:11 Delay:1,200
+  Avenger's follow-up model that became the weapon of choice for
+  adventurers.
+
+  Iris Shotgun - lvl 7
+  Weight:18 Clip:5x5 Damage:7 Delay:1,100
+  Shotgun that the Republic's soldiers used to use. It was named after their 
+  residence.
+
+  Iron Crow Shotgun - lvl 15
+  Weight:18 Clip:5x5 Damage:7 Delay:900
+  Shotgun used in Iron Crow, the center of the Havani.
+
+  Cruelizon - lvl 24
+  Weight:18 Clip:5x5 Damage:9 Delay:1,100
+  A shotgun with enhanced power from the Breaker series. Fire rate and
+  stability are relatively decreased, thus making it hard to control this gun.
+
+  Rocket Launchers
+  ================
+  Maxwell RW-66 - lvl 10 - 2,000bp
+  Weight:30 Clip:4x4 Damage:30 Delay:1,000
+  Rocket launcher made in the early days by Maxwell. It lacks the strong
+  power.
+
+  Walcom L1 - lvl 15 - 3,200bp
+  Weight:30 Clip:3x4 Damage:50 Delay:1,200
+  Rocket launcher with strong fire power produced by Walcom.
+
+  Maxwell RW-77 - lvl 20 - 5,200bp
+  Weight:28 Clip:5x4 Damage:35 Delay:900
+  Rocket launcher produced by Maxwell. It can hold more bullets than
+  Walcom's L series and has a better fire rate capability. However, the fire
+  power was reduced.
+
+  Walcom L1 mk. II - lvl 30 - 12,000bp
+  Weight:30 Clip:3x4 Damage:55 Delay:1,200
+  Walcom's Rocket Launcher. This slightly upgraded model of the L1 has slightly
+  stronger fire power.
+
+  Maxwell RW-88 - lvl 40 - 24,000bp
+  Weight:28 Clip:5x4 Damage:36 Delay:800
+  An upgraded version of RW-77. Though nothing major has changed, it has a
+  better rate of fire than the previous models.
+
+  Walcom L2 - lvl 50 - 50,000bp
+  Weight:25 Clip:4x4 Damage:55 Delay:1,200
+  Walcom's Rocket Launcher. Holds more bullets than L1, it has become a
+  little lighter and more powerful.
+
+  Iris Rocket - lvl 7
+  Weight:28 Clip:4x4 Damage:35 Delay:1,000
+  A rocket the Republic soldiers used to use. It was named after their
+  residence.
+
+  Iron Crow Rocket - lvl 15
+  Weight:26 Clip:4x4 Damage:55 Delay:1,400
+  A rocket produced for the Iron Crow. Used to dominate Havani, city of
+  outlaws.
+
+  Pressure RX - lvl 24
+  Weight:28 Clip:5x4 Damage:50 Delay:1,000
+  A more balanced rocket launcher. Its damage is somewhat sacrificed but the 
+  clip capacity and the reload speed have been improved.
+
+  Machine Guns
+  ============
+  Nico MG-K8 - lvl 25 - 8,000bp
+  Weight:28 Clip:120x2 Damage:16 Delay:100
+  It is so heavy that it is hard to carry but, its rate of fire makes the
+  enemies shiver in fear.
+
+  Nico MG-K9 - lvl 35 - 16,000bp
+  Weight:28 Clip:120x2 Damage:17 Delay:100
+  K9 machine gun with upgraded power. It's powerful rate of fire and damage
+  will make swiss cheese of the opposition.
+
+  Nico MG-KX - lvl 45 - 32,000bp
+  Weight:28 Clip:120x2 Damage:18 Delay:100
+  Nico's new machine gun with explosive power. Even just looking at the
+  MG-KX will make the enemies feel pain.
+
+  Iron Crow Machine Gun - lvl 15
+  Weight:26 Clip:120x2 Damage:15 Delay:100
+  Machine Gun used in Iron Crow, the center of the Havani, main city for
+  outlaws.
+  =============
+  Melee Weapons  VII0b
+  =============
+
+  Daggers
+  =======
+
+  Rusty Dagger - lvl 0 - 20bp
+  Weight:5 Damage:8 Delay:366
+  It has some rust here and there.  Once used, it's sure to be difficult to
+  sell.
+
+  Iron Dagger - lvl 5 - 200bp
+  Weight:5 Damage:9 Delay:356
+  Basic iron dagger, made in a factory.  A serial number is barely visible
+  on the surface.
+
+  Military Dagger - lvl 9 - 400bp
+  Weight:6 Damage:11 Delay:356
+  Military assault dagger.
+
+  Lightweight Dagger - lvl 18 - 1,000bp
+  Weight:5 Damage:19 Delay:346
+  Easy to use lightweight dagger.
+
+  High-Class Dagger - lvl 27 - 2,500bp
+  Weight:6 Damage:12 Delay:351
+  Heavy unique high-class dagger.  Beautiful pattern inscribed on the
+  surface.
+
+  Phantom Slaying Dagger - lvl 36 - 5,000bp
+  Weight:4 Damage:13 Delay:356
+  Mysterious dagger, used to kill evil spirits.  However, it could be an urban 
+  legend.
+
+  Warlord's Gut Ripper - lvl 45 - 10,000bp
+  Weight:6 Damage:14 Delay:346
+  Unique dagger, used by warlord's during the Storm civil war.
+
+  Ridic Hunter Dagger - lvl 0 - 17G
+  Weight:4 Damage:8 Delay:356 AP:+3
+  This strange dagger raises defensive strength.
+
+  Adventurer Dagger - lvl 0 - 17G
+  Weight:4 Damage:9 Delay:356
+  Practical lightweight dagger.
+
+  Koden Knife - lvl 7 - 27G
+  Weight:4 Damage:10 Delay:346
+  A dagger designed by a legendary swordsman.
+
+  Dark-Sun Martial Dagger - lvl 15 - 37G
+  Weight:6 Damage:11 Delay:346
+  An obscure dagger handed down from the Moon dynasty.
+
+  Swords
+  ======
+
+  Rusty Sword - lvl 0 - 20bp
+  Weight:10 Damage:15 Delay:359
+  It's a rusty sword.  Once used, it's sure to be difficult to sell.
+
+  Iron Sword - lvl 5 - 300bp
+  Weight:10 Damage:16 Delay:359
+  Low level iron sword.  Faint serial number visible on the surface.
+
+  Military Sword - lvl 10 - 600bp
+  Weight:12 Damage:18 Delay:349
+  Great looking sword, used by ranked officers.
+
+  Lightweight Sword - lvl 20 - 1,500bp
+  Weight:9 Damage:15 Delay:339
+  Easy to use lightweight sword.
+
+  High-class Sword - lvl 30 - 3,600bp
+  Weight:13 Damage:20 Delay:339
+  High-Class sword, made of rare materials for combat.
+
+  Devil Slayer - lvl 40 - 7,200bp
+  Weight:11 Damage:22 Delay:339
+  Mysterious sword used to kill a haunted evil spirit.
+
+  Golden Dragon Sword - lvl 50 - 15,000bp
+  Weight:12 Damage:24 Delay:329
+  Gold plated attractive sword.  Sword collectors desperately want to acquire 
+  this powerful katana.
+
+  Adventurer Long Sword - lvl 0 - 17G
+  Weight:9 Damage:16 Delay:359
+  Adventurer's Lightweight practical sword.
+
+  Salamanda - lvl 7 - 27G
+  Weight:8 Damage:17 Delay:349
+  A unique sword designed by a legendary swordsman.
+
+  Dark Karma - lvl 15 - 37G
+  Weight:10 Damage:19 Delay:349
+  An obscure sword handed down from the Moon dynasty.
+
+  Kodachi Swords
+  ==============
+
+  Iron Kodachi - lvl 10 - 850bp
+  Weight:18 Damage:14 Delay:290
+  These Kodachi Iron swords are widely produced for the general public.
+
+  Lightweight Kodachi - lvl 21 - 2,000bp
+  Weight:14 Damage:15 Delay:280
+  Kodachi swords deigned for two hands.  Much lighter and smaller than
+  regular swords.
+
+  High-Class Kodachi - lvl 32 - 5,000bp
+  Weight:20 Damage:16 Delay:280
+  This unique sword produced by Kodachi is made of high-end rare materials.
+
+  Red Blood - lvl 43 - 12,000bp
+  Weight:18 Damage:18 Delay:260
+  These powerful swords are a symbol of the Red Blood Dynasty, carried by a
+  great swordsman in ancient times.
+  =====
+  Armor  VII0c
+  =====
+
+  Head
+  ====
+  At the time of this writing all hats are premium items only.
+
+  [FEMALE]
+
+  Blue Vane Hat - lvl 0
+  Weight:4 HP:1 AP:2
+  Women's Blue Vane series hat made of a highly flexible material.
+
+  Military Officer Hat - lvl 0
+  Weight:3 AP:3
+  A female military officer hat favored by military fanatics.
+
+  Adventurer Hat - lvl 0
+  Weight:3 AP:3
+  A stylish baseball hat recommended for the novice adventurers. This item
+  is made for those who hate to wear heavy gear.
+
+  Ceremonial Dress Beret - lvl 7
+  Weight:4 HP:2 AP:3
+  A ceremonial dress hat supplied to the female soldiers of the Empire.
+
+  Blue Whistle Hat - lvl 7
+  Weight:4 HP:1 AP:5
+  The Blue Whistle women's hat.
+
+  Eternal Blue Hat - lvl 15
+  Weight:4 HP:2 AP:8
+  For outlaws of the sea, Eternal Blue women's pirate hat.
+
+  Gunners Heaven Hat - lvl 15
+  Weight:4 HP:3 AP:6
+  A hat exclusively for the Gunners Heaven, a private organization of the
+  Republic.
+
+  Iron Crow Hat - lvl 15
+  Weight:4 HP:3 AP:6
+  Women's hat worn in Havani, the city of outlaws
+
+  Desert Flame Hat - lvl 15
+  Weight:3 AP:10
+  The Desert Flame's helmet is made for the female troops who are deployed
+  in the tough terrain of the desert.
+
+  Republic Gun Priestess Hat - lvl 15
+  Weight:3 HP:2 AP:6
+  Women's lightweight hat for a secret organization related with religious
+  groups.
+
+  Gray Dust Hat - lvl 15
+  Weight:4 HP:2 AP:8
+  A women's hat used by Gray Dust, the elite troops of the empire.
+
+  Phantom Breed Bandana - lvl 15
+  Weight:5 HP:3 AP:3
+  Heavy bandana designed for the Phantom Breed spy crew.
+
+  Battle Brood Helmet - lvl 15
+  Weight:5 AP:12
+  Specially designed women's helmet made from all reinforced material. This
+  headgear protects against all types of damage.
+
+  Divine Hands Hat - lvl 15
+  Weight:5 HP:5 AP:4
+  Women's nurse hat worn by those in the Republic support forces, Healing
+  Hands.
+
+  Sir Protector Hat - lvl 15
+  Weight:4 HP:1 AP:10
+  Woman's Sir Protector Hat, designed for protection.
+
+  Train Guard Hat - lvl 15
+  Weight:5 HP:1 AP:10
+  Women's hat worn by soldiers guarding the trains going through the empire
+  and the republic. It has the advantage of being lightweight.
+
+  Slider Sports Hat - lvl 15
+  Weight:3 HP:2 AP:6
+  Women's sports hat that is comfortable enough to wear everyday while
+  still maintaining sports functionality.
+
+  [MALE]
+
+  Blue Vane Hat - lvl 0
+  Weight:4 HP:1 AP:2
+  Men's Blue Vane series hat made of a highly flexible material.
+
+  Military Officer Hat - lvl 0
+  Weight:3 AP:3
+  Military officer hat used by war fanatics.
+
+  Adventurer Hat - lvl 0
+  Weight:3 AP:3
+  Lightweight hat recommended for novice adventurers who hate outfits with
+  heavy equipment.
+
+  Ceremonial Dress Beret - lvl 7
+  Weight:4 HP:2 AP:3
+  Ceremonial dress hat designed by Icon for the Ranks of the Empire to wear
+  at political ceremonies.
+
+  Blue Whistle Hat - lvl 7
+  Weight:4 HP:1 AP:5
+  Hat designed for Blue Whistle.
+
+  Eternal Blue Hat - lvl 15
+  Weight:4 HP:2 AP:8
+  This unique hat was designed for the Eternal Blue outlaw crew.
+
+  Gunners Heaven Soft Hat - lvl 15
+  Weight:4 HP:3 AP:6
+  Exclusive soft hat for the Gunners Heaven crew, it matches a dark colored
+  coat.
+
+  Iron Crow Hat - lvl 15
+  Weight:4 HP:3 AP:6
+  Iron Crow warriors wear these protective hats around the city of Havani,
+  the city of outlaws.
+
+  Desert Flame Hat - lvl 15
+  Weight:3 AP:10
+  Desert Flame hat originally designed for troops that were stationed in
+  desert areas.
+
+  Republic Gun Priest Hat - lvl 15
+  Weight:3 HP:2 AP:6
+  Mens hat for a secret organization associated with religious groups.
+
+  Gray Dust Hat - lvl 15
+  Weight:4 HP:2 AP:8
+  Men's hat for the Empire's elite troops.
+
+  Phantom Breed Bandana - lvl 15
+  Weight:5 HP:3 AP:3
+  Heavy bandana designed for the Phantom Breed spy crew.
+
+  Battle Brood Helmet - lvl 15
+  Weight:5 AP:12
+  Specially designed men's helmet made from all reinforced material. This
+  headgear protects against all types of damage.
+
+  Divine Hands Hat - lvl 15
+  Weight:5 HP:5 AP:4
+  Men's hat worn by those in the Republic support forces, Healing Hands.
+
+  Sir Protector Hat - lvl 15
+  Weight:4 HP:1 AP:10
+  Men’s Sir Protector Hat, designed for protection.
+
+  Train Guard Hat - lvl 15
+  Weight:5 HP:1 AP:10
+  Men's hat worn by soldiers guarding the trains going through the empire
+  and the republic. It has the advantage of being lightweight.
+
+  Slider Sports Hat - lvl 15
+  Weight:3 HP:2 AP:6
+  Men's sports hat that is comfortable enough to wear everyday while still
+  maintaining sports functionality.
+
+  Torso
+  =====
+  [FEMALE]
+
+  Flex Cotton T-shirt - lvl 0 - 50bp
+  Weight:5 AP:5
+  Cotton T-shirt exclusively for women.  This product is especially
+  suitable for active women.
+
+  Urike Leather Jacket - lvl 0 - 200bp
+  Weight:10 AP:10
+  Urike Women's Leather Jacket quite popular with the elastic fabric.
+
+  Rex Military Vest - lvl 20 - 1,600bp
+  Weight:18 AP:25
+  Women's military vest, which ensures greater survival in combat.
+
+  Arona Leather Jacket - lvl 10 - 800bp
+  Weight:15 AP:20
+  Fashionable leather jacket for women.
+
+  L-Star Leather Coat - lvl 30 - 3,200bp
+  Weight:20 AP:28
+  Women's luxury coat designed by L-Star.
+
+  Rex Military Jacket - lvl 0 - 200bp
+  Weight:12 AP:8 HP:2
+  Women's military jacket supplied by Rex.
+
+  Urike Trench Coat - lvl 20 - 1,600bp
+  Weight:16 AP:22
+  Women's stylish trench coat, a new design by Urike.
+
+  Bics Summer Top - lvl 0 - 500bp
+  Weight:10 AP:10
+  Women's flower patterned top for summer wear, designed by Bics.
+
+  Sir Protector Garment - lvl 15
+  Weight:15 HP:4 AP:22
+  Woman's Sir Protector Garment, designed for protection.
+
+  [MALE]
+
+  Ares Running Shirt - lvl 0 - 50bp
+  Weight:5 AP:5
+  Men's running shirt designed by Ares, a supplier of military outfits.
+
+  Renaut Cotton Shirt - lvl 0 - 200bp
+  Weight:10 AP:10
+  Very active men's cotton shirt designed by Renaut Sports.
+
+  Venico Leather Coat - lvl 10 - 800bp
+  Weight:15 AP:20
+  Men's Leather Coat designed by Venico.
+
+  Vinz Winter Jacket - lvl 20 - 1,600bp
+  Weight:18 AP:25
+  This winter jacket for men has good thermal insulation great for any cold
+  environment.
+
+  Miz Leather Coat - lvl 30- 3,200bp
+  Weight:20 AP:28
+  Quite Fashionable and stylish men's trench coat produced by Miz.
+
+  Ares Military Jacket - lvl 0 - 200bp
+  Weight:12 AP:8 HP:2
+  Military jacket that Ares designed to supply the military.
+
+  Vinz Long Coat - lvl 20 - 1,600bp
+  Weight:16 AP:22
+  Long wool coat designed by Vinz for men.
+
+  Renaut Summer Shirt - lvl 0 - 500bp
+  Weight:10 AP:10
+  Men's shirt with flower patterns designed by Renaut for summer.
+
+  Legs
+  ====
+  [FEMALE]
+
+  Flex Training Pants - lvl 0 - 50bp
+  Weight:10 AP:10
+  Flex women's training pants with excellent elasticity, good touch and feel.
+
+  Arona Blue Jeans - lvl 0 - 200bp
+  Weight:10 AP:15
+  Women's Blue jeans widely worn by all, young and old.
+
+  Rex Military Trousers - lvl 0 - 200bp
+  Weight:10 HP:1 AP:8
+  Comfortable military trousers especially designed for female soldiers.
+
+  L-Star Black Cotton Slacks - lvl 20 - 2,400bp
+  Weight:15 AP:25
+  Cotton trousers with luxurious touch that L-Star presents for special
+  females.
+
+  Vinz Chamois Trousers - lvl 10 - 1,200bp
+  Weight:15 AP:22
+  Women's Chamois trousers with a good touch and feel, designed by Vinz.
+
+  Bics Summer Shorts - lvl 0 - 500bp
+  Weight:10 AP:12
+  Women's swimming shorts for summer designed by Bics.
+
+  Urike Cotton Slacks - lvl 20 - 3,000bp
+  Weight:14 AP:23
+  Stylish cotton trousers made by Urike. They have an added practical touch
+  and stylish look, using coarse fabric.
+
+  Sir Protector Trousers - lvl 15
+  Weight:14 HP:3 AP:24
+  Woman's Sir Protector Trousers, designed for protection.
+
+  [MALE]
+
+  Vinz Training Pants - lvl 0 - 50bp
+  Weight:10 AP:10
+  Men's trousers designed by Vinz, made out of elastic materials.
+
+  Renaut Sporty Pants - lvl 0 - 200bp
+  Weight:10 AP:15
+  Sporty trousers designed by Renaut sportswear.
+
+  Miz Leather Trousers - lvl 20 - 2,400bp
+  Weight:15 AP:25
+  Miz trousers in a sophisticated design to enhance greater defense. Sleek
+  and clean sewing on pure leather.
+
+  Venico Denim Trousers - lvl 10 - 1,200bp
+  Weight:15 AP:22
+  Venico trousers designed for men.
+
+  Ares Military Trousers - lvl 0 - 200bp
+  Weight:10 HP:1 AP:8
+  Trousers that Ares supplies to the military.
+
+  Webs Blue Jeans - lvl 20 - 3,000bp
+  Weight:14 AP:23
+  Webs jeans for tough adventurers.
+
+  Renaut Summer Shorts - lvl 0 - 500bp
+  Weight:10 AP:12
+  Men's swim trousers for summer designed by Renaut.
+
+  Hands
+  =====
+  [FEMALE]
+
+  Rex Combat Gloves - lvl 0 - 50bp
+  Weight:5 AP:5
+  Traditional design combat gloves, made out of elastic materials.
+
+  Arona Winter Leather Gloves - lvl 10 - 500bp
+  Weight:5 AP:10
+  Women's winter leather gloves.
+
+  Rex Iron Gloves - lvl 20 - 1,000bp
+  Weight:8 AP:15
+  Women's iron gloves designed for aggressive combat.
+
+  Urike Sheepskin Leather Gloves - lvl 20 - 1,500bp
+  Weight:6 AP:12
+  Women's sheepskin leather gloves designed for combat.
+
+  Bics Summer Gloves - lvl 0 - 250bp
+  Weight:4 AP:4
+  Women's gloves for summer wear designed by Bics.
+
+  Sir Protector Gloves - lvl 15
+  Weight:4 HP:1 AP:16
+  Woman's Sir Protector Gloves, designed for protection.
+
+  [MALE]
+
+  Ares Combat Gloves - lvl 0 - 50bp
+  Weight:5 AP:5
+  Popular combat gloves, very comfortable simple design.
+
+  Vinz Winter Gloves - lvl 10 - 500bp
+  Weight:5 AP:10
+  Winter gloves for men. designed by Vinz.
+
+  Ares Iron Gloves - lvl 20 - 1,000bp
+  Weight:8 AP:15
+  During combat these iron gloves provide excellent defensive power.
+
+  Miz Sheep Leather Gloves - lvl 20 - 1,500bp
+  Weight:6 AP:12
+  Gloves made of durable sheep leather.
+
+  Renaut Summer Gloves - lvl 0 - 250bp
+  Weight:4 AP:4
+  Summer gloves for men, designed by Renaut.
+
+  Feet
+  ====
+  [FEMALE]
+
+  Urike Leather Shoes - lvl 0 - 50bp
+  Weight:5 AP:5
+  Urike leather shoes designed for combat.
+
+  Rex Combat Shoes - lvl 0 - 100bp
+  Weight:5 AP:10
+  Combat shoes specially made for female soldiers by Rex.
+
+  L-Star Leather Boots - lvl 10 - 500bp
+  Weight:5 AP:15
+  Leather boots designed by L-Star.
+
+  Rex Iron Boots - lvl 20 - 1,000bp
+  Weight:8 AP:20
+  Heavy looking, however these shoes are made for those who put great value
+  to their defensive power.
+
+  Urike Leather Boots - lvl 20 - 1,500bp
+  Weight:6 AP:18
+  Leather boots with a unique touch and feel, designed by Urike.
+
+  Bics Summer Sandals - lvl 0 - 250bp
+  Weight:4 AP:4
+  Women's summer sandals, designed by Bics.
+
+  Sir Protector Shoes - lvl 15
+  Weight:4 HP:2 AP:17
+  Woman's Sir Protector Shoes, designed for protection.
+
+  [MALE]
+
+  Ares Combat Shoes - lvl 0 - 50bp
+  Weight:5 AP:5
+  High-end shoes with comfortable touch for dynamic activity.
+
+  Venico Casual Shoes - lvl 0 - 100bp
+  Weight:5 AP:10
+  Uniquely designed casual shoes.
+
+  Renaut Climbing Shoes - lvl 10 - 500bp
+  Weight:5 AP:15
+  Made with sturdy leather, these shoes do not tear no matter how tough the
+  terrain is that they trod upon.
+
+  Ares Iron Boots - lvl 20 - 1,000bp
+  Weight:8 AP:20
+  Heavy boots for greater defensive power during battle.
+
+  Vinz Casual Shoes - lvl 20 - 1,500bp
+  Weight:6 AP:18
+  Very sturdy casual shoes designed by Vinz.
+
+  Renaut Summer Sandals - lvl 0 - 250bp
+  Weight:4 AP:4
+  Men's sandals for summer designed by Renaut.
+  ===========
+  Accessories  VII0d
+  ===========
+
+  Rings
+  =====
+  Ring of the Citizen - lvl 0 - 400bp
+  Weight:2 HP:+5
+  This ring was designed by the mayor in commemoration of his city and
+  citizens.
+
+  Ring of the Crying Hawk - lvl 0 - 400bp
+  Weight:2 AP:+5
+  This legendary ring was used by the special combat forces in ancient times.
+
+  Warrior's Cry - lvl 10 - 1,000bp
+  Weight:2 HP:+8
+  This small ring preserves the wishes of many warriors who longed for a safe 
+  return home alive.
+
+  Pierre's Ring - lvl 10 - 1,000bp
+  Weight:2 AP:+8
+  This ring holds the spirit of a brave commander who was killed in battle.
+
+  FMT Ring - lvl 20 - 10,000bp
+  Weight:2 AP:+5 HP:+5
+  This unique ring was designed to commemorate the scientist who created a
+  system named FMT. There is a faint McField signature inscribed inside of
+  the band.
+
+  Ring of Good Fortune - lvl 20 - 10,000bp
+  Weight:+2
+  Simple designed ring for good fortune.
+
+  Altema's Ring - lvl 30 - 20,000bp
+  Weight:2 AP:+10
+  This ring was designed by the TEAMI in commemoration of Altema's war
+  achievements.
+
+  Band of the Blood - lvl 30 - 20,000bp
+  Weight:4 HP:+10
+  A beautiful red jewel is the center piece for this energy based ring.
+
+  Elia's Ring - lvl 40 - 40,000bp
+  Weight:2 AP:+15
+  Elia's troops heroically protected Menlo, during the battle of Sun and
+  raised the overall morale of Emperor Altema's soldiers. This ring was created
+  to commemorate the princess' call of immortal courage.
+
+  Ring of a Feather - lvl 40 - 40,000bp
+  Weight:+3
+  This legendary ring enhances forces that help defy gravity.
+
+  Clover Ring - lvl 10
+  Weight:+4
+  This ring brings luck and makes you lighter.
+
+  Iron Calvary Ring - lvl 30
+  Weight:+6
+  Powerful magicians designed this ring for the Iron Calvary.  Its mighty force
+ makes you feel lighter.
+
+  Ring of the Great Emperor - lvl 40
+  Weight:+5 AP:5
+  This enchanted ring was designed for the Great Emperor of Ryswick.  A
+  mysterious power affects anyone that wears this ring.
+
+  Skill Ring - lvl 0
+  Weight:3
+  Increases experience and bounty by 20%. (Does not stack when more than one 
+  Skill Ring is equipped.)
+
+  Grenades
+  ========
+  Canox FB1 - lvl 0 - 200bp
+  Weight:2 Delay: 1,500
+  Flash bang. Temporarily disorients enemies with a bright flash and deafening 
+  sound. 2 units
+
+  Canox FB2 - lvl 10 - 500bp
+  Weight:3 Delay: 1,500
+  Flash bang. Temporarily disorients enemies with a bright flash and deafening 
+  sound. 3 units
+
+  Canox FB3 - lvl 20 - 1,000bp
+  Weight:4 Delay: 1,500
+  Flash bang. Temporarily disorients enemies with a bright flash and deafening 
+  sound. 4 units
+
+  Canox FB4 - lvl 30 - 2,000bp
+  Weight:5 Delay: 1,500
+  Flash bang. Temporarily disorients enemies with a bright flash and deafening 
+  sound. 5 units
+
+  Canox FB5 - lvl 40 - 4,000bp
+  Weight:6 Delay: 1,500
+  Flash bang. Temporarily disorients enemies with a bright flash and deafening 
+  sound. 6 units
+
+  Canox FG1 - lvl 0 - 200bp
+  Weight:2 Delay: 1,500 Damage:100
+  New grenade produced by Canox, this grenade can be easily used indoors. 2
+  units
+
+  Canox FG2 - lvl 11 - 500bp
+  Weight:3 Delay: 1,500 Damage:100
+  New grenade produced by Canox, this grenade can be easily used indoors. 3
+  units
+
+  Canox FG3 - lvl 22 - 1,000bp
+  Weight:4 Delay: 1,500 Damage:100
+  New grenade produced by Canox, this grenade can be easily used indoors. 4
+  units
+  Canox FG4 - lvl 33 - 2,000bp
+  Weight:5 Delay: 1,500 Damage:100
+  New grenade produced by Canox, this grenade can be easily used indoors. 5
+  units
+
+  Canox FG5 - lvl 44 - 4,000bp
+  Weight:6 Delay: 1,500 Damage:100
+  New grenade produced by Canox, this grenade can be easily used indoors. 6
+  units
+
+  Canox SG1 - lvl 0 - 200bp
+  Weight:2 Delay: 1,500
+  Smoke grenade. This is used to disrupt the sight of the enemy with smoke.
+  3 units
+
+  Canox SG2 - lvl 12 - 500bp
+  Weight:3 Delay: 1,500
+  Smoke grenade. This is used to disrupt the sight of the enemy with smoke.
+  4 units
+
+  Canox SG3 - lvl 24 - 1,000bp
+  Weight:4 Delay: 1,500
+  Smoke grenade. This is used to disrupt the sight of the enemy with smoke.
+  5 units
+
+  Canox SG4 - lvl 36 - 2,000bp
+  Weight:5 Delay: 1,500
+  Smoke grenade. This is used to disrupt the sight of the enemy with smoke.
+  6 units
+
+  Canox SG5 - lvl 48 - 4,000bp
+  Weight:6 Delay: 1,500
+  Smoke grenade. This is used to disrupt the sight of the enemy with smoke.
+  7 units
+
+  Kits
+  ====
+  Repair Kit RK-1 - lvl 0 - 400bp
+  Weight:5 Delay: 1,000 Stock:2
+  Enables you to repair armor. 2 units
+
+  Repair Kit RK-2 - lvl 20 - 5,000bp
+  Weight:6 Delay: 1,000 Stock:3
+  Enables you to repair armor. 3 units
+
+  Repair Kit RK-3 - lvl 40 - 20,000bp
+  Weight:7 Delay: 1,000 Stock:4
+  Enables you to repair armor. 4 units
+
+  Repair Kit RX-S1 - lvl 0
+  Weight:3 Delay: 1,000 Stock:3
+  A powerful super lightweight repair kit. Repair Kit RX-S1 heals almost
+  twice more than RK series.
+
+  Repair Kit RX-S2 - lvl 15
+  Weight:5 Delay: 1,000 Stock:5
+  A powerful super lightweight repair kit. Repair Kit RX-S2 heals almost
+  twice more than RK series.
+
+  Medical Kit MK-1 - lvl 0 - 400bp
+  Weight:5 Delay: 1,000 Stock:2
+  This enables you to recover physical strength. 2 units
+
+  Medical Kit MK-2 - lvl 20 - 5,000bp
+  Weight:6 Delay: 1,000 Stock:3
+  This enables you to recover physical strength. 3 units
+
+  Medical Kit MK-3 - lvl 40 - 20,000bp
+  Weight:7 Delay: 1,000 Stock:4
+  This enables you to recover physical strength. 4 units
+
+  Medical Kit MX-S1 - lvl 0
+  Weight:3 Delay: 1,000 Stock:3
+  A powerful super lightweight medical kit. Medical Kit MX-S1 heals almost
+  twice more than MK series.
+
+  Medical Kit MX-S2 - lvl 15
+  Weight:5 Delay: 1,000 Stock:5
+  A powerful super lightweight medical kit. Medical Kit MX-S2 heals almost
+  twice more than MK series.
+
+  Magazine Pouch - lvl 0
+  Weight:3 Stock:3 Duration:1sec
+  This Pouch holds two extra magazine clips.
+
+  Melee Enchants
+  ==============
+  Enia's Eye - lvl 0
+  Weight:3 Duration:4sec
+  Enchanted on this tiny jewel is the power of Enia. Melee weapon fires up
+  when charged. Any opponent hit by enchant attack will get damaged at
+  every second for a certain amount of time.
+
+  Enia's Coin - lvl 15
+  Weight:3 Duration:4sec
+  A coin empowered by Enia the God of Water and Ice.
+
+  Enia's Medal - lvl 25
+  Weight:3 Duration:4sec
+  A medal empowered by Enia the God of Water and Ice.
+
+  Canopus' Eye - lvl 0
+  Weight:3 Duration:3sec Damage: 1dmg/sec
+  Enchanted on this tiny jewel is the power of Canopus. Melee weapon fires
+  up when charged. Any opponent hit by enchant attack will get damaged at
+  every second for a certain amount of time.
+
+  Canopus' Coin - lvl 15
+  Weight:3 Duration:5sec Damage: 1dmg/sec
+  A coin empowered by Canopus the God of Flame.
+
+  Canopus' Medal - lvl 25
+  Weight:3 Duration:5sec Damage: 2dmg/sec
+  A medal empowered by Canopus the God of Flame.
+
+  Giston's Coin - lvl 15
+  Weight:3 Duration:3sec Damage: 1dmg/sec
+  A coin empowered by Giston the God of Earth.
+
+  Winscar's Coin - lvl 15
+  Weight:3 Duration:1sec Damage: 5dmg/sec
+  A coin empowered by Winscar the Lord of Wind and Sky.
+  ===========
+  Quest Items  VII0e
+  ===========
+
+  Sacrifice Items
+  ===============
+  These items are basically monster drops that you pick up from treasure
+  chests.  Some combinations will make boss battles accessible.
+
+  Goblin Doll
+  A Goblin Doll, seems goblins like playing with dolls...
+
+  Steak
+  Very delicious looking steak.  It must have been the Goblin's favorite.
+
+  Seasoned Meat
+  Cooked seasoned meat.  Looks very delicious.
+
+  Raw Meat
+  Raw meat of an unknow(in-game typo?) animal.  It seemed to have been used
+  as food.
+
+  Small Skull
+  Mysterious Skull.  It looks like it is a skull of a bird.
+
+  Goblin Skull
+  This unique item was found in a Goblin's cave.  An inscription on the
+  back reads "Fight for a new world".
+
+  Crimson Necklace
+  A necklace worn by the trial chief of Goblin.  It is highly doubtful
+  whether humans can wear it.
+
+  Scrolls
+  =======
+  Scrolls increase the quest level (or difficulty).
+
+=====================================================
+  Move Cancels                                  VIII0
+=====================================================
+
+A move cancel is an action that ends the preceding action before said preceding
+action would finish if left alone
+
+Slash -| Block
+Lift (with sword) -| Block
+Gunshot -| Reload
+Dash -| Slash
+Dash -| Lift/Hang (useful for moving while charged with massive strike)
+Reload -| Weapon/Item switch
+Massive charge -| Weapon/Item switch
+Weapon/Item switch -| Weapon/Item switch
+Standing reload -| Emotion (i.e. /bow) [note this only cancels reload
+animation; gun still reloads; no free movement]
+
+=====================================================
+  Universal Tech                                  IX0
+=====================================================
+
+  These are techniques that can be performed with any melee weapon.
+
+JSD
+===
+Jump->Shoot->Melee switch->Dash
+Logically named, simply performed, and very effective technique to mix into
+a battle for a little variety.  However, the move lacks a slash and therefore
+lacks the chance to stun the opponent before firing the shot (such as
+techniques branching from SS)
+
+JSD Lightstep
+=============
+Jump->Shoot->Melee switch->Dash->Slash/Stab->Dash
+
+Reload Shot (RS)
+================
+Fire-|Reload-|Weapon switch->Fire
+
+This glitch is perhaps the most revolutionary thing to happen to GunZ since
+the first k-style steps.  It wasn't so much the step itself but merely the fact
+that gun delay can be cancelled with a reload which made everything quicker
+and allowed for all new techniques that would be impossible otherwise.
+
+Tumble Shot
+===========
+Tumble->Fire
+
+Lightstep
+=========
+Jump->Dash->Slash (or stab)->Dash
+This step is handy for navigating around the map; especially useful with
+dagger.  Can be used for climbing walls.
+
+Double Lightstep
+================
+Dash->Jump->Slash/Stab)->Dash->Slash/Stab->Dash
+
+Double Grenade Throw
+====================
+Throw last grenade->Throw grenade from next set
+Note: You must have two different sets of grenades for this to work.  The
+first grenade you throw must be the last grenade of item 2 slot, and you must
+have at least one grenade left from the grenade set of item 1 slot. Press fire
+rapidly between grenade throws unless you can figure out the timing.
+
+This move is excellent for small areas where groups of enemies tend to
+gather. Dodging two grenades in two different places is a little more difficult
+then dodging one grenade at a time.  Unfortunately, it can only be used once
+per spawn because of the unique prerequisites.
+
+Spawn Shot
+==========
+Die (with gun out)->Fire before respawn
+This may or may not have been patched.  This will fire in the vicinity of
+your death; not your respawn point.
+
+
+=====================================================
+  K-style                                          X0
+=====================================================
+
+  K-style is primarily used with a sword by preference, but the techniques
+  can be done with kodachis.  Note: Steps with an 'R' preceding the
+  abbreviation is just that step combined with reload and extra shot (i.e.
+  'RSS' = 'SS'+reload->switch->shoot).
+
+
+                                      Tech
+           Flashstep                 ==|==                Voidstep
+  +------------|---+      ==========/     \==========       /
+  |      JSD   |   |____ /_______________________    \     /
+  |     /  \JSD FS     Slashshot                 |   Butterfly
+  |    /         ======/     \========           | ====/     \====
+  |   /         /                \    \          |/               \
+  |  /      Halfstep        Half HS    \         /                 \
+  |  \        /  \          /   \       \       /|              Double BF
+  |   \      /   /         /     \       \     / |                  /
+  |  JSD HS /   /\    PPQ /       \       \   /  |                 /
+  |            /  \      \         \      BF SS  |           Triple BF
+  | Double HS /    \      \PPQ+     \      /  \  |
+  |                 \                \    /    \ |
+  |                  \                \  /      \|
+  +-----------+       \             BF HHS      /|
+  |Reload Shot|        \                       / |
+  +-----------+         \ Butterfly HS--------/  |
+              |__________________________________|
+
+
+
+
+ ========================
+ Offensive/Defensive Tech  X0a
+ ========================
+
+Slashshot (SS/Full Step)
+========================
+Jump->Dash->Slash(hold firing button)-|Weapon switch->Fire (happens after
+landing)
+Note: In old iGunZ days slashshot was referred to as 'million step' when
+performed with an automatic.
+
+This move was like the proest thing you could do back in early igunz days,
+and a lot of people may still hold a special place in their hearts for this
+move. Throw in a reload at the end of the move and you have a technique that
+stands the test of time.
+
+Uses: This technique has a dash, a slash, and a fire. Any one of those is
+useful alone, but the beautiful thing is being able to stun the opponent
+for a split second with the slash while delivering a pointblank shot.
+
+Butterfly (BF)
+==============
+Jump->Dash->Slash-|Block
+
+This is another move of now legendary status, and can be imagined as the
+second root from which many k-style techniques are branched (the first being
+SS)
+
+Uses: Evasion, offense, and defense all within a split second. Very
+spammable and very easy to mix into a battle.
+
+Double Butterfly (DBF)
+======================
+Jump->Slash-|Block->Slash-|Block
+*Add a dash before the second slash as desired.
+
+This has mostly become the new standard for butterfly spammers.  While not
+as useful as butterfly for closing in distance, dbf makes up for that with its
+excellent trapping capabilities.
+
+Butterfly Slashshot
+===================
+Jump->Slash-|Block->Dash->Slash-|Weapon switch->Fire
+
+Two of the greatest k-style moves all in one technique!  Too bad its not as
+useful as either move by itself...
+
+Uses: Could be used in the middle of a dbf trap to mix things up.
+
+Butterfly Halfstep
+==================
+Jump->Slash-|Block->Dash->Slash-|Weapon switch->Fire->Melee switch-|Dash
+
+Butterfly Half Halfstep
+=======================
+Jump->Slash-|Block->Dash->Slash-|Weapon switch-|Melee
+switch->Land->Jump->Weapon switch->Dash with gun(hold fire)->Gun will fire
+
+JSD Flashstep
+=============
+Jump->Shoot->Melee switch->Dash->Slash-|Weapon switch-|Melee switch->Dash
+
+Should you decide to gain more distance after a JSD, this move will allow
+you to do so.
+
+Halfstep (HS)
+=============
+Jump->Dash->Slash (hold firing button)-|Weapon switch->Dash (Gun will fire
+while in air)
+
+Many people use this exclusively from the slashshot branch of techniques.
+It allows more air time, more dodge, and more time to aim.  However this also
+results in more time before you can start your next move.
+
+JSD Halfstep
+============
+Dash->Jump->Weapon switch->Fire-|Reload->Melee switch->Dash->Slash-|Weapon
+switch->Fire-|Reload-|Melee switch->Dash
+
+Double Halfstep
+===============
+Dash->Jump->Slash-|Weapon switch->Fire-|Reload-|Melee
+switch->Dash->Slash-|Weapon switch->Fire-|Reload-|Melee switch->Dash
+
+As cool as this technique looks it's very situational. This will not
+replace your standard slashshot or halfstep.
+
+Half Halfstep (HHS)
+===================
+Jump->Dash->Slash-|Weapon switch-|Melee switch->Land->Jump->Weapon
+switch->Dash with gun (hold fire)->Gun will fire
+
+You're moving around dodging with flashstep or quickswitch and you see an
+open shot.  Throw in the last part of the move onto your quickswitch and you
+have your hhs.
+
+ =================
+ Navigational Tech  X0b
+ =================
+
+Voidstep
+========
+Dash->Slash-|Block
+This tech was made popular, if not developed, by a player named Vampirella
+(cloudstrife8 on the boards).
+
+Quickswitch
+===========
+Jump->Dash->Slash-|Weapon switch-|Melee switch
+Great for climbing walls.
+
+Flashstep (FS)
+==============
+Jump->Dash->Slash-|Weapon switch-|Melee switch->Dash
+
+This should usually be your primary means of navigating the map.  It's
+quick, it has great evasion, and for what its worth, a slash.
+
+Double Flashstep
+================
+Jump->Dash->Slash-|Weapon switch-|Melee switch->Dash->Slash-|Weapon
+switch-|Melee switch->Dash
+
+Butterfly Lightstep
+===================
+Jump->Slash-|Block->Dash->Slash->Dash
+
+May be used for close proximity trapping.
+
+Butterfly Flashstep
+===================
+Jump->Slash-|Block->Dash->Slash-|Weapon switch-|Melee switch->Dash
+
+May be used for close proximity trapping.
+
+=====================================================
+  D-style                                         XI0
+=====================================================
+
+  D-style is short for dagger-style.  The style is composed of universal
+  techs and dagger exlusive techs.  The dagger exclusive techs are the ones
+  that will be covered here.
+
+Ghost Lunge
+===========
+Lunge with path to opponent obstructed
+The lunge will still connect even though the animation and your sprite do
+not. Does not work with most obstructions so you will have to play around with
+it.
+
+Dash Stab
+=========
+Dash-|Stab
+I believe this is pretty straight forward, but this is effective due to the
+dagger's quick stab and recovery.
+
+Dagger Slashshot
+================
+Jump->Dash->Stab (hold fire)->Jump off wall->Weapon switch->Gun will fire
+Slashshotting with a dagger requires the use of a wall.  Adding reload shot
+is, of course, optional.
+
+=====================================================
+  Levels                                         XII0
+=====================================================
+
+  Here are the features/equipment unlocked for each level.  Level 0
+  equipment will be listed under 'Level 1' because level 0 is currently
+  unattainable
+  by any conventional means.  Currently all features are unlocked at level 50
+  (except, of course, any channels that are level range specific.  Refer to
+  the 'Equipment and Items' for item statistics.
+
+ Example
+ =======
+Level # (Required exp)
+Equipment type: Equipment
+Other: Additional features and notes.
+
+1 (0)
+Pistols:Raptor 50, Raptor 50 x2, Adventurer Pistol x2, Ridic Hunter Pistol x2
+Revolvers:Minic 567, Minic 567 x2
+Submachine Guns:Renard, Renard x2, Adventurer SMG x2
+Daggers:Rusty dagger, Ridic Hunter Dagger, Adventurer Dagger
+Swords:Rusty sword, Adventurer Long Sword
+Torso:Flex Cotton T-shirt(Women), Rex Military Jacket(Women), Urike Leather
+Jacket(Women), Bics Summer Top(Women), Ares Running Shirt(Men), Renaut
+Summer Shirt(Men), Renaut Cotton Shirt(Men), Ares Military Jacket(Men)
+Legs:Flex Training Pants, Rex Military Trousers, Arona Blue Jeans
+Hands:Rex Combat Gloves(Women), Bics Summer Gloves(Women), Renaut Summer
+Gloves(Men), Ares Combat Gloves(Men)
+Feet:Urike Leather Shoes(Women), Rex Combat Shoes(Women), Bics Summer
+Sandals(Women), Renaut Summer Sandals(Men), Venico Casual Shoes(Men), Urike
+Leather Shoes(Men)
+Grenades:Canox FG1, Canox FB1, Canox SG1
+Kits: Medical Kit MK-1, Repair Kit RK-1, Repair Kit RX-S1, Medical Kit MX-1,
+Magazine Pouch
+Enchants:Enia's Eye, Canopus' Eye
+Rings:Ring of Citizen, Ring of Crying Hawk, Skill Ring
+Premium Sets: Blue Vane, Military Officer Battle, Adventurer
+Other:Access to 'entry channels' until level 5 or until one character on
+account is level 21 or over.
+
+2
+Other:Good job on your first level.
+
+3
+
+4
+
+5
+Pistols:Raptor 80
+Revolvers:Dynax 7000
+Rifles:Nico R2
+Shotguns:Breaker 3
+Daggers:Iron dagger
+Swords:Iron sword
+Other:
+
+6
+Other:Access to 'beginner channels' until level 10 or until one character
+on account is level 21 or over.
+
+7
+Pistols:Raptor 80 x2, Iris Pistol x2
+Revolvers:Minic 567 Limited, Dynax 7000  x2, Iris Revolver x2
+Rifles:Iris Rifle
+Shotguns:Iris Shotgun
+Submachine Guns:Iris SMG x2
+Rocket Launchers:Iris Rocket
+Daggers:Koden Knife
+Swords:Salamanda
+Premium Sets: Blue Whistle, Ceremonial Dress
+
+8
+
+9
+Revolvers:Minic 567 Limited x2
+Submachine Guns:
+Rocket Launchers:
+Daggers:Military Dagger
+
+10
+Revolvers:Zaurus A
+Rifles:Nico R5
+Shotguns:Breaker 5
+Submachine Guns:Ellan, Walcom S5
+Rocket Launchers:Maxwell RW-66
+Swords:Military Sword
+Kodachis:Iron Kodachi
+Torso:Arona Leather Jacket(Women), Venico Leather Coat(Men)
+Legs:Vinz Chamois Trousers(Women), Venico Denim Trousers(Men)
+Hands:Arona Winter Leather Gloves(Women), Vinz Winter Gloves(Men)
+Feet:L-Star Leather Boots(Women), Renaut Climbing Shoes(Men)
+Grenades:Canox FB2
+Rings:Warrior's Cry, Pierre's Ring, Clover Ring
+
+11
+Grenades:Canox FG2
+Other:Access to 'veteran channels' until level 20 (even if you have another
+character on the account that is over level 21).  Duel mode, Assassination
+mode, and ruins map are available in veteran channel.
+
+12
+Revolvers:Zaurus A x2:
+Submachine Guns:Ellan x2
+Grenades:Canox SG2
+
+13
+Submachine Guns:Walcom S5 x2
+
+14
+
+15
+Pistols:Iron Crow Pistol x2
+Revolvers:Iron Crow Revolver x2
+Rifles:Walcom Warrior 77, Iron Crow Rifle
+Shotguns:Breaker 6, Iron Crow Shotgun
+Machine Guns:Iron Crow Machine Gun
+Submachine Guns:Iron Crow SMG x2
+Rocket Launchers:Walcom L1, Iron Crow Rocket
+Daggers:Dark-Sun Martial Dagger
+Swords:Dark Karma
+Kits: Repair Kit RX-S2, Medical Kit MX-2
+Premium Sets: Train Guard, Slider Sports, Sir Protector, Divine Hands,
+Battle Brood, Phantom Breed, Gray Dust, Republic Gun Priest/Priestess, Gunners
+Heaven, Desert Flame, Iron Crow, Eternal Blue
+Enchants:Enia's Coin, Canopus' Coin, Giston's Coin, Winscar's Coin
+
+16
+Revolvers:Phantom Cruise
+
+17
+
+18
+Revolvers:Phantom Cruise x2
+Rifles:Maxwell Lx30
+Daggers:Lightweight Dagger
+
+19
+
+20
+Rocket Launchers:Maxwell RW-77
+Swords:Lightweight Sword
+Torso:Urike Trench Coat(Women), Rex Military Vest(Women), Vinz Winter
+Jacket(Men), Vinz Long Coat(Men)
+Legs:L-Star Black Cotton Slacks(Women), Urike Cotton Slacks(Women), Miz
+Leather Trousers(Men), Webs Blue Jeans(Men)
+Hands:Rex Iron Gloves(Women), Urike Sheepskin Leather Gloves(Women), Ares
+Iron Gloves(Men), Miz Sheep Leather Gloves(Men)
+Feet:Rex Iron Boots(Women), Urike Leather Boots(Women), Ares Iron Boots(Men),
+Vinz Casual Shoes(Men)
+Grenades:Canox FB3
+Kits: Repair Kit RK-2, Medical Kit MK-2
+Rings:Ring of Good Fortune
+
+21
+Revolvers:Phantom Cruise N
+Kodachis:Lightweight Kodachi
+Other:Access to 'expert channels'.  Berserker mode and the maps for Castle,
+Dungeon, and Port are available in expert channel.  Players will not lose
+exp from lower level players in expert channels.
+
+22
+Grenades:Canox FG3
+
+23
+Revolvers:Phantom Cruise N x2
+
+24
+Revolvers:Gold Hound x2
+Rifles:Prime TX
+Shotguns:Cruelizon
+Submachine Guns:Walcom S6, Renard V
+Rocket Launchers:Pressure RX
+Grenades:Canox SG3
+
+25
+Machine Guns:Nico MG-K8
+Premium Sets: Gun Knight
+Enchants: Enia's Medal, Canopus' Medal
+
+26
+Revolvers:Dynax 8000
+Rifles:Nico R6
+
+27
+Submachine Guns:Walcom S6 x2, Renard V x2
+Daggers:High-Class Dagger
+
+28
+Revolvers:Dynax 8000 x2
+
+29
+
+30
+Shotguns:Breaker 7, Avenger
+Rocket Launchers:Walcom L1 mk. II
+Swords:High-class Sword
+Grenades:Canox FB4
+Rings:Band of the Blood, Altema's Ring, Iron Calvary Ring
+
+31
+
+32
+Kodachis:High-Class Kodachi
+
+33
+Grenades:Canox FG4
+
+34
+Revolvers:Minic 567 MK.II
+Rifles:Maxwell LX44
+
+35
+Machine Guns:Nico MG-K9
+Other:Access to 'elite channels'.  Lost Shrine and Stairway maps are made
+available in Elite channels.
+
+36
+Revolvers:Minic 567 MK.II x2
+Submachine Guns:Walcom XL, New Renard V
+Daggers:Phantom Slaying Dagger
+Grenades:Canox SG4
+
+37
+
+38
+
+39
+Submachine Guns:Walcom XL x2, New Renard V x2
+
+40
+Rocket Launchers:Maxwell RW-88
+Swords:Devilslayer Sword
+Grenades:Canox FB5
+Kits: Repair Kit RK-3, Medical Kit MK-3
+Rings:Ring of a Feather, Ring of the Great Emperor
+
+41
+Other:You can now participate in the level 4 quests!
+
+42
+Revolvers:Zaurus B
+Rifles:Nico R7
+
+43
+Kodachis:Red Blood
+
+44
+Grenades:Canox FG5
+
+45
+Shotguns:Breaker 8, Avenger MKII
+Machine Guns:Nico MG-KX
+Submachine Guns:Walcom XLS, Renard VI
+Daggers:Warlord's Gut Ripper
+
+46
+Revolvers:Zaurus B x2
+Daggers:Rusty dagger
+
+47
+
+48
+Submachine Guns:Walcom XLS x2, Renard VI x2:
+Grenades:Canox SG5
+
+49
+Other:Congrats, you're almost at 50.
+
+50
+Rifles:Walcom Warrior 88
+Rocket Launchers:Walcom L2
+Swords:Golden Dragon Sword
+Other:You now have access to all features of the game aside from level
+range specific channels/rooms such as 'Entry' and 'Beginner'.
+
+=====================================================
+  Quest Enemies                                 XIII0
+=====================================================
+  ========
+  Monsters  XIII0a
+  ========
+  Soldier Goblin
+  hp:30 ap:50
+  range: 150
+
+  Goblin Gunners
+  hp:30 ap:30
+  range: 110
+
+  Goblin Wizard
+  hp:40 ap:40
+  range: 130
+
+  General Goblin
+  hp:50 ap:100
+  range: 170
+
+  Elder Goblin
+  hp:200 ap:100
+  range: 270
+
+  Skeleton
+  hp:50 ap:50
+  range: 180
+
+  Skeleton Mage
+  hp:40 ap:40
+  range: 120
+
+  General Skeleton
+  hp:80 ap:100
+  range: 280
+
+  Giant Skeleton
+  hp:200 ap:100
+  range: 350
+
+  Cursed Corpse
+  hp:200 ap:100
+  range:180
+
+  Richie
+  hp:40 ap:0
+  range:120
+  ======
+  Bosses  XIII0b
+  ======
+  Goblin King
+  hp:7,000 ap:7,000
+  range: 450
+
+
+=====================================================
+  House Rules                                    XIV0
+=====================================================
+  =======================
+  Attack and Defend Rooms  XIV0a
+  =======================
+  These games are usually in team deathmatch rooms, but can also be played
+  in assination mode.  In 'attack and defend' (or simply 'ATK and DEF') games,
+  one team stays and guards their spawn area while the other team attacks
+  them.  The attacking and defending teams alternate by round (unless
+  another alternation sequence is arranged).
+  =========
+  Bow Duels  XIV0b
+  =========
+  Bow duels are simply games in which each player bows (/bow or /salute
+  command) to the other before engaging combat.
+  Bow duels are almost exclusively 1v1.
+  ===========
+  Insta Duels  XIV0c
+  ===========
+  Insta Duels are battles in each player takes turns attempting to
+  instakill the other.  Turns alternate after each instakill attempt.
+  ===============
+  Region Specific  XIV0d
+  ===============
+  Region specific rooms will have an area of the world indicated on the
+  game room title.  This area will either indicate whether players from that
+  part of the world are welcome in that game or are to keep out of that game
+  (depending on whether a word such as 'only' follows or a word such as 'no'
+  preceeds). Kicking is usually decided based on player pings.
+
+=====================================================
+  Replays                                         XV0
+=====================================================
+
+  =================
+  Recording replays  XV0a
+  =================
+  To initiate a recording, press the f11 key while in play.  A message
+  stating that the recording has started will appear in the chat box (assuming
+  the chat box is not toggled off).  The replay recording will end
+  automatically afterthe game ends or manually by pressing the f11 key a
+  second time. Leaving the game room before the game ends or ending the replay 
+  manually will result in a blank replay file.  The completed replay will by 
+  default be saved in your Documents->Gunz->Replay folder as a '.gzr' file.
+
+  Warning: Do not initiate replay before the start of the first round or
+  during the transitions between rounds.  This may cause an incomplete
+  replay or corrupt file.
+
+  ===============
+  Viewing replays  XV0b
+  ===============
+  To view a replay file, go to the lobby screen and move your cursor over
+  the 'Replay' button on the bottom-left (somewhere below your character
+  information).  A menu containing the contents of your replay folder
+  should appear on the screen. You should see something like:
+
+                 This will be the   Gunz000.gzr  V3   Gunz001.gzr  V3
+                                    Gunz002.gzr  V4
+
+  Select the replay you would like to view.
+
+  Replay Controls:
+                    Left Click  - Change player to spectate
+                    Right Click - Toggle player-view/free-view
+                    M           - Toggle between different views
+
+
+=====================================================
+  Terminology                                    XVI0
+=====================================================
+  ========
+  Glossary  XVI0a
+  ========
+
+  Asa        - a) Foreign insult [disregard as irrelevant jibberish]
+
+  Bunker     - a) [noun] the enclosed area in 'town' stage at the top of
+  the stairs nearest the red spawn point b) [verb] to camp in the bunker area
+  of town
+
+  Camp       - a) [verb] to wait in one area with the intention of
+  attacking an approaching enemy
+
+  D-style    - a) [noun] a branch of techniques based on combinations of
+  dagger-based move cancels b) [verb] to integrate combinations of
+  dagger-based move cancels into your play style
+
+  Dodge      - a) [verb] to cancel a clanwar search with the intent on
+  avoiding encounter with a particular clan
+
+  E-style    - a) [noun] any style of play that does not make use of move
+  cancels b) [verb] to play without using move cancels.
+
+  EZ(PZ)     - a) [adj] used to describe an easy battle b) [verb] to defeat
+  someone easily or with little difficulty
+
+  Flash      - a) [verb] to hit someone with a flash grenade resulting in
+  the target's in-game blindness
+
+  Gear tap   - a) [verb] to dash before a jump to gain additional momentum
+  b) [noun] a dash before a jump used to gain additional momentum
+
+  Hitbox     - a) [noun] the area of a player's character that is vulnerable to
+  damage
+
+  Instakill  - a) [noun] a technique in which a player lifts and kills an
+  opponent before said opponent lands
+
+  Kill Steal - a) [verb] to kill a player who has recieved severe damage
+  previously from a third player
+
+  K-style    - a) [noun] a branch of techniques based on combinations of
+  sword-based move cancels b) [verb] to integrate combinations of
+  sword-based move cancels into your play style
+
+  Lag Shield - a) [noun] the extra evasive effect resulting from a great
+  difference in ping between players
+
+  Lead       - a) [verb] to aim ahead at an anticipated area where an
+  opponent will be
+
+  Lift       - a) [noun] the act of launching a player in the air by means
+  of connection a right-click command using a sword or kodachi b) [verb] to
+  launch a player in the air by means of connection a right-click command
+  using a sword or kodachi
+
+  Heal       - a) [noun] any kit restoring hp or ap. b) [verb] to use any
+  kit or heal spawn restoring hp or ap
+
+  Nab        - see 'noob'
+
+  Noob       - a) [noun] a derogatory term for a player lacking in skill.
+  b) [adjective] skilless c) [verb] to kill someone skillessly
+
+  Nob        - see 'noob'
+
+  Nub        - see 'noob'
+
+  Pro        - a) [noun] a talented, skillful player b) [adjective]
+  skillful c) [verb] to kill someone skillfully
+
+  Random     - a) [noun] an unknown player, often associated with a low
+  skill level
+
+  Spike      - a) [noun] 1. a momentary increase in lag  2. a teleport due
+  to a momentary increase in lag b) [verb] to have a momentary increase in
+  ping or to teleport because of a momentary increase in ping
+
+  Stream     - a) [verb] to switch between items or equipment in battle
+  continuously in order to decrease recovery delay between item effect
+
+  Swap       - a) [verb] to exchange kills in a prearranged manner b) [verb]
+  to switch between and fire two sets of guns in quick succession
+
+  zZzZ       - a) [exclamation] 1. used to express boredom at the easiness
+  of a battle 2. used to express disappointment for an opponents cheesy
+  gameplay tactics (NOTE: the number of 'z's and the pattern of
+  capitalization, if any, may vary greatly)
+  =========
+  Shorthand  XVI0b
+  =========
+  AE     - Agent Error
+  AP     - Armor Point(s)
+  B(#)   - Breaker (#) [refers to the 'Breaker' series shotguns)
+  BF     - Butterfly
+  BP     - Bounty (Point/s)
+  CC     - a. Clan Channel b. Clan Chat
+  CW     - Clan War
+  DBF    - Double Butterfly
+  DM     - Deathmatch
+  DT     - Double Team
+  EXP    - Experience Point(s)
+  FF     - Friendly Fire
+  FS     - Flashstep
+  GG     - Good Game
+  GL HF  - Good Luck Have Fun
+  HHS    - Half Halfstep
+  HP     - Hit Point(s)
+  HS     - Halfstep
+  KS     - Kill Steal
+  LB     - Light/Low Blue
+  LVL    - Level
+  MS     - Massive Strike
+  NS     - Nice Shot
+  NT     - Nice Try
+  PB     - Pointblank (shot)
+  PPQ    - Pyon Pyon Quickshot
+  Prem   - Premium (item)
+  RHHS   - Reload Half Halfstep
+  RHS    - Reload Halfstep
+  RJ     - Rejoin
+  RS     - Reload Shot
+  RSS    - Reload Slashshot
+  S or B - Sword or Both (sword and gun) [note: 'sword' in this case can
+  refer to any melee]
+  SS     - Slashshot
+  TDM    - Team Deathmatch
+
+=====================================================
+  Frequently Asked Questions                    XVII0
+=====================================================
+
+  Why am I not doing damage to my opponent when my hit counter says 'HIT'?
+  There are a few explanations for such a phenomenon.
+  1. Your opponent is 'lagged out'.  Your first hint that this is the case
+  is the red lag symbol over your enemy's head.  The ping with that player
+  should read '999'.  Data is not reaching both parties because of this
+  problem in connection.
+  2. Your opponent may actually be a few actions ahead of what appears on
+  your screen as a result of lag between the two computers.
+  3. Your opponent is using hacks that either lock his hp/ap or prevent
+  your weapons from doing damage.
+
+  How much bounty and exp do I get when I kill people?
+  The exp you receive is determined by the enemies level and the map in
+  which you're playing (note: your own level has an exp cap for how much exp
+  you can receive).  The bounty you receive is calculated as 1.2x your 
+  opponents level but will not exceed twice your level.
+
+  What is my ping?
+  Your ping is different from player to player, and can rise or fall
+  depending on either players connection status, location, and connected
+  internet activity (with any unit in the network).
+
+  Does my starting class affect my stats?
+  If by stats you mean hp and ap then no, your starting class does not
+  affect your stats.  Damage is dealt according to the connecting weapon's
+  damage statistic (there is no character stat that affects damage). Check
+  'Equipment' section for more details.
+
+  How do I put those funny symbols in my in-game name?
+  These symbols can be typed with a special keyboard or a by holding alt
+  and pressing a combination of keys from the numpad.  See a chart on ASCII
+  code for a list of these number combinations.
+
+  Is there a difference between male and female characters aside from the
+  animation?
+  Yes, male and female characters pull out there weapons from different
+  angles although this really only affects the chance of hitting yourself with
+  a rocket depending on your position relative to the ground/wall/object.
+  The hit boxes and timing is the same for both male and female.
+
+  How do I make a shower room dm or berserker game?
+  At the time of this writing it is not yet possible to make one without
+  the use of prohibited hacks and code manipulation.  It should also be noted
+  that making a shower room dm or berserker in this fashion is a bannable
+  offense.
+
+  Why haven't you covered anything about efficient swapping, line swapping,
+  etc.?
+  The Ijji staff is against swapping.  Engaging in swapping will result in
+  an exp lock or ban.
+
+=====================================================
+  Acknowledgements                                END
+=====================================================
+
+
+  Sometime when I first started playing GunZ around July/August 2005 I came
+  across OoSomeone41oO's FAQ on GameFAQs along with some replay tutorials from
+  various players (mostly from a player called Kraise). This enlightened me on
+  some of the things I was seeing in-game, and the game changed for me
+  forever.  I'd like to thank OoSomeone41oO and Kraise for their part in
+  helping me advance in the game which consequently made it a lot more fun.
+
+  I would also like to thank (most of) the GameFAQs GunZ board community for
+  showing me a lighter side of the game when I had difficulty relating to the
+  ever growing ego oriented GunZ community.
+
+
+
+Copyright 2007 by Daryl Legaspi
+This may be not be reproduced under any circumstances except for personal,
+private use. It may not be placed on any web site or otherwise distributed
+publicly without advance written permission. Use of this guide on any other
+web site or as a part of any public display is strictly prohibited, and a
+violation of copyright.
+GunZ the Duel is a trademark of MAIET Entertainment
+Ijji is a trademark of NHN Corporation
+All trademarks and copyrights contained in this document are owned by their
+respective trademark and copyright holders.
