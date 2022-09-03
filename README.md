@@ -59,6 +59,55 @@ GunZ The Duel Releases <br>
 - GFZSource: https://github.com/WhyWolfie/GZF-Source
 - 2005 Source & Old Patches: https://archive.org/details/gunz.-7z
 
+<b>[1.5 snippets]</b><br>
+(client)<br>
+- automatic ads: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic-ads
+- bullet colored: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored
+- chat background: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground
+- dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
+- crosshair size: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size
+- spark effect: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect-spark-shot
+- extra info: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5
+- gunz patches: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library
+- hide jjang: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang
+- hillclimb: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix
+- icon death scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard
+- item shop search: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/item-search-shop
+- kill feed: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-feed
+- killstreak system: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-streak-system
+- live player in room: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/live-player-in-the-event-channel
+- multi language: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multi-language
+- duplicate client: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multiclient-duplicate-procress
+- pingbar: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/pingbar
+- player online channel: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/players-online-channel
+- random annoucement lobby: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/random-annoucement-lobby-interface
+- room with empty name: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room-with-empty-name
+- simple levelup sound: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/simple-levelup-sound
+- snowtownparticlesystem: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/snowtownparticlesystem
+- staffmode: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/staffmode
+- vipshop parts: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts
+- weapon information: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information
+
+(fixes)<br>
+- login crash(matchserver): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix
+- player count server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
+- resolution fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/resolution%20fix
+
+(commands)<br>
+- hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
+- maptexture: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/maptexture
+
+
+(others)<br>
+- basic antihack: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack
+- crashu: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crashu
+- launcher: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/darkgunz%20launcher
+- memory writer: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer
+- sql administrative querys: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys
+
+
+<br>
+
 <b>[clients]</b><br>
 - Jur13n (clean/edited version 1.5) https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw
 - NationalGunZ(client/server/source): https://archive.org/details/national-gunz-source-client-server-files
