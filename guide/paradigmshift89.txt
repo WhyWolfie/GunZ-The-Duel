@@ -358,4 +358,3 @@ advanced techniques based on that move will be flawed as well.
 When facing a sword user, aim for the feet. This will give them a massive
 strike if they block, but you won't be stunned. If they strike, you can attack
 during the recovery time.
-Restore Page
