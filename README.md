@@ -157,6 +157,7 @@ GunZ The Duel Releases <br>
 <b>(photoshop)</b>
 - how to change gunz dash color: https://www.youtube.com/watch?v=kmxnjpJj6CM
 - how to change color of gunz items: https://www.youtube.com/watch?v=3Og8E55FyNg
+- edit gunz lobby interface and clothes: https://www.youtube.com/watch?v=33SyRy5fkZ0
 
 <b>(3ds max)</b>
 - 3ds max gunz: https://www.youtube.com/watch?v=S0LH4cWkC54
