@@ -87,6 +87,7 @@ GunZ The Duel Releases <br>
 - staffmode: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/staffmode
 - vipshop parts: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts
 - weapon information: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information
+- roomtags: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags
 
 (fixes)<br>
 - login crash(matchserver): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix
