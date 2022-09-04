@@ -219,6 +219,7 @@ GunZ The Duel Releases <br>
 - nascimentofps: https://www.youtube.com/c/NascimentoFPS
 - airking990: https://www.youtube.com/user/Airking090
 - acerized: https://www.youtube.com/c/Acerized
+- gunz memories: https://www.youtube.com/channel/UCM2CustI-EHUw-wK79hgXIA
 
 <b>(famous youtubers)</b>
 - daequan: https://www.youtube.com/watch?v=dSdlUwdHbEA
