@@ -1,3 +1,5 @@
+Will fix stretched & Refresh rate resolution <br>
+
 Open (RealSpace2.h)<br>
 
 Find<br>
@@ -147,9 +149,100 @@ Replace complete code with this
 	return true;
     }
 
+
+Open (ZOptionInterface)
+
+Find
+
+	static	map< int, D3DDISPLAYMODE> gDisplayMode;
+	
+Place under
+
+	auto find_ddm(const D3DDISPLAYMODE& ddm)
+	{
+		return std::find_if(gDisplayMode.begin(), gDisplayMode.end(),
+			[&](auto& val) { return val.second == ddm; });
+	}
+
+
+
+Find <br>
+
+		MComboBox *pWidget = (MComboBox*)pResource->FindWidget("ScreenResolution");
     
-    
-    
+Replace
+
+		MComboBox *pWidget = (MComboBox*)pResource->FindWidget("ScreenResolution");
+		if(pWidget)
+		{
+			pWidget->RemoveAll();
+			gDisplayMode.clear();
+
+			int dmIndex = 0;
+			char szBuf[256];
+
+			D3DDISPLAYMODE ddm;
+
+			D3DFORMAT Formats[] =
+			{
+				D3DFMT_X8R8G8B8
+			};
+
+			for (auto& Format : Formats)
+			{
+				int nDM = RGetAdapterModeCount(Format);
+
+				mlog("Number of display mode for format %d: %d\n", Format, nDM);
+
+				for( int idm = 0 ; idm < nDM; ++idm )
+				{
+					if (REnumAdapterMode(D3DADAPTER_DEFAULT, Format, idm, &ddm))
+					{
+						ddm.RefreshRate = DEFAULT_REFRESHRATE;
+
+						if (ddm.Format == D3DFMT_X8R8G8B8)
+						{
+							auto iter_ = find_ddm(ddm);
+							if (iter_ == gDisplayMode.end())
+							{
+								gDisplayMode.insert({ dmIndex++, ddm });
+								sprintf(szBuf, "%d x %d %dbpp", ddm.Width, ddm.Height,
+									ddm.Format == D3DFMT_X8R8G8B8 ? 32 : 16);
+								pWidget->Add(szBuf);
+							}
+						}
+					}
+				}
+			}
+
+			// ¸¸¾à µî·ÏµÈ ÇØ»óµµ°¡ ÇÏ³ªµµ ¾øÀ»°æ¿ì °­Á¦·Î µî·Ï
+			if (gDisplayMode.size() == 0)
+			{
+				for (int i = 0; i < 10; ++i)
+				{
+					ddm.Width = widths[i / 2];
+					ddm.Height = heights[i / 2];
+					ddm.RefreshRate = DEFAULT_REFRESHRATE;
+					ddm.Format = ((i % 2 == 1) ? D3DFMT_X8R8G8B8 : D3DFMT_R5G6B5);
+
+					int bpp = (i % 2 == 1) ? 32 : 16;
+					gDisplayMode.insert(map<int, D3DDISPLAYMODE>::value_type(i, ddm));
+					sprintf(szBuf, "%dx%d  %d bpp", ddm.Width, ddm.Height, bpp);
+					pWidget->Add(szBuf);
+				}
+			}
+			ddm.Width = RGetScreenWidth();
+			ddm.Height = RGetScreenHeight();
+			ddm.RefreshRate = DEFAULT_REFRESHRATE;
+			ddm.Format	= RGetPixelFormat();
+			map< int, D3DDISPLAYMODE>::iterator iter = find_if( gDisplayMode.begin(), gDisplayMode.end(), value_equals<int, D3DDISPLAYMODE>(ddm));
+			
+			//Iterator crash fix, in case resolution isn't supported
+			if (iter != gDisplayMode.end())
+				pWidget->SetSelIndex(iter->first);
+			else
+				pWidget->SetSelIndex(0);
+		}
     
     
     
