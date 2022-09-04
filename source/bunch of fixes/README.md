@@ -24,5 +24,14 @@ Replace
 	 SAFE_DELETE_ARRAY(m_pCloth);
     
     
+Open (MCommandBuilder.h)
+
+Changed buffer size to fix shop list issues.
+
+Find
+
+	#define COMMAND_BUFFER_LEN	16384
     
-    
+Replace
+
+	#define COMMAND_BUFFER_LEN	65535 
