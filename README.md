@@ -166,6 +166,10 @@ GunZ The Duel Releases <br>
 <b>(others)</b>
 - how to add custom maps: https://www.youtube.com/watch?v=hqSnAsM6ezc
 - how to add a encryption with gunnycrypt: https://www.youtube.com/watch?v=qXGwBLxi2Iw
+- create a server windows 11: https://www.youtube.com/watch?v=TXn9QEJv6VU
+- convert vs2003 -> vs2019: https://www.youtube.com/watch?v=F36AbuA6UKE
+- hpap bar in gunz source code: https://www.youtube.com/watch?v=Y5MdaA1ejlg
+
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
