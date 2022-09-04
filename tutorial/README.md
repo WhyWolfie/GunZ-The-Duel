@@ -1,5 +1,8 @@
 <b>[Creating GunZ Server] </b> <br>
 
+<b>[Build your jur13n 1.5 source vs2003 -> vs2013 or higher]</b><br>
+- jur13n source tutorial: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/jur13n%20client%201.5
+
 <b>[1: Setup SQL first]</b>
 - SQLServer2005: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005
 
