@@ -13,10 +13,15 @@ Place under
 			else
 				pWidget->SetSelIndex(0);
     
+Open (RVisualMesh.cpp)
 
+Find
+
+	DEL(m_pCloth);
     
-    
-    
+Replace
+
+	 SAFE_DELETE_ARRAY(m_pCloth);
     
     
     
