@@ -92,6 +92,7 @@ GunZ The Duel Releases <br>
 - login crash(matchserver): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix
 - player count server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
 - resolution fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/resolution%20fix
+- map limit: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/map%20limit%20fix
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
