@@ -80,4 +80,37 @@ Open: ZGameInput.cpp and find -> VK_F9
 
 				return true;
     
-    
+[SGO] = Shotgun Only. My style <br>
+So here it is. <br>
+Find on ZCharacterItem <br>
+
+	case MMCIP_PRIMARY:
+	case MMCIP_SECONDARY:
+	{
+	if (pDesc->m_nType.Ref() != MMIT_RANGE)
+	{
+	return false;
+	}
+	}
+	break;
+	
+Replace to :
+
+	case MMCIP_PRIMARY:
+	case MMCIP_SECONDARY:
+	{
+	if (pDesc->m_nType.Ref() != MMIT_RANGE)
+	{
+	return false;
+	}
+	if (strstr(strlwr((char*)ZGetGameClient()->GetStageName()), "[SGO]"))
+	{
+	MMatchWeaponType pItem = pDesc->m_nWeaponType.Ref();
+	if (pItem > 0 && pItem < 18)
+	{
+	if (pItem != MWT_SHOTGUN)
+	return false;
+	}
+	}
+	}
+	break;
