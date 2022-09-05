@@ -104,6 +104,7 @@ GunZ The Duel Releases <br>
 - bunch of fixes: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes
 - cant buy database fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
 - fix sniper zoom: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20sniper%20zoom
+- window toggle: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
@@ -179,6 +180,8 @@ GunZ The Duel Releases <br>
 - create a server windows 11: https://www.youtube.com/watch?v=TXn9QEJv6VU
 - convert vs2003 -> vs2019: https://www.youtube.com/watch?v=F36AbuA6UKE
 - hpap bar in gunz source code: https://www.youtube.com/watch?v=Y5MdaA1ejlg
+- add emoticon chat gunz: https://www.youtube.com/watch?v=9OsTuzHPAvs
+- addition of flags website: https://www.youtube.com/watch?v=AZFuvtaBqs8
 
 
 <b>(gameplay)</b>
