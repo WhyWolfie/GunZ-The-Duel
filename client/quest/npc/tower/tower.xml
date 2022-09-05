@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="tower" filename="tower.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="wait"		filename="tower_wait.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="arrive"		filename="tower_arrive.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="idle"		filename="tower_idle.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	
+	<AddAnimation name="suffer1"		filename="tower_suffer.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	
+	<AddAnimation name="shot"	filename="tower_shot.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="longshot"	filename="tower_longshot.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="summon"	filename="tower_summon.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+
+	<AddAnimation name="die"		filename="tower_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 	</AddAnimation>
+
+
+
+</xml>
