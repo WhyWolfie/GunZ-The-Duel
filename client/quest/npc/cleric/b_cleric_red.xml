@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="b_cleric_red" filename="gz_hcleric_adum.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="h_cleric_idle.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="run"		filename="h_cleric_walk.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	
+	<AddAnimation name="suffer1"		filename="h_cleric_suffer1.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer2"		filename="h_cleric_suffer2.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3"		filename="h_cleric_suffer3.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3recover"		filename="h_cleric_suffer3_r.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	
+	<AddAnimation name="back"	filename="h_cleric_back_20up.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="summon"	filename="h_cleric_summon.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="superthrow"	filename="h_cleric_superthrow.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="throw"	filename="h_cleric_throw.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	
+	<AddAnimation name="lightningstun"		filename="h_cleric_lightning.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="blast_soar"		filename="h_cleric_blast.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="blast_fall"		filename="h_cleric_blast_fall.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_down"		filename="h_cleric_blast_drop.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="standup"		filename="h_cleric_blast_stand.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_thrust"	filename="h_cleric_blast_dagger.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_thrustdown" filename="h_cleric_blast_drop_dagger.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="die"		filename="h_cleric_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 	</AddAnimation>
+
+
+</xml>
