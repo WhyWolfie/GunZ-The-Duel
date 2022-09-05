@@ -101,7 +101,7 @@ GunZ The Duel Releases <br>
 - anti macro spam: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20macro%20spam
 - bunch of fixes: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes
 - cant buy database fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
-
+- threaded screenshots: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
@@ -116,6 +116,7 @@ GunZ The Duel Releases <br>
 - memory writer: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer
 - sql administrative querys: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys
 - gunz debugging console: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20debugging%20console
+
 
 <br>
 
