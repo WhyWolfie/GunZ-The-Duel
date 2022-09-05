@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="b_terminator_red" filename="gz_hgrandknight_adum.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="H_GrandKnight_idle.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="run"		filename="H_GrandKnight_run.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	
+	<AddAnimation name="suffer1"		filename="H_GrandKnight_suffer1.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer2"		filename="H_GrandKnight_suffer2.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3"		filename="H_GrandKnight_suffer3.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3recover"		filename="H_GrandKnight_suffer3_r.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	
+	<AddAnimation name="summon"	filename="H_GrandKnight_Summon.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="howl"	filename="H_GrandKnight_Howl.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="grandfall"	filename="H_GrandKnight_GrandFall.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="slashall"	filename="H_GrandKnight_Slashall.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="arrive"	filename="H_GrandKnight_arrrive.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	
+
+	<AddAnimation name="die"		filename="H_GrandKnight_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 	</AddAnimation>
+
+
+</xml>
