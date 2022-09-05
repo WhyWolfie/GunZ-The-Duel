@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="disposer2" filename="disposer2.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="disposer_idle.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="run"		filename="disposer_run.elu.ani"		gm="1" 	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="suffer1"		filename="disposer_suffer1.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer2"		filename="disposer_suffer2.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3"		filename="disposer_suffer3.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="suffer3recover"		filename="disposer_suffer3_r.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	
+	<AddAnimation name="shoot"	filename="disposer_shoot.elu.ani" gm="1" motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	
+	<AddAnimation name="lightningstun"		filename="disposer_lightning.elu.ani"  gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+	<AddAnimation name="blast_soar"		filename="disposer_blast.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+	<AddAnimation name="blast_fall"		filename="disposer_blast_fall.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_down"		filename="disposer_blast_drop.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="standup"		filename="disposer_blast_stand.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_thrust"	filename="disposer_blast_dagger.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="blast_thrustdown" filename="disposer_blast_drop_dagger.elu.ani" 	 gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="die"		filename="disposer_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" 	> 	</AddAnimation>
+
+
+</xml>
