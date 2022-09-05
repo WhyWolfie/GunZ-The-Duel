@@ -97,6 +97,7 @@ GunZ The Duel Releases <br>
 - map limit: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/map%20limit%20fix
 - anti macro spam: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20macro%20spam
 - bunch of fixes: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes
+- cant buy database fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
 
 
 (commands)<br>
@@ -246,10 +247,6 @@ GunZ The Duel Releases <br>
 - mocrogunz: https://archive.org/details/mocrogunz
 - mundialgunz: https://archive.org/details/mundialgunz
 - raulgunz: https://archive.org/details/raulgunz
-
-<b>[fixes]</b>
-- Enter login matchserver crash(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
-- Cant buy db fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
 
 <b>[official]</b><br>
 - https://gz.masanggames.co.kr/
