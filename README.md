@@ -64,7 +64,6 @@ GunZ The Duel Releases <br>
 - automatic ads: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic-ads
 - bullet colored: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored
 - chat background: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground
-- dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
 - crosshair size: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size
 - spark effect: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect-spark-shot
 - extra info: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5
@@ -90,6 +89,7 @@ GunZ The Duel Releases <br>
 - roomtags: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags
 
 (fixes)<br>
+- dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
 - login crash(matchserver): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix
 - player count server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
 - resolution fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/resolution%20fix
