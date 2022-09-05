@@ -225,7 +225,6 @@ GunZ The Duel Releases <br>
 
 <b>(active youtube channels)</b>
 - gunlin: https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos
-- 손혜주(masangsoft): https://www.youtube.com/channel/UC3L3N4vgndLU0QoLcB1j9gA/videos
 - 건즈평가사 (masangsoft): https://www.youtube.com/channel/UCljaHynSadfY5DvlTFowWfQ
 - crusader john gaming: https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos
 - magicfingers: https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg
