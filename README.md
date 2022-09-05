@@ -89,7 +89,7 @@ GunZ The Duel Releases <br>
 - roomtags: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags
 - charging while moving: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving
 - effect spark shot: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot
-
+- threaded screenshots: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots
 
 (fixes)<br>
 - dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
@@ -101,7 +101,6 @@ GunZ The Duel Releases <br>
 - anti macro spam: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20macro%20spam
 - bunch of fixes: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes
 - cant buy database fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
-- threaded screenshots: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
