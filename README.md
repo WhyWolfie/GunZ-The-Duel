@@ -111,7 +111,7 @@ GunZ The Duel Releases <br>
 - launcher: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/darkgunz%20launcher
 - memory writer: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer
 - sql administrative querys: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys
-
+- gunz debugging console: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20debugging%20console
 
 <br>
 
