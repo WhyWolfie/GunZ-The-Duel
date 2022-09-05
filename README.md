@@ -88,6 +88,8 @@ GunZ The Duel Releases <br>
 - weapon information: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information
 - roomtags: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags
 - charging while moving: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving
+- effect spark shot: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot
+
 
 (fixes)<br>
 - dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
