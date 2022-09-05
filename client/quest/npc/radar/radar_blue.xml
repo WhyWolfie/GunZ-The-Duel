@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+	<NPCModel></NPCModel>
+	<AddBaseModel name="radar_blue" filename="Radar_idle.elu"> </AddBaseModel>
+	<MakeAnimationMap ></MakeAnimationMap>
+
+	<AddAnimation name="idle"		filename="Radar_idle.elu.ani" 	 	gm="1"	motion_type="0" motion_loop_type="loop" > </AddAnimation>
+
+	<AddAnimation name="summon"		filename="Radar_summon.elu.ani" 	gm="1"	motion_type="0" motion_loop_type="lastframe" > </AddAnimation>
+	<AddAnimation name="die"		filename="Radar_die.elu.ani"		gm="1"	motion_type="0" motion_loop_type="lastframe" > 	</AddAnimation>
+
+
+</xml>
