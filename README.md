@@ -90,6 +90,8 @@ GunZ The Duel Releases <br>
 - charging while moving: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving
 - effect spark shot: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot
 - threaded screenshots: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots
+- staff jjang for staff: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/new%20jjang%20for%20staff
+- dash in options: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20colors%20from%20options%20menu
 
 (fixes)<br>
 - dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
