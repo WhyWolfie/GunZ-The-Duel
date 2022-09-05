@@ -87,6 +87,7 @@ GunZ The Duel Releases <br>
 - vipshop parts: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts
 - weapon information: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information
 - roomtags: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags
+- charging while moving: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving
 
 (fixes)<br>
 - dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
