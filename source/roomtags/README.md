@@ -96,21 +96,21 @@ Find on ZCharacterItem <br>
 	
 Replace to :
 
-	case MMCIP_PRIMARY:
-	case MMCIP_SECONDARY:
-	{
-	if (pDesc->m_nType.Ref() != MMIT_RANGE)
-	{
-	return false;
-	}
-	if (strstr(strlwr((char*)ZGetGameClient()->GetStageName()), "[SGO]"))
-	{
-	MMatchWeaponType pItem = pDesc->m_nWeaponType.Ref();
-	if (pItem > 0 && pItem < 18)
-	{
-	if (pItem != MWT_SHOTGUN)
-	return false;
-	}
-	}
-	}
-	break;
+    case MMCIP_PRIMARY:
+    case MMCIP_SECONDARY:
+    {
+        if (pDesc->m_nType.Ref() != MMIT_RANGE)
+        {
+            return false;
+        }
+        if ((strstr(ZGetGameClient()->GetStageName(), "[sgo]")) || (strstr(ZGetGameClient()->GetStageName(), "[SGO]")))
+        {
+            MMatchWeaponType pItem = pDesc->m_nWeaponType.Ref();
+            if (pItem > 0 && pItem < 18)
+            {
+                if (pItem != MWT_SHOTGUN)
+                    return false;
+            }
+        }
+    }
+    break; 
