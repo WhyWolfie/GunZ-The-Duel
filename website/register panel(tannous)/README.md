@@ -6,3 +6,8 @@ All you need to do is edit the Config.php file.
 Had to setup the database for this so I hope this solves the confusion.
 
 Thanks too Tannous.
+
+
+![img](https://i.imgur.com/dgzsa90.png)
+![img2](https://i.imgur.com/aPUCIdB.png)
+![img3](https://i.imgur.com/f3h3GD8.png)
