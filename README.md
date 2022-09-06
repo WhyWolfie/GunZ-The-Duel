@@ -107,6 +107,7 @@ GunZ The Duel Releases <br>
 - fix sniper zoom: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20sniper%20zoom
 - window toggle: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix
 - uc patch: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch
+- login %s crash: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
