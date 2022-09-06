@@ -105,6 +105,7 @@ GunZ The Duel Releases <br>
 - cant buy database fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
 - fix sniper zoom: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20sniper%20zoom
 - window toggle: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix
+- uc patch: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
