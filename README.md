@@ -25,6 +25,7 @@ GunZ The Duel Releases <br>
 - https://github.com/x1nixmzeng/ZPatchBuilder <br>
 - https://github.com/tannous94/GunZ-simple-web <br>
 - https://github.com/emisandgunz/gunzcord <br>
+- https://github.com/Durial06/GunZ-The-Duel-Items - Bunch of items<br>
 
 <b>[sql]</b>
 - GunzDBFixed: https://archive.org/details/gun-zdbfixed_202011
