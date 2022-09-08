@@ -95,6 +95,8 @@ GunZ The Duel Releases <br>
 - dash in options: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20colors%20from%20options%20menu
 - bunch of features: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features
 - weapon shoot nade: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade
+- heal over time (1+hp): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time
+
 
 (fixes)<br>
 - dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
