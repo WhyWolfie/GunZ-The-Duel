@@ -87,3 +87,12 @@ Replace
         return;        
     } 
 
+Open(ZGameInterface.cpp) <br>
+Find
+
+	char* pszAgentIP = "";
+
+Change
+
+	char* pszAgentIP = "YOUR IP";
+
