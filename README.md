@@ -110,6 +110,7 @@ GunZ The Duel Releases <br>
 - uc patch: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch
 - login %s crash: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix
 - auto korean message: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message
+- auto select server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20select%20server
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
