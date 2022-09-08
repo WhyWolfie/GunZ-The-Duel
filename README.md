@@ -109,6 +109,7 @@ GunZ The Duel Releases <br>
 - window toggle: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix
 - uc patch: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch
 - login %s crash: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix
+- auto korean message: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
