@@ -115,13 +115,13 @@ Replace to :
     }
     break; 
     
-Find: ZMyCharacter::WallJump2
+Find: ZMyCharacter::WallJump2 - random high walljumps<br> 
 Add under
     
     	if(strstr(ZGetGameClient()->GetStageName(), "[walljump]"))
 	{
 		int i = rand() % 6 + 1;
-		//For case 3 and 4
+
 		float fSecondJumpSpeed = WALL_JUMP2_SIDE_VELOCITY;
 
 		rvector right;
