@@ -114,3 +114,42 @@ Replace to :
         }
     }
     break; 
+    
+Find: ZMyCharacter::WallJump2
+Add under
+    
+    	if(strstr(ZGetGameClient()->GetStageName(), "[walljump]"))
+	{
+		int i = rand() % 6 + 1;
+		//For case 3 and 4
+		float fSecondJumpSpeed = WALL_JUMP2_SIDE_VELOCITY;
+
+		rvector right;
+		CrossProduct(&right,m_Direction,rvector(0,0,1));
+
+		AddVelocity(rvector(0,0,800));
+		
+		switch(i)
+		{
+		case 1:
+		case 5:
+			m_nWallJump2Dir=7;
+			AddVelocity(rvector(0,0,1000));
+			break;
+		case 2:
+		case 6:
+			m_nWallJump2Dir=6;
+			AddVelocity(rvector(0,0,1000));
+			break;
+		case 3:
+			m_nWallJump2Dir=4;
+			AddVelocity(fSecondJumpSpeed*-right);
+			AddVelocity(rvector(0,0,1300));
+			break;
+		case 4:
+			m_nWallJump2Dir=5;
+			AddVelocity(fSecondJumpSpeed*right);
+			AddVelocity(rvector(0,0,1300));
+			break;
+		}
+	}
