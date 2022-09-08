@@ -115,6 +115,8 @@ GunZ The Duel Releases <br>
 - auto korean message: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message
 - auto select server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20select%20server
 - instant login: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20login
+- show my own ping at scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping
+
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
