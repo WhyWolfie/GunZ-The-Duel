@@ -121,6 +121,7 @@ GunZ The Duel Releases <br>
 - maptexture: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/maptexture
 - bunch of admin commands: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/commands%20hacks%20admin
 - find: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/find%20command
+- wireframe: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wireframe%20command
 
 (others)<br>
 - basic antihack: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack
