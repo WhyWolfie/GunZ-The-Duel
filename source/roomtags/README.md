@@ -153,3 +153,25 @@ Add under
 			break;
 		}
 	}
+
+Find ZModule_Movable::UpdateGravity - Gravity <br>
+and replace <br>
+
+	void ZModule_Movable::UpdateGravity(float fDelta)
+	{
+		if(strstr(ZGetGameClient()->GetStageName(),"[gravity]"))
+	{
+		m_Velocity.z = 
+			max( m_Velocity.z - GRAVITY_LOW*fDelta,-MAX_FALL_SPEED);
+	}
+		else
+		{
+		m_Velocity.z = 
+			max( m_Velocity.z - GRAVITY_CONSTANT*fDelta,-MAX_FALL_SPEED);
+		}
+	}
+
+Find #define COLLISION_DIST <br>
+add under <br>
+
+	#define GRAVITY_LOW     			500.f
