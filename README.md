@@ -28,6 +28,7 @@ GunZ The Duel Releases <br>
 - https://github.com/Durial06/GunZ-The-Duel-Items - bunch of items<br>
 - https://github.com/Jorklenis/Repack-Jorklenis2 - repack jorklenis2<br>
 - https://github.com/fxpgunz/FxpGZ-Repacked - repack fxp gunz<br>
+- https://github.com/open-gunz/ogz-source - open gunz<br>
 
 <b>[sql]</b>
 - GunzDBFixed: https://archive.org/details/gun-zdbfixed_202011
