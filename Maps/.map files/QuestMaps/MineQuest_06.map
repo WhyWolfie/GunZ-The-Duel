@@ -1,0 +1,1045 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 8 0 0 ) ( 8 -64 0 ) ( 0 0 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -272 1032 0 ) ( -280 1032 0 ) ( -272 1032 -64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1024 -480 0 ) ( 1024 -480 -64 ) ( 1024 -544 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 32 -64 -256 ) ( 40 -64 -256 ) ( 32 0 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 480 -2048 -64 ) ( 480 -2048 0 ) ( 488 -2048 -64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1024 464 -64 ) ( -1024 528 -64 ) ( -1024 464 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 1
+{
+( -384 -352 0.8000030518 ) ( -384 -416 0.8000030518 ) ( -392 -352 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -664 512 0.8000030518 ) ( -672 512 0.8000030518 ) ( -664 512 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -320 -840 0.8000030518 ) ( -320 -840 -5.6000061035 ) ( -320 -904 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -352 -416 0 ) ( -344 -416 0 ) ( -352 -352 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 352 -192 -5.6000061035 ) ( 352 -192 0.8000030518 ) ( 360 -192 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -832 72 -5.6000061035 ) ( -832 136 -5.6000061035 ) ( -832 72 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 2
+{
+( 120 -96 0.8000030518 ) ( 120 -160 0.8000030518 ) ( 112 -96 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -152 448 0.8000030518 ) ( -160 448 0.8000030518 ) ( -152 448 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 192 -904 0.8000030518 ) ( 192 -904 -5.6000061035 ) ( 192 -968 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 160 -480 0 ) ( 168 -480 0 ) ( 160 -416 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 856 64 -5.6000061035 ) ( 856 64 0.8000030518 ) ( 864 64 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -320 8 -5.6000061035 ) ( -320 72 -5.6000061035 ) ( -320 8 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 3
+{
+( -224 -480 0.8000030518 ) ( -224 -544 0.8000030518 ) ( -232 -480 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -112 64 0.8000030518 ) ( -120 64 0.8000030518 ) ( -112 64 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -192 -968 0.8000030518 ) ( -192 -968 -5.6000061035 ) ( -192 -1032 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 160 -544 0 ) ( 168 -544 0 ) ( 160 -480 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 856 0 -5.6000061035 ) ( 856 0 0.8000030518 ) ( 864 0 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -320 -56 -5.6000061035 ) ( -320 8 -5.6000061035 ) ( -320 -56 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 4
+{
+( 288 -288 0.8000030518 ) ( 288 -352 0.8000030518 ) ( 280 -288 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 400 384 0.8000030518 ) ( 392 384 0.8000030518 ) ( 400 384 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 320 -648 0.8000030518 ) ( 320 -648 -5.6000061035 ) ( 320 -712 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 672 -224 0 ) ( 680 -224 0 ) ( 672 -160 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 1368 192 -5.6000061035 ) ( 1368 192 0.8000030518 ) ( 1376 192 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 192 264 -5.6000061035 ) ( 192 328 -5.6000061035 ) ( 192 264 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 5
+{
+( 448 -1056 0.8000030518 ) ( 448 -992 0.8000030518 ) ( 456 -1056 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 728 -1920 0.8000030518 ) ( 736 -1920 0.8000030518 ) ( 728 -1920 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 384 -568 0.8000030518 ) ( 384 -568 -5.6000061035 ) ( 384 -504 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 416 -992 0 ) ( 408 -992 0 ) ( 416 -1056 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -288 -1216 -5.6000061035 ) ( -288 -1216 0.8000030518 ) ( -296 -1216 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 896 -1480 -5.6000061035 ) ( 896 -1544 -5.6000061035 ) ( 896 -1480 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 6
+{
+( -56 -1312 0.8000030518 ) ( -56 -1248 0.8000030518 ) ( -48 -1312 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 216 -1856 0.8000030518 ) ( 224 -1856 0.8000030518 ) ( 216 -1856 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -128 -504 0.8000030518 ) ( -128 -504 -5.6000061035 ) ( -128 -440 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -96 -928 0 ) ( -104 -928 0 ) ( -96 -992 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -792 -1472 -5.6000061035 ) ( -792 -1472 0.8000030518 ) ( -800 -1472 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 384 -1416 -5.6000061035 ) ( 384 -1480 -5.6000061035 ) ( 384 -1416 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 7
+{
+( 288 -928 0.8000030518 ) ( 288 -864 0.8000030518 ) ( 296 -928 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 176 -1472 0.8000030518 ) ( 184 -1472 0.8000030518 ) ( 176 -1472 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 256 -440 0.8000030518 ) ( 256 -440 -5.6000061035 ) ( 256 -376 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -96 -864 0 ) ( -104 -864 0 ) ( -96 -928 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -792 -1408 -5.6000061035 ) ( -792 -1408 0.8000030518 ) ( -800 -1408 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 384 -1352 -5.6000061035 ) ( 384 -1416 -5.6000061035 ) ( 384 -1352 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 8
+{
+( -224 -1120 0.8000030518 ) ( -224 -1056 0.8000030518 ) ( -216 -1120 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -336 -1792 0.8000030518 ) ( -328 -1792 0.8000030518 ) ( -336 -1792 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -256 -760 0.8000030518 ) ( -256 -760 -5.6000061035 ) ( -256 -696 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -608 -1184 0 ) ( -616 -1184 0 ) ( -608 -1248 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -1304 -1600 -5.6000061035 ) ( -1304 -1600 0.8000030518 ) ( -1312 -1600 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -128 -1672 -5.6000061035 ) ( -128 -1736 -5.6000061035 ) ( -128 -1672 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 9
+{
+( -1528 -520 256 ) ( -1528 -584 256 ) ( -1536 -520 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1808 512 256 ) ( -1816 512 256 ) ( -1808 512 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1536 968 256 ) ( -1536 968 192 ) ( -1536 904 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1504 -584 0 ) ( -1496 -584 0 ) ( -1504 -520 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1992 -512 192 ) ( -1992 -512 256 ) ( -1984 -512 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -2560 -56 192 ) ( -2560 8 192 ) ( -2560 -56 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 10
+{
+( -1528 -520 0 ) ( -1528 -584 0 ) ( -1536 -520 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1808 384 0 ) ( -1816 384 0 ) ( -1808 384 -64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1664 968 0 ) ( -1664 968 -64 ) ( -1664 904 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1504 -584 -256 ) ( -1496 -584 -256 ) ( -1504 -520 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -2000 -384 -64 ) ( -2000 -384 0 ) ( -1992 -384 -64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -2432 -72 -64 ) ( -2432 -8 -64 ) ( -2432 -72 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 11
+{
+( -504 -520 256 ) ( -504 -584 256 ) ( -512 -520 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -776 384 256 ) ( -784 384 256 ) ( -776 384 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1408 960 248 ) ( -1408 960 184 ) ( -1408 896 248 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -488 -584 128 ) ( -480 -584 128 ) ( -488 -520 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -912 192 192 ) ( -912 192 256 ) ( -904 192 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1536 -56 192 ) ( -1536 8 192 ) ( -1536 -56 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 12
+{
+( -504 -904 128 ) ( -504 -968 128 ) ( -512 -904 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -776 0 128 ) ( -784 0 128 ) ( -776 0 64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1408 576 120 ) ( -1408 576 56 ) ( -1408 512 120 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -488 -968 0 ) ( -480 -968 0 ) ( -488 -904 0 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -912 -192 64 ) ( -912 -192 128 ) ( -904 -192 64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1536 -440 64 ) ( -1536 -376 64 ) ( -1536 -440 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 13
+{
+( -504 -1224 192 ) ( -504 -1288 192 ) ( -512 -1224 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -776 -320 192 ) ( -784 -320 192 ) ( -776 -320 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1408 256 184 ) ( -1408 256 120 ) ( -1408 192 184 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -488 -1288 64 ) ( -480 -1288 64 ) ( -488 -1224 64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -912 -512 128 ) ( -912 -512 192 ) ( -904 -512 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1536 -760 128 ) ( -1536 -696 128 ) ( -1536 -760 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 14
+{
+( -504 -776 192 ) ( -504 -840 192 ) ( -512 -776 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -776 128 192 ) ( -784 128 192 ) ( -776 128 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1408 704 184 ) ( -1408 704 120 ) ( -1408 640 184 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -488 -712 128 ) ( -480 -712 128 ) ( -488 -648 128 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -912 64 192 ) ( -912 64 256 ) ( -904 64 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1536 -312 128 ) ( -1536 -248 128 ) ( -1536 -312 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 15
+{
+( -696 -1224 320 ) ( -696 -1288 320 ) ( -704 -1224 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -968 -320 320 ) ( -976 -320 320 ) ( -968 -320 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1600 256 312 ) ( -1600 256 248 ) ( -1600 192 312 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -680 -1160 256 ) ( -672 -1160 256 ) ( -680 -1096 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1104 -384 320 ) ( -1104 -384 384 ) ( -1096 -384 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1728 -760 256 ) ( -1728 -696 256 ) ( -1728 -760 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 16
+{
+( -824 -800 320 ) ( -824 -864 320 ) ( -832 -800 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1096 104 320 ) ( -1104 104 320 ) ( -1096 104 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1728 680 312 ) ( -1728 680 248 ) ( -1728 616 312 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -808 -736 256 ) ( -800 -736 256 ) ( -808 -672 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1192 -128 320 ) ( -1192 -128 384 ) ( -1184 -128 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1856 -336 256 ) ( -1856 -272 256 ) ( -1856 -336 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 17
+{
+( -1400 -1056 320 ) ( -1400 -1120 320 ) ( -1408 -1056 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1672 -152 320 ) ( -1680 -152 320 ) ( -1672 -152 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -2304 424 312 ) ( -2304 424 248 ) ( -2304 360 312 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1384 -992 256 ) ( -1376 -992 256 ) ( -1384 -928 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1768 -384 320 ) ( -1768 -384 384 ) ( -1760 -384 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -2432 -592 256 ) ( -2432 -528 256 ) ( -2432 -592 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 18
+{
+( -1528 -520 -256 ) ( -1528 -584 -256 ) ( -1536 -520 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1808 64 -256 ) ( -1816 64 -256 ) ( -1808 64 -320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1984 952 -256 ) ( -1984 952 -320 ) ( -1984 888 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1504 -512 -1536 ) ( -1496 -512 -1536 ) ( -1504 -448 -1536 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1952 -64 -320 ) ( -1952 -64 -256 ) ( -1944 -64 -320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -2112 -72 -320 ) ( -2112 -8 -320 ) ( -2112 -72 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 19
+{
+( -2552 0 -1536 ) ( -2552 -64 -1536 ) ( -2560 0 -1536 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -13544 11568 -1536 ) ( -13552 11568 -1536 ) ( -13544 11568 -1600 ) common/caulk 0 0 0 4 4 0 0 0
+( 15544 -8448 -1536 ) ( 15544 -8448 -1600 ) ( 15544 -8512 -1536 ) common/caulk 0 0 0 4 4 0 0 0
+( -2528 -64 -1792 ) ( -2520 -64 -1792 ) ( -2528 0 -1792 ) common/caulk 0 0 0 4 4 0 0 0
+( 15208 -11624 -1600 ) ( 15208 -11624 -1536 ) ( 15216 -11624 -1600 ) common/caulk 0 0 0 4 4 0 0 0
+( -14296 11000 -1600 ) ( -14296 11064 -1600 ) ( -14296 11000 -1536 ) common/caulk 0 0 0 4 4 0 0 0
+}
+// brush 20
+{
+( -2760 0 2304 ) ( -2760 -64 2304 ) ( -2768 0 2304 ) common/caulk 0 0 0 4 4 0 0 0
+( -13752 11568 2296 ) ( -13760 11568 2296 ) ( -13752 11568 2232 ) common/caulk 0 0 0 4 4 0 0 0
+( 15336 -8448 2296 ) ( 15336 -8448 2232 ) ( 15336 -8512 2296 ) common/caulk 0 0 0 4 4 0 0 0
+( -2736 -64 2048 ) ( -2728 -64 2048 ) ( -2736 0 2048 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 15000 -11624 2232 ) ( 15000 -11624 2296 ) ( 15008 -11624 2232 ) common/caulk 0 0 0 4 4 0 0 0
+( -14504 11000 2232 ) ( -14504 11064 2232 ) ( -14504 11000 2296 ) common/caulk 0 0 0 4 4 0 0 0
+}
+// brush 21
+{
+( 40 -520 -256 ) ( 40 -584 -256 ) ( 32 -520 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -240 384 -256 ) ( -248 384 -256 ) ( -240 384 -320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -96 968 -256 ) ( -96 968 -320 ) ( -96 904 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 64 -584 -512 ) ( 72 -584 -512 ) ( 64 -520 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -432 -384 -320 ) ( -432 -384 -256 ) ( -424 -384 -320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -864 -72 -320 ) ( -864 -8 -320 ) ( -864 -72 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 22
+{
+( 40 -520 -512 ) ( 40 -584 -512 ) ( 32 -520 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -240 64 -512 ) ( -248 64 -512 ) ( -240 64 -576 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -416 952 -512 ) ( -416 952 -576 ) ( -416 888 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 56 -512 -1528 ) ( 64 -512 -1528 ) ( 56 -448 -1528 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -384 -64 -576 ) ( -384 -64 -512 ) ( -376 -64 -576 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -544 -72 -576 ) ( -544 -8 -576 ) ( -544 -72 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 23
+{
+( 968 -1992 -256 ) ( 968 -2056 -256 ) ( 960 -1992 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 688 -1088 -256 ) ( 680 -1088 -256 ) ( 688 -1088 -320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 832 -504 -256 ) ( 832 -504 -320 ) ( 832 -568 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 992 -2056 -512 ) ( 1000 -2056 -512 ) ( 992 -1992 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 496 -1856 -320 ) ( 496 -1856 -256 ) ( 504 -1856 -320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 64 -1544 -320 ) ( 64 -1480 -320 ) ( 64 -1544 -256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 24
+{
+( 968 -1992 -512 ) ( 968 -2056 -512 ) ( 960 -1992 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 688 -1408 -512 ) ( 680 -1408 -512 ) ( 688 -1408 -576 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 512 -520 -512 ) ( 512 -520 -576 ) ( 512 -584 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 984 -1984 -1528 ) ( 992 -1984 -1528 ) ( 984 -1920 -1528 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 544 -1536 -576 ) ( 544 -1536 -512 ) ( 552 -1536 -576 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 384 -1544 -576 ) ( 384 -1480 -576 ) ( 384 -1544 -512 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 25
+{
+( -888 -2944 2048 ) ( -888 -3008 2048 ) ( -896 -2944 2048 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -1168 -2496 -224 ) ( -1176 -2496 -224 ) ( -1168 -2496 -288 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -1152 -1856 -224 ) ( -1152 -1856 -288 ) ( -1152 -1920 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -864 -3072 -1504 ) ( -856 -3072 -1504 ) ( -864 -3008 -1504 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -1120 -2816 384 ) ( -1120 -2816 448 ) ( -1112 -2816 384 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -1472 -2632 -288 ) ( -1472 -2568 -288 ) ( -1472 -2632 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+}
+// brush 26
+{
+( 2632 1088 2048 ) ( 2632 1024 2048 ) ( 2624 1088 2048 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( 2352 1536 -224 ) ( 2344 1536 -224 ) ( 2352 1536 -288 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( 2368 2176 -224 ) ( 2368 2176 -288 ) ( 2368 2112 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( 2656 960 -1504 ) ( 2664 960 -1504 ) ( 2656 1024 -1504 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( 2400 1216 384 ) ( 2400 1216 448 ) ( 2408 1216 384 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( 2048 1400 -288 ) ( 2048 1464 -288 ) ( 2048 1400 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+}
+// brush 27
+{
+( -5048 1600 2048 ) ( -5048 1536 2048 ) ( -5056 1600 2048 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -5328 2048 -224 ) ( -5336 2048 -224 ) ( -5328 2048 -288 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -5312 2688 -224 ) ( -5312 2688 -288 ) ( -5312 2624 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -5024 1472 -1504 ) ( -5016 1472 -1504 ) ( -5024 1536 -1504 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -5280 1728 384 ) ( -5280 1728 448 ) ( -5272 1728 384 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -5632 1912 -288 ) ( -5632 1976 -288 ) ( -5632 1912 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+}
+// brush 28
+{
+( -6648 -2968 2048 ) ( -6648 -3032 2048 ) ( -6656 -2968 2048 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -7032 -2048 -224 ) ( -7040 -2048 -224 ) ( -7032 -2048 -288 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -4096 -2328 -224 ) ( -4096 -2328 -288 ) ( -4096 -2392 -224 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -6624 -3096 -1504 ) ( -6616 -3096 -1504 ) ( -6624 -3032 -1504 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -6520 -6016 384 ) ( -6520 -6016 448 ) ( -6512 -6016 384 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -7680 -2680 -288 ) ( -7680 -2616 -288 ) ( -7680 -2680 -224 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+}
+// brush 29
+{
+( -4096 -3272 192 ) ( -4096 -3336 184 ) ( -4096 -3272 184 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4032 -2240 464 ) ( -4096 -2240 472 ) ( -4096 -2240 464 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4096 -1848 192 ) ( -4032 -1784 192 ) ( -4096 -1784 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3840 -3272 160 ) ( -3840 -3336 152 ) ( -3840 -3336 160 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4032 -3264 640 ) ( -4096 -3264 648 ) ( -4032 -3264 648 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4096 -2808 1216 ) ( -4032 -2744 1216 ) ( -4032 -2808 1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 30
+{
+( -3840 -3272 192 ) ( -3840 -3336 184 ) ( -3840 -3272 184 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3776 -2368 464 ) ( -3840 -2368 472 ) ( -3840 -2368 464 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3840 -1848 320 ) ( -3776 -1784 320 ) ( -3840 -1784 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3584 -3272 160 ) ( -3584 -3336 152 ) ( -3584 -3336 160 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3776 -3136 648 ) ( -3840 -3136 656 ) ( -3776 -3136 656 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3840 -2824 1088 ) ( -3776 -2760 1088 ) ( -3776 -2824 1088 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 31
+{
+( -4096 -3272 -832 ) ( -4096 -3336 -840 ) ( -4096 -3272 -840 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -4032 -2368 -568 ) ( -4096 -2368 -560 ) ( -4096 -2368 -568 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -4088 -1856 64 ) ( -4024 -1792 64 ) ( -4088 -1792 64 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3968 -3272 -856 ) ( -3968 -3336 -864 ) ( -3968 -3336 -856 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -4032 -2560 -440 ) ( -4096 -2560 -432 ) ( -4032 -2560 -432 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -4096 -2808 192 ) ( -4032 -2744 192 ) ( -4032 -2808 192 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 32
+{
+( -3968 -3656 -832 ) ( -3968 -3720 -840 ) ( -3968 -3656 -840 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3904 -2752 -568 ) ( -3968 -2752 -560 ) ( -3968 -2752 -568 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3960 -2240 64 ) ( -3896 -2176 64 ) ( -3960 -2176 64 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3840 -3656 -856 ) ( -3840 -3720 -864 ) ( -3840 -3720 -856 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3904 -2944 -440 ) ( -3968 -2944 -432 ) ( -3904 -2944 -432 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3968 -3192 192 ) ( -3904 -3128 192 ) ( -3904 -3192 192 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 33
+{
+( -4032 -3976 -832 ) ( -4032 -4040 -840 ) ( -4032 -3976 -840 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3968 -3072 -568 ) ( -4032 -3072 -560 ) ( -4032 -3072 -568 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -4024 -2560 64 ) ( -3960 -2496 64 ) ( -4024 -2496 64 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3904 -3976 -856 ) ( -3904 -4040 -864 ) ( -3904 -4040 -856 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -3968 -3264 -440 ) ( -4032 -3264 -432 ) ( -3968 -3264 -432 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -4032 -3512 192 ) ( -3968 -3448 192 ) ( -3968 -3512 192 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 34
+{
+( -4032 -3528 -832 ) ( -4032 -3592 -840 ) ( -4032 -3528 -840 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3968 -2624 -568 ) ( -4032 -2624 -560 ) ( -4032 -2624 -568 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4024 -2112 64 ) ( -3960 -2048 64 ) ( -4024 -2048 64 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -3968 -3400 -856 ) ( -3968 -3464 -864 ) ( -3968 -3464 -856 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4032 -2688 -440 ) ( -4096 -2688 -432 ) ( -4032 -2688 -432 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -4032 -3064 192 ) ( -3968 -3000 192 ) ( -3968 -3064 192 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 35
+{
+( 200 -520 2048 ) ( 200 -584 2048 ) ( 192 -520 2048 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -80 512 2048 ) ( -88 512 2048 ) ( -80 512 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 192 968 2048 ) ( 192 968 1984 ) ( 192 904 2048 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 224 -584 1792 ) ( 232 -584 1792 ) ( 224 -520 1792 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -264 -512 1984 ) ( -264 -512 2048 ) ( -256 -512 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -832 -56 1984 ) ( -832 8 1984 ) ( -832 -56 2048 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 36
+{
+( 200 -520 1792 ) ( 200 -584 1792 ) ( 192 -520 1792 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -80 384 1792 ) ( -88 384 1792 ) ( -80 384 1728 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 64 968 1792 ) ( 64 968 1728 ) ( 64 904 1792 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 224 -584 1664 ) ( 232 -584 1664 ) ( 224 -520 1664 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -272 -384 1728 ) ( -272 -384 1792 ) ( -264 -384 1728 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -704 -72 1728 ) ( -704 -8 1728 ) ( -704 -72 1792 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 37
+{
+( 1224 -520 2048 ) ( 1224 -584 2048 ) ( 1216 -520 2048 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 952 384 2048 ) ( 944 384 2048 ) ( 952 384 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 320 960 2040 ) ( 320 960 1976 ) ( 320 896 2040 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1240 -584 1920 ) ( 1248 -584 1920 ) ( 1240 -520 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 816 192 1984 ) ( 816 192 2048 ) ( 824 192 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 192 -56 1984 ) ( 192 8 1984 ) ( 192 -56 2048 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 38
+{
+( 1224 -904 1920 ) ( 1224 -968 1920 ) ( 1216 -904 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 952 0 1920 ) ( 944 0 1920 ) ( 952 0 1856 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 320 576 1912 ) ( 320 576 1848 ) ( 320 512 1912 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1240 -968 1792 ) ( 1248 -968 1792 ) ( 1240 -904 1792 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 816 -192 1856 ) ( 816 -192 1920 ) ( 824 -192 1856 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 192 -440 1856 ) ( 192 -376 1856 ) ( 192 -440 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 39
+{
+( 1224 -1224 1984 ) ( 1224 -1288 1984 ) ( 1216 -1224 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 952 -320 1984 ) ( 944 -320 1984 ) ( 952 -320 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 320 256 1976 ) ( 320 256 1912 ) ( 320 192 1976 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1240 -1288 1856 ) ( 1248 -1288 1856 ) ( 1240 -1224 1856 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 816 -512 1920 ) ( 816 -512 1984 ) ( 824 -512 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 192 -760 1920 ) ( 192 -696 1920 ) ( 192 -760 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 40
+{
+( 1224 -776 1984 ) ( 1224 -840 1984 ) ( 1216 -776 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 952 128 1984 ) ( 944 128 1984 ) ( 952 128 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 320 704 1976 ) ( 320 704 1912 ) ( 320 640 1976 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1240 -712 1920 ) ( 1248 -712 1920 ) ( 1240 -648 1920 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 816 64 1984 ) ( 816 64 2048 ) ( 824 64 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 192 -312 1920 ) ( 192 -248 1920 ) ( 192 -312 1984 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 41
+{
+( 264 -520 1664 ) ( 264 -584 1664 ) ( 256 -520 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -24 320 1664 ) ( -32 320 1664 ) ( -24 320 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -512 968 1664 ) ( -512 968 1600 ) ( -512 904 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 288 -584 1536 ) ( 296 -584 1536 ) ( 288 -520 1536 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -208 64 1600 ) ( -208 64 1664 ) ( -200 64 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -640 -96 1600 ) ( -640 -32 1600 ) ( -640 -96 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 42
+{
+( 456 -648 1664 ) ( 456 -712 1664 ) ( 448 -648 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 168 192 1664 ) ( 160 192 1664 ) ( 168 192 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -320 840 1664 ) ( -320 840 1600 ) ( -320 776 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 480 -712 1600 ) ( 488 -712 1600 ) ( 480 -648 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -32 0 1600 ) ( -32 0 1664 ) ( -24 0 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -448 -224 1600 ) ( -448 -160 1600 ) ( -448 -224 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 43
+{
+( 648 -984 1664 ) ( 648 -1048 1664 ) ( 640 -984 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 360 -192 1664 ) ( 352 -192 1664 ) ( 360 -192 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -128 504 1664 ) ( -128 504 1600 ) ( -128 440 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 672 -1048 1600 ) ( 680 -1048 1600 ) ( 672 -984 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 160 -320 1600 ) ( 160 -320 1664 ) ( 168 -320 1600 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( -256 -560 1600 ) ( -256 -496 1600 ) ( -256 -560 1664 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 44
+{
+( 1864 -3224 2048 ) ( 1864 -3288 2048 ) ( 1856 -3224 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1576 -2432 2048 ) ( 1568 -2432 2048 ) ( 1576 -2432 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1088 -1736 2048 ) ( 1088 -1736 1984 ) ( 1088 -1800 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1888 -3288 1984 ) ( 1896 -3288 1984 ) ( 1888 -3224 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1376 -2560 1984 ) ( 1376 -2560 2048 ) ( 1384 -2560 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 960 -2800 1984 ) ( 960 -2736 1984 ) ( 960 -2800 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 45
+{
+( 2056 -3288 2048 ) ( 2056 -3352 2048 ) ( 2048 -3288 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1768 -2496 2048 ) ( 1760 -2496 2048 ) ( 1768 -2496 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1280 -1800 2048 ) ( 1280 -1800 1984 ) ( 1280 -1864 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 2080 -3352 1984 ) ( 2088 -3352 1984 ) ( 2080 -3288 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1568 -2624 1984 ) ( 1568 -2624 2048 ) ( 1576 -2624 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1152 -2864 1984 ) ( 1152 -2800 1984 ) ( 1152 -2864 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 46
+{
+( 1800 -3416 2048 ) ( 1800 -3480 2048 ) ( 1792 -3416 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1512 -2624 2048 ) ( 1504 -2624 2048 ) ( 1512 -2624 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1024 -1928 2048 ) ( 1024 -1928 1984 ) ( 1024 -1992 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1824 -3480 1984 ) ( 1832 -3480 1984 ) ( 1824 -3416 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1312 -2752 1984 ) ( 1312 -2752 2048 ) ( 1320 -2752 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 896 -2992 1984 ) ( 896 -2928 1984 ) ( 896 -2992 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 47
+{
+( 1672 -3096 2048 ) ( 1672 -3160 2048 ) ( 1664 -3096 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1384 -2304 2048 ) ( 1376 -2304 2048 ) ( 1384 -2304 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 896 -1608 2048 ) ( 896 -1608 1984 ) ( 896 -1672 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1696 -3160 1984 ) ( 1704 -3160 1984 ) ( 1696 -3096 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1184 -2432 1984 ) ( 1184 -2432 2048 ) ( 1192 -2432 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 768 -2672 1984 ) ( 768 -2608 1984 ) ( 768 -2672 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 48
+{
+( 2056 -3032 2048 ) ( 2056 -3096 2048 ) ( 2048 -3032 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1768 -2240 2048 ) ( 1760 -2240 2048 ) ( 1768 -2240 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1280 -1544 2048 ) ( 1280 -1544 1984 ) ( 1280 -1608 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 2080 -3096 1984 ) ( 2088 -3096 1984 ) ( 2080 -3032 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1568 -2368 1984 ) ( 1568 -2368 2048 ) ( 1576 -2368 1984 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+( 1152 -2608 1984 ) ( 1152 -2544 1984 ) ( 1152 -2608 2048 ) Minecraft-Textures/glowstone 0 0 0 4 4 0 0 0
+}
+// brush 49
+{
+( 1288 2552 -1280 ) ( 1288 2488 -1280 ) ( 1280 2552 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 872 4920 -1280 ) ( 864 4920 -1280 ) ( 872 4920 -1344 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1280 4040 -1280 ) ( 1280 4040 -1344 ) ( 1280 3976 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1312 2488 -1536 ) ( 1320 2488 -1536 ) ( 1312 2552 -1536 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 944 1536 -1344 ) ( 944 1536 -1280 ) ( 952 1536 -1344 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 256 3016 -1344 ) ( 256 3080 -1344 ) ( 256 3016 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 50
+{
+( 2120 1848 -1216 ) ( 2120 1784 -1216 ) ( 2112 1848 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1848 2752 -1216 ) ( 1840 2752 -1216 ) ( 1848 2752 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1216 3328 -1224 ) ( 1216 3328 -1288 ) ( 1216 3264 -1224 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 2136 1912 -1280 ) ( 2144 1912 -1280 ) ( 2136 1976 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1712 2688 -1216 ) ( 1712 2688 -1152 ) ( 1720 2688 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1088 2312 -1280 ) ( 1088 2376 -1280 ) ( 1088 2312 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 51
+{
+( 1992 2272 -1216 ) ( 1992 2208 -1216 ) ( 1984 2272 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1720 3176 -1216 ) ( 1712 3176 -1216 ) ( 1720 3176 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1088 3752 -1224 ) ( 1088 3752 -1288 ) ( 1088 3688 -1224 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 2008 2336 -1280 ) ( 2016 2336 -1280 ) ( 2008 2400 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1624 2944 -1216 ) ( 1624 2944 -1152 ) ( 1632 2944 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 960 2736 -1280 ) ( 960 2800 -1280 ) ( 960 2736 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 52
+{
+( 1416 2016 -1216 ) ( 1416 1952 -1216 ) ( 1408 2016 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1144 2920 -1216 ) ( 1136 2920 -1216 ) ( 1144 2920 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 512 3496 -1224 ) ( 512 3496 -1288 ) ( 512 3432 -1224 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1432 2080 -1280 ) ( 1440 2080 -1280 ) ( 1432 2144 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1048 2688 -1216 ) ( 1048 2688 -1152 ) ( 1056 2688 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 384 2480 -1280 ) ( 384 2544 -1280 ) ( 384 2480 -1216 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 53
+{
+( 1528 -5128 -1280 ) ( 1464 -5128 -1280 ) ( 1528 -5120 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 3896 -4712 -1280 ) ( 3896 -4704 -1280 ) ( 3896 -4712 -1344 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 3016 -5120 -1280 ) ( 3016 -5120 -1344 ) ( 2952 -5120 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1464 -5152 -1536 ) ( 1464 -5160 -1536 ) ( 1528 -5152 -1536 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 512 -4784 -1344 ) ( 512 -4784 -1280 ) ( 512 -4792 -1344 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1992 -4096 -1344 ) ( 2056 -4096 -1344 ) ( 1992 -4096 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 54
+{
+( 1528 -4104 -1280 ) ( 1464 -4104 -1280 ) ( 1528 -4096 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 3072 -3688 -1280 ) ( 3072 -3680 -1280 ) ( 3072 -3688 -1344 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 3016 -4096 -1280 ) ( 3016 -4096 -1344 ) ( 2952 -4096 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1464 -4128 -1536 ) ( 1464 -4136 -1536 ) ( 1528 -4128 -1536 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 1536 -3976 -1344 ) ( 1536 -3976 -1280 ) ( 1536 -3984 -1344 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( 2176 -3584 -1344 ) ( 2240 -3584 -1344 ) ( 2176 -3584 -1280 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 55
+{
+( -1976 -5568 2048 ) ( -1976 -5632 2048 ) ( -1984 -5568 2048 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -2256 -5120 -224 ) ( -2264 -5120 -224 ) ( -2256 -5120 -288 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -2048 -4688 -224 ) ( -2048 -4688 -288 ) ( -2048 -4752 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -1952 -5696 -1504 ) ( -1944 -5696 -1504 ) ( -1952 -5632 -1504 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -2016 -5632 384 ) ( -2016 -5632 448 ) ( -2008 -5632 384 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -2560 -5256 -288 ) ( -2560 -5192 -288 ) ( -2560 -5256 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+}
+// brush 56
+{
+( -440 5184 2048 ) ( -440 5120 2048 ) ( -448 5184 2048 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -720 5632 -224 ) ( -728 5632 -224 ) ( -720 5632 -288 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -512 6064 -224 ) ( -512 6064 -288 ) ( -512 6000 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -416 5056 -1504 ) ( -408 5056 -1504 ) ( -416 5120 -1504 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -480 5120 384 ) ( -480 5120 448 ) ( -472 5120 384 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -1024 5496 -288 ) ( -1024 5560 -288 ) ( -1024 5496 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+}
+// brush 57
+{
+( -6200 -1600 2048 ) ( -6200 -1664 2048 ) ( -6208 -1600 2048 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -6480 -1152 -224 ) ( -6488 -1152 -224 ) ( -6480 -1152 -288 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -6272 -720 -224 ) ( -6272 -720 -288 ) ( -6272 -784 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -6176 -1728 -1504 ) ( -6168 -1728 -1504 ) ( -6176 -1664 -1504 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -6240 -1664 384 ) ( -6240 -1664 448 ) ( -6232 -1664 384 ) Minecraft/lava 0 0 0 4 4 0 0 0
+( -6784 -1288 -288 ) ( -6784 -1224 -288 ) ( -6784 -1288 -224 ) Minecraft/lava 0 0 0 4 4 0 0 0
+}
+// brush 58
+{
+( -1016 992 1920 ) ( -1016 -2088 1920 ) ( -1024 992 1920 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1016 1032 24 ) ( -1024 1032 24 ) ( -1016 1032 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1016 1032 24 ) ( -1016 1032 8 ) ( -1016 -2048 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1024 -2048 8 ) ( -1016 -2048 8 ) ( -1024 1032 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1024 -2048 8 ) ( -1024 -2048 24 ) ( -1016 -2048 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1024 -2048 8 ) ( -1024 1032 8 ) ( -1024 -2048 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+}
+// brush 59
+{
+( 2032 -2048 1920 ) ( -1048 -2048 1920 ) ( 2032 -2040 1920 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1016 -2048 32 ) ( 1016 -2040 32 ) ( 1016 -2048 16 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 2072 -2048 24 ) ( 2072 -2048 8 ) ( -1008 -2048 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1008 -2040 8 ) ( -1008 -2048 8 ) ( 2072 -2040 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1008 -2040 8 ) ( -1008 -2040 24 ) ( -1008 -2048 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1008 -2040 8 ) ( 2072 -2040 8 ) ( -1008 -2040 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+}
+// brush 60
+{
+( 1016 -2016 1920 ) ( 1016 1064 1920 ) ( 1024 -2016 1920 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1016 -2056 24 ) ( 1024 -2056 24 ) ( 1016 -2056 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1016 -2056 24 ) ( 1016 -2056 8 ) ( 1016 1024 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 8 ) ( 1016 1024 8 ) ( 1024 -2056 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 8 ) ( 1024 1024 24 ) ( 1016 1024 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 8 ) ( 1024 -2056 8 ) ( 1024 1024 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+}
+// brush 61
+{
+( -2032 1024 1920 ) ( 1048 1024 1920 ) ( -2032 1016 1920 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -1016 1024 32 ) ( -1016 1016 32 ) ( -1016 1024 16 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( -2072 1024 24 ) ( -2072 1024 8 ) ( 1008 1024 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1008 1016 8 ) ( 1008 1024 8 ) ( -2072 1016 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1008 1016 8 ) ( 1008 1016 24 ) ( 1008 1024 8 ) common/clip 0 0 0 0.5 0.5 0 0 0
+( 1008 1016 8 ) ( -2072 1016 8 ) ( 1008 1016 24 ) common/clip 0 0 0 0.5 0.5 0 0 0
+}
+// brush 62
+{
+( -328 -1248 0.8000030518 ) ( -328 -1312 0.8000030518 ) ( -336 -1248 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -600 -704 0.8000030518 ) ( -608 -704 0.8000030518 ) ( -600 -704 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -256 -2056 0.8000030518 ) ( -256 -2056 -5.6000061035 ) ( -256 -2120 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -288 -1632 0 ) ( -280 -1632 0 ) ( -288 -1568 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 408 -1088 -5.6000061035 ) ( 408 -1088 0.8000030518 ) ( 416 -1088 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -768 -1144 -5.6000061035 ) ( -768 -1080 -5.6000061035 ) ( -768 -1144 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 63
+{
+( -672 -1632 0.8000030518 ) ( -672 -1696 0.8000030518 ) ( -680 -1632 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -560 -1088 0.8000030518 ) ( -568 -1088 0.8000030518 ) ( -560 -1088 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -640 -2120 0.8000030518 ) ( -640 -2120 -5.6000061035 ) ( -640 -2184 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -288 -1696 0 ) ( -280 -1696 0 ) ( -288 -1632 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 408 -1152 -5.6000061035 ) ( 408 -1152 0.8000030518 ) ( 416 -1152 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -768 -1208 -5.6000061035 ) ( -768 -1144 -5.6000061035 ) ( -768 -1208 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 64
+{
+( -160 -1440 0.8000030518 ) ( -160 -1504 0.8000030518 ) ( -168 -1440 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -48 -768 0.8000030518 ) ( -56 -768 0.8000030518 ) ( -48 -768 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -128 -1800 0.8000030518 ) ( -128 -1800 -5.6000061035 ) ( -128 -1864 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 224 -1376 0 ) ( 232 -1376 0 ) ( 224 -1312 0 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( 920 -960 -5.6000061035 ) ( 920 -960 0.8000030518 ) ( 928 -960 -5.6000061035 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+( -256 -888 -5.6000061035 ) ( -256 -824 -5.6000061035 ) ( -256 -888 0.8000030518 ) Minecraft-Textures/nethersand 0 0 0 4 4 0 0 0
+}
+// brush 65
+{
+( -1536 96 576 ) ( -1536 32 576 ) ( -1600 96 576 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 96 320 ) ( -1600 96 320 ) ( -1536 96 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 96 320 ) ( -1536 96 256 ) ( -1536 32 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1608 32 320 ) ( -1544 32 320 ) ( -1608 96 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 32 256 ) ( -1600 32 320 ) ( -1536 32 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 32 256 ) ( -1600 96 256 ) ( -1600 32 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+}
+// brush 66
+{
+( -1536 -96 576 ) ( -1536 -160 576 ) ( -1600 -96 576 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 -96 320 ) ( -1600 -96 320 ) ( -1536 -96 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 -96 320 ) ( -1536 -96 256 ) ( -1536 -160 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1608 -160 320 ) ( -1544 -160 320 ) ( -1608 -96 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -160 256 ) ( -1600 -160 320 ) ( -1536 -160 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -160 256 ) ( -1600 -96 256 ) ( -1600 -160 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+}
+// brush 67
+{
+( -1536 32 576 ) ( -1536 -96 576 ) ( -1600 32 576 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 32 576 ) ( -1600 32 576 ) ( -1536 32 512 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 32 576 ) ( -1536 32 512 ) ( -1536 -96 576 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 512 ) ( -1536 -96 512 ) ( -1600 32 512 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 512 ) ( -1600 -96 576 ) ( -1536 -96 512 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 512 ) ( -1600 32 512 ) ( -1600 -96 576 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+}
+// brush 68
+{
+( -1536 32 320 ) ( -1536 -96 320 ) ( -1600 32 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 96 320 ) ( -1600 96 320 ) ( -1536 96 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1536 32 320 ) ( -1536 32 256 ) ( -1536 -96 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 256 ) ( -1536 -96 256 ) ( -1600 32 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -160 256 ) ( -1600 -160 320 ) ( -1536 -160 256 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 256 ) ( -1600 32 256 ) ( -1600 -96 320 ) Minecraft-Textures/obsidian 0 0 0 0.5 0.5 0 0 0
+}
+// brush 69
+{
+( -1536 32 512 ) ( -1536 -96 512 ) ( -1600 32 512 ) Minecraft/portal 0 0 0 0.5 0.5 0 0 0
+( -1536 32 512 ) ( -1600 32 512 ) ( -1536 32 448 ) Minecraft/portal 0 0 0 0.5 0.5 0 0 0
+( -1536 32 512 ) ( -1536 32 448 ) ( -1536 -96 512 ) Minecraft/portal 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 320 ) ( -1536 -96 320 ) ( -1600 32 320 ) Minecraft/portal 0 0 0 0.5 0.5 0 0 0
+( -1600 -96 448 ) ( -1600 -96 512 ) ( -1536 -96 448 ) Minecraft/portal 0 0 0 0.5 0.5 0 0 0
+( -1544 -96 448 ) ( -1544 32 448 ) ( -1544 -96 512 ) Minecraft/portal 0 0 0 0.5 0.5 0 0 0
+}
+// brush 70
+{
+( -888 -800 576 ) ( -888 -864 576 ) ( -896 -800 576 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1184 320 320 ) ( -1192 320 320 ) ( -1184 320 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1856 680 312 ) ( -1856 680 248 ) ( -1856 616 312 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -872 -736 256 ) ( -864 -736 256 ) ( -872 -672 256 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1248 -312 320 ) ( -1248 -312 384 ) ( -1240 -312 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+( -1920 -336 256 ) ( -1920 -272 256 ) ( -1920 -336 320 ) Minecraft-Textures/netherrack 0 0 0 4 4 0 0 0
+}
+// brush 71
+{
+( 4112 1504 2048 ) ( 4112 1440 2048 ) ( 4104 1504 2048 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( 3728 2424 -224 ) ( 3720 2424 -224 ) ( 3728 2424 -288 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( 6664 2144 -224 ) ( 6664 2144 -288 ) ( 6664 2080 -224 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( 4136 1376 -1504 ) ( 4144 1376 -1504 ) ( 4136 1440 -1504 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( 4240 -1544 384 ) ( 4240 -1544 448 ) ( 4248 -1544 384 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( 3080 1792 -288 ) ( 3080 1856 -288 ) ( 3080 1792 -224 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+}
+// brush 72
+{
+( -4576 4384 -504 ) ( -4576 4320 -504 ) ( -4584 4384 -504 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -4600 5304 -224 ) ( -4608 5304 -224 ) ( -4600 5304 -288 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -1664 5024 -224 ) ( -1664 5024 -288 ) ( -1664 4960 -224 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -4192 4256 -1504 ) ( -4184 4256 -1504 ) ( -4192 4320 -1504 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -4088 1336 384 ) ( -4088 1336 448 ) ( -4080 1336 384 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+( -5248 4672 -288 ) ( -5248 4736 -288 ) ( -5248 4672 -224 ) Minecraft-Textures/netherrack 0 0 0 6 5.5999999046 0 0 0
+}
+}
+// entity 1
+{
+"classname" "info_player_deathmatch"
+"origin" "0 848 256"
+"angle" "-90"
+}
+// entity 2
+{
+"classname" "info_player_teamdeathmatch_0"
+"origin" "-872 -584 48"
+}
+// entity 3
+{
+"classname" "info_player_teamdeathmatch_0"
+"origin" "-864 -1032 48"
+}
+// entity 4
+{
+"classname" "info_player_teamdeathmatch_0"
+"origin" "-856 -1560 48"
+}
+// entity 5
+{
+"classname" "info_player_teamdeathmatch_1"
+"origin" "0 -1840 48"
+"angle" "90"
+}
+// entity 6
+{
+"classname" "light"
+"origin" "-848 -1768 424"
+"light" "5000"
+}
+// entity 7
+{
+"classname" "light"
+"origin" "800 -1768 424"
+"light" "5000"
+}
+// entity 8
+{
+"classname" "light"
+"origin" "728 -720 424"
+"light" "5000"
+}
+// entity 9
+{
+"classname" "light"
+"origin" "-504 -312 424"
+"light" "5000"
+}
+// entity 10
+{
+"classname" "light"
+"origin" "-744 616 424"
+"light" "5000"
+}
+// entity 11
+{
+"classname" "light"
+"origin" "-32 616 424"
+"light" "5000"
+}
+// entity 12
+{
+"classname" "light"
+"origin" "768 624 424"
+"light" "5000"
+}
+// entity 13
+{
+"classname" "light"
+"origin" "1568 568 424"
+"light" "5000"
+}
+// entity 14
+{
+"classname" "light"
+"origin" "192 1776 424"
+"light" "5000"
+}
+// entity 15
+{
+"classname" "light"
+"origin" "-1568 1152 424"
+"light" "5000"
+}
+// entity 16
+{
+"classname" "light"
+"origin" "-2048 0 592"
+"light" "5000"
+}
+// entity 17
+{
+"classname" "light"
+"origin" "-1312 -480 592"
+"light" "5000"
+}
+// entity 18
+{
+"classname" "light"
+"origin" "-1824 -1728 592"
+"light" "5000"
+}
+// entity 19
+{
+"classname" "light"
+"origin" "-1752 -2608 592"
+"light" "5000"
+}
+// entity 20
+{
+"classname" "light"
+"origin" "-1200 -3240 592"
+"light" "5000"
+}
+// entity 21
+{
+"classname" "light"
+"origin" "-888 -2752 592"
+"light" "5000"
+}
+// entity 22
+{
+"classname" "light"
+"origin" "-1248 -2336 592"
+"light" "5000"
+}
+// entity 23
+{
+"classname" "light"
+"origin" "160 -2728 592"
+"light" "5000"
+}
+// entity 24
+{
+"classname" "light"
+"origin" "1520 -2392 592"
+"light" "5000"
+}
+// entity 25
+{
+"classname" "light"
+"origin" "1688 -1296 592"
+"light" "5000"
+}
+// entity 26
+{
+"classname" "light"
+"origin" "1768 -264 592"
+"light" "5000"
+}
+// entity 27
+{
+"classname" "light"
+"origin" "2216 1064 592"
+"light" "5000"
+}
+// entity 28
+{
+"classname" "light"
+"origin" "1808 1376 592"
+"light" "5000"
+}
+// entity 29
+{
+"classname" "light"
+"origin" "2312 1832 592"
+"light" "5000"
+}
+// entity 30
+{
+"classname" "light"
+"origin" "2528 1312 592"
+"light" "5000"
+}
+// entity 31
+{
+"classname" "light"
+"origin" "784 2064 -680"
+"light" "5000"
+}
+// entity 32
+{
+"classname" "light"
+"origin" "800 3264 -680"
+"light" "5000"
+}
+// entity 33
+{
+"classname" "light"
+"origin" "832 4328 -680"
+"light" "5000"
+}
+// entity 34
+{
+"classname" "light"
+"origin" "904 -4312 -680"
+"light" "5000"
+}
+// entity 35
+{
+"classname" "light"
+"origin" "2352 -4024 -680"
+"light" "5000"
+}
+// entity 36
+{
+"classname" "light"
+"origin" "3360 -4616 -680"
+"light" "5000"
+}
+// entity 37
+{
+"classname" "light"
+"origin" "-2336 -4776 -680"
+"light" "5000"
+}
+// entity 38
+{
+"classname" "light"
+"origin" "-1800 -5416 -680"
+"light" "5000"
+}
+// entity 39
+{
+"classname" "light"
+"origin" "-2688 -5296 -680"
+"light" "5000"
+}
+// entity 40
+{
+"classname" "light"
+"origin" "-2696 -3848 -680"
+"light" "5000"
+}
+// entity 41
+{
+"classname" "light"
+"origin" "-616 -2768 -680"
+"light" "5000"
+}
+// entity 42
+{
+"classname" "light"
+"origin" "-1728 -1488 -680"
+"light" "5000"
+}
+// entity 43
+{
+"classname" "light"
+"origin" "-2824 -232 -680"
+"light" "5000"
+}
+// entity 44
+{
+"classname" "light"
+"origin" "-1408 744 -680"
+"light" "5000"
+}
+// entity 45
+{
+"classname" "light"
+"origin" "-136 1600 -680"
+"light" "5000"
+}
+// entity 46
+{
+"classname" "light"
+"origin" "1544 1768 -680"
+"light" "5000"
+}
+// entity 47
+{
+"classname" "light"
+"origin" "-512 2312 -680"
+"light" "5000"
+}
+// entity 48
+{
+"classname" "light"
+"origin" "2432 2680 -680"
+"light" "5000"
+}
+// entity 49
+{
+"classname" "light"
+"origin" "1672 3720 -680"
+"light" "5000"
+}
+// entity 50
+{
+"classname" "light"
+"origin" "-400 3952 -680"
+"light" "5000"
+}
+// entity 51
+{
+"classname" "light"
+"origin" "-1184 2568 -680"
+"light" "5000"
+}
+// entity 52
+{
+"classname" "light"
+"origin" "-2432 2048 -680"
+"light" "5000"
+}
+// entity 53
+{
+"classname" "light"
+"origin" "-3408 1712 -680"
+"light" "5000"
+}
+// entity 54
+{
+"classname" "light"
+"origin" "-3696 424 -680"
+"light" "5000"
+}
+// entity 55
+{
+"classname" "light"
+"origin" "-3856 -1112 -680"
+"light" "5000"
+}
+// entity 56
+{
+"classname" "light"
+"origin" "-3104 -2312 -680"
+"light" "5000"
+}
+// entity 57
+{
+"classname" "light"
+"origin" "3744 -2568 -680"
+"light" "5000"
+}
+// entity 58
+{
+"classname" "light"
+"origin" "3144 -1504 -680"
+"light" "5000"
+}
+// entity 59
+{
+"classname" "light"
+"origin" "3768 8 -680"
+"light" "5000"
+}
+// entity 60
+{
+"classname" "light"
+"origin" "2544 -24 -680"
+"light" "5000"
+}
+// entity 61
+{
+"classname" "light"
+"origin" "3576 1480 -680"
+"light" "5000"
+}
+// entity 62
+{
+"classname" "light"
+"origin" "3760 2528 -680"
+"light" "5000"
+}
+// entity 63
+{
+"classname" "light"
+"origin" "1024 -2512 1848"
+"light" "5000"
+"_color" "1 0.981033 0.47126"
+}
+// entity 64
+{
+"classname" "light"
+"origin" "-368 56 1488"
+"light" "5000"
+"_color" "1 0.981033 0.47126"
+}
