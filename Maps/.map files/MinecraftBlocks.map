@@ -1,0 +1,628 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -448 488 64 ) ( -448 480 64 ) ( -512 488 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 512 64 ) ( -520 512 64 ) ( -456 512 0 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -448 488 64 ) ( -448 488 0 ) ( -448 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 480 0 ) ( -448 480 0 ) ( -512 488 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 448 0 ) ( -512 448 64 ) ( -448 448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 480 0 ) ( -512 488 0 ) ( -512 480 64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+}
+// brush 1
+{
+( -384 488 64 ) ( -384 480 64 ) ( -448 488 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -392 512 64 ) ( -456 512 64 ) ( -392 512 0 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -384 488 64 ) ( -384 488 0 ) ( -384 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 480 0 ) ( -384 480 0 ) ( -448 488 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 448 0 ) ( -448 448 64 ) ( -384 448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 480 0 ) ( -448 488 0 ) ( -448 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 2
+{
+( -448 424 64 ) ( -448 416 64 ) ( -512 424 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 448 64 ) ( -520 448 64 ) ( -456 448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 424 64 ) ( -448 424 0 ) ( -448 416 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 416 0 ) ( -448 416 0 ) ( -512 424 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 384 0 ) ( -512 384 64 ) ( -448 384 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 416 0 ) ( -512 424 0 ) ( -512 416 64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+}
+// brush 3
+{
+( -448 424 128 ) ( -448 416 128 ) ( -512 424 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 448 128 ) ( -520 448 128 ) ( -456 448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 424 128 ) ( -448 424 64 ) ( -448 416 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 416 64 ) ( -448 416 64 ) ( -512 424 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 384 64 ) ( -512 384 128 ) ( -448 384 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 416 64 ) ( -512 424 64 ) ( -512 416 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 4
+{
+( -448 360 64 ) ( -448 352 64 ) ( -512 360 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 384 64 ) ( -520 384 64 ) ( -456 384 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 360 64 ) ( -448 360 0 ) ( -448 352 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 352 0 ) ( -448 352 0 ) ( -512 360 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 320 0 ) ( -512 320 64 ) ( -448 320 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 352 0 ) ( -512 360 0 ) ( -512 352 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 5
+{
+( -320 488 64 ) ( -320 480 64 ) ( -384 488 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -328 512 64 ) ( -392 512 64 ) ( -328 512 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -320 488 64 ) ( -320 488 0 ) ( -320 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 480 0 ) ( -320 480 0 ) ( -384 488 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 448 0 ) ( -384 448 64 ) ( -320 448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 480 0 ) ( -384 488 0 ) ( -384 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 6
+{
+( -448 488 128 ) ( -448 480 128 ) ( -512 488 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 512 128 ) ( -520 512 128 ) ( -456 512 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 488 128 ) ( -448 488 64 ) ( -448 480 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 480 64 ) ( -448 480 64 ) ( -512 488 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 448 64 ) ( -512 448 128 ) ( -448 448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 480 64 ) ( -512 488 64 ) ( -512 480 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 7
+{
+( -384 488 128 ) ( -384 480 128 ) ( -448 488 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -392 512 128 ) ( -456 512 128 ) ( -392 512 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 488 128 ) ( -384 488 64 ) ( -384 480 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 480 64 ) ( -384 480 64 ) ( -448 488 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 448 64 ) ( -448 448 128 ) ( -384 448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 480 64 ) ( -448 488 64 ) ( -448 480 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 8
+{
+( -384 424 64 ) ( -384 416 64 ) ( -448 424 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -392 448 64 ) ( -456 448 64 ) ( -392 448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 424 64 ) ( -384 424 0 ) ( -384 416 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 416 0 ) ( -384 416 0 ) ( -448 424 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 384 0 ) ( -448 384 64 ) ( -384 384 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 416 0 ) ( -448 424 0 ) ( -448 416 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 9
+{
+( 256 168 64 ) ( 256 160 64 ) ( 192 168 64 ) Minecraft-Textures/chest-top -0 64 0 0.5 1 0 0 0
+( 248 192 64 ) ( 184 192 64 ) ( 248 192 0 ) Minecraft-Textures/chest-top -0 0 0 0.5 0.5 0 0 0
+( 256 168 64 ) ( 256 168 0 ) ( 256 160 64 ) Minecraft-Textures/chest-top 64 0 0 1 0.5 0 0 0
+( 192 160 0 ) ( 256 160 0 ) ( 192 168 0 ) Minecraft-Textures/chest-top -0 64 0 0.5 1 0 0 0
+( 192 64 0 ) ( 192 64 64 ) ( 256 64 0 ) Minecraft-Textures/chest-top -0 0 0 0.5 0.5 0 0 0
+( 192 160 0 ) ( 192 168 0 ) ( 192 160 64 ) Minecraft-Textures/chest-big 128 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( -128 488 64 ) ( -128 480 64 ) ( -192 488 64 ) Minecraft-Textures/bedrock 0 0 0 1 1 0 0 0
+( -136 512 64 ) ( -200 512 64 ) ( -136 512 0 ) Minecraft-Textures/bedrock 0 0 0 1 1 0 0 0
+( -128 488 64 ) ( -128 488 0 ) ( -128 480 64 ) Minecraft-Textures/bedrock 0 0 0 1 1 0 0 0
+( -192 480 0 ) ( -128 480 0 ) ( -192 488 0 ) Minecraft-Textures/bedrock 0 0 0 1 1 0 0 0
+( -192 448 0 ) ( -192 448 64 ) ( -128 448 0 ) Minecraft-Textures/bedrock 0 0 0 1 1 0 0 0
+( -192 480 0 ) ( -192 488 0 ) ( -192 480 64 ) Minecraft-Textures/bedrock 0 0 0 1 1 0 0 0
+}
+// brush 11
+{
+( -64 488 64 ) ( -64 480 64 ) ( -128 488 64 ) Minecraft-Textures/bookshelf-top 0 0 0 0.5 0.5 0 0 0
+( -72 512 64 ) ( -136 512 64 ) ( -72 512 0 ) Minecraft-Textures/bookshelf 0 0 0 0.5 0.5 0 0 0
+( -64 488 64 ) ( -64 488 0 ) ( -64 480 64 ) Minecraft-Textures/bookshelf -0 0 0 0.5 0.5 0 0 0
+( -128 480 0 ) ( -64 480 0 ) ( -128 488 0 ) Minecraft-Textures/bookshelf 0 0 0 0.5 0.5 0 0 0
+( -128 448 0 ) ( -128 448 64 ) ( -64 448 0 ) Minecraft-Textures/bookshelf 0 0 0 0.5 0.5 0 0 0
+( -128 480 0 ) ( -128 488 0 ) ( -128 480 64 ) Minecraft-Textures/bookshelf -0 0 0 0.5 0.5 0 0 0
+}
+// brush 12
+{
+( 0 488 64 ) ( 0 480 64 ) ( -64 488 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -8 512 64 ) ( -72 512 64 ) ( -8 512 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( 0 488 64 ) ( 0 488 0 ) ( 0 480 64 ) Minecraft-Textures/grass-top -0 0 0 1 1 0 0 0
+( -64 480 0 ) ( 0 480 0 ) ( -64 488 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 448 0 ) ( -64 448 64 ) ( 0 448 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 480 0 ) ( -64 488 0 ) ( -64 480 64 ) Minecraft-Textures/grass-top -0 0 0 1 1 0 0 0
+}
+// brush 13
+{
+( 64 488 64 ) ( 64 480 64 ) ( 0 488 64 ) Minecraft-Textures/clay 0 0 0 0.5 0.5 0 0 0
+( 56 512 64 ) ( -8 512 64 ) ( 56 512 0 ) Minecraft-Textures/clay 0 0 0 0.5 0.5 0 0 0
+( 64 488 64 ) ( 64 488 0 ) ( 64 480 64 ) Minecraft-Textures/clay -0 0 0 0.5 0.5 0 0 0
+( 0 480 0 ) ( 64 480 0 ) ( 0 488 0 ) Minecraft-Textures/clay 0 0 0 0.5 0.5 0 0 0
+( 0 448 0 ) ( 0 448 64 ) ( 64 448 0 ) Minecraft-Textures/clay 0 0 0 0.5 0.5 0 0 0
+( 0 480 0 ) ( 0 488 0 ) ( 0 480 64 ) Minecraft-Textures/clay -0 0 0 0.5 0.5 0 0 0
+}
+// brush 14
+{
+( 128 488 64 ) ( 128 480 64 ) ( 64 488 64 ) Minecraft-Textures/coal -0 0 0 1 1 0 0 0
+( 120 512 64 ) ( 56 512 64 ) ( 120 512 0 ) Minecraft-Textures/coal -0 0 0 1 1 0 0 0
+( 128 488 64 ) ( 128 488 0 ) ( 128 480 64 ) Minecraft-Textures/coal -0 0 0 1 1 0 0 0
+( 64 480 0 ) ( 128 480 0 ) ( 64 488 0 ) Minecraft-Textures/coal -0 0 0 1 1 0 0 0
+( 64 448 0 ) ( 64 448 64 ) ( 128 448 0 ) Minecraft-Textures/coal -0 0 0 1 1 0 0 0
+( 64 480 0 ) ( 64 488 0 ) ( 64 480 64 ) Minecraft-Textures/coal -0 0 0 1 1 0 0 0
+}
+// brush 15
+{
+( 192 488 64 ) ( 192 480 64 ) ( 128 488 64 ) Minecraft-Textures/diamond -0 0 0 1 1 0 0 0
+( 184 512 64 ) ( 120 512 64 ) ( 184 512 0 ) Minecraft-Textures/diamond -0 0 0 1 1 0 0 0
+( 192 488 64 ) ( 192 488 0 ) ( 192 480 64 ) Minecraft-Textures/diamond -0 0 0 1 1 0 0 0
+( 128 480 0 ) ( 192 480 0 ) ( 128 488 0 ) Minecraft-Textures/diamond -0 0 0 1 1 0 0 0
+( 128 448 0 ) ( 128 448 64 ) ( 192 448 0 ) Minecraft-Textures/diamond -0 0 0 1 1 0 0 0
+( 128 480 0 ) ( 128 488 0 ) ( 128 480 64 ) Minecraft-Textures/diamond -0 0 0 1 1 0 0 0
+}
+// brush 16
+{
+( 256 488 64 ) ( 256 480 64 ) ( 192 488 64 ) Minecraft-Textures/dirt -0 0 0 1 1 0 0 0
+( 248 512 64 ) ( 184 512 64 ) ( 248 512 0 ) Minecraft-Textures/dirt -0 0 0 1 1 0 0 0
+( 256 488 64 ) ( 256 488 0 ) ( 256 480 64 ) Minecraft-Textures/dirt -0 0 0 1 1 0 0 0
+( 192 480 0 ) ( 256 480 0 ) ( 192 488 0 ) Minecraft-Textures/dirt -0 0 0 1 1 0 0 0
+( 192 448 0 ) ( 192 448 64 ) ( 256 448 0 ) Minecraft-Textures/dirt -0 0 0 1 1 0 0 0
+( 192 480 0 ) ( 192 488 0 ) ( 192 480 64 ) Minecraft-Textures/dirt -0 0 0 1 1 0 0 0
+}
+// brush 17
+{
+( 320 488 64 ) ( 320 480 64 ) ( 256 488 64 ) Minecraft-Textures/glass -0 0 0 0.5 0.5 0 0 0
+( 312 512 64 ) ( 248 512 64 ) ( 312 512 0 ) Minecraft-Textures/glass -0 0 0 0.5 0.5 0 0 0
+( 320 488 64 ) ( 320 488 0 ) ( 320 480 64 ) Minecraft-Textures/glass -0 0 0 0.5 0.5 0 0 0
+( 256 480 0 ) ( 320 480 0 ) ( 256 488 0 ) Minecraft-Textures/glass -0 0 0 0.5 0.5 0 0 0
+( 256 448 0 ) ( 256 448 64 ) ( 320 448 0 ) Minecraft-Textures/glass -0 0 0 0.5 0.5 0 0 0
+( 256 480 0 ) ( 256 488 0 ) ( 256 480 64 ) Minecraft-Textures/glass -0 0 0 0.5 0.5 0 0 0
+}
+// brush 18
+{
+( 384 488 64 ) ( 384 480 64 ) ( 320 488 64 ) Minecraft-Textures/gold -0 0 0 1 1 0 0 0
+( 376 512 64 ) ( 312 512 64 ) ( 376 512 0 ) Minecraft-Textures/gold -0 0 0 1 1 0 0 0
+( 384 488 64 ) ( 384 488 0 ) ( 384 480 64 ) Minecraft-Textures/gold -0 0 0 1 1 0 0 0
+( 320 480 0 ) ( 384 480 0 ) ( 320 488 0 ) Minecraft-Textures/gold -0 0 0 1 1 0 0 0
+( 320 448 0 ) ( 320 448 64 ) ( 384 448 0 ) Minecraft-Textures/gold -0 0 0 1 1 0 0 0
+( 320 480 0 ) ( 320 488 0 ) ( 320 480 64 ) Minecraft-Textures/gold -0 0 0 1 1 0 0 0
+}
+// brush 19
+{
+( 448 488 64 ) ( 448 480 64 ) ( 384 488 64 ) Minecraft-Textures/gravel -0 0 0 1 1 0 0 0
+( 440 512 64 ) ( 376 512 64 ) ( 440 512 0 ) Minecraft-Textures/gravel -0 0 0 1 1 0 0 0
+( 448 488 64 ) ( 448 488 0 ) ( 448 480 64 ) Minecraft-Textures/gravel -0 0 0 1 1 0 0 0
+( 384 480 0 ) ( 448 480 0 ) ( 384 488 0 ) Minecraft-Textures/gravel -0 0 0 1 1 0 0 0
+( 384 448 0 ) ( 384 448 64 ) ( 448 448 0 ) Minecraft-Textures/gravel -0 0 0 1 1 0 0 0
+( 384 480 0 ) ( 384 488 0 ) ( 384 480 64 ) Minecraft-Textures/gravel -0 0 0 1 1 0 0 0
+}
+// brush 20
+{
+( 512 424 64 ) ( 512 416 64 ) ( 448 424 64 ) Minecraft-Textures/ice -0 0 0 1 1 0 0 0
+( 504 448 64 ) ( 440 448 64 ) ( 504 448 0 ) Minecraft-Textures/ice -0 0 0 1 1 0 0 0
+( 512 424 64 ) ( 512 424 0 ) ( 512 416 64 ) Minecraft-Textures/ice -0 0 0 1 1 0 0 0
+( 448 416 0 ) ( 512 416 0 ) ( 448 424 0 ) Minecraft-Textures/ice -0 0 0 1 1 0 0 0
+( 448 384 0 ) ( 448 384 64 ) ( 512 384 0 ) Minecraft-Textures/ice -0 0 0 1 1 0 0 0
+( 448 416 0 ) ( 448 424 0 ) ( 448 416 64 ) Minecraft-Textures/ice -0 0 0 1 1 0 0 0
+}
+// brush 21
+{
+( 512 360 64 ) ( 512 352 64 ) ( 448 360 64 ) Minecraft-Textures/iron -0 0 0 1 1 0 0 0
+( 504 384 64 ) ( 440 384 64 ) ( 504 384 0 ) Minecraft-Textures/iron -0 0 0 1 1 0 0 0
+( 512 360 64 ) ( 512 360 0 ) ( 512 352 64 ) Minecraft-Textures/iron -0 0 0 1 1 0 0 0
+( 448 352 0 ) ( 512 352 0 ) ( 448 360 0 ) Minecraft-Textures/iron -0 0 0 1 1 0 0 0
+( 448 320 0 ) ( 448 320 64 ) ( 512 320 0 ) Minecraft-Textures/iron -0 0 0 1 1 0 0 0
+( 448 352 0 ) ( 448 360 0 ) ( 448 352 64 ) Minecraft-Textures/iron -0 0 0 1 1 0 0 0
+}
+// brush 22
+{
+( 512 296 64 ) ( 512 288 64 ) ( 448 296 64 ) Minecraft-Textures/ladder -0 0 0 0.5 0.5 0 0 0
+( 504 320 64 ) ( 440 320 64 ) ( 504 320 0 ) Minecraft-Textures/ladder -0 0 0 0.5 0.5 0 0 0
+( 512 296 64 ) ( 512 296 0 ) ( 512 288 64 ) Minecraft-Textures/ladder -0 0 0 0.5 0.5 0 0 0
+( 448 288 0 ) ( 512 288 0 ) ( 448 296 0 ) Minecraft-Textures/ladder -0 0 0 0.5 0.5 0 0 0
+( 448 256 0 ) ( 448 256 64 ) ( 512 256 0 ) Minecraft-Textures/ladder -0 0 0 0.5 0.5 0 0 0
+( 448 288 0 ) ( 448 296 0 ) ( 448 288 64 ) Minecraft-Textures/ladder -0 0 0 0.5 0.5 0 0 0
+}
+// brush 23
+{
+( 512 232 64 ) ( 512 224 64 ) ( 448 232 64 ) Minecraft-Textures/obsidian -0 0 0 1 1 0 0 0
+( 504 256 64 ) ( 440 256 64 ) ( 504 256 0 ) Minecraft-Textures/obsidian -0 0 0 1 1 0 0 0
+( 512 232 64 ) ( 512 232 0 ) ( 512 224 64 ) Minecraft-Textures/obsidian -0 0 0 1 1 0 0 0
+( 448 224 0 ) ( 512 224 0 ) ( 448 232 0 ) Minecraft-Textures/obsidian -0 0 0 1 1 0 0 0
+( 448 192 0 ) ( 448 192 64 ) ( 512 192 0 ) Minecraft-Textures/obsidian -0 0 0 1 1 0 0 0
+( 448 224 0 ) ( 448 232 0 ) ( 448 224 64 ) Minecraft-Textures/obsidian -0 0 0 1 1 0 0 0
+}
+// brush 24
+{
+( 512 168 64 ) ( 512 160 64 ) ( 448 168 64 ) Minecraft-Textures/planks -0 0 0 0.5 0.5 0 0 0
+( 504 192 64 ) ( 440 192 64 ) ( 504 192 0 ) Minecraft-Textures/planks -0 0 0 0.5 0.5 0 0 0
+( 512 168 64 ) ( 512 168 0 ) ( 512 160 64 ) Minecraft-Textures/planks -0 0 0 0.5 0.5 0 0 0
+( 448 160 0 ) ( 512 160 0 ) ( 448 168 0 ) Minecraft-Textures/planks -0 0 0 0.5 0.5 0 0 0
+( 448 128 0 ) ( 448 128 64 ) ( 512 128 0 ) Minecraft-Textures/planks -0 0 0 0.5 0.5 0 0 0
+( 448 160 0 ) ( 448 168 0 ) ( 448 160 64 ) Minecraft-Textures/planks -0 0 0 0.5 0.5 0 0 0
+}
+// brush 25
+{
+( 512 104 64 ) ( 512 96 64 ) ( 448 104 64 ) Minecraft-Textures/redstone -0 0 0 1 1 0 0 0
+( 504 128 64 ) ( 440 128 64 ) ( 504 128 0 ) Minecraft-Textures/redstone -0 0 0 1 1 0 0 0
+( 512 104 64 ) ( 512 104 0 ) ( 512 96 64 ) Minecraft-Textures/redstone -0 0 0 1 1 0 0 0
+( 448 96 0 ) ( 512 96 0 ) ( 448 104 0 ) Minecraft-Textures/redstone -0 0 0 1 1 0 0 0
+( 448 64 0 ) ( 448 64 64 ) ( 512 64 0 ) Minecraft-Textures/redstone -0 0 0 1 1 0 0 0
+( 448 96 0 ) ( 448 104 0 ) ( 448 96 64 ) Minecraft-Textures/redstone -0 0 0 1 1 0 0 0
+}
+// brush 26
+{
+( 512 40 64 ) ( 512 32 64 ) ( 448 40 64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 504 64 64 ) ( 440 64 64 ) ( 504 64 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 512 40 64 ) ( 512 40 0 ) ( 512 32 64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 448 32 0 ) ( 512 32 0 ) ( 448 40 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 448 0 0 ) ( 448 0 64 ) ( 512 0 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 448 32 0 ) ( 448 40 0 ) ( 448 32 64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 27
+{
+( 512 -24 64 ) ( 512 -32 64 ) ( 448 -24 64 ) Minecraft-Textures/snow -0 0 0 0.5 0.5 0 0 0
+( 504 0 64 ) ( 440 0 64 ) ( 504 0 0 ) Minecraft-Textures/snow -0 0 0 0.5 0.5 0 0 0
+( 512 -24 64 ) ( 512 -24 0 ) ( 512 -32 64 ) Minecraft-Textures/snow -0 0 0 0.5 0.5 0 0 0
+( 448 -32 0 ) ( 512 -32 0 ) ( 448 -24 0 ) Minecraft-Textures/snow -0 0 0 0.5 0.5 0 0 0
+( 448 -64 0 ) ( 448 -64 64 ) ( 512 -64 0 ) Minecraft-Textures/snow -0 0 0 0.5 0.5 0 0 0
+( 448 -32 0 ) ( 448 -24 0 ) ( 448 -32 64 ) Minecraft-Textures/snow -0 0 0 0.5 0.5 0 0 0
+}
+// brush 28
+{
+( 512 -88 64 ) ( 512 -96 64 ) ( 448 -88 64 ) Minecraft-Textures/stone -0 0 0 1 1 0 0 0
+( 504 -64 64 ) ( 440 -64 64 ) ( 504 -64 0 ) Minecraft-Textures/stone -0 0 0 1 1 0 0 0
+( 512 -88 64 ) ( 512 -88 0 ) ( 512 -96 64 ) Minecraft-Textures/stone -0 0 0 1 1 0 0 0
+( 448 -96 0 ) ( 512 -96 0 ) ( 448 -88 0 ) Minecraft-Textures/stone -0 0 0 1 1 0 0 0
+( 448 -128 0 ) ( 448 -128 64 ) ( 512 -128 0 ) Minecraft-Textures/stone -0 0 0 1 1 0 0 0
+( 448 -96 0 ) ( 448 -88 0 ) ( 448 -96 64 ) Minecraft-Textures/stone -0 0 0 1 1 0 0 0
+}
+// brush 29
+{
+( 512 -152 64 ) ( 512 -160 64 ) ( 448 -152 64 ) Minecraft-Textures/tnt-top -0 -0 0 0.5 0.5 0 0 0
+( 504 -128 64 ) ( 440 -128 64 ) ( 504 -128 0 ) Minecraft-Textures/tnt-side -0 0 0 0.5 0.5 0 0 0
+( 512 -152 64 ) ( 512 -152 0 ) ( 512 -160 64 ) Minecraft-Textures/tnt-side 0 0 0 0.5 0.5 0 0 0
+( 448 -160 0 ) ( 512 -160 0 ) ( 448 -152 0 ) Minecraft-Textures/tnt-bottom -0 -0 0 0.5 0.5 0 0 0
+( 448 -192 0 ) ( 448 -192 64 ) ( 512 -192 0 ) Minecraft-Textures/tnt-side -0 0 0 0.5 0.5 0 0 0
+( 448 -160 0 ) ( 448 -152 0 ) ( 448 -160 64 ) Minecraft-Textures/tnt-side 0 0 0 0.5 0.5 0 0 0
+}
+// brush 30
+{
+( 512 -216 64 ) ( 512 -224 64 ) ( 448 -216 64 ) Minecraft-Textures/tree-top -0 -0 0 0.5 0.5 0 0 0
+( 504 -192 64 ) ( 440 -192 64 ) ( 504 -192 0 ) Minecraft-Textures/tree-side -0 0 0 0.5 0.5 0 0 0
+( 512 -216 64 ) ( 512 -216 0 ) ( 512 -224 64 ) Minecraft-Textures/tree-side 0 0 0 0.5 0.5 0 0 0
+( 448 -224 0 ) ( 512 -224 0 ) ( 448 -216 0 ) Minecraft-Textures/tree-top -0 -0 0 0.5 0.5 0 0 0
+( 448 -256 0 ) ( 448 -256 64 ) ( 512 -256 0 ) Minecraft-Textures/tree-side -0 0 0 0.5 0.5 0 0 0
+( 448 -224 0 ) ( 448 -216 0 ) ( 448 -224 64 ) Minecraft-Textures/tree-side 0 0 0 0.5 0.5 0 0 0
+}
+// brush 31
+{
+( 512 488 64 ) ( 512 480 64 ) ( 448 488 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( 504 512 64 ) ( 440 512 64 ) ( 504 512 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 512 488 64 ) ( 512 488 0 ) ( 512 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 448 480 0 ) ( 512 480 0 ) ( 448 488 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 448 448 0 ) ( 448 448 64 ) ( 512 448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 448 480 0 ) ( 448 488 0 ) ( 448 480 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 32
+{
+( 512 488 128 ) ( 512 480 128 ) ( 448 488 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( 504 512 128 ) ( 440 512 128 ) ( 504 512 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 512 488 128 ) ( 512 488 64 ) ( 512 480 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 448 480 64 ) ( 512 480 64 ) ( 448 488 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 448 448 64 ) ( 448 448 128 ) ( 512 448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 448 480 64 ) ( 448 488 64 ) ( 448 480 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 33
+{
+( -424 -448 128 ) ( -416 -448 128 ) ( -424 -512 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -448 -456 128 ) ( -448 -520 128 ) ( -448 -456 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -424 -448 128 ) ( -424 -448 64 ) ( -416 -448 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -416 -512 64 ) ( -416 -448 64 ) ( -424 -512 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 -512 64 ) ( -384 -512 128 ) ( -384 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -416 -512 64 ) ( -424 -512 64 ) ( -416 -512 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 34
+{
+( -360 -448 64 ) ( -352 -448 64 ) ( -360 -512 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -384 -456 64 ) ( -384 -520 64 ) ( -384 -456 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -360 -448 64 ) ( -360 -448 0 ) ( -352 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -352 -512 0 ) ( -352 -448 0 ) ( -360 -512 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -320 -512 0 ) ( -320 -512 64 ) ( -320 -448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -352 -512 0 ) ( -360 -512 0 ) ( -352 -512 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 35
+{
+( -488 -320 64 ) ( -480 -320 64 ) ( -488 -384 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -512 -328 64 ) ( -512 -392 64 ) ( -512 -328 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -488 -320 64 ) ( -488 -320 0 ) ( -480 -320 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -384 0 ) ( -480 -320 0 ) ( -488 -384 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 -384 0 ) ( -448 -384 64 ) ( -448 -320 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -384 0 ) ( -488 -384 0 ) ( -480 -384 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 36
+{
+( -488 -448 128 ) ( -480 -448 128 ) ( -488 -512 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -512 -456 128 ) ( -512 -520 128 ) ( -512 -456 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -488 -448 128 ) ( -488 -448 64 ) ( -480 -448 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -512 64 ) ( -480 -448 64 ) ( -488 -512 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 -512 64 ) ( -448 -512 128 ) ( -448 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -512 64 ) ( -488 -512 64 ) ( -480 -512 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 37
+{
+( -488 -384 128 ) ( -480 -384 128 ) ( -488 -448 128 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -512 -392 128 ) ( -512 -456 128 ) ( -512 -392 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -488 -384 128 ) ( -488 -384 64 ) ( -480 -384 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -448 64 ) ( -480 -384 64 ) ( -488 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 -448 64 ) ( -448 -448 128 ) ( -448 -384 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -448 64 ) ( -488 -448 64 ) ( -480 -448 128 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 38
+{
+( -424 -384 64 ) ( -416 -384 64 ) ( -424 -448 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -448 -392 64 ) ( -448 -456 64 ) ( -448 -392 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -424 -384 64 ) ( -424 -384 0 ) ( -416 -384 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -416 -448 0 ) ( -416 -384 0 ) ( -424 -448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 -448 0 ) ( -384 -448 64 ) ( -384 -384 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -416 -448 0 ) ( -424 -448 0 ) ( -416 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 39
+{
+( -448 168 64 ) ( -448 160 64 ) ( -512 168 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 192 64 ) ( -520 192 64 ) ( -456 192 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 168 64 ) ( -448 168 0 ) ( -448 160 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 160 0 ) ( -448 160 0 ) ( -512 168 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 128 0 ) ( -512 128 64 ) ( -448 128 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 160 0 ) ( -512 168 0 ) ( -512 160 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 40
+{
+( -448 104 64 ) ( -448 96 64 ) ( -512 104 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 128 64 ) ( -520 128 64 ) ( -456 128 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 104 64 ) ( -448 104 0 ) ( -448 96 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 96 0 ) ( -448 96 0 ) ( -512 104 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 64 0 ) ( -512 64 64 ) ( -448 64 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 96 0 ) ( -512 104 0 ) ( -512 96 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 41
+{
+( -448 40 64 ) ( -448 32 64 ) ( -512 40 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 64 64 ) ( -520 64 64 ) ( -456 64 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 40 64 ) ( -448 40 0 ) ( -448 32 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 32 0 ) ( -448 32 0 ) ( -512 40 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 0 0 ) ( -512 0 64 ) ( -448 0 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 32 0 ) ( -512 40 0 ) ( -512 32 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 42
+{
+( -384 104 64 ) ( -384 96 64 ) ( -448 104 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -392 128 64 ) ( -456 128 64 ) ( -392 128 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 104 64 ) ( -384 104 0 ) ( -384 96 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 96 0 ) ( -384 96 0 ) ( -448 104 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 64 0 ) ( -448 64 64 ) ( -384 64 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 96 0 ) ( -448 104 0 ) ( -448 96 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 43
+{
+( 192 -280 0 ) ( 192 -288 0 ) ( 128 -280 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -256 0 ) ( 120 -256 0 ) ( 184 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -280 0 ) ( 192 -280 -64 ) ( 192 -288 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -288 -64 ) ( 192 -288 -64 ) ( 128 -280 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -320 -64 ) ( 128 -320 0 ) ( 192 -320 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -288 -64 ) ( 128 -280 -64 ) ( 128 -288 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 44
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( 512 -472 0 ) ( 512 -472 -64 ) ( 512 -480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( 448 -512 -64 ) ( 448 -512 0 ) ( 512 -512 -64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 184 -256 0 ) ( 120 -256 0 ) ( 184 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -288 0 ) ( 192 -280 -64 ) ( 192 -280 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 45
+{
+( 128 -280 0 ) ( 128 -288 0 ) ( 64 -280 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 120 -256 0 ) ( 56 -256 0 ) ( 120 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -280 0 ) ( 128 -280 -64 ) ( 128 -288 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -288 -64 ) ( 128 -288 -64 ) ( 64 -280 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -320 -64 ) ( 64 -320 0 ) ( 128 -320 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -288 -64 ) ( 64 -280 -64 ) ( 64 -288 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 46
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -512 480 -64 ) ( -512 488 -64 ) ( -512 480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 184 -256 0 ) ( 120 -256 0 ) ( 184 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -320 -64 ) ( 128 -320 0 ) ( 192 -320 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -288 0 ) ( 64 -280 -64 ) ( 64 -288 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 47
+{
+( 192 -216 0 ) ( 192 -224 0 ) ( 128 -216 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -192 0 ) ( 120 -192 0 ) ( 184 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -216 0 ) ( 192 -216 -64 ) ( 192 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -224 -64 ) ( 192 -224 -64 ) ( 128 -216 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -256 -64 ) ( 128 -256 0 ) ( 192 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -224 -64 ) ( 128 -216 -64 ) ( 128 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 48
+{
+( 192 -344 0 ) ( 192 -352 0 ) ( 128 -344 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -320 0 ) ( 120 -320 0 ) ( 184 -320 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -344 0 ) ( 192 -344 -64 ) ( 192 -352 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -352 -64 ) ( 192 -352 -64 ) ( 128 -344 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -384 -64 ) ( 128 -384 0 ) ( 192 -384 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -352 -64 ) ( 128 -344 -64 ) ( 128 -352 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 49
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( 448 -512 -64 ) ( 448 -512 0 ) ( 512 -512 -64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -512 480 -64 ) ( -512 488 -64 ) ( -512 480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 192 -280 0 ) ( 192 -280 -64 ) ( 192 -288 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -384 -64 ) ( 128 -384 0 ) ( 128 -384 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 50
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -512 480 -64 ) ( -512 488 -64 ) ( -512 480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 192 -320 -64 ) ( 128 -320 0 ) ( 128 -320 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -384 -64 ) ( 128 -384 0 ) ( 192 -384 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -352 0 ) ( 128 -344 -64 ) ( 128 -352 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 51
+{
+( 128 -216 0 ) ( 128 -224 0 ) ( 64 -216 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 120 -192 0 ) ( 56 -192 0 ) ( 120 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -216 0 ) ( 128 -216 -64 ) ( 128 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -224 -64 ) ( 128 -224 -64 ) ( 64 -216 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -256 -64 ) ( 64 -256 0 ) ( 128 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -224 -64 ) ( 64 -216 -64 ) ( 64 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 52
+{
+( 64 -216 0 ) ( 64 -224 0 ) ( 0 -216 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 56 -192 0 ) ( -8 -192 0 ) ( 56 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -216 0 ) ( 64 -216 -64 ) ( 64 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 0 -224 -64 ) ( 64 -224 -64 ) ( 0 -216 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 0 -256 -64 ) ( 0 -256 0 ) ( 64 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 0 -224 -64 ) ( 0 -216 -64 ) ( 0 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 53
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -512 480 -64 ) ( -512 488 -64 ) ( -512 480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 184 -256 -64 ) ( 120 -256 0 ) ( 184 -256 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -192 0 ) ( 120 -192 0 ) ( 184 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 0 -224 0 ) ( 0 -216 -64 ) ( 0 -224 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 54
+{
+( 256 -216 0 ) ( 256 -224 0 ) ( 192 -216 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 248 -192 0 ) ( 184 -192 0 ) ( 248 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 256 -216 0 ) ( 256 -216 -64 ) ( 256 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -224 -64 ) ( 256 -224 -64 ) ( 192 -216 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -256 -64 ) ( 192 -256 0 ) ( 256 -256 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -224 -64 ) ( 192 -216 -64 ) ( 192 -224 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 55
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( 512 -472 0 ) ( 512 -472 -64 ) ( 512 -480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( 184 -256 -64 ) ( 120 -256 0 ) ( 184 -256 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -192 0 ) ( 120 -192 0 ) ( 184 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 256 -224 0 ) ( 256 -216 -64 ) ( 256 -216 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 56
+{
+( 192 -152 0 ) ( 192 -160 0 ) ( 128 -152 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -128 0 ) ( 120 -128 0 ) ( 184 -128 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -152 0 ) ( 192 -152 -64 ) ( 192 -160 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -160 -64 ) ( 192 -160 -64 ) ( 128 -152 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -192 -64 ) ( 128 -192 0 ) ( 192 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -160 -64 ) ( 128 -152 -64 ) ( 128 -160 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 57
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -456 512 0 ) ( -520 512 0 ) ( -456 512 -64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 512 -472 0 ) ( 512 -472 -64 ) ( 512 -480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -512 480 -64 ) ( -512 488 -64 ) ( -512 480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 184 -128 -64 ) ( 120 -128 0 ) ( 184 -128 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 58
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( 512 -472 0 ) ( 512 -472 -64 ) ( 512 -480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( 184 -192 -64 ) ( 120 -192 0 ) ( 184 -192 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -128 0 ) ( 120 -128 0 ) ( 184 -128 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 192 -160 0 ) ( 192 -152 -64 ) ( 192 -152 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 59
+{
+( 128 -152 0 ) ( 128 -160 0 ) ( 64 -152 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 120 -128 0 ) ( 56 -128 0 ) ( 120 -128 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 128 -152 0 ) ( 128 -152 -64 ) ( 128 -160 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -160 -64 ) ( 128 -160 -64 ) ( 64 -152 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -192 -64 ) ( 64 -192 0 ) ( 128 -192 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -160 -64 ) ( 64 -152 -64 ) ( 64 -160 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 60
+{
+( 0 40 0 ) ( 0 32 0 ) ( -64 40 0 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -64 32 -64 ) ( 0 32 -64 ) ( -64 40 -64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -512 480 -64 ) ( -512 488 -64 ) ( -512 480 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( 184 -192 -64 ) ( 120 -192 0 ) ( 184 -192 0 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 184 -128 0 ) ( 120 -128 0 ) ( 184 -128 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+( 64 -160 0 ) ( 64 -152 -64 ) ( 64 -160 -64 ) Minecraft-Textures/sand -0 0 0 1 1 0 0 0
+}
+// brush 61
+{
+( -488 -448 64 ) ( -480 -448 64 ) ( -488 -512 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -512 -456 64 ) ( -512 -520 64 ) ( -512 -456 0 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -488 -448 64 ) ( -488 -448 0 ) ( -480 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -512 0 ) ( -480 -448 0 ) ( -488 -512 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 -512 0 ) ( -448 -512 64 ) ( -448 -448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -512 0 ) ( -488 -512 0 ) ( -480 -512 64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+}
+// brush 62
+{
+( -488 -384 64 ) ( -480 -384 64 ) ( -488 -448 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -512 -392 64 ) ( -512 -456 64 ) ( -512 -392 0 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+( -488 -384 64 ) ( -488 -384 0 ) ( -480 -384 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -448 0 ) ( -480 -384 0 ) ( -488 -448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -448 -448 0 ) ( -448 -448 64 ) ( -448 -384 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -480 -448 0 ) ( -488 -448 0 ) ( -480 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+}
+// brush 63
+{
+( -424 -448 64 ) ( -416 -448 64 ) ( -424 -512 64 ) Minecraft-Textures/grass-top 0 0 0 1 1 0 0 0
+( -448 -456 64 ) ( -448 -520 64 ) ( -448 -456 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -424 -448 64 ) ( -424 -448 0 ) ( -416 -448 64 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -416 -512 0 ) ( -416 -448 0 ) ( -424 -512 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -384 -512 0 ) ( -384 -512 64 ) ( -384 -448 0 ) Minecraft-Textures/grass-side 0 0 0 1 1 0 0 0
+( -416 -512 0 ) ( -424 -512 0 ) ( -416 -512 64 ) Minecraft-Textures/dirt 0 0 0 1 1 0 0 0
+}
+}
+// entity 1
+{
+"classname" "info_player_deathmatch"
+"origin" "-248 472 0"
+}
+// entity 2
+{
+"classname" "light"
+"origin" "416 104 32"
+"light" "100"
+"_color" "1 0 0"
+}
+// entity 3
+{
+"classname" "light"
+"origin" "480 104 96"
+"light" "100"
+"_color" "1 0 0"
+}
+// entity 4
+{
+"classname" "light"
+"origin" "-328 272 296"
+"light" "1000"
+"_color" "1 1 1"
+}
+// entity 5
+{
+"classname" "light"
+"origin" "272 272 296"
+"light" "1000"
+"_color" "1 1 1"
+}
+// entity 6
+{
+"classname" "light"
+"origin" "240 -328 296"
+"light" "1000"
+"_color" "1 1 1"
+}
+// entity 7
+{
+"classname" "light"
+"origin" "-312 -320 296"
+"light" "1000"
+"_color" "1 1 1"
+}
