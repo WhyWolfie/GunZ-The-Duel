@@ -118,6 +118,8 @@ GunZ The Duel Releases <br>
 - show my own ping at scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping
 - clan close fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix
 - clan/quest/survival: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix
+- adding effect combo: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo
+
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
