@@ -119,6 +119,7 @@ GunZ The Duel Releases <br>
 - clan/quest/survival: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix
 - adding effect combo: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo
 - gunz patches: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library
+- optimize windowed mode fps: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/optimize%20windowed%20mode%20fps
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
