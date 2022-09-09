@@ -117,6 +117,7 @@ GunZ The Duel Releases <br>
 - instant login: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20login
 - show my own ping at scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping
 - clan close fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix
+- clan/quest/survival: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
