@@ -1,0 +1,3349 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -64 -1032 0 ) ( 64 -1024 0 ) ( 64 -1032 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( -168 -1024 -64 ) ( -296 -1024 0 ) ( -168 -1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 -1024 0 ) ( 1024 -512 0 ) ( 1024 -512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -56 -1032 -512 ) ( 72 -1024 -512 ) ( -56 -1024 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 -512 0 ) ( 1024 -512 -128 ) ( 1024 -512 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( -512 -1024 -128 ) ( -1024 -512 -128 ) ( -1024 -512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( 512 -1008 0 ) ( 512 -1552 0 ) ( -504 -1008 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 504 -1024 0 ) ( -512 -1024 0 ) ( 504 -1024 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 8 -1536 -128 ) ( 8 -1536 0 ) ( 512 -1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -496 -1552 -512 ) ( 520 -1552 -512 ) ( -496 -1008 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 8 -1536 0 ) ( 8 -1536 -128 ) ( -8 -1536 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -8 -1536 0 ) ( -8 -1536 -128 ) ( -512 -1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( 64 1544 0 ) ( 64 1536 0 ) ( -64 1544 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( -168 1536 0 ) ( -296 1536 0 ) ( -168 1536 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 -128 ) ( 1024 1024 0 ) ( 512 1536 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -56 1536 -512 ) ( 72 1536 -512 ) ( -56 1544 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 0 ) ( 1024 1024 -128 ) ( -1024 1024 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( -1024 1024 -128 ) ( -512 1536 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 3
+{
+( -504 1520 0 ) ( 512 2064 0 ) ( 512 1520 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 504 1536 -128 ) ( -512 1536 0 ) ( 504 1536 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 1536 0 ) ( 8 2048 0 ) ( 8 2048 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -496 1520 -512 ) ( 520 2064 -512 ) ( -496 2064 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -8 2048 0 ) ( 8 2048 -128 ) ( 8 2048 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 1536 0 ) ( -8 2048 -128 ) ( -8 2048 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( 64 8 0 ) ( 64 0 0 ) ( -64 8 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( -168 0 0 ) ( -296 0 0 ) ( -168 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 -512 -128 ) ( 1024 -512 0 ) ( 512 0 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 -512 0 ) ( 1024 -512 -128 ) ( -1024 -512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 -512 0 ) ( -1024 -512 -128 ) ( -512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -8 ) ( 448 -520 -8 ) ( 448 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( -168 0 0 ) ( -296 0 0 ) ( -168 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 -512 -128 ) ( 1024 -512 0 ) ( 512 0 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -56 0 -512 ) ( 72 0 -512 ) ( -56 8 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 -512 0 ) ( 1024 -512 -128 ) ( -1024 -512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 -8 ) ( 448 -520 -8 ) ( -464 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 -520 0 ) ( 448 768 -512 ) ( 448 768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 6
+{
+( -168 0 0 ) ( -296 0 0 ) ( -168 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -56 0 -512 ) ( 72 0 -512 ) ( -56 8 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 -512 0 ) ( 1024 -512 -128 ) ( -1024 -512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 -512 0 ) ( -1024 -512 -128 ) ( -512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 0 ) ( 448 768 -512 ) ( 448 -520 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -448 ) ( 448 -520 -448 ) ( -464 -520 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 7
+{
+( -168 0 0 ) ( -296 0 0 ) ( -168 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1024 -512 0 ) ( 1024 -512 -128 ) ( -1024 -512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 -512 0 ) ( -1024 -512 -128 ) ( -512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 -8 ) ( 448 -520 -8 ) ( -464 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 -448 ) ( 448 -520 -448 ) ( -464 768 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 0 ) ( -464 768 -512 ) ( -464 -520 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 8
+{
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -496 -16 -512 ) ( 520 -16 -512 ) ( -496 528 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 -16 -128 ) ( -512 528 -128 ) ( -512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 0 ) ( 448 768 -512 ) ( 448 -520 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -448 ) ( 448 -520 -448 ) ( -464 -520 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( -64 504 0 ) ( 64 512 0 ) ( 64 504 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( -168 512 -64 ) ( -296 512 0 ) ( -168 512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 512 0 ) ( 1024 1024 0 ) ( 1024 1024 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( 1024 1024 -128 ) ( 1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 512 -128 ) ( -1024 1024 -128 ) ( -1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -8 ) ( 448 -520 -8 ) ( 448 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( -168 512 -64 ) ( -296 512 0 ) ( -168 512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 512 0 ) ( 1024 1024 0 ) ( 1024 1024 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -56 504 -512 ) ( 72 512 -512 ) ( -56 512 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( 1024 1024 -128 ) ( 1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 -8 ) ( 448 -520 -8 ) ( -464 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 -520 0 ) ( 448 768 -512 ) ( 448 768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( -168 512 -64 ) ( -296 512 0 ) ( -168 512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -56 504 -512 ) ( 72 512 -512 ) ( -56 512 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( 1024 1024 -128 ) ( 1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 512 -128 ) ( -1024 1024 -128 ) ( -1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 0 ) ( 448 768 -512 ) ( 448 -520 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -448 ) ( 448 -520 -448 ) ( -464 -520 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 12
+{
+( -168 512 -64 ) ( -296 512 0 ) ( -168 512 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( 1024 1024 -128 ) ( 1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 512 -128 ) ( -1024 1024 -128 ) ( -1024 1024 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 -8 ) ( 448 -520 -8 ) ( -464 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 -448 ) ( 448 -520 -448 ) ( -464 768 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 0 ) ( -464 768 -512 ) ( -464 -520 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 13
+{
+( 512 528 0 ) ( 512 -16 0 ) ( -504 528 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 528 0 ) ( 512 528 -128 ) ( 512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -8 ) ( 448 -520 -8 ) ( 448 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 192 0 264 ) ( 192 512 0 ) ( 192 512 264 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 14
+{
+( 512 528 0 ) ( 512 -16 0 ) ( -504 528 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 -16 -128 ) ( -512 528 -128 ) ( -512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 768 -8 ) ( 448 -520 -8 ) ( 448 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -192 0 264 ) ( -192 512 0 ) ( -192 0 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 15
+{
+( 192 512 0 ) ( 192 496 0 ) ( -192 512 0 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 512 0 ) ( -192 512 0 ) ( 192 512 -24 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 512 0 ) ( 192 512 -24 ) ( 192 496 0 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 488 -448 ) ( 192 488 -448 ) ( -192 504 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 480 -24 ) ( -192 480 0 ) ( 192 480 -24 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 496 -24 ) ( -192 512 -24 ) ( -192 496 0 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 16
+{
+( 192 480 -32 ) ( 192 464 -32 ) ( -192 480 -32 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 480 -32 ) ( -192 480 -32 ) ( 192 480 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 480 -32 ) ( 192 480 -56 ) ( 192 464 -32 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 456 -64 ) ( 192 456 -64 ) ( -192 472 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 448 -56 ) ( -192 448 -32 ) ( 192 448 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 464 -56 ) ( -192 480 -56 ) ( -192 464 -32 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 17
+{
+( 192 448 -64 ) ( 192 432 -64 ) ( -192 448 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 448 -64 ) ( -192 448 -64 ) ( 192 448 -88 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 448 -64 ) ( 192 448 -88 ) ( 192 432 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 424 -96 ) ( 192 424 -96 ) ( -192 440 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 416 -88 ) ( -192 416 -64 ) ( 192 416 -88 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 432 -88 ) ( -192 448 -88 ) ( -192 432 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 18
+{
+( 192 416 -96 ) ( 192 400 -96 ) ( -192 416 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 416 -96 ) ( -192 416 -96 ) ( 192 416 -120 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 416 -96 ) ( 192 416 -120 ) ( 192 400 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 392 -128 ) ( 192 392 -128 ) ( -192 408 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 384 -120 ) ( -192 384 -96 ) ( 192 384 -120 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 400 -120 ) ( -192 416 -120 ) ( -192 400 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 19
+{
+( 192 384 -128 ) ( 192 368 -128 ) ( -192 384 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 384 -128 ) ( -192 384 -128 ) ( 192 384 -152 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 384 -128 ) ( 192 384 -152 ) ( 192 368 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 360 -160 ) ( 192 360 -160 ) ( -192 376 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 352 -152 ) ( -192 352 -128 ) ( 192 352 -152 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 368 -152 ) ( -192 384 -152 ) ( -192 368 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 20
+{
+( 192 352 -160 ) ( 192 336 -160 ) ( -192 352 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 352 -160 ) ( -192 352 -160 ) ( 192 352 -184 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 352 -160 ) ( 192 352 -184 ) ( 192 336 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 328 -192 ) ( 192 328 -192 ) ( -192 344 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 320 -184 ) ( -192 320 -160 ) ( 192 320 -184 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 336 -184 ) ( -192 352 -184 ) ( -192 336 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 21
+{
+( 192 320 -192 ) ( 192 304 -192 ) ( -192 320 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 320 -192 ) ( -192 320 -192 ) ( 192 320 -216 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 320 -192 ) ( 192 320 -216 ) ( 192 304 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 296 -224 ) ( 192 296 -224 ) ( -192 312 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 288 -216 ) ( -192 288 -192 ) ( 192 288 -216 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 304 -216 ) ( -192 320 -216 ) ( -192 304 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 22
+{
+( 192 288 -224 ) ( 192 272 -224 ) ( -192 288 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 288 -224 ) ( -192 288 -224 ) ( 192 288 -248 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 288 -224 ) ( 192 288 -248 ) ( 192 272 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 264 -256 ) ( 192 264 -256 ) ( -192 280 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 256 -248 ) ( -192 256 -224 ) ( 192 256 -248 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 272 -248 ) ( -192 288 -248 ) ( -192 272 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 23
+{
+( 192 256 -256 ) ( 192 240 -256 ) ( -192 256 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 256 -256 ) ( -192 256 -256 ) ( 192 256 -280 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 256 -256 ) ( 192 256 -280 ) ( 192 240 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 232 -288 ) ( 192 232 -288 ) ( -192 248 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 224 -280 ) ( -192 224 -256 ) ( 192 224 -280 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 240 -280 ) ( -192 256 -280 ) ( -192 240 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 24
+{
+( 192 224 -288 ) ( 192 208 -288 ) ( -192 224 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 224 -288 ) ( -192 224 -288 ) ( 192 224 -312 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 224 -288 ) ( 192 224 -312 ) ( 192 208 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 200 -320 ) ( 192 200 -320 ) ( -192 216 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 192 -312 ) ( -192 192 -288 ) ( 192 192 -312 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 208 -312 ) ( -192 224 -312 ) ( -192 208 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 25
+{
+( 192 192 -320 ) ( 192 176 -320 ) ( -192 192 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 192 -320 ) ( -192 192 -320 ) ( 192 192 -344 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 192 -320 ) ( 192 192 -344 ) ( 192 176 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 168 -352 ) ( 192 168 -352 ) ( -192 184 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 160 -344 ) ( -192 160 -320 ) ( 192 160 -344 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 176 -344 ) ( -192 192 -344 ) ( -192 176 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 26
+{
+( 192 160 -352 ) ( 192 144 -352 ) ( -192 160 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 160 -352 ) ( -192 160 -352 ) ( 192 160 -376 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 160 -352 ) ( 192 160 -376 ) ( 192 144 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 136 -384 ) ( 192 136 -384 ) ( -192 152 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 128 -376 ) ( -192 128 -352 ) ( 192 128 -376 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 144 -376 ) ( -192 160 -376 ) ( -192 144 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 27
+{
+( 192 128 -384 ) ( 192 112 -384 ) ( -192 128 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 128 -384 ) ( -192 128 -384 ) ( 192 128 -408 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 128 -384 ) ( 192 128 -408 ) ( 192 112 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 104 -416 ) ( 192 104 -416 ) ( -192 120 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 96 -408 ) ( -192 96 -384 ) ( 192 96 -408 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 112 -408 ) ( -192 128 -408 ) ( -192 112 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 28
+{
+( 192 96 -416 ) ( 192 80 -416 ) ( -192 96 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 96 -416 ) ( -192 96 -416 ) ( 192 96 -440 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 96 -416 ) ( 192 96 -440 ) ( 192 80 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 72 -448 ) ( 192 72 -448 ) ( -192 88 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 64 -440 ) ( -192 64 -416 ) ( 192 64 -440 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 80 -440 ) ( -192 96 -440 ) ( -192 80 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 29
+{
+( 192 512 -56 ) ( 192 464 -56 ) ( -192 512 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 512 -56 ) ( -192 512 -56 ) ( 192 512 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 512 -56 ) ( 192 512 -448 ) ( 192 464 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 64 -448 ) ( 192 64 -448 ) ( 192 512 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 192 56 -448 ) ( -192 56 -448 ) ( -192 456 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( -192 464 -448 ) ( -192 512 -448 ) ( -192 464 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 30
+{
+( 136 512 320 ) ( 136 0 320 ) ( -152 512 320 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 136 512 272 ) ( -152 512 272 ) ( 136 512 8 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 192 512 272 ) ( 192 512 8 ) ( 192 0 272 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( -152 0 8 ) ( -152 0 272 ) ( 136 0 8 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( -192 0 8 ) ( -192 512 8 ) ( -192 0 272 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( -152 512 272 ) ( 136 0 272 ) ( 136 512 272 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+}
+// brush 31
+{
+( 136 512 272 ) ( 136 0 272 ) ( -152 512 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 136 512 272 ) ( -152 512 272 ) ( 136 512 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 192 512 272 ) ( 192 512 8 ) ( 192 0 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -152 0 -8 ) ( 136 0 -8 ) ( -152 512 -8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -152 0 8 ) ( -152 0 272 ) ( 136 0 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 128 0 264 ) ( 128 512 0 ) ( 128 512 264 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+}
+// brush 32
+{
+( 136 512 272 ) ( 136 0 272 ) ( -152 512 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 192 512 272 ) ( 192 512 8 ) ( 192 0 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -152 0 -8 ) ( 136 0 -8 ) ( -152 512 -8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -152 0 8 ) ( -152 0 272 ) ( 136 0 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -192 0 8 ) ( -192 512 8 ) ( -192 0 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 136 64 8 ) ( -152 64 272 ) ( -152 64 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+}
+// brush 33
+{
+( -184 512 272 ) ( -184 0 272 ) ( -472 512 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -184 512 272 ) ( -472 512 272 ) ( -184 512 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -128 512 264 ) ( -128 512 0 ) ( -128 0 264 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -472 0 -8 ) ( -184 0 -8 ) ( -472 512 -8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -472 0 8 ) ( -472 0 272 ) ( -184 0 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( -192 16 272 ) ( -192 528 8 ) ( -192 528 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+}
+// brush 34
+{
+( -128 56 -64 ) ( -128 0 -64 ) ( -192 56 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -128 64 -8 ) ( -192 64 -8 ) ( -128 64 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -128 56 -8 ) ( -128 56 -512 ) ( -128 0 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -200 0 -448 ) ( -136 0 -448 ) ( -200 56 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -192 0 -512 ) ( -192 0 -8 ) ( -128 0 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -192 0 -512 ) ( -192 56 -512 ) ( -192 0 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 35
+{
+( 192 56 -64 ) ( 192 0 -64 ) ( 128 56 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 192 64 -8 ) ( 128 64 -8 ) ( 192 64 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 192 56 -8 ) ( 192 56 -512 ) ( 192 0 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 120 0 -448 ) ( 184 0 -448 ) ( 120 56 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 128 0 -512 ) ( 128 0 -8 ) ( 192 0 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 128 0 -568 ) ( 128 56 -568 ) ( 128 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 36
+{
+( -120 -8 -8 ) ( -200 -8 -8 ) ( -200 72 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -120 72 -8 ) ( -200 72 -8 ) ( -128 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -120 0 -8 ) ( -120 64 -8 ) ( -128 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -192 0 -64 ) ( -128 0 -64 ) ( -192 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -200 -8 -8 ) ( -120 -8 -8 ) ( -128 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -200 64 -8 ) ( -200 0 -8 ) ( -192 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 37
+{
+( 200 -8 -8 ) ( 120 -8 -8 ) ( 120 72 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 200 72 -8 ) ( 120 72 -8 ) ( 192 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 200 0 -8 ) ( 200 64 -8 ) ( 192 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 128 0 -64 ) ( 192 0 -64 ) ( 128 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 120 -8 -8 ) ( 200 -8 -8 ) ( 192 0 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 120 64 -8 ) ( 120 0 -8 ) ( 128 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 38
+{
+( 512 440 -160 ) ( 512 96 -160 ) ( 448 440 -160 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 512 448 -168 ) ( 448 448 -168 ) ( 512 448 -360 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 512 440 -176 ) ( 512 440 -368 ) ( 512 96 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 448 96 -368 ) ( 512 96 -368 ) ( 448 440 -368 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 448 64 -352 ) ( 448 64 -160 ) ( 512 64 -352 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 448 96 -368 ) ( 448 440 -368 ) ( 448 96 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 39
+{
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 528 0 ) ( 512 528 -128 ) ( 512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 -8 ) ( 448 -520 -8 ) ( -464 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 -520 0 ) ( 448 768 -512 ) ( 448 768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 448 440 -160 ) ( 512 96 -160 ) ( 512 440 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 40
+{
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 528 0 ) ( 512 528 -128 ) ( 512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -496 -16 -512 ) ( 520 -16 -512 ) ( -496 528 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 -520 0 ) ( 448 768 -512 ) ( 448 768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 512 440 -160 ) ( 512 96 -160 ) ( 448 440 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 448 -360 ) ( 448 448 -168 ) ( 512 448 -168 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 41
+{
+( 512 528 0 ) ( 512 528 -128 ) ( 512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -496 -16 -512 ) ( 520 -16 -512 ) ( -496 528 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 -520 0 ) ( 448 768 -512 ) ( 448 768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 512 448 -168 ) ( 448 448 -168 ) ( 512 448 -360 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 440 -368 ) ( 512 96 -368 ) ( 448 96 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 42
+{
+( 512 528 0 ) ( 512 528 -128 ) ( 512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 -520 0 ) ( 448 768 -512 ) ( 448 768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 512 440 -160 ) ( 512 96 -160 ) ( 448 440 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 96 -368 ) ( 512 96 -368 ) ( 448 440 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 512 64 -352 ) ( 448 64 -160 ) ( 448 64 -352 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 43
+{
+( -456 440 -160 ) ( -456 96 -160 ) ( -520 440 -160 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -456 448 -168 ) ( -520 448 -168 ) ( -456 448 -360 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -464 440 -176 ) ( -464 440 -368 ) ( -464 96 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -520 96 -368 ) ( -456 96 -368 ) ( -520 440 -368 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -520 64 -352 ) ( -520 64 -160 ) ( -456 64 -352 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -512 96 -368 ) ( -512 440 -368 ) ( -512 96 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 44
+{
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 -16 -128 ) ( -512 528 -128 ) ( -512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 448 768 -8 ) ( 448 -520 -8 ) ( -464 768 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 0 ) ( -464 768 -512 ) ( -464 -520 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( -520 440 -160 ) ( -456 96 -160 ) ( -456 440 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 45
+{
+( 504 512 0 ) ( -512 512 0 ) ( 504 512 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 -16 -128 ) ( -512 528 -128 ) ( -512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 -448 ) ( 448 -520 -448 ) ( -464 768 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 0 ) ( -464 768 -512 ) ( -464 -520 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( -456 440 -160 ) ( -456 96 -160 ) ( -520 440 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -456 448 -360 ) ( -520 448 -168 ) ( -456 448 -168 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 46
+{
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 -16 -128 ) ( -512 528 -128 ) ( -512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 -448 ) ( 448 -520 -448 ) ( -464 768 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 0 ) ( -464 768 -512 ) ( -464 -520 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( -456 448 -168 ) ( -520 448 -168 ) ( -456 448 -360 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -520 440 -368 ) ( -456 96 -368 ) ( -520 96 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 47
+{
+( -504 0 -128 ) ( -504 0 0 ) ( 512 0 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -512 -16 -128 ) ( -512 528 -128 ) ( -512 -16 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -464 -520 0 ) ( -464 768 -512 ) ( -464 -520 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -456 440 -160 ) ( -456 96 -160 ) ( -520 440 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -520 96 -368 ) ( -456 96 -368 ) ( -520 440 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -456 64 -352 ) ( -520 64 -160 ) ( -520 64 -352 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 48
+{
+( 1136 320 0 ) ( 1144 192 0 ) ( 1136 192 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 1144 424 -64 ) ( 1144 552 0 ) ( 1144 424 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1144 -256 0 ) ( 1656 -768 0 ) ( 1656 -768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1136 312 -512 ) ( 1144 184 -512 ) ( 1144 312 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 1280 0 ) ( 1656 -768 -128 ) ( 1656 -768 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 1144 768 -128 ) ( 1656 1280 -128 ) ( 1656 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 49
+{
+( 1160 -256 0 ) ( 616 -256 0 ) ( 1160 760 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 1144 -248 0 ) ( 1144 768 0 ) ( 1144 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 632 248 -128 ) ( 632 248 0 ) ( 1144 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 616 752 -512 ) ( 616 -264 -512 ) ( 1160 752 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 632 248 0 ) ( 632 248 -128 ) ( 632 264 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 632 264 0 ) ( 632 264 -128 ) ( 1144 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 50
+{
+( 3712 192 0 ) ( 3704 192 0 ) ( 3712 320 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 3704 424 0 ) ( 3704 552 0 ) ( 3704 424 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3192 -768 -128 ) ( 3192 -768 0 ) ( 3704 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3704 312 -512 ) ( 3704 184 -512 ) ( 3712 312 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3192 -768 0 ) ( 3192 -768 -128 ) ( 3192 1280 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 3192 1280 0 ) ( 3192 1280 -128 ) ( 3704 768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 51
+{
+( 3688 760 0 ) ( 4232 -256 0 ) ( 3688 -256 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 3704 -248 -128 ) ( 3704 768 0 ) ( 3704 -248 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3704 -256 0 ) ( 4216 248 0 ) ( 4216 248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3688 752 -512 ) ( 4232 -264 -512 ) ( 4232 752 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 4216 264 0 ) ( 4216 248 -128 ) ( 4216 248 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3704 768 0 ) ( 4216 264 -128 ) ( 4216 264 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 52
+{
+( 2176 192 0 ) ( 2168 192 0 ) ( 2176 320 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 2168 424 0 ) ( 2168 552 0 ) ( 2168 424 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 -768 -128 ) ( 1656 -768 0 ) ( 2168 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 -768 0 ) ( 1656 -768 -128 ) ( 1656 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 1280 0 ) ( 1656 1280 -128 ) ( 2168 768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -8 ) ( 1648 -192 -8 ) ( 2936 -192 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 53
+{
+( 2168 424 0 ) ( 2168 552 0 ) ( 2168 424 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 -768 -128 ) ( 1656 -768 0 ) ( 2168 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 312 -512 ) ( 2168 184 -512 ) ( 2176 312 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 -768 0 ) ( 1656 -768 -128 ) ( 1656 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 -8 ) ( 1648 -192 -8 ) ( 2936 720 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 -192 0 ) ( 2936 -192 -512 ) ( 2936 -192 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 54
+{
+( 2168 424 0 ) ( 2168 552 0 ) ( 2168 424 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 312 -512 ) ( 2168 184 -512 ) ( 2176 312 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 -768 0 ) ( 1656 -768 -128 ) ( 1656 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 1280 0 ) ( 1656 1280 -128 ) ( 2168 768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 0 ) ( 2936 -192 -512 ) ( 1648 -192 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -448 ) ( 1648 -192 -448 ) ( 1648 720 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 55
+{
+( 2168 424 0 ) ( 2168 552 0 ) ( 2168 424 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 -768 0 ) ( 1656 -768 -128 ) ( 1656 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1656 1280 0 ) ( 1656 1280 -128 ) ( 2168 768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 -8 ) ( 1648 -192 -8 ) ( 2936 720 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 -448 ) ( 1648 -192 -448 ) ( 2936 720 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 0 ) ( 2936 720 -512 ) ( 1648 720 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 56
+{
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 752 -512 ) ( 2152 -264 -512 ) ( 2696 752 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 768 -128 ) ( 2696 768 -128 ) ( 2152 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 0 ) ( 2936 -192 -512 ) ( 1648 -192 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -448 ) ( 1648 -192 -448 ) ( 1648 720 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 57
+{
+( 2672 320 0 ) ( 2680 192 0 ) ( 2672 192 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 2680 424 -64 ) ( 2680 552 0 ) ( 2680 424 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2680 -256 0 ) ( 3192 -768 0 ) ( 3192 -768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3192 1280 0 ) ( 3192 -768 -128 ) ( 3192 -768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2680 768 -128 ) ( 3192 1280 -128 ) ( 3192 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -8 ) ( 1648 -192 -8 ) ( 2936 -192 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 58
+{
+( 2680 424 -64 ) ( 2680 552 0 ) ( 2680 424 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2680 -256 0 ) ( 3192 -768 0 ) ( 3192 -768 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2672 312 -512 ) ( 2680 184 -512 ) ( 2680 312 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3192 1280 0 ) ( 3192 -768 -128 ) ( 3192 -768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 -8 ) ( 1648 -192 -8 ) ( 2936 720 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 -192 0 ) ( 2936 -192 -512 ) ( 2936 -192 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 59
+{
+( 2680 424 -64 ) ( 2680 552 0 ) ( 2680 424 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2672 312 -512 ) ( 2680 184 -512 ) ( 2680 312 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3192 1280 0 ) ( 3192 -768 -128 ) ( 3192 -768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2680 768 -128 ) ( 3192 1280 -128 ) ( 3192 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 0 ) ( 2936 -192 -512 ) ( 1648 -192 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -448 ) ( 1648 -192 -448 ) ( 1648 720 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 60
+{
+( 2680 424 -64 ) ( 2680 552 0 ) ( 2680 424 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 3192 1280 0 ) ( 3192 -768 -128 ) ( 3192 -768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2680 768 -128 ) ( 3192 1280 -128 ) ( 3192 1280 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 -8 ) ( 1648 -192 -8 ) ( 2936 720 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 -448 ) ( 1648 -192 -448 ) ( 2936 720 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 0 ) ( 2936 720 -512 ) ( 1648 720 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+}
+// brush 61
+{
+( 2696 -256 0 ) ( 2152 -256 0 ) ( 2696 760 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2696 -256 0 ) ( 2696 -256 -128 ) ( 2152 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -8 ) ( 1648 -192 -8 ) ( 2936 -192 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 64 264 ) ( 2680 64 0 ) ( 2680 64 264 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 62
+{
+( 2696 -256 0 ) ( 2152 -256 0 ) ( 2696 760 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 768 -128 ) ( 2696 768 -128 ) ( 2152 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 720 -8 ) ( 1648 -192 -8 ) ( 2936 -192 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 448 264 ) ( 2680 448 0 ) ( 2168 448 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 63
+{
+( 2680 64 0 ) ( 2664 64 0 ) ( 2680 448 0 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2680 64 0 ) ( 2680 448 0 ) ( 2680 64 -24 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2680 64 0 ) ( 2680 64 -24 ) ( 2664 64 0 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2656 448 -448 ) ( 2656 64 -448 ) ( 2672 448 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2648 448 -24 ) ( 2648 448 0 ) ( 2648 64 -24 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2664 448 -24 ) ( 2680 448 -24 ) ( 2664 448 0 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 64
+{
+( 2648 64 -32 ) ( 2632 64 -32 ) ( 2648 448 -32 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2648 64 -32 ) ( 2648 448 -32 ) ( 2648 64 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2648 64 -32 ) ( 2648 64 -56 ) ( 2632 64 -32 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2624 448 -64 ) ( 2624 64 -64 ) ( 2640 448 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2616 448 -56 ) ( 2616 448 -32 ) ( 2616 64 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2632 448 -56 ) ( 2648 448 -56 ) ( 2632 448 -32 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 65
+{
+( 2616 64 -64 ) ( 2600 64 -64 ) ( 2616 448 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2616 64 -64 ) ( 2616 448 -64 ) ( 2616 64 -88 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2616 64 -64 ) ( 2616 64 -88 ) ( 2600 64 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2592 448 -96 ) ( 2592 64 -96 ) ( 2608 448 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2584 448 -88 ) ( 2584 448 -64 ) ( 2584 64 -88 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2600 448 -88 ) ( 2616 448 -88 ) ( 2600 448 -64 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 66
+{
+( 2584 64 -96 ) ( 2568 64 -96 ) ( 2584 448 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2584 64 -96 ) ( 2584 448 -96 ) ( 2584 64 -120 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2584 64 -96 ) ( 2584 64 -120 ) ( 2568 64 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2560 448 -128 ) ( 2560 64 -128 ) ( 2576 448 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2552 448 -120 ) ( 2552 448 -96 ) ( 2552 64 -120 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2568 448 -120 ) ( 2584 448 -120 ) ( 2568 448 -96 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 67
+{
+( 2552 64 -128 ) ( 2536 64 -128 ) ( 2552 448 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2552 64 -128 ) ( 2552 448 -128 ) ( 2552 64 -152 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2552 64 -128 ) ( 2552 64 -152 ) ( 2536 64 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2528 448 -160 ) ( 2528 64 -160 ) ( 2544 448 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2520 448 -152 ) ( 2520 448 -128 ) ( 2520 64 -152 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2536 448 -152 ) ( 2552 448 -152 ) ( 2536 448 -128 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 68
+{
+( 2520 64 -160 ) ( 2504 64 -160 ) ( 2520 448 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2520 64 -160 ) ( 2520 448 -160 ) ( 2520 64 -184 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2520 64 -160 ) ( 2520 64 -184 ) ( 2504 64 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2496 448 -192 ) ( 2496 64 -192 ) ( 2512 448 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2488 448 -184 ) ( 2488 448 -160 ) ( 2488 64 -184 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2504 448 -184 ) ( 2520 448 -184 ) ( 2504 448 -160 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 69
+{
+( 2488 64 -192 ) ( 2472 64 -192 ) ( 2488 448 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2488 64 -192 ) ( 2488 448 -192 ) ( 2488 64 -216 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2488 64 -192 ) ( 2488 64 -216 ) ( 2472 64 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2464 448 -224 ) ( 2464 64 -224 ) ( 2480 448 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2456 448 -216 ) ( 2456 448 -192 ) ( 2456 64 -216 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2472 448 -216 ) ( 2488 448 -216 ) ( 2472 448 -192 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 70
+{
+( 2456 64 -224 ) ( 2440 64 -224 ) ( 2456 448 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2456 64 -224 ) ( 2456 448 -224 ) ( 2456 64 -248 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2456 64 -224 ) ( 2456 64 -248 ) ( 2440 64 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2432 448 -256 ) ( 2432 64 -256 ) ( 2448 448 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2424 448 -248 ) ( 2424 448 -224 ) ( 2424 64 -248 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2440 448 -248 ) ( 2456 448 -248 ) ( 2440 448 -224 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 71
+{
+( 2424 64 -256 ) ( 2408 64 -256 ) ( 2424 448 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2424 64 -256 ) ( 2424 448 -256 ) ( 2424 64 -280 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2424 64 -256 ) ( 2424 64 -280 ) ( 2408 64 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2400 448 -288 ) ( 2400 64 -288 ) ( 2416 448 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2392 448 -280 ) ( 2392 448 -256 ) ( 2392 64 -280 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2408 448 -280 ) ( 2424 448 -280 ) ( 2408 448 -256 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 72
+{
+( 2392 64 -288 ) ( 2376 64 -288 ) ( 2392 448 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2392 64 -288 ) ( 2392 448 -288 ) ( 2392 64 -312 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2392 64 -288 ) ( 2392 64 -312 ) ( 2376 64 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2368 448 -320 ) ( 2368 64 -320 ) ( 2384 448 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2360 448 -312 ) ( 2360 448 -288 ) ( 2360 64 -312 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2376 448 -312 ) ( 2392 448 -312 ) ( 2376 448 -288 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 73
+{
+( 2360 64 -320 ) ( 2344 64 -320 ) ( 2360 448 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2360 64 -320 ) ( 2360 448 -320 ) ( 2360 64 -344 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2360 64 -320 ) ( 2360 64 -344 ) ( 2344 64 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2336 448 -352 ) ( 2336 64 -352 ) ( 2352 448 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2328 448 -344 ) ( 2328 448 -320 ) ( 2328 64 -344 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2344 448 -344 ) ( 2360 448 -344 ) ( 2344 448 -320 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 74
+{
+( 2328 64 -352 ) ( 2312 64 -352 ) ( 2328 448 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2328 64 -352 ) ( 2328 448 -352 ) ( 2328 64 -376 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2328 64 -352 ) ( 2328 64 -376 ) ( 2312 64 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2304 448 -384 ) ( 2304 64 -384 ) ( 2320 448 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2296 448 -376 ) ( 2296 448 -352 ) ( 2296 64 -376 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2312 448 -376 ) ( 2328 448 -376 ) ( 2312 448 -352 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 75
+{
+( 2296 64 -384 ) ( 2280 64 -384 ) ( 2296 448 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2296 64 -384 ) ( 2296 448 -384 ) ( 2296 64 -408 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2296 64 -384 ) ( 2296 64 -408 ) ( 2280 64 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2272 448 -416 ) ( 2272 64 -416 ) ( 2288 448 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2264 448 -408 ) ( 2264 448 -384 ) ( 2264 64 -408 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2280 448 -408 ) ( 2296 448 -408 ) ( 2280 448 -384 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 76
+{
+( 2264 64 -416 ) ( 2248 64 -416 ) ( 2264 448 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2264 64 -416 ) ( 2264 448 -416 ) ( 2264 64 -440 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2264 64 -416 ) ( 2264 64 -440 ) ( 2248 64 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2240 448 -448 ) ( 2240 64 -448 ) ( 2256 448 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2232 448 -440 ) ( 2232 448 -416 ) ( 2232 64 -440 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2248 448 -440 ) ( 2264 448 -440 ) ( 2248 448 -416 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 77
+{
+( 2680 64 -56 ) ( 2632 64 -56 ) ( 2680 448 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2680 64 -56 ) ( 2680 448 -56 ) ( 2680 64 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2680 64 -56 ) ( 2680 64 -448 ) ( 2632 64 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2232 448 -448 ) ( 2232 64 -448 ) ( 2680 64 -448 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2224 64 -448 ) ( 2224 448 -448 ) ( 2624 448 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+( 2632 448 -448 ) ( 2680 448 -448 ) ( 2632 448 -56 ) Quake3_Textures/hexfloor1 0 0 0 0.5 0.5 0 0 0
+}
+// brush 78
+{
+( 2680 120 320 ) ( 2168 120 320 ) ( 2680 408 320 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 2680 120 272 ) ( 2680 408 272 ) ( 2680 120 8 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 2680 64 272 ) ( 2680 64 8 ) ( 2168 64 272 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 2168 408 8 ) ( 2168 408 272 ) ( 2168 120 8 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 2168 448 8 ) ( 2680 448 8 ) ( 2168 448 272 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+( 2680 408 272 ) ( 2168 120 272 ) ( 2680 120 272 ) Quake3_Textures/flat_dk 0 0 0 0.5 0.5 0 0 0
+}
+// brush 79
+{
+( 2680 120 272 ) ( 2168 120 272 ) ( 2680 408 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2680 120 272 ) ( 2680 408 272 ) ( 2680 120 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2680 64 272 ) ( 2680 64 8 ) ( 2168 64 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 408 -8 ) ( 2168 120 -8 ) ( 2680 408 -8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 408 8 ) ( 2168 408 272 ) ( 2168 120 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 128 264 ) ( 2680 128 0 ) ( 2680 128 264 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+}
+// brush 80
+{
+( 2680 120 272 ) ( 2168 120 272 ) ( 2680 408 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2680 64 272 ) ( 2680 64 8 ) ( 2168 64 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 408 -8 ) ( 2168 120 -8 ) ( 2680 408 -8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 408 8 ) ( 2168 408 272 ) ( 2168 120 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 448 8 ) ( 2680 448 8 ) ( 2168 448 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2232 120 8 ) ( 2232 408 272 ) ( 2232 408 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+}
+// brush 81
+{
+( 2680 440 272 ) ( 2168 440 272 ) ( 2680 728 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2680 440 272 ) ( 2680 728 272 ) ( 2680 440 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2680 384 264 ) ( 2680 384 0 ) ( 2168 384 264 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 728 -8 ) ( 2168 440 -8 ) ( 2680 728 -8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2168 728 8 ) ( 2168 728 272 ) ( 2168 440 8 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+( 2184 448 272 ) ( 2696 448 8 ) ( 2696 448 272 ) Quake3_Textures/big-blue-cement 0 0 0 0.5 0.5 0 0 0
+}
+// brush 82
+{
+( 2224 384 -64 ) ( 2168 384 -64 ) ( 2224 448 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2232 384 -8 ) ( 2232 448 -8 ) ( 2232 384 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2224 384 -8 ) ( 2224 384 -512 ) ( 2168 384 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 456 -448 ) ( 2168 392 -448 ) ( 2224 456 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 448 -512 ) ( 2168 448 -8 ) ( 2168 384 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 448 -512 ) ( 2224 448 -512 ) ( 2168 448 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 83
+{
+( 2224 64 -64 ) ( 2168 64 -64 ) ( 2224 128 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2232 64 -8 ) ( 2232 128 -8 ) ( 2232 64 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2224 64 -8 ) ( 2224 64 -512 ) ( 2168 64 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 136 -448 ) ( 2168 72 -448 ) ( 2224 136 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 128 -512 ) ( 2168 128 -8 ) ( 2168 64 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 128 -568 ) ( 2224 128 -568 ) ( 2168 128 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 84
+{
+( 2160 376 -8 ) ( 2160 456 -8 ) ( 2240 456 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2240 376 -8 ) ( 2240 456 -8 ) ( 2232 384 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 376 -8 ) ( 2232 376 -8 ) ( 2168 384 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 448 -64 ) ( 2168 384 -64 ) ( 2232 448 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2160 456 -8 ) ( 2160 376 -8 ) ( 2168 384 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2232 456 -8 ) ( 2168 456 -8 ) ( 2232 448 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 85
+{
+( 2160 56 -8 ) ( 2160 136 -8 ) ( 2240 136 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2240 56 -8 ) ( 2240 136 -8 ) ( 2232 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 56 -8 ) ( 2232 56 -8 ) ( 2168 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 128 -64 ) ( 2168 64 -64 ) ( 2232 128 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2160 136 -8 ) ( 2160 56 -8 ) ( 2168 64 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2232 136 -8 ) ( 2168 136 -8 ) ( 2232 128 -64 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 86
+{
+( 2608 -256 -160 ) ( 2264 -256 -160 ) ( 2608 -192 -160 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2616 -256 -168 ) ( 2616 -192 -168 ) ( 2616 -256 -360 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2608 -256 -176 ) ( 2608 -256 -368 ) ( 2264 -256 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2264 -192 -368 ) ( 2264 -256 -368 ) ( 2608 -192 -368 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2232 -192 -352 ) ( 2232 -192 -160 ) ( 2232 -256 -352 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2264 -192 -368 ) ( 2608 -192 -368 ) ( 2264 -192 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 87
+{
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2696 -256 0 ) ( 2696 -256 -128 ) ( 2152 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 -8 ) ( 1648 -192 -8 ) ( 2936 720 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 -192 0 ) ( 2936 -192 -512 ) ( 2936 -192 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2608 -192 -160 ) ( 2264 -256 -160 ) ( 2608 -256 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 88
+{
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2696 -256 0 ) ( 2696 -256 -128 ) ( 2152 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 752 -512 ) ( 2152 -264 -512 ) ( 2696 752 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 -192 0 ) ( 2936 -192 -512 ) ( 2936 -192 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2608 -256 -160 ) ( 2264 -256 -160 ) ( 2608 -192 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2616 -256 -360 ) ( 2616 -192 -168 ) ( 2616 -256 -168 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 89
+{
+( 2696 -256 0 ) ( 2696 -256 -128 ) ( 2152 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 752 -512 ) ( 2152 -264 -512 ) ( 2696 752 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 -192 0 ) ( 2936 -192 -512 ) ( 2936 -192 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2616 -256 -168 ) ( 2616 -192 -168 ) ( 2616 -256 -360 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2608 -192 -368 ) ( 2264 -256 -368 ) ( 2264 -192 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 90
+{
+( 2696 -256 0 ) ( 2696 -256 -128 ) ( 2152 -256 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 -192 0 ) ( 2936 -192 -512 ) ( 2936 -192 0 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2608 -256 -160 ) ( 2264 -256 -160 ) ( 2608 -192 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2264 -192 -368 ) ( 2264 -256 -368 ) ( 2608 -192 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2232 -256 -352 ) ( 2232 -192 -160 ) ( 2232 -192 -352 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 91
+{
+( 2608 712 -160 ) ( 2264 712 -160 ) ( 2608 776 -160 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2616 712 -168 ) ( 2616 776 -168 ) ( 2616 712 -360 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2608 720 -176 ) ( 2608 720 -368 ) ( 2264 720 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2264 776 -368 ) ( 2264 712 -368 ) ( 2608 776 -368 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2232 776 -352 ) ( 2232 776 -160 ) ( 2232 712 -352 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 2264 768 -368 ) ( 2608 768 -368 ) ( 2264 768 -176 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 92
+{
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 768 -128 ) ( 2696 768 -128 ) ( 2152 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2936 -192 -8 ) ( 1648 -192 -8 ) ( 2936 720 -8 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 0 ) ( 2936 720 -512 ) ( 1648 720 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2608 776 -160 ) ( 2264 712 -160 ) ( 2608 712 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 93
+{
+( 2680 -248 0 ) ( 2680 768 0 ) ( 2680 -248 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 768 -128 ) ( 2696 768 -128 ) ( 2152 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 -448 ) ( 1648 -192 -448 ) ( 2936 720 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 0 ) ( 2936 720 -512 ) ( 1648 720 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2608 712 -160 ) ( 2264 712 -160 ) ( 2608 776 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2616 712 -360 ) ( 2616 776 -168 ) ( 2616 712 -168 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 94
+{
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 768 -128 ) ( 2696 768 -128 ) ( 2152 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 -448 ) ( 1648 -192 -448 ) ( 2936 720 -448 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 0 ) ( 2936 720 -512 ) ( 1648 720 -512 ) Quake3_Textures/cement_1_grimy 0 0 0 0.5 0.5 0 0 0
+( 2616 712 -168 ) ( 2616 776 -168 ) ( 2616 712 -360 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2608 776 -368 ) ( 2264 712 -368 ) ( 2264 776 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 95
+{
+( 2168 760 -128 ) ( 2168 760 0 ) ( 2168 -256 -128 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2152 768 -128 ) ( 2696 768 -128 ) ( 2152 768 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 1648 720 0 ) ( 2936 720 -512 ) ( 1648 720 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2608 712 -160 ) ( 2264 712 -160 ) ( 2608 776 -160 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2264 776 -368 ) ( 2264 712 -368 ) ( 2608 776 -368 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( 2232 712 -352 ) ( 2232 776 -160 ) ( 2232 776 -352 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+// brush 96
+{
+( -1360 688 0 ) ( -1360 -88 0 ) ( -2144 688 0 ) Quake3_Textures/stone 0 0 0 0.5 0.5 0 0 0
+( -1120 384 -512 ) ( -1120 384 0 ) ( -2144 688 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1120 104 -512 ) ( -1120 104 0 ) ( -1120 384 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -2144 -88 -512 ) ( -1360 -88 -512 ) ( -2144 688 -512 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -1120 104 0 ) ( -1120 104 -512 ) ( -2144 -88 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+( -2144 -88 -512 ) ( -2144 688 -512 ) ( -2144 -88 0 ) Quake3_Textures/cement-tiled 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "light"
+"origin" "-1211.28 -672.4 -536"
+"light" "100"
+"_color" "1 0.520012 0"
+}
+// entity 2
+{
+"classname" "light"
+"origin" "-416 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 3
+{
+"classname" "light"
+"origin" "-344 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 4
+{
+"classname" "light"
+"origin" "-280 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 5
+{
+"classname" "light"
+"origin" "-208 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 6
+{
+"classname" "light"
+"origin" "-144 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 7
+{
+"classname" "light"
+"origin" "-72 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 8
+{
+"classname" "light"
+"origin" "-8 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 9
+{
+"classname" "light"
+"origin" "64 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 10
+{
+"classname" "light"
+"origin" "128 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 11
+{
+"classname" "light"
+"origin" "200 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 12
+{
+"classname" "light"
+"origin" "264 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 13
+{
+"classname" "light"
+"origin" "336 960 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 14
+{
+"classname" "light"
+"origin" "168 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 15
+{
+"classname" "light"
+"origin" "240 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 16
+{
+"classname" "light"
+"origin" "304 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 17
+{
+"classname" "light"
+"origin" "376 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 18
+{
+"classname" "light"
+"origin" "-104 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 19
+{
+"classname" "light"
+"origin" "-32 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 20
+{
+"classname" "light"
+"origin" "32 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 21
+{
+"classname" "light"
+"origin" "104 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 22
+{
+"classname" "light"
+"origin" "-376 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 23
+{
+"classname" "light"
+"origin" "-304 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 24
+{
+"classname" "light"
+"origin" "-240 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 25
+{
+"classname" "light"
+"origin" "-168 -480 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 26
+{
+"classname" "light"
+"origin" "376 -336 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 27
+{
+"classname" "light"
+"origin" "376 -192 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 28
+{
+"classname" "light"
+"origin" "376 -72 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 29
+{
+"classname" "light"
+"origin" "376 48 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 30
+{
+"classname" "light"
+"origin" "376 144 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 31
+{
+"classname" "light"
+"origin" "384 240 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 32
+{
+"classname" "light"
+"origin" "384 328 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 33
+{
+"classname" "light"
+"origin" "376 408 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 34
+{
+"classname" "light"
+"origin" "376 520 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 35
+{
+"classname" "light"
+"origin" "376 616 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 36
+{
+"classname" "light"
+"origin" "376 696 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 37
+{
+"classname" "light"
+"origin" "384 792 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 38
+{
+"classname" "light"
+"origin" "376 904 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 39
+{
+"classname" "light"
+"origin" "-424 -336 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 40
+{
+"classname" "light"
+"origin" "-424 -192 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 41
+{
+"classname" "light"
+"origin" "-424 -72 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 42
+{
+"classname" "light"
+"origin" "-424 48 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 43
+{
+"classname" "light"
+"origin" "-424 144 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 44
+{
+"classname" "light"
+"origin" "-416 240 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 45
+{
+"classname" "light"
+"origin" "-416 328 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 46
+{
+"classname" "light"
+"origin" "-424 408 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 47
+{
+"classname" "light"
+"origin" "-424 520 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 48
+{
+"classname" "light"
+"origin" "-424 616 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 49
+{
+"classname" "light"
+"origin" "-424 696 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 50
+{
+"classname" "light"
+"origin" "-416 792 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 51
+{
+"classname" "light"
+"origin" "-416 880 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 52
+{
+"classname" "light"
+"origin" "-416 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 53
+{
+"classname" "light"
+"origin" "-344 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 54
+{
+"classname" "light"
+"origin" "-280 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 55
+{
+"classname" "light"
+"origin" "-208 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 56
+{
+"classname" "light"
+"origin" "-144 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 57
+{
+"classname" "light"
+"origin" "-72 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 58
+{
+"classname" "light"
+"origin" "-8 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 59
+{
+"classname" "light"
+"origin" "64 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 60
+{
+"classname" "light"
+"origin" "128 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 61
+{
+"classname" "light"
+"origin" "200 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 62
+{
+"classname" "light"
+"origin" "264 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 63
+{
+"classname" "light"
+"origin" "336 960 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 64
+{
+"classname" "light"
+"origin" "168 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 65
+{
+"classname" "light"
+"origin" "240 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 66
+{
+"classname" "light"
+"origin" "304 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 67
+{
+"classname" "light"
+"origin" "376 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 68
+{
+"classname" "light"
+"origin" "-104 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 69
+{
+"classname" "light"
+"origin" "-32 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 70
+{
+"classname" "light"
+"origin" "32 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 71
+{
+"classname" "light"
+"origin" "104 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 72
+{
+"classname" "light"
+"origin" "-376 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 73
+{
+"classname" "light"
+"origin" "-304 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 74
+{
+"classname" "light"
+"origin" "-240 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 75
+{
+"classname" "light"
+"origin" "-168 -480 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 76
+{
+"classname" "light"
+"origin" "376 -336 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 77
+{
+"classname" "light"
+"origin" "376 -192 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 78
+{
+"classname" "light"
+"origin" "376 -72 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 79
+{
+"classname" "light"
+"origin" "376 48 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 80
+{
+"classname" "light"
+"origin" "376 144 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 81
+{
+"classname" "light"
+"origin" "384 240 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 82
+{
+"classname" "light"
+"origin" "384 328 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 83
+{
+"classname" "light"
+"origin" "376 408 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 84
+{
+"classname" "light"
+"origin" "376 520 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 85
+{
+"classname" "light"
+"origin" "376 616 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 86
+{
+"classname" "light"
+"origin" "376 696 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 87
+{
+"classname" "light"
+"origin" "384 792 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 88
+{
+"classname" "light"
+"origin" "376 904 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 89
+{
+"classname" "light"
+"origin" "-424 -336 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 90
+{
+"classname" "light"
+"origin" "-424 -192 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 91
+{
+"classname" "light"
+"origin" "-424 -72 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 92
+{
+"classname" "light"
+"origin" "-424 48 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 93
+{
+"classname" "light"
+"origin" "-424 144 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 94
+{
+"classname" "light"
+"origin" "-416 240 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 95
+{
+"classname" "light"
+"origin" "-416 328 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 96
+{
+"classname" "light"
+"origin" "-424 408 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 97
+{
+"classname" "light"
+"origin" "-424 520 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 98
+{
+"classname" "light"
+"origin" "-424 616 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 99
+{
+"classname" "light"
+"origin" "-424 696 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 100
+{
+"classname" "light"
+"origin" "-416 792 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 101
+{
+"classname" "light"
+"origin" "-416 880 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 102
+{
+"classname" "light"
+"origin" "-704 232 -256"
+"light" "1000"
+}
+// entity 103
+{
+"classname" "light"
+"origin" "-736 424 -256"
+"light" "1000"
+}
+// entity 104
+{
+"classname" "light"
+"origin" "-848 592 -256"
+"light" "1000"
+}
+// entity 105
+{
+"classname" "light"
+"origin" "-1016 792 -256"
+"light" "1000"
+}
+// entity 106
+{
+"classname" "light"
+"origin" "-1152 976 -256"
+"light" "1000"
+}
+// entity 107
+{
+"classname" "light"
+"origin" "-960 1264 -256"
+"light" "1000"
+}
+// entity 108
+{
+"classname" "light"
+"origin" "-656 1528 -256"
+"light" "1000"
+}
+// entity 109
+{
+"classname" "light"
+"origin" "-416 1848 -256"
+"light" "1000"
+}
+// entity 110
+{
+"classname" "light"
+"origin" "-16 2200 -256"
+"light" "1000"
+}
+// entity 111
+{
+"classname" "light"
+"origin" "376 1936 -256"
+"light" "1000"
+}
+// entity 112
+{
+"classname" "light"
+"origin" "800 1568 -256"
+"light" "1000"
+}
+// entity 113
+{
+"classname" "light"
+"origin" "1048 1232 -256"
+"light" "1000"
+}
+// entity 114
+{
+"classname" "light"
+"origin" "1152 760 -256"
+"light" "1000"
+}
+// entity 115
+{
+"classname" "light"
+"origin" "920 496 -256"
+"light" "1000"
+}
+// entity 116
+{
+"classname" "light"
+"origin" "768 232 -256"
+"light" "1000"
+}
+// entity 117
+{
+"classname" "light"
+"origin" "856 -72 -256"
+"light" "1000"
+}
+// entity 118
+{
+"classname" "light"
+"origin" "1112 -416 -256"
+"light" "1000"
+}
+// entity 119
+{
+"classname" "light"
+"origin" "960 -776 -256"
+"light" "1000"
+}
+// entity 120
+{
+"classname" "light"
+"origin" "696 -1168 -256"
+"light" "1000"
+}
+// entity 121
+{
+"classname" "light"
+"origin" "432 -1440 -256"
+"light" "1000"
+}
+// entity 122
+{
+"classname" "light"
+"origin" "40 -1688 -256"
+"light" "1000"
+}
+// entity 123
+{
+"classname" "light"
+"origin" "-320 -1496 -256"
+"light" "1000"
+}
+// entity 124
+{
+"classname" "light"
+"origin" "-624 -1224 -256"
+"light" "1000"
+}
+// entity 125
+{
+"classname" "light"
+"origin" "-984 -864 -256"
+"light" "1000"
+}
+// entity 126
+{
+"classname" "light"
+"origin" "-1224 -560 -256"
+"light" "1000"
+}
+// entity 127
+{
+"classname" "light"
+"origin" "-1000 -232 -256"
+"light" "1000"
+}
+// entity 128
+{
+"classname" "light"
+"origin" "-864 -56 -256"
+"light" "1000"
+}
+// entity 129
+{
+"classname" "light"
+"origin" "-8 1680 592"
+"light" "1000"
+}
+// entity 130
+{
+"classname" "light"
+"origin" "0 944 592"
+"light" "1000"
+}
+// entity 131
+{
+"classname" "light"
+"origin" "16 -384 592"
+"light" "1000"
+}
+// entity 132
+{
+"classname" "light"
+"origin" "0 -1288 592"
+"light" "1000"
+}
+// entity 133
+{
+"classname" "light"
+"origin" "-560 248 592"
+"light" "1000"
+}
+// entity 134
+{
+"classname" "light"
+"origin" "608 240 592"
+"light" "1000"
+}
+// entity 135
+{
+"classname" "light"
+"origin" "0 -1464 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 136
+{
+"classname" "light"
+"origin" "168 -1304 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 137
+{
+"classname" "light"
+"origin" "320 -1144 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 138
+{
+"classname" "light"
+"origin" "504 -952 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 139
+{
+"classname" "light"
+"origin" "672 -776 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 140
+{
+"classname" "light"
+"origin" "816 -640 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 141
+{
+"classname" "light"
+"origin" "-904 -544 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 142
+{
+"classname" "light"
+"origin" "-736 -704 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 143
+{
+"classname" "light"
+"origin" "-584 -864 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 144
+{
+"classname" "light"
+"origin" "-400 -1056 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 145
+{
+"classname" "light"
+"origin" "-232 -1232 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 146
+{
+"classname" "light"
+"origin" "-88 -1368 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 147
+{
+"classname" "light"
+"origin" "8 1968 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 148
+{
+"classname" "light"
+"origin" "176 1808 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 149
+{
+"classname" "light"
+"origin" "328 1648 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 150
+{
+"classname" "light"
+"origin" "512 1456 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 151
+{
+"classname" "light"
+"origin" "680 1280 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 152
+{
+"classname" "light"
+"origin" "824 1144 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 153
+{
+"classname" "light"
+"origin" "-896 1048 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 154
+{
+"classname" "light"
+"origin" "-728 1208 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 155
+{
+"classname" "light"
+"origin" "-576 1368 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 156
+{
+"classname" "light"
+"origin" "-392 1560 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 157
+{
+"classname" "light"
+"origin" "-224 1736 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 158
+{
+"classname" "light"
+"origin" "-80 1872 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 159
+{
+"classname" "light"
+"origin" "-664 776 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 160
+{
+"classname" "light"
+"origin" "-448 552 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 161
+{
+"classname" "light"
+"origin" "-448 264 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 162
+{
+"classname" "light"
+"origin" "-440 -40 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 163
+{
+"classname" "light"
+"origin" "-704 -296 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 164
+{
+"classname" "light"
+"origin" "720 -328 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 165
+{
+"classname" "light"
+"origin" "408 -80 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 166
+{
+"classname" "light"
+"origin" "392 240 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 167
+{
+"classname" "light"
+"origin" "400 576 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 168
+{
+"classname" "light"
+"origin" "712 824 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 169
+{
+"classname" "light"
+"origin" "-96 448 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 170
+{
+"classname" "light"
+"origin" "16 448 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 171
+{
+"classname" "light"
+"origin" "96 448 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 172
+{
+"classname" "light"
+"origin" "96 328 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 173
+{
+"classname" "light"
+"origin" "96 240 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 174
+{
+"classname" "light"
+"origin" "96 104 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 175
+{
+"classname" "light"
+"origin" "16 104 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 176
+{
+"classname" "light"
+"origin" "-72 104 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 177
+{
+"classname" "light"
+"origin" "-96 160 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 178
+{
+"classname" "light"
+"origin" "-96 248 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 179
+{
+"classname" "light"
+"origin" "-96 328 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 180
+{
+"classname" "light"
+"origin" "-96 384 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 181
+{
+"classname" "light"
+"origin" "1495.6 1467.28 -536"
+"light" "100"
+"_color" "1 0.520012 0"
+}
+// entity 182
+{
+"classname" "light"
+"origin" "3128 672 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 183
+{
+"classname" "light"
+"origin" "3128 600 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 184
+{
+"classname" "light"
+"origin" "3128 536 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 185
+{
+"classname" "light"
+"origin" "3128 464 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 186
+{
+"classname" "light"
+"origin" "3128 400 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 187
+{
+"classname" "light"
+"origin" "3128 328 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 188
+{
+"classname" "light"
+"origin" "3128 264 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 189
+{
+"classname" "light"
+"origin" "3128 192 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 190
+{
+"classname" "light"
+"origin" "3128 128 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 191
+{
+"classname" "light"
+"origin" "3128 56 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 192
+{
+"classname" "light"
+"origin" "3128 -8 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 193
+{
+"classname" "light"
+"origin" "3128 -80 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 194
+{
+"classname" "light"
+"origin" "1688 88 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 195
+{
+"classname" "light"
+"origin" "1688 16 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 196
+{
+"classname" "light"
+"origin" "1688 -48 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 197
+{
+"classname" "light"
+"origin" "1688 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 198
+{
+"classname" "light"
+"origin" "1688 360 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 199
+{
+"classname" "light"
+"origin" "1688 288 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 200
+{
+"classname" "light"
+"origin" "1688 224 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 201
+{
+"classname" "light"
+"origin" "1688 152 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 202
+{
+"classname" "light"
+"origin" "1688 632 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 203
+{
+"classname" "light"
+"origin" "1688 560 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 204
+{
+"classname" "light"
+"origin" "1688 496 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 205
+{
+"classname" "light"
+"origin" "1688 424 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 206
+{
+"classname" "light"
+"origin" "1832 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 207
+{
+"classname" "light"
+"origin" "1976 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 208
+{
+"classname" "light"
+"origin" "2096 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 209
+{
+"classname" "light"
+"origin" "2216 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 210
+{
+"classname" "light"
+"origin" "2312 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 211
+{
+"classname" "light"
+"origin" "2408 -128 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 212
+{
+"classname" "light"
+"origin" "2496 -128 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 213
+{
+"classname" "light"
+"origin" "2576 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 214
+{
+"classname" "light"
+"origin" "2688 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 215
+{
+"classname" "light"
+"origin" "2784 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 216
+{
+"classname" "light"
+"origin" "2864 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 217
+{
+"classname" "light"
+"origin" "2960 -128 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 218
+{
+"classname" "light"
+"origin" "3072 -120 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 219
+{
+"classname" "light"
+"origin" "1832 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 220
+{
+"classname" "light"
+"origin" "1976 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 221
+{
+"classname" "light"
+"origin" "2096 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 222
+{
+"classname" "light"
+"origin" "2216 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 223
+{
+"classname" "light"
+"origin" "2312 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 224
+{
+"classname" "light"
+"origin" "2408 672 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 225
+{
+"classname" "light"
+"origin" "2496 672 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 226
+{
+"classname" "light"
+"origin" "2576 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 227
+{
+"classname" "light"
+"origin" "2688 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 228
+{
+"classname" "light"
+"origin" "2784 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 229
+{
+"classname" "light"
+"origin" "2864 680 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 230
+{
+"classname" "light"
+"origin" "2960 672 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 231
+{
+"classname" "light"
+"origin" "3048 672 -64"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 232
+{
+"classname" "light"
+"origin" "3128 672 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 233
+{
+"classname" "light"
+"origin" "3128 600 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 234
+{
+"classname" "light"
+"origin" "3128 536 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 235
+{
+"classname" "light"
+"origin" "3128 464 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 236
+{
+"classname" "light"
+"origin" "3128 400 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 237
+{
+"classname" "light"
+"origin" "3128 328 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 238
+{
+"classname" "light"
+"origin" "3128 264 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 239
+{
+"classname" "light"
+"origin" "3128 192 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 240
+{
+"classname" "light"
+"origin" "3128 128 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 241
+{
+"classname" "light"
+"origin" "3128 56 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 242
+{
+"classname" "light"
+"origin" "3128 -8 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 243
+{
+"classname" "light"
+"origin" "3128 -80 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 244
+{
+"classname" "light"
+"origin" "1688 88 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 245
+{
+"classname" "light"
+"origin" "1688 16 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 246
+{
+"classname" "light"
+"origin" "1688 -48 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 247
+{
+"classname" "light"
+"origin" "1688 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 248
+{
+"classname" "light"
+"origin" "1688 360 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 249
+{
+"classname" "light"
+"origin" "1688 288 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 250
+{
+"classname" "light"
+"origin" "1688 224 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 251
+{
+"classname" "light"
+"origin" "1688 152 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 252
+{
+"classname" "light"
+"origin" "1688 632 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 253
+{
+"classname" "light"
+"origin" "1688 560 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 254
+{
+"classname" "light"
+"origin" "1688 496 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 255
+{
+"classname" "light"
+"origin" "1688 424 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 256
+{
+"classname" "light"
+"origin" "1832 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 257
+{
+"classname" "light"
+"origin" "1976 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 258
+{
+"classname" "light"
+"origin" "2096 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 259
+{
+"classname" "light"
+"origin" "2216 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 260
+{
+"classname" "light"
+"origin" "2312 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 261
+{
+"classname" "light"
+"origin" "2408 -128 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 262
+{
+"classname" "light"
+"origin" "2496 -128 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 263
+{
+"classname" "light"
+"origin" "2576 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 264
+{
+"classname" "light"
+"origin" "2688 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 265
+{
+"classname" "light"
+"origin" "2784 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 266
+{
+"classname" "light"
+"origin" "2864 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 267
+{
+"classname" "light"
+"origin" "2960 -128 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 268
+{
+"classname" "light"
+"origin" "3072 -120 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 269
+{
+"classname" "light"
+"origin" "1832 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 270
+{
+"classname" "light"
+"origin" "1976 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 271
+{
+"classname" "light"
+"origin" "2096 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 272
+{
+"classname" "light"
+"origin" "2216 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 273
+{
+"classname" "light"
+"origin" "2312 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 274
+{
+"classname" "light"
+"origin" "2408 672 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 275
+{
+"classname" "light"
+"origin" "2496 672 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 276
+{
+"classname" "light"
+"origin" "2576 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 277
+{
+"classname" "light"
+"origin" "2688 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 278
+{
+"classname" "light"
+"origin" "2784 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 279
+{
+"classname" "light"
+"origin" "2864 680 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 280
+{
+"classname" "light"
+"origin" "2960 672 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 281
+{
+"classname" "light"
+"origin" "3048 672 -400"
+"light" "500"
+"_color" "0 0.803861 1"
+}
+// entity 282
+{
+"classname" "light"
+"origin" "2400 960 -256"
+"light" "1000"
+}
+// entity 283
+{
+"classname" "light"
+"origin" "2592 992 -256"
+"light" "1000"
+}
+// entity 284
+{
+"classname" "light"
+"origin" "2760 1104 -256"
+"light" "1000"
+}
+// entity 285
+{
+"classname" "light"
+"origin" "2960 1272 -256"
+"light" "1000"
+}
+// entity 286
+{
+"classname" "light"
+"origin" "3144 1408 -256"
+"light" "1000"
+}
+// entity 287
+{
+"classname" "light"
+"origin" "3432 1216 -256"
+"light" "1000"
+}
+// entity 288
+{
+"classname" "light"
+"origin" "3696 912 -256"
+"light" "1000"
+}
+// entity 289
+{
+"classname" "light"
+"origin" "4016 672 -256"
+"light" "1000"
+}
+// entity 290
+{
+"classname" "light"
+"origin" "4368 272 -256"
+"light" "1000"
+}
+// entity 291
+{
+"classname" "light"
+"origin" "4104 -120 -256"
+"light" "1000"
+}
+// entity 292
+{
+"classname" "light"
+"origin" "3736 -544 -256"
+"light" "1000"
+}
+// entity 293
+{
+"classname" "light"
+"origin" "3400 -792 -256"
+"light" "1000"
+}
+// entity 294
+{
+"classname" "light"
+"origin" "2928 -896 -256"
+"light" "1000"
+}
+// entity 295
+{
+"classname" "light"
+"origin" "2664 -664 -256"
+"light" "1000"
+}
+// entity 296
+{
+"classname" "light"
+"origin" "2400 -512 -256"
+"light" "1000"
+}
+// entity 297
+{
+"classname" "light"
+"origin" "2096 -600 -256"
+"light" "1000"
+}
+// entity 298
+{
+"classname" "light"
+"origin" "1752 -856 -256"
+"light" "1000"
+}
+// entity 299
+{
+"classname" "light"
+"origin" "1392 -704 -256"
+"light" "1000"
+}
+// entity 300
+{
+"classname" "light"
+"origin" "1000 -440 -256"
+"light" "1000"
+}
+// entity 301
+{
+"classname" "light"
+"origin" "728 -176 -256"
+"light" "1000"
+}
+// entity 302
+{
+"classname" "light"
+"origin" "480 216 -256"
+"light" "1000"
+}
+// entity 303
+{
+"classname" "light"
+"origin" "672 576 -256"
+"light" "1000"
+}
+// entity 304
+{
+"classname" "light"
+"origin" "944 880 -256"
+"light" "1000"
+}
+// entity 305
+{
+"classname" "light"
+"origin" "1304 1240 -256"
+"light" "1000"
+}
+// entity 306
+{
+"classname" "light"
+"origin" "1608 1480 -256"
+"light" "1000"
+}
+// entity 307
+{
+"classname" "light"
+"origin" "1936 1256 -256"
+"light" "1000"
+}
+// entity 308
+{
+"classname" "light"
+"origin" "2112 1120 -256"
+"light" "1000"
+}
+// entity 309
+{
+"classname" "light"
+"origin" "3848 264 592"
+"light" "1000"
+}
+// entity 310
+{
+"classname" "light"
+"origin" "3112 256 592"
+"light" "1000"
+}
+// entity 311
+{
+"classname" "light"
+"origin" "1784 240 592"
+"light" "1000"
+}
+// entity 312
+{
+"classname" "light"
+"origin" "880 256 592"
+"light" "1000"
+}
+// entity 313
+{
+"classname" "light"
+"origin" "2416 816 592"
+"light" "1000"
+}
+// entity 314
+{
+"classname" "light"
+"origin" "2408 -352 592"
+"light" "1000"
+}
+// entity 315
+{
+"classname" "light"
+"origin" "704 256 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 316
+{
+"classname" "light"
+"origin" "864 88 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 317
+{
+"classname" "light"
+"origin" "1024 -64 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 318
+{
+"classname" "light"
+"origin" "1216 -248 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 319
+{
+"classname" "light"
+"origin" "1392 -416 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 320
+{
+"classname" "light"
+"origin" "1528 -560 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 321
+{
+"classname" "light"
+"origin" "1624 1160 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 322
+{
+"classname" "light"
+"origin" "1464 992 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 323
+{
+"classname" "light"
+"origin" "1304 840 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 324
+{
+"classname" "light"
+"origin" "1112 656 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 325
+{
+"classname" "light"
+"origin" "936 488 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 326
+{
+"classname" "light"
+"origin" "800 344 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 327
+{
+"classname" "light"
+"origin" "4136 248 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 328
+{
+"classname" "light"
+"origin" "3976 80 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 329
+{
+"classname" "light"
+"origin" "3816 -72 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 330
+{
+"classname" "light"
+"origin" "3624 -256 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 331
+{
+"classname" "light"
+"origin" "3448 -424 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 332
+{
+"classname" "light"
+"origin" "3312 -568 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 333
+{
+"classname" "light"
+"origin" "3216 1152 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 334
+{
+"classname" "light"
+"origin" "3376 984 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 335
+{
+"classname" "light"
+"origin" "3536 832 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 336
+{
+"classname" "light"
+"origin" "3728 648 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 337
+{
+"classname" "light"
+"origin" "3904 480 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 338
+{
+"classname" "light"
+"origin" "4040 336 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 339
+{
+"classname" "light"
+"origin" "2944 920 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 340
+{
+"classname" "light"
+"origin" "2720 704 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 341
+{
+"classname" "light"
+"origin" "2432 704 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 342
+{
+"classname" "light"
+"origin" "2128 696 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 343
+{
+"classname" "light"
+"origin" "1872 960 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 344
+{
+"classname" "light"
+"origin" "1840 -464 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 345
+{
+"classname" "light"
+"origin" "2088 -152 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 346
+{
+"classname" "light"
+"origin" "2408 -136 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 347
+{
+"classname" "light"
+"origin" "2744 -144 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 348
+{
+"classname" "light"
+"origin" "2992 -456 80"
+"light" "6000"
+"_color" "1 0 0.0357977"
+}
+// entity 349
+{
+"classname" "light"
+"origin" "2616 352 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 350
+{
+"classname" "light"
+"origin" "2616 240 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 351
+{
+"classname" "light"
+"origin" "2616 160 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 352
+{
+"classname" "light"
+"origin" "2496 160 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 353
+{
+"classname" "light"
+"origin" "2408 160 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 354
+{
+"classname" "light"
+"origin" "2272 160 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 355
+{
+"classname" "light"
+"origin" "2272 240 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 356
+{
+"classname" "light"
+"origin" "2272 328 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 357
+{
+"classname" "light"
+"origin" "2328 352 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 358
+{
+"classname" "light"
+"origin" "2416 352 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 359
+{
+"classname" "light"
+"origin" "2496 352 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 360
+{
+"classname" "light"
+"origin" "2552 352 240"
+"light" "1000"
+"_color" "0.575235 1 0"
+}
+// entity 361
+{
+"classname" "info_player_teamdeathmatch_0"
+"origin" "6288 248 1408"
+"angle" "180"
+}
+// entity 362
+{
+"classname" "info_player_teamdeathmatch_1"
+"origin" "-1160 232 88"
+"angle" "180"
+}
+// entity 363
+{
+"classname" "info_player_deathmatch"
+"origin" "-1784 288 0"
+}

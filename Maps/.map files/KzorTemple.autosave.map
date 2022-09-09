@@ -1,0 +1,318 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 24 536 -448 ) ( 24 -536 -448 ) ( -296 432 -448 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -512 168 -512 ) ( 512 -168 -512 ) ( -320 432 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 512 168 -512 ) ( 512 -168 0 ) ( 512 168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 432 0 ) ( 512 168 -512 ) ( 512 168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 432 0 ) ( 0 536 -512 ) ( 320 432 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 0 536 0 ) ( -320 432 -512 ) ( 0 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 168 0 ) ( -320 432 -512 ) ( -320 432 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 -168 -512 ) ( -512 168 0 ) ( -512 -168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 -168 -512 ) ( -320 -432 0 ) ( -320 -432 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 -432 0 ) ( 0 -536 -512 ) ( -320 -432 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 -432 0 ) ( 0 -536 -512 ) ( 0 -536 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 512 -168 -512 ) ( 320 -432 0 ) ( 512 -168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( -512 512 0 ) ( -512 296 0 ) ( -1032 512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -520 536 0 ) ( -1040 536 0 ) ( -520 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 512 0 ) ( -512 512 -512 ) ( -512 296 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -1032 296 -512 ) ( -512 296 -512 ) ( -1032 512 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -992 -536 -512 ) ( -992 -536 0 ) ( -472 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 296 -512 ) ( -1024 512 -512 ) ( -1024 296 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( -328 512 0 ) ( -328 160 0 ) ( -512 512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -328 536 0 ) ( -512 536 0 ) ( -328 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 432 -512 ) ( -320 432 0 ) ( -320 512 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 160 -512 ) ( -328 160 -512 ) ( -512 512 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 168 -512 ) ( -512 168 0 ) ( -320 432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -512 168 0 ) ( -512 168 -512 ) ( -512 512 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 3
+{
+( 0 536 0 ) ( 0 496 0 ) ( -320 536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 0 536 0 ) ( -320 536 0 ) ( 0 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 496 -512 ) ( 0 496 -512 ) ( -320 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 0 536 0 ) ( 0 536 -512 ) ( -320 432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -320 432 0 ) ( -320 432 -512 ) ( -320 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( -512 -512 0 ) ( -328 -160 0 ) ( -328 -512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -328 -536 -512 ) ( -512 -536 0 ) ( -328 -536 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 -512 0 ) ( -320 -432 0 ) ( -320 -432 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -512 ) ( -328 -160 -512 ) ( -512 -160 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 -432 0 ) ( -512 -168 0 ) ( -512 -168 -512 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -512 ) ( -512 -168 -512 ) ( -512 -168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( -320 -536 0 ) ( 0 -496 0 ) ( 0 -536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 0 -536 -512 ) ( -320 -536 0 ) ( 0 -536 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 -536 -512 ) ( 0 -496 -512 ) ( -320 -496 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 -432 0 ) ( 0 -536 -512 ) ( 0 -536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -320 -536 -512 ) ( -320 -432 -512 ) ( -320 -432 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 6
+{
+( 1032 512 0 ) ( 512 296 0 ) ( 512 512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 520 536 -512 ) ( 1040 536 0 ) ( 520 536 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 512 296 0 ) ( 512 512 -512 ) ( 512 512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( 1032 512 -512 ) ( 512 296 -512 ) ( 1032 296 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 472 -536 -512 ) ( 992 -536 0 ) ( 992 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 296 0 ) ( 1024 512 -512 ) ( 1024 296 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 7
+{
+( 512 512 0 ) ( 328 160 0 ) ( 328 512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 328 536 -512 ) ( 512 536 0 ) ( 328 536 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 512 0 ) ( 320 432 0 ) ( 320 432 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 512 512 -512 ) ( 328 160 -512 ) ( 512 160 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 432 0 ) ( 512 168 0 ) ( 512 168 -512 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( 512 512 -512 ) ( 512 168 -512 ) ( 512 168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 8
+{
+( 320 536 0 ) ( 0 496 0 ) ( 0 536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 0 536 -512 ) ( 320 536 0 ) ( 0 536 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 536 -512 ) ( 0 496 -512 ) ( 320 496 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 432 0 ) ( 0 536 -512 ) ( 0 536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( 320 536 -512 ) ( 320 432 -512 ) ( 320 432 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( 328 -512 0 ) ( 328 -160 0 ) ( 512 -512 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 328 -536 0 ) ( 512 -536 0 ) ( 328 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 -432 -512 ) ( 320 -432 0 ) ( 320 -512 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 512 -160 -512 ) ( 328 -160 -512 ) ( 512 -512 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 512 -168 -512 ) ( 512 -168 0 ) ( 320 -432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( 512 -168 0 ) ( 512 -168 -512 ) ( 512 -512 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( 0 -536 0 ) ( 0 -496 0 ) ( 320 -536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 0 -536 0 ) ( 320 -536 0 ) ( 0 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 -496 -512 ) ( 0 -496 -512 ) ( 320 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 0 -536 0 ) ( 0 -536 -512 ) ( 320 -432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( 320 -432 0 ) ( 320 -432 -512 ) ( 320 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( -320 168 0 ) ( -320 -168 0 ) ( -512 168 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -320 168 0 ) ( -512 168 0 ) ( -320 168 -64 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( 512 144 0 ) ( 512 144 -64 ) ( 512 -192 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 -168 -64 ) ( -320 -168 -64 ) ( -512 168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -512 -168 -64 ) ( -512 -168 0 ) ( -320 -168 -64 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -512 -168 -64 ) ( -512 168 -64 ) ( -512 -168 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 12
+{
+( 512 432 0 ) ( 512 216 0 ) ( 320 432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 448 256 0 ) ( 448 256 -64 ) ( 512 168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 216 -64 ) ( 512 216 -64 ) ( 320 432 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 328 168 -64 ) ( 328 168 0 ) ( 520 168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 448 256 -64 ) ( 448 256 0 ) ( 320 168 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+}
+// brush 13
+{
+( -464 -536 0 ) ( -464 -832 0 ) ( -1024 -536 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -464 -536 0 ) ( -1024 -536 0 ) ( -464 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 -528 0 ) ( 1024 -528 -512 ) ( 1024 -824 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 -832 -512 ) ( -464 -832 -512 ) ( -1024 -536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1008 -1024 -512 ) ( -1008 -1024 0 ) ( -448 -1024 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 -832 -512 ) ( -1024 -536 -512 ) ( -1024 -832 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 14
+{
+( -464 1024 0 ) ( -464 728 0 ) ( -1024 1024 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -464 1024 0 ) ( -1024 1024 0 ) ( -464 1024 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 1032 0 ) ( 1024 1032 -512 ) ( 1024 736 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 728 -512 ) ( -464 728 -512 ) ( -1024 1024 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1008 536 -512 ) ( -1008 536 0 ) ( -448 536 -512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 728 -512 ) ( -1024 1024 -512 ) ( -1024 728 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 15
+{
+( 320 -432 0 ) ( 512 -216 0 ) ( 512 -432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( 512 -168 -64 ) ( 448 -256 -64 ) ( 448 -256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 -432 -64 ) ( 512 -216 -64 ) ( 320 -216 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 520 -168 -64 ) ( 328 -168 0 ) ( 328 -168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 320 -168 0 ) ( 448 -256 0 ) ( 448 -256 -64 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+}
+// brush 16
+{
+( -320 432 0 ) ( -512 216 0 ) ( -512 432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -512 168 -64 ) ( -448 256 -64 ) ( -448 256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 432 -64 ) ( -512 216 -64 ) ( -320 216 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -520 168 -64 ) ( -328 168 0 ) ( -328 168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 168 0 ) ( -448 256 0 ) ( -448 256 -64 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+}
+// brush 17
+{
+( -512 -432 0 ) ( -512 -216 0 ) ( -320 -432 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -448 -256 0 ) ( -448 -256 -64 ) ( -512 -168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -320 -216 -64 ) ( -512 -216 -64 ) ( -320 -432 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -328 -168 -64 ) ( -328 -168 0 ) ( -520 -168 -64 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -448 -256 -64 ) ( -448 -256 0 ) ( -320 -168 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+}
+// brush 18
+{
+( -1040 1088 512 ) ( -1040 1024 512 ) ( -1104 1088 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1088 1088 512 ) ( -1088 1088 0 ) ( 1088 1088 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1088 1088 512 ) ( 1088 1088 0 ) ( 1024 1024 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( -960 1024 0 ) ( -1024 1088 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 1024 0 ) ( -1024 1024 128 ) ( -960 1024 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_wall_g06.TGA 32 -8 -90 0.5 0.5 0 0 0
+( -1088 1088 0 ) ( -1088 1088 512 ) ( -1024 1024 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 19
+{
+( 1088 1040 512 ) ( 1024 1040 512 ) ( 1088 1104 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1088 1088 512 ) ( 1088 1088 0 ) ( 1088 256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1112 256 128 ) ( 1112 256 0 ) ( 1048 256 128 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 0 ) ( 1024 960 0 ) ( 1088 1024 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 1024 0 ) ( 1024 1024 128 ) ( 1024 960 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_wall_g06.TGA 32 -8 -90 0.5 0.5 0 0 0
+( 1088 1088 0 ) ( 1088 1088 512 ) ( 1024 1024 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 20
+{
+( -1088 1104 512 ) ( -1024 1040 512 ) ( -1088 1040 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1088 256 0 ) ( -1088 1088 0 ) ( -1088 1088 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1048 256 128 ) ( -1112 256 0 ) ( -1112 256 128 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -1088 1024 0 ) ( -1024 960 0 ) ( -1024 1024 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 960 0 ) ( -1024 1024 128 ) ( -1024 1024 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_wall_g06.TGA 32 -8 -90 0.5 0.5 0 0 0
+( -1024 1024 512 ) ( -1088 1088 512 ) ( -1088 1088 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 21
+{
+( -1104 -1088 512 ) ( -1040 -1024 512 ) ( -1040 -1088 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1088 -1088 0 ) ( -1088 -1088 0 ) ( -1088 -1088 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 -1024 0 ) ( 1088 -1088 0 ) ( 1088 -1088 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 -1088 0 ) ( -960 -1024 0 ) ( -1024 -1024 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -960 -1024 0 ) ( -1024 -1024 128 ) ( -1024 -1024 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_wall_g06.TGA 32 -8 -90 0.5 0.5 0 0 0
+( -1024 -1024 512 ) ( -1088 -1088 512 ) ( -1088 -1088 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 22
+{
+( 1088 -1104 512 ) ( 1024 -1040 512 ) ( 1088 -1040 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1088 -256 0 ) ( 1088 -1088 0 ) ( 1088 -1088 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1048 -256 128 ) ( 1112 -256 0 ) ( 1112 -256 128 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1088 -1024 0 ) ( 1024 -960 0 ) ( 1024 -1024 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( 1024 -960 0 ) ( 1024 -1024 128 ) ( 1024 -1024 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_wall_g06.TGA 32 -8 -90 0.5 0.5 0 0 0
+( 1024 -1024 512 ) ( 1088 -1088 512 ) ( 1088 -1088 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 23
+{
+( -1088 -1040 512 ) ( -1024 -1040 512 ) ( -1088 -1104 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1088 -1088 512 ) ( -1088 -1088 0 ) ( -1088 -256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1112 -256 128 ) ( -1112 -256 0 ) ( -1048 -256 128 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -1024 -1024 0 ) ( -1024 -960 0 ) ( -1088 -1024 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 -1024 0 ) ( -1024 -1024 128 ) ( -1024 -960 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_wall_g06.TGA 32 -8 -90 0.5 0.5 0 0 0
+( -1088 -1088 0 ) ( -1088 -1088 512 ) ( -1024 -1024 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 24
+{
+( -1024 256 0 ) ( -1024 192 0 ) ( -1088 256 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_floor_w01_df.tga -512 0 90 0.5 0.5 0 0 0
+( -1024 256 0 ) ( -1088 256 0 ) ( -1024 256 -512 ) common/caulk2 -512 0 0 0.5 0.5 0 0 0
+( -1024 256 0 ) ( -1024 256 -512 ) ( -1024 192 0 ) common/caulk2 -512 0 0 0.5 0.5 0 0 0
+( -1088 192 -512 ) ( -1024 192 -512 ) ( -1088 256 -512 ) common/caulk2 -512 0 0 0.5 0.5 0 0 0
+( -1056 -256 -512 ) ( -1056 -256 0 ) ( -992 -256 -512 ) common/caulk2 -512 0 0 0.5 0.5 0 0 0
+( -2944 192 -512 ) ( -2944 256 -512 ) ( -2944 192 0 ) common/caulk2 -512 0 0 0.5 0.5 0 0 0
+}
+// brush 25
+{
+( -1032 -128 512 ) ( -1080 -256 512 ) ( -1080 -128 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 384 -0 0 0.25 0.0625 0 0 0
+( -1080 -256 0 ) ( -1032 -128 0 ) ( -1120 -216 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 384 -0 0 0.25 0.0625 0 0 0
+( -992 -168 0 ) ( -992 -216 512 ) ( -992 -168 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -992 -168 0 ) ( -1032 -128 512 ) ( -1032 -128 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 102.3999023438 0 0 0.078125 0.25 0 0 0
+( -1080 -128 0 ) ( -1032 -128 512 ) ( -1080 -128 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -1120 -168 0 ) ( -1080 -128 512 ) ( -1120 -168 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 102.3999023438 0 0 0.078125 0.25 0 0 0
+( -1120 -168 0 ) ( -1120 -216 512 ) ( -1120 -216 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -1120 -216 512 ) ( -1080 -256 0 ) ( -1120 -216 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 204.8000488281 0 0 0.078125 0.25 0 0 0
+( -1032 -256 512 ) ( -1080 -256 0 ) ( -1080 -256 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -992 -216 0 ) ( -1032 -256 512 ) ( -992 -216 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 204.8000488281 0 0 0.078125 0.25 0 0 0
+}
+// brush 26
+{
+( -1032 256 512 ) ( -1080 128 512 ) ( -1080 256 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 384 -0 0 0.25 0.0625 0 0 0
+( -1080 128 0 ) ( -1032 256 0 ) ( -1120 168 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 384 -0 0 0.25 0.0625 0 0 0
+( -992 216 0 ) ( -992 168 512 ) ( -992 216 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -992 216 0 ) ( -1032 256 512 ) ( -1032 256 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 102.3999023438 0 0 0.078125 0.25 0 0 0
+( -1080 256 0 ) ( -1032 256 512 ) ( -1080 256 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -1120 216 0 ) ( -1080 256 512 ) ( -1120 216 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 102.3999023438 0 0 0.078125 0.25 0 0 0
+( -1120 216 0 ) ( -1120 168 512 ) ( -1120 168 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -1120 168 512 ) ( -1080 128 0 ) ( -1120 168 0 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 204.8000488281 0 0 0.078125 0.25 0 0 0
+( -1032 128 512 ) ( -1080 128 0 ) ( -1080 128 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 256 0 0 0.09375 0.25 0 0 0
+( -992 168 0 ) ( -1032 128 512 ) ( -992 168 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_post_g03.tga 204.8000488281 0 0 0.078125 0.25 0 0 0
+}
+// brush 27
+{
+( -1088 320 512 ) ( -1088 256 512 ) ( -1168 320 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_floor_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -1088 320 512 ) ( -1168 320 512 ) ( -1088 320 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1088 320 512 ) ( -1088 320 0 ) ( -1088 256 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1168 256 0 ) ( -1088 256 0 ) ( -1168 320 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1856 256 0 ) ( -1856 256 512 ) ( -1776 256 0 ) Gunz_TheSecondDuel-Mansion/wall1 -48 0 0 1 1 0 0 0
+( -2944 248 0 ) ( -2944 312 0 ) ( -2944 248 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 28
+{
+( -1088 -256 512 ) ( -1088 -320 512 ) ( -1168 -256 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_floor_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -1088 -256 512 ) ( -1168 -256 512 ) ( -1088 -256 0 ) Gunz_TheSecondDuel-Mansion/wall1 -48 0 0 1 1 0 0 0
+( -1088 -256 512 ) ( -1088 -256 0 ) ( -1088 -320 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1168 -320 0 ) ( -1088 -320 0 ) ( -1168 -256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1856 -320 0 ) ( -1856 -320 512 ) ( -1776 -320 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -2944 -328 0 ) ( -2944 -264 0 ) ( -2944 -328 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 29
+{
+( -2944 -136 512 ) ( -2944 -320 512 ) ( -3008 -136 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_floor_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -2936 320 512 ) ( -3000 320 512 ) ( -2936 320 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -2944 -136 512 ) ( -2944 -136 0 ) ( -2944 -320 512 ) Gunz_TheSecondDuel-Mansion/wall1 385 0 0 0.8311688304 1 0 0 0
+( -3008 -320 0 ) ( -2944 -320 0 ) ( -3008 -136 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -3008 -320 0 ) ( -3008 -320 512 ) ( -2944 -320 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -4096 -320 0 ) ( -4096 -136 0 ) ( -4096 -320 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 30
+{
+( -2736 320 512 ) ( -2736 128 512 ) ( -2944 320 512 ) Gunz_TheSecondDuel-Mansion/mansion_a_floor_w02_df.tga 0 0 0 0.5 0.5 0 0 0
+( -2736 256 512 ) ( -2944 256 512 ) ( -2736 256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -2496 312 512 ) ( -2496 312 0 ) ( -2496 120 512 ) Gunz_TheSecondDuel-Mansion/wall1 -240 384 0 1.5 1.5 0 0 0
+( -2944 128 448 ) ( -2736 128 448 ) ( -2944 320 448 ) Gunz_TheSecondDuel-Mansion/mansion_a_stair_under_w01_df.tga 0 0 0 0.5 0.5 0 0 0
+( -2960 -256 0 ) ( -2960 -256 512 ) ( -2752 -256 0 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -2944 128 0 ) ( -2944 320 0 ) ( -2944 128 512 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "camera_pos 01"
+"origin" "-2808 8 24"
+}
+// entity 2
+{
+"classname" "light"
+"origin" "-96 312 480"
+"light" "2000"
+}
+// entity 3
+{
+"classname" "light"
+"origin" "-432 -512 480"
+"light" "2000"
+}
+// entity 4
+{
+"classname" "light"
+"origin" "-1864 -24 480"
+"light" "2000"
+}
+// entity 5
+{
+"classname" "info_player_deathmatch"
+"origin" "-80 -24 0"
+}

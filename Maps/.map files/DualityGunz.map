@@ -1,0 +1,284 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -364 -188 176 ) ( -384 -168 176 ) ( -364 -168 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -168 140 ) ( -368 -188 176 ) ( -368 -168 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -172 176 ) ( -364 -172 140 ) ( -364 -172 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -364 -184 112 ) ( -384 -164 112 ) ( -384 -184 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -168 140 ) ( -384 -188 176 ) ( -384 -188 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -188 176 ) ( -364 -188 140 ) ( -384 -188 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( -368 -172 176 ) ( -384 -156 176 ) ( -368 -156 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -156 164 ) ( -368 -172 176 ) ( -368 -156 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -156 176 ) ( -368 -156 164 ) ( -368 -156 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -172 160 ) ( -384 -156 160 ) ( -384 -172 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -156 164 ) ( -384 -172 176 ) ( -384 -172 164 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -172 176 ) ( -368 -172 164 ) ( -384 -172 164 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( -368 -172 128 ) ( -384 -156 128 ) ( -368 -156 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -156 112 ) ( -368 -172 128 ) ( -368 -156 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -156 128 ) ( -368 -156 112 ) ( -368 -156 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -172 112 ) ( -384 -156 112 ) ( -384 -172 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -156 112 ) ( -384 -172 128 ) ( -384 -172 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -172 128 ) ( -368 -172 112 ) ( -384 -172 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 3
+{
+( -384 -140 160 ) ( -368 -156 176 ) ( -384 -156 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -140 128 ) ( -368 -156 160 ) ( -368 -140 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -140 160 ) ( -368 -140 128 ) ( -368 -140 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -140 128 ) ( -384 -156 112 ) ( -368 -156 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -140 128 ) ( -384 -156 160 ) ( -384 -156 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -156 176 ) ( -368 -156 112 ) ( -384 -156 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( -368 -124 176 ) ( -384 -108 176 ) ( -368 -108 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -108 112 ) ( -368 -124 176 ) ( -368 -108 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -108 176 ) ( -368 -108 112 ) ( -368 -108 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -124 112 ) ( -384 -108 112 ) ( -384 -124 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -108 112 ) ( -384 -124 176 ) ( -384 -124 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -124 176 ) ( -368 -124 112 ) ( -384 -124 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( -368 -108 128 ) ( -384 -80 128 ) ( -368 -80 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -80 112 ) ( -368 -108 128 ) ( -368 -80 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -92 128 ) ( -368 -92 112 ) ( -368 -92 128 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -108 112 ) ( -384 -80 112 ) ( -384 -108 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -80 112 ) ( -384 -108 128 ) ( -384 -108 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -108 128 ) ( -368 -108 112 ) ( -384 -108 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 6
+{
+( -368 -92 176 ) ( -384 -76 176 ) ( -368 -76 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -76 112 ) ( -368 -92 176 ) ( -368 -76 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -76 176 ) ( -368 -76 112 ) ( -368 -76 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -92 112 ) ( -384 -76 112 ) ( -384 -92 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -76 112 ) ( -384 -92 176 ) ( -384 -92 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -92 176 ) ( -368 -92 112 ) ( -384 -92 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 7
+{
+( -364 -64 176 ) ( -384 -44 176 ) ( -364 -44 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -44 140 ) ( -368 -64 176 ) ( -368 -44 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -48 176 ) ( -364 -48 140 ) ( -364 -48 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -364 -60 112 ) ( -384 -40 112 ) ( -384 -60 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -44 140 ) ( -384 -64 176 ) ( -384 -64 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -64 176 ) ( -364 -64 140 ) ( -384 -64 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 8
+{
+( -368 -48 176 ) ( -384 -20 176 ) ( -368 -20 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -20 160 ) ( -368 -48 176 ) ( -368 -20 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -32 176 ) ( -368 -32 160 ) ( -368 -32 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -48 160 ) ( -384 -20 160 ) ( -384 -48 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -20 160 ) ( -384 -48 176 ) ( -384 -48 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -48 176 ) ( -368 -48 160 ) ( -384 -48 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( -364 -32 176 ) ( -384 -12 176 ) ( -364 -12 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -12 140 ) ( -368 -32 176 ) ( -368 -12 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -16 176 ) ( -364 -16 140 ) ( -364 -16 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -364 -28 112 ) ( -384 -8 112 ) ( -384 -28 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -12 140 ) ( -384 -32 176 ) ( -384 -32 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -32 176 ) ( -364 -32 140 ) ( -384 -32 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( -368 -48 144 ) ( -384 -32 144 ) ( -368 -32 144 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -32 132 ) ( -368 -48 144 ) ( -368 -32 144 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -32 144 ) ( -368 -32 132 ) ( -368 -32 144 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -48 132 ) ( -384 -32 132 ) ( -384 -48 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -32 132 ) ( -384 -48 144 ) ( -384 -48 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -48 144 ) ( -368 -48 132 ) ( -384 -48 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( -364 -4 176 ) ( -384 16 176 ) ( -364 16 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 16 140 ) ( -368 -4 176 ) ( -368 16 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 12 176 ) ( -364 12 140 ) ( -364 12 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -364 0 112 ) ( -384 20 112 ) ( -384 0 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 16 140 ) ( -384 -4 176 ) ( -384 -4 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -4 176 ) ( -364 -4 140 ) ( -384 -4 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 12
+{
+( -368 12 132 ) ( -384 36 132 ) ( -368 36 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 36 112 ) ( -368 12 132 ) ( -368 36 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 36 132 ) ( -368 36 112 ) ( -368 36 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 12 112 ) ( -384 36 112 ) ( -384 12 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 36 112 ) ( -384 12 132 ) ( -384 12 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 12 132 ) ( -368 12 112 ) ( -384 12 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 13
+{
+( -368 44 176 ) ( -384 64 176 ) ( -368 64 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 64 112 ) ( -368 44 176 ) ( -368 64 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 60 176 ) ( -368 60 112 ) ( -368 60 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 44 112 ) ( -384 64 112 ) ( -384 44 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 64 112 ) ( -384 44 176 ) ( -384 44 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 44 176 ) ( -368 44 112 ) ( -384 44 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 14
+{
+( -368 68 176 ) ( -384 112 176 ) ( -368 112 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 112 160 ) ( -368 68 176 ) ( -368 112 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 112 176 ) ( -368 112 160 ) ( -368 112 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 68 160 ) ( -384 112 160 ) ( -384 68 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 112 160 ) ( -384 68 176 ) ( -384 68 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 68 176 ) ( -368 68 160 ) ( -384 68 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 15
+{
+( -364 80 160 ) ( -384 100 160 ) ( -364 100 160 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 100 140 ) ( -368 80 176 ) ( -368 100 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 96 176 ) ( -364 96 140 ) ( -364 96 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -364 84 112 ) ( -384 104 112 ) ( -384 84 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 100 140 ) ( -384 80 176 ) ( -384 80 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 80 176 ) ( -364 80 140 ) ( -384 80 140 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 16
+{
+( -384 152 176 ) ( -384 168 176 ) ( -368 152 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 168 176 ) ( -368 144 112 ) ( -368 152 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 168 176 ) ( -384 144 112 ) ( -368 168 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 144 112 ) ( -384 128 112 ) ( -368 144 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 168 176 ) ( -384 152 176 ) ( -384 144 112 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 152 176 ) ( -368 128 112 ) ( -384 152 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 17
+{
+( -384 120 176 ) ( -384 136 176 ) ( -368 120 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 120 176 ) ( -368 144 156 ) ( -368 136 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 136 176 ) ( -384 144 156 ) ( -368 136 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 144 156 ) ( -384 136 132 ) ( -368 144 156 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 144 156 ) ( -384 120 176 ) ( -384 136 132 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 120 176 ) ( -368 136 132 ) ( -384 120 176 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 18
+{
+( -364 -144 96 ) ( -384 -124 96 ) ( -364 -124 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -124 60 ) ( -368 -144 96 ) ( -368 -124 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -128 96 ) ( -364 -128 60 ) ( -364 -128 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -364 -140 32 ) ( -384 -120 32 ) ( -384 -140 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -124 60 ) ( -384 -144 96 ) ( -384 -144 60 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -144 96 ) ( -364 -144 60 ) ( -384 -144 60 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 19
+{
+( -368 -128 48 ) ( -384 -100 48 ) ( -368 -100 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -100 32 ) ( -368 -128 52 ) ( -368 -100 52 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -96 52 ) ( -368 -96 32 ) ( -368 -96 52 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -128 32 ) ( -384 -100 32 ) ( -384 -128 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -100 32 ) ( -384 -128 52 ) ( -384 -128 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -128 52 ) ( -368 -128 32 ) ( -384 -128 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 20
+{
+( -368 -128 96 ) ( -384 -100 96 ) ( -368 -100 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -100 80 ) ( -368 -128 96 ) ( -368 -100 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -96 96 ) ( -368 -96 80 ) ( -368 -96 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -124 80 ) ( -384 -96 80 ) ( -384 -124 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -100 80 ) ( -384 -128 96 ) ( -384 -128 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -128 96 ) ( -368 -128 80 ) ( -384 -128 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 21
+{
+( -368 -112 64 ) ( -384 -96 64 ) ( -368 -96 64 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -96 48 ) ( -368 -112 64 ) ( -368 -96 64 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -96 64 ) ( -368 -96 48 ) ( -368 -96 64 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -112 48 ) ( -384 -96 48 ) ( -384 -112 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -96 48 ) ( -384 -112 64 ) ( -384 -112 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -112 64 ) ( -368 -112 48 ) ( -384 -112 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 22
+{
+( -368 -84 96 ) ( -384 -68 96 ) ( -368 -68 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -68 32 ) ( -368 -84 96 ) ( -368 -68 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -68 96 ) ( -368 -68 32 ) ( -368 -68 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -84 32 ) ( -384 -68 32 ) ( -384 -84 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -68 32 ) ( -384 -84 96 ) ( -384 -84 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -84 96 ) ( -368 -84 32 ) ( -384 -84 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 23
+{
+( -368 -68 48 ) ( -384 -40 48 ) ( -368 -40 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -40 32 ) ( -368 -68 48 ) ( -368 -40 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -52 48 ) ( -368 -52 32 ) ( -368 -52 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -68 32 ) ( -384 -40 32 ) ( -384 -68 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -40 32 ) ( -384 -68 48 ) ( -384 -68 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -68 48 ) ( -368 -68 32 ) ( -384 -68 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 24
+{
+( -368 -52 96 ) ( -384 -36 96 ) ( -368 -36 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -36 32 ) ( -368 -52 96 ) ( -368 -36 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -36 96 ) ( -368 -36 32 ) ( -368 -36 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -52 32 ) ( -384 -36 32 ) ( -384 -52 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -36 32 ) ( -384 -52 96 ) ( -384 -52 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -52 96 ) ( -368 -52 32 ) ( -384 -52 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 25
+{
+( -368 -24 96 ) ( -384 -8 96 ) ( -368 -8 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -8 32 ) ( -368 -24 96 ) ( -368 -8 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -8 96 ) ( -368 -8 32 ) ( -368 -8 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 -24 32 ) ( -384 -8 32 ) ( -384 -24 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -8 32 ) ( -384 -24 96 ) ( -384 -24 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 -24 96 ) ( -368 -24 32 ) ( -384 -24 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 26
+{
+( -368 24 96 ) ( -384 40 96 ) ( -368 40 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 40 32 ) ( -368 24 96 ) ( -368 40 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 40 96 ) ( -368 40 32 ) ( -368 40 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 24 32 ) ( -384 40 32 ) ( -384 24 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 40 32 ) ( -384 24 96 ) ( -384 24 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 24 96 ) ( -368 24 32 ) ( -384 24 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 27
+{
+( -384 -8 96 ) ( -368 -8 72 ) ( -384 -8 72 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 4 32 ) ( -368 -12 96 ) ( -368 4 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 24 56 ) ( -368 -8 96 ) ( -384 -8 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 24 32 ) ( -368 24 56 ) ( -384 24 56 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 4 32 ) ( -384 -12 96 ) ( -384 -12 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 24 32 ) ( -384 -8 72 ) ( -368 -8 72 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 28
+{
+( -368 116 96 ) ( -384 116 80 ) ( -368 116 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 52 80 ) ( -368 116 96 ) ( -368 116 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 116 80 ) ( -368 52 80 ) ( -368 116 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 52 96 ) ( -384 52 80 ) ( -384 52 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 52 80 ) ( -384 116 96 ) ( -384 52 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 116 96 ) ( -368 52 96 ) ( -384 52 96 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 29
+{
+( -368 116 48 ) ( -384 116 32 ) ( -368 116 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 52 32 ) ( -368 116 48 ) ( -368 116 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 116 32 ) ( -368 52 32 ) ( -368 116 32 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 52 48 ) ( -384 52 32 ) ( -384 52 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 52 32 ) ( -384 116 48 ) ( -384 52 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 116 48 ) ( -368 52 48 ) ( -384 52 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+// brush 30
+{
+( -384 116 80 ) ( -368 92 80 ) ( -384 92 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 52 68 ) ( -368 116 84 ) ( -368 116 68 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 76 48 ) ( -368 116 80 ) ( -384 116 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 52 48 ) ( -368 76 48 ) ( -384 76 48 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -384 52 68 ) ( -384 116 84 ) ( -384 52 84 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+( -368 52 48 ) ( -384 92 80 ) ( -368 92 80 ) TheOffice_ho/ho_tableleg_base 0 0 0 0.5 0.5 0 0 0
+}
+}

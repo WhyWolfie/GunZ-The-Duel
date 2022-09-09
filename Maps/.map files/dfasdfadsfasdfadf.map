@@ -1,0 +1,465 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -112 16 0 ) ( -112 -16 0 ) ( -128 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -112 16 0 ) ( -128 16 0 ) ( -112 16 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 16 0 ) ( 128 16 -128 ) ( 128 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -136 -16 -24 ) ( -120 -16 -24 ) ( -136 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 -16 -128 ) ( -320 -16 0 ) ( -304 -16 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 -8 -128 ) ( -320 24 -128 ) ( -320 -8 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( 160 224 0 ) ( 128 224 0 ) ( 160 240 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 224 0 ) ( 160 240 0 ) ( 160 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -544 -8 ) ( 160 -544 -136 ) ( 128 -544 -8 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 248 -24 ) ( 128 232 -24 ) ( 160 248 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 240 -128 ) ( 128 240 0 ) ( 128 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 136 544 -128 ) ( 168 544 -128 ) ( 136 544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( -320 224 0 ) ( -352 224 0 ) ( -320 240 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 224 0 ) ( -320 240 0 ) ( -320 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 -544 -8 ) ( -320 -544 -136 ) ( -352 -544 -8 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -352 248 -24 ) ( -352 232 -24 ) ( -320 248 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -352 240 -128 ) ( -352 240 0 ) ( -352 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -344 544 -128 ) ( -312 544 -128 ) ( -344 544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 3
+{
+( -112 544 0 ) ( -112 512 0 ) ( -128 544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -112 544 0 ) ( -128 544 0 ) ( -112 544 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 544 0 ) ( 128 544 -128 ) ( 128 512 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -136 512 -24 ) ( -120 512 -24 ) ( -136 544 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 512 -128 ) ( -320 512 0 ) ( -304 512 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 520 -128 ) ( -320 552 -128 ) ( -320 520 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( 128 8 -8 ) ( 128 0 -8 ) ( -64 8 -8 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 80 512 0 ) ( -112 512 0 ) ( 80 512 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 128 8 0 ) ( 128 8 -56 ) ( 128 0 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -72 0 -16 ) ( 120 0 -16 ) ( -72 8 -16 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -72 16 -56 ) ( -72 16 0 ) ( 120 16 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -320 0 -56 ) ( -320 8 -56 ) ( -320 0 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( 128 -520 -8 ) ( 128 -528 -8 ) ( -64 -520 -8 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 80 -16 0 ) ( -112 -16 0 ) ( 80 -16 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 128 -520 0 ) ( 128 -520 -56 ) ( 128 -528 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -72 -528 -16 ) ( 120 -528 -16 ) ( -72 -520 -16 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -72 -512 -56 ) ( -72 -512 0 ) ( 120 -512 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( -320 -528 -56 ) ( -320 -520 -56 ) ( -320 -528 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 6
+{
+( -112 -512 0 ) ( -112 -544 0 ) ( -128 -512 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -112 -512 0 ) ( -128 -512 0 ) ( -112 -512 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -512 0 ) ( 128 -512 -128 ) ( 128 -544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -136 -544 -24 ) ( -120 -544 -24 ) ( -136 -512 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 -544 -128 ) ( -320 -544 0 ) ( -304 -544 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( -320 -536 -128 ) ( -320 -504 -128 ) ( -320 -536 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 7
+{
+( 608 8 -8 ) ( 608 0 -8 ) ( 416 8 -8 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 560 512 0 ) ( 368 512 0 ) ( 560 512 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 608 8 0 ) ( 608 8 -56 ) ( 608 0 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 408 0 -16 ) ( 600 0 -16 ) ( 408 8 -16 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 408 16 -56 ) ( 408 16 0 ) ( 600 16 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 160 0 -56 ) ( 160 8 -56 ) ( 160 0 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 8
+{
+( 368 16 0 ) ( 368 -16 0 ) ( 352 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 368 16 0 ) ( 352 16 0 ) ( 368 16 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 608 16 0 ) ( 608 16 -128 ) ( 608 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 344 -16 -24 ) ( 360 -16 -24 ) ( 344 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -16 -128 ) ( 160 -16 0 ) ( 176 -16 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -8 -128 ) ( 160 24 -128 ) ( 160 -8 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( 640 224 0 ) ( 608 224 0 ) ( 640 240 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 640 224 0 ) ( 640 240 0 ) ( 640 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 640 -544 -8 ) ( 640 -544 -136 ) ( 608 -544 -8 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 608 248 -24 ) ( 608 232 -24 ) ( 640 248 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 608 240 -128 ) ( 608 240 0 ) ( 608 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 616 544 -128 ) ( 648 544 -128 ) ( 616 544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( 368 544 0 ) ( 368 512 0 ) ( 352 544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 368 544 0 ) ( 352 544 0 ) ( 368 544 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 608 544 0 ) ( 608 544 -128 ) ( 608 512 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 344 512 -24 ) ( 360 512 -24 ) ( 344 544 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 512 -128 ) ( 160 512 0 ) ( 176 512 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 520 -128 ) ( 160 552 -128 ) ( 160 520 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( 608 -520 -8 ) ( 608 -528 -8 ) ( 416 -520 -8 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 560 -16 0 ) ( 368 -16 0 ) ( 560 -16 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 608 -520 0 ) ( 608 -520 -56 ) ( 608 -528 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 408 -528 -16 ) ( 600 -528 -16 ) ( 408 -520 -16 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 408 -512 -56 ) ( 408 -512 0 ) ( 600 -512 -56 ) common/White 0 0 0 0.5 0.5 0 0 0
+( 160 -528 -56 ) ( 160 -520 -56 ) ( 160 -528 0 ) common/White 0 0 0 0.5 0.5 0 0 0
+}
+// brush 12
+{
+( 368 -512 0 ) ( 368 -544 0 ) ( 352 -512 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 368 -512 0 ) ( 352 -512 0 ) ( 368 -512 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 608 -512 0 ) ( 608 -512 -128 ) ( 608 -544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 344 -544 -24 ) ( 360 -544 -24 ) ( 344 -512 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -544 -128 ) ( 160 -544 0 ) ( 176 -544 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -536 -128 ) ( 160 -504 -128 ) ( 160 -536 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 13
+{
+( 224 64 0 ) ( 224 16 0 ) ( 192 64 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 224 16 -24 ) ( 224 16 0 ) ( 192 32 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 16 -24 ) ( 224 16 -24 ) ( 192 64 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 16 -24 ) ( 192 16 0 ) ( 224 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 16 -24 ) ( 192 64 -24 ) ( 192 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 14
+{
+( 208 48 0 ) ( 160 80 0 ) ( 208 80 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 176 48 0 ) ( 160 80 0 ) ( 160 80 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 208 48 -24 ) ( 160 80 -24 ) ( 160 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 80 -24 ) ( 160 48 0 ) ( 160 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 48 0 ) ( 208 48 -24 ) ( 160 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 15
+{
+( 176 48 0 ) ( 176 16 0 ) ( 160 48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 176 48 0 ) ( 160 48 0 ) ( 176 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 184 40 -24 ) ( 184 40 0 ) ( 176 48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 16 -24 ) ( 176 16 -24 ) ( 160 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 184 40 0 ) ( 184 40 -24 ) ( 160 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 16 -24 ) ( 160 48 -24 ) ( 160 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 16
+{
+( 192 40 0 ) ( 192 16 0 ) ( 160 40 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 32 -24 ) ( 192 32 0 ) ( 184 40 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 32 0 ) ( 192 32 -24 ) ( 192 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 16 -24 ) ( 192 16 -24 ) ( 160 40 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 16 -24 ) ( 160 16 0 ) ( 192 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 184 40 -24 ) ( 184 40 0 ) ( 160 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 17
+{
+( 64 -64 0 ) ( 64 -16 0 ) ( 96 -64 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 64 -16 -24 ) ( 64 -16 0 ) ( 96 -32 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 -16 -24 ) ( 64 -16 -24 ) ( 96 -64 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 -16 -24 ) ( 96 -16 0 ) ( 64 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 -16 -24 ) ( 96 -64 -24 ) ( 96 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 18
+{
+( 80 -48 0 ) ( 128 -80 0 ) ( 80 -80 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 112 -48 0 ) ( 128 -80 0 ) ( 128 -80 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 80 -48 -24 ) ( 128 -80 -24 ) ( 128 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -80 -24 ) ( 128 -48 0 ) ( 128 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -48 0 ) ( 80 -48 -24 ) ( 128 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 19
+{
+( 112 -48 0 ) ( 112 -16 0 ) ( 128 -48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 112 -48 0 ) ( 128 -48 0 ) ( 112 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 104 -40 -24 ) ( 104 -40 0 ) ( 112 -48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -16 -24 ) ( 112 -16 -24 ) ( 128 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 104 -40 0 ) ( 104 -40 -24 ) ( 128 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -16 -24 ) ( 128 -48 -24 ) ( 128 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 20
+{
+( 96 -40 0 ) ( 96 -16 0 ) ( 128 -40 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 -32 -24 ) ( 96 -32 0 ) ( 104 -40 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 -32 0 ) ( 96 -32 -24 ) ( 96 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -16 -24 ) ( 96 -16 -24 ) ( 128 -40 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 -16 -24 ) ( 128 -16 0 ) ( 96 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 104 -40 -24 ) ( 104 -40 0 ) ( 128 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 21
+{
+( 208 -80 0 ) ( 160 -80 0 ) ( 208 -48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -80 -24 ) ( 160 -80 0 ) ( 176 -48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -48 -24 ) ( 160 -80 -24 ) ( 208 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -48 -24 ) ( 160 -48 0 ) ( 160 -80 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -48 -24 ) ( 208 -48 -24 ) ( 160 -48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 22
+{
+( 192 -64 0 ) ( 224 -16 0 ) ( 224 -64 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 -32 0 ) ( 224 -16 0 ) ( 224 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 -64 -24 ) ( 224 -16 -24 ) ( 192 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 224 -16 -24 ) ( 192 -16 0 ) ( 192 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 -16 0 ) ( 192 -64 -24 ) ( 192 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 23
+{
+( 192 -32 0 ) ( 160 -32 0 ) ( 192 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 192 -32 0 ) ( 192 -16 0 ) ( 192 -32 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 184 -40 -24 ) ( 184 -40 0 ) ( 192 -32 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -16 -24 ) ( 160 -32 -24 ) ( 192 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 184 -40 0 ) ( 184 -40 -24 ) ( 160 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -16 -24 ) ( 192 -16 -24 ) ( 160 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 24
+{
+( 184 -48 0 ) ( 160 -48 0 ) ( 184 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 176 -48 -24 ) ( 176 -48 0 ) ( 184 -40 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 176 -48 0 ) ( 176 -48 -24 ) ( 160 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -16 -24 ) ( 160 -48 -24 ) ( 184 -16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 160 -16 -24 ) ( 160 -16 0 ) ( 160 -48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 184 -40 -24 ) ( 184 -40 0 ) ( 160 -16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 25
+{
+( 80 80 0 ) ( 128 80 0 ) ( 80 48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 80 -24 ) ( 128 80 0 ) ( 112 48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 48 -24 ) ( 128 80 -24 ) ( 80 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 48 -24 ) ( 128 48 0 ) ( 128 80 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 48 -24 ) ( 80 48 -24 ) ( 128 48 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 26
+{
+( 96 64 0 ) ( 64 16 0 ) ( 64 64 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 32 0 ) ( 64 16 0 ) ( 64 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 64 -24 ) ( 64 16 -24 ) ( 96 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 64 16 -24 ) ( 96 16 0 ) ( 96 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 16 0 ) ( 96 64 -24 ) ( 96 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 27
+{
+( 96 32 0 ) ( 128 32 0 ) ( 96 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 96 32 0 ) ( 96 16 0 ) ( 96 32 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 104 40 -24 ) ( 104 40 0 ) ( 96 32 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 16 -24 ) ( 128 32 -24 ) ( 96 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 104 40 0 ) ( 104 40 -24 ) ( 128 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 16 -24 ) ( 96 16 -24 ) ( 128 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 28
+{
+( 104 48 0 ) ( 128 48 0 ) ( 104 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 112 48 -24 ) ( 112 48 0 ) ( 104 40 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 112 48 0 ) ( 112 48 -24 ) ( 128 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 16 -24 ) ( 128 48 -24 ) ( 104 16 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 128 16 -24 ) ( 128 16 0 ) ( 128 48 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 104 40 -24 ) ( 104 40 0 ) ( 128 16 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 29
+{
+( 672 224 0 ) ( 640 224 0 ) ( 672 240 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 1536 224 0 ) ( 1536 240 0 ) ( 1536 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 672 -544 -8 ) ( 672 -544 -136 ) ( 640 -544 -8 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 640 248 -24 ) ( 640 232 -24 ) ( 672 248 -24 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 640 240 -128 ) ( 640 240 0 ) ( 640 224 -128 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+( 648 544 -128 ) ( 680 544 -128 ) ( 648 544 0 ) mansionhall/mansionhall_material_18 0 0 0 0.5 0.5 0 0 0
+}
+// brush 30
+{
+( 680 32 320 ) ( 680 -8 320 ) ( 640 32 320 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 680 48 24 ) ( 640 48 24 ) ( 680 48 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 696 16 24 ) ( 696 16 0 ) ( 696 -24 24 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 -24 0 ) ( 680 -24 0 ) ( 640 16 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 -48 0 ) ( 640 -48 24 ) ( 680 -48 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 -24 0 ) ( 640 16 0 ) ( 640 -24 24 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+}
+// brush 31
+{
+( 640 64 216 ) ( 696 64 216 ) ( 696 48 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 72 256 ) ( 696 72 192 ) ( 696 48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 64 216 ) ( 640 64 216 ) ( 640 48 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 192 ) ( 640 48 256 ) ( 696 48 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 192 ) ( 640 72 192 ) ( 640 48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 32
+{
+( 640 88 240 ) ( 696 88 240 ) ( 696 48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 88 240 ) ( 640 88 240 ) ( 696 64 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 64 240 ) ( 696 64 216 ) ( 696 48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 216 ) ( 696 48 216 ) ( 640 64 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 216 ) ( 640 48 240 ) ( 696 48 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 216 ) ( 640 64 216 ) ( 640 48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 33
+{
+( 640 128 256 ) ( 696 128 256 ) ( 696 48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 128 256 ) ( 640 128 256 ) ( 696 88 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 88 256 ) ( 696 88 240 ) ( 696 48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 240 ) ( 696 48 240 ) ( 640 88 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 240 ) ( 640 48 256 ) ( 696 48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 240 ) ( 640 88 240 ) ( 640 48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 34
+{
+( 640 176 264 ) ( 696 48 264 ) ( 640 48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 176 264 ) ( 640 128 256 ) ( 696 128 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 176 264 ) ( 696 48 256 ) ( 696 48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 128 256 ) ( 640 48 256 ) ( 696 48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 48 256 ) ( 640 48 264 ) ( 696 48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 256 ) ( 640 176 264 ) ( 640 48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 35
+{
+( 696 304 216 ) ( 696 288 216 ) ( 640 288 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 256 ) ( 696 280 192 ) ( 696 280 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 304 192 ) ( 640 288 216 ) ( 696 288 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 192 ) ( 640 304 256 ) ( 640 304 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 304 256 ) ( 640 280 192 ) ( 640 304 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 36
+{
+( 696 304 240 ) ( 696 264 240 ) ( 640 264 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 288 216 ) ( 640 264 240 ) ( 696 264 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 240 ) ( 696 288 216 ) ( 696 288 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 288 216 ) ( 696 304 216 ) ( 640 304 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 216 ) ( 640 304 240 ) ( 640 304 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 304 240 ) ( 640 288 216 ) ( 640 304 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 37
+{
+( 696 304 256 ) ( 696 224 256 ) ( 640 224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 264 240 ) ( 640 224 256 ) ( 696 224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 256 ) ( 696 264 240 ) ( 696 264 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 264 240 ) ( 696 304 240 ) ( 640 304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 240 ) ( 640 304 256 ) ( 640 304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 304 256 ) ( 640 264 240 ) ( 640 304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 38
+{
+( 696 176 264 ) ( 640 304 264 ) ( 696 304 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 224 256 ) ( 696 176 264 ) ( 696 224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 176 264 ) ( 696 304 264 ) ( 696 224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 256 ) ( 640 224 256 ) ( 696 224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 304 256 ) ( 696 304 264 ) ( 640 304 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 224 256 ) ( 640 304 264 ) ( 640 176 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 39
+{
+( 696 304 320 ) ( 696 48 320 ) ( 640 304 320 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 320 ) ( 640 304 320 ) ( 696 304 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 304 320 ) ( 696 304 264 ) ( 696 48 320 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 264 ) ( 696 48 264 ) ( 640 304 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 264 ) ( 640 48 320 ) ( 696 48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 48 264 ) ( 640 304 264 ) ( 640 48 320 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 40
+{
+( 680 384 320 ) ( 680 344 320 ) ( 640 384 320 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 680 400 24 ) ( 640 400 24 ) ( 680 400 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 696 368 24 ) ( 696 368 0 ) ( 696 328 24 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 328 0 ) ( 680 328 0 ) ( 640 368 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 304 0 ) ( 640 304 24 ) ( 680 304 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 328 0 ) ( 640 368 0 ) ( 640 328 24 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+}
+// brush 41
+{
+( 696 -48 216 ) ( 696 -64 216 ) ( 640 -64 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 256 ) ( 696 -72 192 ) ( 696 -72 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -48 192 ) ( 640 -64 216 ) ( 696 -64 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 192 ) ( 640 -48 256 ) ( 640 -48 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -48 256 ) ( 640 -72 192 ) ( 640 -48 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 42
+{
+( 696 -48 240 ) ( 696 -88 240 ) ( 640 -88 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -64 216 ) ( 640 -88 240 ) ( 696 -88 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 240 ) ( 696 -64 216 ) ( 696 -64 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -64 216 ) ( 696 -48 216 ) ( 640 -48 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 216 ) ( 640 -48 240 ) ( 640 -48 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -48 240 ) ( 640 -64 216 ) ( 640 -48 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 43
+{
+( 696 -48 256 ) ( 696 -128 256 ) ( 640 -128 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -88 240 ) ( 640 -128 256 ) ( 696 -128 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 256 ) ( 696 -88 240 ) ( 696 -88 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -88 240 ) ( 696 -48 240 ) ( 640 -48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 240 ) ( 640 -48 256 ) ( 640 -48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -48 256 ) ( 640 -88 240 ) ( 640 -48 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 44
+{
+( 640 -48 264 ) ( 696 -48 264 ) ( 640 -176 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -128 256 ) ( 640 -128 256 ) ( 696 -176 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 264 ) ( 696 -48 256 ) ( 696 -176 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 256 ) ( 640 -48 256 ) ( 696 -128 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 264 ) ( 640 -48 264 ) ( 696 -48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -48 264 ) ( 640 -176 264 ) ( 640 -48 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 45
+{
+( 640 -288 216 ) ( 696 -288 216 ) ( 696 -304 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -280 256 ) ( 696 -280 192 ) ( 696 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -288 216 ) ( 640 -288 216 ) ( 640 -304 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 192 ) ( 640 -304 256 ) ( 696 -304 192 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 192 ) ( 640 -280 192 ) ( 640 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 46
+{
+( 640 -264 240 ) ( 696 -264 240 ) ( 696 -304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -264 240 ) ( 640 -264 240 ) ( 696 -288 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -288 240 ) ( 696 -288 216 ) ( 696 -304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 216 ) ( 696 -304 216 ) ( 640 -288 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 216 ) ( 640 -304 240 ) ( 696 -304 216 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 216 ) ( 640 -288 216 ) ( 640 -304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 47
+{
+( 640 -224 256 ) ( 696 -224 256 ) ( 696 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -224 256 ) ( 640 -224 256 ) ( 696 -264 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -264 256 ) ( 696 -264 240 ) ( 696 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 240 ) ( 696 -304 240 ) ( 640 -264 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 240 ) ( 640 -304 256 ) ( 696 -304 240 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 240 ) ( 640 -264 240 ) ( 640 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 48
+{
+( 696 -304 264 ) ( 640 -304 264 ) ( 696 -176 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -224 256 ) ( 696 -176 264 ) ( 640 -224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -224 256 ) ( 696 -304 264 ) ( 696 -176 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -224 256 ) ( 640 -224 256 ) ( 696 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 264 ) ( 696 -304 264 ) ( 640 -304 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -176 264 ) ( 640 -304 264 ) ( 640 -224 256 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 49
+{
+( 640 -304 320 ) ( 696 -48 320 ) ( 696 -304 320 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -304 264 ) ( 640 -304 320 ) ( 696 -304 320 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 320 ) ( 696 -304 264 ) ( 696 -304 320 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -304 264 ) ( 696 -48 264 ) ( 640 -48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 696 -48 264 ) ( 640 -48 320 ) ( 640 -48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( 640 -48 320 ) ( 640 -304 264 ) ( 640 -48 264 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+}
+// brush 50
+{
+( 640 -384 320 ) ( 680 -344 320 ) ( 680 -384 320 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 680 -400 0 ) ( 640 -400 24 ) ( 680 -400 24 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 696 -328 24 ) ( 696 -368 0 ) ( 696 -368 24 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 -368 0 ) ( 680 -328 0 ) ( 640 -328 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 680 -304 0 ) ( 640 -304 24 ) ( 640 -304 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+( 640 -328 24 ) ( 640 -368 0 ) ( 640 -328 0 ) mansionhall/mansionhall_material_9 0 0 0 1 1 0 0 0
+}
+// brush 51
+{
+( 696 -304 368 ) ( 696 -400 368 ) ( 640 -304 368 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( 696 400 368 ) ( 640 400 368 ) ( 696 400 320 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( 696 -304 368 ) ( 696 -304 320 ) ( 696 -400 368 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( 640 -400 320 ) ( 696 -400 320 ) ( 640 -304 320 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( 640 -400 320 ) ( 640 -400 368 ) ( 696 -400 320 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( 640 -400 320 ) ( 640 -304 320 ) ( 640 -400 368 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "info_player_deathmatch"
+}
