@@ -68,7 +68,6 @@ GunZ The Duel Releases <br>
 - crosshair size: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size
 - spark effect: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect-spark-shot
 - extra info: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5
-- gunz patches: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library
 - hide jjang: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang
 - hillclimb: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix
 - icon death scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard
@@ -119,7 +118,7 @@ GunZ The Duel Releases <br>
 - clan close fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix
 - clan/quest/survival: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix
 - adding effect combo: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo
-
+- gunz patches: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
