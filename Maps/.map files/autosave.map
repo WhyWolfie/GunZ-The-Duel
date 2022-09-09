@@ -1,0 +1,123 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -760 8 -128 ) ( -760 0 -128 ) ( -1024 8 -128 ) mansionhall/mansionhall_material_25 0 0 0 0.5 0.5 0 0 0
+( -736 512 -128 ) ( -1000 512 -128 ) ( -736 512 -192 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -448 8 -128 ) ( -448 8 -192 ) ( -448 0 -128 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1024 0 -192 ) ( -760 0 -192 ) ( -1024 8 -192 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1088 -576 -192 ) ( -1088 -576 -128 ) ( -824 -576 -192 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+( -1088 0 -192 ) ( -1088 8 -192 ) ( -1088 0 -128 ) common/caulk2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( -1000 -512 192 ) ( -1000 -576 192 ) ( -1112 -512 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -976 -512 -120 ) ( -1088 -512 -120 ) ( -976 -512 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -496 -120 ) ( -448 -496 -128 ) ( -448 -560 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1088 -576 -128 ) ( -976 -576 -128 ) ( -1088 -512 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1088 -576 -128 ) ( -1088 -576 -120 ) ( -976 -576 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1088 -576 -128 ) ( -1088 -512 -128 ) ( -1088 -576 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( -1024 -24 192 ) ( -1088 -24 192 ) ( -1024 88 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1024 -48 -56 ) ( -1024 64 -56 ) ( -1024 -48 -64 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1008 -512 -120 ) ( -1008 -512 -128 ) ( -1072 -512 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1088 64 -128 ) ( -1088 -48 -128 ) ( -1024 64 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1088 64 -128 ) ( -1088 64 -120 ) ( -1088 -48 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1064 512 -128 ) ( -1000 512 -128 ) ( -1064 512 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 3
+{
+( -600 -64 192 ) ( -600 0 192 ) ( -488 -64 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -624 -64 -120 ) ( -512 -64 -120 ) ( -624 -64 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -768 -80 -120 ) ( -768 -80 -128 ) ( -768 -16 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 0 -128 ) ( -624 0 -128 ) ( -512 -64 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 0 -128 ) ( -512 0 -120 ) ( -624 0 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 0 -128 ) ( -448 -64 -128 ) ( -448 0 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( -856 -64 192 ) ( -856 0 192 ) ( -744 -64 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -880 -64 -120 ) ( -768 -64 -120 ) ( -880 -64 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1024 -80 -56 ) ( -1024 -80 -64 ) ( -1024 -16 -56 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -768 0 -128 ) ( -880 0 -128 ) ( -768 -64 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -768 0 -128 ) ( -768 0 -120 ) ( -880 0 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -896 0 -64 ) ( -896 -64 -64 ) ( -896 0 -56 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( -512 -240 -32 ) ( -448 -240 -32 ) ( -512 -352 -32 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( -512 -208 -120 ) ( -512 -320 -120 ) ( -512 -208 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -528 -64 -120 ) ( -528 -64 -128 ) ( -464 -64 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -320 -128 ) ( -448 -208 -128 ) ( -512 -320 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -320 -128 ) ( -448 -320 -120 ) ( -448 -208 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -424 -512 -128 ) ( -488 -512 -128 ) ( -424 -512 -120 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 6
+{
+( -512 -240 192 ) ( -448 -240 192 ) ( -512 -352 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -208 40 ) ( -512 -320 40 ) ( -512 -208 32 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -528 -64 40 ) ( -528 -64 32 ) ( -464 -64 40 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -320 128 ) ( -448 -208 128 ) ( -512 -320 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -320 32 ) ( -448 -320 40 ) ( -448 -208 32 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -424 -512 32 ) ( -488 -512 32 ) ( -424 -512 40 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 7
+{
+( -448 -64 128 ) ( -448 -128 128 ) ( -512 -64 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -64 64 ) ( -512 -64 64 ) ( -448 -64 -32 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -64 64 ) ( -448 -64 -32 ) ( -448 -128 64 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -128 -32 ) ( -448 -128 -32 ) ( -512 -64 -32 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -144 -32 ) ( -512 -144 64 ) ( -448 -144 -32 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( -512 -128 -32 ) ( -512 -64 -32 ) ( -512 -128 64 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 8
+{
+( -448 -448 128 ) ( -448 -512 128 ) ( -512 -448 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -416 64 ) ( -512 -416 64 ) ( -448 -416 -32 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( -448 -448 64 ) ( -448 -448 -32 ) ( -448 -512 64 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -32 ) ( -448 -512 -32 ) ( -512 -448 -32 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -32 ) ( -512 -512 64 ) ( -448 -512 -32 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -32 ) ( -512 -448 -32 ) ( -512 -512 64 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( -520 -64 192 ) ( -520 -312 192 ) ( -1024 -64 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -520 -64 192 ) ( -1024 -64 192 ) ( -520 -64 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -64 192 ) ( -512 -64 -128 ) ( -512 -312 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1024 -328 128 ) ( -520 -328 128 ) ( -1024 -80 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1048 -512 -128 ) ( -1048 -512 192 ) ( -544 -512 -128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -1024 -312 -128 ) ( -1024 -64 -128 ) ( -1024 -312 192 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( -448 -144 128 ) ( -448 -416 128 ) ( -512 -144 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -144 128 ) ( -512 -144 128 ) ( -448 -144 88 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -448 -144 128 ) ( -448 -144 88 ) ( -448 -416 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -416 88 ) ( -448 -416 88 ) ( -512 -144 88 ) mansionhall/mansionhall_material_9 0 0 0 0.5 0.5 0 0 0
+( -512 -416 88 ) ( -512 -416 128 ) ( -448 -416 88 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+( -512 -416 88 ) ( -512 -144 88 ) ( -512 -416 128 ) mansionhall/mansionhall_material_14 0 0 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( -472 -152 88 ) ( -472 -168 88 ) ( -488 -152 88 ) mansionhall/mansionhall_material_5 0 0 0 0.5 0.5 0 0 0
+( -472 -152 88 ) ( -488 -152 88 ) ( -472 -152 48 ) mansionhall/mansionhall_material_5 0 0 0 0.5 0.5 0 0 0
+( -472 -152 88 ) ( -472 -152 48 ) ( -472 -168 88 ) mansionhall/mansionhall_material_5 0 0 0 0.5 0.5 0 0 0
+( -488 -168 -32 ) ( -472 -168 -32 ) ( -488 -152 -32 ) mansionhall/mansionhall_material_5 0 0 0 0.5 0.5 0 0 0
+( -480 -160 48 ) ( -480 -160 88 ) ( -464 -160 48 ) mansionhall/mansionhall_material_5 0 0 0 0.5 0.5 0 0 0
+( -480 -168 48 ) ( -480 -152 48 ) ( -480 -168 88 ) mansionhall/mansionhall_material_5 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "info_player_deathmatch"
+"origin" "0 0 -128"
+}
+// entity 2
+{
+"classname" "camera_pos 01"
+"origin" "-776 -320 -128"
+}
