@@ -1,0 +1,126 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 0 72 0 ) ( 0 64 0 ) ( -120 72 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -16 128 0 ) ( -136 128 0 ) ( -16 128 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 128 -56 0 ) ( 128 -56 -64 ) ( 128 -64 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -120 64 -64 ) ( 0 64 -64 ) ( -120 72 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 16 -128 -64 ) ( 16 -128 0 ) ( 136 -128 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -128 64 -64 ) ( -128 72 -64 ) ( -128 64 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 1
+{
+( -256 72 0 ) ( -256 64 0 ) ( -376 72 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -272 128 0 ) ( -392 128 0 ) ( -272 128 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -128 -56 0 ) ( -128 -56 -64 ) ( -128 -64 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -376 64 -64 ) ( -256 64 -64 ) ( -376 72 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -240 -128 -64 ) ( -240 -128 0 ) ( -120 -128 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -384 64 -64 ) ( -384 72 -64 ) ( -384 64 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 2
+{
+( 256 72 0 ) ( 256 64 0 ) ( 136 72 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 240 128 0 ) ( 120 128 0 ) ( 240 128 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 384 -56 0 ) ( 384 -56 -64 ) ( 384 -64 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 136 64 -64 ) ( 256 64 -64 ) ( 136 72 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 272 -128 -64 ) ( 272 -128 0 ) ( 392 -128 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 128 64 -64 ) ( 128 72 -64 ) ( 128 64 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 3
+{
+( 72 256 0 ) ( 64 256 0 ) ( 72 376 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 128 272 0 ) ( 128 392 0 ) ( 128 272 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -56 128 0 ) ( -56 128 -64 ) ( -64 128 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 64 376 -64 ) ( 64 256 -64 ) ( 72 376 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -128 240 -64 ) ( -128 240 0 ) ( -128 120 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 64 384 -64 ) ( 72 384 -64 ) ( 64 384 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 4
+{
+( 72 -256 0 ) ( 64 -256 0 ) ( 72 -136 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 128 -240 0 ) ( 128 -120 0 ) ( 128 -240 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -56 -384 0 ) ( -56 -384 -64 ) ( -64 -384 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 64 -136 -64 ) ( 64 -256 -64 ) ( 72 -136 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( -128 -272 -64 ) ( -128 -272 0 ) ( -128 -392 -64 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+( 64 -128 -64 ) ( 72 -128 -64 ) ( 64 -128 0 ) mercy/floor_concrete_white3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 5
+{
+( -184 256 0 ) ( -192 256 0 ) ( -184 376 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -128 272 0 ) ( -128 392 0 ) ( -128 272 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -312 128 0 ) ( -312 128 -64 ) ( -320 128 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -192 376 -64 ) ( -192 256 -64 ) ( -184 376 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -384 240 -64 ) ( -384 240 0 ) ( -384 120 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -192 384 -64 ) ( -184 384 -64 ) ( -192 384 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 6
+{
+( -184 -256 0 ) ( -192 -256 0 ) ( -184 -136 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -128 -240 0 ) ( -128 -120 0 ) ( -128 -240 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -312 -384 0 ) ( -312 -384 -64 ) ( -320 -384 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -192 -136 -64 ) ( -192 -256 -64 ) ( -184 -136 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -384 -272 -64 ) ( -384 -272 0 ) ( -384 -392 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( -192 -128 -64 ) ( -184 -128 -64 ) ( -192 -128 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 7
+{
+( 328 256 0 ) ( 320 256 0 ) ( 328 376 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 384 272 0 ) ( 384 392 0 ) ( 384 272 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 200 128 0 ) ( 200 128 -64 ) ( 192 128 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 320 376 -64 ) ( 320 256 -64 ) ( 328 376 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 128 240 -64 ) ( 128 240 0 ) ( 128 120 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 320 384 -64 ) ( 328 384 -64 ) ( 320 384 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 8
+{
+( 328 -256 0 ) ( 320 -256 0 ) ( 328 -136 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 384 -240 0 ) ( 384 -120 0 ) ( 384 -240 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 200 -384 0 ) ( 200 -384 -64 ) ( 192 -384 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 320 -136 -64 ) ( 320 -256 -64 ) ( 328 -136 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 128 -272 -64 ) ( 128 -272 0 ) ( 128 -392 -64 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+( 320 -128 -64 ) ( 328 -128 -64 ) ( 320 -128 0 ) mercy/floor_concrete_green3 0 0 0 0.5 0.5 0 0 0
+}
+// brush 9
+{
+( -272 512 0 ) ( -272 384 0 ) ( -384 512 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -512 512 0 ) ( -512 512 -64 ) ( 512 512 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 512 512 0 ) ( 512 512 -64 ) ( 384 384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -384 384 -64 ) ( -272 384 -64 ) ( -384 512 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -384 384 -64 ) ( -384 384 0 ) ( -272 384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -512 512 -64 ) ( -512 512 0 ) ( -384 384 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 10
+{
+( 512 272 0 ) ( 384 272 0 ) ( 512 384 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 512 512 0 ) ( 512 512 -64 ) ( 512 -512 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 512 -512 0 ) ( 512 -512 -64 ) ( 384 -384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 384 384 -64 ) ( 384 272 -64 ) ( 512 384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 384 384 -64 ) ( 384 384 0 ) ( 384 272 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 512 512 -64 ) ( 512 512 0 ) ( 384 384 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 11
+{
+( 272 -512 0 ) ( 272 -384 0 ) ( 384 -512 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 512 -512 0 ) ( 512 -512 -64 ) ( -512 -512 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -512 -512 0 ) ( -512 -512 -64 ) ( -384 -384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 384 -384 -64 ) ( 272 -384 -64 ) ( 384 -512 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 384 -384 -64 ) ( 384 -384 0 ) ( 272 -384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( 512 -512 -64 ) ( 512 -512 0 ) ( 384 -384 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+}
+// brush 12
+{
+( -512 -272 0 ) ( -384 -272 0 ) ( -512 -384 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -512 -512 0 ) ( -512 -512 -64 ) ( -512 512 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -512 512 0 ) ( -512 512 -64 ) ( -384 384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -384 -384 -64 ) ( -384 -272 -64 ) ( -512 -384 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -384 -384 -64 ) ( -384 -384 0 ) ( -384 -272 -64 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -64 ) ( -512 -512 0 ) ( -384 -384 0 ) mercy/floor_concrete_white2 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "info_player_deathmatch"
+}

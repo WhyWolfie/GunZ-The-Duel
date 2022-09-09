@@ -1,0 +1,30 @@
+
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( 536 512 0 ) ( 536 -512 0 ) ( -512 512 0 ) pCenter/Chair2 0 0 0 0.5 0.5 0 0 0
+( 352 2368 0 ) ( -696 2368 0 ) ( 352 2368 -8 ) pCenter/Chair2 0 0 0 0.5 0.5 0 0 0
+( 2568 -64 0 ) ( 2568 -64 -8 ) ( 2568 -1088 0 ) pCenter/Chair2 0 0 0 0.5 0.5 0 0 0
+( -512 -512 -8 ) ( 536 -512 -8 ) ( -512 512 -8 ) pCenter/Chair2 0 0 0 0.5 0.5 0 0 0
+( -488 -2728 -8 ) ( -488 -2728 0 ) ( 560 -2728 -8 ) pCenter/Chair2 0 0 0 0.5 0.5 0 0 0
+( -2776 -792 -8 ) ( -2776 232 -8 ) ( -2776 -792 0 ) pCenter/Chair2 0 0 0 0.5 0.5 0 0 0
+}
+}
+// entity 1
+{
+"classname" "info_player_teamdeathmatch_0"
+"origin" "0 0 0"
+}
+// entity 2
+{
+"classname" "info_player_deathmatch"
+"origin" "-744 0 248"
+}
+// entity 3
+{
+"classname" "light"
+"origin" "-104 -176 1072"
+"light" "11000"
+}
