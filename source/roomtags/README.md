@@ -115,7 +115,7 @@ Replace to :
     }
     break; 
     
-Find: ZMyCharacter::WallJump2 - random high walljumps<br> 
+Find: ZMyCharacter::WallJump2 [walljump] - random high walljumps<br> 
 Add under
     
     	if(strstr(ZGetGameClient()->GetStageName(), "[walljump]"))
@@ -154,7 +154,7 @@ Add under
 		}
 	}
 
-Find ZModule_Movable::UpdateGravity - Gravity <br>
+Find ZModule_Movable::UpdateGravity [gravity] - Gravity <br>
 and replace <br>
 
 	void ZModule_Movable::UpdateGravity(float fDelta)
@@ -175,3 +175,55 @@ Find #define COLLISION_DIST <br>
 add under <br>
 
 	#define GRAVITY_LOW     			500.f
+	
+
+[ESP] <br>
+Find void ZCombatInterface::OnDraw(MDrawContext* pDC) <br>
+
+	if(strstr(ZGetGameClient()->GetStageName(),"[ESP]"))
+	{
+		bDrawAllPlayerName = true;
+		DrawAllPlayerName(pDC);
+	}
+
+[NF] - No Flip Tag <br>
+
+Find case ZDW_UPPERCUT & replace (ZMyCharacter.cpp) <br>
+
+	case ZDW_UPPERCUT :
+		if(strstr(ZGetGameClient()->GetStageName(),"[NF]"))
+				{
+					/*if(zStatus.m_bSkill) {
+			MMatchWeaponType type = MWT_NONE;
+
+			int sel_type = GetItems()->GetSelectedWeaponParts();
+			ZItem* pSItem = GetItems()->GetSelectedWeapon();
+
+			if(pSItem && pSItem->GetDesc())
+				type = pSItem->GetDesc()->m_nWeaponType.Ref();
+
+			if(type == MWT_KATANA || type == MWT_DOUBLE_KATANA ) {
+				ZPostSkill( /*g_pGame->GetTime(),*//* ZC_SKILL_UPPERCUT , sel_type );
+			}
+		}*/
+		}
+		else
+							{
+		if(zStatus.m_bSkill) {
+			MMatchWeaponType type = MWT_NONE;
+
+			int sel_type = GetItems()->GetSelectedWeaponParts();
+			ZItem* pSItem = GetItems()->GetSelectedWeapon();
+
+			if(pSItem && pSItem->GetDesc())
+				type = pSItem->GetDesc()->m_nWeaponType.Ref();
+
+			if(type == MWT_KATANA || type == MWT_DOUBLE_KATANA ) {
+				ZPostSkill( /*g_pGame->GetTime(),*/ ZC_SKILL_UPPERCUT , sel_type );
+			}
+		}
+	}
+	break;
+
+
+
