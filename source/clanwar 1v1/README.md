@@ -1,10 +1,10 @@
 Open (MFeatureDefine.h) <br>
-Add this
+Add this <br>
 
     #define _LADDERGAME
     
-Open (MMatchDBMgr.cpp)
-Find
+Open (MMatchDBMgr.cpp) <br>
+Find <br>
 
     MMatchDBMgr::GetLadderTeamID
 
@@ -86,7 +86,7 @@ Find <br>
 
     MClanGameStrategy::MClanGameStrategy
 
-Replace
+Replace <br>
 
     MClanGameStrategy::MClanGameStrategy()
     {
@@ -138,11 +138,11 @@ Replace
       }
     }
 
-Find
+Find <br>
 
     MClanGameStrategy::GetRandomMap(int nTeamMember)
 
-Replace
+Replace <br>
 
     int MClanGameStrategy::GetRandomMap(int nTeamMember)
     {
@@ -179,12 +179,12 @@ Replace
       return nRandomMap;
     }
 
-Open (ZInterfaceListener.cpp)
-Find
+Open (ZInterfaceListener.cpp) <br>
+Find <br>
 
     case MSM_CLAN:
 
-Replace
+Replace <br>
 
         case MSM_CLAN:
           {
