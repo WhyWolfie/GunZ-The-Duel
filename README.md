@@ -99,7 +99,7 @@ GunZ The Duel Releases <br>
 - bunch of features: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features
 - weapon shoot nade: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade
 - heal over time (1+hp): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time
-
+- clan 1v1: https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/clanwar%201v1/
 
 (fixes)<br>
 - dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
