@@ -120,6 +120,7 @@ GunZ The Duel Releases <br>
 - adding effect combo: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo
 - gunz patches: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library
 - optimize windowed mode fps: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/optimize%20windowed%20mode%20fps
+- duel tournament player rank fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/duel%20tournament%20player%20rank%20fix
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
