@@ -96,3 +96,14 @@ Change
 
 	char* pszAgentIP = "YOUR IP";
 
+Open(MPdb.cpp)
+Find
+
+	if (!g_pfnEnumerateLoadedModules(hProcess, EnumLoadedModulesCallback, (PVOID)hProcess))
+
+Change
+
+	if (!EnumerateLoadedModules(hProcess, (PENUMLOADED_MODULES_CALLBACK)EnumLoadedModulesCallback, (PVOID)hProcess))
+	
+
+
