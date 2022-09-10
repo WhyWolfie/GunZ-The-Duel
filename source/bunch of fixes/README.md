@@ -96,8 +96,8 @@ Change
 
 	char* pszAgentIP = "YOUR IP";
 
-Open(MPdb.cpp)
-Find
+Open(MPdb.cpp) <br>
+Find <br>
 
 	if (!g_pfnEnumerateLoadedModules(hProcess, EnumLoadedModulesCallback, (PVOID)hProcess))
 
@@ -105,5 +105,8 @@ Change
 
 	if (!EnumerateLoadedModules(hProcess, (PENUMLOADED_MODULES_CALLBACK)EnumLoadedModulesCallback, (PVOID)hProcess))
 	
+Open(Gunz/stdafx.h) <br>
+Add <br>
 
+	#pragma comment(lib, "legacy_stdio_definitions.lib");
 
