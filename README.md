@@ -12,7 +12,7 @@ GunZ The Duel Releases <br>
 - [how to make a gunz server tutorial](https://www.youtube.com/watch?v=qTIk722vrKE) <br>
 
 <b>[github]</b> <br>
-- [refinedgunz](https://github.com/Asunaya/refinedgunz) <br>
+- [refinedgunz (source)](https://github.com/Asunaya/refinedgunz) <br>
 - [gunz replay](https://github.com/mataha/gunz-replay) <br>
 - [z3resex](https://github.com/x1nixmzeng/z3ResEx) <br>
 - [infamous](https://github.com/Theoretical/Infamous) <br>
@@ -26,11 +26,12 @@ GunZ The Duel Releases <br>
 - [gunz simple web](https://github.com/tannous94/GunZ-simple-web) <br>
 - [gunzcord](https://github.com/emisandgunz/gunzcord) <br>
 - [gunz bunch of items](https://github.com/Durial06/GunZ-The-Duel-Items) <br>
-- [repack jorklenis2](https://github.com/Jorklenis/Repack-Jorklenis2) <br>
-- [fxpgunz repacked](https://github.com/fxpgunz/FxpGZ-Repacked) <br>
-- [ogz source](https://github.com/open-gunz/ogz-source) <br>
+- [repack jorklenis2 (source)](https://github.com/Jorklenis/Repack-Jorklenis2) <br>
+- [fxpgunz repacked (source)](https://github.com/fxpgunz/FxpGZ-Repacked) <br>
+- [ogz (source)](https://github.com/open-gunz/ogz-source) <br>
 - [(io scene gzrs2) - amazing blender project](https://github.com/Krunklehorn/io-scene-gzrs2) <br>
-- [refinedgunz](https://github.com/Asunaya/refinedgunz) <br>
+- [zeronis(source)](https://github.com/ZER0NIS/Gunz-Base) <br>
+- [jetman (source)](https://github.com/Jetman823/Gunz1.5) <br>
 
 <b>[sql]</b>
 - GunzDBFixed: [download](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
