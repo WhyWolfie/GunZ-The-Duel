@@ -1,3 +1,13 @@
+Open(realsound\include\stdafx.h) <br>
+Place <br>
+
+	#if _MSC_VER > 1000
+	#pragma once
+	//<Define POINTER_64>
+	#define POINTER_64 __ptr64
+	#endif // _MSC_VER > 1000
+
+
 Open (ZOptionInterface.cpp)
 
 Fix: Iterator crash fix, in case resolution isn't supported
@@ -260,3 +270,15 @@ Change <br>
 			pCharacter->SetAP((float)AP);
 		}
 	}
+
+Open (ZOptionInterface.cpp) <br>
+Find <br>
+
+	static int heights[]={ 480,600,768,960,1200,800,900, 1050, 1200, 1600};
+	
+Change <br>
+
+	static int widths[] = { 800, 1024, 1280, 1280, 1366, 1600, 1280, 1440, 1600, 1650, 1920, 1920, 2560 };
+	static int heights[] = { 600, 768, 720, 960, 768, 1200, 800, 900, 900, 1050, 1080, 1200, 1600 };
+
+
