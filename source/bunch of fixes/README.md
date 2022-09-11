@@ -110,3 +110,153 @@ Add <br>
 
 	#pragma comment(lib, "legacy_stdio_definitions.lib");
 
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+	void ZGame::OnPeerHPInfo(MCommand *pCommand)
+	{
+		MUID uid = pCommand->GetSenderUID();
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+		if (!pCharacter) return;
+
+		float fHP=0.0f;
+		pCommand->GetParameter(&fHP, 0, MPT_FLOAT);
+
+		if(ZGetGameInterface()->GetCombatInterface()->GetObserverMode()) {
+			pCharacter->SetHP(fHP);
+		}
+	}
+
+Replace
+
+	void ZGame::OnPeerHPInfo(MCommand *pCommand)
+	{
+		MUID uid = pCommand->GetSenderUID();
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+		if (!pCharacter) return;
+
+		float fHP = 0.0f;
+		pCommand->GetParameter(&fHP, 0, MPT_FLOAT);
+		//<Lógica de HP>
+		if (!IsReplay() && pCharacter->GetUID() != ZGetMyUID() && uid != ZGetMyUID())
+			pCharacter->SetHP(fHP);
+		else if (IsReplay() || ZGetGameInterface()->GetCombatInterface()->GetObserverMode())
+			pCharacter->SetHP(fHP);
+	}
+
+Find <br>
+
+	void ZGame::OnPeerHPAPInfo(MCommand *pCommand)
+	{
+		MUID uid = pCommand->GetSenderUID();
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+		if (!pCharacter) return;
+
+		float fHP=0.0f;
+		pCommand->GetParameter(&fHP, 0, MPT_FLOAT);
+		float fAP=0.0f;
+		pCommand->GetParameter(&fAP, 1, MPT_FLOAT);
+
+		if(ZGetGameInterface()->GetCombatInterface()->GetObserverMode()) {
+			pCharacter->SetHP(fHP);
+			pCharacter->SetAP(fAP);
+		}
+	}
+	
+Change <br>
+
+	void ZGame::OnPeerHPAPInfo(MCommand *pCommand)
+	{
+		MUID uid = pCommand->GetSenderUID();
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+		if (!pCharacter) return;
+
+		float fHP = 0.0f;
+		pCommand->GetParameter(&fHP, 0, MPT_FLOAT);
+		float fAP = 0.0f;
+		pCommand->GetParameter(&fAP, 1, MPT_FLOAT);
+
+		//<Lógica de HP/AP>
+		if (!IsReplay() && pCharacter->GetUID() != ZGetMyUID() && uid != ZGetMyUID())
+		{
+			pCharacter->SetHP(fHP);
+			pCharacter->SetAP(fAP);
+		}
+		else if (IsReplay() || ZGetGameInterface()->GetCombatInterface()->GetObserverMode())
+		{
+			pCharacter->SetHP(fHP);
+			pCharacter->SetAP(fAP);
+		}
+	}
+
+Find <br>
+
+	void ZGame::OnPeerDuelTournamentHPAPInfo(MCommand *pCommand)
+	{
+		MUID uid = pCommand->GetSenderUID();
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+		if (!pCharacter) return;
+
+		BYTE MaxHP = 0;
+		BYTE MaxAP = 0;
+		BYTE HP = 0;
+		BYTE AP = 0;
+
+		pCommand->GetParameter(&MaxHP, 0, MPT_UCHAR);	
+		pCommand->GetParameter(&MaxAP, 1, MPT_UCHAR);
+
+		pCommand->GetParameter(&HP, 2, MPT_UCHAR);	
+		pCommand->GetParameter(&AP, 3, MPT_UCHAR);
+
+		if(ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_DUELTOURNAMENT) {
+			((ZRuleDuelTournament*)m_Match.GetRule())->SetPlayerHpApForUI(uid, (float)MaxHP, (float)MaxAP, (float)HP, (float)AP);
+		}
+
+		if(ZGetGameInterface()->GetCombatInterface()->GetObserverMode()) {
+			pCharacter->SetMaxHP((float)MaxHP);
+			pCharacter->SetMaxAP((float)MaxAP);
+			pCharacter->SetHP((float)HP);
+			pCharacter->SetAP((float)AP);
+		}
+	}
+	
+Change <br>
+
+	void ZGame::OnPeerDuelTournamentHPAPInfo(MCommand *pCommand)
+	{
+		MUID uid = pCommand->GetSenderUID();
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+		if (!pCharacter) return;
+
+		BYTE MaxHP = 0;
+		BYTE MaxAP = 0;
+		BYTE HP = 0;
+		BYTE AP = 0;
+
+		pCommand->GetParameter(&MaxHP, 0, MPT_UCHAR);
+		pCommand->GetParameter(&MaxAP, 1, MPT_UCHAR);
+
+		pCommand->GetParameter(&HP, 2, MPT_UCHAR);
+		pCommand->GetParameter(&AP, 3, MPT_UCHAR);
+
+		if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_DUELTOURNAMENT) {
+			((ZRuleDuelTournament*)m_Match.GetRule())->SetPlayerHpApForUI(uid, (float)MaxHP, (float)MaxAP, (float)HP, (float)AP);
+		}
+
+		//<Logic of de HP/AP>
+		if (pCharacter->GetUID() != ZGetMyUID() && uid != ZGetMyUID())
+		{
+			pCharacter->SetMaxHP((float)MaxHP);
+			pCharacter->SetMaxAP((float)MaxAP);
+			pCharacter->SetHP((float)HP);
+			pCharacter->SetAP((float)AP);
+		}
+		if (ZGetGameInterface()->GetCombatInterface()->GetObserverMode())
+		{
+			pCharacter->SetMaxHP((float)MaxHP);
+			pCharacter->SetMaxAP((float)MaxAP);
+			pCharacter->SetHP((float)HP);
+			pCharacter->SetAP((float)AP);
+		}
+	}
