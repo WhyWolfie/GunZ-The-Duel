@@ -6,35 +6,36 @@ GunZ The Duel Releases <br>
 - Discord: Duzopy#5653
 
 <b>Want To Learn GunZ ?</b>
-- https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial  <br>
+- [bunch of tutorials](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial) <br>
 
 <b>How To Make GunZ (Client/Server/DB)</b> <br>
-- https://www.youtube.com/watch?v=qTIk722vrKE <br>
+- [how to make a gunz server tutorial](https://www.youtube.com/watch?v=qTIk722vrKE) <br>
 
 <b>[github]</b> <br>
-- https://github.com/Asunaya/refinedgunz <br>
-- https://github.com/mataha/gunz-replay <br>
-- https://github.com/x1nixmzeng/z3ResEx <br>
-- https://github.com/Theoretical/Infamous <br>
-- https://github.com/Gunz2Dev/Gunz2Shark <br>
-- https://github.com/MrSuicideFish/GunZ-proto <br>
-- https://github.com/LostMyCode/three-gunz <br>
-- https://github.com/goweiwen/blender-elu-importer <br>
-- https://github.com/zkxjzmswkwl/Gunzpedia <br>
-- https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ <br>
-- https://github.com/x1nixmzeng/ZPatchBuilder <br>
-- https://github.com/tannous94/GunZ-simple-web <br>
-- https://github.com/emisandgunz/gunzcord <br>
-- https://github.com/Durial06/GunZ-The-Duel-Items - bunch of items<br>
-- https://github.com/Jorklenis/Repack-Jorklenis2 - repack jorklenis2<br>
-- https://github.com/fxpgunz/FxpGZ-Repacked - repack fxp gunz<br>
-- https://github.com/open-gunz/ogz-source - open gunz<br>
-- https://github.com/Krunklehorn/io-scene-gzrs2 - amazing blender project <br>
+- [refinedgunz](https://github.com/Asunaya/refinedgunz) <br>
+- [gunz replay](https://github.com/mataha/gunz-replay) <br>
+- [z3resex](https://github.com/x1nixmzeng/z3ResEx) <br>
+- [infamous](https://github.com/Theoretical/Infamous) <br>
+- [gunz2shark](https://github.com/Gunz2Dev/Gunz2Shark) <br>
+- [gunz-proto](https://github.com/MrSuicideFish/GunZ-proto) <br>
+- [three gunz](https://github.com/LostMyCode/three-gunz) <br>
+- [blender elu importer](https://github.com/goweiwen/blender-elu-importer) <br>
+- [gunzpedia](https://github.com/zkxjzmswkwl/Gunzpedia) <br>
+- [practica00 website](https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ) <br>
+- [zpatchbuilder](https://github.com/x1nixmzeng/ZPatchBuilder) <br>
+- [gunz simple web](https://github.com/tannous94/GunZ-simple-web) <br>
+- [gunzcord](https://github.com/emisandgunz/gunzcord) <br>
+- [gunz bunch of items](https://github.com/Durial06/GunZ-The-Duel-Items) <br>
+- [repack jorklenis2](https://github.com/Jorklenis/Repack-Jorklenis2) <br>
+- [fxpgunz repacked](https://github.com/fxpgunz/FxpGZ-Repacked) <br>
+- [ogz source](https://github.com/open-gunz/ogz-source) <br>
+- [(io scene gzrs2) - amazing blender project](https://github.com/Krunklehorn/io-scene-gzrs2) <br>
+- [refinedgunz](https://github.com/Asunaya/refinedgunz) <br>
 
 <b>[sql]</b>
-- GunzDBFixed: https://archive.org/details/gun-zdbfixed_202011
-- SQL(2005 x64bit)Server/Express: https://archive.org/details/SQLEXPR
-- SQL(2005 x32bit)Server/Express: https://archive.org/details/sqlserver-2005-ssmsee_202203
+- GunzDBFixed: [download](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
+- SQL(2005 x64bit)Server/Express: [download](https://archive.org/details/SQLEXPR)
+- SQL(2005 x32bit)Server/Express: [download](https://archive.org/details/sqlserver-2005-ssmsee_202203)
 
 <b>[tools]</b>
 - visual all runtimes: https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020
