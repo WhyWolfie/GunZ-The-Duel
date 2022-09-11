@@ -281,4 +281,45 @@ Change <br>
 	static int widths[] = { 800, 1024, 1280, 1280, 1366, 1600, 1280, 1440, 1600, 1650, 1920, 1920, 2560 };
 	static int heights[] = { 600, 768, 720, 960, 768, 1200, 800, 900, 900, 1050, 1080, 1200, 1600 };
 
+Open(RBspObject.cpp) <br>
+Find <br>
 
+	for(int j=0;j<3;j++) {
+		BSPVERTEX *pv = &m_pOcVertices[indices[j]] + pNode->m_nBaseVertexIndex;
+		v[j].coord = *pv->Coord();
+		v[j].tu2 = pv->tu1;
+		v[j].tv2 = pv->tv1;
+	}
+	
+Change <br>
+
+	for(int j=0;j<3;j++) {
+	//<Dynamic light fix>
+		BSPVERTEX *pv = &m_pOcVertices[indices[j]] + pNode->m_nBaseVertexIndex;;
+		v[j].coord = *pv->Coord();
+		v[j].tu2 = pv->tu1;
+		v[j].tv2 = pv->tv1;
+	}
+	
+Open(RealSpace2.h) <br>
+Find <br>
+
+	void RSetFrameLimitPerSeceond(unsigned short nFrameLimit)
+	{
+		g_nFrameLimitValue = nFrameLimit;
+	}
+	
+Change <br>
+
+	void RSetFrameLimitPerSeceond(unsigned short nFrameLimit)
+	{
+		switch (nFrameLimit)
+		{
+		case 0:	{	g_nFrameLimitValue = 0;		}	break;
+		case 1:	{	g_nFrameLimitValue = 60;	}	break;
+		case 2:	{	g_nFrameLimitValue = 120;	}	break;
+		case 3:	{	g_nFrameLimitValue = 240;	}	break;
+		default:{	g_nFrameLimitValue = 0;		}	break;
+		}
+	}
+	
