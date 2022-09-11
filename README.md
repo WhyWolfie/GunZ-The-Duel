@@ -269,22 +269,22 @@ GunZ The Duel Releases <br>
 - daequan: https://www.youtube.com/watch?v=dSdlUwdHbEA
 
 <b>[items]</b>
-- articgunz: https://archive.org/details/articgunz
-- cgunz: https://archive.org/details/cgunz
-- darkgunz: https://archive.org/details/darkgunz
-- dualitygunz: https://archive.org/details/dualitygunz
-- enigmagunz: https://archive.org/details/enigmagunz
-- eurogunz: https://archive.org/details/eurogunz
-- fgunz: https://archive.org/details/fgunz
-- mtg-gunz: https://archive.org/details/gunz-mtg
-- mocrogunz: https://archive.org/details/mocrogunz
-- mundialgunz: https://archive.org/details/mundialgunz
-- raulgunz: https://archive.org/details/raulgunz
+- articgunz: [articgunz](https://archive.org/details/articgunz)
+- cgunz: [cgunz](https://archive.org/details/cgunz)
+- darkgunz: [darkgunz](https://archive.org/details/darkgunz)
+- dualitygunz: [dualitygunz](https://archive.org/details/dualitygunz)
+- enigmagunz: [enigmagunz](https://archive.org/details/enigmagunz)
+- eurogunz: [eurogunz](https://archive.org/details/eurogunz)
+- fgunz: [fgunz](https://archive.org/details/fgunz)
+- mtg-gunz: [mtg gunz](https://archive.org/details/gunz-mtg)
+- mocrogunz: [mocrogunz](https://archive.org/details/mocrogunz)
+- mundialgunz: [mundialgunz](https://archive.org/details/mundialgunz) 
+- raulgunz: [raulgunz](https://archive.org/details/raulgunz) 
 
 <b>[official]</b><br>
-- https://gz.masanggames.co.kr/
-- https://store.steampowered.com/app/242720/GunZ_2_The_Second_Duel/
-- http://gunz.kaybo1.com/ (shutdown)
+- masangsoft: [masangsoft](https://gz.masanggames.co.kr/)
+- gunz2: [gunz2 on steam](https://store.steampowered.com/app/242720/GunZ_2_The_Second_Duel/)
+- gunz.kaybo1.com (shutdown)
 
 <b>[servers]</b><br>
 - gunz 2it: [gunz.2it](https://gunz.2it.in/)
@@ -304,6 +304,7 @@ GunZ The Duel Releases <br>
 - https://forum.ragezone.com/f311/ (gunz forum - still active)
 - https://files.trinityent.net/
 - https://gunz.chat / https://discord.com/invite/xMWZxZSmwq (active community)
+- reddit: [gunz reddit](https://www.reddit.com/r/gunz)
 
 credits too everyone who work on it! <br>
 My goal is to make gunz alive again and new people to learn how to make your own gunz server <br>
