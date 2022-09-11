@@ -104,30 +104,31 @@ GunZ The Duel Releases <br>
 - shop layout: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20layout
 
 (fixes)<br>
-- dual mode crash fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode
-- login crash(matchserver): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix
-- player count server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5
-- resolution fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/resolution%20fix
-- wide/stretched/refresh rate: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wide%20resolution%20fix
-- map limit: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/map%20limit%20fix
-- anti macro spam: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20macro%20spam
-- bunch of fixes: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes
-- cant buy database fix(1.5): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5
-- fix sniper zoom: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20sniper%20zoom
-- window toggle: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix
-- uc patch: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch
-- login %s crash: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix
-- auto korean message: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message
-- auto select server: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20select%20server
-- instant login: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20login
-- show my own ping at scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping
-- clan close fix: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix
-- clan/quest/survival: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix
-- adding effect combo: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo
-- gunz patches: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library
-- optimize windowed mode fps: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/optimize%20windowed%20mode%20fps
-- duel tournament player rank: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/duel%20tournament%20player%20rank%20fix
-- matchagent winver change: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/matchagent%20winver%20change
+- dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
+- login crash(matchserver): [login crash(matchserver)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix)
+- player count server: [playercount](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5)
+- resolution fix: [resolution fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/resolution%20fix)
+- wide/stretched/refresh rate: [widescreen](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wide%20resolution%20fix)
+- map limit: [map limit](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/map%20limit%20fix)
+- anti macro spam: [anti macro spam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20macro%20spam)
+- bunch of fixes: [bunch of fixes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes)
+- cant buy database fix(1.5): [cant buy database fix(1.5)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5)
+- fix sniper zoom: [fix sniper zoom](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20sniper%20zoom)
+- window toggle: [window toggle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix)
+- uc patch: [uc patch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch)
+- login %s crash: [login %s crash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix)
+- auto korean message: [auto korean message](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message)
+- auto select server: [auto select server](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20select%20server)
+- instant login: [instant login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20login)
+- show my own ping at scoreboard: [show my own ping at scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping)
+- clan close fix: [clan close fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix)
+- clan/quest/survival: [clan/quest/survival](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix)
+- adding effect combo: [adding effect combo](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo)
+- gunz patches: [gunz patches](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library)
+- optimize windowed mode fps: [optimize windowed mode fps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/optimize%20windowed%20mode%20fps)
+- duel tournament player rank: [duel tournament player rank](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/duel%20tournament%20player%20rank%20fix)
+- matchagent winver change: [matchagent winver change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/matchagent%20winver%20change)
+- config changes: [config changes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/config%20change)
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
