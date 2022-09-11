@@ -1,3 +1,4 @@
+[download](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/website/register%20panel(tannous)/gunzweb.zip) <br>
 kay, I've recently shown some activity, thus I've received some messages from people trying to setup old register pages or some other website. Since PHP no longer support some functions, people are getting lots of errors, most are undefined or syntax... and such.
 
 Just took my old register page, updated the functions, and added a login system with a user/admin panel. (it's a simple panel, didn't really have much time, no hate)
