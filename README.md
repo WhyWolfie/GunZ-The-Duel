@@ -38,46 +38,46 @@ GunZ The Duel Releases <br>
 - SQL(2005 x32bit)Server/Express: [download](https://archive.org/details/sqlserver-2005-ssmsee_202203)
 
 <b>[tools]</b>
-- visual all runtimes: https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020
-- visual studio .NET 2003: https://archive.org/details/visual-studio.-net-2003
-- DXSDK June 10: https://archive.org/details/dxsdk-jun-10
+- visual all runtimes: [download](https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020)
+- visual studio .NET 2003: [download](https://archive.org/details/visual-studio.-net-2003)
+- DXSDK June 10: [download](https://archive.org/details/dxsdk-jun-10)
 
 <b>[gunz2]</b>
-- client: https://archive.org/details/gunz-2
-- others: https://archive.org/details/gunz2_20120524.7z
-- realspace3 engine: https://archive.org/details/gunz-2-real-space-3-engine
-- realspace3 engine p2: https://archive.org/details/gunz-2-real-space-3-engine-p-2
-- realspace3 engine p3: https://archive.org/details/gunz-2-real-space-3-engine-p-3
-- standalone edition: https://archive.org/details/gun-z-2-standalone-edition_202011
-- standalone edition #2: https://archive.org/details/gun-z-2-standalone-edition
-- SDK: https://archive.org/details/sdk_20201112
-- DATA: https://archive.org/details/data_20201112_202011
+- client: [download](https://archive.org/details/gunz-2)
+- others: [download](https://archive.org/details/gunz2_20120524.7z)
+- realspace3 engine: [download](https://archive.org/details/gunz-2-real-space-3-engine)
+- realspace3 engine p2: [download](https://archive.org/details/gunz-2-real-space-3-engine-p-2)
+- realspace3 engine p3: [download](https://archive.org/details/gunz-2-real-space-3-engine-p-3)
+- standalone edition: [download](https://archive.org/details/gun-z-2-standalone-edition_202011)
+- standalone edition #2: [download](https://archive.org/details/gun-z-2-standalone-edition)
+- SDK: [download](https://archive.org/details/sdk_20201112)
+- DATA: [download](https://archive.org/details/data_20201112_202011)
 
 <b>[source]</b>
-- OldGunz(2007source): https://github.com/WhyWolfie/source2007
-- Gunz Emulator 2013: https://github.com/WhyWolfie/Gunz2013 
-- FGunZ: https://github.com/WhyWolfie/FGunZ
-- TrinityGunZ: https://github.com/WhyWolfie/TrinityGunZ
-- Gregon13Source: https://github.com/WhyWolfie/Gregon13Source
-- ChallengeQuest: https://github.com/WhyWolfie/ChallengeQuest
-- NationalGunZ: https://github.com/WhyWolfie/NationalGunZ
-- Repack-Aren: https://github.com/WhyWolfie/Repack-Aren
-- GFZSource: https://github.com/WhyWolfie/GZF-Source
-- 2005 Source & Old Patches: https://archive.org/details/gunz.-7z
+- oldgunz(2007source): [oldgunz](https://github.com/WhyWolfie/source2007)
+- gunz emulator 2013: [gunz emulator 2013](https://github.com/WhyWolfie/Gunz2013)
+- fgunz: [fgunz](https://github.com/WhyWolfie/FGunZ)
+- trinitygunz: [trinitygunz](https://github.com/WhyWolfie/TrinityGunZ)
+- gregon13source: [gregon13source](https://github.com/WhyWolfie/Gregon13Source)
+- challengequest: [challengequest](https://github.com/WhyWolfie/ChallengeQuest)
+- nationalgunz: [nationalgunz](https://github.com/WhyWolfie/NationalGunZ)
+- repack-aren: [repack-aren](https://github.com/WhyWolfie/Repack-Aren)
+- gfzsource: [gfz source](https://github.com/WhyWolfie/GZF-Source)
+- 2005 source & old patches: [2005 source](https://archive.org/details/gunz.-7z)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
-- automatic ads: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic-ads
-- bullet colored: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored
-- chat background: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground
-- crosshair size: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size
-- spark effect: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect-spark-shot
-- extra info: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5
-- hide jjang: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang
-- hillclimb: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix
-- icon death scoreboard: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard
-- item shop search: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/item-search-shop
-- kill feed: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-feed
+- automatic ads: [automatic ads](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic-ads)
+- bullet colored: [bullet colored](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored)
+- chat background: [chat background](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground)
+- crosshair size: [crosshair size](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size)
+- spark effect: [spark effect](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect-spark-shot)
+- extra info: [extra info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5)
+- hide jjang: [hide jjang](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang)
+- hillclimb: [hillclimb](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix)
+- icon death scoreboard: [icon death scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard)
+- item shop search: [item shop search](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/item-search-shop)
+- kill feed: [kill feed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-feed)
 - killstreak system: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-streak-system
 - live player in room: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/live-player-in-the-event-channel
 - multi language: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multi-language
@@ -287,17 +287,17 @@ GunZ The Duel Releases <br>
 - http://gunz.kaybo1.com/ (shutdown)
 
 <b>[servers]</b><br>
-- gunz 2it: https://gunz.2it.in/
-- freestylegunz: https://fgunz.net/
-- universgamers: https://universegunz.net/
-- internationalgunz: https://igunz.net/
-- ragegunz/fxpgunz: http://ragegunz.com/ / https://fxpgunz.com/ / https://www.gunz2034.net/
-- oldschoolgunz: https://www.oldschoolgunz.com/
-- gunzduels: https://gunzduels.com/
-- enigmagunz: https://eggunz.com/
-- revengegunz(brazil): https://www.revengegunz.com.br/
-- emperialgunz: https://www.emperialgunz.com/
-- mtg gunz: https://gunz.mtgvn.net/
+- gunz 2it: [gunz.2it](https://gunz.2it.in/)
+- freestylegunz: [fgunz](https://fgunz.net/)
+- universgamers: [universegunz](https://universegunz.net/)
+- internationalgunz: [igunz](https://igunz.net/) 
+- ragegunz/fxpgunz: [ragegunz](http://ragegunz.com/)   / [fxpgunz](https://fxpgunz.com/)   / [gunz2034](https://www.gunz2034.net/) 
+- oldschoolgunz: [oldschoolgunz](https://www.oldschoolgunz.com/) 
+- gunzduels: [gunzduels](https://gunzduels.com/) 
+- enigmagunz: [eggunz](https://eggunz.com/)
+- revengegunz(brazil): [revengegunz](https://www.revengegunz.com.br/) 
+- emperialgunz: [emperialgunz](https://www.emperialgunz.com/) 
+- mtg gunz: [mtgvn](https://gunz.mtgvn.net/)
 
 <b>[resources]</b>
 - https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
