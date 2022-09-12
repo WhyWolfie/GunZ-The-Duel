@@ -418,7 +418,7 @@ Find <br>
 	void MMatchServer::OnRegisterAgent(const MUID& uidComm, char* szIP, int nTCPPort, int nUDPPort)
 	{
 	
-Change <br>
+Add under <br>
 
 	//Fix agent invalid ip crash
 	if (strstr(szIP, "%") != NULL)
