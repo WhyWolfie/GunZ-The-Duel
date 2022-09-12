@@ -336,3 +336,17 @@ Change <br>
 	}
 	else
 		SetWindowLong(g_hWnd, GWL_STYLE, WS_VISIBLE | WS_OVERLAPPED | WS_BORDER | WS_CAPTION | WS_SYSMENU | WS_MAXIMIZEBOX | WS_MINIMIZEBOX);
+
+Open(MMatchServer_Stage.cpp)<br>
+Find <br>
+
+	if (MMUG_EVENTMASTER == pObj->GetAccountInfo()->m_nUGrade) {
+		OnEventChangeMaster(pObj->GetUID());
+	}
+	
+Change <br>
+
+	//Disable auto change master for UGrade 252
+	//if (MMUG_EVENTMASTER == pObj->GetAccountInfo()->m_nUGrade) {
+	//	OnEventChangeMaster(pObj->GetUID());
+	//}
