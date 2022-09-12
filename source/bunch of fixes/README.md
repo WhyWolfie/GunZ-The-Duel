@@ -323,3 +323,16 @@ Change <br>
 		}
 	}
 	
+Open(RealSpace2.cpp) <br>
+Find <br>
+
+	void RAdjustWindow(const RMODEPARAMS *pModeParams)
+
+Change <br>
+
+	if(pModeParams->bFullScreen)
+	{
+		SetWindowLong( g_hWnd, GWL_STYLE, WS_POPUP | WS_SYSMENU );
+	}
+	else
+		SetWindowLong(g_hWnd, GWL_STYLE, WS_VISIBLE | WS_OVERLAPPED | WS_BORDER | WS_CAPTION | WS_SYSMENU | WS_MAXIMIZEBOX | WS_MINIMIZEBOX);
