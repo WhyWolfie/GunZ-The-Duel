@@ -470,3 +470,35 @@ Add under <br>
 	//VMesh NULL and GetFrameInfo fix
 	if (m_pComboEffects[i]->GetVMesh() == NULL) continue;
 	if (m_pComboEffects[i]->GetVMesh()->GetFrameInfo(ani_mode_lower) == NULL) continue;
+
+Open(RCamera.cpp) <br>
+Find <br>
+
+	void RSetProjection(float fFov,float fAspect,float fNearZ,float fFarZ)
+
+Add under <br>
+
+	FLOAT fAspect = (FLOAT)RGetScreenWidth() / (FLOAT)RGetScreenHeight();
+	
+Open(RealSpace2.cpp) <br>
+Find <br>
+
+	if(g_rsnRenderFlags && RRENDER_CLEAR_BACKBUFFER)
+	{
+		//if(g_bStencilBuffer)
+			//g_pd3dDevice->Clear(0,NULL,D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER |D3DCLEAR_STENCIL ,g_clear_color,1.0f ,0L);
+		//else
+			g_pd3dDevice->Clear(0,NULL,D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER ,g_clear_color,1.0f ,0L);
+	}
+	else
+		g_pd3dDevice->Clear(0,NULL,D3DCLEAR_ZBUFFER ,g_clear_color,1.0f ,0);
+		
+Change <br>
+
+	//Replaced && to &
+	if (g_rsnRenderFlags & RRENDER_CLEAR_BACKBUFFER)
+	{
+		g_pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, g_clear_color, 1.0f, 0L);
+	}
+	else
+		g_pd3dDevice->Clear(0, NULL, D3DCLEAR_ZBUFFER, g_clear_color, 1.0f, 0);
