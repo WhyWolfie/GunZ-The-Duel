@@ -459,3 +459,14 @@ Change <br>
 	pChar->SetRelayPeer(true);
 	//Logfix, added newline
 	LOG(LOG_DEBUG, "%s Request relay peer on %s\n", pChar->GetName(), pPeer->GetName());
+
+Open(ZScreenEffectManager.cpp) <br>
+Find <br>
+
+	void ZScreenEffectManager::DrawCombo()
+	
+Add under <br>
+
+	//VMesh NULL and GetFrameInfo fix
+	if (m_pComboEffects[i]->GetVMesh() == NULL) continue;
+	if (m_pComboEffects[i]->GetVMesh()->GetFrameInfo(ani_mode_lower) == NULL) continue;
