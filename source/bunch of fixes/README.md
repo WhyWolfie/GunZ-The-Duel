@@ -378,3 +378,84 @@ Change <br>
 				fAddedAP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref();
 			}
 		}
+
+Open(MClient.cpp) <br>
+Find <br>
+
+		case MC_LOCAL_ECHO:
+			if(pCommand->GetParameter(szMessage, 0, MPT_STR, sizeof(szMessage))==false) break;
+			OutputMessage(szMessage, MZMOM_LOCALREPLY);
+		break;
+
+Change <br>
+
+		case MC_LOCAL_ECHO:
+			//Exploit fix (Fake echo from different player)
+			//if(pCommand->GetParameter(szMessage, 0, MPT_STR, sizeof(szMessage))==false) break;
+			//OutputMessage(szMessage, MZMOM_LOCALREPLY);
+		break;
+
+Find <br>
+
+		case MC_NET_DISCONNECT:
+			Disconnect(m_Server);
+		break;
+		
+Change <br>
+
+		case MC_NET_DISCONNECT:
+			//Exploit fix (Fake disconnect from different player)
+			if (pCommand->GetSenderUID() != GetUID())
+			{
+				break;
+			}
+			Disconnect(m_Server);
+		break;
+
+Open(MMatchServer_Agent.cpp) <br>
+Find <br>
+
+	void MMatchServer::OnRegisterAgent(const MUID& uidComm, char* szIP, int nTCPPort, int nUDPPort)
+	{
+	
+Change <br>
+
+	//Fix agent invalid ip crash
+	if (strstr(szIP, "%") != NULL)
+	{
+		return;
+	}
+	
+Find <br>
+
+	void MMatchServer::AgentClear()
+	{
+		MAgentObjectMap::iterator i = m_AgentMap.begin();
+		for(;i!=m_AgentMap.end(); i++)
+		{
+			AgentRemove( i->first, &i);
+		}
+	}
+	
+Change <br>
+
+	void MMatchServer::AgentClear()
+	{
+		MAgentObjectMap::iterator i = m_AgentMap.begin();
+		//Iterator dereference fix
+		for (; i != m_AgentMap.end();)
+		{
+			AgentRemove(i->first, &i);
+		}
+	}
+	
+Find <br>
+
+	pChar->SetRelayPeer(true);
+	LOG(LOG_DEBUG, "%s Request relay peer on %s", pChar->GetName(), pPeer->GetName());
+	
+Change <br>
+
+	pChar->SetRelayPeer(true);
+	//Logfix, added newline
+	LOG(LOG_DEBUG, "%s Request relay peer on %s\n", pChar->GetName(), pPeer->GetName());
