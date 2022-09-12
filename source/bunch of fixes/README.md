@@ -350,3 +350,31 @@ Change <br>
 	//if (MMUG_EVENTMASTER == pObj->GetAccountInfo()->m_nUGrade) {
 	//	OnEventChangeMaster(pObj->GetUID());
 	//}
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	float fAddedAP = DEFAULT_CHAR_AP;
+	for (int i = 0; i < MMCIP_END; i++) {
+		if (!m_Items.GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+
+			if(m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() > 40) {
+				m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() = 0; 
+			}
+			fAddedAP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref();
+		}
+	}
+	
+Change <br>
+
+		float fAddedAP = DEFAULT_CHAR_AP;
+		for (int i = 0; i < MMCIP_END; i++) {
+			if (!m_Items.GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+
+				//Bypass AP limit of 40 (MAIET trap check)
+				//if(m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() > 40) {
+				//	m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() = 0; 
+				//}
+				fAddedAP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref();
+			}
+		}
