@@ -302,10 +302,10 @@ GunZ The Duel Releases <br>
 - mtg gunz: [mtgvn](https://gunz.mtgvn.net/)
 
 <b>[resources]</b>
-- https://archive.org/details/@wolfiecatchchu (big archive of gunz files)
-- https://forum.ragezone.com/f311/ (gunz forum - still active)
-- https://files.trinityent.net/
-- https://gunz.chat / https://discord.com/invite/xMWZxZSmwq (active community)
+- archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
+- gunz forum: [gunz forum](https://forum.ragezone.com/f311/) (gunz forum - still active)
+- gunz archive: [trinityent](https://files.trinityent.net/)
+- gunz.chat: [gunz.chat](https://gunz.chat) / [discord](https://discord.com/invite/xMWZxZSmwq)  (active community)
 - reddit: [gunz reddit](https://www.reddit.com/r/gunz)
 
 credits too everyone who work on it! <br>
