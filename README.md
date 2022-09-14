@@ -106,6 +106,7 @@ GunZ The Duel Releases <br>
 - emoticon chat: [emoticon chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/emoticon%20chat)
 - ugrade manager: [ugrade manager](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/ugrade%20manager/)
 - duel tournament 2pp & 4pp: [duel tournament 2pp & 4pp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20tournament%202players%20&%204%20players)
+- level in lobby: [level in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/level%20in%20lobby)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
