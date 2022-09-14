@@ -133,6 +133,7 @@ GunZ The Duel Releases <br>
 - matchagent winver change: [matchagent winver change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/matchagent%20winver%20change)
 - config changes: [config changes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/config%20change)
 - ctf ae flaggrab exploit patch: [ctf ae flaggrab](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ctf%20ae%20flaggrab%20exploit%20patch)
+- shop jump fix: [shop jump fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20jump%20fix)
 
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command)
@@ -195,14 +196,14 @@ GunZ The Duel Releases <br>
 - import custom item in your game: https://www.youtube.com/watch?v=48gPuvo8pWA
 
 <b>(photoshop)</b>
-- how to change gunz dash color: https://www.youtube.com/watch?v=kmxnjpJj6CM
-- how to change color of gunz items: https://www.youtube.com/watch?v=3Og8E55FyNg
-- edit gunz lobby interface and clothes: https://www.youtube.com/watch?v=33SyRy5fkZ0
+- how to change gunz dash color: [how to change gunz dash color](https://www.youtube.com/watch?v=kmxnjpJj6CM) 
+- how to change color of gunz items: [how to change color of gunz items](https://www.youtube.com/watch?v=3Og8E55FyNg) 
+- edit gunz lobby interface and clothes: [edit gunz lobby interface and clothes](https://www.youtube.com/watch?v=33SyRy5fkZ0) 
 
 <b>(3ds max)</b>
-- 3ds max gunz: https://www.youtube.com/watch?v=S0LH4cWkC54
-- gunz render: https://www.youtube.com/watch?v=Wi5PlpP1wk8
-- how to rig stuff and more (3ds max 2014): https://www.youtube.com/watch?v=WHajSJ9QEdA
+- 3ds max gunz: [3ds max gunz](https://www.youtube.com/watch?v=S0LH4cWkC54)
+- gunz render: [gunz render](https://www.youtube.com/watch?v=Wi5PlpP1wk8) 
+- how to rig stuff and more (3ds max 2014): [how to rig stuff and more (3ds max 2014)](https://www.youtube.com/watch?v=WHajSJ9QEdA)
 
 <b>(others)</b>
 - how to add custom maps: https://www.youtube.com/watch?v=hqSnAsM6ezc
