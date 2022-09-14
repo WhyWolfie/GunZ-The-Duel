@@ -130,6 +130,7 @@ GunZ The Duel Releases <br>
 - duel tournament player rank: [duel tournament player rank](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/duel%20tournament%20player%20rank%20fix)
 - matchagent winver change: [matchagent winver change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/matchagent%20winver%20change)
 - config changes: [config changes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/config%20change)
+- ctf ae flaggrab exploit patch: [ctf ae flaggrab](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ctf%20ae%20flaggrab%20exploit%20patch)
 
 (commands)<br>
 - hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
