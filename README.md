@@ -134,30 +134,31 @@ GunZ The Duel Releases <br>
 - ctf ae flaggrab exploit patch: [ctf ae flaggrab](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ctf%20ae%20flaggrab%20exploit%20patch)
 
 (commands)<br>
-- hitbox simple: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command
-- maptexture: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/maptexture
-- bunch of admin commands: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/commands%20hacks%20admin
-- find: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/find%20command
-- wireframe: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wireframe%20command
+- hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command)
+- maptexture: [maptexture](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/maptexture)
+- bunch of admin commands: [bunch of admin commands](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/commands%20hacks%20admin)
+- find: [find](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/find%20command)
+- wireframe: [wireframe](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wireframe%20command)
+- admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin_speed)
 
 (others)<br>
-- basic antihack: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack
-- crashu: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crashu
-- launcher: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/darkgunz%20launcher
-- memory writer: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer
-- sql administrative querys: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys
-- gunz debugging console: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20debugging%20console
+- basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
+- crashu: [crashu](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crashu)
+- launcher: [darkgunz launcher](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/darkgunz%20launcher)
+- memory writer: [memory writer](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer)
+- sql administrative querys: [sql administrative querys](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys)
+- gunz debugging console: [gunz debugging console](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20debugging%20console)
 
 
 <br>
 
 <b>[clients]</b><br>
-- Jur13n (clean/edited version 1.5) https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw
-- NationalGunZ(client/server/source): https://archive.org/details/national-gunz-source-client-server-files
-- Phoenix (2008 client): https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112
-- Zer0nis (clean version: 1.5): https://github.com/ZER0NIS/Gunz-Base
-- Jetman (clean version: 1.5): https://github.com/Jetman823/Gunz1.5
-- Gunz2: https://files.trinityent.net/?dir=GunZ%202
+- Jur13n (clean/edited version 1.5) [jur13n 1.5 cleaned-edited](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw)
+- NationalGunZ(client/server/source): [nationalgunz source-client-server](https://archive.org/details/national-gunz-source-client-server-files)
+- Phoenix (2008 client): [phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
+- Zer0nis (clean version: 1.5): [zeronis](https://github.com/ZER0NIS/Gunz-Base)
+- Jetman (clean version: 1.5): [jetman](https://github.com/Jetman823/Gunz1.5)
+- Gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
 
 <b>[custom clients]</b>
 - ObeliskGunZ: https://archive.org/details/obelisk-gun-z
