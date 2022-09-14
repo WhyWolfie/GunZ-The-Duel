@@ -1,7 +1,4 @@
-Dear ragezone, <br>
-
 This code manage, flashing usergrade color's and normal usergrade color's. The colors are readed from a xml file called 'UserGrade.xml'. <br>
-
 
 CPP File <br>
 
