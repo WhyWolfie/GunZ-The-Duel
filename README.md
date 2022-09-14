@@ -135,6 +135,7 @@ GunZ The Duel Releases <br>
 - ctf ae flaggrab exploit patch: [ctf ae flaggrab](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ctf%20ae%20flaggrab%20exploit%20patch)
 - shop jump fix: [shop jump fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20jump%20fix)
 - xp kernel32 problem fix: [xp kernel32 problem fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/xp%20kernel32.dll%20problem%20fix)
+- patch for crashes: [patch for crashes]:(https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/patch%20for%20stupid%20crash%20being%20abused%20by%20hackers)
 
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command)
