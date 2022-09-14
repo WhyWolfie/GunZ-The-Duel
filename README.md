@@ -104,6 +104,7 @@ GunZ The Duel Releases <br>
 - clan 1v1: https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/clanwar%201v1/
 - shop layout: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20layout
 - emoticon chat: [emoticon chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/emoticon%20chat)
+- ugrade manager: [ugrade manager](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/ugrade%20manager/)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
