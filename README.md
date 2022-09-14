@@ -307,7 +307,8 @@ GunZ The Duel Releases <br>
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
 - gunz forum: [gunz forum](https://forum.ragezone.com/f311/) (gunz forum - still active)
-- gunz archive: [trinityent](https://files.trinityent.net/)
+- files trinityent: [files trinityent](https://files.trinityent.net/)
+- gitlab trinityent: [gitlab trinityent](https://gitlab.trinityent.net/explore)
 - gunz.chat: [gunz.chat](https://gunz.chat) / [discord](https://discord.com/invite/xMWZxZSmwq)  (active community)
 - reddit: [gunz reddit](https://www.reddit.com/r/gunz)
 
