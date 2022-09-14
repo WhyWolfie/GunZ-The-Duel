@@ -143,6 +143,7 @@ GunZ The Duel Releases <br>
 - find: [find](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/find%20command)
 - wireframe: [wireframe](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wireframe%20command)
 - admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin_speed)
+- time: [time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/time%20command)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
