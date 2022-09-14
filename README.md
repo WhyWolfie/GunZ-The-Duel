@@ -144,6 +144,7 @@ GunZ The Duel Releases <br>
 - wireframe: [wireframe](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wireframe%20command)
 - admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin_speed)
 - time: [time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/time%20command)
+- admin spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin%20spawnmover%20command)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
