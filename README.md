@@ -107,6 +107,7 @@ GunZ The Duel Releases <br>
 - ugrade manager: [ugrade manager](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/ugrade%20manager/)
 - duel tournament 2pp & 4pp: [duel tournament 2pp & 4pp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20tournament%202players%20&%204%20players)
 - level in lobby: [level in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/level%20in%20lobby)
+- taunt after round: [taunt after round](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/taunt%20after%20round%20is%20over)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
@@ -197,10 +198,10 @@ GunZ The Duel Releases <br>
 
 <b>[video tutorials - will update it in the future]</b><br>
 <b>(blender)</b>
-- creating a animated sword: https://www.youtube.com/watch?v=nbOWyAVfnt0
-- creating gladius sword: https://www.youtube.com/watch?v=ilTBnLPP6W8
-- import elu blender and export obj: https://www.youtube.com/watch?v=nFDcCrKLdVc
-- import custom item in your game: https://www.youtube.com/watch?v=48gPuvo8pWA
+- creating a animated sword: [creating a animated sword](https://www.youtube.com/watch?v=nbOWyAVfnt0)
+- creating gladius sword: [creating gladius sword](https://www.youtube.com/watch?v=ilTBnLPP6W8)
+- import elu blender and export obj: [import elu blender and export obj](https://www.youtube.com/watch?v=nFDcCrKLdVc)
+- import custom item in your game: [import custom item in your game](https://www.youtube.com/watch?v=48gPuvo8pWA)
 
 <b>(photoshop)</b>
 - how to change gunz dash color: [how to change gunz dash color](https://www.youtube.com/watch?v=kmxnjpJj6CM) 
