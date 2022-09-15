@@ -6,6 +6,8 @@ in ZChat_Cmds.cpp add these.
     
 in ZChat_Cmds.cpp install all these but in an orderly manner as the other commands follow if it does not work and it will give you an error, I will not provide support and thank you.
 
+Part 1
+
     void ChatCmd_Flipmower(const char* line, const int argc, char** const argv);
     void ChatCmd_InsaneMassive(const char* line, const int argc, char** const argv);
     void ChatCmd_LawnMower(const char* line, const int argc, char** const argv);
@@ -19,7 +21,7 @@ in ZChat_Cmds.cpp install all these but in an orderly manner as the other comman
     void ChatCmd_GodMode(const char* line, const int argc, char** const argv);
     void ChatCmd_GrenadeThrow(const char* line, const int argc, char** const argv); 
 
-
+Part 2
 
     //Commands Hacks
     _CC_AC("jork_esp", &ChatCmd_AdminEsp, CCF_ADMIN, ARGVNoMin, ARGVNoMax, true, "/jork_esp", "");
@@ -34,6 +36,8 @@ in ZChat_Cmds.cpp install all these but in an orderly manner as the other comman
     _CC_AC("jork_boomu", &ChatCmd_ExplosionUnder, CCF_ADMIN | CCF_GAME, ARGVNoMin, ARGVNoMax, true, "/jork_boomu", "");
     _CC_AC("jork_wallhack", &ChatCmd_Ghost, CCF_ADMIN | CCF_GAME, ARGVNoMin, ARGVNoMax, true, "/jork_wallhack", "");
     _CC_AC("jork_granade", &ChatCmd_GrenadeThrow, CCF_ADMIN | CCF_GAME, ARGVNoMin, ARGVNoMax, true, "/jork_granade", ""); 
+
+Part 3
 
 
     void ChatCmd_Flipmower(const char* line, const int argc, char **const argv)
