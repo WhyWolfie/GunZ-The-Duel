@@ -206,6 +206,7 @@ GunZ The Duel Releases <br>
 - sql2005: [sql2005](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005)
 - map xml generator: [map xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map)
 - shop xml generator: [shop xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop)
+- zitem xml tutorial [zitem xml tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/zitem)
 
 <b>[video tutorials - will update it in the future]</b><br>
 <b>(blender)</b>
