@@ -549,7 +549,7 @@ Find <br>
 		}
 		break;
 		
-Change <br>
+Replace <br>
 
 	case MC_MATCH_STAGE_RESPONSE_QUICKJOIN:
 		{
@@ -589,7 +589,7 @@ Find <br>
 		}
 		break;
 
-Change <br>
+Replace <br>
 
 	case MC_MATCH_STAGE_REQUIRE_PASSWORD:
 		{
@@ -629,7 +629,7 @@ Find <br>
 		}
 	}
 	
-Change <br>
+Replace <br>
 
 	void ZCharacterManager::Delete(MUID uid)
 	{
@@ -650,3 +650,12 @@ Change <br>
 			erase(itor);
 		}
 	}
+
+Open (ZGame.cpp) <br>
+Find <br>
+
+	const char *szAnonymous = "?¾Æ¹«°³?";
+	
+Replace <br>
+
+	const char* szAnonymous = "?Unknown?";
