@@ -608,3 +608,45 @@ Change <br>
 			ZApplication::GetGameInterface()->ShowPrivateStageJoinFrame(szStageName);
 		}
 		break;
+
+
+Open(ZCharacterManager.cpp) <br>
+Find <br>
+
+	void ZCharacterManager::Delete(MUID uid)
+	{
+		iterator itor = find(uid);
+
+		if (itor != end()) {
+
+			ZCharacter* pCharacter = (*itor).second;
+
+			ZGetObjectManager()->Delete((ZObject*)pCharacter);
+
+			ZGetGame()->m_VisualMeshMgr.Del(pCharacter->m_nVMID.Ref());
+			delete pCharacter; pCharacter = NULL;
+			erase(itor);
+		}
+	}
+	
+Change <br>
+
+	void ZCharacterManager::Delete(MUID uid)
+	{
+		iterator itor = find(uid);
+
+		if (itor != end()) {
+
+			ZCharacter* pCharacter = (ZCharacter*)(*itor).second;
+
+			ZGetObjectManager()->Delete((ZObject*)pCharacter);
+
+			ZGetGame()->m_VisualMeshMgr.Del(pCharacter->m_nVMID.Ref());
+
+			//Safe delete
+			SAFE_DELETE(pCharacter);
+
+			//delete pCharacter; pCharacter = NULL;
+			erase(itor);
+		}
+	}
