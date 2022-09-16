@@ -110,8 +110,9 @@ GunZ The Duel Releases <br>
 - taunt after round: [taunt after round](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/taunt%20after%20round%20is%20over)
 - fps in lobby: [fps in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20in%20lobby)
 - rank on scoreboard: [rank on scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20on%20scoreboard)
-- add maps to ctf and duel [add maps to ctf and duel](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/tutorial/maps/README.md)
+- add maps to ctf and duel: [add maps to ctf and duel](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/tutorial/maps/README.md)
 - ping colour: [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour)
+- load all loadingscreens: [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
