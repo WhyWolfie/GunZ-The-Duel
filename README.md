@@ -111,6 +111,7 @@ GunZ The Duel Releases <br>
 - fps in lobby: [fps in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20in%20lobby)
 - rank on scoreboard: [rank on scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20on%20scoreboard)
 - add maps to ctf and duel [add maps to ctf and duel](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/tutorial/maps/README.md)
+- ping colour: [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
