@@ -502,3 +502,27 @@ Change <br>
 	}
 	else
 		g_pd3dDevice->Clear(0, NULL, D3DCLEAR_ZBUFFER, g_clear_color, 1.0f, 0);
+
+Open(ZInterfaceListener.cpp) <br>
+Find <br>
+
+			int nPlayerCnt = (int)ZGetGameClient()->GetMatchStageSetting()->m_CharSettingList.size();
+			if(nPlayerCnt > pStageSetting->nMaxPlayers && nPlayerCnt!=0 && pStageSetting->nMaxPlayers!=0)
+			{
+				char szText[128] = {0,};
+				sprintf(szText, "%s\n", ZErrStr(MERR_PERSONNEL_TOO_MUCH));
+				ZGetGameInterface()->ShowMessage(szText);
+				return false;
+			}
+
+Replace <br>
+
+			//Disabled too many players popup client-side
+			int nPlayerCnt = (int)ZGetGameClient()->GetMatchStageSetting()->m_CharSettingList.size();
+			if (nPlayerCnt > pStageSetting->nMaxPlayers && nPlayerCnt != 0 && pStageSetting->nMaxPlayers != 0 && (ZGetGameTypeManager()->IsQuestDerived(pStageSetting->nGameType)))
+			{
+				char szText[128] = { 0, };
+				sprintf(szText, "%s\n", ZErrStr(MERR_PERSONNEL_TOO_MUCH));
+				ZGetGameInterface()->ShowMessage(szText);
+				return false;
+			}
