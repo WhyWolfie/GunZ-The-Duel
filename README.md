@@ -141,6 +141,7 @@ GunZ The Duel Releases <br>
 - xp kernel32 problem fix: [xp kernel32 problem fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/xp%20kernel32.dll%20problem%20fix)
 - patch for crashes: [patch for crashes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/patch%20for%20stupid%20crash%20being%20abused%20by%20hackers)
 - fix agent error: [fix agent error](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20agent%20error)
+- dll hacking fix [dll hacking fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dll%20hacking%20fix)
 
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command)
