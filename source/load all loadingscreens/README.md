@@ -1,3 +1,4 @@
+Open(ZGameInterface.cpp) <br>
 Find <br>
 
     bool ZGameInterface::OnGameCreate(void) 
