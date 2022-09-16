@@ -109,6 +109,7 @@ GunZ The Duel Releases <br>
 - level in lobby: [level in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/level%20in%20lobby)
 - taunt after round: [taunt after round](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/taunt%20after%20round%20is%20over)
 - fps in lobby: [fps in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20in%20lobby)
+- rank on scoreboard: [rank on scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20on%20scoreboard)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
