@@ -48,3 +48,43 @@ Change <br>
     #endif
       */
 
+Find <br>
+
+    #ifdef LOCALE_NHNUSA
+        GetNHNUSAReport().ReportInitGameGuard();
+    #endif
+
+Change <br>
+
+    #ifdef LOCALE_NHNUSA
+        //Disable NHN related
+        //GetNHNUSAReport().ReportInitGameGuard();
+    #endif
+
+Find <br>
+
+    #ifdef LOCALE_NHNUSA
+        mlog( "Poll Process\n" );
+        int nRetPoll = GetNHNUSAPoll().ZHanPollProcess( NULL);
+    #endif
+    
+Change <br>
+
+    #ifdef LOCALE_NHNUSA
+        //Disable NHN poll
+        //mlog( "Poll Process\n" );
+        //int nRetPoll = GetNHNUSAPoll().ZHanPollProcess( NULL);
+    #endif
+
+Find <br>
+
+    #ifdef LOCALE_NHNUSA
+            GetNHNUSAReport().ReportCrashedGame();
+    #endif
+    
+Change <br>
+
+    #ifdef LOCALE_NHNUSA
+            //Disable NHN related
+            //GetNHNUSAReport().ReportCrashedGame();
+    #endif
