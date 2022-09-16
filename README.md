@@ -152,6 +152,7 @@ GunZ The Duel Releases <br>
 - admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin_speed)
 - time: [time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/time%20command)
 - admin spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin%20spawnmover%20command)
+- damage: [damage](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/damage%20command)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
