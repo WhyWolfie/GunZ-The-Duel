@@ -526,3 +526,85 @@ Replace <br>
 				ZGetGameInterface()->ShowMessage(szText);
 				return false;
 			}
+
+Open(ZGameInterface_OnCommand.cpp) <br>
+Find <br>
+
+	case MC_MATCH_STAGE_RESPONSE_QUICKJOIN:
+		{
+			if (ZApplication::GetGameInterface()->GetState() == GUNZ_LOBBY)
+			{
+				int nResult;
+				pCommand->GetParameter(&nResult, 0, MPT_INT);
+				if (nResult != MOK)
+				{
+					ZApplication::GetGameInterface()->ShowErrorMessage( nResult );
+				}
+
+				MUID uidStage;
+				pCommand->GetParameter(&uidStage, 1, MPT_UID);
+
+				ZPostRequestStageJoin(ZGetGameClient()->GetPlayerUID(), uidStage);
+			}
+		}
+		break;
+		
+Change <br>
+
+	case MC_MATCH_STAGE_RESPONSE_QUICKJOIN:
+		{
+			if (ZApplication::GetGameInterface()->GetState() == GUNZ_LOBBY)
+			{
+				int nResult;
+				pCommand->GetParameter(&nResult, 0, MPT_INT);
+				if (nResult != MOK)
+				{
+					ZApplication::GetGameInterface()->ShowErrorMessage( nResult );
+				}
+
+				MUID uidStage;
+				pCommand->GetParameter(&uidStage, 1, MPT_UID);
+
+				ZPostRequestStageJoin(ZGetGameClient()->GetPlayerUID(), uidStage);
+				//Fix quick join glitch (room tags)
+				ZApplication::GetGameInterface()->EnableLobbyInterface(true);
+			}
+		}
+		break;
+
+Find <br>
+
+	case MC_MATCH_STAGE_REQUIRE_PASSWORD:
+		{
+			MUID uidStage = MUID(0,0);
+			char szStageName[256];
+			pCommand->GetParameter(&uidStage, 0, MPT_UID);
+			pCommand->GetParameter(szStageName, 1, MPT_STR, sizeof(szStageName) );
+
+			ZRoomListBox* pRoomList;
+			pRoomList = (ZRoomListBox*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget( "Lobby_StageList" );
+			if ( pRoomList != NULL ) pRoomList->SetPrivateStageUID(uidStage);
+
+			ZApplication::GetGameInterface()->ShowPrivateStageJoinFrame(szStageName);
+		}
+		break;
+
+Change <br>
+
+	case MC_MATCH_STAGE_REQUIRE_PASSWORD:
+		{
+			MUID uidStage = MUID(0,0);
+			char szStageName[256];
+			pCommand->GetParameter(&uidStage, 0, MPT_UID);
+			pCommand->GetParameter(szStageName, 1, MPT_STR, sizeof(szStageName) );
+
+			//Event Team join fix
+			ZApplication::GetGameInterface()->EnableLobbyInterface(true);
+
+			ZRoomListBox* pRoomList;
+			pRoomList = (ZRoomListBox*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget( "Lobby_StageList" );
+			if ( pRoomList != NULL ) pRoomList->SetPrivateStageUID(uidStage);
+
+			ZApplication::GetGameInterface()->ShowPrivateStageJoinFrame(szStageName);
+		}
+		break;
