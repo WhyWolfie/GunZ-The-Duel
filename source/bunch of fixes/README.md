@@ -659,3 +659,19 @@ Find <br>
 Replace <br>
 
 	const char* szAnonymous = "?Unknown?";
+
+Open(ZinitialLoading.cpp) <br>
+Find
+
+			while ((RGetScreenWidth()-70) > (pFont->GetWidth(temp)))
+			{
+				strcat(temp, "³²");
+			}
+			
+Replace <br>
+
+			while ((RGetScreenWidth()-70) > (pFont->GetWidth(temp)))
+			{
+				//changed text
+				strcat(temp, "..");//"³²");
+			}
