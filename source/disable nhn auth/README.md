@@ -88,3 +88,134 @@ Change <br>
             //Disable NHN related
             //GetNHNUSAReport().ReportCrashedGame();
     #endif
+
+Find <br>
+
+    bool InitReport()
+    {
+    #ifdef LOCALE_NHNUSA
+        mlog( "Init report start\n" );
+        if( !GetNHNUSAReport().InitReport(((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->GetUserID().c_str(),
+            ((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->GetGameStr()) )
+        {
+            mlog( "Init nhn report fail.\n" );
+            return false;
+        }
+        GetNHNUSAReport().ReportStartGame();
+        mlog( "Init report success.\n" );
+    #endif
+
+        return true;
+    }
+    
+Change <br>
+
+    bool InitReport()
+    {
+        return true;
+
+        //Disable NHN Auth
+        /*
+    #ifdef LOCALE_NHNUSA
+        mlog( "Init report start\n" );
+        if( !GetNHNUSAReport().InitReport(((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->GetUserID().c_str(),
+            ((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->GetGameStr()) )
+        {
+            mlog( "Init nhn report fail.\n" );
+            return false;
+        }
+        GetNHNUSAReport().ReportStartGame();
+        mlog( "Init report success.\n" );
+    #endif
+
+        return true;
+        */
+    }
+    
+Find <br>
+
+    bool InitPoll()
+    {
+    #ifdef LOCALE_NHNUSA
+        mlog( "Init poll start\n" );
+
+        ((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->ZUpdateGameString();
+
+        if( !GetNHNUSAPoll().ZHanPollInitGameString( ((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->GetGameStr()) )
+            return false;
+    #endif
+
+        return true;
+    }
+    
+Change <br>
+
+    bool InitPoll()
+    {
+        return true;
+
+        //Disable NHN Auth
+        /*
+    #ifdef LOCALE_NHNUSA
+        mlog( "Init poll start\n" );
+
+        ((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->ZUpdateGameString();
+
+        if( !GetNHNUSAPoll().ZHanPollInitGameString( ((ZNHN_USAAuthInfo*)(ZGetLocale()->GetAuthInfo()))->GetGameStr()) )
+            return false;
+    #endif
+
+        return true;
+        */
+    }
+
+Find <br>
+
+        // restore user id
+    #ifdef LOCALE_NHNUSA
+        pUSAAuthInfo = (ZNHN_USAAuthInfo*)ZGetLocale()->GetAuthInfo();
+        pUSAAuthInfo->SetUserID(strUserID);
+    #endif
+    
+Change <br>
+
+	//Disable NHN Auth
+	// restore user id
+    //#ifdef LOCALE_NHNUSA
+    //	pUSAAuthInfo = (ZNHN_USAAuthInfo*)ZGetLocale()->GetAuthInfo();
+    //	pUSAAuthInfo->SetUserID(strUserID);
+    //#endif
+    
+Find <br>
+
+	// save user id
+    #ifdef LOCALE_NHNUSA
+        ZNHN_USAAuthInfo* pUSAAuthInfo = (ZNHN_USAAuthInfo*)ZGetLocale()->GetAuthInfo();
+        string strUserID = pUSAAuthInfo->GetUserID();
+    #endif
+    
+Change <br>
+
+	//Disable NHN Auth
+	// save user id
+    //#ifdef LOCALE_NHNUSA
+    //	ZNHN_USAAuthInfo* pUSAAuthInfo = (ZNHN_USAAuthInfo*)ZGetLocale()->GetAuthInfo();
+    //	string strUserID = pUSAAuthInfo->GetUserID();
+    //#endif
+    
+Find <br>
+
+    #ifdef LOCALE_NHNUSA
+    #include "ZNHN_USA.h"
+    #include "ZNHN_USA_Report.h"
+    #include "ZNHN_USA_Poll.h"
+    #endif
+    
+Change <br>
+
+    //Disable NHN auth
+    //#ifdef LOCALE_NHNUSA
+    //#include "ZNHN_USA.h"
+    //#include "ZNHN_USA_Report.h"
+    //#include "ZNHN_USA_Poll.h"
+    //#endif
