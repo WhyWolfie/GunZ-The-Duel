@@ -79,35 +79,36 @@ GunZ The Duel Releases <br>
 - icon death scoreboard: [icon death scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard)
 - item shop search: [item shop search](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/item-search-shop)
 - kill feed: [kill feed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-feed)
-- killstreak system: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-streak-system
-- live player in room: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/live-player-in-the-event-channel
-- multi language: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multi-language
-- duplicate client: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multiclient-duplicate-procress
-- pingbar: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/pingbar
-- player online channel: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/players-online-channel
-- random annoucement lobby: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/random-annoucement-lobby-interface
-- room with empty name: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room-with-empty-name
-- simple levelup sound: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/simple-levelup-sound
-- snowtownparticlesystem: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/snowtownparticlesystem
-- staffmode: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/staffmode
-- vipshop parts: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts
-- weapon information: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information
-- roomtags: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags
-- charging while moving: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving
-- effect spark shot: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot
-- threaded screenshots: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots
-- staff jjang for staff: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/new%20jjang%20for%20staff
-- dash in options: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20colors%20from%20options%20menu
-- bunch of features: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features
-- weapon shoot nade: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade
-- heal over time (1+hp): https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time
-- clan 1v1: https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/clanwar%201v1/
-- shop layout: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20layout
+- killstreak system: [killstreak system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-streak-system)
+- live player in room: [live player in room](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/live-player-in-the-event-channel)
+- multi language: [multi language](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multi-language)
+- duplicate client: [duplicate client](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multiclient-duplicate-procress)
+- pingbar: [pingbar](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/pingbar)
+- player online channel: [player online channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/players-online-channel)
+- random annoucement lobby: [random annoucement lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/random-annoucement-lobby-interface)
+- room with empty name: [room with empty name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room-with-empty-name)
+- simple levelup sound: [simple levelup sound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/simple-levelup-sound)
+- snowtownparticlesystem: [snowtownparticlesystem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/snowtownparticlesystem)
+- staffmode: [staffmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/staffmode)
+- vipshop parts: [vipshop parts](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts)
+- weapon information: [weapon information](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information)
+- roomtags: [roomtags](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags)
+- charging while moving: [charging while moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving)
+- effect spark shot: [effect spark shot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot)
+- threaded screenshots: [threaded screenshots](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots)
+- staff jjang for staff: [staff jjang for staff](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/new%20jjang%20for%20staff)
+- dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20colors%20from%20options%20menu)
+- bunch of features: [bunch of features](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features)
+- weapon shoot nade: [weapon shoot nade](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade)
+- heal over time (1+hp): [heal over time (1+hp)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time)
+- clan 1v1: [clan 1v1](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/clanwar%201v1/)
+- shop layout: [shop layout](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20layout)
 - emoticon chat: [emoticon chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/emoticon%20chat)
 - ugrade manager: [ugrade manager](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/ugrade%20manager/)
 - duel tournament 2pp & 4pp: [duel tournament 2pp & 4pp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20tournament%202players%20&%204%20players)
 - level in lobby: [level in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/level%20in%20lobby)
 - taunt after round: [taunt after round](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/taunt%20after%20round%20is%20over)
+- fps in lobby: [fps in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20in%20lobby)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
