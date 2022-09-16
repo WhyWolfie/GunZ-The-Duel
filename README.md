@@ -143,6 +143,7 @@ GunZ The Duel Releases <br>
 - fix agent error: [fix agent error](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20agent%20error)
 - dll hacking fix [dll hacking fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dll%20hacking%20fix)
 - activate serialkey: [activate serialkey](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/activate%20serialkey)
+- disable nhn auth: [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth)
 
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command)
