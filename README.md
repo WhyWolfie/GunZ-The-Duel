@@ -155,6 +155,7 @@ GunZ The Duel Releases <br>
 - time: [time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/time%20command)
 - admin spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin%20spawnmover%20command)
 - damage: [damage](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/damage%20command)
+- getdirection & getposition [getdirection & getposition](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/getPosition%20&%20getDirection)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
@@ -176,30 +177,30 @@ GunZ The Duel Releases <br>
 - Gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
 
 <b>[custom clients]</b>
-- ObeliskGunZ: https://archive.org/details/obelisk-gun-z
-- Legacy Gamers: https://archive.org/details/legacy-gamers-gun-z-beta-2-7
-- Competitive V3: https://archive.org/details/gunz-competitive-v-3-install
-- FXP GunZ (update): https://archive.org/details/fxp-gun-z-updated
-- FXP GunZ (installer): https://archive.org/details/fxp-gun-z
-- MasangsoftGunz: https://archive.org/details/gun-zsetup-masang
-- MaximoGunz: https://archive.org/details/maximo-gun-z
-- VinaGunzV12: https://archive.org/details/vinagun-zv-12-1
-- FreestyleGunZV8: https://archive.org/details/freestyle-gun-z-v-8-installer
-- GunZ2034: https://archive.org/details/gun-z-2034-client
-- TrinityGunZ: https://archive.org/details/trinity-gun-z
-- GunZ MTG V8: https://archive.org/details/setup-gunz-mtg-v-8_202011
-- UltimateGunz: https://archive.org/details/Ultimategunz
-- TrinityGunz: https://archive.org/details/trinity-gun-z
+- ObeliskGunZ: [ObeliskGunZ](https://archive.org/details/obelisk-gun-z)
+- Legacy Gamers: [Legacy Gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
+- Competitive V3: [Competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
+- FXP GunZ (update): [FXP GunZ (update)](https://archive.org/details/fxp-gun-z-updated)
+- FXP GunZ (installer): [FXP GunZ (installer)](https://archive.org/details/fxp-gun-z)
+- MasangsoftGunz: [MasangsoftGunz](https://archive.org/details/gun-zsetup-masang)
+- MaximoGunz: [MaximoGunz](https://archive.org/details/maximo-gun-z)
+- VinaGunzV12: [VinaGunzV12](https://archive.org/details/vinagun-zv-12-1)
+- FreestyleGunZV8: [FreestyleGunZV8](https://archive.org/details/freestyle-gun-z-v-8-installer)
+- GunZ2034: [GunZ2034](https://archive.org/details/gun-z-2034-client)
+- TrinityGunZ: [TrinityGunZ](https://archive.org/details/trinity-gun-z)
+- GunZ MTG V8: [GunZ MTG V8](https://archive.org/details/setup-gunz-mtg-v-8_202011)
+- UltimateGunz: [UltimateGunz](https://archive.org/details/Ultimategunz)
+- TrinityGunz: [TrinityGunz](https://archive.org/details/trinity-gun-z)
 
 <b>[tutorials]</b>
-- Movements: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements
-- MRSDecompiler Ultimate: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/MRSDecompiler%20Ultimate
-- Gunnycrypt: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/gunnycrypt
-- pro mrs gui: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/pro_mrs_gui
-- odbc: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/odbc
-- sql2005: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005
-- map xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map
-- shop xml generator: https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop
+- movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
+- mrsdecompiler ultimate: [mrsdecompiler ultimate](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/MRSDecompiler%20Ultimate)
+- gunnycrypt: [gunnycrypt](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/gunnycrypt)
+- pro mrs gui: [pro mrs gui](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/pro_mrs_gui)
+- odbc: [odbc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/odbc)
+- sql2005: [sql2005](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005)
+- map xml generator: [map xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map)
+- shop xml generator: [shop xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop)
 
 <b>[video tutorials - will update it in the future]</b><br>
 <b>(blender)</b>
@@ -219,13 +220,13 @@ GunZ The Duel Releases <br>
 - how to rig stuff and more (3ds max 2014): [how to rig stuff and more (3ds max 2014)](https://www.youtube.com/watch?v=WHajSJ9QEdA)
 
 <b>(others)</b>
-- how to add custom maps: https://www.youtube.com/watch?v=hqSnAsM6ezc
-- how to add a encryption with gunnycrypt: https://www.youtube.com/watch?v=qXGwBLxi2Iw
-- create a server windows 11: https://www.youtube.com/watch?v=TXn9QEJv6VU
-- convert vs2003 -> vs2019: https://www.youtube.com/watch?v=F36AbuA6UKE
-- hpap bar in gunz source code: https://www.youtube.com/watch?v=Y5MdaA1ejlg
-- add emoticon chat gunz: https://www.youtube.com/watch?v=9OsTuzHPAvs
-- addition of flags website: https://www.youtube.com/watch?v=AZFuvtaBqs8
+- how to add custom maps: [how to add custom maps](https://www.youtube.com/watch?v=hqSnAsM6ezc)
+- how to add a encryption with gunnycrypt: [how to add a encryption with gunnycrypt](https://www.youtube.com/watch?v=qXGwBLxi2Iw)
+- create a server windows 11: [create a server windows 11](https://www.youtube.com/watch?v=TXn9QEJv6VU)
+- convert vs2003 -> vs2019: [convert vs2003 -> vs2019](https://www.youtube.com/watch?v=F36AbuA6UKE)
+- hpap bar in gunz source code: [hpap bar in gunz source code](https://www.youtube.com/watch?v=Y5MdaA1ejlg)
+- add emoticon chat gunz: [add emoticon chat gunz](https://www.youtube.com/watch?v=9OsTuzHPAvs)
+- addition of flags website: [addition of flags website](https://www.youtube.com/watch?v=AZFuvtaBqs8)
 
 
 <b>(gameplay)</b>
