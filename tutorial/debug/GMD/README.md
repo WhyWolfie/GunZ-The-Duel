@@ -6,3 +6,5 @@
 ![GMD](https://i.imgur.com/6JrMHBr.png)
 
 Press -> Run 🙃
+
+Link: https://github.com/WhyWolfie/GunZ-The-Duel/tree/15d1fd6ee7ef4c989f43468baa502ec84ca2a3dc/Tools/debug
