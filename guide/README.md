@@ -4,3 +4,4 @@ Guide and Walkthrough by Kistael<br>
 Dagger FAQ by ParadigmShift89 <br>
 Item List by Shark463 <br>
 Quest Mode Guide by BigMac8000 <br>
+Quest Mode Guide by Exodist <br>
