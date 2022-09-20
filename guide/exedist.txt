@@ -1,0 +1,575 @@
+********************************************************************************
+Gunz
+Quest Guide
+By Exodist
+********************************************************************************
+  ____                   _____ _            ____             _ 
+ / ___|_   _ _ __  ____ |_   _| |__   ___  |  _ \ _   _  ___| |
+| |  _| | | | '_ \|_  /   | | | '_ \ / _ \ | | | | | | |/ _ \ |
+| |_| | |_| | | | |/ /    | | | | | |  __/ | |_| | |_| |  __/ |
+ \____|\__,_|_| |_/___|   |_| |_| |_|\___| |____/ \__,_|\___|_|
+                                                               
+****************
+GAME INFORMATION
+****************
+
+Title: Gunz The Duel
+Developer: Maiet Entertainment
+Publisher: Maiet Entertainment
+Platform: PC
+Release: 29th November 2006
+Genre: Online Third Person Shooter RPG
+
+********************
+DOCUMENT INFORMATION
+********************
+
+Document by: Exodist/Ryan Haighton
+Document size: 13KB
+Document version: 1.2
+Document hosted by: Gamefaqs (Gamefaqs.com)
+Document written: Started 20th December, latest version 6th July
+Document ｩ Copyright 2006-7 Ryan Haighton, DO NOT STEAL, IT IS MY WORK!
+
+*****
+NOTES
+*****
+
+This guide is ｩ Copyright 2006 Ryan Haighton, DO NOT STEAL, IT IS MY WORK!
+This guide is for Gunz, the North American version, made by Maiet in 2006.
+
+********
+CONTENTS
+********
+
+CHAPTER 1 - INTRODUCTION
+CHAPTER 2 - BASIC INFORMATION
+CHAPTER 3 - QUEST GUIDE
+CHAPTER 4 - QUEST ITEMS
+CHAPTER 5 - QUEST ENEMIES
+CHAPTER 6 - END OF DOCUMENT
+
+************************
+
+CHAPTER 1 - INTRODUCTION
+
+************************
+
+Gunz is an online, third person shooter with some RPG elements hacked on, which
+actually work pretty well. So sooner or later, there had to be a quest mode.
+Promised for International Gunz, appearing in North American Gunz, quest mode
+can be a blast. Although its not a good source of training at all, its still
+pretty fun to play. I am no master at Quest mode, if there isn't anything in my
+guide which is in the game, then sorry, I didn't know about it. Currently, there
+is only one quest level, but more quests and such are soon to come, so whenever
+Gunz quest mode gets updated, hopefully, this guide will be too. Good luck with
+quest mode, and enjoy the game!
+
+OK, you can check the END OF DOCUMENT chapter (6) to find all of this guides
+update information.
+
+I will write a little here though. Basically, I stopped playing Gunz for a long
+time, at the measly level of 23. Well, my friend started playing, and so I did,
+and now many of my other friends all play (we have our own clan too). Now, im
+level 24 at time of writing, half way to 25, and I plan to continue this guide.
+This is just a quick update, considering this is 20KB and on gamefaqs its only
+13. Either way, I hope to improve the guide massively, so good luck to me.
+
+*****************************
+
+CHAPTER 2 - BASIC INFORMATION
+
+*****************************
+
+STARTING OUT:
+
+First off, you will want to be a decent level, or just be extremely skilled at
+Gunz before attempting a quest. Then, make sure you connect to either Quest West
+or Quest East servers, you cannot do quests on any other server. Now, go to
+whatever channel you want, and create/join a game. First you might want to
+create your own with a password to get used to it, but I don't recommend it. OK,
+select QUEST from the game type selection, the other options you cannot change.
+The level HAS to be Mansion, the max players are 4, and you can't have a time
+limit. Now, to the left, you can see slots for items. If you use a page, which
+you can buy from the shop (only on a quest server) you can get to different
+quest levels. Thus far I have only played on Quest Levels 1 and 2, and am not
+certain if there are currently more. You can use items gained in the actual
+quest too, but these don't seem to be useful at the current time. Once every
+one is ready, its time to start.
+
+PLAYING QUEST MODE:
+
+Once the game starts, it will place you into a random room, based on the current
+level (which would be Mansion). All of the players will start at the same place,
+and are given a couple of seconds to get ready. Soon, the monsters will start
+to spawn all over the level. Now, you must try to kill them obviously. Once all
+of the NPCs have been defeated, a portal will open up, giving all of the players
+around 30 or so seconds to get there. The portal will take the players to the
+next stage, where it repeats itself, but of course, at a different location. You
+may fight in the same locations again, and the stages can vary from 6-8 (at
+least, thats how many I have seen). If a player dies, they cannot respawn until
+the next round, if all players die, the quest is over.
+
+QUEST MODE - MORE DETAIL:
+
+OK, so what else is there in quest? Well, you may expect to run out of ammo
+quickly, which in most cases, you do. Around the levels, health restorers, AP
+restorers, and also Ammo will respawn randomly, in different places. The harder
+the quest level, and higher stage level your on, the less they restore, mainly
+the health though, which can restore very little at times. Also, you may notice
+chests randomly spawn, although these are a lot rarer then the HP, AP and Ammo
+upgrades. These contain quest items, at the moment, your just best off selling
+them, check the items chapter for more detail in them. Also, in the future,
+you will be able to fight special bosses, you may be able to fight one now, but
+if so, I haven't. Watching the Gunz trailer, toward the end, you will see some
+people fighting a giant goblin with a massive hammer inside the library part of
+the Mansion level. Maybe this is in the current version, although I do not know.
+Also, when the players get to the next stage, all of their HP, AP and ammo is
+fully restored.
+
+***********************
+
+CHAPTER 3 - QUEST GUIDE
+
+***********************
+
+*******
+MANSION
+*******
+
+Currently, there is only the mansion level playable. Once into the mansion level
+you will go through 6-8 or so stages, fighting goblin after goblin after goblin.
+When playing, the game will put you onto a random location, which is similar to
+the mansion, to fight in. Currently, I have seen these rooms.
+
+Garden Hallway:
+ _      _     _
+| |____| |___| |
+|              |
+|  __________  |
+|_|          |_|
+
+This is a hallway, similar to the hallways found in the Garden level. Above is
+some dodgey ASCII map thing, its meant to be the stage. Thats about all I can
+remember of it though, so if its not completely accurate, don't blame me. The
+players will spawn at the bottom right location, and the portal, usually just
+across from there, although I think it may just be random. This stage is usually
+an early one, and never really causes much trouble, even when the harder enemies
+run loose on it.
+
+Garden Hallway 2:
+ ________________
+|  ____________  |
+| |            | |
+| |            | |
+| |            | |
+|_|            |_|
+
+This is another hallway level, similar to the Garden level hallways. Above is
+another dodgey ASCII map thing, which may not be very accurate, but again, its
+a rough drawing of the stage. This stage usually appears (for me at least) very
+early on, and is fairly easy. The players will start to the bottom left part of
+the map, and the portal usually appears either side.
+
+Garden:
+         _
+   _____| |_____
+ _|             |_
+|_               _|
+  | ____   ____ |
+  |  ___   ___  |
+  | |         | |
+  | |         | |
+  | |         | |
+  |_____________|
+
+Yes, its a VERY poor drawing, but I can explain. This stage is pretty much the
+garden part of, guess what, the garden level! Of course, all exits are blocked,
+the players start at the bottom middle part of the level, where the fountain
+usually is. The hedges are still there, and then there are steps leading up to
+the main part, where all the action takes place. This level usually appears mid
+quest for me, its not too hard, but it can get chaotic up top.
+
+Mansion Stairs:
+ ____________
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|____________|
+
+Well, er, thats pretty much it. Except there are pillars all along it, but its
+more or less the main Mansion room, minus the stairs, minus any exits, the
+colour is a lot more red, and there is a big door on a wall. Wow. You start at
+either end, I can't remember which. This stage is usually pretty late, and has
+a lot of the armoured Goblins. Its not too difficult, if your low, you can just
+dash around the edge until power ups appear. Simple really.
+
+Mansion Cellar:
+
+OK, I don't have a map, I can't exactly remember the whole of it. But, its
+basically, the cellar with a lot of stairs, leading to a giant grey/black wall.
+You should know what I mean, this is a pretty early stage, usually when those
+Goblin Gunners start appearing.
+
+Mansion Cellar 2:
+
+ ____________
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|            |
+|____________|
+
+Again, this is just like the Mansion Stairs, its a big room, with pillars, but
+has more of a cellar feel to it. Oh, and fire torches all around the room. So
+yeah, same rules apply really.
+
+Mansion Library:
+
+ ____________
+|  ___  ___  |
+| |        | |
+| |        | |
+|            |
+|            |
+| |        | |
+| |___  ___| |
+|____________|
+
+This is an annoying level. It seems really hard, especially if your trying to
+solo quest mode. Basically, its a the library from mansion. The lines in the
+middle of the room are bookcases. If your out of ammo, try to stay around the
+edges, dashing, and be ready to collect pick ups! In the middle is where all
+the action goes on, unless your good, stay away!
+
+Mansion Place:
+
+ ____________
+| _________  |
+|            |
+| |        | |
+| |        | |
+| |        | |
+| |        | |
+| _________  |
+|____________|
+
+Mansion place hey? I don't know what it is, its just this random room I guess.
+This is usually last, or very close to being last. Basically, the middle, is a
+pit, but not really much of a pit. The gaps in the outline are stairs, the
+players start in the middle. This is kinda hard, but not that hard. The stage
+is pretty much the library, but seems to be much easier to me.
+
+Mansion Dining Room:
+
+ ______
+|      |
+|      |
+|      |
+|      |
+|      |
+|      |
+|______|
+
+This is a kinda annoying stage. Basically, its the dining room, complete with
+the table straight down the middle. Usually, its pretty easy to complete, be
+careful, it seems that many gunners are placed onto the table. Apart from that
+it shouldn't be too much of a problem.
+
+Below, are the monsters seen in the Mansion quest level. They're all Goblins,
+and there are around five different types. Read on for more information!
+
+GOBLIN:
+
+Just a normal goblin, carries a small knife, or maybe a short sword. Easiest to
+kill, and the most common enemy too. These are seen on the Mansion level.
+
+GOBLIN GUNNER:
+
+These have rifle guns, which fire small bombs, the distance isn't that great,
+but when the explode, the radius is big. These usually stay out of the battle to
+try and snipe, if you can, kill them with a melee weapon. These are seen on the
+Mansion level.
+
+GOBLIN ARMOUR:
+
+These are bigger goblins. They have big clubs, and are heavily armoured. These
+can do more damage then the rest, and take more hits to kill. Don't worry, you
+can shoot them any where, just shoot! They appear often, mainly toward the end
+of the quest. These are seen on the Mansion level.
+
+GOBLIN MAGE:
+
+Goblin Mages are small goblins in the brown cloaks. They heal themselves and
+other goblin's which are usually in large groups. These are seen on the Mansion
+level.
+
+GOBLIN SHAMAN:
+
+Part Goblin part voodoo ritualist, these guys are big and tough. They can take
+up to three rounds of ammunition without dying. They can hit you ranged and in
+melee, and can cast a spell to make you move slower, if this happens, ALWAYS
+move! Recommended to take these guys down first. These are seen on the Mansion
+level.
+
+*******
+DUNGEON
+*******
+
+The brand new level, as of the 14th Feb update of Ijji Gunz. OK, so I just
+played it at Quest level 1, pretty easy (level 21 character), no deaths, and
+just complete general ownage. That was my first play, and we had around four
+rounds. OK, the levels seem to be based on parts, or sections, of the Dungeon
+level, where as the Mansion level has some new rooms. Obviously on my initial
+Dungeon play through, I didn't see all the rooms, and I have more Quest levels
+to play through. Noticed the new enemies too, they're all skeletons. I only saw
+three different types, the first two were pretty easy, but the last third type
+was kinda kick-ass. Below are the rooms I have seen and can remember properly.
+
+STAIR WAY:
+
+This level will be instantly recognisable to any one who has played Dungeon.
+Remember the really small stairways where right clicking with a sword equipped
+can bag easy kills? Well, this is part of the Dungeon level. It's just the stair
+way room though, every one starts at the bottom, so you have some stairs to
+climb up before you can get to the top. The enemies spawn on the steps, right
+in the middle, so you have to be careful. Also, if any of the Skeleton Armours
+spawn, be careful, these can be tough to defeat on the stair way.
+
+SMALL ROOM:
+
+I don't really have a name for this room. It's a small square room, I can't
+remember which, but it's the starting room for one of the teams for Team
+Deathmatch on Dungeon. It has like, a VERY small well in it too. This level is
+small, but pretty easy, just fire away in this cramped space.
+
+The Dungeon introduces a new type of enemy, the Skeleton. Loosely based on the
+Goblins (in terms of enemy types) I have seen three Skeleton types thus far.
+Unfortunately, they were all easy to beat as such, but either way, they're all
+below.
+
+SKELETON WARRIOR:
+
+The basic skeleton enemy, these are just skeletons in brown coloured armour,
+with swords and shields. At level 21, these went down easy, they died in just
+a couple of shots from x2 SMG, much more faster than the Goblins. Also, they
+walk and are pretty slow. They respawn at high rate, but they don't seem to pose
+much of a threat. These are seen on the Dungeon level.
+
+SKELETON MAGE:
+
+These are normal skeletons, but in a big brown cloak. These are incredibly weak,
+but they can cast damaging magic at a range. You should take them out with a
+sword, as that will kill them quick, you shouldn't waste your ammo as such on
+these. Their attacks are pretty weak too. These are seen on the Dungeon level.
+
+SKELETON ARMOUR:
+
+These are bigger skeletons, in red (or something) armour, wielding giant swords.
+Once you get in a certain distance with in them, they charge at you, much more
+quicker then the other Skeletons, ready to attack you. These take more shots
+than the Warriors, but aren't too tough. Be warned though, these can be an
+absolute pain on the Stair Way room on Dungeon. Again, these are seen on the
+Dungeon level.
+
+***********************
+
+CHAPTER 4 - QUEST ITEMS
+
+***********************
+
+Yeah, this chapter sucks. Currently the Gunz server is down, so im trying to
+go from memory. The next update will include more information though!
+
+SHOP ITEMS:
+
+TORN PAGE 13 - Level 13 - 100 BP to buy
+
+TORN PAGE 25 - Level 25 - 500BP
+
+TORN PAGE 41 - Level 41 - 1000BP
+
+
+QUEST ITEMS:
+
+RAW MEAT - Sell for 5BP
+
+SEASONED MEAT - Sell for 20BP
+
+STEAK - Sell for 50BP
+
+GOBLIN SKULL - Sell for 20BP
+
+GOBLIN DOLL
+
+CRIMSON'S NECKLACE
+
+SKULL - Sell for 5BP
+
+OTHER QUEST ITEMS (to be released):
+
+Goblin Hat (Equip - 4Days) 
+Skeleton Sword (Equip - 4Days) 
+Goblin Gloves (Equip - 4Days) 
+Goblin King Launcher (Equip -4Days) 
+Torn Page 65 
+Small Skull 
+Large Skull 
+Mysterious Skull 
+King Goblin's Skull 
+Enormously Huge Bone 
+Iron Earring 
+Silver Earring 
+Platinum Earring 
+Skeleton Doll 
+Kobold Doll 
+Pampow Doll 
+Rabbit Doll 
+Stuffed Bear 
+Cursed Bear 
+Pampow Idol 1 
+Pampow Idol 2 
+Devil's Dictionary 
+Scrider's Register Volume I 
+Scrider's Register Volume II 
+Blessed Cross 
+Cursed Cross 
+Pickax 
+Speaking Stone 
+Ice Crystal 
+Broken Gear 
+High-Class Gear 
+Ax of Goblin King 
+Goblin's Picture Book 
+Poison Element Lv 3 (Equip - 3Days?)
+
+Thanks to Rack whom contributed these.
+
+*************************
+
+CHAPTER 5 - QUEST ENEMIES
+
+*************************
+
+Currently, there are only goblins, 4 types if I am correct (at least, thats all
+I have seen). They are listed below.
+
+GOBLIN:
+
+Just a normal goblin, carries a small knife, or maybe a short sword. Easiest to
+kill, and the most common enemy too. These are seen on the Mansion level.
+
+GOBLIN GUNNER:
+
+These have rifle guns, which fire small bombs, the distance isn't that great,
+but when the explode, the radius is big. These usually stay out of the battle to
+try and snipe, if you can, kill them with a melee weapon. These are seen on the
+Mansion level.
+
+GOBLIN ARMOUR:
+
+These are bigger goblins. They have big clubs, and are heavily armoured. These
+can do more damage then the rest, and take more hits to kill. Don't worry, you
+can shoot them any where, just shoot! They appear often, mainly toward the end
+of the quest. These are seen on the Mansion level.
+
+GOBLIN MAGE:
+
+Goblin Mages are small goblins in the brown cloaks. They heal themselves and
+other goblin's which are usually in large groups. These are seen on the Mansion
+level.
+
+GOBLIN SHAMAN:
+
+Part Goblin part voodoo ritualist, these guys are big and tough. They can take
+up to three rounds of ammunition without dying. They can hit you ranged and in
+melee, and can cast a spell to make you move slower, if this happens, ALWAYS
+move! Recommended to take these guys down first. These are seen on the Mansion
+level.
+
+SKELETON WARRIOR:
+
+The basic skeleton enemy, these are just skeletons in brown coloured armour,
+with swords and shields. At level 21, these went down easy, they died in just
+a couple of shots from x2 SMG, much more faster than the Goblins. Also, they
+walk and are pretty slow. They respawn at high rate, but they don't seem to pose
+much of a threat. These are seen on the Dungeon level.
+
+SKELETON MAGE:
+
+These are normal skeletons, but in a big brown cloak. These are incredibly weak,
+but they can cast damaging magic at a range. You should take them out with a
+sword, as that will kill them quick, you shouldn't waste your ammo as such on
+these. Their attacks are pretty weak too. These are seen on the Dungeon level.
+
+SKELETON COMMANDER:
+
+These are bigger skeletons, in red (or something) armour, wielding giant swords.
+Once you get in a certain distance with in them, they charge at you, much more
+quicker then the other Skeletons, ready to attack you. These take more shots
+than the Warriors, but aren't too tough. Be warned though, these can be an
+absolute pain on the Stair Way room on Dungeon. Again, these are seen on the
+Dungeon level.
+
+OTHER QUEST MONSTERS (to be released):
+
+Goblin King (Boss) 
+Pampoa 
+Pampoa Commander 
+Pampow 
+Cursed Pampow 
+Pampow Baby 
+Skeleton 
+Skeleton Mage 
+Skeleton Commander 
+Giant Skeleton 
+The Unholy 
+Lich (Boss) 
+Kobold 
+Kobold Shaman 
+Kobold Commander 
+Kobold King (Boss) 
+Broken Golem (Boss) 
+Richie (Boss) 
+Scrider (God) 
+
+Thanks to Rack whom contributed those, and info on the Goblin Shaman.
+
+***************************
+
+CHAPTER 6 - END OF DOCUMENT
+
+***************************
+
+Well, I got an email the other day, telling me that the sender can help
+contribute toward my guide. Well, that person did, so a BIG THANKS to Rack, who
+contributed the following: Info on Goblin Shaman, info on Future Quest items,
+and info on future quest enemies.
+
+OK, on the 14th of February 2007, the quest mode of North American (Ijji) Gunz
+was updated. Now, recently I have been playing some World of Warcraft, and some
+of my 360 games, so I haven't had much to play Gunz. But, when im bored of
+playing these (I just get moments I just can't be bothered), then Gunz is a
+possible resort. Now, there are only three major update catagories, but there
+are more updates with in these. First off, we have, a brand new, never before
+seen quest boss for Mansion. Also, there is a brand new map, the Dungeon, and
+there are also new enemy types to be introduced.
+
+This guide is ｩ Copyright 2006-7 Ryan Haighton, DO NOT STEAL, IT IS MY WORK! You
+cannot steal it in any form or way, nor copy not one little bit of it (directly
+from my guide) for your own guide. You may however, save this document onto your
+computer, as that is the main idea. From then, it may be modified, but the
+modified version must not be put onto the internet. Nor can you modify it to
+look like your own work. Anything copied from my guide is not allowed either.
+
+Gunz the Duel ｩ Copyright 2003-6 Maiet
+This Document is ｩ Copyright 2006-7 Ryan Haighton.
+
+END OF DOCUMENT - Exodist signing off...
