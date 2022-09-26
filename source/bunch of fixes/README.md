@@ -689,3 +689,14 @@ Replace <br>
 		if (GetStage()->GetSuicideList().size() > 0)
 			GetStage()->GetSuicideList().clear();
 	}
+
+Find <br>
+
+		MMatchObject* pObj = (MMatchObject*)(*itor).second;
+		if (pObj->GetEnterBattle() == false) continue;
+		
+Add <br>
+
+		///you dont need admin info if they're hiding
+		if (IsAdminGrade(pObj) && pObj->CheckPlayerFlags(MTD_PlayerFlags::MTD_PlayerFlags_AdminHide))
+			continue;
