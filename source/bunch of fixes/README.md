@@ -700,3 +700,23 @@ Add <br>
 		///you dont need admin info if they're hiding
 		if (IsAdminGrade(pObj) && pObj->CheckPlayerFlags(MTD_PlayerFlags::MTD_PlayerFlags_AdminHide))
 			continue;
+
+Open(MMatchStage.cpp) <br>
+Find <br>
+
+	if (count == 0 && !MMATCH_GAMETYPE_DUEL)
+	{
+		pRelayMapList[0].nMapID = MMATCH_MAP_MANSION;
+		count = 1;
+	}else{
+		pRelayMapList[0].nMapID = MMATCH_MAP_HALL;
+		count = 1;
+	}
+
+Replace <br>
+
+	if (count == 0)
+	{
+		pRelayMapList[0].nMapID = MMATCH_MAP_MANSION;
+		count = 1;
+	}
