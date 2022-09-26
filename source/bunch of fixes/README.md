@@ -675,3 +675,17 @@ Replace <br>
 				//changed text
 				strcat(temp, "..");//"³²");
 			}
+
+Open(MMatchRule.cpp) <br>
+Find
+
+	void MMatchRule::OnRoundEnd()
+	
+Replace <br>
+
+	void MMatchRule::OnRoundEnd()
+	{
+		///Clearsuicide list on each new round if size > 0
+		if (GetStage()->GetSuicideList().size() > 0)
+			GetStage()->GetSuicideList().clear();
+	}
