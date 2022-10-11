@@ -163,7 +163,7 @@ GunZ The Duel Releases <br>
 - admin spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin%20spawnmover%20command)
 - damage: [damage](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/damage%20command)
 - getdirection & getposition [getdirection & getposition](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/getPosition%20&%20getDirection)
-- colourlist [colourlist](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20colourlist/README.md)
+- colourlist/mods/commands list [colourlist/mods/commands list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20colourlist%20%26%20mods%20%26%20commands%20list)
 - staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
 
 (others)<br>
