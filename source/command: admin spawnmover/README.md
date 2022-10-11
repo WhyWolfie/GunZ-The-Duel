@@ -7,7 +7,7 @@ Part 1
 
 Part 2
 
-    _CC_AC("admin_spawn",		&ChatCmd_Spawn,			CCF_ALL, ARGVNoMin, 1 , true,"/admin_spawn <¸Þ½ÃÁö>", "");
+    _CC_AC("admin_spawn",&ChatCmd_Spawn,CCF_ALL, ARGVNoMin, 1 , true,"/admin_spawn <¸Þ½ÃÁö>", "");
 
 Part 3
 
