@@ -1,4 +1,4 @@
-Unfinished <br>
+Team-Training & XMLs <br>
 Open(MBaseGameType.h - enum MMATCH_GAMETYPE) <br>
 
 	MMATCH_GAMETYPE_TEAM_TRAINING		=13,
@@ -70,7 +70,7 @@ Open(MMatchStage.cpp - MMatchStage::CreateRule(MMATCH_GAMETYPE nGameType))
     
 Open(ZGameInterface.cpp - ZGetGameTypeManager()->SetGameTypeStr( MMATCH_GAMETYPE_QUEST_CHALLENGE)
 
-	ZGetGameTypeManager()->SetGameTypeStr( MMATCH_GAMETYPE_TEAM_TRAINING, ZMsg( MSG_MT_TEAM_TRAINING));
+	ZGetGameTypeManager()->SetGameTypeStr( MMATCH_GAMETYPE_TEAM_TRAINING, "Team Training");
 
 Open(ZRule.cpp - ZRule::CreateRule(ZMatch* pMatch, MMATCH_GAMETYPE nGameType))
 
@@ -118,3 +118,59 @@ Replace
 	}
 
 
+Open(ZRuleTraining.cpp) <br>
+
+	ZRuleTeamTraining::ZRuleTeamTraining(ZMatch* pMatch) : ZRuleTeamDeathMatch(pMatch)
+	{
+
+	}
+
+	ZRuleTeamTraining::~ZRuleTeamTraining()
+	{
+
+	}
+	
+Open(ZRuleTraining.h) <br>
+
+	class ZRuleTeamTraining : public ZRuleTeamDeathMatch
+	{
+	public:
+		ZRuleTeamTraining(ZMatch* pMatch);
+		virtual ~ZRuleTeamTraining();
+	};
+
+Open(MMatchRuleTraining.cpp) <br>
+
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	// MMatchRuleTeamTraining /////////////////////////////////////////////////////////////////////////
+	MMatchRuleTeamTraining::MMatchRuleTeamTraining(MMatchStage* pStage) : MMatchRuleTeamDeath(pStage)
+	{
+
+
+	}
+
+Open(System.mrs->ChannelRule.xml and Add)
+
+	<GAMETYPE id="13" />
+
+Open(System.mrs->Gametypecfg.xml and Add)
+
+	<GAMETYPE id="13">	<!-- TEAM TRAINING -->
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" default="true" />
+		<ROUNDS    round="50"	str="50" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="99999"	str="STR:GAMETYPECFG_LIMITTIME_INFINITE" />
+		<LIMITTIME sec="5"	str="STR:GAMETYPECFG_LIMITTIME_5MIN" />
+		<LIMITTIME sec="10"	str="STR:GAMETYPECFG_LIMITTIME_10MIN" default="true" />
+		<LIMITTIME sec="15"	str="STR:GAMETYPECFG_LIMITTIME_15MIN" />
+		<LIMITTIME sec="20"	str="STR:GAMETYPECFG_LIMITTIME_20MIN" />
+		<LIMITTIME sec="25"	str="STR:GAMETYPECFG_LIMITTIME_25MIN" />
+		<LIMITTIME sec="30"	str="STR:GAMETYPECFG_LIMITTIME_30MIN" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
