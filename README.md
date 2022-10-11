@@ -91,7 +91,6 @@ GunZ The Duel Releases <br>
 - room with empty name: [room with empty name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room-with-empty-name)
 - simple levelup sound: [simple levelup sound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/simple-levelup-sound)
 - snowtownparticlesystem: [snowtownparticlesystem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/snowtownparticlesystem)
-- staffmode: [staffmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/staffmode)
 - vipshop parts: [vipshop parts](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts)
 - weapon information: [weapon information](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information)
 - roomtags: [roomtags](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags)
@@ -168,6 +167,7 @@ GunZ The Duel Releases <br>
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
+- staffmode: [staffmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20staffmode)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
