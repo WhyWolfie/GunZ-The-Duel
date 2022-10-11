@@ -1,4 +1,4 @@
-Open(ZChat_CMds.cpp) <br>
+Open(ZChat_Cmds.cpp) <br>
 
     void ChatCmd_ColorList(const char* line, const int argc, char** const argv);
 
