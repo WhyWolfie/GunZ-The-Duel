@@ -155,7 +155,7 @@ GunZ The Duel Releases <br>
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hitbox-simple-command)
 - maptexture: [maptexture](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/maptexture)
-- bunch of admin commands: [bunch of admin commands](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/commands%20hacks%20admin)
+- bunch of admin commands: [bunch of admin commands](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20hacks%20admin/README.md)
 - find: [find](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/find%20command)
 - wireframe: [wireframe](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wireframe%20command)
 - admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin_speed)
@@ -163,7 +163,7 @@ GunZ The Duel Releases <br>
 - admin spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/admin%20spawnmover%20command)
 - damage: [damage](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/damage%20command)
 - getdirection & getposition [getdirection & getposition](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/getPosition%20&%20getDirection)
-- colourlist [colourlist](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command%20colourlist)
+- colourlist [colourlist](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20colourlist/README.md)
 - staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
 
 (others)<br>
