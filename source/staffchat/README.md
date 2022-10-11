@@ -126,3 +126,7 @@ Open(MMatchServer.h - RouteToAllClient - Add) <br>
 
 	void OnStaffChat(const MUID& uid, const char* szChat);
 	void RouteToStaff(MCommand* pCommand);
+
+
+Preview <br>
+![img](https://i.imgur.com/LqOxlWe.png)
