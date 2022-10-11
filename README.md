@@ -166,6 +166,9 @@ GunZ The Duel Releases <br>
 - colourlist/mods/commands list [colourlist/mods/commands list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20colourlist%20%26%20mods%20%26%20commands%20list)
 - staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
 
+(gamemodes) <br>
+- team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
+
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
 - crashu: [crashu](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crashu)
