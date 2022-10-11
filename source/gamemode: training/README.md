@@ -174,3 +174,6 @@ Open(System.mrs->Gametypecfg.xml and Add)
 		<MAXPLAYERS player="12" str="12" />
 		<MAXPLAYERS player="16" str="16" />
 	</GAMETYPE>
+
+Preview <br>
+![img](https://i.imgur.com/jR7QkyM.png)
