@@ -169,6 +169,7 @@ GunZ The Duel Releases <br>
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
 - staffmode: [staffmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20staffmode)
+- gungame packet: [gungame packet](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gungame%20packet)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
