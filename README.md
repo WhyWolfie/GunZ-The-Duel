@@ -334,6 +334,7 @@ GunZ The Duel Releases <br>
 - emperialgunz: [emperialgunz](https://www.emperialgunz.com/) 
 - mtg gunz: [mtgvn](https://gunz.mtgvn.net/)
 - theduel.com.br [theduel.com.br](https://www.theduel.com.br/)
+- gunzvn [gunzvn.net](https://gunzvn.net/GunZ/)
 
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
