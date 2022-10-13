@@ -165,6 +165,7 @@ GunZ The Duel Releases <br>
 - getdirection & getposition [getdirection & getposition](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/getPosition%20&%20getDirection)
 - colourlist/mods/commands list [colourlist/mods/commands list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20colourlist%20%26%20mods%20%26%20commands%20list)
 - staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
+- muteall: [muteall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20muteall)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
