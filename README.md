@@ -114,6 +114,7 @@ GunZ The Duel Releases <br>
 - add maps to ctf and duel: [add maps to ctf and duel](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/tutorial/maps/README.md)
 - ping colour: [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour)
 - load all loadingscreens: [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md)
+- event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
