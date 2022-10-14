@@ -6,7 +6,7 @@ To
 
     00479FB9 - NOP
 
-
+------------------------------------------------------------------------------------
 
 The first post failed. <br>
 1. Custom map banners in lobby enabled. <br>
@@ -88,14 +88,40 @@ Inject ClanWarMaps.dll to your server.<br>
 
 
 
+------------------------------------------------------------------------------------
 
 
+[theduel11.exe]
+1. Unmasked Administrator / Developer Names and Levels.
+2. Unmasked duel chat.
+3. 126 maps enabled.
+4. .mef disabled.
+5. File list disabled.
+6. Serialkey enabled.
+7. XTrap disabled.
+8. Client sided hacking detection disabled.
+9. Stage max players over 17 selectable.
+10. Quest mode menu already enabled.
+11. Client sided character limit changed to 1~16. (Private channel names character limit is 32.)
 
+[theduel11_2.exe]
+1. Unmasked Administrator / Developer Names and Levels.
+2. Unmasked duel chat.
+3. 126 maps enabled.
+4. .mef disabled.
+5. File list disabled.
+6. Serialkey enabled.
+7. XTrap disabled.
+8. Client sided hacking detection disabled.
 
+[Map instructions]
+You must add map information to this file. :
 
+        channelrule.xml
+        map.xml
 
-
-
+Custom maps banner is does not show up in lobby. (All Mansion.) <br>
+Client editing is not needed. bOnlyDuelMap is not ignored. <br>
 
         
         
