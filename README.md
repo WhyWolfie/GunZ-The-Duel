@@ -153,8 +153,12 @@ GunZ The Duel Releases <br>
 - activate serialkey: [activate serialkey](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/activate%20serialkey)
 - disable nhn auth: [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth)
 - anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
+
+(2007/2008 server) <br>
+- gunzexp v2 modded june: [gunzexp v2] https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunzexp%20v2%20%5Bmodded%5D%20june
 - anti exploit chatmake (08 version): [anti exploit chatmake](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20exploit%20chatmake%20(08))
 - gunz asm (2007/2008 servers): [gunz asm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20asm%202007-2008)
+
 
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20hitbox%20simple)
