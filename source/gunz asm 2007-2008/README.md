@@ -697,7 +697,7 @@ Character limits. :
     0044EC43  |> 83F8 01        CMP EAX,1
     0044EC6B  |> 83F8 20        CMP EAX,20
 
-
+------------------------------------------------------------------------------------
 
 June 13 2007 (GunzExp_v2_Jun132007) version added. but not tested. <br>
 
@@ -717,6 +717,92 @@ Room name commands list : <br>
 
 In-game hotkeys : <br>
 F9 =Show up HP/AP. <br>
+
+------------------------------------------------------------------------------------
+It is up to your idea to use this. <br>
+(RoundDisplayer) <br>
+[Let's rock.] <br>
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 00476970
+
+[Round.]
+
+    PUSH "Round counts."
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 00475B60
+
+[Final Round.]
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 004A1080
+
+[All kill ~ Head shot.]
+
+    PUSH "All kill(0) ~ Head shot(4)."
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 004766B0
+
+[Exp.]
+
+    PUSH "Exp count."
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 00475FD0
+
+[Hit.]
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 004A11E0
+
+[Hp/Ap play.]
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 004725A0
+
+[Finish.]
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 00402640
+
+[Win.]
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 004A10F0
+
+[Lose.]
+
+    CALL 004AD870
+    MOV ECX,EAX
+    CALL 004A1140
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
