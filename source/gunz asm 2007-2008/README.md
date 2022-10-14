@@ -699,6 +699,25 @@ Character limits. :
 
 
 
+June 13 2007 (GunzExp_v2_Jun132007) version added. but not tested. <br>
+
+Added high jump. Deleted infinity jump. <br>
+Added high speed. <br>
+HP/AP by chat. (Press F9.) <br>
+
+Room name commands list : <br>
+[B] =Reload bullet infinity. <br>
+[G] =Gravity 25%. <br>
+[J] =Jump power 200%. <br>
+[M] =No massives. <br>
+[N] =Name hack. <br>
+[RB] =Reverse berserker. <br>
+[RL] =Rocket launcher from sword. <br>
+[S] =Walk speed 150% <br>
+
+In-game hotkeys : <br>
+F9 =Show up HP/AP. <br>
+
 
 
 
