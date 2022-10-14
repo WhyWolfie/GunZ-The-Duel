@@ -116,7 +116,7 @@ GunZ The Duel Releases <br>
 - ping colour: [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour)
 - load all loadingscreens: [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md)
 - event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
-- gunz asm (2007/2008 servers): [gunz asm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20asm%202007-2008)
+- channel for gm: [channel for gm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/channel%20for%20GM)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
@@ -154,6 +154,7 @@ GunZ The Duel Releases <br>
 - disable nhn auth: [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth)
 - anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
 - anti exploit chatmake (08 version): [anti exploit chatmake](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20exploit%20chatmake%20(08))
+- gunz asm (2007/2008 servers): [gunz asm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20asm%202007-2008)
 
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20hitbox%20simple)
