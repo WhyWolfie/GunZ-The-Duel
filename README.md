@@ -115,6 +115,7 @@ GunZ The Duel Releases <br>
 - ping colour: [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour)
 - load all loadingscreens: [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md)
 - event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
+- gunz asm (2007/2008 servers): [gunz asm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20asm%202007-2008)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
