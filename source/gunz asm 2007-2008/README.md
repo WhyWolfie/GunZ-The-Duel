@@ -785,11 +785,29 @@ It is up to your idea to use this. <br>
     CALL 004A1140
 
 
+------------------------------------------------------------------------------------
 
+Hello everyone, <br>
 
+What does this do? <br>
+It patches Kore Rev 2, a program which is able to crash your server (Jul 21 2008). <br>
 
+How do I use this patch? <br>
+Simply inject it into MatchServer. (Use an injector, self-explanatory) <br>
 
+My AV detects KoreRev2Patch.dll as a virus. <br>
+No, it's packed with TheMida, therefore, creating a false positive. <br>
+Add KoreRev2Patch.dll to your AV's exception list. <br>
 
+How do I check for any crash attempts? <br>
+Open up the AntiHack folder, and search for the log file. (Self-explanatory) <br>
+
+Will the source be provided? <br>
+No, the source will not be provided. <br>
+
+- Linear88 <br>
+
+------------------------------------------------------------------------------------
 
 
 
