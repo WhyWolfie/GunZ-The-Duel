@@ -153,6 +153,7 @@ GunZ The Duel Releases <br>
 - activate serialkey: [activate serialkey](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/activate%20serialkey)
 - disable nhn auth: [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth)
 - anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
+- custom shotgun sounds: [custom shotgun sounds](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/custom%20shotgun%20sounds)
 
 (2007/2008 server) <br>
 - gunzexp v2 modded june: [gunzexp v2](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunzexp%20v2%20%5Bmodded%5D%20june)
