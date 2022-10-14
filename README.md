@@ -34,6 +34,7 @@ GunZ The Duel Releases <br>
 - [jetman (source)](https://github.com/Jetman823/Gunz1.5) <br>
 - [gunz set rotation](https://github.com/Eronisch/Gunz-Set-Rotation) <br>
 - [gunz cms](https://github.com/Eronisch/Gunz-CMS) <br>
+- [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
 
 <b>[sql]</b>
 - GunzDBFixed: [download](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
