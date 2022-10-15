@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML xmlns="http://tempuri.org/zskill.xsd">
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 고블린
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!-- Scrider -->
+	<SKILL id="118" name="Stun Fist" effecttype="4" hitcheck="false" guidable="false" delay="3000"
+		lifetime="0" effectstarttime="0" effecttime="2000" effectarea="0" resisttype="0" mod.damage="30"
+		mod.dot="0" mod.criticalrate="20" mod.speed="100" mod.antimotion="false" mod.root="true"
+		castingpreeffect="ef_stun"  castingpreeffectType="3" ></SKILL>
+
+	<SKILL id="119" name="Call Death" effecttype="0" hitcheck="false" guidable="false" delay="300000"
+		lifetime="0" effectstarttime="0" effecttime="0" effectarea="0" resisttype="0" 
+		castingpreeffect="ef_death"  castingpreeffectType="3" castingeffectType="3" mod.damage="1000"
+		mod.dot="0" mod.criticalrate="100" mod.speed="100" mod.antimotion="false" mod.root="false"
+		effectsound="fx_magic_death"/>
+
+	<SKILL id="120" name="Methor" effecttype="3" hitcheck="false" guidable="false" delay="20000"
+		lifetime="0" effectstarttime="0" effecttime="3000" resisttype="1" difficulty="50" mod.damage="20"
+		mod.dot="20" mod.criticalrate="100" mod.speed="100" mod.antimotion="false" mod.root="true"
+		castingeffectSp="MethorEffect" castingeffectSpCount="1" castingeffectType="2"></SKILL>
+
+<!-- 고블린 거너 -->
+	<SKILL id="121" name="Gun" resisttype="0" hitcheck="true" guidable="false" velocity="5000" delay="2600" offdlight="true"
+		lifetime="0" colradius="8" difficulty="15" knockback="10" throughnpc="true" sound.explosion="fx_bullethit_mt_fsh"
+		effectstarttime="280" effectarea="2"
+		mod.damage="15" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="1"
+		traileffect="ef_slugs" traileffecttype="1" traileffectscale="1.7" />
+
+<!-- 고블린 위저드 -->
+	<SKILL id="131" name="Massive Swing" resisttype="0" hitcheck="false" guidable="false" delay="7000" lifetime="0" knockback="10" offdlight="true"
+		effecttype="4" effectstarttime="300" effecttime="0" effectarea="3" effectareamin="1.5" effectangle="30"
+		mod.damage="30" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0" 
+		castinganimation="2" castingeffect="ef_stunfist_dam" castingeffectType="1" castingeffectAddPos="230.0 0.0 0.0" 
+		camera.power="1.0" camera.duration="0.7" camera.range="600" />
+
+	<SKILL id="132" name="Lesser Healing" resisttype="0" hitcheck="false" guidable="false" delay="25000" lifetime="0" difficulty="0" offdlight="true"
+		effecttype="6" effectstarttime="2000" effecttime="0" effectarea="2"
+		mod.damage="0" mod.dot="0" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="25"
+		castingpreeffect="ef_Lesser Healing"  castingpreeffectType="4" castingeffectType="2" />
+
+<!-- 고블린 족장 -->
+	<SKILL id="151" name="Slow" resisttype="0" hitcheck="false" guidable="false" delay="20000" lifetime="0" difficulty="20" offdlight="true"
+		effecttype="0" effectstarttime="2000" effecttime="7000" effectarea="0"
+		mod.damage="0" mod.dot="0" mod.criticalrate="0" mod.speed="50" mod.antimotion="false" mod.root="false" mod.heal="0" 
+		castingeffect="ef_slow_dam"  castingeffectType="5"
+		castingpreeffect="ef_slow" castingpreeffectType="4" castinganimation="1" />
+
+	<SKILL id="152" name="Fire Missile" resisttype="1" hitcheck="true" guidable="false" velocity="4000" delay="4000" offdlight="true"
+		lifetime="0" colradius="35" difficulty="15" knockback="2" throughnpc="true"
+		effecttype="1" effectstarttime="1000" effectarea="2"
+		mod.damage="50" mod.criticalrate="20" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2"
+		traileffect="fireball" traileffecttype="1" traileffectscale="2.7" draw.track="true" >
+		<REPEAT delay="0.0" angle="0.0 0.0 0.1" />
+		<REPEAT delay="0.0" angle="0.0 0.0 -0.1" />
+	</SKILL>
+		
+<!-- 고블린 킹(보스) -->
+	<SKILL id="161" name="Massive Swing" resisttype="0" hitcheck="false" guidable="false" delay="12000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="1450" effecttime="1000" effectarea="10.2" effectareamin="5.8" effectangle="33"
+		mod.damage="100" mod.criticalrate="80" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0" 
+		castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="780.0 0.0 0.0" 
+		camera.power="3.0" camera.duration="1.5" camera.range="1500" />
+
+	<SKILL id="162" name="GoblinKing's Fire Missile" resisttype="1" hitcheck="true" guidable="false" velocity="4500" delay="11000"
+		lifetime="0" difficulty="15" colradius="100" knockback="200" throughnpc="true"
+		effecttype="1" effectstarttime="1200" effecttime="0" effectarea="1" effect_startpos_type="6"
+		mod.damage="80" mod.criticalrate="40" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="fireball" traileffecttype="1" traileffectscale="7.5" >
+		<REPEAT delay="0.5" angle="0.0 0.0 0.2" />
+		<REPEAT delay="0.5" angle="0.0 0.0 -0.2" />
+	</SKILL>
+		
+<!-- 썬더 고블린 킹 고레벨 (보스) -->
+	<SKILL id="163" name="Massive Swing" resisttype="0" hitcheck="false" guidable="false" delay="12000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="1450" effecttime="1000" effectarea="10.2" effectareamin="5.8" effectangle="33"
+		mod.damage="130" mod.criticalrate="90" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0" 
+		castingeffect="ef_lightening" castingeffectType="1" castingeffectAddPos="780.0 0.0 0.0" castingeffectscale="10.0"
+		camera.power="3.0" camera.duration="1.5" camera.range="1500" />
+
+	<SKILL id="164" name="GoblinKing's Missile" resisttype="1" hitcheck="true" guidable="false" velocity="4500" delay="11000"
+		lifetime="0" difficulty="15" colradius="100" knockback="200" throughnpc="true"
+		effecttype="1" effectstarttime="1200" effecttime="0" effectarea="1" effect_startpos_type="6"
+		mod.damage="100" mod.criticalrate="50" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="ef_lighteningball" traileffecttype="1" traileffectscale="2" >
+		<REPEAT delay="0.5" angle="0.0 0.0 0.2" />
+		<REPEAT delay="0.5" angle="0.0 0.0 -0.2" />
+	</SKILL>
+	
+	<SKILL id="165" name="Slow" resisttype="0" hitcheck="false" guidable="false" delay="20000" lifetime="0" difficulty="20" offdlight="true"
+		effecttype="0" effectstarttime="2000" effecttime="7000" effectarea="0"
+		mod.damage="0" mod.dot="0" mod.criticalrate="0" mod.speed="50" mod.antimotion="false" mod.root="false" mod.heal="0" 
+		castingeffect="ef_slow_dam"  castingeffectType="5"
+		castingpreeffect="ef_slow" castingpreeffectType="4" castinganimation="2" />
+		
+	<SKILL id="166" name="Lesser Healing" resisttype="0" hitcheck="false" guidable="false" delay="25000" lifetime="0" difficulty="0" offdlight="true"
+		effecttype="6" effectstarttime="2000" effecttime="0" effectarea="2"
+		mod.damage="0" mod.dot="0" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="25"
+		castingpreeffect="ef_Lesser Healing"  castinganimation="2" castingpreeffectType="4" castingeffectType="2"  />
+		
+		
+<!-- 난쟁이 고블린 킹 (보스) -->
+	<SKILL id="167" name="Massive Swing" resisttype="0" hitcheck="false" guidable="false" delay="12000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="1450" effecttime="1000" effectarea="10.2" effectareamin="5.8" effectangle="33"
+		mod.damage="100" mod.criticalrate="80" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0" 
+		castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="780.0 0.0 0.0" castingeffectscale="10.0"
+		camera.power="3.0" camera.duration="1.5" camera.range="1500" />
+
+	<SKILL id="168" name="GoblinKing's Missile" resisttype="1" hitcheck="true" guidable="false" velocity="4500" delay="11000"
+		lifetime="0" difficulty="15" colradius="100" knockback="200" throughnpc="true"
+		effecttype="1" effectstarttime="1200" effecttime="0" effectarea="1" effect_startpos_type="6"
+		mod.damage="80" mod.criticalrate="40" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="fireball" traileffecttype="1" traileffectscale="2" >
+		<REPEAT delay="0.5" angle="0.0 0.0 0.2" />
+		<REPEAT delay="0.5" angle="0.0 0.0 -0.2" />
+	</SKILL>
+	
+	<SKILL id="169" name="Lesser Healing" resisttype="0" hitcheck="false" guidable="false" delay="25000" lifetime="0" difficulty="0" offdlight="true"
+		effecttype="6" effectstarttime="2000" effecttime="0" effectarea="2"
+		mod.damage="0" mod.dot="0" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="25"
+		castingpreeffect="ef_Lesser Healing"  castinganimation="2" castingpreeffectType="4" castingeffectType="2"  />
+		
+		
+<!-- 썬더 고블린 킹 주니어 -->
+	<SKILL id="171" name="Massive Swing" resisttype="0" hitcheck="false" guidable="false" delay="12000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="1450" effecttime="1000" effectarea="8" effectareamin="5.8" effectangle="33"
+		mod.damage="70" mod.criticalrate="80" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0" 
+		castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="780.0 0.0 0.0" castingeffectscale="0.5"
+		camera.power="3.0" camera.duration="1.5" camera.range="1500"  traileffectscale="0.01" />
+	
+	<SKILL id="172" name="Magic Flash" resisttype="1" hitcheck="true" guidable="true" velocity="350" delay="25000" offdlight="true"
+		lifetime="0" difficulty="15" colradius="10" knockback="10" throughnpc="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="2100" effectarea="2" effect_startpos_type="8"
+		mod.damage="8" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3" 
+		traileffect="ef_sword_flash" traileffecttype="1" traileffectscale="2.0">
+	</SKILL>
+
+	
+<!-- 난쟁이 고블린 킹 주니어 -->
+	<SKILL id="173" name="Massive Swing" resisttype="0" hitcheck="false" guidable="false" delay="12000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="1450" effecttime="1000" effectarea="8" effectareamin="5.8" effectangle="33"
+		mod.damage="70" mod.criticalrate="80" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0" 
+		castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="780.0 0.0 0.0" castingeffectscale="0.5"
+		camera.power="3.0" camera.duration="1.5" camera.range="1500"  traileffectscale="0.01" />
+	
+	<SKILL id="174" name="Magic Fire" resisttype="1" hitcheck="true" guidable="true" velocity="350" delay="25000" offdlight="true"
+		lifetime="0" difficulty="15" colradius="10" knockback="10" throughnpc="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="2100" effectarea="2" effect_startpos_type="8"
+		mod.damage="8" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3" 
+		traileffect="ef_sword_fire" traileffecttype="1" traileffectscale="0.8">
+	</SKILL>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 리쟈드
+  
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 리쟈드 샤만 -->
+	<SKILL id="221" name="Poison Nail" resisttype="4" hitcheck="true" guidable="false" velocity="5000" delay="3000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="5" knockback="10" throughnpc="true"
+		effecttype="0" effectstarttime="260" effectarea="2" effect_startpos_type="8" effectsound="blade_swing" 
+		mod.damage="7" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="1" castingeffectType="3"
+		traileffect="ef_slugs" traileffecttype="1" traileffectscale="0.8" >
+		<REPEAT delay="0.02" angle="0.0 0.0 0.09" />
+	</SKILL>
+
+	<SKILL id="222" name="Poison Ball" resisttype="4" hitcheck="true" guidable="false" velocity="2000" delay="12000" lifetime="0" offdlight="true"
+		difficulty="18" colradius="36" knockback="10" throughnpc="true" sound.explosion="we_enpoison"
+		effecttype="0" effectstarttime="1000" effectarea="2" effect_startpos_type="8" effectsound="blade_swing" 
+		mod.damage="16" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		castingpreeffect="ef_poisonball_cast" castingpreeffectType="8"
+		traileffect="ef_poisonball2" traileffecttype="1" traileffectscale="3.8" >
+	</SKILL>
+
+<!-- 리쟈드 왕 -->
+	<SKILL id="241" name="Poison Storm" resisttype="4" hitcheck="false" guidable="false" delay="8000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="600" effectarea="6.4" effectareamin="2" effectangle="56" effectsound="we_grenade_explosion"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castingeffect="ef_poisonstorm" castingeffectType="1" castinganimation="1" castingeffectAddPos="400.0 0.0 0.0"
+		camera.power="1.0" camera.duration="0.7" camera.range="600" />
+
+<!-- 리쟈드 왕(보스) -->
+	<SKILL id="251" name="Poison Ball" resisttype="4" hitcheck="true" guidable="false" velocity="4000" delay="6000" lifetime="0" offdlight="true"
+		difficulty="18" colradius="100" knockback="10" throughnpc="true" sound.explosion="we_enpoison"
+		effecttype="0" effectstarttime="500" effectarea="2" effect_startpos_type="6" effectsound="blade_swing" 
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		traileffect="ef_poisonball2" traileffecttype="1" traileffectscale="10.0" >
+		<REPEAT delay="0.13" angle="0.0 0.0 0.0" />
+		<REPEAT delay="0.13" angle="0.0 0.0 0.0" />
+		<REPEAT delay="0.13" angle="0.0 0.0 0.0" />
+		<REPEAT delay="0.13" angle="0.0 0.0 0.0" />
+	</SKILL>
+
+	<SKILL id="252" name="Healing" resisttype="0" hitcheck="false" guidable="false" delay="30000" lifetime="0" difficulty="0" offdlight="true"
+		effecttype="6" effectstarttime="60" effecttime="0" effectarea="2"
+		mod.damage="0" mod.dot="0" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="30"
+		castingpreeffect="ef_healing" />
+
+<!-- 고장난 골렘 -->
+	<SKILL id="261" name="??" resisttype="1" hitcheck="true" guidable="false" velocity="5000" delay="6000" lifetime="0"
+		difficulty="15" colradius="90" knockback="150" throughnpc="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="700" effectarea="2" effect_startpos_type="5"
+		mod.damage="40" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0"
+		castingeffectType="1" castingpreeffect="rocket_effect" castingpreeffectType="5"
+		traileffect="fireball" traileffectscale="7.0" >
+		<REPEAT delay="0.0" angle="0.0 0.0 -0.4" />
+		<REPEAT delay="0.0" angle="0.0 0.0 0.4" />
+	</SKILL>
+
+	<SKILL id="262" name="??" resisttype="4" hitcheck="true" guidable="false" velocity="400" delay="10000" lifetime="0" offdlight="true"
+		difficulty="18" colradius="350" knockback="10" throughnpc="true" sound.explosion="we_enpoison" surfacemount="true"
+		effecttype="0" effectstarttime="800" effectarea="2" effect_startpos_type="2"
+		mod.damage="40" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0"
+		castingeffectType="1" castingpreeffect="ef_poisonstorm" castingpreeffectType="5"
+		traileffect="ef_poisonstorm" traileffecttype="1" traileffectscale="1.5" />
+		
+	<SKILL id="263" name="??" resisttype="4" hitcheck="true" guidable="false" velocity="3000" delay="14000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="40" knockback="150" throughnpc="true" sound.explosion="we_enpoison"
+		effecttype="0" effectstarttime="500" effectarea="2" effect_startpos_type="6"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0"
+		castinganimation="2"
+		castingpreeffect="ef_lighteningball" castingpreeffectType="5"
+		traileffect="ef_poisonball" traileffectscale="4.0" >
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.26" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.53" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.79" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -1.06" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -1.32" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -1.59" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -1.85" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -2.12" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -2.38" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -2.65" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -2.91" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -3.18" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -3.44" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -3.71" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -3.97" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -4.24" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -4.50" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -4.77" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -5.03" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -5.30" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -5.56" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -5.83" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -6.09" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -6.36" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -6.62" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -6.89" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -7.15" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -7.42" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -7.68" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -7.95" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -8.21" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -8.48" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -8.74" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -9.01" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -9.27" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -9.54" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -9.80" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -10.07" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -10.34" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -10.60" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -10.87" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -11.13" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -11.40" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -11.66" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -11.93" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -12.19" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -12.46" />
+	</SKILL>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 스켈레톤
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 스켈레톤 메이지 -->
+	<SKILL id="321" name="Magic Arrow" resisttype="0" hitcheck="true" guidable="false" velocity="4000" delay="4000" offdlight="true"
+		lifetime="0" difficulty="15" colradius="5" knockback="10" throughnpc="true" sound.explosion="fx_bullethit_mt_fsh"
+		effecttype="0" effectstarttime="400" effectarea="2" effect_startpos_type="8"
+		mod.damage="15" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="magicmissile" traileffecttype="1" traileffectscale="2.0" >
+		<REPEAT delay="0.3" angle="0.0 0.0 -0.1" />
+		<REPEAT delay="0.3" angle="0.0 0.0 0.1" />
+	</SKILL>
+
+	<SKILL id="322" name="Magic Fire" resisttype="1" hitcheck="true" guidable="true" velocity="350" delay="25000" offdlight="true"
+		lifetime="0" difficulty="15" colradius="10" knockback="10" throughnpc="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="2100" effectarea="2" effect_startpos_type="8"
+		mod.damage="8" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="1" castingeffectType="3"
+		traileffect="ef_sword_fire" traileffecttype="1" traileffectscale="0.8">
+	</SKILL>
+
+<!-- 거대 스켈레톤 -->
+	<SKILL id="341" name="Earthquake Cut" resisttype="0" hitcheck="false" guidable="false" delay="10000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="750" effecttime="8000" effectarea="4.5" effectareamin="2" effectangle="45"
+		mod.damage="20" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="300.0 0.0 0.0" 
+		camera.power="1.0" camera.duration="0.7" camera.range="600" />
+
+<!-- 저주받은 시신 -->
+	<SKILL id="351" name="Stun" resisttype="4" hitcheck="false" guidable="false" delay="15000" lifetime="0" difficulty="20" offdlight="true"
+		effecttype="0" effectstarttime="0" effecttime="3000"
+		mod.damage="0" mod.dot="0" mod.criticalrate="30" mod.speed="65" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castingpreeffect="ef_stun" castinganimation="1" castingpreeffectType="3"
+		camera.power="0.5" camera.duration="6" camera.range="500" />
+		
+	<SKILL id="352" name="Lightning Strike" resisttype="3" hitcheck="false" guidable="false" delay="3000" lifetime="0" knockback="100" offdlight="true"
+		effecttype="4" effectstarttime="800" effecttime="1000" effectarea="6" effectareamin="2.5" effectangle="35" effectsound="SkeletonCc_FX_Lightning"
+		mod.damage="20" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castingeffect="ef_lightening" castingeffectType="1" castinganimation="2" castingeffectAddPos="420.0 0.0 0.0"
+		camera.power="1.0" camera.duration="0.7" camera.range="600" />
+
+	<SKILL id="353" name="Lightning Break" resisttype="3" hitcheck="true" guidable="false" velocity="2000" delay="9000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="50" knockback="70" throughnpc="true" surfacemount="false" sound.explosion="we_enlight"
+		effecttype="0" effectstarttime="730" effecttime="0" effectarea="2" effect_startpos_type="6"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		castingpreeffect="ef_lightening_cast" castingpreeffectType="4"
+		traileffect="ef_sword_flash" traileffecttype="1" traileffectscale="4.0"
+		camera.power="3.0" camera.duration="2.0" camera.range="1500" >
+	</SKILL>
+	
+<!-- 리치 폰의 특수 공격 -->
+	<SKILL id="361" name="Flaming Inferno" resisttype="1" hitcheck="true" guidable="false" velocity="4000" delay="4000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="10" knockback="10" throughnpc="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="200" effecttime="0" effectarea="2" effect_startpos_type="6"
+		mod.damage="10" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="fireball" traileffecttype="1" traileffectscale="0.8" draw.track="true" >
+	</SKILL>
+	
+<!-- 슈페리온(보스) -->
+	<SKILL id="371" name="Flamecast Slash" resisttype="1" hitcheck="true" guidable="false" velocity="5000" delay="5000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="130" knockback="100" throughnpc="true" surfacemount="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="750" effectarea="100" effect_startpos_type="3"
+		mod.damage="40" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="1" castingeffectType="3"
+		traileffect="fireball" traileffecttype="1" traileffectscale="9.0" />
+
+	<SKILL id="372" name="Seismic Shock" resisttype="0" hitcheck="false" guidable="false" delay="30000" lifetime="0" knockback="200" offdlight="true"
+		effecttype="4" effectstarttime="750" effecttime="8000" effectarea="4.0" effectangle="45"
+		mod.damage="50" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="1" castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="500.0 0.0 0.0" 
+		camera.power="1.0" camera.duration="0.7" camera.range="600" />
+
+	<SKILL id="373" name="Flamecast Slash 2" resisttype="1" hitcheck="true" guidable="false" velocity="5000" delay="18000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="40" knockback="100" throughnpc="true" sound.explosion="we_enfire"
+		effecttype="0" effectstarttime="300" effectarea="100" effect_startpos_type="8"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="fireball" traileffecttype="1" traileffectscale="3.0" >
+		<REPEAT delay="0.05" angle="0.0 0.0 0.1" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.0" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.1" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.2" />
+	</SKILL>
+
+<!-- 아네라몬(보스)의 특수 공격 -->
+	<SKILL id="381" name="Lightning Storm" resisttype="3" hitcheck="true" guidable="false" velocity="1700" delay="4000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="100" knockback="70" throughnpc="true" surfacemount="true" sound.explosion="we_enlight"
+		effecttype="0" effectstarttime="650" effectarea="2" effect_startpos_type="3"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="true" mod.heal="0"
+		castinganimation="2"
+		traileffect="ef_lightening" traileffectscale="0.8" >
+		<REPEAT delay="0.0" angle="0.0 0.0 -0.3" />
+		<REPEAT delay="0.0" angle="0.0 0.0  0.3" />
+		<REPEAT delay="0.0" angle="0.0 0.0 -0.6" />
+		<REPEAT delay="0.0" angle="0.0 0.0  0.6" />
+	</SKILL>
+
+	<SKILL id="382" name="Spheric Volt" resisttype="3" hitcheck="true" guidable="false" velocity="1000" delay="8000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="50" knockback="70" throughnpc="true" sound.explosion="we_enlight"
+		effecttype="0" effectstarttime="650" effecttime="0" effectarea="2" effect_startpos_type="6"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="ef_lighteningball" traileffecttype="1" traileffectscale="0.9"
+		camera.power="3.0" camera.duration="2.0" camera.range="1500" >
+		<REPEAT delay="0.2" angle="0.0 0.0 -0.2" />
+		<REPEAT delay="0.2" angle="0.0 0.0  0.2" />
+		<REPEAT delay="0.2" angle="0.0 0.0 -0.4" />
+		<REPEAT delay="0.2" angle="0.0 0.0  0.4" />
+	</SKILL>
+
+	<SKILL id="383" name="Unholy Aura" resisttype="0" hitcheck="false" guidable="false" delay="3000" lifetime="0" knockback="230" offdlight="true"
+		effecttype="4" effectstarttime="500" effecttime="3000" effectarea="3.5" effectangle="365"
+		mod.damage="20" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="1" castingeffect="massive_swing" castingeffectType="1" castingeffectAddPos="0.0 0.0 0.0" 
+		camera.power="1.0" camera.duration="0.7" camera.range="600" />
+
+<!-- 리치(보스)의 특수 공격 -->
+	<SKILL id="391" name="Devil's Arrow" resisttype="0" hitcheck="true" guidable="false" velocity="4000" delay="5000" offdlight="true"
+		lifetime="0"  difficulty="15" colradius="20" knockback="100" throughnpc="true" sound.explosion="fx_bullethit_mt_fsh"
+		effecttype="0" effectstarttime="400" effecttime="0" effect_startpos_type="8" effectarea="2" effectsound="SkeletonM_FX_MagicArrow"
+		mod.damage="40" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3"
+		traileffect="magicmissile" traileffecttype="1" traileffectscale="4.0" draw.track="true" >
+		<REPEAT delay="0.15" angle="0.0 0.0 -0.2" />
+		<REPEAT delay="0.15" angle="0.0 0.0 -0.4" />
+		<REPEAT delay="0.15" angle="0.0 0.0 -0.2" />
+		<REPEAT delay="0.15" angle="0.0 0.0 0.0" />
+		<REPEAT delay="0.15" angle="0.0 0.0 0.2" />
+		<REPEAT delay="0.15" angle="0.0 0.0 0.4" />
+	</SKILL>
+		
+	<SKILL id="392" name="Dante's Breath" resisttype="1" hitcheck="true" guidable="false" velocity="3000" delay="7000" lifetime="0" offdlight="true"
+		difficulty="15" colradius="35" knockback="10" throughnpc="true" sound.explosion="we_enpoison"
+		effecttype="0" effectstarttime="400" effecttime="0" effectarea="2" effect_startpos_type="6"
+		mod.damage="30" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castinganimation="2" castingeffectType="3" 
+		traileffect="fireball" traileffecttype="1" traileffectscale="3.0" >
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.10" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.20" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.30" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.40" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.35" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.30" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.25" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.20" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.15" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.10" />
+		<REPEAT delay="0.05" angle="0.0 0.0 -0.05" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.0" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.05" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.10" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.15" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.20" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.25" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.30" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.35" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.40" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.30" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.20" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.10" />
+		<REPEAT delay="0.05" angle="0.0 0.0 0.0" />
+	</SKILL>
+
+	<SKILL id="393" name="Lava Dump" resisttype="4" hitcheck="false" guidable="false" delay="6000" lifetime="0" knockback="100"
+		effecttype="4" effectstarttime="1700" effectarea="20" effectareamin="11" effectangle="32"
+		mod.damage="50" mod.criticalrate="30" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"
+		castingeffect="ef_methor" castingeffectType="1" castinganimation="1" castingeffectAddPos="1500.0 0.0 0.0"
+		castingpreeffect="fireball" castingpreeffectType="4"
+		camera.power="3.0" camera.duration="2.0" camera.range="1500" />
+	
+	
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 팜포우
+  
+  특징 : 스킬은 거의 마법 계열을 사용하며 얼음 속성의 마법을 사용한다.
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 팜포우 베이비 -->
+	<SKILL id="411" name="Ice Ball" effecttype="1" hitcheck="true" guidable="false" velocity="1000" delay="1500"
+		lifetime="5000" effectstarttime="1000" effecttime="0" effectarea="2" resisttype="2" difficulty="30" mod.damage="25"
+		mod.criticalrate="50" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"  traileffect="icemissile" traileffecttype="2" />
+		
+<!-- 팜포아 -->
+	<SKILL id="421" name="Ice Ball" effecttype="1" hitcheck="true" guidable="false" velocity="1000" delay="1500"
+		lifetime="5000" effectstarttime="1000" effecttime="0" effectarea="2" resisttype="2" difficulty="30" mod.damage="25"
+		mod.criticalrate="50" mod.speed="100" mod.antimotion="false" mod.root="false" mod.heal="0"  traileffect="icemissile" traileffecttype="2" />
+
+<!-- 대장 팜포아 -->
+	<SKILL id="431" name="Blizzard" effecttype="2" hitcheck="false" guidable="false" delay="5000"
+		lifetime="0" effectstarttime="1300" effecttime="3000" effectarea="5" resisttype="2" difficulty="30" mod.damage="30"
+		mod.dot="30" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="true"
+		mod.heal="50" castingeffectSp="BlizzardEffect" castingeffectSpCount="1" castingeffectType="2" 
+		castingpreeffect="ef_blizzard_cast"   castingpreeffectType="4"/>
+
+<!-- 대장 팜포아 보스 -->
+	<SKILL id="432" name="Blizzard" effecttype="2" hitcheck="false" guidable="false" delay="5000"
+		lifetime="0" effectstarttime="1300" effecttime="3000" effectarea="5" resisttype="2" difficulty="30" mod.damage="30"
+		mod.dot="30" mod.criticalrate="0" mod.speed="100" mod.antimotion="false" mod.root="true"
+		mod.heal="50" castingeffectSp="BlizzardEffect" castingeffectSpCount="1" castingeffectType="2" 
+		castingpreeffect="ef_blizzard_cast"   castingpreeffectType="4"/>
+		
+<!-- 팜포우 -->
+	<SKILL id="441" name="Blizzard Greater" effecttype="2" hitcheck="false" guidable="false"
+		delay="5000" lifetime="0" effectstarttime="1300" effecttime="3000" effectarea="8" resisttype="2" difficulty="50"
+		mod.damage="35" mod.dot="35" mod.criticalrate="0" mod.speed="100" mod.antimotion="false"
+		mod.root="true" mod.heal="80" castingeffectSp="BlizzardEffect" castingeffectSpCount="5" castingeffectType="2" 
+		castingpreeffect="ef_blizzard_cast"   castingpreeffectType="4" message="Blizzard Greater"/>
+
+<!-- 팜포우 보스 -->
+	<SKILL id="442" name="Blizzard Greater" effecttype="2" hitcheck="false" guidable="false"
+		delay="5000" lifetime="0" effectstarttime="1300" effecttime="3000" effectarea="8" resisttype="2" difficulty="50"
+		mod.damage="35" mod.dot="35" mod.criticalrate="0" mod.speed="100" mod.antimotion="false"
+		mod.root="true" mod.heal="80" castingeffectSp="BlizzardEffect" castingeffectSpCount="5" castingeffectType="2" 
+		castingpreeffect="ef_blizzard_cast"   castingpreeffectType="4" message="Blizzard Greater"/>
+		
+<!-- 저주받은 팜포우 -->
+	<SKILL id="451" name="Blizzard Greater" effecttype="2" hitcheck="false" guidable="false"
+		delay="5000" lifetime="0" effectstarttime="1300" effecttime="3000" effectarea="8" resisttype="2" difficulty="50"
+		mod.damage="35" mod.dot="35" mod.criticalrate="0" mod.speed="100" mod.antimotion="false"
+		mod.root="true" mod.heal="80" castingeffectSp="BlizzardEffect" castingeffectSpCount="5" castingeffectType="2" 
+		castingpreeffect="ef_blizzard_cast"   castingpreeffectType="4" message="Blizzard Greater"/>
+
+
+		
+</XML>

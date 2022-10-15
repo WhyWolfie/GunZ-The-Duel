@@ -1,0 +1,2542 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML id="npccatalogue">
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ AI
+  
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<AI_VALUE>
+  <SHAKING pathfinding_update="0.1" attack_update="0.1" speed="0.2" />
+  <INTELLIGENCE>
+    <TIME step="1">0.4</TIME>			<!-- Level 1 : 가장 영리함 -->
+    <TIME step="2">0.6</TIME>			<!-- Level 2 : 영리함 -->
+    <TIME step="3">1</TIME>				<!-- Level 3 : 보통 -->
+    <TIME step="4">2</TIME>				<!-- Level 4 : 덜떨어짐 -->
+    <TIME step="5">3</TIME>				<!-- Level 5 : 매우 덜떨어짐 -->
+  </INTELLIGENCE>
+  <AGILITY>
+    <TIME step="1">0.2</TIME>			<!-- Level 1 : 가장 민첩함 -->
+    <TIME step="2">0.5</TIME>			<!-- Level 2 : 민첩함 -->
+    <TIME step="3">1</TIME>				<!-- Level 3 : 보통 -->
+    <TIME step="4">2</TIME>				<!-- Level 4 : 둔함 -->
+    <TIME step="5">3</TIME>				<!-- Level 5 : 가장 둔함 -->
+  </AGILITY>
+</AI_VALUE>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 고블린
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 병정 고블린 -->
+<NPC id="11"
+	 name="STR:NPC_NAME_11"
+	 desc="STR:NPC_DESC_11"
+	 meshname="goblin"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="30"
+	 max_ap="50"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="300" />
+	 <DROP table="G11" />
+</NPC>
+
+<!-- 고블린거너 -->
+<NPC id="12"
+	 name="STR:NPC_NAME_12"
+	 desc="STR:NPC_DESC_12"
+	 meshname="goblinG"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="30"
+	 max_ap="30"
+	 int="4"
+	 agility="4"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="110" weaponitem_id="300012" />
+	 <SPEED default="230" />
+	 <SKILL id="121" />
+	 <DROP table="G12" />
+</NPC>
+
+<!-- 고블린 위저드 -->
+<NPC id="13"
+	 name="STR:NPC_NAME_13"
+	 desc="STR:NPC_DESC_13"
+	 meshname="goblinW"
+	 scale="1.0 1.0 1.0"
+	 grade="veteran"
+	 max_hp="40"
+	 max_ap="40"
+	 int="4"
+	 agility="4"
+	 view_angle="25"
+	 dc="6"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="120" />
+	 <ATTACK type="melee" range="130" weaponitem_id="300013" />
+	 <SPEED default="400" />
+	 <SKILL id="131" />
+	 <SKILL id="132" />
+	 <DROP table="G13" />
+</NPC>
+
+<!-- 대장 고블린 -->
+<NPC id="14"
+	 name="STR:NPC_NAME_14"
+	 desc="STR:NPC_DESC_14"
+	 meshname="goblinH"
+	 scale="1.0 1.0 1.0"
+	 grade="veteran"
+	 max_hp="50"
+	 max_ap="100"
+	 int="4"
+	 agility="2"
+	 view_angle="40"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="140" />
+	 <FLAG never_pushed="true" />
+	 <ATTACK type="melee" range="170" weaponitem_id="300014" />
+	 <SPEED default="360" />
+	 <DROP table="G14" />
+</NPC>
+
+<!-- 고블린 족장 -->
+<NPC id="15"
+	 name="STR:NPC_NAME_15"
+	 desc="STR:NPC_DESC_15"
+	 meshname="goblinC"
+	 scale="1.2 1.2 1.2"
+	 grade="elite"
+	 max_hp="200"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="8"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="160" />
+	 <ATTACK type="melee" range="270" weaponitem_id="300015" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="320" />
+	 <SKILL id="151" />
+	 <SKILL id="152" />
+	 <DROP table="G15" />
+</NPC>
+
+<!-- 고블린킹 -->
+<NPC id="16"
+	 name="STR:NPC_NAME_16"
+	 desc="STR:NPC_DESC_16"
+	 meshname="goblinK"
+	 scale="2.5 2.5 2.5"
+	 grade="boss"
+	 max_hp="7000"
+	 max_ap="7000"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300016" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" rotate="4.712" />
+	 <SKILL id="161" />
+	 <SKILL id="162" />
+	 <DROP table="G16" />
+</NPC>
+
+<!-- 가짜 고블린킹 -->
+<NPC id="17"
+	 name="STR:NPC_NAME_17"
+	 desc="STR:NPC_DESC_17"
+	 meshname="goblinK"
+	 scale="2.1 2.1 2.1"
+	 grade="boss"
+	 max_hp="5000"
+	 max_ap="5000"
+	 int="4"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300016" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" rotate="4.712" />
+	 <SKILL id="161" />
+	 <SKILL id="162" />
+	 <DROP table="G17" />
+</NPC>
+
+<!-- 썬더 고블린킹 -->
+<NPC id="18"
+	 name="STR:NPC_NAME_18"
+	 desc="STR:NPC_DESC_18"
+	 meshname="goblinKB"
+	 scale="2.8 2.8 2.8"
+	 grade="boss"
+	 max_hp="9000"
+	 max_ap="9000"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300017" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" rotate="4.712" />
+	 <SKILL id="163" />
+	 <SKILL id="164" />
+	 <SKILL id="166" />
+	 <DROP table="G18" />
+</NPC>
+
+<!-- 썬더 고블린킹 주니어 -->
+<NPC id="181"
+	 name="STR:NPC_NAME_181"
+	 desc="STR:NPC_DESC_181"
+	 meshname="goblinKB"
+	 scale="1.2 1.2 1.2"
+	 grade="elite"
+	 max_hp="150"
+	 max_ap="150"
+	 int="3"
+	 agility="2"
+	 view_angle="20"
+	 dc="30"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300018" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="171" />
+	 <SKILL id="172" />
+	 <DROP table="G181" />
+</NPC>
+
+<!-- 난쟁이 고블린킹 -->
+<NPC id="19"
+	 name="STR:NPC_NAME_19"
+	 desc="STR:NPC_DESC_19"
+	 meshname="goblinK"
+	 scale="1.2 1.2 1.2"
+	 grade="boss"
+	 max_hp="5000"
+	 max_ap="5000"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300017" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="167" />
+	 <SKILL id="168" />
+	 <SKILL id="169" />
+	 <SKILL id="174" />
+	 <DROP table="G19" />
+</NPC>
+
+<!-- 난쟁이 고블린킹 주니어 -->
+<NPC id="191"
+	 name="STR:NPC_NAME_191"
+	 desc="STR:NPC_DESC_191"
+	 meshname="goblinK"
+	 scale="1.2 1.2 1.2"
+	 grade="elite"
+	 max_hp="150"
+	 max_ap="150"
+	 int="3"
+	 agility="2"
+	 view_angle="20"
+	 dc="30"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300018" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="173" />
+	 <DROP table="G191" />
+</NPC>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 리쟈드
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 리쟈드 -->
+<NPC id="21"
+	 name="STR:NPC_NAME_21"
+	 desc="STR:NPC_DESC_21"
+	 meshname="kobolt"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="50"
+	 max_ap="50"
+	 int="2"
+	 agility="2"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="150" />
+	 <ATTACK type="melee" range="165" weaponitem_id="300021" />
+	 <FLAG never_attack_cancel="true" />
+	 <SPEED default="300" />
+	 <DROP table="K21" />
+</NPC>
+
+<!-- 리쟈드 샤만 -->
+<NPC id="22"
+	 name="STR:NPC_NAME_22"
+	 desc="STR:NPC_DESC_22"
+	 meshname="kobold_shaman"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="40"
+	 max_ap="40"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="33" height="130" />
+	 <ATTACK type="melee" range="135" weaponitem_id="300022" />
+	 <FLAG never_attack_cancel="true" />
+	 <SPEED default="250" />
+	 <SKILL id="221" />
+	 <SKILL id="222" />
+	 <DROP table="K22" />
+</NPC>
+
+<!-- 대장 리쟈드 -->
+<NPC id="23"
+	 name="STR:NPC_NAME_23"
+	 desc="STR:NPC_DESC_23"
+	 meshname="koboltC"
+	 scale="1.3 1.3 1.3"
+	 grade="veteran"
+	 max_hp="90"
+	 max_ap="90"
+	 int="2"
+	 agility="1"
+	 view_angle="15"
+	 dc="6"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="38" height="150" />
+	 <ATTACK type="melee" range="230" weaponitem_id="300023" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" />
+	 <DROP table="K23" />
+</NPC>
+
+<!-- 리쟈드 왕 -->
+<NPC id="24"
+	 name="STR:NPC_NAME_24"
+	 desc="STR:NPC_DESC_24"
+	 meshname="koboltK"
+	 scale="1.0 1.0 1.0"
+	 grade="elite"
+	 max_hp="160"
+	 max_ap="160"
+	 int="2"
+	 agility="2"
+	 view_angle="15"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="60" height="250" />
+	 <ATTACK type="melee" range="370" weaponitem_id="300024" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="300" rotate="4.0" />
+	 <SKILL id="241" />
+	 <DROP table="K24" />
+</NPC>
+
+<!-- 리쟈드 왕(보스) -->
+<NPC id="25"
+	 name="STR:NPC_NAME_25"
+	 desc="STR:NPC_DESC_25"
+	 meshname="koboltK"
+	 scale="1.8 1.8 1.8"
+	 grade="boss"
+	 max_hp="5000"
+	 max_ap="7000"
+	 int="2"
+	 agility="3"
+	 view_angle="15"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="60" height="250" pick="true" tremble="10" />
+	 <ATTACK type="melee" range="550" weaponitem_id="300025" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="300" rotate="3.0" />
+	 <SKILL id="251" />
+	 <SKILL id="252" />
+	 <DROP table="K25" />
+</NPC>
+
+<!-- 고장난 골렘(보스) -->
+<NPC id="26"
+	 name="STR:NPC_NAME_26"
+	 desc="STR:NPC_DESC_26"
+	 meshname="golem"
+	 scale="1.7 1.7 1.7"
+	 grade="boss"
+	 max_hp="7000"
+	 max_ap="8000"
+	 int="1"
+	 agility="2"
+	 view_angle="25"
+	 dc="60"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="50" height="305" pick="true" tremble="10" />
+	 <ATTACK type="melee" range="400" weaponitem_id="300026" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="350" rotate="4.712" />
+	 <SKILL id="261" />
+	 <SKILL id="262" />
+	 <SKILL id="263" />
+	 <DROP table="K26" />
+</NPC>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 스켈레톤
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 스켈레톤 -->
+<NPC id="31"
+	 name="STR:NPC_NAME_31"
+	 desc="STR:NPC_DESC_31"
+	 meshname="skeleton"
+	 scale="1.1 1.1 1.1"
+	 grade="regular"
+	 max_hp="50"
+	 max_ap="50"
+	 int="3"
+	 agility="5"
+	 view_angle="40"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="135" />
+	 <ATTACK type="melee" range="180" weaponitem_id="300031" />
+	 <SPEED default="160" rotate="2.356" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <DROP table="S31" />
+</NPC>
+
+<!-- 스켈레톤 메이지 -->
+<NPC id="32"
+	 name="STR:NPC_NAME_32"
+	 desc="STR:NPC_DESC_32"
+	 meshname="skeletonM"
+	 scale="0.8 0.8 0.8"
+	 grade="regular"
+	 max_hp="40"
+	 max_ap="40"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="195" />
+	 <ATTACK type="melee" range="120" weaponitem_id="300032" />
+	 <SPEED default="160" rotate="2.356" />
+	 <SKILL id="321" />			<!-- Magic Arrow -->
+	 <SKILL id="322" />			<!-- Magic Fire -->
+	 <DROP table="S32" />
+</NPC>
+
+<!-- 대장 스켈레톤 -->
+<NPC id="33"
+	 name="STR:NPC_NAME_33"
+	 desc="STR:NPC_DESC_33"
+	 meshname="skeletonC"
+	 scale="1.1 1.1 1.1"
+	 grade="veteran"
+	 max_hp="80"
+	 max_ap="100"
+	 int="3"
+	 agility="3"
+	 view_angle="25"
+	 dc="6"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="155" />
+	 <ATTACK type="melee" range="280" weaponitem_id="300033" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" />
+	 <DROP table="S33" />
+</NPC>
+
+<!-- 거대 스켈레톤 -->
+<NPC id="34"
+	 name="STR:NPC_NAME_34"
+	 desc="STR:NPC_DESC_34"
+	 meshname="skeletonB"
+	 scale="1.3 1.3 1.3"
+	 grade="elite"
+	 max_hp="200"
+	 max_ap="100"
+	 int="3"
+	 agility="3"
+	 view_angle="25"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="40" height="250" tremble="10" />
+	 <ATTACK type="melee" range="350" weaponitem_id="300034" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="500" />
+	 <SKILL id="341" />			<!-- Earthquake Cut -->
+	 <DROP table="S34" />
+</NPC>
+
+<!-- 저주받은 시신 -->
+<NPC id="35"
+	 name="STR:NPC_NAME_35"
+	 desc="STR:NPC_DESC_35"
+	 meshname="theUnholy"
+	 scale="1.6 1.6 1.6"
+	 grade="elite"
+	 max_hp="200"
+	 max_ap="100"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="8"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="150" />
+	 <ATTACK type="melee" range="180" weaponitem_id="300035" />
+	 <FLAG never_blasted="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="351" />			<!-- Stun -->
+	 <SKILL id="352" />			<!-- Lightning Strike -->
+	 <SKILL id="353" />			<!-- Lightning Ball -->
+	 <DROP table="S35" />
+</NPC>
+
+<!-- 리치 폰 -->
+<NPC id="36"
+	 name="STR:NPC_NAME_36"
+	 desc="STR:NPC_DESC_36"
+	 meshname="Lich"
+	 scale="0.17 0.17 0.17"
+	 grade="regular"
+	 max_hp="40"
+	 max_ap="0"
+	 int="3"
+	 agility="3"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="120" height="700" tremble="5" />
+	 <ATTACK type="melee" range="120" weaponitem_id="300036" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="200" rotate="2.452" />
+	 <SKILL id="361" />			<!-- Flaming Inferno -->
+	 <DROP table="S36" />
+</NPC>
+
+<!-- 슈페리온(보스) -->
+<NPC id="37"
+	 name="STR:NPC_NAME_37"
+	 desc="STR:NPC_DESC_37"
+	 meshname="skeletonB"
+	 scale="2.1 2.1 2.1"
+	 grade="boss"
+	 max_hp="6000"
+	 max_ap="7000"
+	 int="3"
+	 agility="2"
+	 view_angle="15"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="40" height="250" tremble="10" />
+	 <ATTACK type="melee" range="550" weaponitem_id="300037" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="700" />
+	 <SKILL id="371" />			<!-- Flamecast Slash -->
+	 <SKILL id="372" />			<!-- Seismic Shock -->
+	 <SKILL id="373" />			<!-- Flamecast Slash 2 -->
+	 <DROP table="S37" />
+</NPC>
+
+<!-- 아네라몬(보스) -->
+<NPC id="38"
+	 name="STR:NPC_NAME_38"
+	 desc="STR:NPC_DESC_38"
+	 meshname="theUnholy"
+	 scale="4.0 4.0 4.0"
+	 grade="boss"
+	 max_hp="6000"
+	 max_ap="7000"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="50"
+	 offensetype="2"
+	 dyingtime="8">
+	 <COLLISION radius="15" height="150" tremble="5" />
+	 <ATTACK type="melee" range="1" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="200" />
+	 <SKILL id="381" />			<!-- Lightning Storm -->
+	 <SKILL id="382" />			<!-- Spheric Volt -->
+	 <SKILL id="383" />			<!-- Unholy Aura -->
+	 <DROP table="S38" />
+</NPC>
+
+<!-- 리치(보스) -->
+<NPC id="39"
+	 name="STR:NPC_NAME_39"
+	 desc="STR:NPC_DESC_39"
+	 meshname="Lich"
+	 scale="1.0 1.0 1.0"
+	 grade="boss"
+	 max_hp="7000"
+	 max_ap="7000"
+	 int="1"
+	 agility="1"
+	 view_angle="20"
+	 dc="60"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="80" height="750" tremble="5" />
+	 <ATTACK type="melee" range="300" weaponitem_id="300039" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="1000" rotate="5.0" />
+	 <SKILL id="391" />			<!-- Devil's Arrow -->
+	 <SKILL id="392" />			<!-- Dante's Breath -->
+	 <SKILL id="393" />			<!-- Lava Dump -->
+	 <DROP table="S39" />
+</NPC>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 팜포아
+  
+  특징 : 아스트라의 수수께끼 생물체로써 추운 곳에서 주로 모여산다. 얼음 계열의 마법을 잘 다루지만
+         그 외에 모든것들은 아직도 수수께끼이다.
+         
+  보스 : 
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!-- 팜포우 베이비 -->
+<NPC id="41"
+	 name="STR:NPC_NAME_41"
+	 desc="STR:NPC_DESC_41"
+	 meshname="palmpou_baby"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="600"
+	 max_ap="0"
+	 int="2"
+	 agility="2"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="1"
+	 friendly="true">
+	 <COLLISION radius="15" height="30" />
+	 <ATTACK type="melee" range="80" hitrate="10" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="411" />
+	 <DROP table="P41" />
+</NPC>
+
+<!-- 팜포우 베이비 : 실전용 -->
+<NPC id="48"
+	 name="STR:NPC_NAME_48"
+	 desc="STR:NPC_DESC_48"
+	 meshname="palmpou_baby"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="60"
+	 max_ap="0"
+	 int="2"
+	 agility="2"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="1">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="40"  />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="411" />
+	 <DROP table="P48" />
+</NPC>
+
+<!-- 팜포아 -->
+<NPC id="42"
+	 name="STR:NPC_NAME_42"
+	 desc="STR:NPC_DESC_42"
+	 meshname="palmpoa"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="50"
+	 max_ap="50"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="6"
+	 offensetype="1">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="40"  />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="421" />
+	 <DROP table="P42" />
+</NPC>
+
+<!-- 대장 팜포아 -->
+<NPC id="43"
+	 name="STR:NPC_NAME_43"
+	 desc="STR:NPC_DESC_43"
+	 meshname="palmpoaH"
+	 scale="2.0 2.0 2.0"
+	 grade="veteran"
+	 max_hp="100"
+	 max_ap="100"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="7"
+	 offensetype="1">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="80"  />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="432" />
+	 <DROP table="P43" />
+</NPC>
+
+<!-- 대장 팜포아 보스 -->
+<NPC id="46"
+	 name="STR:NPC_NAME_46"
+	 desc="STR:NPC_DESC_46"
+	 meshname="palmpoaH"
+	 scale="2.0 2.0 2.0"
+	 grade="boss"
+	 max_hp="3000"
+	 max_ap="3000"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="7"
+	 offensetype="1">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="80"  />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="431" />
+	 <DROP table="P46" />
+</NPC>
+
+<!-- 팜포우 -->
+<NPC id="44"
+	 name="STR:NPC_NAME_44"
+	 desc="STR:NPC_DESC_44"
+	 meshname="palmpou"
+	 scale="3.0 3.0 3.0"
+	 grade="elite"
+	 max_hp="200"
+	 max_ap="200"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="8"
+	 offensetype="1">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="80"  />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="441" />
+	 <DROP table="P44" />
+</NPC>
+
+<!-- 팜포우 보스 -->
+<NPC id="47"
+	 name="STR:NPC_NAME_47"
+	 desc="STR:NPC_DESC_47"
+	 meshname="palmpou"
+	 scale="3.0 3.0 3.0"
+	 grade="boss"
+	 max_hp="6000"
+	 max_ap="6000"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="8"
+	 offensetype="1">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="80"  />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="442" />
+	 <DROP table="P47" />
+</NPC>
+
+<!-- 저주받은 팜포우 -->
+<NPC id="45"
+	 name="STR:NPC_NAME_45"
+	 desc="STR:NPC_DESC_45"
+	 meshname="cpalmpoa"
+	 scale="2.0 2.0 2.0"
+	 grade="boss"
+	 max_hp="8000"
+	 max_ap="8000"
+	 int="1"
+	 agility="4"
+	 view_angle="60"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="80"  />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="451" />
+	 <DROP table="P45" />
+</NPC>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 서바이벌 모드
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 맨션
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 병정 고블린 -->
+<NPC id="151"
+	 name="STR:NPC_NAME_11"
+	 desc="STR:NPC_DESC_11"
+	 meshname="goblin"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="10"
+	 max_ap="15"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="300" />
+	 <DROP table="G11" />
+</NPC>
+
+<!-- 고블린거너 -->
+<NPC id="152"
+	 name="STR:NPC_NAME_12"
+	 desc="STR:NPC_DESC_12"
+	 meshname="goblinG"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="10"
+	 max_ap="10"
+	 int="4"
+	 agility="4"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="110" weaponitem_id="300012" />
+	 <SPEED default="230" />
+	 <SKILL id="121" />
+	 <DROP table="G12" />
+</NPC>
+
+<!-- 고블린 위저드 -->
+<NPC id="153"
+	 name="STR:NPC_NAME_13"
+	 desc="STR:NPC_DESC_13"
+	 meshname="goblinW"
+	 scale="1.0 1.0 1.0"
+	 grade="veteran"
+	 max_hp="15"
+	 max_ap="15"
+	 int="4"
+	 agility="4"
+	 view_angle="25"
+	 dc="6"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="120" />
+	 <ATTACK type="melee" range="130" weaponitem_id="300013" />
+	 <SPEED default="400" />
+	 <SKILL id="131" />
+	 <SKILL id="132" />
+	 <DROP table="G13" />
+</NPC>
+
+<!-- 대장 고블린 -->
+<NPC id="154"
+	 name="STR:NPC_NAME_14"
+	 desc="STR:NPC_DESC_14"
+	 meshname="goblinH"
+	 scale="1.0 1.0 1.0"
+	 grade="veteran"
+	 max_hp="15"
+	 max_ap="35"
+	 int="4"
+	 agility="2"
+	 view_angle="40"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="140" />
+	 <FLAG never_pushed="true" />
+	 <ATTACK type="melee" range="170" weaponitem_id="300014" />
+	 <SPEED default="360" />
+	 <DROP table="G14" />
+</NPC>
+
+<!-- 고블린 족장 -->
+<NPC id="155"
+	 name="STR:NPC_NAME_15"
+	 desc="STR:NPC_DESC_15"
+	 meshname="goblinC"
+	 scale="1.2 1.2 1.2"
+	 grade="elite"
+	 max_hp="60"
+	 max_ap="35"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="8"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="160" />
+	 <ATTACK type="melee" range="270" weaponitem_id="300015" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="320" />
+	 <SKILL id="151" />
+	 <SKILL id="152" />
+	 <DROP table="G15" />
+</NPC>
+
+<!-- 고블린킹 -->
+<NPC id="156"
+	 name="STR:NPC_NAME_16"
+	 desc="STR:NPC_DESC_16"
+	 meshname="goblinK"
+	 scale="2.5 2.5 2.5"
+	 grade="boss"
+	 max_hp="1200"
+	 max_ap="1200"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300016" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" rotate="4.712" />
+	 <SKILL id="161" />
+	 <SKILL id="162" />
+	 <DROP table="G16" />
+</NPC>
+
+<!-- 난쟁이 고블린킹 주니어 -->
+<NPC id="157"
+	 name="STR:NPC_NAME_191"
+	 desc="STR:NPC_DESC_191"
+	 meshname="goblinK"
+	 scale="1.2 1.2 1.2"
+	 grade="elite"
+	 max_hp="50"
+	 max_ap="50"
+	 int="3"
+	 agility="2"
+	 view_angle="20"
+	 dc="30"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300018" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="173" />
+	 <DROP table="G191" />
+</NPC>
+
+<!-- 썬더 고블린킹 주니어 -->
+<NPC id="158"
+	 name="STR:NPC_NAME_181"
+	 desc="STR:NPC_DESC_181"
+	 meshname="goblinKB"
+	 scale="1.2 1.2 1.2"
+	 grade="elite"
+	 max_hp="50"
+	 max_ap="50"
+	 int="3"
+	 agility="2"
+	 view_angle="20"
+	 dc="30"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300018" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="171" />
+	 <SKILL id="172" />
+	 <DROP table="G181" />
+</NPC>
+
+<!-- 썬더 고블린킹 -->
+<NPC id="159"
+	 name="STR:NPC_NAME_18"
+	 desc="STR:NPC_DESC_18"
+	 meshname="goblinKB"
+	 scale="2.8 2.8 2.8"
+	 grade="boss"
+	 max_hp="1500"
+	 max_ap="1500"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300017" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" rotate="4.712" />
+	 <SKILL id="163" />
+	 <SKILL id="164" />
+	 <SKILL id="166" />
+	 <DROP table="G18" />
+</NPC>
+
+<!-- 난쟁이 고블린킹 주니어 KeyNPC -->
+<NPC id="141"
+	 name="STR:NPC_NAME_191"
+	 desc="STR:NPC_DESC_191"
+	 meshname="goblinK"
+	 scale="1.2 1.2 1.2"
+	 grade="boss"
+	 max_hp="400"
+	 max_ap="400"
+	 int="3"
+	 agility="2"
+	 view_angle="20"
+	 dc="30"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300018" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="173" />
+	 <DROP table="G191" />
+</NPC>
+
+<!-- 썬더 고블린킹 주니어 KeyNPC-->
+<NPC id="142"
+	 name="STR:NPC_NAME_181"
+	 desc="STR:NPC_DESC_181"
+	 meshname="goblinKB"
+	 scale="1.2 1.2 1.2"
+	 grade="boss"
+	 max_hp="400"
+	 max_ap="400"
+	 int="3"
+	 agility="2"
+	 view_angle="20"
+	 dc="30"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300018" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="171" />
+	 <SKILL id="172" />
+	 <DROP table="G181" />
+</NPC>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 프리즌
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 리쟈드 -->
+<NPC id="161"
+	 name="STR:NPC_NAME_21"
+	 desc="STR:NPC_DESC_21"
+	 meshname="kobolt"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="15"
+	 max_ap="15"
+	 int="2"
+	 agility="2"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="150" />
+	 <ATTACK type="melee" range="165" weaponitem_id="300021" />
+	 <FLAG never_attack_cancel="true" />
+	 <SPEED default="300" />
+	 <DROP table="K21" />
+</NPC>
+
+<!-- 리쟈드 샤만 -->
+<NPC id="162"
+	 name="STR:NPC_NAME_22"
+	 desc="STR:NPC_DESC_22"
+	 meshname="kobold_shaman"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="15"
+	 max_ap="15"
+	 int="2"
+	 agility="4"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="33" height="130" />
+	 <ATTACK type="melee" range="135" weaponitem_id="300022" />
+	 <FLAG never_attack_cancel="true" />
+	 <SPEED default="250" />
+	 <SKILL id="221" />
+	 <SKILL id="222" />
+	 <DROP table="K22" />
+</NPC>
+
+<!-- 대장 리쟈드 -->
+<NPC id="163"
+	 name="STR:NPC_NAME_23"
+	 desc="STR:NPC_DESC_23"
+	 meshname="koboltC"
+	 scale="1.3 1.3 1.3"
+	 grade="veteran"
+	 max_hp="30"
+	 max_ap="30"
+	 int="2"
+	 agility="1"
+	 view_angle="15"
+	 dc="6"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="38" height="150" />
+	 <ATTACK type="melee" range="230" weaponitem_id="300023" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" />
+	 <DROP table="K23" />
+</NPC>
+
+<!-- 리쟈드 왕 -->
+<NPC id="164"
+	 name="STR:NPC_NAME_24"
+	 desc="STR:NPC_DESC_24"
+	 meshname="koboltK"
+	 scale="1.0 1.0 1.0"
+	 grade="elite"
+	 max_hp="50"
+	 max_ap="50"
+	 int="2"
+	 agility="2"
+	 view_angle="15"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="60" height="250" />
+	 <ATTACK type="melee" range="370" weaponitem_id="300024" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="300" rotate="4.0" />
+	 <SKILL id="241" />
+	 <DROP table="K24" />
+</NPC>
+
+<!-- 리쟈드 왕(보스) -->
+<NPC id="165"
+	 name="STR:NPC_NAME_25"
+	 desc="STR:NPC_DESC_25"
+	 meshname="koboltK"
+	 scale="1.8 1.8 1.8"
+	 grade="boss"
+	 max_hp="800"
+	 max_ap="1200"
+	 int="2"
+	 agility="3"
+	 view_angle="15"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="60" height="250" pick="true" tremble="10" />
+	 <ATTACK type="melee" range="550" weaponitem_id="300025" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="300" rotate="3.0" />
+	 <SKILL id="251" />
+	 <SKILL id="252" />
+	 <DROP table="K25" />
+</NPC>
+
+<!-- 고장난 골렘(보스) -->
+<NPC id="166"
+	 name="STR:NPC_NAME_26"
+	 desc="STR:NPC_DESC_26"
+	 meshname="golem"
+	 scale="1.7 1.7 1.7"
+	 grade="boss"
+	 max_hp="1200"
+	 max_ap="1400"
+	 int="1"
+	 agility="2"
+	 view_angle="25"
+	 dc="60"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="50" height="305" pick="true" tremble="10" />
+	 <ATTACK type="melee" range="400" weaponitem_id="300026" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="350" rotate="4.712" />
+	 <SKILL id="261" />
+	 <SKILL id="262" />
+	 <SKILL id="263" />
+	 <DROP table="K26" />
+</NPC>
+
+<!-- 고장난 골렘(보스) 조금 작은 버전 -->
+<NPC id="167"
+	 name="STR:NPC_NAME_26"
+	 desc="STR:NPC_DESC_26"
+	 meshname="golem"
+	 scale="1.2 1.2 1.2"
+	 grade="boss"
+	 max_hp="1200"
+	 max_ap="1400"
+	 int="1"
+	 agility="2"
+	 view_angle="25"
+	 dc="60"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="50" height="305" pick="true" tremble="10" />
+	 <ATTACK type="melee" range="350" weaponitem_id="300026" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="350" rotate="4.712" />
+	 <SKILL id="261" />
+	 <SKILL id="262" />
+	 <SKILL id="263" />
+	 <DROP table="K26" />
+</NPC>
+
+<!-- 리쟈드 왕 KeyNPC1 -->
+<NPC id="143"
+	 name="STR:NPC_NAME_24"
+	 desc="STR:NPC_DESC_24"
+	 meshname="koboltK"
+	 scale="1.0 1.0 1.0"
+	 grade="boss"
+	 max_hp="400"
+	 max_ap="400"
+	 int="2"
+	 agility="2"
+	 view_angle="15"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="60" height="250" />
+	 <ATTACK type="melee" range="370" weaponitem_id="300024" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="300" rotate="4.0" />
+	 <SKILL id="241" />
+	 <DROP table="K24" />
+</NPC>
+
+<!-- 리쟈드 왕 KeyNPC2 -->
+<NPC id="144"
+	 name="STR:NPC_NAME_24"
+	 desc="STR:NPC_DESC_24"
+	 meshname="koboltK"
+	 scale="1.0 1.0 1.0"
+	 grade="boss"
+	 max_hp="500"
+	 max_ap="500"
+	 int="2"
+	 agility="2"
+	 view_angle="15"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="60" height="250" />
+	 <ATTACK type="melee" range="370" weaponitem_id="300024" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="300" rotate="4.0" />
+	 <SKILL id="241" />
+	 <DROP table="K24" />
+</NPC>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 던전
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 스켈레톤 -->
+<NPC id="171"
+	 name="STR:NPC_NAME_31"
+	 desc="STR:NPC_DESC_31"
+	 meshname="skeleton"
+	 scale="1.1 1.1 1.1"
+	 grade="regular"
+	 max_hp="20"
+	 max_ap="20"
+	 int="3"
+	 agility="5"
+	 view_angle="40"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="135" />
+	 <ATTACK type="melee" range="180" weaponitem_id="300031" />
+	 <SPEED default="160" rotate="2.356" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <DROP table="S31" />
+</NPC>
+
+<!-- 스켈레톤 메이지 -->
+<NPC id="172"
+	 name="STR:NPC_NAME_32"
+	 desc="STR:NPC_DESC_32"
+	 meshname="skeletonM"
+	 scale="0.8 0.8 0.8"
+	 grade="regular"
+	 max_hp="15"
+	 max_ap="15"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="195" />
+	 <ATTACK type="melee" range="120" weaponitem_id="300032" />
+	 <SPEED default="160" rotate="2.356" />
+	 <SKILL id="321" />			<!-- Magic Arrow -->
+	 <SKILL id="322" />			<!-- Magic Fire -->
+	 <DROP table="S32" />
+</NPC>
+
+<!-- 대장 스켈레톤 -->
+<NPC id="173"
+	 name="STR:NPC_NAME_33"
+	 desc="STR:NPC_DESC_33"
+	 meshname="skeletonC"
+	 scale="1.1 1.1 1.1"
+	 grade="veteran"
+	 max_hp="25"
+	 max_ap="35"
+	 int="3"
+	 agility="3"
+	 view_angle="25"
+	 dc="6"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="155" />
+	 <ATTACK type="melee" range="280" weaponitem_id="300033" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" />
+	 <DROP table="S33" />
+</NPC>
+
+<!-- 거대 스켈레톤 -->
+<NPC id="174"
+	 name="STR:NPC_NAME_34"
+	 desc="STR:NPC_DESC_34"
+	 meshname="skeletonB"
+	 scale="1.3 1.3 1.3"
+	 grade="elite"
+	 max_hp="70"
+	 max_ap="35"
+	 int="3"
+	 agility="3"
+	 view_angle="25"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="40" height="250" tremble="10" />
+	 <ATTACK type="melee" range="350" weaponitem_id="300034" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="500" />
+	 <SKILL id="341" />			<!-- Earthquake Cut -->
+	 <DROP table="S34" />
+</NPC>
+
+<!-- 저주받은 시신 -->
+<NPC id="175"
+	 name="STR:NPC_NAME_35"
+	 desc="STR:NPC_DESC_35"
+	 meshname="theUnholy"
+	 scale="1.6 1.6 1.6"
+	 grade="elite"
+	 max_hp="70"
+	 max_ap="35"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="8"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="150" />
+	 <ATTACK type="melee" range="180" weaponitem_id="300035" />
+	 <FLAG never_blasted="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="351" />			<!-- Stun -->
+	 <SKILL id="352" />			<!-- Lightning Strike -->
+	 <SKILL id="353" />			<!-- Lightning Ball -->
+	 <DROP table="S35" />
+</NPC>
+
+<!-- 리치 폰 -->
+<NPC id="176"
+	 name="STR:NPC_NAME_36"
+	 desc="STR:NPC_DESC_36"
+	 meshname="Lich"
+	 scale="0.17 0.17 0.17"
+	 grade="regular"
+	 max_hp="15"
+	 max_ap="0"
+	 int="3"
+	 agility="3"
+	 view_angle="25"
+	 dc="5"
+	 offensetype="2"
+	 dyingtime="5">
+	 <COLLISION radius="120" height="700" tremble="5" />
+	 <ATTACK type="melee" range="120" weaponitem_id="300036" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="200" rotate="2.452" />
+	 <SKILL id="361" />			<!-- Flaming Inferno -->
+	 <DROP table="S36" />
+</NPC>
+
+<!-- 슈페리온(보스) -->
+<NPC id="177"
+	 name="STR:NPC_NAME_37"
+	 desc="STR:NPC_DESC_37"
+	 meshname="skeletonB"
+	 scale="2.1 2.1 2.1"
+	 grade="boss"
+	 max_hp="1000"
+	 max_ap="1200"
+	 int="3"
+	 agility="2"
+	 view_angle="15"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="40" height="250" tremble="10" />
+	 <ATTACK type="melee" range="550" weaponitem_id="300037" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="700" />
+	 <SKILL id="371" />			<!-- Flamecast Slash -->
+	 <SKILL id="372" />			<!-- Seismic Shock -->
+	 <SKILL id="373" />			<!-- Flamecast Slash 2 -->
+	 <DROP table="S37" />
+</NPC>
+
+<!-- 아네라몬(보스) -->
+<NPC id="178"
+	 name="STR:NPC_NAME_38"
+	 desc="STR:NPC_DESC_38"
+	 meshname="theUnholy"
+	 scale="4.0 4.0 4.0"
+	 grade="boss"
+	 max_hp="1000"
+	 max_ap="1200"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="50"
+	 offensetype="2"
+	 dyingtime="8">
+	 <COLLISION radius="15" height="150" tremble="5" />
+	 <ATTACK type="melee" range="1" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="200" />
+	 <SKILL id="381" />			<!-- Lightning Storm -->
+	 <SKILL id="382" />			<!-- Spheric Volt -->
+	 <SKILL id="383" />			<!-- Unholy Aura -->
+	 <DROP table="S38" />
+</NPC>
+
+<!-- 리치(보스) -->
+<NPC id="179"
+	 name="STR:NPC_NAME_39"
+	 desc="STR:NPC_DESC_39"
+	 meshname="Lich"
+	 scale="1.0 1.0 1.0"
+	 grade="boss"
+	 max_hp="1200"
+	 max_ap="1200"
+	 int="1"
+	 agility="1"
+	 view_angle="20"
+	 dc="60"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="80" height="750" tremble="5" />
+	 <ATTACK type="melee" range="300" weaponitem_id="300039" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="1000" rotate="5.0" />
+	 <SKILL id="391" />			<!-- Devil's Arrow -->
+	 <SKILL id="392" />			<!-- Dante's Breath -->
+	 <SKILL id="393" />			<!-- Lava Dump -->
+	 <DROP table="S39" />
+</NPC>
+
+<!-- 리치(보스) 계단을 오르지 못해서 속도를 줄인 버전 -->
+<NPC id="180"
+	 name="STR:NPC_NAME_39"
+	 desc="STR:NPC_DESC_39"
+	 meshname="Lich"
+	 scale="1.0 1.0 1.0"
+	 grade="boss"
+	 max_hp="1200"
+	 max_ap="1200"
+	 int="1"
+	 agility="1"
+	 view_angle="20"
+	 dc="60"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="80" height="750" tremble="5" />
+	 <ATTACK type="melee" range="300" weaponitem_id="300039" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="416" rotate="5.0" />
+	 <SKILL id="391" />			<!-- Devil's Arrow -->
+	 <SKILL id="392" />			<!-- Dante's Breath -->
+	 <SKILL id="393" />			<!-- Lava Dump -->
+	 <DROP table="S39" />
+</NPC>
+
+<!-- 저주받은 시신 KeyNPC -->
+<NPC id="145"
+	 name="STR:NPC_NAME_35"
+	 desc="STR:NPC_DESC_35"
+	 meshname="theUnholy"
+	 scale="1.6 1.6 1.6"
+	 grade="boss"
+	 max_hp="400"
+	 max_ap="400"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="8"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="150" />
+	 <ATTACK type="melee" range="180" weaponitem_id="300035" />
+	 <FLAG never_blasted="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="351" />			<!-- Stun -->
+	 <SKILL id="352" />			<!-- Lightning Strike -->
+	 <SKILL id="353" />			<!-- Lightning Ball -->
+	 <DROP table="S35" />
+</NPC>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 이벤트용 NPC
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- 병정 고블린(산타 모자 이벤트용) -->
+<NPC id="111"
+	 name="STR:NPC_NAME_11"
+	 desc="STR:NPC_DESC_11"
+	 meshname="goblinE"
+	 scale="1.0 1.0 1.0"
+	 grade="regular"
+	 max_hp="30"
+	 max_ap="50"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="300" />
+	 <DROP table="E01" />
+</NPC>
+
+<!-- 스켈레톤(이벤트용) -->
+<NPC id="131"
+	 name="STR:NPC_NAME_31"
+	 desc="STR:NPC_DESC_31"
+	 meshname="skeleton"
+	 scale="1.1 1.1 1.1"
+	 grade="regular"
+	 max_hp="50"
+	 max_ap="50"
+	 int="3"
+	 agility="5"
+	 view_angle="40"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="135" />
+	 <ATTACK type="melee" range="180" weaponitem_id="300031" />
+	 <SPEED default="160" rotate="2.356" />
+	 <FLAG never_pushed="true" never_attack_cancel="true" />
+	 <DROP table="E01" />
+</NPC>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ New NPC
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- PNC New -->
+
+<NPC id="98"
+	 name="Boo"
+	 desc="(Super Mario)"
+	 meshname="boo"
+	 scale="1.0 1.0 1.0"
+	 grade="veteran"
+	 max_hp="50"
+	 max_ap="100"
+	 int="4"
+	 agility="2"
+	 view_angle="40"
+	 dc="7"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="35" height="140" />
+	 <FLAG never_pushed="true" />
+	 <ATTACK type="melee" range="170" weaponitem_id="300014" />
+	 <SPEED default="360" />
+	 <DROP table="G16" />
+</NPC>
+
+<NPC id="99"
+	 name="KingBoo"
+	 desc="KingBoo (Super Mario)"
+	 meshname="boo"
+	 scale="2.0 2.0 2.0"
+	 grade="boss"
+	 max_hp="8000"
+	 max_ap="8000"
+	 int="1"
+	 agility="4"
+	 view_angle="60"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="25" height="120" />
+	 <ATTACK type="melee" range="80"  />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="150" rotate="2.356" />
+	 <SKILL id="162" /> <!-- Goblin Kings: Fire missle -->
+	 <DROP table="G16" />
+</NPC>
+
+<NPC id="132"
+     name="MaximoGunZ Boss"
+     desc="The Boss of MaximoGunZ"
+     meshname="zolem"
+     scale="4.0 4.0 4.0"
+     grade="boss"
+     max_hp="10000"
+     max_ap="9000"
+     int="1"
+     agility="2"
+     view_angle="25"
+     dc="60"
+     offensetype="2"
+     dyingtime="5">
+     <COLLISION radius="50" height="305" pick="true" tremble="10" />
+     <ATTACK type="melee" range="400" weaponitem_id="300026" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="350" rotate="4.712" />
+     <SKILL id="261" />
+     <SKILL id="262" />
+     <SKILL id="263" />
+     <DROP table="G181" />
+</NPC>
+
+<NPC id="133"
+     name="palmpou_bman"
+     desc="palmpou_bman"
+     meshname="palmpou_bman"
+     scale="1.0 1.0 1.0"
+     grade="regular"
+     max_hp="70"
+     max_ap="0"
+     int="2"
+     agility="2"
+     view_angle="25"
+     dc="5"
+     offensetype="1"
+     friendly="true">
+     <COLLISION radius="15" height="30" />
+     <ATTACK type="melee" range="80" weaponitem_id="300000" hitrate="10" />
+     <SPEED default="150" rotate="2.356" />
+     <SKILL id="411" />
+     <DROP table="G181" />
+</NPC>
+
+<NPC id="134"
+     name="Bich"
+     desc="Bich"
+     meshname="Bich"
+     scale="1.17 1.17 1.17"
+     grade="regular"
+     max_hp="50"
+     max_ap="0"
+     int="3"
+     agility="3"
+     view_angle="25"
+     dc="5"
+     offensetype="2"
+     dyingtime="5">
+     <COLLISION radius="120" height="700" tremble="5" />
+     <ATTACK type="melee" range="120" weaponitem_id="300036" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="200" rotate="2.452" />
+     <SKILL id="361" />            <!-- Flaming Inferno -->
+     <DROP table="S36" />
+</NPC>
+
+<NPC id="135"
+     name="Robot Baby"
+     desc="Robot Baby"
+     meshname="robotw"
+     scale="1.0 1.0 1.0"
+     grade="veteran"
+     max_hp="40"
+     max_ap="40"
+     int="4"
+     agility="4"
+     view_angle="25"
+     dc="6"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="30" height="120" />
+     <ATTACK type="melee" range="130" weaponitem_id="300013" />
+     <SPEED default="400" />
+     <SKILL id="131" />
+     <SKILL id="132" />
+     <DROP table="G13" />
+</NPC>
+
+<NPC id="136"
+     name="Robot"
+     desc="Robot"
+     meshname="koboltr"
+     scale="1.3 1.3 1.3"
+     grade="veteran"
+     max_hp="90"
+     max_ap="90"
+     int="2"
+     agility="1"
+     view_angle="15"
+     dc="6"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="38" height="150" />
+     <ATTACK type="melee" range="230" weaponitem_id="300023" />
+     <FLAG never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="400" />
+     <DROP table="K23" />
+</NPC>
+
+<NPC id="137"
+     name="Slave Robot"
+     desc="Slave Robot"
+     meshname="goblinr"
+     scale="1.0 1.0 1.0"
+     grade="veteran"
+     max_hp="50"
+     max_ap="100"
+     int="4"
+     agility="2"
+     view_angle="40"
+     dc="7"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="35" height="140" />
+     <FLAG never_pushed="true" />
+     <ATTACK type="melee" range="170" weaponitem_id="300014" />
+     <SPEED default="360" />
+     <DROP table="G14" />
+</NPC>
+
+<NPC id="138"
+     name="Robot Boss"
+     desc="Robot Boss"
+     meshname="rich"
+     scale="4.0 4.0 4.0"
+     grade="boss"
+     max_hp="8000"
+     max_ap="7000"
+     int="1"
+     agility="1"
+     view_angle="20"
+     dc="60"
+     offensetype="1"
+     dyingtime="8">
+     <COLLISION radius="80" height="750" tremble="5" />
+     <ATTACK type="melee" range="300" weaponitem_id="300039" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="1000" rotate="5.0" />
+     <SKILL id="391" />            <!-- Devil's Arrow -->
+     <SKILL id="392" />            <!-- Dante's Breath -->
+     <SKILL id="393" />            <!-- Lava Dump -->
+     <DROP table="K51" />
+</NPC>
+
+<NPC id="239"
+     name="bullet"
+     desc="bullet"
+     meshname="bullet"
+     scale="1.5 1.5 1.5"
+     grade="elite"
+     max_hp="200"
+     max_ap="100"
+     int="3"
+     agility="3"
+     view_angle="25"
+     dc="7"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="40" height="250" tremble="10" />
+     <ATTACK type="melee" range="350" weaponitem_id="300034" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="700" />
+     <DROP table="S34" />
+</NPC>
+
+<NPC id="240"
+     name="Ghost"
+     desc="Ghost"
+     meshname="gheletonM"
+     scale="0.8 0.8 0.8"
+     grade="regular"
+     max_hp="40"
+     max_ap="40"
+     int="3"
+     agility="5"
+     view_angle="25"
+     dc="5"
+     offensetype="2"
+     dyingtime="5">
+     <COLLISION radius="30" height="195" />
+     <ATTACK type="melee" range="120" weaponitem_id="300032" />
+     <SPEED default="160" rotate="2.356" />
+     <SKILL id="321" />            <!-- Magic Arrow -->
+     <SKILL id="322" />            <!-- Magic Fire -->
+     <DROP table="S32" />
+</NPC>
+
+<NPC id="241"
+     name="Blue Mushroom Shell"
+     desc="Blue Mushroom Shell"
+     meshname="blblinG"
+     scale="1.0 1.0 1.0"
+     grade="regular"
+     max_hp="30"
+     max_ap="30"
+     int="4"
+     agility="4"
+     view_angle="25"
+     dc="5"
+     offensetype="2"
+     dyingtime="5">
+     <COLLISION radius="30" height="110" />
+     <ATTACK type="melee" range="110" weaponitem_id="300012" />
+     <SPEED default="230" />
+     <SKILL id="121" />
+     <DROP table="G12" />
+</NPC>
+
+<NPC id="242"
+     name="Star"
+     desc="Star"
+     meshname="stblinC"
+     scale="1.2 1.2 1.2"
+     grade="elite"
+     max_hp="200"
+     max_ap="100"
+     int="4"
+     agility="4"
+     view_angle="15"
+     dc="8"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="35" height="160" />
+     <ATTACK type="melee" range="270" weaponitem_id="300015" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="320" />
+     <SKILL id="151" />
+     <SKILL id="152" />
+     <DROP table="G15" />
+</NPC>
+
+<NPC id="243"
+     name="muboltC"
+     desc="muboltC"
+     meshname="muboltC"
+     scale="1.3 1.3 1.3"
+     grade="veteran"
+     max_hp="90"
+     max_ap="90"
+     int="2"
+     agility="1"
+     view_angle="15"
+     dc="6"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="38" height="150" />
+     <ATTACK type="melee" range="230" weaponitem_id="300023" />
+     <FLAG never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="400" />
+     <DROP table="K23" />
+</NPC>
+
+<NPC id="244"
+     name="Cloud"
+     desc="Cloud"
+     meshname="clblinC"
+     scale="1.2 1.2 1.2"
+     grade="elite"
+     max_hp="200"
+     max_ap="100"
+     int="4"
+     agility="4"
+     view_angle="15"
+     dc="8"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="35" height="160" />
+     <ATTACK type="melee" range="270" weaponitem_id="300015" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="320" />
+     <SKILL id="176" />
+     <SKILL id="152" />
+     <DROP table="G15" />
+</NPC>
+
+<NPC id="245"
+     name="Mushroom Boss"
+     desc="Mushroom Boss"
+     meshname="mushboss"
+     scale="1.7 1.7 1.7"
+     grade="boss"
+     max_hp="9000"
+     max_ap="8000"
+     int="1"
+     agility="2"
+     view_angle="25"
+     dc="60"
+     offensetype="2"
+     dyingtime="5">
+     <COLLISION radius="50" height="305" pick="true" tremble="10" />
+     <ATTACK type="melee" range="400" weaponitem_id="300026" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="350" rotate="4.712" />
+     <SKILL id="261" />
+     <SKILL id="262" />
+     <SKILL id="263" />
+     <DROP table="K50" />
+</NPC>
+
+<NPC id="146"
+     name="Ghost_King"
+     desc="Ghost_King"
+     meshname="Ghost_King"
+     scale="4.0 4.0 4.0"
+     grade="boss"
+     max_hp="4000"
+     max_ap="4000"
+     int="1"
+     agility="1"
+     view_angle="20"
+     dc="50"
+     offensetype="1"
+     dyingtime="8">
+     <COLLISION radius="50" height="200" tremble="5" />
+     <ATTACK type="melee" range="450" weaponitem_id="300034" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="1000" rotate="4.712" />
+     <SKILL id="381" /> 		<!-- Massive Strike -->
+     <SKILL id="393" />			
+     <SKILL id="451" />			
+     <DROP table="G15" />
+</NPC>
+<NPC id="147"
+     name="Ghost_Mage_Lightning"
+     desc="Ghost_Mage"
+     meshname="Ghost_Mage"
+     scale="1.5 1.5 1.5"
+     grade="elite"
+     max_hp="100"
+     max_ap="100"
+     int="3"
+     agility="5"
+     view_angle="25"
+     dc="8"
+     offensetype="1"
+     dyingtime="8">
+     <COLLISION radius="30" height="150" />
+     <ATTACK type="melee" range="180" weaponitem_id="300034" />
+     <FLAG never_blasted="true" never_attack_cancel="true" />
+     <SPEED default="150" rotate="2.356" />
+     <SKILL id="382" />            <!-- Spheric Volt -->
+     <SKILL id="252" />            <!-- Heal -->
+     <DROP table="K26" />
+</NPC>
+
+<NPC id="148"
+     name="Ghost_Elite"
+     desc="Ghost_Elite"
+     meshname="Ghost_Elite"
+     scale="1.5 1.5 1.5"
+     grade="elite"
+     max_hp="200"
+     max_ap="100"
+     int="4"
+     agility="4"
+     view_angle="15"
+     dc="8"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="35" height="160" />
+     <ATTACK type="melee" range="270" weaponitem_id="300034" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="520" />
+     <SKILL id="351" /> <!-- Massive -->
+     <SKILL id="341" /> <!-- Slow -->
+     <DROP table="K23" />
+</NPC>
+<NPC id="149"
+     name="Ghost_Mage_Fire"
+     desc="Ghost_Mage2"
+     meshname="Ghost_Mage2"
+     scale="1.5 1.5 1.5"
+     grade="elite"
+     max_hp="100"
+     max_ap="100"
+     int="4"
+     agility="4"
+     view_angle="15"
+     dc="8"
+     offensetype="1"
+     dyingtime="5">
+     <COLLISION radius="35" height="160" />
+     <ATTACK type="melee" range="270" weaponitem_id="300034" />
+     <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+     <SPEED default="120" />
+     <SKILL id="252" />		<!-- Heal -->
+     <SKILL id="392" />		<!-- Dante's Breath -->
+     <DROP table="K26" />
+</NPC>
+<NPC id="200"
+	 name="general"
+	 desc="general"
+	 meshname="general"
+	 scale="1.4 1.4 1.4"
+	 grade="boss"
+	 max_hp="9500"
+	 max_ap="9500"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300017" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="400" rotate="4.712" />
+	 <SKILL id="163" />
+	 <SKILL id="164" />
+	 <SKILL id="166" />
+	 <DROP table="G18" />
+</NPC>
+<NPC id="204"
+	 name="robot"
+	 desc="robot"
+	 meshname="robot"
+	 scale="1.4 1.4 1.4"
+	 grade="boss"
+	 max_hp="10000"
+	 max_ap="5000"
+	 int="3"
+	 agility="5"
+	 view_angle="20"
+	 dc="50"
+	 offensetype="1"
+	 dyingtime="8">
+	 <COLLISION radius="50" height="200" tremble="5" />
+	 <ATTACK type="melee" range="450" weaponitem_id="300017" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="450" rotate="4.712" />
+	 <SKILL id="167" />
+	 <SKILL id="168" />
+	 <SKILL id="169" />
+	 <SKILL id="174" />
+	 <DROP table="G19" />
+</NPC>
+<NPC id="205"
+	 name="psychic"
+	 desc="psychic"
+	 meshname="psychic"
+	 scale="1.3 1.3 1.3"
+	 grade="boss"
+	 max_hp="9000"
+	 max_ap="8000"
+	 int="3"
+	 agility="5"
+	 view_angle="25"
+	 dc="50"
+	 offensetype="2"
+	 dyingtime="8">
+	 <COLLISION radius="15" height="150" tremble="5" />
+	 <ATTACK type="melee" range="1" />
+	 <FLAG never_blasted="true" never_pushed="true" never_attack_cancel="true" />
+	 <SPEED default="200" />
+	 <SKILL id="381" />			<!-- Lightning Storm -->
+	 <SKILL id="382" />			<!-- Spheric Volt -->
+	 <SKILL id="383" />			<!-- Unholy Aura -->
+	 <DROP table="S38" />
+</NPC>
+<NPC id="201"
+	 name="knifeman"
+	 desc="knifeman"
+	 meshname="knifeman"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="130"
+	 max_ap="150"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="202"
+	 name="knifeman2"
+	 desc="knifeman2"
+	 meshname="knifeman2"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="130"
+	 max_ap="150"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="203"
+	 name="knifeman3"
+	 desc="knifeman3"
+	 meshname="knifeman3"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="160"
+	 max_ap="150"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="206"
+	 name="hunter"
+	 desc="hunter"
+	 meshname="hunter3"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="170"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="207"
+	 name="hunter2"
+	 desc="hunter2"
+	 meshname="hunter2"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="208"
+	 name="hunter3"
+	 desc="hunter3"
+	 meshname="hunter3"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="209"
+	 name="charger"
+	 desc="charger"
+	 meshname="charger"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="210"
+	 name="charger2"
+	 desc="charger2"
+	 meshname="charger2"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="211"
+	 name="charger3"
+	 desc="charger3"
+	 meshname="charger3"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="215"
+	 name="shooter"
+	 desc="shooter"
+	 meshname="shooter"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="216"
+	 name="shooter2"
+	 desc="shooter2"
+	 meshname="shooter2"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="217"
+	 name="shooter3"
+	 desc="shooter3"
+	 meshname="shooter3"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="218"
+	 name="disposer"
+	 desc="disposer"
+	 meshname="disposer"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="219"
+	 name="disposer2"
+	 desc="disposer2"
+	 meshname="disposer2"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="220"
+	 name="disposer3"
+	 desc="disposer3"
+	 meshname="disposer3"
+	 scale="1.3 1.3 1.3"
+	 grade="regular"
+	 max_hp="140"
+	 max_ap="100"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="221"
+	 name="rifleman"
+	 desc="rifleman"
+	 meshname="rifleman"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="130"
+	 max_ap="150"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="222"
+	 name="rifleman2"
+	 desc="rifleman2"
+	 meshname="rifleman2"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="130"
+	 max_ap="150"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+<NPC id="223"
+	 name="rifleman3"
+	 desc="rifleman3"
+	 meshname="rifleman3"
+	 scale="1.2 1.2 1.2"
+	 grade="regular"
+	 max_hp="130"
+	 max_ap="150"
+	 int="4"
+	 agility="4"
+	 view_angle="15"
+	 dc="5"
+	 offensetype="1"
+	 dyingtime="5">
+	 <COLLISION radius="30" height="110" />
+	 <ATTACK type="melee" range="150" weaponitem_id="300011" />
+	 <SPEED default="500" />
+	 <DROP table="G11" />
+</NPC>
+
+</XML>
