@@ -189,7 +189,7 @@ GunZ The Duel Releases <br>
 - memory writer: [memory writer](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer)
 - sql administrative querys: [sql administrative querys](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys)
 - gunz debugging console: [gunz debugging console](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20debugging%20console)
-
+- unreal engine 4 gunz: [unreal engine](https://www.youtube.com/watch?v=wIzNnBJiVO4)
 
 <br>
 
@@ -234,6 +234,8 @@ GunZ The Duel Releases <br>
 - creating gladius sword: [creating gladius sword](https://www.youtube.com/watch?v=ilTBnLPP6W8)
 - import elu blender and export obj: [import elu blender and export obj](https://www.youtube.com/watch?v=nFDcCrKLdVc)
 - import custom item in your game: [import custom item in your game](https://www.youtube.com/watch?v=48gPuvo8pWA)
+- create a katana: [create a katana](https://www.youtube.com/watch?v=zzsfJ6Ok6cs)
+- create a katana2: [create a katana2](https://www.youtube.com/watch?v=vm50YDH1tcY)
 
 <b>(photoshop)</b>
 - how to change gunz dash color: [how to change gunz dash color](https://www.youtube.com/watch?v=kmxnjpJj6CM) 
@@ -254,7 +256,7 @@ GunZ The Duel Releases <br>
 - hpap bar in gunz source code: [hpap bar in gunz source code](https://www.youtube.com/watch?v=Y5MdaA1ejlg)
 - add emoticon chat gunz: [add emoticon chat gunz](https://www.youtube.com/watch?v=9OsTuzHPAvs)
 - addition of flags website: [addition of flags website](https://www.youtube.com/watch?v=AZFuvtaBqs8)
-
+- gunz loading design tutorial: [gunz loading design](https://www.youtube.com/watch?v=Rggd0GeCdTg)
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
