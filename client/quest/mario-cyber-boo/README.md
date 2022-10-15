@@ -1,4 +1,4 @@
- copy & paste client/model/NPC <br>
+copy & paste client/model/NPC <br>
  - all the .mrs files
  
  decompile model.mrs replace <br> 
@@ -46,3 +46,8 @@ matchserver replace <br>
 
       8.Psychic (Map: Dungeon)
       Items:Crimson's Necklace/Crimson's Necklace
+      
+
+![img](https://i.imgur.com/RPOkSzp_d.webp?maxwidth=760&fidelity=grand)
+![img](https://i.imgur.com/P95G8Yh_d.webp?maxwidth=760&fidelity=grand)
+![img](https://i.imgur.com/YfJDVyZ_d.webp?maxwidth=760&fidelity=grand)
