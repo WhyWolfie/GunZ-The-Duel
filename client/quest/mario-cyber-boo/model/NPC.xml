@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML >
+	<AddXml name="goblin" 	filename="model/npc/goblin/goblin.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinG" 	filename="model/npc/goblin/goblinG.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinW" filename="model/npc/goblin/goblinW.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinH" 	filename="model/npc/goblin/goblinH.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinC" 	filename="model/npc/goblin/goblinc.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinK" 	filename="model/npc/goblin/goblinK.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinE" 	filename="model/npc/goblin/goblinE.xml" autoload = "false">  </AddXml>
+	<AddXml name="goblinKB" 	filename="model/npc/goblin/goblinKB.xml" autoload = "false">  </AddXml>
+
+	<AddXml name="palmpoa" 	  filename="model/npc/palmpoa/palmpoa.xml" autoload = "false">  </AddXml>
+	<AddXml name="palmpoaH" 	filename="model/npc/palmpoa/palmpoaH.xml" autoload = "false">  </AddXml>
+	<AddXml name="palmpou" 	  filename="model/npc/palmpoa/palmpou.xml" autoload = "false">  </AddXml>
+	<AddXml name="cpalmpoa" 	filename="model/npc/palmpoa/cpalmpoa.xml" autoload = "false">  </AddXml>
+	<AddXml name="palmpou_baby" 	filename="model/npc/palmpoa/palmpou_baby.xml" autoload = "false">  </AddXml>
+
+	<AddXml name="skeleton" 	filename="model/npc/skeleton/skeleton.xml" autoload = "false">  </AddXml>
+	<AddXml name="skeletonM" 	filename="model/npc/skeleton/skeletonM.xml" autoload = "false">  </AddXml>
+	<AddXml name="skeletonC" 	filename="model/npc/skeleton/skeletonC.xml" autoload = "false">  </AddXml>
+	<AddXml name="skeletonB" 	filename="model/npc/skeleton/skeletonB.xml" autoload = "false">  </AddXml>
+	<AddXml name="theUnholy" 	filename="model/npc/skeleton/theUnholy.xml" autoload = "false">  </AddXml>
+	<AddXml name="Lich" 	        filename="model/npc/skeleton/Lich.xml" autoload = "false">  </AddXml>
+	
+	<AddXml name="kobolt" 	filename="model/npc/kobolt/kobolt.xml" autoload = "false">  </AddXml>
+	<AddXml name="kobold_shaman" 	filename="model/npc/kobolt/kobold_shaman.xml" autoload = "false">  </AddXml>	
+	<AddXml name="koboltC" 	filename="model/npc/kobolt/koboltC.xml" autoload = "false">  </AddXml>
+	<AddXml name="koboltK" 	filename="model/npc/kobolt/koboltK.xml" autoload = "false">  </AddXml>
+
+	<AddXml name="golem" 	filename="model/npc/golem/golem.xml" autoload = "false">  </AddXml>
+	
+	<AddXml name="Scrider" 	filename="model/npc/Scrider/Scrider.xml" autoload = "false">  </AddXml>
+
+		<AddXml name="zolem" 	filename="model/npc/zolem/zolem.xml" autoload = "false">  </AddXml>
+	<AddXml name="Bich" 	filename="model/npc/Bich/Bich.xml" autoload = "false">  </AddXml>
+
+	<AddXml name="palmpou_bman" 	filename="model/npc/Palmpou_bman/palmpou_bman.xml" autoload = "false">  </AddXml>
+
+	<AddXml name="robotw" 	filename="model/npc/robots/babyrobot/robotw.xml" autoload = "false">  </AddXml>
+	<AddXml name="koboltr" 	filename="model/npc/robots/normalrobot/koboltr.xml" autoload = "false">  </AddXml>	
+	<AddXml name="goblinr" 	filename="model/npc/robots/slaverobot/goblinr.xml" autoload = "false">  </AddXml>
+	<AddXml name="rich" 	filename="model/npc/robots/bossrobot/rich.xml" autoload = "false">  </AddXml>
+	
+	<AddXml name="bullet" 	filename="model/npc/mario/bullet/bullet.xml" autoload = "false">  </AddXml>
+	<AddXml name="blblinG" 	filename="model/npc/mario/mob/blblinG.xml" autoload = "false">  </AddXml>
+	<AddXml name="muboltC" 	filename="model/npc/mario/mob/muboltC.xml" autoload = "false">  </AddXml>
+	<AddXml name="clblinC" 	filename="model/npc/mario/mob/clblinC.xml" autoload = "false">  </AddXml>
+	<AddXml name="gheletonM" 	filename="model/npc/mario/mob/gheletonM.xml" autoload = "false">  </AddXml>
+	<AddXml name="stblinC" 	filename="model/npc/mario/mob/stblinC.xml" autoload = "false">  </AddXml>
+	<AddXml name="mushboss" 	filename="model/npc/mario/mushboss/mushboss.xml" autoload = "false">  </AddXml>
+
+	<AddXml name="Ghost_King" 	filename="model/npc/ghost/Ghost_King.xml" autoload = "false">  </AddXml>
+	<AddXml name="Ghost" 	filename="model/npc/ghost/Ghost.xml" autoload = "false">  </AddXml>
+	<AddXml name="Ghost_Mage" 	filename="model/npc/ghost/Ghost_Mage.xml" autoload = "false">  </AddXml>
+	<AddXml name="Ghost_Mage2" 	filename="model/npc/ghost/Ghost_Mage2.xml" autoload = "false">  </AddXml>
+	<AddXml name="Ghost_Elite" 	filename="model/npc/ghost/Ghost_Elite.xml" autoload = "false">  </AddXml>
+	
+	<AddXml name="Shark" filename="model/npc/palmpoa/shark.xml" autoload = "false">  </AddXml>
+	
+	<AddXml name="Scrider" 	filename="model/npc/Scrider/Scrider.xml" autoload = "false">  </AddXml>
+	
+	<!-- King Boo Quest -->
+	<AddXml name="boo" 	filename="model/npc/boo/boo.xml" autoload = "false">  </AddXml>
+
+	<!-- Zombie Quest NPC -->
+	<AddXml name="MZombie" 	filename="model/npc/zombie/MZombie.xml" autoload = "false">  </AddXml>
+	<AddXml name="FZombie" 	filename="model/npc/zombie/FZombie.xml" autoload = "false">  </AddXml>
+	
+	<!-- Infectious Quest NPC -->
+	<AddXml name="infectK" 	filename="model/npc/Devil/infectK.xml" autoload = "false">  </AddXml>
+	<AddXml name="infectC" 	filename="model/npc/Devil/infectC.xml" autoload = "false">  </AddXml>
+	<AddXml name="infectW" 	filename="model/npc/Devil/infectW.xml" autoload = "false">  </AddXml>
+	<AddXml name="infectH" 	filename="model/npc/Devil/infectH.xml" autoload = "false">  </AddXml>
+	<AddXml name="infectG" 	filename="model/npc/Devil/infectG.xml" autoload = "false">  </AddXml>
+	<AddXml name="infect" 	filename="model/npc/Devil/infect.xml" autoload = "false">  </AddXml>
+	
+	<!-- Ice Quest NPC -->
+	<AddXml name="icile" 	filename="model/npc/Ice/icile.xml" autoload = "false">  </AddXml>
+	<AddXml name="ice_ko" 	filename="model/npc/Ice/ice_ko.xml" autoload = "false">  </AddXml>
+	<AddXml name="icile_gunner1" 	filename="model/npc/Ice/ice_go.xml" autoload = "false">  </AddXml>
+	
+	<!-- Posion Quest NPC -->
+	<AddXml name="posion" 	filename="model/npc/Posion/posion.xml" autoload = "false">  </AddXml>
+	<AddXml name="posion_chief" 	filename="model/npc/Posion/posion_chief.xml" autoload = "false">  </AddXml>
+	<AddXml name="posion_king" 	filename="model/npc/Posion/posion_king.xml" autoload = "false">  </AddXml>
+	<AddXml name="posion_shaman" 	filename="model/npc/Posion/posion_shaman.xml" autoload = "false">  </AddXml>
+</XML>
