@@ -243,6 +243,7 @@ GunZ The Duel Releases <br>
 - 3ds max gunz: [3ds max gunz](https://www.youtube.com/watch?v=S0LH4cWkC54)
 - gunz render: [gunz render](https://www.youtube.com/watch?v=Wi5PlpP1wk8) 
 - how to rig stuff and more (3ds max 2014): [how to rig stuff and more (3ds max 2014)](https://www.youtube.com/watch?v=WHajSJ9QEdA)
+- how to create animation jjang: [animation jjang](https://www.youtube.com/watch?v=mPn98RElnKg)
 
 <b>(others)</b>
 - how to add custom maps: [how to add custom maps](https://www.youtube.com/watch?v=hqSnAsM6ezc)
