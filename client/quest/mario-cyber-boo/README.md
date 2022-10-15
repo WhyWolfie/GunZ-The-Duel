@@ -1,3 +1,6 @@
+ decompile model.mrs replace <br> 
+- model/NPC.xml
+ 
  decompile system.mrs replace<br>
 - npc.xml
 - npc2.xml
