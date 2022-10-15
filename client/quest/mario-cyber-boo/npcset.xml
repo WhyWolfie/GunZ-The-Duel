@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML id="NPCSET">
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 고블린
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- Mansion QL 0 -->
+<NPCSET id="10101" name="G01" basenpc="11">						<!-- Random 1 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+</NPCSET>
+<NPCSET id="10102" name="G02" basenpc="11">						<!-- Random 2 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="15" max_rate="15" />				<!-- 고블린 거너 -->
+</NPCSET>
+<NPCSET id="10103" name="G03" basenpc="11">						<!-- Random 3 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+</NPCSET>
+
+<!-- Mansion QL 1 -->
+<NPCSET id="10111" name="G11" basenpc="11">						<!-- Random 1 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+</NPCSET>
+<NPCSET id="10112" name="G12" basenpc="11">						<!-- Random 2 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="15" max_rate="15" />				<!-- 고블린 거너 -->
+</NPCSET>
+<NPCSET id="10113" name="G13" basenpc="11">						<!-- Random 3 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+</NPCSET>
+<NPCSET id="10114" name="G14" basenpc="11">						<!-- Random 4 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="5" max_rate="5" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 2 -->
+<NPCSET id="10121" name="G21" basenpc="11">						<!-- Random 1 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="15" max_rate="15" />				<!-- 고블린 거너 -->
+</NPCSET>
+<NPCSET id="10122" name="G22" basenpc="11">						<!-- Random 2 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+</NPCSET>
+<NPCSET id="10123" name="G23" basenpc="11">						<!-- Random 3 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="5" max_rate="5" />				<!-- 고블린 위저드 -->
+</NPCSET>
+<NPCSET id="10124" name="G24" basenpc="11">						<!-- Random 4 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="5" max_rate="5" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10125" name="G25" basenpc="11">						<!-- Random 5 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="30" max_rate="30" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 3 -->
+<NPCSET id="10131" name="G31" basenpc="11">						<!-- Random 1 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+</NPCSET>
+<NPCSET id="10132" name="G32" basenpc="11">						<!-- Random 2 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="5" max_rate="5" />				<!-- 고블린 위저드 -->
+</NPCSET>
+<NPCSET id="10133" name="G33" basenpc="11">						<!-- Random 3 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="5" max_rate="5" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10134" name="G34" basenpc="11">						<!-- Random 4 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="30" max_rate="30" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10135" name="G35" basenpc="11">						<!-- Random 5 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="5" max_rate="5" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 4 -->
+<NPCSET id="10141" name="G41" basenpc="11">						<!-- Random 1 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="5" max_rate="5" />				<!-- 고블린 위저드 -->
+</NPCSET>
+<NPCSET id="10142" name="G42" basenpc="11">						<!-- Random 2 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="5" max_rate="5" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10143" name="G43" basenpc="11">						<!-- Random 3 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="30" max_rate="30" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10144" name="G44" basenpc="11">						<!-- Random 4 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="5" max_rate="5" />				<!-- 고블린 족장 -->
+</NPCSET>
+<NPCSET id="10145" name="G45" basenpc="11">						<!-- Random 5 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="40" max_rate="40" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="10" max_rate="10" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 5 -->
+<NPCSET id="10151" name="G51" basenpc="11">						<!-- Random 1 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="30" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="5" max_rate="5" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10152" name="G52" basenpc="11">						<!-- Random 2 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="30" max_rate="30" />				<!-- 대장 고블린 -->
+</NPCSET>
+<NPCSET id="10153" name="G53" basenpc="11">						<!-- Random 3 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="5" max_rate="5" />				<!-- 고블린 족장 -->
+</NPCSET>
+<NPCSET id="10154" name="G54" basenpc="11">						<!-- Random 4 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="40" max_rate="40" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="10" max_rate="10" />				<!-- 고블린 족장 -->
+</NPCSET>
+<NPCSET id="10155" name="G55" basenpc="11">						<!-- Random 5 -->
+	<!-- <ADDNPC npc_id="111" min_rate="15" max_rate="15" />		병정 고블린(이벤트용) -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="10" max_rate="10" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="30" max_rate="30" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="20" max_rate="20" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 6 : 고블린 킹(보스) 전 -->
+<NPCSET id="10161" name="G61" basenpc="11">						<!-- Hall 2 -->
+	<ADDNPC npc_id="12" min_rate="30" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="10" max_rate="10" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 6 : 가짜 고블린 킹(보스) 전 -->
+<NPCSET id="10162" name="G62" basenpc="11">						<!-- Hall 2 -->
+	<ADDNPC npc_id="12" min_rate="20" max_rate="20" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="10" max_rate="10" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 6 : 썬더 고블린 킹(보스) 전 -->
+<NPCSET id="10163" name="G63" basenpc="181">						<!-- Hall 2 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Mansion QL 6 : 난쟁이 고블린 킹(보스) 전 -->
+<NPCSET id="10164" name="G64" basenpc="191">						<!-- Hall 2 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 리쟈드
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- Prison QL 0 -->
+<NPCSET id="10201" name="K01" basenpc="21">						<!-- Prison -->
+</NPCSET>
+<NPCSET id="10202" name="K02" basenpc="21">						<!-- Passage 1 -->
+	<ADDNPC npc_id="22" min_rate="20" max_rate="10" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10203" name="K03" basenpc="21">						<!-- Shower Room -->
+	<ADDNPC npc_id="22" min_rate="20" max_rate="20" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10204" name="K04" basenpc="21">						<!-- Passage 3 -->
+	<ADDNPC npc_id="22" min_rate="20" max_rate="20" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="5" max_rate="5" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 1 -->
+<NPCSET id="10211" name="K11" basenpc="21">						<!-- Prison -->
+</NPCSET>
+<NPCSET id="10212" name="K12" basenpc="21">						<!-- Passage 1 -->
+	<ADDNPC npc_id="22" min_rate="20" max_rate="10" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10213" name="K13" basenpc="21">						<!-- Shower Room -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="20" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10214" name="K14" basenpc="21">						<!-- Passage 3 -->
+	<ADDNPC npc_id="22" min_rate="30" max_rate="20" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="20" max_rate="5" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+<NPCSET id="10215" name="K15" basenpc="21">						<!-- Hall 1 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="30" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="20" max_rate="10" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 2 -->
+<NPCSET id="10221" name="K21" basenpc="21">						<!-- Shower Room -->
+</NPCSET>
+<NPCSET id="10222" name="K22" basenpc="21">						<!-- Passage 3 -->
+	<ADDNPC npc_id="22" min_rate="20" max_rate="20" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10223" name="K23" basenpc="21">						<!-- Hall 1 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10224" name="K24" basenpc="21">						<!-- Drainage 1 -->
+	<ADDNPC npc_id="22" min_rate="30" max_rate="30" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="20" max_rate="20" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+<NPCSET id="10225" name="K25" basenpc="21">						<!-- Hall 2 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="20" max_rate="20" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 3 -->
+<NPCSET id="10231" name="K31" basenpc="21">						<!-- Hall 1 -->
+</NPCSET>
+<NPCSET id="10232" name="K32" basenpc="21">						<!-- Drainage 1 -->
+	<ADDNPC npc_id="22" min_rate="50" max_rate="50" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10233" name="K33" basenpc="21">						<!-- Hall 2 -->
+	<ADDNPC npc_id="22" min_rate="50" max_rate="50" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10234" name="K34" basenpc="22">						<!-- Drainage 2 -->
+	<ADDNPC npc_id="23" min_rate="30" max_rate="30" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+<NPCSET id="10235" name="K35" basenpc="21">						<!-- Passage 2 -->
+	<ADDNPC npc_id="22" min_rate="50" max_rate="50" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="30" max_rate="30" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 4 -->
+<NPCSET id="10241" name="K41" basenpc="21">						<!-- Hall 1 -->
+	<ADDNPC npc_id="22" min_rate="35" max_rate="35" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="50" max_rate="50" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+<NPCSET id="10242" name="K42" basenpc="21">						<!-- Drainage 1 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="50" max_rate="50" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+<NPCSET id="10243" name="K43" basenpc="21">						<!-- Hall 2 -->
+	<ADDNPC npc_id="22" min_rate="30" max_rate="30" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="50" max_rate="50" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="24" min_rate="15" max_rate="15" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10244" name="K44" basenpc="23">						<!-- Drainage 2 -->
+	<ADDNPC npc_id="22" min_rate="45" max_rate="45" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="24" min_rate="20" max_rate="20" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10245" name="K45" basenpc="22">						<!-- Passage 2 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 5 -->
+<NPCSET id="10251" name="K51" basenpc="23">						<!-- Drainage 1 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="30" max_rate="30" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="24" min_rate="10" max_rate="10" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10252" name="K52" basenpc="23">						<!-- Hall 2 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="24" min_rate="20" max_rate="20" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10253" name="K53" basenpc="24">						<!-- Drainage 2 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+</NPCSET>
+<NPCSET id="10254" name="K54" basenpc="24">						<!-- Passage 2 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 6 : 리쟈드 왕(보스) 전 -->
+<NPCSET id="10261" name="K61" basenpc="23">						<!-- Drainage 1 -->
+	<ADDNPC npc_id="21" min_rate="30" max_rate="30" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="30" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="24" min_rate="10" max_rate="10" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10262" name="K62" basenpc="23">						<!-- Hall 2 -->
+	<ADDNPC npc_id="21" min_rate="30" max_rate="30" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="30" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="24" min_rate="20" max_rate="15" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10263" name="K63" basenpc="21">						<!-- Drainage 2 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Prison QL 7 : 고장난 골렘(보스) 전 -->
+<NPCSET id="10271" name="K71" basenpc="23">						<!-- Shower Room -->
+	<ADDNPC npc_id="21" min_rate="30" max_rate="25" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="25" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="24" min_rate="20" max_rate="10" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10272" name="K72" basenpc="23">						<!-- Passage 3 -->
+	<ADDNPC npc_id="21" min_rate="30" max_rate="25" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="22" min_rate="40" max_rate="25" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="24" min_rate="20" max_rate="15" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+<NPCSET id="10273" name="K73" basenpc="21">						<!-- Hall 1 -->
+	<ADDNPC npc_id="22" min_rate="10" max_rate="15" />				<!-- 리쟈드 샤먼 -->
+	<ADDNPC npc_id="23" min_rate="10" max_rate="13" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="24" min_rate="5" max_rate="7" />				<!-- 리쟈드 왕 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 스켈레톤
+         
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- Dungeon QL 0 -->
+<NPCSET id="10301" name="S01" basenpc="31">						<!-- Nest 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="30" max_rate="30" />			스켈레톤(이벤트용) -->
+</NPCSET>
+<NPCSET id="10302" name="S02" basenpc="31">						<!-- Passage 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="30" max_rate="30" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+<NPCSET id="10303" name="S03" basenpc="31">						<!-- Passage 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+
+<!-- Dungeon QL 1 -->
+<NPCSET id="10311" name="S11" basenpc="31">						<!-- Nest 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="30" max_rate="30" />			스켈레톤(이벤트용) -->
+</NPCSET>
+<NPCSET id="10312" name="S12" basenpc="31">						<!-- Passage 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="30" max_rate="30" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+<NPCSET id="10313" name="S13" basenpc="31">						<!-- Passage 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+<NPCSET id="10314" name="S14" basenpc="32">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 2 -->
+<NPCSET id="10321" name="S21" basenpc="31">						<!-- Passage 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="30" max_rate="30" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+<NPCSET id="10322" name="S22" basenpc="31">						<!-- Passage 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+<NPCSET id="10323" name="S23" basenpc="32">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10324" name="S24" basenpc="31">						<!-- Cavern 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10325" name="S25" basenpc="31">						<!-- Cavern 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 3 -->
+<NPCSET id="10331" name="S31" basenpc="31">						<!-- Passage 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="20" max_rate="20" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+</NPCSET>
+<NPCSET id="10332" name="S32" basenpc="32">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10333" name="S33" basenpc="31">						<!-- Cavern 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10334" name="S34" basenpc="31">						<!-- Cavern 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10335" name="S35" basenpc="33">						<!-- Nest 3 -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 4 -->
+<NPCSET id="10341" name="S41" basenpc="32">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10342" name="S42" basenpc="31">						<!-- Cavern 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10343" name="S43" basenpc="31">						<!-- Cavern 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10344" name="S44" basenpc="33">						<!-- Nest 3 -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+</NPCSET>
+<NPCSET id="10345" name="S45" basenpc="32">						<!-- Passage 2 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 5 -->
+<NPCSET id="10351" name="S51" basenpc="31">						<!-- Cavern 1 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="50" max_rate="50" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10352" name="S52" basenpc="31">						<!-- Cavern 3 -->
+	<!-- <ADDNPC npc_id="131" min_rate="5" max_rate="5" />			스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10353" name="S53" basenpc="33">						<!-- Nest 3 -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+</NPCSET>
+<NPCSET id="10354" name="S54" basenpc="32">						<!-- Passage 2 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+</NPCSET>
+<NPCSET id="10355" name="S55" basenpc="32">						<!-- Nest 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="15" max_rate="15" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="36" min_rate="10" max_rate="10" />				<!-- 리치 폰 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 6 : 슈페리온(보스) 전 -->
+<NPCSET id="10361" name="S61" basenpc="31">						<!-- Passage 1 -->
+	<ADDNPC npc_id="32" min_rate="30" max_rate="30" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="20" max_rate="20" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10362" name="S62" basenpc="32">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10363" name="S63" basenpc="31">						<!-- Cavern 1 -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10364" name="S64" basenpc="31">						<!-- Cavern 3 -->
+	<ADDNPC npc_id="32" min_rate="20" max_rate="20" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 6 : 아네라몬(보스) 전 -->
+<NPCSET id="10371" name="S71" basenpc="31">						<!-- Passage 1 -->
+	<ADDNPC npc_id="32" min_rate="30" max_rate="30" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="20" max_rate="20" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10372" name="S72" basenpc="32">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10373" name="S73" basenpc="31">						<!-- Cavern 1 -->
+	<ADDNPC npc_id="32" min_rate="40" max_rate="40" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10374" name="S74" basenpc="31">						<!-- Nest 3 -->
+	<ADDNPC npc_id="32" min_rate="20" max_rate="20" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="30" max_rate="30" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+<!-- Dungeon QL 6 : 리치(보스) 전 -->
+<NPCSET id="10381" name="S81" basenpc="36">						<!-- Passage 1 -->
+	<ADDNPC npc_id="31" min_rate="10" max_rate="10" />				<!-- 스켈레톤 -->
+	<ADDNPC npc_id="32" min_rate="20" max_rate="20" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10382" name="S82" basenpc="36">						<!-- Cavern 2 -->
+	<ADDNPC npc_id="32" min_rate="20" max_rate="20" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="10" max_rate="10" />				<!-- 거대 스켈레톤 -->
+</NPCSET>
+<NPCSET id="10383" name="S83" basenpc="36">						<!-- Cavern 1 -->
+	<ADDNPC npc_id="32" min_rate="20" max_rate="20" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="40" max_rate="40" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="10" max_rate="10" />				<!-- 저주받은 시신 -->
+</NPCSET>
+<NPCSET id="10384" name="S84" basenpc="31">						<!-- Nest 3 -->
+	<ADDNPC npc_id="32" min_rate="30" max_rate="30" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="30" max_rate="30" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="8" max_rate="8" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="8" max_rate="8" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="36" min_rate="10" max_rate="10" />				<!-- 리치 폰 -->
+	<ADDNPC npc_id="41" min_rate="0.01" max_rate="0.01" />				<!-- 팜포아 베이비 -->
+</NPCSET>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 팜포아, 팜포우
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!-- 팜포아 대장 세트 -->
+<NPCSET id="10401" name="P01" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="20" max_rate="20" />				<!-- 팜포아 -->
+</NPCSET>
+<NPCSET id="10402" name="P02" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="40" max_rate="40" />				<!-- 팜포아 -->
+</NPCSET>
+<NPCSET id="10403" name="P03" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="50" max_rate="50" />				<!-- 팜포아 -->
+</NPCSET>
+
+
+<!-- 팜포우 보스 세트 -->
+<NPCSET id="10411" name="P11" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="40" max_rate="40" />				<!-- 팜포아 -->
+</NPCSET>
+<NPCSET id="10412" name="P12" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="40" max_rate="40" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="20" max_rate="20" />				<!-- 팜포아 대장 -->
+</NPCSET>
+<NPCSET id="10413" name="P13" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="30" max_rate="30" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="30" max_rate="30" />				<!-- 팜포아 대장 -->
+</NPCSET>
+<NPCSET id="10414" name="P14" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="30" max_rate="30" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="30" max_rate="30" />				<!-- 팜포아 대장 -->
+</NPCSET>
+
+
+<!-- 저주 받은 팜포우 세트 -->
+<NPCSET id="10421" name="P21" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="40" max_rate="40" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="20" max_rate="20" />				<!-- 팜포아 대장 -->
+</NPCSET>
+<NPCSET id="10422" name="P22" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="30" max_rate="30" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="30" max_rate="30" />				<!-- 팜포아 대장 -->
+</NPCSET>
+<NPCSET id="10423" name="P23" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="30" max_rate="30" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="30" max_rate="30" />				<!-- 팜포아 대장 -->
+	<ADDNPC npc_id="44" min_rate="10" max_rate="10" />				<!-- 팜포우 -->
+</NPCSET>
+<NPCSET id="10424" name="P24" basenpc="48">						<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="30" max_rate="30" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="30" max_rate="30" />				<!-- 팜포아 대장 -->
+	<ADDNPC npc_id="44" min_rate="10" max_rate="10" />				<!-- 팜포우 -->
+</NPCSET>
+
+
+<!-- Debug 용 -->
+<NPCSET id="11000" name="D10" basenpc="11">						<!-- Hall 2 -->
+	<ADDNPC npc_id="12" min_rate="0.001" max_rate="0.001" />				<!-- 고블린 거너 -->
+	<ADDNPC npc_id="13" min_rate="0.001" max_rate="0.001" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="14" min_rate="0.001" max_rate="0.001" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="15" min_rate="0.001" max_rate="0.001" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="16" min_rate="0.001" max_rate="0.001" />				<!-- 고블린킹 -->
+	<ADDNPC npc_id="17" min_rate="0.001" max_rate="0.001" />				<!-- 가짜 고블린킹 -->
+	<ADDNPC npc_id="18" min_rate="0.001" max_rate="0.001" />				<!-- 썬더 고블린킹 -->
+	<ADDNPC npc_id="181" min_rate="0.001" max_rate="0.001" />				<!-- 썬더 고블린킹 주니어 -->
+	<ADDNPC npc_id="19" min_rate="0.001" max_rate="0.001" />				<!-- 난쟁이 고블린킹 -->
+	<ADDNPC npc_id="191" min_rate="0.001" max_rate="0.001" />				<!-- 난쟁이 고블린킹 주니어 -->
+	<ADDNPC npc_id="111" min_rate="0.001" max_rate="0.001" />				<!-- 병정 고블린(산타 모자 이벤트용) -->
+	<ADDNPC npc_id="21" min_rate="0.001" max_rate="0.001" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="22" min_rate="0.001" max_rate="0.001" />				<!-- 리쟈드 샤만 -->
+	<ADDNPC npc_id="23" min_rate="0.001" max_rate="0.001" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="24" min_rate="0.001" max_rate="0.001" />				<!-- 리쟈드 왕 -->
+	<ADDNPC npc_id="25" min_rate="0.001" max_rate="0.001" />				<!-- 리쟈드 왕(보스) -->
+	<ADDNPC npc_id="26" min_rate="0.001" max_rate="0.001" />				<!-- 고장난 골렘(보스) -->
+	<ADDNPC npc_id="31" min_rate="0.001" max_rate="0.001" />				<!-- 스켈레톤  -->
+	<ADDNPC npc_id="32" min_rate="0.001" max_rate="0.001" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="33" min_rate="0.001" max_rate="0.001" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="34" min_rate="0.001" max_rate="0.001" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="35" min_rate="0.001" max_rate="0.001" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="36" min_rate="0.001" max_rate="0.001" />				<!-- 리치 폰 -->
+	<ADDNPC npc_id="37" min_rate="0.001" max_rate="0.001" />				<!-- 슈페리온(보스) -->
+	<ADDNPC npc_id="38" min_rate="0.001" max_rate="0.001" />				<!-- 아네라몬(보스) -->
+	<ADDNPC npc_id="39" min_rate="0.001" max_rate="0.001" />				<!-- 리치(보스) -->
+	<ADDNPC npc_id="131" min_rate="0.001" max_rate="0.001" />				<!-- 스켈레톤(이벤트용) -->
+	<ADDNPC npc_id="41" min_rate="0.001" max_rate="0.001" />				<!-- 팜포아 베이비 -->
+	<ADDNPC npc_id="42" min_rate="0.001" max_rate="0.001" />				<!-- 팜포아 -->
+	<ADDNPC npc_id="43" min_rate="0.001" max_rate="0.001" />				<!-- 팜포아 대장 -->
+	<ADDNPC npc_id="44" min_rate="0.001" max_rate="0.001" />				<!-- 팜포우 -->
+	<ADDNPC npc_id="45" min_rate="0.001" max_rate="0.001" />				<!-- 저주받은 팜포우 -->
+	<ADDNPC npc_id="46" min_rate="0.001" max_rate="0.001" />				<!-- 대장 팜포아 보스 -->
+	<ADDNPC npc_id="47" min_rate="0.001" max_rate="0.001" />				<!-- 팜포우 보스 -->
+	<ADDNPC npc_id="48" min_rate="0.001" max_rate="0.001" />				<!-- 팜포우 베이비 : 실전용 -->
+</NPCSET>
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ 서바이벌 모드
+ 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!-- 맨션 1 세트 -->
+<NPCSET id="20001" name="V11" basenpc="155">						<!-- 고블린 족장 -->
+	<ADDNPC npc_id="151" min_rate="25" max_rate="25" />				<!-- 병정 고블린 -->
+	<ADDNPC npc_id="152" min_rate="25" max_rate="25" />				<!-- 고블린거너 -->
+	<ADDNPC npc_id="153" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="154" min_rate="15" max_rate="15" />				<!-- 대장 고블린 -->
+</NPCSET>
+
+<!-- 맨션 2 세트 -->
+<NPCSET id="20002" name="V12" basenpc="155">						<!-- 고블린 족장 -->
+	<ADDNPC npc_id="151" min_rate="20" max_rate="20" />				<!-- 병정 고블린 -->
+	<ADDNPC npc_id="152" min_rate="20" max_rate="20" />				<!-- 고블린거너 -->
+	<ADDNPC npc_id="153" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="154" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+</NPCSET>
+
+<!-- 맨션 3 세트 -->
+<NPCSET id="20003" name="V13" basenpc="158">						<!-- 썬더 고블린킹 주니어 -->
+	<ADDNPC npc_id="151" min_rate="10" max_rate="10" />				<!-- 병정 고블린 -->
+	<ADDNPC npc_id="152" min_rate="10" max_rate="10" />				<!-- 고블린거너 -->
+	<ADDNPC npc_id="153" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="154" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="155" min_rate="20" max_rate="20" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="157" min_rate="10" max_rate="10" />				<!-- 난쟁이 고블린킹 주니어 -->
+</NPCSET>
+
+<!-- 맨션 4 세트 -->
+<NPCSET id="20004" name="V14" basenpc="158">						<!-- 썬더 고블린킹 주니어 -->
+	<ADDNPC npc_id="151" min_rate="5" max_rate="5" />					<!-- 병정 고블린 -->
+	<ADDNPC npc_id="152" min_rate="5" max_rate="5" />					<!-- 고블린거너 -->
+	<ADDNPC npc_id="153" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="154" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="155" min_rate="20" max_rate="20" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="157" min_rate="15" max_rate="15" />				<!-- 난쟁이 고블린킹 주니어 -->
+</NPCSET>
+
+<!-- 맨션 5 세트 -->
+<NPCSET id="20005" name="V15" basenpc="156">						<!-- 고블린킹 -->
+	<ADDNPC npc_id="151" min_rate="5" max_rate="5" />					<!-- 병정 고블린 -->
+	<ADDNPC npc_id="152" min_rate="5" max_rate="5" />					<!-- 고블린거너 -->
+	<ADDNPC npc_id="153" min_rate="20" max_rate="20" />				<!-- 고블린 위저드 -->
+	<ADDNPC npc_id="154" min_rate="20" max_rate="20" />				<!-- 대장 고블린 -->
+	<ADDNPC npc_id="155" min_rate="20" max_rate="20" />				<!-- 고블린 족장 -->
+	<ADDNPC npc_id="157" min_rate="15" max_rate="15" />				<!-- 난쟁이 고블린킹 주니어 -->
+	<ADDNPC npc_id="158" min_rate="14" max_rate="14" />				<!-- 썬더 고블린킹 주니어 -->
+</NPCSET>
+
+
+
+<!-- 프리즌 1 세트 -->
+<NPCSET id="20011" name="V21" basenpc="163">						<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="161" min_rate="40" max_rate="40" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="162" min_rate="40" max_rate="40" />				<!-- 리쟈드 샤만 -->
+</NPCSET>
+
+<!-- 프리즌 2 세트 -->
+<NPCSET id="20012" name="V22" basenpc="163">						<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="161" min_rate="35" max_rate="35" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="162" min_rate="35" max_rate="35" />				<!-- 리쟈드 샤만 -->
+</NPCSET>
+
+<!-- 프리즌 3 세트 -->
+<NPCSET id="20013" name="V23" basenpc="164">						<!-- 리쟈드 왕 -->
+	<ADDNPC npc_id="161" min_rate="25" max_rate="25" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="162" min_rate="25" max_rate="25" />				<!-- 리쟈드 샤만 -->
+	<ADDNPC npc_id="163" min_rate="25" max_rate="25" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+
+<!-- 프리즌 4 세트 -->
+<NPCSET id="20014" name="V24" basenpc="164">						<!-- 리쟈드 왕 -->
+	<ADDNPC npc_id="161" min_rate="20" max_rate="20" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="162" min_rate="20" max_rate="20" />				<!-- 리쟈드 샤만 -->
+	<ADDNPC npc_id="163" min_rate="30" max_rate="30" />				<!-- 대장 리쟈드 -->
+</NPCSET>
+
+<!-- 프리즌 5 세트 -->
+<NPCSET id="20015" name="V25" basenpc="165">						<!-- 리쟈드 왕(보스) -->
+	<ADDNPC npc_id="161" min_rate="20" max_rate="20" />				<!-- 리쟈드 -->
+	<ADDNPC npc_id="162" min_rate="20" max_rate="20" />				<!-- 리쟈드 샤만 -->
+	<ADDNPC npc_id="163" min_rate="30" max_rate="30" />				<!-- 대장 리쟈드 -->
+	<ADDNPC npc_id="164" min_rate="29" max_rate="29" />				<!-- 리쟈드 왕 -->
+</NPCSET>
+
+
+
+<!-- 던전 1 세트 -->
+<NPCSET id="20021" name="V31" basenpc="176">						<!-- 리치 폰 -->
+	<ADDNPC npc_id="171" min_rate="25" max_rate="25" />				<!-- 스켈레톤 -->
+	<ADDNPC npc_id="172" min_rate="25" max_rate="25" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="173" min_rate="20" max_rate="20" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="174" min_rate="20" max_rate="20" />				<!-- 거대 스켈레톤 -->
+</NPCSET>
+
+<!-- 던전 2 세트 -->
+<NPCSET id="20022" name="V32" basenpc="176">						<!-- 리치 폰 -->
+	<ADDNPC npc_id="171" min_rate="20" max_rate="20" />				<!-- 스켈레톤 -->
+	<ADDNPC npc_id="172" min_rate="20" max_rate="20" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="173" min_rate="20" max_rate="20" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="174" min_rate="20" max_rate="20" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="175" min_rate="10" max_rate="10" />				<!-- 저주받은 시신 -->
+</NPCSET>
+
+<!-- 던전 3 세트 -->
+<NPCSET id="20023" name="V33" basenpc="176">						<!-- 리치 폰 -->
+	<ADDNPC npc_id="171" min_rate="15" max_rate="15" />				<!-- 스켈레톤 -->
+	<ADDNPC npc_id="172" min_rate="15" max_rate="15" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="173" min_rate="20" max_rate="20" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="174" min_rate="20" max_rate="20" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="175" min_rate="15" max_rate="15" />				<!-- 저주받은 시신 -->
+</NPCSET>
+
+<!-- 던전 4 세트 -->
+<NPCSET id="20024" name="V34" basenpc="176">						<!-- 리치 폰 -->
+	<ADDNPC npc_id="171" min_rate="10" max_rate="10" />				<!-- 스켈레톤 -->
+	<ADDNPC npc_id="172" min_rate="10" max_rate="10" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="173" min_rate="25" max_rate="25" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="174" min_rate="25" max_rate="25" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="175" min_rate="15" max_rate="15" />				<!-- 저주받은 시신 -->
+</NPCSET>
+
+<!-- 던전 5 세트 -->
+<NPCSET id="20025" name="V35" basenpc="178">						<!-- 아네라몬(보스) -->
+	<ADDNPC npc_id="171" min_rate="10" max_rate="10" />				<!-- 스켈레톤 -->
+	<ADDNPC npc_id="172" min_rate="10" max_rate="10" />				<!-- 스켈레톤 메이지 -->
+	<ADDNPC npc_id="173" min_rate="25" max_rate="25" />				<!-- 대장 스켈레톤 -->
+	<ADDNPC npc_id="174" min_rate="25" max_rate="25" />				<!-- 거대 스켈레톤 -->
+	<ADDNPC npc_id="175" min_rate="14" max_rate="14" />				<!-- 저주받은 시신 -->
+	<ADDNPC npc_id="176" min_rate="14" max_rate="14" />				<!-- 리치 폰 -->
+</NPCSET>
+
+<!-- Ghost -->
+<NPCSET id="10825" name="Gh1" basenpc="148">
+    <ADDNPC npc_id="147" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="149" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10826" name="Gh2" basenpc="148">
+    <ADDNPC npc_id="147" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="148" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10827" name="Gh3" basenpc="149">
+    <ADDNPC npc_id="147" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10828" name="Gh4" basenpc="149">
+    <ADDNPC npc_id="147" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="148" min_rate="30" max_rate="30" />            
+</NPCSET>
+
+<!-- Ghost -->
+<NPCSET id="10829" name="P30" basenpc="240">
+    <ADDNPC npc_id="239" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="241" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10830" name="P31" basenpc="240">
+    <ADDNPC npc_id="239" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="241" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10831" name="P32" basenpc="240">
+    <ADDNPC npc_id="239" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10832" name="P33" basenpc="240">
+    <ADDNPC npc_id="241" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="242" min_rate="30" max_rate="30" />            
+</NPCSET>
+
+<!-- Ghost -->
+<NPCSET id="10833" name="P26" basenpc="136">
+    <ADDNPC npc_id="135" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="137" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10834" name="P27" basenpc="136">
+    <ADDNPC npc_id="135" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="137" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10835" name="P28" basenpc="137">
+    <ADDNPC npc_id="135" min_rate="30" max_rate="30" />            
+</NPCSET>
+<NPCSET id="10836" name="P29" basenpc="137">
+    <ADDNPC npc_id="135" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="136" min_rate="30" max_rate="30" />            
+</NPCSET>
+
+<!-- Ghost -->
+<NPCSET id="10837" name="B01" basenpc="98">
+    <ADDNPC npc_id="98" min_rate="30" max_rate="30" />           
+</NPCSET>
+<NPCSET id="10838" name="B02" basenpc="98">
+    <ADDNPC npc_id="98" min_rate="30" max_rate="30" />           
+</NPCSET>
+<NPCSET id="10839" name="B03" basenpc="98">
+    <ADDNPC npc_id="98" min_rate="30" max_rate="30" />            
+</NPCSET>
+
+<!-- Ghost -->
+<NPCSET id="10840" name="P25" basenpc="133">
+    <ADDNPC npc_id="134" min_rate="30" max_rate="30" />           
+</NPCSET>
+
+<!-- Knifeman Man -->
+<NPCSET id="10841" name="P96" basenpc="201">
+    <ADDNPC npc_id="202" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="203" min_rate="30" max_rate="30" />
+</NPCSET>
+
+<!-- Hunter Man -->
+<NPCSET id="10842" name="P94" basenpc="206">
+    <ADDNPC npc_id="207" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="208" min_rate="30" max_rate="30" />
+</NPCSET>
+
+<!-- Rifleman Man -->
+<NPCSET id="10842" name="P95" basenpc="221">
+    <ADDNPC npc_id="222" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="223" min_rate="30" max_rate="30" />
+</NPCSET>
+
+<!-- Charger Robot 1 -->
+<NPCSET id="10843" name="P90" basenpc="209">
+    <ADDNPC npc_id="210" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="211" min_rate="30" max_rate="30" />
+</NPCSET>
+
+<!-- Shoter Robot -->
+<NPCSET id="10844" name="P92" basenpc="215">
+    <ADDNPC npc_id="216" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="217" min_rate="30" max_rate="30" />
+</NPCSET>
+
+<!-- Disposer Robot -->
+<NPCSET id="10845" name="P93" basenpc="218">
+    <ADDNPC npc_id="219" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="220" min_rate="30" max_rate="30" />
+</NPCSET>
+
+<!-- Chaser Robot 2 -->
+<NPCSET id="10846" name="P91" basenpc="209">
+    <ADDNPC npc_id="210" min_rate="30" max_rate="30" />
+    <ADDNPC npc_id="211" min_rate="30" max_rate="30" />
+</NPCSET>
+
+
+</XML>
+
