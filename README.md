@@ -161,7 +161,6 @@ GunZ The Duel Releases <br>
 - anti exploit chatmake (08 version): [anti exploit chatmake](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20exploit%20chatmake%20(08))
 - gunz asm (2007/2008 servers): [gunz asm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20asm%202007-2008)
 
-
 (commands)<br>
 - hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20hitbox%20simple)
 - maptexture: [maptexture](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20maptexture)
@@ -176,6 +175,7 @@ GunZ The Duel Releases <br>
 - colourlist/mods/commands list [colourlist/mods/commands list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20colourlist%20%26%20mods%20%26%20commands%20list)
 - staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
 - muteall: [muteall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20muteall)
+- teleport too: [teleport too](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
