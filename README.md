@@ -252,6 +252,7 @@ GunZ The Duel Releases <br>
 - savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april)
 - progunzv5: [progunzv5](https://archive.org/details/pro-gunz-v-5)
 - rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
+- p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
@@ -293,6 +294,7 @@ GunZ The Duel Releases <br>
 - add emoticon chat gunz: [add emoticon chat gunz](https://www.youtube.com/watch?v=9OsTuzHPAvs)
 - addition of flags website: [addition of flags website](https://www.youtube.com/watch?v=AZFuvtaBqs8)
 - gunz loading design tutorial: [gunz loading design](https://www.youtube.com/watch?v=Rggd0GeCdTg)
+- tutorial website: [tutorial website](https://www.youtube.com/watch?v=8bVnhDeJLRA)
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
