@@ -315,6 +315,7 @@ GunZ The Duel Releases <br>
 - quickblocks: https://www.youtube.com/watch?v=yBjiZNJVQgU
 - basic k-style guide 2020: https://www.youtube.com/watch?v=cLoTieAVV8E
 - gunz maps: https://www.youtube.com/watch?v=LRBCupfqZb4
+- gunz 2004 trailer: [gunz 2004 trailer](https://www.youtube.com/watch?v=xZo_FIESUQk)
 
 <b>(gunz soundtracks)</b>
 - character selection: https://www.youtube.com/watch?v=4SMyQPz7rtk
