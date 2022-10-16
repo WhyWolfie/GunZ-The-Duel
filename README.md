@@ -295,6 +295,7 @@ GunZ The Duel Releases <br>
 - addition of flags website: [addition of flags website](https://www.youtube.com/watch?v=AZFuvtaBqs8)
 - gunz loading design tutorial: [gunz loading design](https://www.youtube.com/watch?v=Rggd0GeCdTg)
 - tutorial website: [tutorial website](https://www.youtube.com/watch?v=8bVnhDeJLRA)
+- setup website exclusive: [setup website exclusive](https://www.youtube.com/watch?v=ceZOKnMjd2c)
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
