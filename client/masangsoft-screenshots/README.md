@@ -1,6 +1,7 @@
 <b>[Masangsoft - videos]</b><br>
 - [Test Gladiator](https://www.youtube.com/watch?v=vqhsYhMSfgg&ab_channel=GunZDEV)
 - [K-GunZ General](https://www.youtube.com/watch?v=xP1rlVPhod0&ab_channel=GunZDEV)
+- [Masangsoft 2022](https://www.youtube.com/watch?v=yVQijnyHOXE)
 
 <b>[Masangsoft - Screenshots around (2015]</b><br>
 <b>First week in Masangsoft</b>
