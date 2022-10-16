@@ -203,7 +203,6 @@ GunZ The Duel Releases <br>
 - gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
 
 <b>[custom clients]</b>
-- obeliskgunz: [obeliskgunz](https://archive.org/details/obelisk-gun-z)
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
 - competitive V3: [competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
 - fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
