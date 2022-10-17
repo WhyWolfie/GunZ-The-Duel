@@ -118,6 +118,7 @@ GunZ The Duel Releases <br>
 - load all loadingscreens: [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md)
 - event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
 - channel for gm: [channel for gm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/channel%20for%20GM)
+- medkit limits: [medkit limits](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/medkit%20limits)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
