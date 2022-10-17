@@ -37,10 +37,24 @@ GunZ The Duel Releases <br>
 - [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
 - [ijji website](https://github.com/tannous94/ijji-website)
 
-<b>[sql]</b>
-- GunzDBFixed: [download](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
-- SQL(2005 x64bit)Server/Express: [download](https://archive.org/details/SQLEXPR)
-- SQL(2005 x32bit)Server/Express: [download](https://archive.org/details/sqlserver-2005-ssmsee_202203)
+<b>[db]</b>
+- GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
+
+(sql: 2005) <br>
+
+- SQL(2005 x64bit)Server/Express: [SQL(2005 x64bit)Server/Express](https://archive.org/details/SQLEXPR)
+- SQL(2005 x32bit)Server/Express: [SQL(2005 x32bit)Server/Express](https://archive.org/details/sqlserver-2005-ssmsee_202203)
+
+(sql: 2014) <br>
+
+- SQL Server Express 2014 (x64): [SQL Server Express 2014 (x64)](https://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/Express%2064BIT/SQLEXPR_x64_ENU.exe)
+- SQL Management Studio 2014: [SQL Management Studio 2014](https://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/MgmtStudio%2064BIT/SQLManagementStudio_x64_ENU.exe)
+
+(sql: 2022) <br>
+
+- SQL Server Express 2022 (x64): [SQL Server Express 2022 (x64)](https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37b0/SQL2019-SSEI-Eval.exe)
+- SQL Management Studio 2022 [SQL Management Studio 2022](https://download.microsoft.com/download/c/7/c/c7ca93fc-3770-4e4a-8a13-1868cb309166/SSMS-Setup-ENU.exe)
+
 
 <b>[tools]</b>
 - visual all runtimes: [download](https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020)
