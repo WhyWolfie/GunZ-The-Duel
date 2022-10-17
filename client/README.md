@@ -28,3 +28,11 @@ and hit enter.
 3) now type: GunzLoader.exe /game "MAP" debug 00"
 4) Hit enter
 5) Close CMD
+
+Thanks to Megaju9 for screenshot.
+1. create a shortcut of 'Gunz.exe'
+2. C:\User\YourName\Desktop\GunzFolder\Gunz.exe /game town
+
+/game (any map you want)
+
+![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/unknown.png)
