@@ -36,7 +36,8 @@ GunZ The Duel Releases <br>
 - [gunz cms](https://github.com/Eronisch/Gunz-CMS) <br>
 - [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
 - [ijji website](https://github.com/tannous94/ijji-website)
-- [gunzfactor source](https://github.com/sohchienmin/GunZ/tree/master)
+- [gunzfactor (source)](https://github.com/sohchienmin/GunZ/tree/master)
+- [blender elu importer (2.8 or higher)](https://github.com/goweiwen/blender-elu-importer)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
