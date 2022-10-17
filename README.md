@@ -194,6 +194,7 @@ GunZ The Duel Releases <br>
 - muteall: [muteall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20muteall)
 - teleport too: [teleport too](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
 - admin_esp: [admin_esp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_esp)
+- senditem: [senditem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20senditem)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
@@ -258,18 +259,23 @@ GunZ The Duel Releases <br>
 - igunz: [igunz](https://archive.org/details/i-gunz-v-1)
 - drgunz: [drgunz](https://archive.org/details/install-drgun-z)
 - knightgunzv3: [knightgunzv3](https://archive.org/details/knight-gun-zv-3)
+- lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1)
 - lastgunzv2: [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer)
 - maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer)
 - netmarblegunz(v557): [netmarblegunz(v557)](https://archive.org/details/netmarble-gunz-v-557)
 - netmarblegunz(v236): [netmarblegunz(v236)](https://archive.org/details/netmarble-gunz-v-236)
 - netmarblegunz(v193): [netmarblegunz(v193)](https://archive.org/details/netmarble-gunz-v-193)
 - netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115)
+- masangsoft (20160728): [masangsoft (20160728)](https://archive.org/details/gunz-setup-main-20160728)
+- masangsoft (20160602): [masangsoft (20160602)](https://archive.org/details/gunz-setup-main-20160602)
+- masangsoft (20160107): [masangsoft (20160107)](https://archive.org/details/gunz-setup-main-20160107)
 - mundialgunzv2: [mundialgunzv2](https://archive.org/details/mundial-gunz-v-2)
 - nationalgunz: [nationalgunz](https://archive.org/details/national-gunz-6.6.2015)
 - savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april)
 - progunzv5: [progunzv5](https://archive.org/details/pro-gunz-v-5)
 - rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
 - p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
+- phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
