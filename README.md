@@ -36,6 +36,7 @@ GunZ The Duel Releases <br>
 - [gunz cms](https://github.com/Eronisch/Gunz-CMS) <br>
 - [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
 - [ijji website](https://github.com/tannous94/ijji-website)
+- [gunzfactor source](https://github.com/sohchienmin/GunZ/tree/master)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
@@ -81,7 +82,7 @@ GunZ The Duel Releases <br>
 - challengequest: [challengequest](https://github.com/WhyWolfie/ChallengeQuest)
 - nationalgunz: [nationalgunz](https://github.com/WhyWolfie/NationalGunZ)
 - repack-aren: [repack-aren](https://github.com/WhyWolfie/Repack-Aren)
-- gfzsource: [gfz source](https://github.com/WhyWolfie/GZF-Source)
+- gfzsource: [gfz source](https://github.com/sohchienmin/GunZ/tree/master)
 - 2005 source & old patches: [2005 source](https://archive.org/details/gunz.-7z)
 
 <b>[1.5 snippets]</b><br>
