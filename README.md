@@ -193,6 +193,7 @@ GunZ The Duel Releases <br>
 - staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
 - muteall: [muteall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20muteall)
 - teleport too: [teleport too](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
+- admin_esp: [admin_esp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_esp)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
