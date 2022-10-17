@@ -276,6 +276,8 @@ GunZ The Duel Releases <br>
 - rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
 - p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
 - phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
+- reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
+- gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
