@@ -195,6 +195,8 @@ GunZ The Duel Releases <br>
 - teleport too: [teleport too](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
 - admin_esp: [admin_esp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_esp)
 - senditem: [senditem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20senditem)
+- extra: [extra](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20extra)
+- serverping: [serverping](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20pingserver)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
