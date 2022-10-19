@@ -135,6 +135,7 @@ GunZ The Duel Releases <br>
 - event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
 - channel for gm: [channel for gm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/channel%20for%20GM)
 - medkit limits: [medkit limits](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/medkit%20limits)
+- hide administrator level: [hide administrator level](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
