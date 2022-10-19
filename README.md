@@ -281,6 +281,7 @@ GunZ The Duel Releases <br>
 - reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
 - gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
+- firegunz: [firegunz](https://archive.org/details/fire-gunz)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
