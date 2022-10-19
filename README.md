@@ -280,6 +280,7 @@ GunZ The Duel Releases <br>
 - phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
 - reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
 - gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
+- dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
