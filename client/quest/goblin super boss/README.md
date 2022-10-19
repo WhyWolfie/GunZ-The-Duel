@@ -120,8 +120,11 @@ zquestitem.xml
     <ITEM id="050592" name="Goblin Super Boss" level="0" type="doll" desc="Endless Quest." unique="0" price="1" secrifice="1" param="0" />  
 
 
+Results <br>
 
+![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/quest/goblin%20super%20boss/1.jpg)
 
+![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/quest/goblin%20super%20boss/2.jpg)
 
 
 
