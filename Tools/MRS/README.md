@@ -56,7 +56,8 @@
 - p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
 - reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
 - gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
-
+- dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
+- firegunz: [firegunz](https://archive.org/details/fire-gunz)
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
