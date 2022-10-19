@@ -360,6 +360,7 @@ GunZ The Duel Releases <br>
 - basic k-style guide 2020: https://www.youtube.com/watch?v=cLoTieAVV8E
 - gunz maps:  [gunz maps](https://www.youtube.com/watch?v=LRBCupfqZb4)
 - gunz 2004 trailer: [gunz 2004 trailer](https://www.youtube.com/watch?v=xZo_FIESUQk)
+- gunz 2006 trailer: [gunz 2006 trailer](https://www.youtube.com/watch?v=5TTyE7cjDJ8)
 
 <b>(gunz soundtracks)</b>
 - character selection: [character selection](https://www.youtube.com/watch?v=4SMyQPz7rtk)
