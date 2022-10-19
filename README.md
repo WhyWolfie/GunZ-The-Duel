@@ -325,6 +325,18 @@ GunZ The Duel Releases <br>
 - gunz loading design tutorial: [gunz loading design](https://www.youtube.com/watch?v=Rggd0GeCdTg)
 - tutorial website: [tutorial website](https://www.youtube.com/watch?v=8bVnhDeJLRA)
 - setup website exclusive: [setup website exclusive](https://www.youtube.com/watch?v=ceZOKnMjd2c)
+- how to add a shotgun to gunz: [how to add a shotgun to gunz](https://www.youtube.com/watch?v=D0F95s9NDpc)
+- installing appserv 2.6.0: [installing appserv 2.6.0](https://www.youtube.com/watch?v=UCVrojg_Rnc)
+- configuring appserv: [configuring appserv](https://www.youtube.com/watch?v=ChhXiTLkFug)
+- installing sql server 2005: [installing sql server 2005](https://www.youtube.com/watch?v=DC4kS7CcYy8)
+- adding quest items to gunz: [adding quest items to gunz](https://www.youtube.com/watch?v=a2NoMXWlkNw)
+- how to remove the cancel update from the launcher: [how to remove the cancel update from the launcher](https://www.youtube.com/watch?v=xx4wPKtKjTc)
+- editing gunz experience: [editing gunz experience](https://www.youtube.com/watch?v=OrYg8hjw7Jo)
+- patch exploit matchserver: [patch exploit matchserver](https://www.youtube.com/watch?v=Fh7gHYnMNRY)
+- changing runnable name in launcher: [changing runnable name in launcher](https://www.youtube.com/watch?v=wZtOWz47ktw)
+- query sql: [query sql](https://www.youtube.com/watch?v=S1ePDdjm5Jw)
+- how to hook dll in gunz runnable: [how to hook dll in gunz runnable](https://www.youtube.com/watch?v=9459pUzbA90)
+- how to create an update for your gunz: [how to create an update for your gunz](https://www.youtube.com/watch?v=x64YV1_bWdc)
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
