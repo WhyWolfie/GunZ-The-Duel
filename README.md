@@ -255,11 +255,11 @@ GunZ The Duel Releases <br>
 - enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
 - fusiongunz: [fusiongunz](https://archive.org/details/fusion-gunz)
 - gunzgo: [gunzgo](https://archive.org/details/gunz-go-2016)
-- masangsoft(2016-01-07): [masangsoft(2016-01-07)](https://archive.org/details/gunz-setup-main-20160107)
 - dualitygunz: [dualitygunz](https://archive.org/details/instalar-duality-gun-z)
 - eurogunzv10: [eurogunzv10](https://archive.org/details/gunzv-10-1)
 - igunz: [igunz](https://archive.org/details/i-gunz-v-1)
 - drgunz: [drgunz](https://archive.org/details/install-drgun-z)
+- ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
 - knightgunzv3: [knightgunzv3](https://archive.org/details/knight-gun-zv-3)
 - lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1)
 - lastgunzv2: [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer)
@@ -268,6 +268,7 @@ GunZ The Duel Releases <br>
 - netmarblegunz(v236): [netmarblegunz(v236)](https://archive.org/details/netmarble-gunz-v-236)
 - netmarblegunz(v193): [netmarblegunz(v193)](https://archive.org/details/netmarble-gunz-v-193)
 - netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115)
+- masangsoft (2016-01-07): [masangsoft(2016-01-07)](https://archive.org/details/gunz-setup-main-20160107)
 - masangsoft (20160728): [masangsoft (20160728)](https://archive.org/details/gunz-setup-main-20160728)
 - masangsoft (20160602): [masangsoft (20160602)](https://archive.org/details/gunz-setup-main-20160602)
 - masangsoft (20160107): [masangsoft (20160107)](https://archive.org/details/gunz-setup-main-20160107)
@@ -282,6 +283,7 @@ GunZ The Duel Releases <br>
 - gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 - firegunz: [firegunz](https://archive.org/details/fire-gunz)
+- gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
@@ -339,11 +341,11 @@ GunZ The Duel Releases <br>
 - how to create an update for your gunz: [how to create an update for your gunz](https://www.youtube.com/watch?v=x64YV1_bWdc)
 
 <b>(gameplay)</b>
-- latedash reload half step(LD RHS): https://www.youtube.com/watch?v=Xwjr9KQYCpo
-- k-style intermediate moves: https://www.youtube.com/watch?v=7MOrAi5_gRw
-- gunz basics: https://www.youtube.com/watch?v=zmXK5rYRZ4M
-- gdhs guide: https://www.youtube.com/watch?v=H6SLeru0l4A
-- draft of gunz: https://www.youtube.com/watch?v=W100yqPiBA4
+- latedash reload half step(LD RHS): [latedash reload half step(LD RHS)](https://www.youtube.com/watch?v=Xwjr9KQYCpo)
+- k-style intermediate moves: [k-style intermediate moves](https://www.youtube.com/watch?v=7MOrAi5_gRw)
+- gunz basics: [gunz basics](https://www.youtube.com/watch?v=zmXK5rYRZ4M)
+- gdhs guide: [gdhs guide](https://www.youtube.com/watch?v=H6SLeru0l4A)
+- draft of gunz: [draft of gunz](https://www.youtube.com/watch?v=W100yqPiBA4)
 - complete k-style guide 2: https://www.youtube.com/watch?v=3ZXC-8pFZGk
 - complete k-style guide 3: https://www.youtube.com/watch?v=1fs5UMY96iE
 - art of the massive gunz gladiator: https://www.youtube.com/watch?v=tvQ_jEgkHMY
@@ -356,48 +358,48 @@ GunZ The Duel Releases <br>
 - blinkdash: https://www.youtube.com/watch?v=ivfg7RUyG2Q
 - quickblocks: https://www.youtube.com/watch?v=yBjiZNJVQgU
 - basic k-style guide 2020: https://www.youtube.com/watch?v=cLoTieAVV8E
-- gunz maps: https://www.youtube.com/watch?v=LRBCupfqZb4
+- gunz maps:  [gunz maps](https://www.youtube.com/watch?v=LRBCupfqZb4)
 - gunz 2004 trailer: [gunz 2004 trailer](https://www.youtube.com/watch?v=xZo_FIESUQk)
 
 <b>(gunz soundtracks)</b>
-- character selection: https://www.youtube.com/watch?v=4SMyQPz7rtk
-- game lobby: https://www.youtube.com/watch?v=ABEVoZL6P8I
-- the duel: https://www.youtube.com/watch?v=MK_zQsRF3MY
-- ost once again: https://www.youtube.com/watch?v=aZjB_msGeDQ
-- ost assassin: https://www.youtube.com/watch?v=rnP4gfi9KZ0
-- lets rock: https://www.youtube.com/watch?v=Itxx_VVzpuk
-- ryswick style: https://www.youtube.com/watch?v=8MmBvaGD-IU
-- vague words: https://www.youtube.com/watch?v=WXcbzXb8ObM
-- ost trance mission tmix: https://www.youtube.com/watch?v=i-bPo6ctdaM
-- ost hardcore: https://www.youtube.com/watch?v=8Pr5TY5wApE
-- ost x-fighter: https://www.youtube.com/watch?v=Q79twuvEO44
-- ost walk away: https://www.youtube.com/watch?v=HNC5WrgR0xA
+- character selection: [character selection](https://www.youtube.com/watch?v=4SMyQPz7rtk)
+- game lobby: [game lobby](https://www.youtube.com/watch?v=ABEVoZL6P8I)
+- the duel: [the duel](https://www.youtube.com/watch?v=MK_zQsRF3MY)
+- ost once again: [ost once again](https://www.youtube.com/watch?v=aZjB_msGeDQ)
+- ost assassin: [ost assassin](https://www.youtube.com/watch?v=rnP4gfi9KZ0)
+- lets rock: [lets rock](https://www.youtube.com/watch?v=Itxx_VVzpuk)
+- ryswick style: [ryswick style](https://www.youtube.com/watch?v=8MmBvaGD-IU)
+- vague words: [vague words](https://www.youtube.com/watch?v=WXcbzXb8ObM)
+- ost trance mission tmix: [ost trance mission tmix](https://www.youtube.com/watch?v=i-bPo6ctdaM)
+- ost hardcore: [ost hardcore](https://www.youtube.com/watch?v=8Pr5TY5wApE)
+- ost x-fighter: [ost x-fighter](https://www.youtube.com/watch?v=Q79twuvEO44)
+- ost walk away: [ost walk away](https://www.youtube.com/watch?v=HNC5WrgR0xA)
 
 <b>(documentary)</b>
-- this game could've been the best esport ever: https://www.youtube.com/watch?v=gMPJ38mSkt0
-- how glitches created an accidental success: https://www.youtube.com/watch?v=SfAHpQrj0o8
-- the world's most technical third-person shooter: https://www.youtube.com/watch?v=zvC67kmYxPA
+- this game could've been the best esport ever: [this game could've been the best esport ever](https://www.youtube.com/watch?v=gMPJ38mSkt0)
+- how glitches created an accidental success: [how glitches created an accidental success](https://www.youtube.com/watch?v=SfAHpQrj0o8)
+- the world's most technical third-person shooter: [the world's most technical third-person shooter](https://www.youtube.com/watch?v=zvC67kmYxPA)
 
 <b>(active youtube channels)</b>
-- gunlin: https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos
-- 건즈평가사 (masangsoft): https://www.youtube.com/channel/UCljaHynSadfY5DvlTFowWfQ
-- crusader john gaming: https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos
-- magicfingers: https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg
-- fxpgunz: https://www.youtube.com/channel/UCWGnCS_AxKxM72aF6t6SPKQ/videos
-- gunzdeveloper: https://www.youtube.com/channel/UCnKN3Z_hKT9bVUXlTccBr6w
-- cristina kitty: https://www.youtube.com/channel/UCFy-7mZAEYeLZsc1ppJedaQ/videos
-- vitor komatsu: https://www.youtube.com/c/VitorKomatsu/
-- vitor macedo: https://www.youtube.com/c/k1ngVitin
-- gunz m2o gaming: https://www.youtube.com/channel/UCAF9RbJrm9B3EDb0ZA_h4Sw
-- gaudigz: https://www.youtube.com/c/GaudiGz
-- papa pencho: https://www.youtube.com/c/PAPAPENCHOGAMING
-- nascimentofps: https://www.youtube.com/c/NascimentoFPS
-- airking990: https://www.youtube.com/user/Airking090
-- acerized: https://www.youtube.com/c/Acerized
-- gunz memories: https://www.youtube.com/channel/UCM2CustI-EHUw-wK79hgXIA
+- gunlin:  [gunlin](https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos)
+- 건즈평가사 (masangsoft):  [건즈평가사](https://www.youtube.com/channel/UCljaHynSadfY5DvlTFowWfQ)
+- crusader john gaming:  [crusader john gaming](https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos)
+- magicfingers:  [magicfingers](https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg)
+- fxpgunz:  [fxpgunz](https://www.youtube.com/channel/UCWGnCS_AxKxM72aF6t6SPKQ/videos)
+- gunzdeveloper: [gunzdeveloper](https://www.youtube.com/channel/UCnKN3Z_hKT9bVUXlTccBr6w)
+- cristina kitty: [cristina kitty](https://www.youtube.com/channel/UCFy-7mZAEYeLZsc1ppJedaQ/videos)
+- vitor komatsu: [vitor komatsu](https://www.youtube.com/c/VitorKomatsu/)
+- vitor macedo: [vitor macedo](https://www.youtube.com/c/k1ngVitin)
+- gunz m2o gaming:  [gunz m2o gaming](https://www.youtube.com/channel/UCAF9RbJrm9B3EDb0ZA_h4Sw)
+- gaudigz:  [gaudigz](https://www.youtube.com/c/GaudiGz)
+- papa pencho: [papa pencho](https://www.youtube.com/c/PAPAPENCHOGAMING)
+- nascimentofps: [nascimentofps](https://www.youtube.com/c/NascimentoFPS)
+- airking990: [airking990](https://www.youtube.com/user/Airking090)
+- acerized: [acerized](https://www.youtube.com/c/Acerized)
+- gunz memories: [gunz memories](https://www.youtube.com/channel/UCM2CustI-EHUw-wK79hgXIA)
 
 <b>(famous youtubers)</b>
-- daequan: https://www.youtube.com/watch?v=dSdlUwdHbEA
+- daequan: [daequan](https://www.youtube.com/watch?v=dSdlUwdHbEA)
 
 <b>[items]</b>
 - articgunz: [articgunz](https://archive.org/details/articgunz)
