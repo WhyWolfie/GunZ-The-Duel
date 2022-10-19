@@ -122,9 +122,9 @@ zquestitem.xml
 
 Results <br>
 
-![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/quest/goblin%20super%20boss/1.jpg)
+![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/quest/goblin%20super%20boss/goblinsuperboss1.jpg)
 
-![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/quest/goblin%20super%20boss/2.jpg)
+![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/client/quest/goblin%20super%20boss/goblinsuperboss2.jpg)
 
 
 
