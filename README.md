@@ -294,6 +294,7 @@ GunZ The Duel Releases <br>
 - gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra)
 - utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012)
 - devmode: [devmode](https://archive.org/details/devmode)
+- 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
