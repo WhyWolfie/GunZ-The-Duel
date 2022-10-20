@@ -1,9 +1,10 @@
 [ will update it in the future ^^ ]
 
 [original]
-- ijji: [ijji](https://web.archive.org/web/20061109133906/http://gunz.ijji.com/) 
-- masangsoft: [masangsoft](https://web.archive.org/web/20160520040558/https://gz.masangsoft.com/)
+- netmarble: [netmarble(2006)](https://web.archive.org/web/20060209033457/http://game3.netmarble.net/cp_site/gunz/)
+- ijji: [ijji](https://web.archive.org/web/20061109133906/http://gunz.ijji.com/)
 - aeriagames: [aeriagames](https://web.archive.org/web/20120503025853/http://gunz.aeriagames.com/)
+- masangsoft: [masangsoft](https://web.archive.org/web/20160520040558/https://gz.masangsoft.com/)
 
 [some old servers]
 - nlgunz.net: [nlgunz](https://web.archive.org/web/20090221173713/http://www.nlgunz.net:80/)
