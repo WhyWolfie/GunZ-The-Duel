@@ -425,6 +425,8 @@ GunZ The Duel Releases <br>
 
 <b>[official]</b><br>
 - masangsoft: [masangsoft](https://gz.masanggames.co.kr/)
+- gunz.net: [gunz.net](https://gunz.net/)
+- maiet.net: [maiet.net](https://maiet.net/)
 - gunz2: [gunz2 on steam](https://store.steampowered.com/app/242720/GunZ_2_The_Second_Duel/)
 - gunz.kaybo1.com (shutdown)
 
