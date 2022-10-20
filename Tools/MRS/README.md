@@ -1,7 +1,7 @@
 <b>Will update it later</b> <br>
 <b>[MRS Unpacked]</b> <br>
 - freestylegunzv7: [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer) (FGunZ MRS)
-- enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
+- enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer) (EnigmaGunZ MRS)
 - utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012) (MRSDecompiler Ultimate)
 - devmode: [devmode](https://archive.org/details/devmode) (MRSDecompiler Ultimate)
 - 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603) (MRSDecompiler Ultimate)
