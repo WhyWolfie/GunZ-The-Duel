@@ -176,6 +176,7 @@ GunZ The Duel Releases <br>
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
 - anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
+- client protection: [1.5 client protection hashcalc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/1.5%20files%20client%20protection)
 
 (2007/2008 server) <br>
 - gunzexp v2 modded june: [gunzexp v2](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunzexp%20v2%20%5Bmodded%5D%20june)
