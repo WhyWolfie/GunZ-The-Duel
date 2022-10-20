@@ -19,7 +19,7 @@ GunZ The Duel Releases <br>
 - [gunz2shark](https://github.com/Gunz2Dev/Gunz2Shark) <br>
 - [gunz-proto](https://github.com/MrSuicideFish/GunZ-proto) <br>
 - [three gunz](https://github.com/LostMyCode/three-gunz) <br>
-- [blender elu importer](https://github.com/goweiwen/blender-elu-importer) <br>
+- [blender elu importer (2.8 or higher)](https://github.com/goweiwen/blender-elu-importer)
 - [gunzpedia](https://github.com/zkxjzmswkwl/Gunzpedia) <br>
 - [practica00 website](https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ) <br>
 - [zpatchbuilder](https://github.com/x1nixmzeng/ZPatchBuilder) <br>
@@ -37,7 +37,6 @@ GunZ The Duel Releases <br>
 - [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
 - [ijji website](https://github.com/tannous94/ijji-website)
 - [gunzfactor (source)](https://github.com/sohchienmin/GunZ/tree/master)
-- [blender elu importer (2.8 or higher)](https://github.com/goweiwen/blender-elu-importer)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
