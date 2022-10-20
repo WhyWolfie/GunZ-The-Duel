@@ -62,6 +62,7 @@
 - gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 - firegunz: [firegunz](https://archive.org/details/fire-gunz)
+- gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
