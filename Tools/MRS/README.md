@@ -6,12 +6,11 @@
 - devmode: [devmode](https://archive.org/details/devmode) (MRSDecompiler Ultimate)
 - 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603) (MRSDecompiler Ultimate)
 - gunz 20july14: [gunz 20july14](https://archive.org/details/gunz-20-july-14) (MRSDecompiler Ultimate)
+- phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
 - competitive V3: [competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
-- fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
-- fxp gunz (installer): [fxp gunz (installer)](https://archive.org/details/fxp-gun-z)
 - masangsoftgunz: [masangsoftgunz](https://archive.org/details/gun-zsetup-masang)
 - maximogunz: [maximogunz](https://archive.org/details/maximo-gun-z)
 - vinagunzv12: [vinagunzv12](https://archive.org/details/vinagun-zv-12-1)
@@ -66,5 +65,6 @@
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
-- phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
+- fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
+- fxp gunz (installer): [fxp gunz (installer)](https://archive.org/details/fxp-gun-z)
 
