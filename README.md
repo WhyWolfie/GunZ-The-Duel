@@ -292,6 +292,7 @@ GunZ The Duel Releases <br>
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 - firegunz: [firegunz](https://archive.org/details/fire-gunz)
 - gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra)
+- utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
