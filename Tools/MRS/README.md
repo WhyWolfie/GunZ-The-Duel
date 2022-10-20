@@ -3,6 +3,7 @@
 - freestylegunzv7: [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer)
 - enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
 - utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012)
+- devmode: [devmode](https://archive.org/details/devmode)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
