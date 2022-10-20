@@ -4,6 +4,7 @@
 - enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
 - utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012) (MRSDecompiler Ultimate)
 - devmode: [devmode](https://archive.org/details/devmode) (MRSDecompiler Ultimate)
+- 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
