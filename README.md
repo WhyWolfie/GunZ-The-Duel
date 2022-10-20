@@ -202,6 +202,7 @@ GunZ The Duel Releases <br>
 - senditem: [senditem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20senditem)
 - extra: [extra](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20extra)
 - serverping: [serverping](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20pingserver)
+- admin_godmode: [admin_godmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20godmode)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
