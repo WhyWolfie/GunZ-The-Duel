@@ -1,9 +1,9 @@
 <b>Will update it later</b> <br>
 <b>[MRS Unpacked]</b> <br>
-- freestylegunzv7: [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer)
+- freestylegunzv7: [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer) (FGunZ MRS)
 - enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
-- utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012)
-- devmode: [devmode](https://archive.org/details/devmode)
+- utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012) (MRSDecompiler Ultimate)
+- devmode: [devmode](https://archive.org/details/devmode) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
