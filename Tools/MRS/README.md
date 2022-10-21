@@ -7,6 +7,7 @@
 - 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603) (MRSDecompiler Ultimate)
 - gunz 20july14: [gunz 20july14](https://archive.org/details/gunz-20-july-14) (MRSDecompiler Ultimate)
 - phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) (MRSDecompiler Ultimate)
+- 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
@@ -62,9 +63,10 @@
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 - firegunz: [firegunz](https://archive.org/details/fire-gunz)
 - gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
+- vietgunzv9: [vietgunzv9](https://archive.org/details/viet-gunz-v-9)
+
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
 - fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
 - fxp gunz (installer): [fxp gunz (installer)](https://archive.org/details/fxp-gun-z)
-
