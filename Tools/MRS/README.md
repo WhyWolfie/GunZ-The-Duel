@@ -9,6 +9,7 @@
 - phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) (MRSDecompiler Ultimate)
 - 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client) (MRSDecompiler Ultimate)
 - alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19) (MRSDecompiler Ultimate)
+- monstergunz: [monstergunz](https://archive.org/details/monster-gunz) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
@@ -34,6 +35,7 @@
 - articgunz: [articgunz](https://archive.org/details/artic-gun-z-installer-23052014)
 - darkgunz: [darkgunz rar](https://archive.org/details/dark-gun-z_202011)
 - darkgunz: [darkgunz exe](https://archive.org/details/iPlayOG)
+- darkgunz(2017): [darkgunz(2017)](https://archive.org/details/dar-kgun-z-client-2017)
 - edengamerzgunz: [edengamerzgunz](https://archive.org/details/eden-gamerz-gun-z-20151001)
 - fusiongunz: [fusiongunz](https://archive.org/details/fusion-gunz)
 - gunzgo: [gunzgo](https://archive.org/details/gunz-go-2016)
