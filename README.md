@@ -312,6 +312,9 @@ GunZ The Duel Releases <br>
 - monstergunz: [monstergunz](https://archive.org/details/monster-gunz)
 - gunzv10(2022): [gunzv10 (2022)](https://archive.org/details/gunzv10)
 - gunzv10(2022 oct 19): [gunzv10(2022 oct 19)](https://archive.org/details/gunzv-10.1-october-19-2022)
+- dutygunz: [dutygunz](https://archive.org/details/instalador-duty-gunz)
+- kaosgunz2.0: [kaosgunz 2.0](https://archive.org/details/kaos-gunz-2.0-a-revolucao)
+- vitalgunz: [vitalgunz](https://archive.org/details/vital-gunz)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
