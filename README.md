@@ -177,6 +177,12 @@ GunZ The Duel Releases <br>
 - anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
 - client protection: [1.5 client protection hashcalc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/1.5%20files%20client%20protection)
 
+(quests) <br>
+- goblin super boss: [goblin super boss](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/goblin%20super%20boss)
+- shark monster: [shark monster](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/shark%20monster)
+- boo quest: [boo quest](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/boo%20quest)
+- mario cyber boo: [mario cyber boo](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/mario-cyber-boo)
+
 (2007/2008 server) <br>
 - gunzexp v2 modded june: [gunzexp v2](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunzexp%20v2%20%5Bmodded%5D%20june)
 - anti exploit chatmake (08 version): [anti exploit chatmake](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20exploit%20chatmake%20(08))
@@ -358,18 +364,18 @@ GunZ The Duel Releases <br>
 - gunz basics: [gunz basics](https://www.youtube.com/watch?v=zmXK5rYRZ4M)
 - gdhs guide: [gdhs guide](https://www.youtube.com/watch?v=H6SLeru0l4A)
 - draft of gunz: [draft of gunz](https://www.youtube.com/watch?v=W100yqPiBA4)
-- complete k-style guide 2: https://www.youtube.com/watch?v=3ZXC-8pFZGk
-- complete k-style guide 3: https://www.youtube.com/watch?v=1fs5UMY96iE
-- art of the massive gunz gladiator: https://www.youtube.com/watch?v=tvQ_jEgkHMY
-- tbf tutorial by divinecrave: https://www.youtube.com/watch?v=goxXyvRIH50
-- tbf tutorial by mujunstyle: https://www.youtube.com/watch?v=Gi_G_HUOcJ8
-- in depth angle and phase: https://www.youtube.com/watch?v=IZeSQaThDcQ
-- devioks gunz guide slash placement: https://www.youtube.com/watch?v=rISQGontAT8
-- latedash: https://www.youtube.com/watch?v=Sv3IHX_fUG4
-- blockrush and gdhs combos: https://www.youtube.com/watch?v=jhQyrMIW2OQ
-- blinkdash: https://www.youtube.com/watch?v=ivfg7RUyG2Q
-- quickblocks: https://www.youtube.com/watch?v=yBjiZNJVQgU
-- basic k-style guide 2020: https://www.youtube.com/watch?v=cLoTieAVV8E
+- complete k-style guide 2: [complete k-style guide 2](https://www.youtube.com/watch?v=3ZXC-8pFZGk)
+- complete k-style guide 3: [complete k-style guide 3](https://www.youtube.com/watch?v=1fs5UMY96iE)
+- art of the massive gunz gladiator: [art of the massive gunz gladiator](https://www.youtube.com/watch?v=tvQ_jEgkHMY)
+- tbf tutorial by divinecrave: [tbf tutorial by divinecrave](https://www.youtube.com/watch?v=goxXyvRIH50)
+- tbf tutorial by mujunstyle: [tbf tutorial by mujunstyle](https://www.youtube.com/watch?v=Gi_G_HUOcJ8)
+- in depth angle and phase: [in depth angle and phase](https://www.youtube.com/watch?v=IZeSQaThDcQ)
+- devioks gunz guide slash placement: [devioks gunz guide slash placement](https://www.youtube.com/watch?v=rISQGontAT8)
+- latedash: [latedash](https://www.youtube.com/watch?v=Sv3IHX_fUG4)
+- blockrush and gdhs combos: [blockrush and gdhs combos](https://www.youtube.com/watch?v=jhQyrMIW2OQ)
+- blinkdash: [blinkdash](https://www.youtube.com/watch?v=ivfg7RUyG2Q)
+- quickblocks: [quickblocks](https://www.youtube.com/watch?v=yBjiZNJVQgU)
+- basic k-style guide 2020: [basic k-style guide 2020](https://www.youtube.com/watch?v=cLoTieAVV8E)
 - gunz maps:  [gunz maps](https://www.youtube.com/watch?v=LRBCupfqZb4)
 - gunz 2004 trailer: [gunz 2004 trailer](https://www.youtube.com/watch?v=xZo_FIESUQk)
 - gunz 2006 trailer: [gunz 2006 trailer](https://www.youtube.com/watch?v=5TTyE7cjDJ8)
