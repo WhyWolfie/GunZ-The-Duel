@@ -302,6 +302,8 @@ GunZ The Duel Releases <br>
 - 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603)
 - gunz 20july14: [gunz 20july14](https://archive.org/details/gunz-20-july-14)
 - gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
+- vietgunzv9: [vietgunzv9](https://archive.org/details/viet-gunz-v-9)
+- 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
