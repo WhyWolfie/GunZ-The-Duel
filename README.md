@@ -310,6 +310,8 @@ GunZ The Duel Releases <br>
 - huntxgunz: [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer)
 - alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19)
 - monstergunz: [monstergunz](https://archive.org/details/monster-gunz)
+- gunzv10(2022): [gunzv10 (2022)](https://archive.org/details/gunzv10)
+- gunzv10(2022 oct 19): [gunzv10(2022 oct 19)](https://archive.org/details/gunzv-10.1-october-19-2022)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
