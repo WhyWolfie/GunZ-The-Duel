@@ -70,7 +70,8 @@
 - mundial gamers gunzv2: [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2)
 - soldiergunz 3.1: [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer)
 - huntxgunz: [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer)
-
+- gunzv10(2022): [gunzv10 (2022)](https://archive.org/details/gunzv10)
+- gunzv10(2022 oct 19): [gunzv10(2022 oct 19)](https://archive.org/details/gunzv-10.1-october-19-2022)
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
