@@ -306,6 +306,8 @@ GunZ The Duel Releases <br>
 - 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client)
 - mundial gamers gunzv2: [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2)
 - soldiergunz 3.1: [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer)
+- huntxgunz: [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer)
+- alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
