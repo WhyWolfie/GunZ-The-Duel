@@ -263,6 +263,7 @@ GunZ The Duel Releases <br>
 - bloodlinegunz: [bloodlinegunz](https://archive.org/details/bloodline-gun-z-the-beginning-installer)
 - articgunz: [articgunz](https://archive.org/details/artic-gun-z-installer-23052014)
 - darkgunz: [darkgunz rar](https://archive.org/details/dark-gun-z_202011)
+- darkgunz(2017): [darkgunz(2017)](https://archive.org/details/dar-kgun-z-client-2017)
 - darkgunz: [darkgunz exe](https://archive.org/details/iPlayOG)
 - edengamerzgunz: [edengamerzgunz](https://archive.org/details/eden-gamerz-gun-z-20151001)
 - enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
@@ -308,6 +309,7 @@ GunZ The Duel Releases <br>
 - soldiergunz 3.1: [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer)
 - huntxgunz: [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer)
 - alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19)
+- monstergunz: [monstergunz](https://archive.org/details/monster-gunz)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
