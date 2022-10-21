@@ -304,6 +304,8 @@ GunZ The Duel Releases <br>
 - gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
 - vietgunzv9: [vietgunzv9](https://archive.org/details/viet-gunz-v-9)
 - 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client)
+- mundial gamers gunzv2: [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2)
+- soldiergunz 3.1: [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
