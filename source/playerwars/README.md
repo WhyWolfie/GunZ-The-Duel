@@ -2071,7 +2071,7 @@ Find(InitLobbyUIByChannelType() - Replace)
 	{
 		bool bClanBattleUI =  ((ZGetGameClient()->GetServerMode() == MSM_CLAN) && (ZGetGameClient()->GetChannelType()==MCHANNEL_TYPE_CLAN));
 		bool bDuelTournamentUI = (ZGetGameClient()->GetChannelType() == MCHANNEL_TYPE_DUELTOURNAMENT);
-		bool bPlayerWarsUI = (((ZGetGameClient()->GetServerMode() == MSM_QUEST)) && (ZGetGameClient()->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS));
+		bool bPlayerWarsUI = (((ZGetGameClient()->GetServerMode() == MSM_CLAN)) && (ZGetGameClient()->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS));
 		if (bClanBattleUI == true)
 			SelectBackground(1);
 		else if (bDuelTournamentUI == true)
@@ -2615,37 +2615,90 @@ Find(SendDuelTournamentCharInfoToPlayer(pJob->GetUID()); - Add under)
 	SendPlayerWarsSideRankingToPlayer(pJob->GetUID());
 
 
+Some missing parts... <br>
+
+Open(ZGameClient.h - DTCHARINFO				m_dtCharInfo, m_dtCharInfoPrev; - Add under)
+
+	PWCHARINFO m_PWCharInfo;
+
+Open(MMatchGlobal.h - typedef struct _MShortBuffInfo - Add under)
+
+	typedef struct _PWRankingInfo
+	{
+		char m_szCharName[MATCHOBJECT_NAME_LENGTH];
+		int m_nWins;
+		int m_nLoses;
+		int m_nRanking;
+	} PWRankingInfo;
+
+Open(MAsyncDBJob.h - MASYNCJOB_REWARD_CHAR_BR - Add under)
+
+	MASYNCJOB_GET_PW_INFO,
+	MASYNCJOB_UPDATE_PW_INFO,
+	MASYNCJOB_GET_PW_SIDE_RANKING,
 
 
+Open(MMatchDBMgr.h - GetLoginInfo - Add above)
+
+	bool InsertPWGameLog(TCHAR* Winners, TCHAR* Losers, int WinningScore, int LosingScore, int MapID);
+
+Open(ZGameInterface.h - OnGreeterDestroy(void); - Add under)
+
+	void SelectBackground(int i);
 
 
+Open(MMatchDBMgr.cpp - TCHAR g_spGetSurvivalPrivateRanking[] - Add under)
+
+	TCHAR g_spGetPWCharacterInfo[] = _T("{CALL spPWGetCharacterInfo(%u)}");
+	TCHAR g_spUpdatePWCharacterInfo[] = _T("{CALL spPWUpdateCharacterInfo(%u, %d, %d, %d, %d, %d)}");
+	TCHAR g_PWGetSideRanking[] = _T("{CALL PWGetSideRanking(%u)}");
+
+Open(ZCombatInterface.cpp - struct ZScoreBoardItem - Add under)
+
+	float HP, AP, MaxHP, MaxAP;
+	
+Find (ZScoreBoardItem - Replace)
+
+	ZScoreBoardItem( const MUID& _uidUID, char* _szLevel, char *_szName,char *_szClan,int _nTeam,bool _bDeath,int _nExp,int _nKills,int _nDeaths,int _nPing,int _nDTLastWeekGrade, bool _bMyChar,bool _bGameRoomUser, float hp, float ap, float maxhp, float maxap, bool _bCommander = false)
+	{
+		uidUID=_uidUID;
+		strcpy(szLevel,_szLevel);
+		strcpy(szName,_szName);
+		strcpy(szClan,_szClan);
+		nTeam=_nTeam;
+		bDeath=_bDeath;
+		nExp=_nExp;
+		nKills=_nKills;
+		nDeaths=_nDeaths;
+		nPing=_nPing;
+		bMyChar = _bMyChar;
+		bCommander = _bCommander;
+		bSpColor = false;
+		SpColor = MCOLOR(0,0,0);
+		bGameRoomUser = _bGameRoomUser;
+		nDTLastWeekGrade = _nDTLastWeekGrade;
+		HP = hp;
+		AP = ap;
+		MaxHP = maxhp;
+		MaxAP = maxap;
+	}
+	
+Find (ZScoreBoardItem() - Replace)
 
 
+	ZScoreBoardItem() {
+		bSpColor = false;
+		SpColor = MCOLOR(0,0,0);
+		HP = 0;
+		AP = 0;
+		MaxHP = 0;
+		MaxAP = 0;
+	}
 
 
+Open(ZGameInterface.h - InitLadderUI(bool bLadderEnable); - Add under)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	void InitPlayerWarsUI(bool bPlayerWarsEnable);
 
 
 
