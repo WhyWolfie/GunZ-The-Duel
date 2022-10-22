@@ -2824,16 +2824,520 @@ Find (#define MINTERVAL_GARBAGE_SESSION_PING - Replace)
 
 
 
+XML (Default/Lobby.xml)
 
 
+	<LABEL item="Lobby_PlayerWarsCount0" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>164</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount1" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>178</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount2" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>192</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount3" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>206</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount4" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>220</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount5" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>234</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount6" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>248</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsCount7" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>100</X>
+			<Y>262</Y> <!-- +14 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>0 Players Queuing</TEXT>
+	</LABEL>
+<PLAYERWARSRANKINGLIST item="Lobby_PlayerWarsRankingList" parent="Lobby_MainPlayerWarsBG">
+		<BOUNDS>
+			<X>530</X>
+			<Y>140</Y>
+			<W>250</W>
+			<H>170</H>
+		</BOUNDS>
+	</PLAYERWARSRANKINGLIST>
+	
+	<LABEL item="Lobby_PlayerWarsName" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>365</X>
+			<Y>154</Y> <!-- -10 -->
+			<W>140</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<LABEL item="Lobby_PlayerWarsRanking" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>365</X>
+			<Y>180</Y>
+			<W>40</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsWins" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>365</X>
+			<Y>204</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsLosses" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>365</X>
+			<Y>228</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsDraws" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>365</X>
+			<Y>252</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_PlayerWarsScore" parent="Lobby_MainPlayerWarsBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>365</X>
+			<Y>276</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<FRAME item="PlayerWarsMapVote" >
+		<BOUNDS>
+			<X>150</X>
+			<Y>110</Y>
+			<W>280</W>
+			<H>100</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>Player Wars Map Vote</TEXT> <!-- 팀 게임 -->
+	</FRAME>
+	<LABEL item="PlayerWarsMap0" parent="PlayerWarsMapVote">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>12</X>
+			<Y>20</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT></TEXT> <!-- 최대 인원 -->
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<LABEL item="PlayerWarsMap1" parent="PlayerWarsMapVote">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>112</X>
+			<Y>20</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT></TEXT> <!-- 최대 인원 -->
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<LABEL item="PlayerWarsMap2" parent="PlayerWarsMapVote">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>217</X>
+			<Y>20</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT></TEXT> <!-- 최대 인원 -->
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	
+	<LABEL item="PlayerWarsVote0" parent="PlayerWarsMapVote">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>12</X>
+			<Y>40</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Votes: 0</TEXT> <!-- 최대 인원 -->
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	
+	<BUTTON item="PlayerWarsVoteButton0" parent="PlayerWarsMapVote">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>5</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Vote</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<LABEL item="PlayerWarsVote1" parent="PlayerWarsMapVote">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>112</X>
+			<Y>40</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Votes: 0</TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<BUTTON item="PlayerWarsVoteButton1" parent="PlayerWarsMapVote">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>105</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Vote</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<LABEL item="PlayerWarsVote2" parent="PlayerWarsMapVote">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>212</X>
+			<Y>40</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Votes: 0</TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<BUTTON item="PlayerWarsVoteButton2" parent="PlayerWarsMapVote">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>205</X>
+			<Y>60</Y>
+			<W>60</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Vote</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<FRAME item="PlayerWarsGameDialog" >
+		<BOUNDS>
+			<X>240</X>
+			<Y>110</Y>
+			<W>280</W>
+			<H>120</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>Player Wars Options</TEXT> <!-- 팀 게임 -->
+	</FRAME>
+	<LABEL item="GameTypeLabel" parent="PlayerWarsGameDialog">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>63</X>
+			<Y>35</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>GameType:</TEXT> <!-- 최대 인원 -->
+		<CHECKED>true</CHECKED>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	
+	<COMBOBOX item="PlayerWarsGameType" parent="PlayerWarsGameDialog">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>140</X>
+			<Y>40</Y>
+			<W>110</W>
+			<H>18</H>
+		</BOUNDS>
+		<LISTITEM selected="true">1 vs 1</LISTITEM>
+		<LISTITEM>2 vs 2</LISTITEM>
+		<LISTITEM>3 vs 3</LISTITEM>
+		<LISTITEM>4 vs 4</LISTITEM>
+		<LISTITEM>5 vs 5</LISTITEM>
+		<LISTITEM>6 vs 6</LISTITEM>
+		<LISTITEM>7 vs 7</LISTITEM>
+		<LISTITEM>8 vs 8</LISTITEM>
+		<DROPSIZE>140</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+	<BUTTON item="PlayerWarsDialogClose" parent="PlayerWarsGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>60</X>
+			<Y>65</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+	<BUTTON item="PlayerWarsDialogOk" parent="PlayerWarsGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>160</X>
+			<Y>65</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_17</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
 
+XML(Default/ChannelListFrame.xml)
 
+	<BUTTON item="ChannelList_PlayerWars" parent="ChannelListFrame">	
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>219</Y>
+			<W>110</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>Player Wars</TEXT> <!-- 듀얼토너먼트 -->
+		<GROUP>ChannelList</GROUP>
+	</BUTTON>
 
+XML(Default/Lobby.xml)
 
-
-
-
-
+	<!-- Button : 클랜전 결성 버튼 -->
+	<BMBUTTON item ="ArrangedPlayerWars" parent="Lobby">
+		<BOUNDS>
+			<X>320</X>
+			<Y>313</Y>
+			<W>203</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">playerwars_off_kr.tga</BITMAP>
+		<BITMAP type="over">playerwars_on_kr.tga</BITMAP>
+		<BITMAP type="down">playerwars_on_kr.tga</BITMAP>
+	</BMBUTTON>
 
 
 
