@@ -2700,13 +2700,16 @@ Open(ZGameInterface.h - InitLadderUI(bool bLadderEnable); - Add under)
 
 	void InitPlayerWarsUI(bool bPlayerWarsEnable);
 
+Open(MMatchStage.h - unsigned long GetStartTime() - Add under)
 
+	int GetRedCLID() { return m_nRedCLID; }
+	int GetBlueCLID() { return m_nBlueCLID; }
+	void SetCLID(int nCLID, MMatchTeam t) { switch (t) { case MMT_RED: m_nRedCLID = nCLID; break; case MMT_BLUE: m_nBlueCLID = nCLID; break; } }
 
+Find (m_vecRelayMapsRemained - Add under)
 
-
-
-
-
+	int						m_nRedCLID;
+	int						m_nBlueCLID;
 
 
 
