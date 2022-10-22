@@ -1,4 +1,3 @@
-/****** Object:  StoredProcedure [dbo].[spPWRegularUpdateRanking]    Script Date: 09/13/2017 17:36:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -24,7 +23,6 @@ BEGIN
 END
 GO
 
-/****** Object:  StoredProcedure [dbo].[spPWOpen]    Script Date: 09/13/2017 17:36:38 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -35,16 +33,12 @@ BEGIN
 	SELECT TOP(1) Opened FROM PWStatus WHERE ID = 1;
 END
 GO
-/****** Object:  StoredProcedure [dbo].[spPWGetCharacterInfo]    Script Date: 09/13/2017 17:36:38 ******/
+
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
--- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
--- =============================================
+
 CREATE PROCEDURE [dbo].[spPWGetCharacterInfo]
 	@CID int
 AS
@@ -58,15 +52,6 @@ BEGIN
 	SELECT top 1 * FROM PWCharacterInfo pw WITH (NOLOCK) WHERE	pw.CID = @CID
 END
 GO
-
-
-
-
-
-
-
-
-
 
 
 
