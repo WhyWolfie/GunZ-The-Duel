@@ -1672,34 +1672,223 @@ Find((ZGetGameTypeManager()->IsQuestDerived(ZGetGame()->GetMatch()->GetMatchType
 				TextRelative(pDC, x, texty, szText, true);
 			}	
 
+Open(ZCommandUDPHackShield.cpp - Add)
+
+	AddDeniedCommand(MC_MATCH_JOIN_PLAYERWARS);
+	AddDeniedCommand(MC_MATCH_PLAYERWARS_SIDERANK);
+
+Open(ZGame.cpp - else if (nTeam == nMyTeam) - Replace)
+
+				else if (nTeam == nMyTeam)
+				{
+					if ((!ZGetGameClient()->IsLadderGame() && !ZGetGameClient()->IsPlayerWars() && !ZGetGameClient()->GetRejectTeamChat()) ||
+						((ZGetGameClient()->IsLadderGame() || ZGetGameClient()->IsPlayerWars()) && !ZGetGameClient()->GetRejectClanChat()) ||
+						(strcmp(pChar->GetUserName(), ZGetMyInfo()->GetCharName()) == 0))
+					{
+						ZGetSoundEngine()->PlaySound("if_error");
+						char szTemp[256];
+
+						sprintf(szTemp, "%s(Team)%s : %s", ((pChar->IsDie()) ? "[DEAD] " : ""), pChar->GetProperty()->GetName(),szMsg);
+						ZChatOutput(TeamChatColor, szTemp);
+					}
+				}
+
+
+Find (GetGame()->m_pMyCharacter->IsAdminHide() && nTeam != MMT_ALL && nTeam != MMT_SPECTATOR - Replace)
+
+				if (ZGetGame()->m_pMyCharacter->IsAdminHide() && nTeam != MMT_ALL && nTeam != MMT_SPECTATOR)
+				{
+					if ( (!ZGetGameClient()->IsLadderGame() && !ZGetGameClient()->IsPlayerWars()&& !ZGetGameClient()->GetRejectTeamChat()) ||
+						 (( ZGetGameClient()->IsLadderGame() || ZGetGameClient()->IsPlayerWars()) && !ZGetGameClient()->GetRejectClanChat()) ||
+						 ( strcmp( pChar->GetUserName(), ZGetMyInfo()->GetCharName()) == 0))
+					{
+						ZGetSoundEngine()->PlaySound("if_error");
+						char szTemp[256];
+
+						if( !pChar->IsVisible() || pChar->IsDie() )
+							sprintf(szTemp, "(%s)(%s Team)%s : %s", ZStr(std::string("UI_GAMESTATE_01")), nTeam == MMT_RED ? "Red" : "Blue", pChar->GetProperty()->GetName(),szMsg);
+						else
+							sprintf(szTemp, "(%s Team)%s : %s", nTeam == MMT_RED ? "Red" : "Blue", pChar->GetProperty()->GetName(),szMsg);
+
+						ZChatOutput(TeamChatColor, szTemp);
+					}
+				}
+			}
+		}
+		break;
+
+Open(ZGameClient.cpp - MC_ADMIN_ANNOUNCE - Add under)
+
+			cmdId == MC_MATCH_PLAYERWARS_FRIENDINVITE ||
+			cmdId == MC_MATCH_PLAYERWARS_FRIENDACCEPT ||
+			cmdId == MC_MATCH_PLAYERWARS_FRIENDLEAVE ||
+
+Find (m_bLadderGame = false; - Add under)
+
+	m_bPlayerWars = false;
+
+
+Find(ZGameClient::OnStageLaunch - Replace)
+
+	void ZGameClient::OnStageLaunch(const MUID& uidStage, const char* pszMapName)
+	{
+		m_bLadderGame = false;
+		m_bPlayerWars = false;
+		SetAllowTunneling(false);
+
+		m_MatchStageSetting.SetMapName(const_cast<char*>(pszMapName));
+
+		if (ZApplication::GetGameInterface()->GetState() != GUNZ_GAME) {
+			ZChangeGameState(GUNZ_GAME);		// thread safely
+		}
+	}
+
+Find (ZGameClient::OnForcedEntryToGame - Replace)
+
+	void ZGameClient::OnForcedEntryToGame()
+	{
+		m_bLadderGame = false;
+		m_bForcedEntry = true;
+		m_bPlayerWars = false;
+		SetAllowTunneling(false);
+		ZChangeGameState(GUNZ_GAME);
+	}
+
+Open(ZGameClient.h - class ZGameClient : public MMatchClient - m_bLadderGame; - Add under)
+
+	bool				m_bPlayerWars;
+
+
+Find (int tournamentPoint, wins, losses, ranking, winners, lastWeekGrade; - Replace)
+
+	struct DTCHARINFO {
+		int tournamentPoint, wins, losses, ranking, winners, lastWeekGrade;
+	};
+	struct PWCHARINFO
+	{
+		int Ranking, Wins, Losses, Draws, Score;
+	};
+	const PWCHARINFO* GetMyPlayerWarsCharInfo() { return &m_PWCharInfo; };
+	const DTCHARINFO* GetMyDuelTournamentCharInfo()		{ return &m_dtCharInfo; }
+	const DTCHARINFO* GetMyDuelTournamentCharInfoPrev() { return &m_dtCharInfoPrev; }
+
+Find(OnLadderLaunch - Replace)
+
+	void OnLadderLaunch(const MUID& uidStage, const char* pszMapName, bool PlayerWars);
+	
+Find (bool IsLadderGame() { return m_bLadderGame; } - Add under)
+
+	bool IsPlayerWars() { return m_bPlayerWars; }
+
+Open(ZGameClient_Ladder.cpp - OnLadderLaunch - Replace)
+
+	void ZGameClient::OnLadderLaunch(const MUID& uidStage, const char* pszMapName, bool PlayerWars)
+	{
+		ZGetGameInterface()->OnArrangedTeamGameUI(false);
+		if (PlayerWars)
+			m_bPlayerWars = true;
+		else
+			m_bLadderGame = true;
+
+		m_uidStage = uidStage;
+		strcpy(m_szStageName, "UnNamedStage");
+
+		SetAllowTunneling(false);
+
+		m_MatchStageSetting.SetMapName(const_cast<char*>(pszMapName));
+
+
+		unsigned int nStageNameChecksum = m_szStageName[0] + m_szStageName[1] + m_szStageName[2] + m_szStageName[3];
+		InitPeerCrypt(uidStage, nStageNameChecksum);
+
+		if (ZApplication::GetGameInterface()->GetState() != GUNZ_GAME)
+		{
+			ZChangeGameState(GUNZ_GAME);
+		}
+	}
+
+Open(ZGameClient_OnCommand.cpp - ZGameClient::OnCommand)
+
+	case MC_MATCH_PLAYERWARS_RANDOM_MAPS:
+	{
+		int nRandomIndex[3];
+		pCommand->GetParameter(&nRandomIndex[0], 0, MPT_INT);
+		pCommand->GetParameter(&nRandomIndex[1], 1, MPT_INT);
+		pCommand->GetParameter(&nRandomIndex[2], 2, MPT_INT);
+		ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
 
 
 
+		char Name[100];
 
+		for (int i = 0; i < 3; i++)
+		{
+			sprintf(Name, "PlayerWarsMap%d", i);
+			MLabel* pLabel = (MLabel*)pResource->FindWidget(Name);
+			if (pLabel)
+				pLabel->SetText(MGetMapDescMgr()->GetMapName(nRandomIndex[i]));
+		}
+		ZGetGameInterface()->OnArrangedTeamGameUI(true, true);
+		ZGetGameClient()->bMatching = true; //quejeso
+	}
+	break;
+	case MC_MATCH_PLAYERWARS_INVITED:
+	{
+		ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+		ZGetGameClient()->LastVoteID = -1;
+		MWidget* pWidget = pResource->FindWidget("PlayerWarsGameDialog");
+		if (pWidget != NULL)
+			pWidget->Show(false);
+		ZGetGameInterface()->OnArrangedTeamGameUI(true);
+	};
+	case MC_MATCH_PLAYERWARS_VOTE_UPDATE:
+	{
 
+		int nRandomIndex[3];
+		pCommand->GetParameter(&nRandomIndex[0], 0, MPT_INT);
+		pCommand->GetParameter(&nRandomIndex[1], 1, MPT_INT);
+		pCommand->GetParameter(&nRandomIndex[2], 2, MPT_INT);
+		ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+		char Name[100], Text[40];
+		for (int i = 0; i < 3; i++)
+		{
+			sprintf(Name, "PlayerWarsVote%d", i);
+			if(nRandomIndex[i] < 0)
+				sprintf(Text, "0");
+			else
+				sprintf(Text, "%d", nRandomIndex[i]);
 
+			MLabel* pLabel = (MLabel*)pResource->FindWidget(Name);
+			if (pLabel)
+				pLabel->SetText(Text);
+		}
+	}
+	break;
 
+Find (MC_MATCH_LADDER_CANCEL_CHALLENGE - Replace)
 
+		case MC_MATCH_LADDER_CANCEL_CHALLENGE:
+		{
+			bool PlayerWars;
+			pCommand->GetParameter(&PlayerWars, 1, MPT_BOOL);
+			ZGetGameInterface()->OnArrangedTeamGameUI(false);
+			if (PlayerWars == false)
+			{
 
+				char szCharName[MATCHOBJECT_NAME_LENGTH];
+				pCommand->GetParameter(szCharName, 0, MPT_STR, sizeof(szCharName));
 
+				if (szCharName[0] != 0) {
+					char szOutput[256];
+					ZTransMsg(szOutput, MSG_LADDER_CANCEL, 1, szCharName);
+					ZChatOutput(MCOLOR(ZCOLOR_CHAT_SYSTEM), szOutput);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				}
+				else	 // ÀÌ¸§ÀÌ ¾øÀ¸¸é ½ÇÆÐÇÑ°æ¿ì´Ù.
+				{
+					ZChatOutput(MCOLOR(ZCOLOR_CHAT_SYSTEM),
+						ZMsg(MSG_LADDER_FAILED));
+				}
+			}
+		}break;
 
