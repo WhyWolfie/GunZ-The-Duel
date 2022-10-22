@@ -1136,6 +1136,562 @@ Find (MGetMapDescMgr()->MIsCorrectMap(nMapID)) && (MGetGameTypeMgr()->IsCorrectG
 		}
 	}
 
+Open(MMatchStage.cpp - case MST_LADDER: - Add under)
+
+	case MST_PLAYERWARS:
+		{
+			m_StageSetting.SetTeamWinThePoint(true);
+		}
+		break;
+
+Find(m_nStageType == MST_LADDER) && - Replace)
+
+		if ((m_nStageType == MST_LADDER) && (GetStageSetting()->IsTeamPlay()) || m_nStageType == MST_PLAYERWARS && (GetStageSetting()->IsTeamPlay()))
+		{
+
+Find (MBaseTeamGameStrategy* pTeamGameStrategy = MBaseTeamGameStrategy::GetInstance(MGetServerConfig()->GetServerMode()); - Replace)
+
+			if (m_nStageType == MST_PLAYERWARS)
+			{
+				MMatchTeam LosingTeam = nWinnerTeam == MMT_RED ? MMT_BLUE : MMT_RED;
+				MMatchServer::GetInstance()->SendPlayerWarsRewards(PlayerWarsList, bIsDrawGame, nWinnerTeam, GetTeamScore(nWinnerTeam), GetTeamScore(LosingTeam), GetStageSetting()->GetMapIndex());
+			}
+			else
+			{
+				MBaseTeamGameStrategy* pTeamGameStrategy = MBaseTeamGameStrategy::GetInstance(MGetServerConfig()->GetServerMode());
+				if (pTeamGameStrategy)
+				{
+					/*pTeamGameStrategy->SavePointOnFinishGame(this, nWinnerTeam, bIsDrawGame, &m_Teams[MMT_RED].LadderInfo,
+						&m_Teams[MMT_BLUE].LadderInfo, GetStageSetting()->GetGameType());*/
+
+					pTeamGameStrategy->SavePointOnFinishGame(this, nWinnerTeam, bIsDrawGame, &m_Teams[MMT_RED].LadderInfo,
+						&m_Teams[MMT_BLUE].LadderInfo), GetStageSetting()->GetGameType();
+				};
+			}
+		}
+	}
+
+Find (void MMatchStage::ShuffleTeamMembers() - Replace)
+
+	void MMatchStage::ShuffleTeamMembers()
+	{
+		// ·¡´õ°ÔÀÓÀÌ³ª ÆÀ°ÔÀÓÀÌ ¾Æ´Ï¸é ÇÏÁö ¾Ê´Â´Ù.
+		if ((m_nStageType == MST_LADDER) || (m_nStageType == MST_PLAYERWARS) || (m_StageSetting.IsTeamPlay() == false)) return;
+		if (m_ObjUIDCaches.empty()) return;
+
+		int nTeamMemberCount[MMT_END] = {0, };
+		MMatchTeam nWinnerTeam;
+
+		GetTeamMemberCount(&nTeamMemberCount[MMT_RED], &nTeamMemberCount[MMT_BLUE], NULL, true);
+		if (nTeamMemberCount[MMT_RED] >= nTeamMemberCount[MMT_BLUE]) nWinnerTeam = MMT_RED; 
+		else nWinnerTeam = MMT_BLUE;
+
+		int nShuffledMemberCount = abs(nTeamMemberCount[MMT_RED] - nTeamMemberCount[MMT_BLUE]) / 2;
+		if (nShuffledMemberCount <= 0) return;
+
+		vector<MMatchObject*> sortedObjectList;
+
+		for (MUIDRefCache::iterator i=m_ObjUIDCaches.begin(); i!=m_ObjUIDCaches.end(); i++) 
+		{
+			MMatchObject* pObj = (MMatchObject*)(*i).second;
+
+			if ((pObj->GetEnterBattle() == true) && (pObj->GetGameInfo()->bJoinedGame == true))
+			{
+				if ((pObj->GetTeam() == nWinnerTeam) && (!IsAdminGrade(pObj)))
+				{
+					sortedObjectList.push_back(pObj);
+				}
+			}
+		}
+
+		std::sort(sortedObjectList.begin(), sortedObjectList.end(), moreTeamMemberKills);
+
+		int nCounter = 0;
+		for (vector<MMatchObject*>::iterator itor = sortedObjectList.begin(); itor != sortedObjectList.end(); ++itor)
+		{
+			MMatchObject* pObj = (*itor);
+			PlayerTeam(pObj->GetUID(), NegativeTeam(MMatchTeam(pObj->GetTeam())));
+			nCounter++;
+
+			if (nCounter >= nShuffledMemberCount) break;
+		}
+
+		// ¸Þ¼¼Áö Àü¼Û
+		MCommand* pCmd = MMatchServer::GetInstance()->CreateCommand(MC_MATCH_RESET_TEAM_MEMBERS, MUID(0,0));
+		int nMemberCount = (int)m_ObjUIDCaches.size();
+		void* pTeamMemberDataArray = MMakeBlobArray(sizeof(MTD_ResetTeamMembersData), nMemberCount);
+
+		nCounter = 0;
+		for (MUIDRefCache::iterator i=m_ObjUIDCaches.begin(); i!=m_ObjUIDCaches.end(); i++) 
+		{
+			MMatchObject* pObj = (MMatchObject*)(*i).second;
+			MTD_ResetTeamMembersData* pNode = (MTD_ResetTeamMembersData*)MGetBlobArrayElement(pTeamMemberDataArray, nCounter);
+			pNode->m_uidPlayer = pObj->GetUID();
+			pNode->nTeam = (char)pObj->GetTeam();
+
+			nCounter++;
+		}
+
+		pCmd->AddParameter(new MCommandParameterBlob(pTeamMemberDataArray, MGetBlobArraySize(pTeamMemberDataArray)));
+		MEraseBlobArray(pTeamMemberDataArray);
+		MMatchServer::GetInstance()->RouteToBattle(GetUID(), pCmd);
+	}
+
+Find (MMatchStage::CheckAutoTeamBalancing() - Replace)
+
+	bool MMatchStage::CheckAutoTeamBalancing()
+	{
+		if ((m_nStageType == MST_LADDER) || (m_nStageType == MST_PLAYERWARS) || (m_StageSetting.IsTeamPlay() == false)) return false;
+		if (m_StageSetting.GetAutoTeamBalancing() == false) return false;
+
+		int nMemberCount[MMT_END] = {0, };
+		GetTeamMemberCount(&nMemberCount[MMT_RED], &nMemberCount[MMT_BLUE], NULL, true);
+
+		// 2¸í ÀÌ»ó ÀÎ¿ø¼ö°¡ Â÷ÀÌ³ª°í ÀÎ¿ø¼ö ¸¹Àº ÆÀÀÌ 3¿¬½ÂÀÌ»ó °è¼ÓµÉ °æ¿ì ÆÀÀ» ¼¯´Â´Ù.
+		const int MEMBER_COUNT = 2;
+		const int SERIES_OF_VICTORIES = 3;
+
+		//	const int MEMBER_COUNT = 1;
+		//	const int SERIES_OF_VICTORIES = 2;
+
+		if ( ((nMemberCount[MMT_RED] - nMemberCount[MMT_BLUE]) >= MEMBER_COUNT) && 
+			(m_Teams[MMT_RED].nSeriesOfVictories >= SERIES_OF_VICTORIES) )
+		{
+			return true;
+		}
+		else if ( ((nMemberCount[MMT_BLUE] - nMemberCount[MMT_RED]) >= MEMBER_COUNT) && 
+			(m_Teams[MMT_BLUE].nSeriesOfVictories >= SERIES_OF_VICTORIES) )
+		{
+			return true;
+		}
+
+		return false;
+	}
+
+Open(MSharedCommandTable.cpp - Add)
+
+	C(MC_MATCH_JOIN_PLAYERWARS, "knaw65goag", "jnaaw", MCDT_MACHINE2MACHINE);//Playerwars.join
+		P(MPT_INT, "Lead")
+		P(MPT_INT, "GameType")
+
+Find (MC_MATCH_LADDER_LAUNCH - Replace)
+
+		C(MC_MATCH_LADDER_LAUNCH, "Ladder.Launch", "Launch Ladder Game", MCDT_MACHINE2MACHINE)
+			P(MPT_UID, "uidStage")
+			P(MPT_STR, "MapName")
+			P(MPT_BOOL, "PlayerWars")
+
+Find( MC_MATCH_REPORT - Add under)
+
+			C(MC_MATCH_PLAYERWARS_RANDOM_MAPS, "Maps", "Maps", MCDT_MACHINE2MACHINE)
+				P(MPT_INT, "1");
+				P(MPT_INT, "2");
+				P(MPT_INT, "3");
+			C(MC_MATCH_PLAYERWARS_VOTE, "Maps", "Maps", MCDT_MACHINE2MACHINE)
+				P(MPT_INT, "Map");
+			C(MC_MATCH_PLAYERWARS_VOTE_UPDATE, "Maps", "Maps", MCDT_MACHINE2MACHINE)
+				P(MPT_INT, "1");
+				P(MPT_INT, "2");
+				P(MPT_INT, "3");
+				C(MC_MATCH_PLAYERWARS_FRIENDINVITE, "InviteFriend", "InviteFriend", MCDT_MACHINE2MACHINE)
+					P(MPT_STR, "name");
+				C(MC_MATCH_PLAYERWARS_FRIENDACCEPT, "AcceptFriend", "AcceptFriend", MCDT_MACHINE2MACHINE)
+					C(MC_MATCH_PLAYERWARS_FRIENDLEAVE, "LeaveFriend", "LeaveFriend", MCDT_MACHINE2MACHINE)
+					C(MC_MATCH_PLAYERWARS_INVITED, "InvitedPlayer", "InvitedPlayer", MCDT_MACHINE2MACHINE)
+					C(MC_ADMIN_RESPONSE_KICK_PLAYER, "Admin.ResponseKickPlayer", "Response Kick Player", MCDT_MACHINE2MACHINE)
+					P(MPT_INT, "Result");
+
+Open(MTeamGameStrategy.cpp - GetRandomMap - Add under)
+
+	int MLadderGameStrategy::GetPlayerWarsRandomMap(int nTeamMember)
+	{
+		int nVecIndex = 0;
+		int nMaxSize = 0;
+		switch (nTeamMember)
+		{
+		case 2:
+			nVecIndex = MLADDERTYPE_NORMAL_2VS2;
+			break;
+		case 3:
+			nVecIndex = MLADDERTYPE_NORMAL_3VS3;
+			break;
+		case 4:
+			nVecIndex = MLADDERTYPE_NORMAL_4VS4;
+			break;
+		};
+
+		nMaxSize = (int)m_RandomMapVec[nVecIndex].size();
+
+		int nRandomMapIndex = 0;
+		int nRandomMap = 0;
+
+		if (nMaxSize != 0) {
+			nRandomMapIndex = rand() % nMaxSize;
+			nRandomMap = m_RandomMapVec[nVecIndex][nRandomMapIndex];
+		}
+
+		return nRandomMap;
+	}
+
+	int MClanGameStrategy::GetPlayerWarsRandomMap(int nTeamMember)
+	{
+		int nVecIndex = 0;
+		int nMaxSize = 0;
+		switch (nTeamMember)
+		{
+		case 1:
+			nVecIndex = MLADDERTYPE_NORMAL_1VS1;
+			break;
+		case 2:
+			nVecIndex = MLADDERTYPE_NORMAL_2VS2;
+			break;
+		case 3:
+			nVecIndex = MLADDERTYPE_NORMAL_3VS3;
+			break;
+		case 4:
+			nVecIndex = MLADDERTYPE_NORMAL_4VS4;
+			break;
+		};
+
+		nMaxSize = (int)m_RandomMapVec[nVecIndex].size();
+
+		int nRandomMapIndex = 0;
+		int nRandomMap = 0;
+
+		if (nMaxSize != 0) {
+			nRandomMapIndex = rand() % nMaxSize;
+			nRandomMap = m_RandomMapVec[nVecIndex][nRandomMapIndex];
+		}
+
+		return nRandomMap;
+	}
+
+Open(ZChat_Cmds.cpp)
+
+	void ChatCmd_PlayerWarsInvite(const char* line, const int argc, char **const argv);
+	void ChatCmd_PlayerWarsAccept(const char* line, const int argc, char **const argv);
+	void ChatCmd_PlayerWarsLeave(const char* line, const int argc, char **const argv);
+	void ChatCmd_PlayerWarsHelp(const char* line, const int argc, char **const argv);
+
+Part 2
+
+	void ChatCmd_PlayerWarsAccept(const char* line, const int argc, char **const argv)
+	{
+		ZPostPlayerWarsAccept();
+	}
+
+	void ChatCmd_PlayerWarsLeave(const char* line, const int argc, char **const argv)
+	{
+		ZPostPlayerWarsLeave();
+	}
+
+	void ChatCmd_PlayerWarsHelp(const char* line, const int argc, char **const argv)
+	{
+		char szBuf[1024] = "";
+		sprintf(szBuf, "Commands: /pwaccept, /pwleave, /pwinvite <charname>");
+		ZChatOutput(szBuf, ZChat::CMT_SYSTEM);
+	}
+
+Open(ZCombatInterface.cpp - ZCombatInterface::Update - Replace)
+
+	if (m_bShowResult)
+	{
+		if (timeGetTime() > m_nReservedOutTime)
+		{
+			if (ZGetGameClient()->IsLadderGame()|| 
+				ZGetGameClient()->IsDuelTournamentGame() || 
+				ZGetGameClient()->IsPlayerWars())
+				ZChangeGameState(GUNZ_LOBBY);
+			else
+				ZChangeGameState(GUNZ_STAGE);
+		}
+	}
+
+Find(bClanGame = ZGetGameClient()->IsLadderGame(); - Replace)
+
+	bool bClanGame = ZGetGameClient()->IsLadderGame();
+	bool IsTeamPlay = ZGetGame()->GetMatch()->IsTeamPlay();
+	bool bPlayerWars = ZGetGameClient()->IsPlayerWars();
+
+Find(bClanGame - Replace)
+
+	char szText[256];
+	int nRed = 0, nBlue = 0;
+	if (bClanGame || bPlayerWars)
+	{
+		for (ZCharacterManager::iterator itor = ZGetCharacterManager()->begin();
+			itor != ZGetCharacterManager()->end(); ++itor)
+		{
+			ZCharacter* pCharacter = (*itor).second;
+
+			if (pCharacter->GetTeamID() == MMT_BLUE) nBlue++;
+			if (pCharacter->GetTeamID() == MMT_RED) nRed++;
+		}
+		if (bPlayerWars)
+			sprintf(szText, "Ladder (%d) : (%d)", nRed, nBlue);
+		else
+		{
+			switch (ZGetGame()->GetMatch()->GetMatchType())
+			{
+			case MMATCH_GAMETYPE_ASSASSINATE:
+				sprintf(szText, "Clan War Assassinate %d:%d (%s vs %s)", nRed, nBlue, m_szRedClanName, m_szBlueClanName);
+				break;
+			case MMATCH_GAMETYPE_GLADIATOR_TEAM:
+				sprintf(szText, "Clan War Gladiator %d:%d (%s vs %s)", nRed, nBlue, m_szRedClanName, m_szBlueClanName);
+				break;
+			default:
+				sprintf(szText, "Clan War %d:%d (%s vs %s)", nRed, nBlue, m_szRedClanName, m_szBlueClanName);
+				break;
+			}
+		}
+		//char nvsn[32];
+		//sprintf(nvsn,"%d:%d",nRed,nBlue);
+		//ZTransMsg( szText, MSG_GAME_SCORESCREEN_STAGENAME, 3, nvsn, m_szRedClanName, m_szBlueClanName );
+
+	}
+	else
+	{
+		// Å¬·£ÀüÀÌ ¾Æ´Ï¸é ¹æÁ¦¸¦ Ç¥½ÃÇÑ´Ù
+		sprintf(szText, "(%03d) %s", ZGetGameClient()->GetStageNumber(), ZGetGameClient()->GetStageName());
+	}
+	TextRelative(pDC, 0.26f, 0.22f, szText);
+
+Find (if (ZGetGame()->GetMatch()->IsTeamPlay()) - Replace)
+
+	if (ZGetGame()->GetMatch()->IsTeamPlay())
+	{
+		if (bPlayerWars)
+			sprintf(szText, "%d (Ladder Red)  VS  %d (Ladder Blue)", ZGetGame()->GetMatch()->GetTeamScore(MMT_RED), ZGetGame()->GetMatch()->GetTeamScore(MMT_BLUE));
+		else if (bClanGame)
+		{
+
+			{
+
+				sprintf(szText, "%d (%s)  VS  %d (%s)",
+					ZGetGame()->GetMatch()->GetTeamScore(MMT_RED), m_szRedClanName,
+					ZGetGame()->GetMatch()->GetTeamScore(MMT_BLUE), m_szBlueClanName);
+			}
+		}
+		else
+		{
+			if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_DEATHMATCH_TEAM2) // ÆÀÀEÏ¶§ ¹«ÇÑµ¥½º¸ÅÄ¡¸¸ ¿¹¿Ü°¡ ¸¹ÀÌ ¹ß»ýÇÕ´Ï´Ù =_=;
+				sprintf(szText, "%s : %d(Red) vs %d(Blue)", ZGetGameTypeManager()->GetGameTypeStr(ZGetGame()->GetMatch()->GetMatchType()),
+				ZGetGame()->GetMatch()->GetTeamKills(MMT_RED),
+				ZGetGame()->GetMatch()->GetTeamKills(MMT_BLUE));
+		}
+	}
+	else
+
+Find(GetGame()->GetMatch()->IsWaitForRoundEnd() - Replace)
+
+	else if (ZGetGame()->GetMatch()->IsWaitForRoundEnd() && !bClanGame && !bPlayerWars)
+	{
+
+
+Find (ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY - Replace)
+
+	else if (!bClanGame && !bPlayerWars)
+	{
+
+Find (const float normalXPOS[]  - Add under)
+
+	bool clanpos = false;
+	if (bPlayerWars || bClanGame) clanpos = true;
+
+Find (GetGameTypeManager()->IsQuestDerived( ZGetGame()->GetMatch()->GetMatchType() - Add under)
+
+	else if (bClanGame || bPlayerWars)
+	{
+		x = ITEM_XPOS[2];	// HP/AP
+		sprintf(szBuff, "%s/%s", ZMsg(MSG_CHARINFO_HP), ZMsg(MSG_CHARINFO_AP));
+		TextRelative(pDC, x, y, szBuff);
+	}
+
+
+Find (ZGetGameTypeManager()->IsQuestDerived(ZGetGame()->GetMatch()->GetMatchType() - Replace)
+
+	if (ZGetGameTypeManager()->IsQuestDerived(ZGetGame()->GetMatch()->GetMatchType()))
+			pItem->nExp = pCharacter->GetStatus().Ref().nKills * 100;
+		else
+			pItem->nExp = pCharacter->GetStatus().Ref().nExp;
+
+		if (bClanGame || bPlayerWars)
+		{
+			if (ZGetGame()->m_pMyCharacter->IsTeam(pCharacter))
+			{
+				pItem->HP = pCharacter->GetHP();
+				pItem->AP = pCharacter->GetAP();
+				pItem->MaxHP = pCharacter->GetMaxHP();
+				pItem->MaxAP = pCharacter->GetMaxAP();
+			}
+			else
+			{
+				pItem->HP = 0;
+				pItem->AP = 0;
+			}
+		}
+		pItem->nKills = pCharacter->GetStatus().Ref().nKills;
+		pItem->nDeaths = pCharacter->GetStatus().Ref().nDeaths;
+		pItem->uidUID = pCharacter->GetUID();
+
+
+Find (backgroundcolor = BACKGROUND_COLOR_MYCHAR_DEATH_MATCH; - Replace)
+
+		MCOLOR backgroundcolor;
+		if (pItem->bMyChar) {
+			backgroundcolor = BACKGROUND_COLOR_MYCHAR_DEATH_MATCH;
+			if (!bClanGame && !bPlayerWars) {
+				backgroundcolor =
+					(pItem->nTeam == MMT_RED) ? BACKGROUND_COLOR_MYCHAR_RED_TEAM :
+					(pItem->nTeam == MMT_BLUE) ? BACKGROUND_COLOR_MYCHAR_BLUE_TEAM :
+					BACKGROUND_COLOR_MYCHAR_DEATH_MATCH;
+			}
+		}
+
+
+Find (pItem->bMyChar || pItem->bCommander - Replace)
+
+		if (pItem->bMyChar || pItem->bCommander)
+		{
+			int y1 = itemy * MGetWorkspaceHeight();
+			int y2 = (y + linespace * nCount) * MGetWorkspaceHeight();
+			bool clangame = false;
+			if (bPlayerWars || bClanGame) clangame = true;
+			int x1 = clangame ? 0.43 * MGetWorkspaceWidth() : 0.255 * MGetWorkspaceWidth();
+			int x2 = (0.715 + 0.26) * MGetWorkspaceWidth();
+
+			pDC->SetColor(backgroundcolor);
+			pDC->FillRectangleW(x1, y1, x2 - x1, y2 - y1);
+		}
+
+Find(!bClanGame - Replace)
+
+		if (!bClanGame && !bPlayerWars)
+		{
+			if (pItem->nTeam == MMT_RED)		// red
+				textcolor = pItem->bDeath ? TEXT_COLOR_RED_TEAM_DEAD : TEXT_COLOR_RED_TEAM;
+			else
+				if (pItem->nTeam == MMT_BLUE)		// blue
+					textcolor = pItem->bDeath ? TEXT_COLOR_BLUE_TEAM_DEAD : TEXT_COLOR_BLUE_TEAM;
+				else
+					if (pItem->nTeam == MMT_SPECTATOR)
+						textcolor = TEXT_COLOR_SPECTATOR;
+
+		}
+
+
+Find(!bClanGame - Replace)
+
+		if (!bClanGame && !bPlayerWars)
+		{
+			x = ITEM_XPOS[1];
+			//x = 0.399f;
+			int nIconSize = .8f * linespace * (float)MGetWorkspaceHeight();
+			float icony = itemy + (linespace - (float)nIconSize / (float)MGetWorkspaceHeight())*.5f;
+
+			if (pItem->szClan[0]) {
+				MBitmap *pbmp = ZGetEmblemInterface()->GetClanEmblem(pItem->nClanID);
+				if (pbmp) {
+					pDC->SetBitmap(pbmp);
+					int screenx = x*MGetWorkspaceWidth();
+					int screeny = icony*MGetWorkspaceHeight();
+
+					pDC->Draw(screenx, screeny, nIconSize, nIconSize);
+
+				}
+			}
+			x += (float)nIconSize / (float)MGetWorkspaceWidth() + 0.005f;
+			TextRelative(pDC, x, texty, pItem->szClan);
+		}
+
+Find((ZGetGameTypeManager()->IsQuestDerived(ZGetGame()->GetMatch()->GetMatchType())) - Replace)
+
+
+		if (ZGetGameTypeManager()->IsQuestDerived(ZGetGame()->GetMatch()->GetMatchType()))
+		{
+			bool bDraw = m_Observer.IsVisible();
+
+			ZCharacterManager::iterator itor = ZGetGame()->m_CharacterManager.find(pItem->uidUID);
+			if (itor != ZGetGame()->m_CharacterManager.end())
+			{
+				ZCharacter* pQuestPlayerInfo = (*itor).second;
+
+				MCOLOR tmpColor = pDC->GetColor();
+
+				x = ITEM_XPOS[2];
+
+				pDC->SetColor(MCOLOR(0x30000000));
+				pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 1, 0.08*MGetWorkspaceWidth(), 7);
+				float nValue = (0.08 * (pQuestPlayerInfo->GetHP() / pQuestPlayerInfo->GetMaxHP()));
+				pDC->SetColor(MCOLOR(0xFFFF0000));
+				pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 1, nValue*MGetWorkspaceWidth(), 7);
+
+				pDC->SetColor(MCOLOR(0x30000000));
+				pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 9, 0.08*MGetWorkspaceWidth(), 3);
+				float nValuee = (0.08 * (pQuestPlayerInfo->GetAP() / pQuestPlayerInfo->GetMaxAP()));
+				pDC->SetColor(MCOLOR(0xFF00FF00));
+				pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 9, nValuee*MGetWorkspaceWidth(), 3);
+
+				pDC->SetColor(tmpColor);
+
+				x = ITEM_XPOS[3];
+				int nKills = 0;
+				ZModule_QuestStatus* pMod = (ZModule_QuestStatus*)pQuestPlayerInfo->GetModule(ZMID_QUESTSTATUS);
+				if (pMod)
+					nKills = pMod->GetKills();
+				sprintf(szText, "%d", nKills);
+				TextRelative(pDC, x, texty, szText, true);
+			}
+		}
+		else
+		{
+			if (bClanGame || bPlayerWars)
+			{
+				x = ITEM_XPOS[2] - 0.02f;
+				sprintf(szText, "%d", pItem->nExp);
+				if (!pItem->bDeath && ZGetGame()->m_pMyCharacter->GetTeamID() == pItem->nTeam)
+				{
+					x = ITEM_XPOS[2] + 0.04f;
+					pDC->SetColor(MCOLOR(0x30000000));
+					pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 1, 0.04*MGetWorkspaceWidth(), 7);
+					float nValue = (0.04 * (pItem->HP / pItem->MaxHP));
+					pDC->SetColor(MCOLOR(0xFFFF0000));
+					pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 1, nValue*MGetWorkspaceWidth(), 7);
+
+					pDC->SetColor(MCOLOR(0x30000000));
+					pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 9, 0.04*MGetWorkspaceWidth(), 3);
+					float nValuee = (0.04 * (pItem->AP / pItem->MaxAP));
+					pDC->SetColor(MCOLOR(0xFF00FF00));
+					pDC->FillRectangleW((x*MGetWorkspaceWidth()), texty*MGetWorkspaceHeight() + 9, nValuee*MGetWorkspaceWidth(), 3);
+				}
+			}
+		    else
+			{
+				x = ITEM_XPOS[2];
+				sprintf(szText, "%d", pItem->nExp);
+				TextRelative(pDC, x, texty, szText, true);
+			}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
