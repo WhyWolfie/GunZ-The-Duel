@@ -75,6 +75,10 @@
 - dutygunz: [dutygunz](https://archive.org/details/instalador-duty-gunz)
 - kaosgunz2.0: [kaosgunz 2.0](https://archive.org/details/kaos-gunz-2.0-a-revolucao)
 - vitalgunz: [vitalgunz](https://archive.org/details/vital-gunz)
+- fortrekgunz: [fortrekgunz](https://archive.org/details/fortrek-gunz-stgames)
+- demongunzv1: [demongunzv1](https://archive.org/details/demon-gunz-v-1)
+- enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
+
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
