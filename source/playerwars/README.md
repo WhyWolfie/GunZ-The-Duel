@@ -2298,6 +2298,394 @@ Open(ZIDLResource.cpp - Add)
 
 	#include "ZPlayerWarsRankingListBox.h"
 
+Find(ZDuelTournamentRankingListBox* ZIDLResource::GetDuelTournamentRankingListBox - Add under)
+
+	ZPlayerWarsRankingListBox* ZIDLResource::GetPlayerWarsRankingListBox(MXmlElement& element)
+	{
+		MXmlElement childElement;
+		char szBuf[4096];
+		//	char szAttr[4096];
+
+		MWidget* pParentWidget = GetParentWidget(element);
+		ZPlayerWarsRankingListBox* pWidget = new ZPlayerWarsRankingListBox("", pParentWidget, pParentWidget);
+		InsertWidget(element, pWidget);
+
+		int iCount = element.GetChildNodeCount();
+
+		for (int i = 0; i < iCount; i++)
+		{
+			memset(szBuf, 0, sizeof(szBuf));
+			childElement = element.GetChildNode(i);
+			childElement.GetTagName(szBuf);
+
+			if (GetCommonWidgetProperty(pWidget, childElement, szBuf)) continue;
+		}
+		return pWidget;
+	}
+
+Find(if (!strcmp(szTagName, "DUELTOURNAMENTRANKINGLIST")) - Add under)
+
+	else if (!strcmp(szTagName, "PLAYERWARSRANKINGLIST"))
+	{
+		GetPlayerWarsRankingListBox(element);
+	}
+
+Open(ZIDLResource.h - class ZDuelTournamentRankingListBox; - Add under)
+
+	class ZPlayerWarsRankingListBox;
+
+Find (ZDuelTournamentRankingListBox* GetDuelTournamentRankingListBox( MXmlElement& element ); - Add under)
+
+	ZPlayerWarsRankingListBox* GetPlayerWarsRankingListBox(MXmlElement& element);
+
+Open(ZInterfaceListener.cpp - BEGIN_IMPLEMENT_LISTENER(ZGetBattleExitButtonListener, MBTN_CLK_MSG) - Replace )
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetBattleExitButtonListener, MBTN_CLK_MSG)
+	if (!ZGetGameClient()->IsLadderGame() && !ZGetGameClient()->IsPlayerWars())
+	{
+		if (pWidget->GetParent() != NULL) pWidget->GetParent()->Show(false);
+		ZGetGameInterface()->ReserveLeaveBattle();
+	}
+	END_IMPLEMENT_LISTENER()
+
+Find (BEGIN_IMPLEMENT_LISTENER( ZGetRegisterListener, MBTN_CLK_MSG) - Add under)
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetArrangedPlayerWarsListener, MBTN_CLK_MSG)
+	ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+	MWidget* pWidget = pResource->FindWidget("PlayerWarsMapVote");
+	if (pWidget != NULL && pWidget->IsVisible()) return true;
+	pWidget = pResource->FindWidget("PlayerWarsGameDialog");
+	if (pWidget != NULL && pWidget->IsVisible()) return true;
+	pWidget = pResource->FindWidget("LobbyFindClanTeam");
+	if (pWidget != NULL && pWidget->IsVisible()) return true;
+
+	pWidget = pResource->FindWidget("PlayerWarsGameDialog");
+	if (pWidget != NULL)
+	{
+		pWidget->Show(true, true);
+		unsigned long int nPlaceFilter = 0;
+		SetBitSet(nPlaceFilter, MMP_LOBBY);
+		char Name[100];
+		for (int i = 0; i < 3; i++)
+		{
+			sprintf(Name, "PlayerWarsVote%d", i);
+			MLabel* pLabel = (MLabel*)pResource->FindWidget(Name);
+			if (pLabel)
+				pLabel->SetTextColor(MCOLOR(255, 255, 15));
+		}
+	}
+	END_IMPLEMENT_LISTENER();
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetPlayerWarsVote0, MBTN_CLK_MSG)
+	ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+	char Name[100];
+	for (int i = 0; i < 3; i++)
+	{
+		sprintf(Name, "PlayerWarsVote%d", i);
+		MLabel* pLabel = (MLabel*)pResource->FindWidget(Name);
+		if (pLabel)
+			pLabel->SetTextColor(MCOLOR(255, 255, 15));
+	}
+	ZGetGameClient()->LastVoteID = 0;
+	MLabel* pLabel = (MLabel*)pResource->FindWidget("PlayerWarsVote0");
+	if (pLabel)
+	pLabel->SetTextColor(MCOLOR(102, 205, 0));
+	ZPostPlayerWarsVote(0);
+	END_IMPLEMENT_LISTENER();
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetPlayerWarsVote1, MBTN_CLK_MSG)
+	ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+	char Name[100];
+	for (int i = 0; i < 3; i++)
+	{
+		sprintf(Name, "PlayerWarsVote%d", i);
+		MLabel* pLabel = (MLabel*)pResource->FindWidget(Name);
+		if (pLabel)
+			pLabel->SetTextColor(MCOLOR(255, 255, 15));
+	}
+	ZGetGameClient()->LastVoteID = 1;
+	MLabel* pLabel = (MLabel*)pResource->FindWidget("PlayerWarsVote1");
+	if (pLabel)
+	pLabel->SetTextColor(MCOLOR(102, 205, 0));
+	ZPostPlayerWarsVote(1);
+	END_IMPLEMENT_LISTENER();
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetPlayerWarsVote2, MBTN_CLK_MSG)
+	ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+	char Name[100];
+	for (int i = 0; i < 3; i++)
+	{
+		sprintf(Name, "PlayerWarsVote%d", i);
+		MLabel* pLabel = (MLabel*)pResource->FindWidget(Name);
+		if (pLabel)
+			pLabel->SetTextColor(MCOLOR(255, 255, 15));
+	}
+	ZGetGameClient()->LastVoteID = 2;
+	MLabel* pLabel = (MLabel*)pResource->FindWidget("PlayerWarsVote2");
+	if (pLabel)
+	pLabel->SetTextColor(MCOLOR(102, 205, 0));
+	ZPostPlayerWarsVote(2);
+	END_IMPLEMENT_LISTENER();
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetPlayerWarsDialogOkListener, MBTN_CLK_MSG)
+		ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+		ZGetGameClient()->LastVoteID = -1;
+		MWidget* pWidget = pResource->FindWidget("PlayerWarsGameDialog");
+		if(pWidget!=NULL)
+			pWidget->Show(false);
+		int Lead, GameType;
+		MButton* pButton = (MButton*)pResource->FindWidget("PlayerWarsLead");
+		if ((pButton) && (pButton->GetCheck()))
+		{
+			Lead = 1;
+		}		
+		MComboBox* pCWidget = (MComboBox*)pResource->FindWidget("PlayerWarsGameType");
+		if(pCWidget)	
+		{
+			GameType = pCWidget->GetSelIndex();
+		}
+		ZPostJoinPlayerWars(Lead, GameType);
+		ZGetGameInterface()->OnArrangedTeamGameUI(true);
+	END_IMPLEMENT_LISTENER();
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetPlayerWarsDialogCloseListener, MBTN_CLK_MSG)
+		ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+		MWidget* pWidget = pResource->FindWidget("PlayerWarsGameDialog");
+		if(pWidget!=NULL)
+			pWidget->Show(false);
+
+		pWidget = pResource->FindWidget("LobbyFindClanTeam");
+		if(pWidget!=NULL)
+			pWidget->Show(false);
+	END_IMPLEMENT_LISTENER();
+
+
+Find (ZGetArrangedTeamGame_CancelListener - Replace)
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetArrangedTeamGame_CancelListener, MBTN_CLK_MSG)
+		ZIDLResource* pResource = ZGetGameInterface()->GetIDLResource();
+		MWidget* pWidget = pResource->FindWidget("LobbyFindClanTeam");
+		if(pWidget!=NULL)
+			pWidget->Show(false);
+		bool bPlayerWarsUI = (ZGetGameClient()->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS);
+		ZPostLadderCancel(bPlayerWarsUI);
+	END_IMPLEMENT_LISTENER();
+
+Find (nChannelType = MCHANNEL_TYPE_DUELTOURNAMENT - Add under)
+
+	case 4 : nChannelType = MCHANNEL_TYPE_PLAYERWARS; break;
+
+Find (ZGetGameResultQuit - Replace)
+
+	BEGIN_IMPLEMENT_LISTENER(ZGetGameResultQuit, MBTN_CLK_MSG)
+	if (!ZGetGameClient()->IsPlayerWars())
+	{
+		if (ZGetGameClient()->IsLadderGame() || 
+			ZGetGameClient()->IsDuelTournamentGame())
+			PostMessage(g_hWnd, WM_CHANGE_GAMESTATE, GUNZ_LOBBY, 0);
+		else
+			PostMessage(g_hWnd, WM_CHANGE_GAMESTATE, GUNZ_STAGE, 0);
+	}
+	END_IMPLEMENT_LISTENER();
+
+Open(ZInterfaceListener.h - ZGetLanguageChangeConfirmListenter - Under)
+
+	DECLARE_LISTENER(ZGetPlayerWarsVote0);
+	DECLARE_LISTENER(ZGetPlayerWarsVote1);
+	DECLARE_LISTENER(ZGetPlayerWarsVote2);
+	DECLARE_LISTENER(ZGetArrangedPlayerWarsListener)
+	DECLARE_LISTENER(ZGetPlayerWarsDialogOkListener);
+	DECLARE_LISTENER(ZGetPlayerWarsDialogCloseListener);
+
+Add(Gunz\ZPlayerWarsRankingListBox.cpp) <br>
+Add(Gunz\ZPlayerWarsRankingListBox.h) <br>
+
+Open(ZPost.h - ZPostRequestUseSpendableBuffItem - Add under) <br>
+
+	inline void ZPostPlayerWarsVote(int Map)
+	{
+		ZPOSTCMD1(MC_MATCH_PLAYERWARS_VOTE, MCmdParamInt(Map));
+	}
+	inline void ZPostJoinPlayerWars(int Lead, int GameType)
+	{
+		ZPOSTCMD2(MC_MATCH_JOIN_PLAYERWARS, MCmdParamInt(Lead), MCmdParamInt(GameType));
+	}
+	inline void ZPostPlayerWarsAccept()
+	{
+	}
+	inline void ZPostPlayerWarsLeave()
+	{
+	}
+
+Find(void ZPostLadderCancel - Replace)
+
+	inline void ZPostLadderCancel(bool PlayerWars)
+	{
+		ZPOSTCMD1(MC_MATCH_LADDER_REQUEST_CANCEL_CHALLENGE, MCmdParamBool(PlayerWars));
+	}
+
+Open(ZStageInterface.cpp - ZGetGameTypeManager()->IsQuestDerived(pSetting->nGameType) - Replace)
+
+	#ifdef _QUEST
+		if (ZGetGameTypeManager()->IsQuestDerived(pSetting->nGameType) || ZGetGameClient()->IsLadderGame() || pSetting->nGameType == MMATCH_GAMETYPE_DUELTOURNAMENT)
+		{
+			ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, false);
+		}
+		else if (ZGetGameClient()->IsPlayerWars())
+		{
+			ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, false);
+			ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_STAGE_EXIT, false);
+			//ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_PROG_EXIT, false);
+			//ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_CLOSE, false);
+		}
+		else
+		{
+			ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, true);
+			ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_STAGE_EXIT, true);
+			//ZApplication::GetGameInterface()->GetCombatMenu()->EnableItem(ZCombatMenu::ZCMI_PROG_EXIT, true);
+		}
+
+	#endif
+	}
+
+Open(MBMatchServer_Stage.cpp - ValidateStageJoin - Replace)
+
+	int MBMatchServer::ValidateStageJoin(const MUID& uidPlayer, const MUID& uidStage)
+	{
+		MMatchObject* pObj = GetObject(uidPlayer);
+		if (!IsEnabledObject(pObj)) return MERR_CANNOT_JOIN_STAGE;
+
+		MMatchStage* pStage = FindStage(uidStage);
+		if (pStage == NULL) return MERR_CANNOT_JOIN_STAGE;
+
+		if (pStage->GetState() == STAGE_STATE_CLOSE) return MERR_CANNOT_JOIN_STAGE;
+
+		if (!IsAdminGrade(pObj))
+		{
+			if (pStage->GetStageType() == MST_PLAYERWARS && pStage->PlayerWarsTeam(pObj->GetCharInfo()->m_nCID) == MMT_ALL)
+			{
+				return MERR_CANNOT_JOIN_STAGE;
+			}
+			if (pStage->GetStageType() == MST_LADDER && pObj->GetCharInfo()->m_ClanInfo.m_nClanID != pStage->GetRedCLID() && pObj->GetCharInfo()->m_ClanInfo.m_nClanID != pStage->GetBlueCLID() && pObj->GetCharInfo())
+			{
+				return MERR_CANNOT_JOIN_STAGE;
+			}
+			if (pStage->GetStageSetting()->GetMaxPlayers() <= pStage->GetCountableObjCount())
+			{
+				return MERR_CANNOT_JOIN_STAGE_BY_MAXPLAYERS;
+			}
+
+			if (pStage->GetStageSetting()->GetLimitLevel() != 0)
+			{
+				int nMasterLevel, nLimitLevel;
+				MMatchObject* pMaster = GetObject(pStage->GetMasterUID());
+
+				if (IsEnabledObject(pMaster))
+				{
+					nMasterLevel = pMaster->GetCharInfo()->m_nLevel;
+					nLimitLevel = pStage->GetStageSetting()->GetLimitLevel();
+					if (abs(pObj->GetCharInfo()->m_nLevel - nMasterLevel) > nLimitLevel)
+					{
+						return MERR_CANNOT_JOIN_STAGE_BY_LEVEL;
+					}
+				}
+			}
+
+			if ((pStage->GetStageSetting()->GetForcedEntry() == false) &&
+				(pStage->GetState() != STAGE_STATE_STANDBY))
+			{
+				return MERR_CANNOT_JOIN_STAGE_BY_FORCEDENTRY;
+			}
+
+			if (pStage->CheckBanList(pObj->GetCharInfo()->m_nCID))
+				return MERR_CANNOT_JOIN_STAGE_BY_BAN;
+
+		}
+
+		return MOK;
+	}
+
+Open(OnProcessAsyncJob.cpp - pObj->FreeFriendInfo(); - Add under)
+
+		pObj->FreePlayerWarsInfo();
+
+Find(SendDuelTournamentCharInfoToPlayer(pJob->GetUID()); - Add under)
+
+	SendPlayerWarsCharInfoToPlayer(pJob->GetUID());
+	SendPlayerWarsSideRankingToPlayer(pJob->GetUID());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
