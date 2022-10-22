@@ -12,5 +12,6 @@ Find(bool MMatchServer::Create(int nPort) - Add under)
 
 	SControl::Main();
 
+Probably only for SQL2005 🙃
 
 Credits : DelPa, SeaTroll
