@@ -1,3 +1,5 @@
+Mark '//Rejoin' for now i will add that later in the future.
+
 Open(MMatchChannel.h - MCHANNEL_TYPE)
 
 	MCHANNEL_TYPE_PLAYERWARS = 6,
@@ -3339,9 +3341,20 @@ XML(Default/Lobby.xml)
 		<BITMAP type="down">playerwars_on_kr.tga</BITMAP>
 	</BMBUTTON>
 
+Forgot this part too
 
+Open(MSharedCommandTable.cpp - Scroll all the way down and add this code...)
 
-
+	C(MC_MATCH_PLAYERWARS_CHARINFO, "ga15g5awfwa", "hssgseo", MCDT_MACHINE2MACHINE)//MC_MATCH_PLAYERWARS_CHARINFO
+		P(MPT_INT, "Ranking")
+		P(MPT_INT, "Wins")
+		P(MPT_INT, "Loses")
+		P(MPT_INT, "Draws")
+		P(MPT_INT, "Score")
+	C(MC_MATCH_PLAYERWARS_COUNTER, "MC_MATCH_PLAYERWARS_COUNTER", "Player Wars Counter Info", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "Data")
+	C(MC_MATCH_PLAYERWARS_SIDERANK, "MC_MATCH_PLAYERWARS_SIDERANK", "Player Wars Side Rank Info", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "Data")
 
 
 
