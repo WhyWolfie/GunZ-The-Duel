@@ -548,90 +548,602 @@ Find(MMatchChannel::CheckLifePeriod() - Replace)
       return false;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Open(MMatchDBMgr.cpp - MatchDBMgr::MMatchDBMg - Place Above)
+
+	TCHAR g_spInsertPWGameLog[] = _T("{CALL PWInsertGameLog('%s', '%s', %d, %d, %d)}");
+	TCHAR g_spPlayerWarsOpen[] = _T("{CALL spPWOpen()}");
+
+Find(MMatchDBMgr::LogCallback - Add under)
+
+	bool MMatchDBMgr::InsertPWGameLog(TCHAR* Winners, TCHAR* Losers, int WinningScore, int LosingScore, int MapID){
+		_STATUS_DB_START;
+		if (!CheckOpen()) return false;
+		CString strSQL;
+		try {
+			strSQL.Format(g_spInsertPWGameLog, m_DBFilter.Filtering(Winners).c_str(), m_DBFilter.Filtering(Losers).c_str(), WinningScore, LosingScore, MapID);
+			m_DB.ExecuteSQL(strSQL);
+		}
+		catch (CDBException* e) {
+			ExceptionHandler(strSQL, e);
+			return false;
+		}
+		_STATUS_DB_END(1);
+		return true;
+	}
+	int MMatchDBMgr::IsPlayerWarsOpen()
+	{
+		_STATUS_DB_START;
+		if (!CheckOpen()) return -1;
+		CString strSQL;
+		strSQL.Format(g_spPlayerWarsOpen);
+		CODBCRecordset rs(&m_DB);
+		try {
+			rs.Open(strSQL, CRecordset::forwardOnly, CRecordset::readOnly);
+		}
+		catch (CDBException* e) {
+			ExceptionHandler(strSQL, e);
+			return -1;
+		}
+		if ((rs.IsOpen() == FALSE) || (rs.GetRecordCount() <= 0) || (rs.IsBOF() == TRUE)) {
+			return -1;
+		}
+		return rs.Field("Opened").AsInt();
+		_STATUS_DB_END(0);
+
+	}
+
+Find (MMatchDBMgr::GetDuelTournamentSideRankingInfo - Add under)
+
+	bool MMatchDBMgr::UpdatePlayerWarsCharInfo(DWORD dwCID, int Win, int Loss, int Draw, int Score, int mode)
+	{
+		_STATUS_DB_START;
+		if (!CheckOpen())
+			return false;
+
+		CString strSQL;
+
+		try
+		{
+			strSQL.Format(g_spUpdatePWCharacterInfo, dwCID, Win, Loss, Draw, Score, mode);
+
+			m_DB.ExecuteSQL(strSQL);
+		}
+		catch (CDBException* e)
+		{
+
+			ExceptionHandler(strSQL, e);
+			return false;
+		}
+
+		_STATUS_DB_END(51);
+
+		return true;
+	}
+
+	bool MMatchDBMgr::GetPlayerWarsCharInfo(DWORD dwCID, PlayerWarsCharInfo *pPWCharInfo)
+	{
+		_STATUS_DB_START;
+		if (!CheckOpen()) return false;
+
+		CString strSQL;
+		strSQL.Format(g_spGetPWCharacterInfo, dwCID);
+		CODBCRecordset rs(&m_DB);
+
+		try {
+			rs.Open(strSQL, CRecordset::forwardOnly, CRecordset::readOnly);
+		}
+		catch (CDBException* e) {
+
+			ExceptionHandler(strSQL, e);
+			return false;
+		}
+
+		if ((rs.IsOpen() == FALSE) || (rs.GetRecordCount() <= 0) || (rs.IsBOF() == TRUE)) {
+			return false;
+		}
+		pPWCharInfo->Ranking = rs.Field("Ranking").AsInt();
+		pPWCharInfo->Wins = rs.Field("Wins").AsInt();
+		pPWCharInfo->Losses = rs.Field("Losses").AsInt();
+		pPWCharInfo->Draws = rs.Field("Draws").AsInt();
+		pPWCharInfo->Score = rs.Field("Score").AsInt();
+		_STATUS_DB_END(51);
+
+		return true;
+	}
+
+	bool MMatchDBMgr::GetPlayerWarsSideRankingInfo(DWORD dwCID, list<PWRankingInfo*> *pRankingList)
+	{
+		_STATUS_DB_START;
+		CString strSQL;
+		strSQL.Format(g_PWGetSideRanking, dwCID);
+		CODBCRecordset rs(&m_DB);
+
+		try {
+			rs.Open(strSQL, CRecordset::forwardOnly, CRecordset::readOnly);
+		}
+		catch (CDBException* e) {
+
+			ExceptionHandler(strSQL, e);
+			return false;
+		}
+
+		if ((rs.IsOpen() == FALSE)) {
+			return false;
+		}
+
+		for (int nIndex = 0; !rs.IsEOF(); rs.MoveNext())
+		{
+			PWRankingInfo *pInfo = new PWRankingInfo;
+
+			strcpy(pInfo->m_szCharName, rs.Field("Name").AsString());
+			pInfo->m_nWins = rs.Field("Wins").AsInt();
+			pInfo->m_nLoses = rs.Field("Losses").AsInt();
+			pInfo->m_nRanking = rs.Field("Ranking").AsInt();
+			pRankingList->push_back(pInfo);
+		}
+
+		_STATUS_DB_END(51);
+		return true;
+	}
+
+
+Find (MMatchDBMgr::RewardCharBattleTimeReward - Add under)
+
+	TCHAR spUpdatePlayerWars[] = _T("{CALL spPWRegularUpdateRanking}");
+
+	bool MMatchDBMgr::UpdatePlayerWars()
+	{
+		_STATUS_DB_START;
+		if (!CheckOpen()) return false;
+
+		CString strSQL;
+		try
+		{
+			strSQL.Format(spUpdatePlayerWars);
+			m_DB.ExecuteSQL(strSQL);
+		}
+		catch (CDBException* e)
+		{
+			ExceptionHandler(strSQL, e);
+			return false;
+		}
+
+		_STATUS_DB_END(36);
+		return true;
+	}
+
+Open(MMatchObject.cpp - m_pDuelTournamentCharInfo = NULL; - Add under)
+
+	m_nLastCheckBattleTimeReward = 0;
+	PlayerWarsFriend = MUID(0, 0);
+	PwState = NotInvited;
+	PlayerWarsIdentifier = -1;
+	LastVoteID = -1;
+	bMatching = false;
+
+Find (MMatchObject::~MMatchObject() - Replace)
+
+	MMatchObject::~MMatchObject()
+	{
+		FreeCharInfo();
+		FreeFriendInfo();
+		FreeDuelTournamentInfo();
+		FreePlayerWarsInfo();
+
+		LoginNotCompleted();
+	}
+
+Find (MMatchObject::FreeFriendInfo() - Add under)
+
+	void MMatchObject::FreePlayerWarsInfo()
+	{
+		if (m_pPlayerWarsCharInfo)
+		{
+			m_pPlayerWarsCharInfo = NULL;
+		}
+	}
+
+Find (MMatchObject::OnEnterBattle() - Replace)
+
+	void MMatchObject::OnEnterBattle()
+	{	
+		SetAlive(false);
+		SetKillCount(0);
+		SetDeathCount(0);
+		SetAllRoundDeathCount(0);	
+		SetAllRoundKillCount(0);
+		SetEnterBattle(true);
+		SetBattleTimeReward(true);
+		MMatchChannel* pChannel = MGetMatchServer()->FindChannel(GetChannelUID());
+		if (pChannel && pChannel->GetChannelType() != MCHANNEL_TYPE_PLAYERWARS && pChannel && pChannel->GetChannelType() != MCHANNEL_TYPE_CLAN)
+		ResetGamePlayInfo();
+	}
+
+Find (MMatchObject::OnLeaveBattle() - Replace)
+
+	void MMatchObject::OnLeaveBattle()
+	{	
+		SetKillCount(0);
+		SetDeathCount(0);
+		SetAlive(false);
+		SetStageState(MOSS_NONREADY);
+		SetLaunchedGame(false);
+		MMatchChannel* pChannel = MGetMatchServer()->FindChannel(GetChannelUID());
+		if (pChannel && pChannel->GetChannelType() != MCHANNEL_TYPE_PLAYERWARS && pChannel && pChannel->GetChannelType() != MCHANNEL_TYPE_CLAN)
+		SetEnterBattle(false);
+		SetBattleTimeReward(false);
+	}
+
+Find (MMatchObject::SetCharInfo - Add under)
+
+	void MMatchObject::SetPlayerWarsCharInfo(PlayerWarsCharInfo *pPWCharInfo)
+	{
+		// ÀÌ¹Ì ÀÖ´Â Á¤º¸¸é ¾îÂ¼ÁÒ? -.,-;
+		// ±×·² ÀÏÀº ¾ø°ÚÁö¸¸.. Áö¿ì°í ´Ù½Ã ÇÒ´çÇÏÀÚ!
+		if (m_pPlayerWarsCharInfo) {
+			delete m_pPlayerWarsCharInfo;
+			m_pPlayerWarsCharInfo = NULL;
+		}
+
+		m_pPlayerWarsCharInfo = new PlayerWarsCharInfo();
+		memcpy(m_pPlayerWarsCharInfo, pPWCharInfo, sizeof(PlayerWarsCharInfo));;
+	}
+
+Open(MMatchRule.cpp - OnCheckBattleTimeOut - Add under)
+
+	int nGameType = GetStage()->GetStageType();
+	int nLimitTime = 0; // just 4 declare?
+
+	switch (nGameType)
+	{
+	case MST_LADDER:
+	case MST_PLAYERWARS:
+		nLimitTime = GetStage()->GetStageSetting()->GetLimitTime() * 60 * 1000;
+		//MMatchServer::GetInstance()->LOG(MMatchServer::LOG_PROG,("ITS PASSING BY LADDER OR CW EVENT\n"));
+		break;
+	default:
+		nLimitTime = GetStage()->GetStageSetting()->GetLimitTime();// * 60 * 1000;
+		//MMatchServer::GetInstance()->LOG(MMatchServer::LOG_PROG,("NORMAL MATCH \n"));
+		break;
+	}
+
+Open(MMatchServer.cpp - m_dwNonBlockCount = 0; - Add under)
+
+	CanPlayerWars = true;
+	IsRunningCheck = false;
+
+Find (bool bIsDuelTournament = false; - Add under)
+
+	bool	bIsPlayerWars = false;
+
+Find (childElement.GetAttribute(&bIsDuelTournament, "IsDuelTournament"); - Add under)
+
+	childElement.GetAttribute(&bIsPlayerWars, "IsPlayerWars");
+
+Find (nChannelType = MCHANNEL_TYPE_DUELTOURNAMENT; - Add under)
+
+
+	else if (bIsPlayerWars)
+		nChannelType = MCHANNEL_TYPE_PLAYERWARS;
+
+Find ((MGetServerConfig()->GetServerMode() == MSM_CLAN) - Replace)
+
+	if (MGetServerConfig()->GetServerMode() == MSM_CLAN)
+	{
+		GetLadderMgr()->Tick(nGlobalClock);
+		GetPlayerWarsMgr()->Tick();
+	}
+
+Find ((NULL != pObj->GetCharInfo()) - Replace)
+
+	if (NULL != pObj->GetCharInfo())
+	{
+		pObj->FreeCharInfo();
+		pObj->FreeDuelTournamentInfo();
+		pObj->FreeFriendInfo();
+		pObj->FreePlayerWarsInfo();
+	}
+
+Open(MMatchServer_Async.cpp - Add)
+
+	#include "MAsyncDBJob_PlayerWars.h"
+
+Find (switch (pJob->GetJobID()) - Add under)
+
+		case MASYNCJOB_UPDATE_PW_INFO:
+		{
+			OnAsyncUpdatePlayerWars(pJob);
+		}
+		break;
+		case MASYNCJOB_GET_PW_INFO:
+		{
+			OnAsyncGetPlayerWarsCharInfo(pJob);
+		}
+		break;
+		case MASYNCJOB_GET_PW_SIDE_RANKING:
+		{
+			OnAsyncResponse_GetPlayerWarsSideRanking(pJob);
+		}
+		break;
+
+Find (MMatchServer::OnAsyncGetAccountCharList - Add above)
+
+	void MMatchServer::OnAsyncUpdatePlayerWars(MAsyncJob* pJobResult)
+	{
+		MAsyncDBJob_UpdatePlayerWarsCharInfo* pJob = (MAsyncDBJob_UpdatePlayerWarsCharInfo*)pJobResult;
+
+		if (pJob->GetResult() != MASYNC_RESULT_SUCCEED) {
+			char szTime[128] = "";
+			_strtime(szTime);
+
+			mlog("[%s] Async DB Query(UpdatePlayerWars) Failed\n", szTime);
+			return;
+		}
+	}
+
+
+Open(MMatchServer_Channel.cpp - Replace)
+
+		if (nChannelType == MCHANNEL_TYPE_DUELTOURNAMENT)
+			return false;
+		if (nChannelType == MCHANNEL_TYPE_PLAYERWARS)
+			return false;
+
+Open(MMatchServer_Char.cpp - Add)
+
+	#include "MAsyncDBJob_PlayerWars.h"
+
+Open(MMatchServer_Ladder.cpp - Replace)
   
-  
-  
-  
-  
-  
-  
+	  void MMatchServer::LadderGameLaunch(MLadderGroup* pGroupA, MLadderGroup* pGroupB, int nMapID)
+	{
+		MUID uidStage = MUID(0, 0);
+		if (StageAdd(NULL, "LADDER_GAME", true, "", &uidStage) == false) {
+			GetLadderMgr()->CancelChallenge(pGroupA->GetID(), "");
+			GetLadderMgr()->CancelChallenge(pGroupB->GetID(), "");
+			return;
+		}
+		MMatchStage* pStage = FindStage(uidStage);
+		if (pStage == NULL) {
+			GetLadderMgr()->CancelChallenge(pGroupA->GetID(), "");
+			GetLadderMgr()->CancelChallenge(pGroupB->GetID(), "");
+			return;
+		}
+
+		for (list<MUID>::iterator i = pGroupA->GetPlayerListBegin(); i != pGroupA->GetPlayerListEnd(); i++)
+		{
+			MUID uidPlayer = (*i);
+			MMatchObject* pObj = (MMatchObject*)GetObject(uidPlayer);
+			if (pObj)
+			{
+				pObj->PlayerWarsIdentifier = -1;
+				pObj->LastVoteID = -1;
+				LadderJoin(uidPlayer, uidStage, MMT_RED);
+			}
+		}
+		for (list<MUID>::iterator i = pGroupB->GetPlayerListBegin(); i != pGroupB->GetPlayerListEnd(); i++)
+		{
+			MUID uidPlayer = (*i);
+			MMatchObject* pObj = (MMatchObject*)GetObject(uidPlayer);
+			if (pObj)
+			{
+				pObj->PlayerWarsIdentifier = -1;
+				pObj->LastVoteID = -1;
+				LadderJoin(uidPlayer, uidStage, MMT_BLUE);
+			}
+		}
+		//////////////////////////////////////////////////////////////////////////////
+		int nRandomMap = 0;
+		MBaseTeamGameStrategy* pTeamGameStrategy = MBaseTeamGameStrategy::GetInstance(MGetServerConfig()->GetServerMode());
+
+		if (pTeamGameStrategy)
+		{
+			nRandomMap = pTeamGameStrategy->GetRandomMap((int)pGroupA->GetPlayerCount());
+		};
+
+		MMATCH_GAMETYPE nGameType = MMATCH_GAMETYPE_DEATHMATCH_TEAM;
+
+		pStage->SetStageType(MST_LADDER);
+		pStage->ChangeRule(nGameType);
+
+		if (pTeamGameStrategy)
+		{
+			MMatchLadderTeamInfo a_RedLadderTeamInfo, a_BlueLadderTeamInfo;
+			pTeamGameStrategy->SetStageLadderInfo(&a_RedLadderTeamInfo, &a_BlueLadderTeamInfo, pGroupA, pGroupB);
+
+			pStage->SetLadderTeam(&a_RedLadderTeamInfo, &a_BlueLadderTeamInfo);
+		};
+		MMatchStageSetting* pSetting = pStage->GetStageSetting();
+		pSetting->SetMasterUID(MUID(0, 0));
+
+		pSetting->SetMapIndex(nMapID);
+
+		pSetting->SetMapIndex(nRandomMap);
+
+		pSetting->SetGameType(nGameType);
+		pSetting->SetLimitTime(3 * 60 * 1000);
+		pSetting->SetRoundMax(99);
+		pSetting->SetAntiLead(pGroupA->GetAntiLeadMatching());
+		MCommand* pCmd = CreateCmdResponseStageSetting(uidStage);
+		RouteToStage(uidStage, pCmd);
+
+		if ((MGetMapDescMgr()->MIsCorrectMap(nMapID)) && (MGetGameTypeMgr()->IsCorrectGameType(nGameType)))
+		{
+			if (pStage->StartGame(MGetServerConfig()->IsUseResourceCRC32CacheCheck()) == true) {
+				ReserveAgent(pStage);
+
+				MMatchObjectCacheBuilder CacheBuilder;
+				CacheBuilder.Reset();
+				for (MUIDRefCache::iterator i = pStage->GetObjBegin(); i != pStage->GetObjEnd(); i++) {
+					MUID uidObj = (MUID)(*i).first;
+					MMatchObject* pScanObj = (MMatchObject*)GetObject(uidObj);
+					if (pScanObj) {
+						CacheBuilder.AddObject(pScanObj);
+					}
+				}
+				MCommand* pCmdCacheAdd = CacheBuilder.GetResultCmd(MATCHCACHEMODE_UPDATE, this);
+				RouteToStage(pStage->GetUID(), pCmdCacheAdd);
+				/////////////////////////////////////////////////////////////////////////////////////////////
+				MCommand* pCmd = CreateCommand(MC_MATCH_LADDER_LAUNCH, MUID(0, 0));
+				pCmd->AddParameter(new MCmdParamUID(uidStage));
+				pCmd->AddParameter(new MCmdParamStr(const_cast<char*>(pStage->GetMapName())));
+				pCmd->AddParameter(new MCmdParamBool(false));
+				RouteToStage(uidStage, pCmd);
+			}
+			else {
+				GetLadderMgr()->CancelChallenge(pGroupA->GetID(), "");
+				GetLadderMgr()->CancelChallenge(pGroupB->GetID(), "");
+			}
+		}
+	}
+
+
+Open(MMatchServer_OnCommand.cpp - MC_MATCH_LADDER_REQUEST_CANCEL_CHALLENGE - Replace)
+
+	case MC_MATCH_LADDER_REQUEST_CANCEL_CHALLENGE:
+	{
+		bool PlayerWars;
+		pCommand->GetParameter(&PlayerWars, 0, MPT_BOOL);
+		if (PlayerWars)
+		{
+			GetPlayerWarsMgr()->RemovePlayer(pCommand->GetSenderUID());
+		}
+		else
+			OnLadderRequestCancelChallenge(pCommand->GetSenderUID());
+	}
+	break;
+
+Add those under
+
+	case MC_MATCH_PLAYERWARS_VOTE:
+	{
+		MMatchObject* pObj = (MMatchObject*)GetObject(pCommand->GetSenderUID());
+		if (pObj)
+		{
+			int Map;
+			if (pCommand->GetParameter(&Map, 0, MPT_INT) == false) break;
+			if (Map < 0 || Map > 2) return true;
+			MMatchChannel* chan = MGetMatchServer()->FindChannel(pObj->GetChannelUID());
+			if (chan && chan->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS || chan && chan->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS)
+				GetPlayerWarsMgr()->UpdatePlayerVote(Map, pObj);
+			else
+				GetLadderMgr()->UpdatePlayerVote(Map, pObj);
+		}
+	}
+	break;
+
+		case MC_MATCH_JOIN_PLAYERWARS:
+		{
+			MMatchObject* pObj = (MMatchObject*)GetObject(pCommand->GetSenderUID());
+			if (pObj)
+			{
+
+				int Lead, GameType;
+				if (pCommand->GetParameter(&Lead, 0, MPT_INT) == false) break;
+				if (pCommand->GetParameter(&GameType, 1, MPT_INT) == false) break;
+				if (GameType <= -1 || GameType >= MPLAYERWARSTYPE_MAX) break;
+				bool Leada = false;
+				if (Lead == 1) Leada = true;
+				if (CanPlayerWars == false)
+					Announce(pObj, "Player Wars Scores Are Resetting...");
+				else
+				{
+					bool DoesExist = false;
+					for (int i = 0; i < MPLAYERWARSTYPE_MAX; i++)
+						if (GetPlayerWarsMgr()->GetWaitingGames((PlayerWars)i)->IsPlayerAlreadyQueued(pObj->GetUID()) == true)
+							DoesExist = true;
+					if (DoesExist == true)
+						return true;
+					else
+					{
+						GetPlayerWarsMgr()->GetWaitingGames((PlayerWars)GameType)->AddPlayer(pObj->GetUID());
+						if (pObj->PwState == MMatchObject::Inviter)
+						{
+							MMatchObject* pFObj = (MMatchObject*)GetObject(pObj->PlayerWarsFriend);
+							if (!pFObj)
+							{
+								pObj->PwState = MMatchObject::NotInvited;
+								pObj->PlayerWarsFriend = MUID(0, 0);
+								return true;
+							}
+							MMatchChannel* chan = FindChannel(pFObj->GetChannelUID());
+							if (chan && chan->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS)
+							{
+								bool DoesExist = false;
+								for (int i = 0; i < MPLAYERWARSTYPE_MAX; i++)
+									if (GetPlayerWarsMgr()->GetWaitingGames((PlayerWars)i)->IsPlayerAlreadyQueued(pFObj->GetUID()) == true)
+										DoesExist = true;
+								if (DoesExist == false)
+								{
+									MCommand* pCommand = MMatchServer::GetInstance()->CreateCommand(MC_MATCH_PLAYERWARS_INVITED, MUID(0, 0));
+									MMatchServer::GetInstance()->RouteToListener(pFObj, pCommand);
+									char buf[256];
+									sprintf(buf, "%s Has invited you.", pObj->GetCharInfo()->m_szName);
+									Announce(pFObj, buf);
+									GetPlayerWarsMgr()->GetWaitingGames((PlayerWars)GameType)->AddPlayer(pFObj->GetUID());
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		break;
+
+
+Open(MMatchServer_Stage.cpp - MMatchServer::OnStageTeam - Replace)
+
+
+	void MMatchServer::OnStageTeam(const MUID& uidPlayer, const MUID& uidStage, MMatchTeam nTeam)
+	{
+		MMatchStage* pStage = FindStage(uidStage);
+		if (pStage == NULL) return;
+
+		MMatchObject* pChar = GetObject(uidPlayer);
+		if (pChar == NULL) return;
+		if (pStage->GetStageType() == MST_LADDER && !IsAdminGrade(pChar) && !pChar->GetAccountInfo()->m_nUGrade == MMUG_DEVELOPER && !pChar->GetAccountInfo()->m_nUGrade == MMUG_DEVELOPER || pStage->GetStageType() == MST_PLAYERWARS && !IsAdminGrade(pChar) && !pChar->GetAccountInfo()->m_nUGrade == MMUG_DEVELOPER) return;
+		if (pStage->GetStageSetting()->GetGameType() == MMATCH_GAMETYPE_DEATHMATCH_TEAM &&
+			pChar->GetTeam() == nTeam) {
+			nTeam = MMT_RED;
+		}
+		StageTeam(uidPlayer, uidStage, nTeam);
+	}
+
+Find(pStage->GetStageType() == MST_LADDER - Replace)
+
+
+	if (pStage->GetStageType() == MST_LADDER || pStage->GetStageType() == MST_PLAYERWARS)
+	{
+		sprintf(szMsg, "%s%d", MTOK_ANNOUNCE_PARAMSTR, MERR_CANNOT_VOTE_LADERGAME);
+		Announce(uidPlayer, szMsg);
+
+		return;
+	}
+
+Find (MGetMapDescMgr()->MIsCorrectMap(nMapID)) && (MGetGameTypeMgr()->IsCorrectGameType(nGameType) - Replace)
+
+	if ((MGetMapDescMgr()->MIsCorrectMap(nMapID)) && (MGetGameTypeMgr()->IsCorrectGameType(nGameType)))
+	{
+		if (pStage->GetStageType() != MST_LADDER && pStage->GetStageType() != MST_PLAYERWARS)
+		{
+			MMatchObject* pMaster = GetObject(pStage->GetMasterUID());
+
+			MAsyncDBJob_InsertGameLog* pJob = new MAsyncDBJob_InsertGameLog(uidStage);
+			pJob->Input(pMaster == NULL ? 0 : pMaster->GetCharInfo()->m_nCID,
+				MGetMapDescMgr()->GetMapName(nMapID),
+				MGetGameTypeMgr()->GetInfo(MMATCH_GAMETYPE(nGameType))->szGameTypeStr);
+			PostAsyncJob(pJob);
+		}
+	}
+
+
+
+
+
+
+
+
+
 
 
 
