@@ -1892,3 +1892,432 @@ Find (MC_MATCH_LADDER_CANCEL_CHALLENGE - Replace)
 			}
 		}break;
 
+Find (MC_MATCH_LADDER_PREPARE - Add under)
+
+		case MC_MATCH_PLAYERWARS_COUNTER:
+		{
+			if (ZGetGameInterface()->GetState() == GUNZ_LOBBY)
+			{
+				MCommandParameter* pParam = pCommand->GetParameter(0);
+				if (pParam->GetType() != MPT_BLOB) return false;
+				void* pBlob = pParam->GetPointer();
+				MTD_PlayerWarsCounterInfo* Info = (MTD_PlayerWarsCounterInfo*)MGetBlobArrayElement(pBlob, 0);
+				ZIDLResource* pRes = ZApplication::GetGameInterface()->GetIDLResource();
+				if (!pRes) return false;
+				char szOutput[256];
+				char szWigetName[100];
+				for (int i = 0; i <= 7; i++)
+				{
+					sprintf(szWigetName, "Lobby_PlayerWarsCount%d", i);
+					sprintf(szOutput, "%d Players Waiting", Info->Count[i]);
+					MLabel* pLabel = (MLabel*)pRes->FindWidget(szWigetName);
+					if (pLabel)
+						pLabel->SetText(szOutput);
+				}
+			}
+		}
+		break;
+
+Find (MC_MATCH_LADDER_LAUNCH - Replace)
+
+		case MC_MATCH_LADDER_LAUNCH:
+		{
+			MUID uidStage;
+			pCommand->GetParameter(&uidStage, 0, MPT_UID);
+			char szMapName[128];
+			pCommand->GetParameter(szMapName, 1, MPT_STR, sizeof(szMapName));
+			bool PlayerWars;
+			pCommand->GetParameter(&PlayerWars, 2, MPT_BOOL);
+			OnLadderLaunch(uidStage, szMapName, PlayerWars);
+		}break;
+
+
+Find (MC_MATCH_DUELTOURNAMENT_CHAR_INFO - Add under)
+
+		case MC_MATCH_PLAYERWARS_CHARINFO:
+		{
+			pCommand->GetParameter(&m_PWCharInfo.Ranking, 0, MPT_INT);
+			pCommand->GetParameter(&m_PWCharInfo.Wins, 1, MPT_INT);
+			pCommand->GetParameter(&m_PWCharInfo.Losses, 2, MPT_INT);
+			pCommand->GetParameter(&m_PWCharInfo.Draws, 3, MPT_INT);
+			pCommand->GetParameter(&m_PWCharInfo.Score, 4, MPT_INT);
+			ZGetGameInterface()->UpdatePlayerWarsMyCharInfo();
+		}
+		break;
+
+
+Open(ZGameInput.cpp - (ZGetCombatInterface()->IsShowResult()) - Replace)
+
+		if (ZGetCombatInterface()->IsShowResult())
+		{
+			if (((ZGetCombatInterface()->m_nReservedOutTime - timeGetTime()) / 1000) < 13)
+			{
+				if (ZGetGameClient()->IsPlayerWars() || ZGetGameClient()->IsLadderGame() || ZGetGameClient()->IsDuelTournamentGame())
+					ZChangeGameState(GUNZ_LOBBY);
+				else
+					ZChangeGameState(GUNZ_STAGE);
+
+				return true;
+			}
+		}
+
+Open(ZGameInterface.cpp - Add)
+
+	#include "ZPlayerWarsRankingListBox.h"
+
+Find (SetListenerWidget("LobbyChannelPlayerListNext", ZGetPlayerListNextListener()); Add under)
+
+	SetListenerWidget("ArrangedPlayerWars", ZGetArrangedPlayerWarsListener());
+	SetListenerWidget("PlayerWarsDialogOk", ZGetPlayerWarsDialogOkListener());
+	SetListenerWidget("PlayerWarsVoteButton0", ZGetPlayerWarsVote0());
+	SetListenerWidget("PlayerWarsVoteButton1", ZGetPlayerWarsVote1());
+	SetListenerWidget("PlayerWarsVoteButton2", ZGetPlayerWarsVote2());
+	SetListenerWidget("PlayerWarsDialogClose", ZGetPlayerWarsDialogCloseListener());
+	SetListenerWidget("ChannelList_PlayerWars", ZGetChannelList());
+
+
+Find (	if ((ZApplication::GetInstance()->GetLaunchMode() == ZApplication::ZLAUNCH_MODE_STANDALONE_REPLAY) - Replace)
+
+	if ((ZApplication::GetInstance()->GetLaunchMode() == ZApplication::ZLAUNCH_MODE_STANDALONE_REPLAY) ||
+		(ZGetGameClient()->IsLadderGame()) ||
+		ZGetGameTypeManager()->IsQuestDerived(ZGetGameClient()->GetMatchStageSetting()->GetGameType()) ||
+		ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_DUELTOURNAMENT)
+	{
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, false);
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_STAGE_EXIT, true);
+	}
+	else if ((ZGetGameClient()->IsPlayerWars()))
+	{
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, false);
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_STAGE_EXIT, false);
+	}
+	else
+	{
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, true);
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_STAGE_EXIT, true);
+	}
+
+
+Find(OnGameOnLoginDestroy - Add under)
+
+	void ZGameInterface::SelectBackground(int i)
+	{
+		MWidget* pWidget;
+		switch (i)
+		{
+		case 0:
+			pWidget = m_IDLResource.FindWidget("Lobby_MainNormalBG");
+			if (pWidget) pWidget->Show(true);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainDuelBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainPlayerWarsBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainClanBG");
+			if (pWidget) pWidget->Show(false);
+			break;
+		case 1:
+			pWidget = m_IDLResource.FindWidget("Lobby_MainNormalBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainDuelBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainPlayerWarsBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainClanBG");
+			if (pWidget) pWidget->Show(true);
+			break;
+		case 2:
+			pWidget = m_IDLResource.FindWidget("Lobby_MainNormalBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainClanBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainPlayerWarsBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainDuelBG");
+			if (pWidget) pWidget->Show(true);
+			break;
+		case 3:
+			pWidget = m_IDLResource.FindWidget("Lobby_MainNormalBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainClanBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainDuelBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainPlayerWarsBG");
+			if (pWidget) pWidget->Show(true);
+			break;
+		case 4:
+			pWidget = m_IDLResource.FindWidget("Lobby_MainNormalBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainClanBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainDuelBG");
+			if (pWidget) pWidget->Show(false);
+			pWidget = m_IDLResource.FindWidget("Lobby_MainPlayerWarsBG");
+			if (pWidget) pWidget->Show(false);
+			break;
+		}
+
+	}
+
+Find (ZDuelTournamentRankingListBox* pDTRankingListBox - Add under)
+
+	ZPlayerWarsRankingListBox* pPWRankingListBox = (ZPlayerWarsRankingListBox*)m_IDLResource.FindWidget("Lobby_PlayerWarsRankingList");
+	if (pPWRankingListBox) pPWRankingListBox->LoadInterfaceImgs();
+
+
+Find(InitLobbyUIByChannelType() - Replace)
+
+	void ZGameInterface::InitLobbyUIByChannelType()
+	{
+		bool bClanBattleUI =  ((ZGetGameClient()->GetServerMode() == MSM_CLAN) && (ZGetGameClient()->GetChannelType()==MCHANNEL_TYPE_CLAN));
+		bool bDuelTournamentUI = (ZGetGameClient()->GetChannelType() == MCHANNEL_TYPE_DUELTOURNAMENT);
+		bool bPlayerWarsUI = (((ZGetGameClient()->GetServerMode() == MSM_QUEST)) && (ZGetGameClient()->GetChannelType() == MCHANNEL_TYPE_PLAYERWARS));
+		if (bClanBattleUI == true)
+			SelectBackground(1);
+		else if (bDuelTournamentUI == true)
+			SelectBackground(2);
+		else if (bPlayerWarsUI == true)
+			SelectBackground(3);
+		else
+			SelectBackground(0);
+		if (bClanBattleUI)
+		{
+			ZGetGameInterface()->InitDuelTournamentLobbyUI(false);
+			//	ZGetGameInterface()->InitBattleLobbyUI(false);
+			ZGetGameInterface()->InitPlayerWarsUI(false);
+			ZGetGameInterface()->InitClanLobbyUI(true);
+		}
+		else if (bDuelTournamentUI)
+		{
+			ZGetGameInterface()->InitClanLobbyUI(false);
+			ZGetGameInterface()->InitPlayerWarsUI(false);
+			ZGetGameInterface()->InitDuelTournamentLobbyUI(true);
+			//	ZGetGameInterface()->InitBattleLobbyUI(false);
+
+			ZPostDuelTournamentRequestSideRankingInfo(ZGetMyUID());
+		}
+		else if (bPlayerWarsUI)
+		{
+			ZGetGameInterface()->InitDuelTournamentLobbyUI(false);
+			ZGetGameInterface()->InitClanLobbyUI(false);
+			ZGetGameInterface()->InitPlayerWarsUI(true);
+			//	ZGetGameInterface()->InitBattleLobbyUI(false);
+		}
+		else
+		{
+			ZGetGameInterface()->InitClanLobbyUI(false);
+			ZGetGameInterface()->InitDuelTournamentLobbyUI(false);
+			ZGetGameInterface()->InitPlayerWarsUI(false);
+			//	ZGetGameInterface()->InitBattleLobbyUI(false);
+		}
+	}
+
+Find(ZDuelTournamentRankingListBox* pDTRankingListBox - Add under)
+
+	ZPlayerWarsRankingListBox* pPWRankingListBox = (ZPlayerWarsRankingListBox*)m_IDLResource.FindWidget("Lobby_DuelTournamentRankingList");
+	if (pPWRankingListBox) {
+		pPWRankingListBox->UnloadInterfaceImgs();
+		pPWRankingListBox->SetVisible(false);
+	}
+
+
+Find (InitClanLobbyUI - Add above)
+
+	void ZGameInterface::InitPlayerWarsUI(bool bPlayerWarsEnable)
+	{
+		MWidget* pWidget;
+
+		pWidget = m_IDLResource.FindWidget("StageBeforeBtn");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+		pWidget = m_IDLResource.FindWidget("StageAfterBtn");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+		bool bCheck = !bPlayerWarsEnable;
+		for (int i = 1; i <= 6; i++)
+		{
+			char szBuffer[64];
+			sprintf(szBuffer, "Lobby_RoomNo%d", i);
+			pWidget = (MButton*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget(szBuffer);
+			if (pWidget)
+			{
+				pWidget->Show(bCheck);
+			}
+		}
+		pWidget = m_IDLResource.FindWidget("StageJoin");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+		pWidget = m_IDLResource.FindWidget("StageCreateFrameCaller");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+		pWidget = m_IDLResource.FindWidget("QuickJoin");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+
+		m_CombatMenu.EnableItem(ZCombatMenu::ZCMI_BATTLE_EXIT, !bPlayerWarsEnable);
+
+		pWidget = m_IDLResource.FindWidget("QuickJoin");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+
+		pWidget = m_IDLResource.FindWidget("QuickJoin2");
+		if (pWidget) pWidget->Show(!bPlayerWarsEnable);
+
+		pWidget = m_IDLResource.FindWidget("RequestLadderRejoin");
+		if (pWidget) pWidget->Show(bPlayerWarsEnable);
+
+		pWidget = m_IDLResource.FindWidget("ArrangedPlayerWars");
+		if (pWidget) pWidget->Show(bPlayerWarsEnable);
+		pWidget = m_IDLResource.FindWidget("Lobby_PlayerWarsRankingList");
+		if (pWidget)
+		{
+			pWidget->Show(bPlayerWarsEnable);
+		}
+	}
+
+Find (ZGameInterface::OnArrangedTeamGameUI - Replace)
+
+	void ZGameInterface::OnArrangedTeamGameUI(bool bFinding, bool isvote)
+	{
+		MWidget* pWidget;
+		if (isvote == true)
+		{
+			pWidget = m_IDLResource.FindWidget("ArrangedTeamGame");
+			if (pWidget) pWidget->Show(false);
+
+			pWidget = m_IDLResource.FindWidget("LobbyFindClanTeam");
+			if (pWidget != NULL) pWidget->Show(false);
+
+			pWidget = m_IDLResource.FindWidget("PlayerWarsMapVote");
+			if (pWidget)
+			{
+				pWidget->Show(bFinding);
+				pWidget->SetText("Clan War Map Voter");
+			}
+		}
+		else
+		{
+			pWidget = m_IDLResource.FindWidget("PlayerWarsMapVote");
+			if (pWidget) pWidget->Show(false);
+
+			pWidget = m_IDLResource.FindWidget("ArrangedTeamGame");
+			if (pWidget) pWidget->Show(!bFinding);
+
+			pWidget = m_IDLResource.FindWidget("LobbyFindClanTeam");
+			if (pWidget != NULL) pWidget->Show(bFinding);
+		}
+
+Find (SAFE_ENABLE("DuelTournamentGame_4Test", bWaiting); - Add under)
+
+	SAFE_ENABLE("ArrangedPlayerWars", bWaiting);
+
+Find (SetDuelTournamentCharacterList - Add under)
+
+	void ZGameInterface::UpdatePlayerWarsMyCharInfo()
+	{
+		ZIDLResource* pRes = ZApplication::GetGameInterface()->GetIDLResource();
+		if (!pRes) return;
+
+		const ZGameClient::PWCHARINFO* pCharInfo = GetGameClient()->GetMyPlayerWarsCharInfo();
+		if (!pCharInfo) return;
+
+		char szOutput[256];
+		sprintf(szOutput, "%d", pCharInfo->Ranking);
+		MLabel* pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerWarsRanking");
+		pLabel->SetText(szOutput);
+		sprintf(szOutput, "%d", pCharInfo->Wins);
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerWarsWins");
+		pLabel->SetText(szOutput);
+		sprintf(szOutput, "%d", pCharInfo->Losses);
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerWarsLosses");
+		pLabel->SetText(szOutput);
+		sprintf(szOutput, "%d", pCharInfo->Draws);
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerWarsDraws");
+		pLabel->SetText(szOutput);
+		sprintf(szOutput, "%d", pCharInfo->Score);
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerWarsScore");
+		pLabel->SetText(szOutput);
+		sprintf(szOutput, "%s", ZGetMyInfo()->GetCharName());
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerWarsName");
+		pLabel->SetText(szOutput);
+	}
+
+Open(ZGameInterface.h - void InitClanLobbyUI(bool bClanBattleEnable); - Add under)
+
+	void InitPlayerWarsUI(bool bPlayerWarsEnable);
+
+Find (void UpdateDuelTournamantMyCharInfoPreviousUI(); - Add under)
+
+	void UpdatePlayerWarsMyCharInfo();
+
+Open(ZGameInterface_OnCommand.cpp - Add)
+
+	#include "ZPlayerWarsRankingListBox.h"
+
+Find (MC_MATCH_STAGE_RESPONSE_QUICKJOIN - Add under)
+
+	case MC_MATCH_PLAYERWARS_SIDERANK:
+	{
+		MCommandParameter* pParam = pCommand->GetParameter(0);
+		if (!pParam) { _ASSERT(0); break; }
+		void* pBlob = pParam->GetPointer();
+		int nCount = MGetBlobArrayCount(pBlob);
+
+		_ASSERT(nCount <= NUM_DISPLAY_DUELTOURNAMENT_RANKING);
+
+		ZIDLResource* pRes = ZApplication::GetGameInterface()->GetIDLResource();
+		MWidget* pWidget = pRes->FindWidget("Lobby_PlayerWarsRankingList");
+		if (!pWidget) { _ASSERT(0); break; }
+
+		ZPlayerWarsRankingListBox* pRankingList = (ZPlayerWarsRankingListBox*)pWidget;
+		pRankingList->ClearAll();
+
+		for (int i = 0; i<nCount; ++i)
+		{
+			PWRankingInfo *pRankInfo = reinterpret_cast<PWRankingInfo*>(MGetBlobArrayElement(pBlob, i));
+			if (!pRankInfo) { _ASSERT(0); break; }
+			ZPLAYERRANKINGITEM tempItem;
+			tempItem.nLosses = pRankInfo->m_nLoses;
+			tempItem.nWins = pRankInfo->m_nWins;
+			tempItem.nRank = pRankInfo->m_nRanking;
+			strcpy(tempItem.szCharName, pRankInfo->m_szCharName);
+			pRankingList->SetRankInfo(i, tempItem);
+		}
+
+		// ´ÙÀ½ ¼øÀ§±îÁö ³²Àº Æ÷ÀÎÆ® Ãâ·Â
+		int myRankIndex = -1;
+		for (int i = 0; i<nCount; ++i)
+		{
+			DTRankingInfo *pRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, i));
+			if (!pRankInfo) { _ASSERT(0); break; }
+
+			if (0 == strcmp(pRankInfo->m_szCharName, ZGetMyInfo()->GetCharName())) {
+				myRankIndex = i;
+				break;
+			}
+		}
+		pRankingList->SetMyRankIndex(myRankIndex);
+	}
+	break;
+
+Open(ZIDLResource.cpp - Add)
+
+	#include "ZPlayerWarsRankingListBox.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
