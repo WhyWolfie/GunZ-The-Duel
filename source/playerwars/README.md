@@ -2712,15 +2712,114 @@ Find (m_vecRelayMapsRemained - Add under)
 	int						m_nBlueCLID;
 
 
+Open(MMatchServer.h - bool CanPlayerWars; - Add under)
 
+	bool IsRunningCheck;
 
+Find(const DWORD GetBuffCRC32Cache( const int nBuffID ); - Add under)
 
+	unsigned long int CustomEventTimers[5];
 
+Open(MMatchServer.cpp - CanPlayerWars = true; - Add under)
 
+	IsRunningCheck = false;
 
+Find (#define MINTERVAL_GARBAGE_SESSION_PING - Replace)
 
+	#define MINTERVAL_GARBAGE_SESSION_PING	(7 * 60 * 1000)	// 7 min
+		static unsigned long tmLastGarbageSessionCleaning = nGlobalClock;
+		if (nGlobalClock - tmLastGarbageSessionCleaning > MINTERVAL_GARBAGE_SESSION_PING)
+		{
+			tmLastGarbageSessionCleaning = nGlobalClock;
+			LOG(LOG_PROG, "GARBAGE SESSION CLEANING : m_This(%d%d), ClientCount=%d, SessionCount=%d, AgentCount=%d, CommandPool=%d, objHistoryCount=%d\n",
+				m_This.High, m_This.Low, GetClientCount(), GetCommObjCount(), GetAgentCount(),
+				CMemPool<MCommand>::GetCapacity(),
+				m_objectCommandHistory.GetObjectCount());
+			MCommand* pNew = CreateCommand(MC_NET_PING, MUID(0, 0));
+			pNew->AddParameter(new MCmdParamUInt(nGlobalClock));
+			RouteToAllConnection(pNew);
+		}
+		if (nGlobalClock - CustomEventTimers[5] >= 1200000)
+		{
+			tm* ptm = MMatchGetLocalTime();
+			if (ptm->tm_wday == 1)
+			{
+				if (IsRunningCheck == false && ptm->tm_hour == 9 && ptm->tm_min >= 30)
+				{
+					IsRunningCheck = true;
+					CanPlayerWars = false;
+				}
+				else if (CanPlayerWars == false && m_MatchDBMgr.IsPlayerWarsOpen() == 1)
+				{
+					CanPlayerWars = true;
+				}
+			}
+			else if (ptm->tm_wday == 2 && CanPlayerWars == true)
+			{
+				IsRunningCheck = false;
+			}
+			CustomEventTimers[5] = nGlobalClock;
+		}
+		MGetCheckLoopTimeInstance()->SetLadderTick();
+	#ifndef _QUESTCLAN
+		if (MGetServerConfig()->GetServerMode() == MSM_CLAN)
+	#endif
+		{
+			GetLadderMgr()->Tick(nGlobalClock);
+			GetPlayerWarsMgr()->Tick();
+		}
+		if (MGetServerConfig()->IsEnabledDuelTournament() == true) {
+			GetDTMgr()->Tick(nGlobalClock);
+		}
 
+		if (GetDTMgr()->GetTimeStampChanged() && MGetServerConfig()->IsEnabledDuelTournament()) {
+			static DWORD dwLastRequestGetDTCharacterInfo = nGlobalClock;
 
+			// ¸ðµç ÄÉ¸¯ÅÍ Á¤º¸¸¦ ¿äÃ»ÇÏ´Ùº¸¸é ºÎÇÏ°¡ °É¸± ¼ö ÀÖÀ¸¹Ç·Î, 1.5ÃÊ´ç 50°³¾¿ ¿äÃ»!
+			// ¸ñÇ¥´Â 2ºÐ ¾È¿¡ ¸ðµÎ ½ÇÇà!
+			if (nGlobalClock - dwLastRequestGetDTCharacterInfo > 1500) {
+				dwLastRequestGetDTCharacterInfo = nGlobalClock;
+
+				bool bAllSameTimeStamp = true;
+
+				int nCount = 0;
+				for (MMatchObjectList::iterator i = m_Objects.begin(); i != m_Objects.end(); i++) {
+					MMatchObject *pObj = (MMatchObject*)((*i).second);
+					MMatchObjectDuelTournamentCharInfo* pInfo = pObj->GetDuelTournamentCharInfo();
+					if (!pObj || !pObj->GetCharInfo()) continue;
+					if (nCount == 50) break;
+					if (pInfo != NULL)
+					{
+						// Å¸ÀÓ ½ºÅÆÇÁ°¡ °°Àº ÄÉ¸¯ÅÍ°¡ ÀÖÀ» ¼öµµ ÀÖ´Ù. ´Ù¸¥ ÄÉ¸¯ÅÍ¸¸ ¿äÃ»!
+						if (GetDTMgr()->IsSameTimeStamp(pInfo->GetTimeStamp()) == false) {
+							bAllSameTimeStamp = false;
+
+							// ÇöÀç °ÔÀÓ µà¾óÅä³Ê¸ÕÆ® °ÔÀÓ¿¡ Âü¿©ÇÏ°í ÀÖÁö ¾ÊÀº ÄÉ¸¯ÅÍ¸¸ Á¤º¸ ¿äÃ»!
+							if (pObj->GetDuelTournamentCharInfo()->IsJoinDuelTournament() == false) {
+								LOG(LOG_PROG, "Request Character Info, Character Previous Info(%d%d)", pObj->GetUID().High, pObj->GetUID().Low);
+
+								OnAsyncRequest_GetDuelTournamentCharacterInfo(pObj->GetUID(), pObj->GetCharInfo()->m_nCID);
+								OnAsyncRequest_GetDuelTournamentPreviousCharacterInfo(pObj->GetUID(), pObj->GetCharInfo()->m_nCID);
+
+								nCount++;
+							}
+						}
+					}
+				}
+
+				if (bAllSameTimeStamp) { GetDTMgr()->SetTimeStampChanged(false); }
+			}
+		}
+
+		if (nGlobalClock - GetBattleTimeRewardMachine().GetLastUpdateTime() > MGetServerConfig()->GetBRDescriptionRefreshInterval())
+		{
+			GetBattleTimeRewardMachine().SetLastUpdateTime(nGlobalClock);
+
+			MAsyncDBJob_GetBattleTimeRewardDescription *pJob = new MAsyncDBJob_GetBattleTimeRewardDescription;
+			MMatchServer::GetInstance()->PostAsyncJob(pJob);
+		}
+		/* end of  shit */
+		MGetServerStatusSingleton()->SetRunStatus(108);
 
 
 
