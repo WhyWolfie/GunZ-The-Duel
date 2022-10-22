@@ -171,6 +171,7 @@ GunZ The Duel Releases <br>
 - activate serialkey: [activate serialkey](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/activate%20serialkey)
 - disable nhn auth: [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth)
 - custom shotgun sounds: [custom shotgun sounds](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/custom%20shotgun%20sounds)
+- dynamiclight fix: [dynamiclight fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dynamic%20light%20fix)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
