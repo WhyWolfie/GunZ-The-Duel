@@ -10,6 +10,7 @@
 - 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client) (MRSDecompiler Ultimate)
 - alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19) (MRSDecompiler Ultimate)
 - monstergunz: [monstergunz](https://archive.org/details/monster-gunz) (MRSDecompiler Ultimate)
+- raulgunz: [raulgunz](https://archive.org/details/cliente-raul-gunz)
 
 <b>[Need Unpacked]</b> <br>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
@@ -79,6 +80,7 @@
 - demongunzv1: [demongunzv1](https://archive.org/details/demon-gunz-v-1)
 - enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
 - globalgames: [globalgames](https://archive.org/details/global-games)
+
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
