@@ -451,6 +451,7 @@ GunZ The Duel Releases <br>
 - mocrogunz: [mocrogunz](https://archive.org/details/mocrogunz)
 - mundialgunz: [mundialgunz](https://archive.org/details/mundialgunz) 
 - raulgunz: [raulgunz](https://archive.org/details/raulgunz) 
+- unpacked by jorklenis2: [unpacked by jorklenis2](https://archive.org/details/items-un-packed-by-jorklenis-2)
 
 <b>[official]</b><br>
 - masangsoft: [masangsoft](https://gz.masanggames.co.kr/)
