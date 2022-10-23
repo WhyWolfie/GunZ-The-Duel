@@ -323,6 +323,7 @@ GunZ The Duel Releases <br>
 - demongunzv1: [demongunzv1](https://archive.org/details/demon-gunz-v-1)
 - enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
 - globalgames: [globalgames](https://archive.org/details/global-games)
+- raulgunz: [raulgunz](https://archive.org/details/cliente-raul-gunz)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
