@@ -321,6 +321,7 @@ GunZ The Duel Releases <br>
 - fortrekgunz: [fortrekgunz](https://archive.org/details/fortrek-gunz-stgames)
 - demongunzv1: [demongunzv1](https://archive.org/details/demon-gunz-v-1)
 - enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
+- globalgames: [globalgames](https://archive.org/details/global-games)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
