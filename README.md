@@ -455,6 +455,10 @@ GunZ The Duel Releases <br>
 - mundialgunz: [mundialgunz](https://archive.org/details/mundialgunz) 
 - raulgunz: [raulgunz](https://archive.org/details/raulgunz) 
 - unpacked by jorklenis2: [unpacked by jorklenis2](https://archive.org/details/items-un-packed-by-jorklenis-2)
+- wargunz: [wargunz](https://archive.org/details/war-gun-z-itens-adicionados)
+- trinitygunz: [trinitygunz](https://archive.org/details/trinity-gunz-items-by-rafha-gunz)
+- monstergunzv1: [monstergunzv1](https://archive.org/details/itens-monster-gunz-v-1)
+- kekagunz 4.3: [kekagunz 4.3](https://archive.org/details/itens-do-keka-gunz-4.3)
 
 <b>[official]</b><br>
 - masangsoft: [masangsoft](https://gz.masanggames.co.kr/)
