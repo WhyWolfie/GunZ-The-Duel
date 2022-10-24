@@ -804,7 +804,7 @@ Open(MMatchRule.cpp - OnCheckBattleTimeOut - Add under)
 		//MMatchServer::GetInstance()->LOG(MMatchServer::LOG_PROG,("ITS PASSING BY LADDER OR CW EVENT\n"));
 		break;
 	default:
-		nLimitTime = GetStage()->GetStageSetting()->GetLimitTime();// * 60 * 1000;
+		nLimitTime = GetStage()->GetStageSetting()->GetLimitTime() * 60 * 1000;
 		//MMatchServer::GetInstance()->LOG(MMatchServer::LOG_PROG,("NORMAL MATCH \n"));
 		break;
 	}
