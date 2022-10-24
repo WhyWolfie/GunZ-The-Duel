@@ -197,9 +197,7 @@ GunZ The Duel Releases <br>
 - bunch of admin commands: [bunch of admin commands](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20hacks%20admin)
 - find: [find](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20find)
 - wireframe: [wireframe](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20wireframe)
-- admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_speed)
 - time: [time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20time)
-- admin spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin%20spawnmover)
 - damage: [damage](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20damage)
 - getdirection & getposition [getdirection & getposition](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/getPosition%20&%20getDirection)
 - colourlist/mods/commands list [colourlist/mods/commands list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20colourlist%20%26%20mods%20%26%20commands%20list)
@@ -213,6 +211,9 @@ GunZ The Duel Releases <br>
 - admin_godmode: [admin_godmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20godmode)
 - admin_teleportall: [admin_teleportall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleportall)
 - admin_alive: [admin_alive](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20alive)
+- admin_revive: [admin_revive](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_revive)
+- admin_spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin%20spawnmover)
+- admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_speed)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
