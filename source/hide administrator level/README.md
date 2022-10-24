@@ -103,9 +103,42 @@ Replace
 				}
 			}
 		}
-        
-        
-        
-        
-        
+
+Find
+
+		if(pCharacter->IsAdminName()) {
+			sprintf(pItem->szLevel,"%d%s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER));
+			pItem->SetColor(ZCOLOR_ADMIN_NAME);
+		}
+
+Replace
+
+		if(pCharacter->IsAdminName()) {
+			sprintf(pItem->szLevel,"--%s", ZMsg(MSG_CHARINFO_LEVELMARKER));
+			pItem->SetColor(ZCOLOR_ADMIN_NAME);
+		}
+
+Find
+
+		if(pCharacter->IsAdminHide()) continue;
+
+		
+		sprintf(pItem->szName,"%d%s %s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
+
+
+Replace
+
+		if(pCharacter->IsAdminHide()) continue;
+
+		if(pCharacter->IsAdminName())
+		sprintf(pItem->szName,"--%s %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
+		else
+		sprintf(pItem->szName,"%d%s %s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
+
+
+
+
+
+
+
 
