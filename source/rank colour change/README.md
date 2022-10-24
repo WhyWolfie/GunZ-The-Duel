@@ -25,3 +25,6 @@ Example
 	}
   
   
+
+![wolfie](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/rank%20colour%20change/wolfie.jpg)
+![wolfie2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/rank%20colour%20change/wolfie2.jpg)
