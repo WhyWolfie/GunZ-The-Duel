@@ -116,7 +116,6 @@ GunZ The Duel Releases <br>
 - effect spark shot: [effect spark shot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot)
 - threaded screenshots: [threaded screenshots](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots)
 - staff jjang for staff: [staff jjang for staff](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/new%20jjang%20for%20staff)
-- dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20colors%20from%20options%20menu)
 - bunch of features: [bunch of features](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features)
 - weapon shoot nade: [weapon shoot nade](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade)
 - heal over time (1+hp): [heal over time (1+hp)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time)
@@ -137,7 +136,7 @@ GunZ The Duel Releases <br>
 - medkit limits: [medkit limits](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/medkit%20limits)
 - hide administrator level: [hide administrator level](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
 - rank colour change: [rank colour change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20colour%20change)
-- dash options: [dash options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options)
+- dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
