@@ -307,3 +307,6 @@ Open(Default.mrs -> Option.xml And Add)
 			<COMBOTYPE>1</COMBOTYPE>
 			</COMBOBOX>	   
 
+![options](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/dash%20in%20options/options.png)
+![dash1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/dash%20in%20options/dash1.jpg)
+![dash2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/dash%20in%20options/dash2.jpg)
