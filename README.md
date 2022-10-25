@@ -234,13 +234,15 @@ GunZ The Duel Releases <br>
 
 <br>
 
-<b>[clients]</b><br>
+<b>[clients / source]</b><br>
 - jur13n (clean/edited version 1.5) [jur13n 1.5 cleaned-edited](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw)
 - nationalgunz(client/server/source): [nationalgunz source-client-server](https://archive.org/details/national-gunz-source-client-server-files)
 - phoenix (2008 client): [phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
 - zer0nis (clean version: 1.5): [zeronis](https://github.com/ZER0NIS/Gunz-Base)
 - jetman (clean version: 1.5): [jetman](https://github.com/Jetman823/Gunz1.5)
 - gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
+- challenge quest base(source): [challenge quest base(source)](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z)
+- summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
 
 <b>[custom clients]</b>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
