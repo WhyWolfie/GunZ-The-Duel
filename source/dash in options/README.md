@@ -1,3 +1,4 @@
+Custom Dashes: [Custom Dashes](https://github.com/Durial06/GunZ-The-Duel-Items/tree/main/dash) <br>
 Open(ZConfiguration.cpp) <br>
 
 				childElement.GetChildContents(&m_Extra.nDashColor, ZTOK_EXTRA_DASH);
@@ -200,19 +201,109 @@ Replace
     ZPostDash(vPos, vDir, sel_type, Z_EXTRA_DASH);
 
 
+Open(ZEffectManager.cpp - m_pDashEffect) <br>
 
+	m_pDashEffect				= m_pEffectMeshMgr->Get("dash_effect");
+	m_pDashEffect2				= m_pEffectMeshMgr->Get("dash_effect2");
+	
+Example keep adding till 20 m_pDashEffect / m_pDashEffect20
 
+	m_pDashEffect3				= m_pEffectMeshMgr->Get("dash_effect3");
+	m_pDashEffect4				= m_pEffectMeshMgr->Get("dash_effect4");
 
+Open(ZEffectManager.h - RMesh*	m_pDashEffect;)
 
+	RMesh*	m_pDashEffect;
+	RMesh*	m_pDashEffect2;
 
+Example keep adding till 20 m_pDashEffect / m_pDashEffect20
 
+	RMesh*	m_pDashEffect3;
+	RMesh*	m_pDashEffect4;
 
+Open(SFX.mrs -> Effect_List.xml)
 
+	<AddEffectElu name="dash_effect">
+		<AddBaseModel name="dash_effect" filename="ef_dash.elu" />
+		<AddAnimation name="play" filename="ef_dash.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	
+Add under (make a folder 'dash' add your files there)
 
+	<AddEffectElu name="dash_effect2">
+		<AddBaseModel name="dash_effect2" filename="dash/ef_dash.elu" />
+		<AddAnimation name="play" filename="dash/ef_dash.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
 
+Example for next (folder 'dash3')
 
+	<AddEffectElu name="dash_effect3">
+		<AddBaseModel name="dash_effect3" filename="dash3/ef_dash.elu" />
+		<AddAnimation name="play" filename="dash3/ef_dash.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
 
+Open(Default.mrs -> Option.xml And Add)
 
-
-
+	<!-- DashColor Option --> 
+	  <LABEL item="Label" parent="ExtraOptionGroup">
+			<FONT>FONTa9</FONT>
+			<TEXTCOLOR>
+				<R>205</R>
+				<G>205</G>
+				<B>205</B>
+			</TEXTCOLOR>
+			<BOUNDS>
+				<X>2</X>
+				<Y>0</Y>
+				<W>300</W>
+				<H>24</H>
+			</BOUNDS>
+			<TEXT>Color Dash</TEXT>
+		</LABEL>
+		<COMBOBOX item="DashColor" parent="ExtraOptionGroup">
+			<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+			<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+			<FONT>FONTa9</FONT>
+			<TEXTCOLOR>
+				    <R>205</R>
+				    <G>205</G>
+				    <B>205</B>
+			</TEXTCOLOR>
+			<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+			</TEXTALIGN>
+			<BOUNDS>
+					<X>2</X>
+					<Y>0</Y>
+					<W>90</W>
+					<H>24</H>
+			</BOUNDS>
+			<ALIGN>
+			<HALIGN>right</HALIGN>
+			</ALIGN>
+			<LISTITEM selected="true">Normal</LISTITEM>
+			<LISTITEM>Dash 1</LISTITEM>
+			<LISTITEM>Dash 2</LISTITEM>
+			<LISTITEM>Dash 3</LISTITEM>
+					<LISTITEM>Dash 4</LISTITEM>
+					<LISTITEM>Dash 5</LISTITEM>
+					<LISTITEM>Dash 6</LISTITEM>
+					<LISTITEM>Dash 7</LISTITEM>				
+					<LISTITEM>Dash 8</LISTITEM>	
+					<LISTITEM>Dash 9</LISTITEM>	 
+					<LISTITEM>Dash 10</LISTITEM>
+					<LISTITEM>Dash 11</LISTITEM> 
+					<LISTITEM>Dash 12</LISTITEM>
+					<LISTITEM>Dash 13</LISTITEM>
+					<LISTITEM>Dash 14</LISTITEM>
+					<LISTITEM>Dash 15</LISTITEM>
+					<LISTITEM>Dash 16</LISTITEM>
+					<LISTITEM>Dash 17</LISTITEM>
+					<LISTITEM>Dash 18</LISTITEM>
+					<LISTITEM>Dash 19</LISTITEM>
+					<LISTITEM>Dash 20</LISTITEM>
+			<DROPSIZE>500</DROPSIZE>
+			<COMBOTYPE>1</COMBOTYPE>
+			</COMBOBOX>	   
 
