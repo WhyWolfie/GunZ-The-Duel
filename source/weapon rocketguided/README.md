@@ -14,10 +14,6 @@ Open(MMatchServer.h)
     void OnGuidedMissle(MUID Owner);
     MUID SelectTarget(const MUID& uidStage, const MUID& owner);
 
-Open(MMatchWorldItemDesc.h)
-
-    WIT_PORTAL		= 8,
-
 Open(MSharedCommandTable.h)
 
     #define MC_REQUEST_GUIDEDMISSLE					50063	// Request Guided Missle
