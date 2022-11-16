@@ -1,0 +1,1 @@
+Entrada Artic GunZ Glax
