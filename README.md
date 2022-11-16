@@ -232,6 +232,10 @@ GunZ The Duel Releases <br>
 - shop maker: [shop maker source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20maker)
 - unreal engine 4 gunz: [unreal engine](https://www.youtube.com/watch?v=wIzNnBJiVO4)
 
+(not done yet)
+- rocketguided: [rocketguided](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20rocketguided)
+- hwid: [hwid](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hwid%20ban)
+
 <br>
 
 <b>[clients / source]</b><br>
