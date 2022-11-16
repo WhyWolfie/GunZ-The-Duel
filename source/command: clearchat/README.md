@@ -18,3 +18,9 @@ Part 3
     {
       ZGetGameInterface()->GetChat()->Clear();
     }
+
+[Before] <br>
+![clearchat](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/command%3A%20clearchat/clearchat.png) <br>
+
+[After] <br>
+![clearchat2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/command%3A%20clearchat/clearchat2.png) <br>
