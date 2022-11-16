@@ -492,6 +492,8 @@ GunZ The Duel Releases <br>
 - theduel.com.br: [theduel.com.br](https://www.theduel.com.br/)
 - gunzvn: [gunzvn.net](https://gunzvn.net/GunZ/)
 - huntxgunz: [huntx](http://gunz.retzu.com/)
+- royalgunz: [royalegunz](https://www.royalgunz.net/)
+- ogunz: [ogunz](http://ogunz.xyz/)
 
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
