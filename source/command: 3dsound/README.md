@@ -175,8 +175,9 @@ Find(ZSoundEngine::PlaySEReload) And Replace.
       }
     }
 
+Open(ZConfiguration.h)
 
-
+	#define ZTOK_EXTRA_SHOTGUN3DSOUND   "SHOTGUN3DSOUND"
 
 
 
