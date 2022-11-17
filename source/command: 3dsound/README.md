@@ -18,7 +18,6 @@ Part 3
         ZChatOutput("^23D Sound mode has been enabled.");
       else
         ZChatOutput("^23D Sound mode has been disabled.");
-      ZGetOptionInterface()->SaveInterfaceOption();
     }
 
 Open(ZConfiguration.cpp - just add at ZTOK_EXTRA)
