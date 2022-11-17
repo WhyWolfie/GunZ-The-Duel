@@ -1,6 +1,7 @@
-Command TeleportHere (/tph charactername)
+Command TeleportHere (/tph charactername) <br>
+Rebuild: Gunz & Matchserver Project. <br>
 
-Open(ZChat_Cmds.cpp)
+Open(ZChat_Cmds.cpp) <br>
 
     void ChatCmd_AdminTeleportHere(const char* line, const int argc, char** const argv);
 
