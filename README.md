@@ -217,6 +217,7 @@ GunZ The Duel Releases <br>
 - admin_spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin%20spawnmover)
 - admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_speed)
 - clearchat: [clearchat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20clearchat)
+- teleporthere: [teleporthere](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleporthere)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
