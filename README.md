@@ -219,6 +219,7 @@ GunZ The Duel Releases <br>
 - clearchat: [clearchat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20clearchat)
 - teleporthere: [teleporthere](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleporthere)
 - 3dsound: [3dsound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%203dsound)
+- camera: [camera](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20camera)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
