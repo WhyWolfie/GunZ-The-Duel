@@ -89,6 +89,8 @@ Open(ZGameClient_OnCommand.cpp)
 
 
 
+![slained](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/command%3A%20admin_kill/slained.jpg)
+
 
 
 
