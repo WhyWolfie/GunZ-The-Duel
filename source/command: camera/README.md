@@ -48,7 +48,7 @@ Part 3
 
 
 
-
+![camera](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/command%3A%20camera/camera.jpg)
 
 
 
