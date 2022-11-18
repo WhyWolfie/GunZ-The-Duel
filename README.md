@@ -221,7 +221,7 @@ GunZ The Duel Releases <br>
 - 3dsound: [3dsound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%203dsound)
 - camera: [camera](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20camera)
 - admin_kill: [admin_kill](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_kill)
-
+- admin_killall: [admin_killall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_killall)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
