@@ -240,6 +240,7 @@ GunZ The Duel Releases <br>
 (not done yet)
 - rocketguided: [rocketguided](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20rocketguided)
 - hwid: [hwid](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hwid%20ban)
+- admin_slap: [admin_slap](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_slap)
 
 <br>
 
