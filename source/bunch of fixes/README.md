@@ -720,3 +720,118 @@ Replace <br>
 		pRelayMapList[0].nMapID = MMATCH_MAP_MANSION;
 		count = 1;
 	}
+
+Open(MMatchClient.cpp)
+
+Replace
+
+	void MMatchClient::OnAllowTunnelingTCP()
+	{
+		SetAllowTunneling(true);
+	}
+
+	void MMatchClient::OnAllowTunnelingUDP()
+	{
+		SetAllowTunneling(true);
+		SetAgentPeerFlag(true);
+	}
+
+Replace
+
+		if (GetBridgePeerFlag() == false) {
+			SendCommandByTunneling(pCommand);
+		} else {
+			if (pCommand->GetReceiverUID() == MUID(0,0)) {	// BroadCasting
+				int nTunnelingCount = 0;
+
+				// Peer2Peer ¸Þ¼¼Áö´Â Sender°¡ ÇÃ·¹ÀÌ¾îÀÌ´Ù.
+				for (MMatchPeerInfoList::iterator itor = m_Peers.begin(); 
+					itor != m_Peers.end(); ++itor)
+				{
+					MMatchPeerInfo* pPeerInfo = (*itor).second;
+					if ( (pPeerInfo->uidChar==MUID(0,0)) || 
+						 (pPeerInfo->uidChar != GetPlayerUID()) )	
+					{
+						if ( (pPeerInfo->GetProcess() == false) &&
+							 (pPeerInfo->GetUDPTestResult() == false) )
+							nTunnelingCount++;
+						else
+						{
+							// minor fix
+							if (pPeerInfo->szIP != 0 && pPeerInfo->nPort != 0)
+								SendCommandByUDP(pCommand, pPeerInfo->szIP, pPeerInfo->nPort);
+						}
+					}
+				}
+
+
+
+Replace
+
+				if (nTunnelingCount > 0) {
+					SendCommandByTunneling(pCommand);
+				}
+			} else {
+				MMatchPeerInfo* pPeerInfo = FindPeer(pCommand->GetReceiverUID());
+				if (pPeerInfo) {
+					if ( (pPeerInfo->GetProcess() == false) &&
+						 (pPeerInfo->GetUDPTestResult() == false) )
+						SendCommandByTunneling(pCommand);
+					else	
+					{
+						// minor fix
+						if (pPeerInfo->szIP != 0 && pPeerInfo->nPort != 0)
+							SendCommandByUDP(pCommand, pPeerInfo->szIP, pPeerInfo->nPort);
+					}
+				}
+			}
+		}
+	}
+	else 
+
+Replace
+
+	void MMatchClient::SendCommandByTunneling(MCommand* pCommand)
+	{
+		if (GetAllowTunneling() == false) {
+		} else {
+			if (GetBridgePeerFlag() == false) {
+				MCommand* pCmd = CreateCommand(MC_AGENT_TUNNELING_TCP, GetAgentServerUID());
+					pCmd->AddParameter(new MCmdParamUID(GetPlayerUID()));
+					pCmd->AddParameter(new MCmdParamUID(pCommand->GetReceiverUID()));
+
+					// Create Param : Command Blob ////
+					if (!MakeTunnelingCommandBlob(pCmd, pCommand))
+					{
+						delete pCmd; pCmd=NULL; return;
+					}
+					///////////////////////////////////
+				SendCommandToAgent(pCmd);
+				delete pCmd;	// PACKETQUEUE ¸¸µé¶§±îÁö delete ÀÓ½Ã·Î »ç¿ë
+			} else {
+				MCommand* pCmd = CreateCommand(MC_AGENT_TUNNELING_UDP, GetAgentServerUID());
+					pCmd->AddParameter(new MCmdParamUID(GetPlayerUID()));
+					pCmd->AddParameter(new MCmdParamUID(pCommand->GetReceiverUID()));
+					// Create Param : Command Blob ////
+					if (!MakeTunnelingCommandBlob(pCmd, pCommand))
+					{
+						delete pCmd; pCmd=NULL; return;
+					}
+					///////////////////////////////////
+				SendCommandByUDP(pCmd, GetAgentIP(), GetAgentPeerPort());
+				delete pCmd;	// PACKETQUEUE ¸¸µé¶§±îÁö delete ÀÓ½Ã·Î »ç¿ë
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
