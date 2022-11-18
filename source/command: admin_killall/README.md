@@ -1,5 +1,5 @@
-Command: admin_killall (/killall)
-Open(ZChat_Cmds.cpp)
+Command: admin_killall (/killall) <br>
+Open(ZChat_Cmds.cpp) <br>
 
     void ChatCmd_Killall(const char* line, const int argc, char **const argv);
 
@@ -90,3 +90,12 @@ Open(ZGameClient_OnCommand.cpp)
 			}
 		}
 		break;
+
+
+
+![admin_killall](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/command%3A%20admin_killall/killall.jpg)
+
+
+
+
+
