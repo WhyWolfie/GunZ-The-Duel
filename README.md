@@ -305,6 +305,8 @@ GunZ The Duel Releases <br>
 - lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1)
 - lastgunzv2: [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer)
 - maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer)
+- netmarblegunz(v811): [netmarblegunz(v811)](https://archive.org/details/netmarble-gunz-811)
+- netmarblegunz(v689): [netmarblegunz(v689)](https://archive.org/details/netmarble-gunz-689)
 - netmarblegunz(v557): [netmarblegunz(v557)](https://archive.org/details/netmarble-gunz-v-557)
 - netmarblegunz(v533): [netmarblegunz(v533)](https://archive.org/details/netmarble-gunz-533)
 - netmarblegunz(v515): [netmarblegunz(v515)](https://archive.org/details/netmarble-gunz-515)
