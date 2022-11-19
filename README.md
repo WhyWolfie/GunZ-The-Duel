@@ -260,8 +260,8 @@ GunZ The Duel Releases <br>
 
 <b>[gunz international]</b> <br>
 - gunz international client/launcher: [gunz international clients](https://archive.org/details/gunz-international-20060726_202211)
+- gunz international launcher/updates: [gunz international launcher/updates](https://github.com/Durial06/GunZ-The-Duel-Items/tree/main/internationalgunz)
 - history for now unofficial maiet.net: [history for now unonfficial maiet.net](https://archive.org/details/history-for-now-unofficial-maiet.net)
-
 
 <b>[custom clients]</b>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
