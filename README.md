@@ -180,6 +180,7 @@ GunZ The Duel Releases <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
 - anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
 - anti hack: [anti hack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-hackandsuch)
+- bunch of anti scripts: [bunch of anti scripts](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-hackandsuch)
 - client protection: [1.5 client protection hashcalc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/1.5%20files%20client%20protection)
 
 (quests) <br>
