@@ -84,6 +84,7 @@ GunZ The Duel Releases <br>
 - repack-aren: [repack-aren](https://github.com/WhyWolfie/Repack-Aren)
 - gfzsource: [gfz source](https://github.com/sohchienmin/GunZ/tree/master)
 - 2005 source & old patches: [2005 source](https://archive.org/details/gunz.-7z)
+- 2011 artwork & 3ds max: [2011 artwork & 3ds max](https://archive.org/details/2011-artwork-Gunz)
 - evilgunz client server & source: [evilgunz client server & source](https://archive.org/details/server-client)
 
 <b>[1.5 snippets]</b><br>
