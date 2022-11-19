@@ -259,11 +259,8 @@ GunZ The Duel Releases <br>
 - summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
 
 <b>[gunz international]</b> <br>
-- gunz international updates unpacked/installers: [gunz international updates unpacked/installers](https://archive.org/details/gunz-international-update-20050830)
-- gunz international client/launcher: [gunz international client/launcher](https://archive.org/details/gunz-international-20060726)
-
-
-
+- gunz international client/launcher: [gunz international clients](https://archive.org/details/gunz-international-20060726_202211)
+- history for now unofficial maiet.net: [history for now unonfficial maiet.net](https://archive.org/details/history-for-now-unofficial-maiet.net)
 
 
 <b>[custom clients]</b>
