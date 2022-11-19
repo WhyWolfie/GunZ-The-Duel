@@ -258,6 +258,14 @@ GunZ The Duel Releases <br>
 - challenge quest base(source): [challenge quest base(source)](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z)
 - summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
 
+<b>[gunz international]</b> <br>
+- gunz international updates unpacked/installers: [gunz international updates unpacked/installers](https://archive.org/details/gunz-international-update-20050830)
+- gunz international client/launcher: [gunz international client/launcher](https://archive.org/details/gunz-international-20060726)
+
+
+
+
+
 <b>[custom clients]</b>
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
 - competitive V3: [competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
