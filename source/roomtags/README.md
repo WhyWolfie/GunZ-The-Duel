@@ -225,5 +225,17 @@ Find case ZDW_UPPERCUT & replace (ZMyCharacter.cpp) <br>
 	}
 	break;
 
+[TELE] or [tele] - Teleport (great for skillmaping) - Add at under: ZGameInput::OnEvent -> rvector PlayerPosHotKey; <br>
 
-
+		case VK_NUMPAD1: 
+		{
+			if (strstr(ZGetGameClient()->GetStageName(), "[TELE]") || strstr(ZGetGameClient()->GetStageName(), "[tele]"))
+				PlayerPosHotKey = pMyCharacter->GetPosition();
+		}
+		 return true;
+		case VK_NUMPAD2: 
+		{
+			if (strstr(ZGetGameClient()->GetStageName(), "[TELE]") || strstr(ZGetGameClient()->GetStageName(), "[tele]"))
+				pMyCharacter->SetPosition(PlayerPosHotKey);
+		}
+		  return true;
