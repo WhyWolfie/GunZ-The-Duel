@@ -356,6 +356,7 @@ GunZ The Duel Releases <br>
 - globalgames: [globalgames](https://archive.org/details/global-games)
 - raulgunz: [raulgunz](https://archive.org/details/cliente-raul-gunz)
 - lggunz beta installer 2005: [lggunz beta installer 2005](https://archive.org/details/lggun-z-beta-installer-2005)
+- ogunz: [ogunz](https://archive.org/details/ogun-z-v-2) big thanks to ogunz no encryption useful!
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
