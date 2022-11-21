@@ -138,6 +138,7 @@ GunZ The Duel Releases <br>
 - hide administrator level: [hide administrator level](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
 - rank colour change: [rank colour change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20colour%20change)
 - dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options)
+- hpbar with source: [hpbar with source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hpbar)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
