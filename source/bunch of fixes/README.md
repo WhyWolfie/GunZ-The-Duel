@@ -849,7 +849,75 @@ Replace <br>
 	delete[] buffer;
 	mzf.Close();
 
+Open(MMatchServer.cpp) <br>
+Replace <br>
 
+	void MMatchServer::ParseUDPPacket(char* pData, MPacketHeader* pPacketHeader, DWORD dwIP, WORD wRawPort)
+	{
+		switch (pPacketHeader->nMsg)
+		{
+		case MSGID_RAWCOMMAND:
+		{
+			unsigned short nCheckSum = MBuildCheckSum(pPacketHeader, pPacketHeader->nSize);
+			if (pPacketHeader->nCheckSum != nCheckSum) {
+				static int nLogCount = 0;
+				if (nLogCount++ < 100) {	// Log Flooding ¹æÁö
+					mlog("MMatchServer::ParseUDPPacket() -> CHECKSUM ERROR(R=%u/C=%u)\n",
+						pPacketHeader->nCheckSum, nCheckSum);
+				}
+				return;
+			}
+			else {
+				unsigned short nTotalSize = 0;
+				memcpy(&nTotalSize, pData, sizeof(nTotalSize));
+
+				MCommand* pCmd = new MCommand();
+				if (!pCmd->SetData(pData, &m_CommandManager))
+				{
+					delete pCmd;
+					mlog("fail ParseUDPPacket.\n");
+					return;
+				}
+
+				if (pCmd->GetID() == MC_MATCH_BRIDGEPEER) {
+					pCmd->m_Sender = MUID(0, 0);
+					pCmd->m_Receiver = m_This;
+
+					unsigned long nPort = ntohs(wRawPort);
+
+					MCommandParameterUInt* pParamIP = (MCommandParameterUInt*)pCmd->GetParameter(1);
+					MCommandParameterUInt* pParamPort = (MCommandParameterUInt*)pCmd->GetParameter(2);
+					if (pParamIP == NULL || pParamIP->GetType() != MPT_UINT)
+					{
+						delete pCmd;
+						break;
+					}
+					if (pParamPort == NULL || pParamPort->GetType() != MPT_UINT)
+					{
+						delete pCmd;
+						break;
+					}
+
+					char pData[64];
+					MCommandParameterUInt(dwIP).GetData(pData, 64);
+					pParamIP->SetData(pData);
+					MCommandParameterUInt(nPort).GetData(pData, 64);
+					pParamPort->SetData(pData);
+
+					PostSafeQueue(pCmd);
+				} //Handle default packets
+				else if (pCmd->GetID() == MC_UDP_PING)
+				{
+					delete pCmd;
+				}
+				else
+				{
+					LOG(LOG_FILE, "MMatchServer::ParseUDPPacket: NOT HANDLED COMMAND(%d)", pCmd->GetID());
+					delete pCmd; //memory leak.
+				}
+			}
+		}
+		break;
 
 
 
