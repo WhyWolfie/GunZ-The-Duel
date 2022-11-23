@@ -919,6 +919,19 @@ Replace <br>
 		}
 		break;
 
+Open(MMatchServer_OnCommand.cpp) <br>
+Replace <br>
+
+		case MC_MATCH_REQUEST_MONSTER_BIBLE_INFO :
+			{
+				//MUID uidSender;
+
+				//pCommand->GetParameter( &uidSender, 0, MPT_UID );
+
+				//Exploit fix (UID spoofing)
+				OnRequestMonsterBibleInfo(pCommand->GetSenderUID());
+			}
+			break;
 
 
 
