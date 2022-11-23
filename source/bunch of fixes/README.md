@@ -998,3 +998,46 @@ Replace <br>
 		ZChatOutput(szMsg, ZChat::CMT_SYSTEM);
 	}
 
+Open(ZGameClient_Ladder.cpp) <br>
+
+Find <br>
+
+	void ZGameClient::OnResponseProposal
+
+Replace <br>
+
+	void ZGameClient::OnResponseProposal(const int nResult, const MMatchProposalMode nProposalMode, const int nRequestID)
+	{
+		if (ZApplication::GetGameInterface()->GetState() != GUNZ_LOBBY)
+		{
+			//Small bugfix LadderCancel
+			if (ZGetGameClient()->IsPlayerWars())
+				ZPostLadderCancel(true);
+			else
+				ZPostLadderCancel(false);
+			m_AgreementBuilder.CancelProposal();
+			return;
+		}
+
+
+		if (nResult == MOK)
+		{
+			char szTitle[256];
+			char szDesc[512];
+			strcpy( szTitle, 
+				ZMsg(MSG_LADDER_PROPOSAL_WAIT_TITLE) );
+
+			strcpy(szDesc, 
+				ZMsg(MSG_LADDER_PROPOSAL_WAIT_DESC) );
+
+			ShowProposalWaitFrame(true, szTitle, szDesc);
+		}
+		else 
+		{
+			m_AgreementBuilder.CancelProposal();
+			ZApplication::GetGameInterface()->ShowErrorMessage( nResult );
+		}
+	}
+
+
+
