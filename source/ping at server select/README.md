@@ -46,3 +46,10 @@ Change too <br>
 
 Credits to: OldSchoolGZ / Gregon13
 
+Before 
+![serverping2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/ping%20at%20server%20select/serverping2.jpg)
+
+After
+![serverping](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/ping%20at%20server%20select/serverping.jpg)
+
+
