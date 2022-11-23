@@ -93,7 +93,6 @@ GunZ The Duel Releases <br>
 - bullet colored: [bullet colored](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored)
 - chat background: [chat background](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground)
 - crosshair size: [crosshair size](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size)
-- spark effect: [spark effect](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect-spark-shot)
 - extra info: [extra info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5)
 - hide jjang: [hide jjang](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang)
 - hillclimb: [hillclimb](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix)
