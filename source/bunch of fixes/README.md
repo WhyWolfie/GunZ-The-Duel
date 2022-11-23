@@ -835,7 +835,19 @@ Replace <br>
 		//TerminateProcess(hProcess, 0);
 	#endif
 
+Open(MMatchItem.cpp) <br>
+Replace <br>
 
+	if (!xmlIniData.LoadFromMemory(buffer))
+	{
+		//memleak fix.
+		delete[] buffer;
+		m_nChecksum = 0;
+		xmlIniData.Destroy();
+		return false;
+	}
+	delete[] buffer;
+	mzf.Close();
 
 
 
