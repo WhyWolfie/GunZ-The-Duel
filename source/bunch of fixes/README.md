@@ -1039,5 +1039,98 @@ Replace <br>
 		}
 	}
 
+Open(ZGameInterface.cpp) <br>
+
+Find <br>
+
+	ZGameInterface::RequestQuickJoin()
+
+Replace <br>
+
+	void ZGameInterface::RequestQuickJoin()
+	{
+		//Fix quick join glitch (room tags)
+		EnableLobbyInterface(false);
+
+		MTD_QuickJoinParam	quick_join_param;
+
+		quick_join_param.nMapEnum = 0xFFFFFFFF;
+
+		quick_join_param.nModeEnum = 0;
+		SetBitSet(quick_join_param.nModeEnum, MMATCH_GAMETYPE_DEATHMATCH_SOLO);
+		SetBitSet(quick_join_param.nModeEnum, MMATCH_GAMETYPE_DEATHMATCH_TEAM);
+		SetBitSet(quick_join_param.nModeEnum, MMATCH_GAMETYPE_ASSASSINATE);
+
+		ZPostRequestQuickJoin(ZGetGameClient()->GetPlayerUID(), &quick_join_param);
+	}
+
+Find <br>
+
+	m_bOnEndOfReplay = true;
+	m_nLevelPercentCache = ZGetMyInfo()->GetLevelPercent();
+
+
+Add above <br>
+
+	//Wolfie: Fix for replay box showing in stage rooms, glitching the stage
+	if (GetState() != GUNZ_LOBBY)
+	{
+		ShowReplayDialog(false);
+		return;
+	}
+
+Open(ZItemSlotView.cpp) <br>
+
+Find <br>
+
+		if (nItemID != 0)
+		{
+			pItemDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+
+Add under <br>
+
+	if(!pItemDesc) return false;
+
+Find <br>
+
+	void ZItemSlotView::OnMouseIn( void )
+
+Replace <br>
+
+	void ZItemSlotView::OnMouseIn( void )
+	{
+		MButton::OnMouseIn();
+
+		unsigned long int nItemID = ZGetMyInfo()->GetItemList()->GetEquipedItemID(m_nParts);
+		MMatchItemDesc* pItemDesc = NULL;
+		if (nItemID == 0) return;
+
+		const char* szItemDescription = GetItemDescriptionWidgetName();
+		MTextArea* pItemDescTextArea = (MTextArea*)ZGetGameInterface()->GetIDLResource()->FindWidget(szItemDescription);
+		if (!pItemDescTextArea) return;
+
+		pItemDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+
+		//Item slot view bugfix crash
+		if (!pItemDesc) return;
+
+		ZMyItemNode* pItemNode = ZGetMyInfo()->GetItemList()->GetEquipedItem( m_nParts);
+		MTextArea* pTextArea = (MTextArea*)ZGetGameInterface()->GetIDLResource()->FindWidget( szItemDescription);
+		ZShopEquipItem_Match::FillItemDesc(pItemDesc, pTextArea, pItemNode);
+
+		MRECT rcSlotView = GetRect();
+		MRECT rcTextArea = pItemDescTextArea->GetRect();
+		MPOINT posDesc(rcSlotView.x, rcSlotView.y);
+		posDesc = MClientToScreen(GetParent(), posDesc);
+		posDesc.x = rcSlotView.x + rcSlotView.w + CONVERT800(20);
+		if (posDesc.y+rcTextArea.h > MGetWorkspaceHeight())
+			posDesc.y = MGetWorkspaceHeight() - rcTextArea.h;
+		pItemDescTextArea->SetPosition(posDesc);
+		pItemDescTextArea->SetZOrder(MZ_TOP);
+		ZGetGameInterface()->GetShopEquipInterface()->ShowItemDescription(true, pItemDescTextArea, this);
+	}
+
+
+
 
 
