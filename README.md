@@ -176,6 +176,7 @@ GunZ The Duel Releases <br>
 - custom shotgun sounds: [custom shotgun sounds](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/custom%20shotgun%20sounds)
 - dynamiclight fix: [dynamiclight fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dynamic%20light%20fix)
 - sql cleaning(sql2005): [sql cleaning(sql2005)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20cleaning)
+- quest combo crash: [quest combo crash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20combo%20crash)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
