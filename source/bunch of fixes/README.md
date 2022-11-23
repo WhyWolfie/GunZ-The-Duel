@@ -1130,6 +1130,33 @@ Replace <br>
 		ZGetGameInterface()->GetShopEquipInterface()->ShowItemDescription(true, pItemDescTextArea, this);
 	}
 
+Open(ZModule.cpp) <br>
+
+Find <br>
+
+	void ZModuleContainer::UpdateModules(float fElapsed)
+
+Replace <br>
+
+	void ZModuleContainer::UpdateModules(float fElapsed)
+	{
+		//Iterator fixes
+		for (ZMODULEMAP::iterator i = m_ActiveModules.begin(); i != m_ActiveModules.end();) {
+			ZModule *pModule = i->second;
+			if (!pModule->Update(fElapsed)) {
+				i = m_ActiveModules.erase(i);
+			}
+			else
+				++i;
+		}
+	}
+
+
+
+
+
+
+
 
 
 
