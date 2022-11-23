@@ -824,6 +824,16 @@ Replace
 		}
 	}
 
+Open(RealCPNet.cpp) <br>
+Replace <br>
+
+	#ifndef _PUBLISH
+		char szFileName[_MAX_DIR];
+		GetModuleFileName(NULL, szFileName, _MAX_DIR);
+		HANDLE hProcess = MProcessController::OpenProcessHandleByFilePath(szFileName);
+		//Do not crash on RealCPNet crashes	
+		//TerminateProcess(hProcess, 0);
+	#endif
 
 
 
