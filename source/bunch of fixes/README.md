@@ -836,6 +836,12 @@ Replace <br>
 	#endif
 
 Open(MMatchItem.cpp) <br>
+
+Find
+
+	if (!xmlIniData.LoadFromMemory(buffer))
+
+
 Replace <br>
 
 	if (!xmlIniData.LoadFromMemory(buffer))
@@ -850,6 +856,12 @@ Replace <br>
 	mzf.Close();
 
 Open(MMatchServer.cpp) <br>
+
+Find <br>
+
+	MMatchServer::ParseUDPPacket
+
+
 Replace <br>
 
 	void MMatchServer::ParseUDPPacket(char* pData, MPacketHeader* pPacketHeader, DWORD dwIP, WORD wRawPort)
@@ -920,6 +932,12 @@ Replace <br>
 		break;
 
 Open(MMatchServer_OnCommand.cpp) <br>
+
+Find <br>
+
+	MC_MATCH_REQUEST_MONSTER_BIBLE_INFO
+
+
 Replace <br>
 
 		case MC_MATCH_REQUEST_MONSTER_BIBLE_INFO :
@@ -949,5 +967,34 @@ Replace <br>
 	SAFE_DELETE(m_pWeaponScreenEffect);
 
 
+Open(ZGameClient.cpp) <br>
 
+Find <br>
+
+	ZGameClient::OnResponsePeerRelay
+
+
+Replace <br>
+
+	void ZGameClient::OnResponsePeerRelay(const MUID& uidPeer)
+	{
+		//Wolfie: Bug fix if NAT fails
+		if (ZGetGame() == NULL) return;
+		string strNotify = "Unknown Notify";
+		NotifyMessage(MATCHNOTIFY_NETWORK_NAT_ESTABLISH, &strNotify);
+
+		char* pszName = "UnknownPlayer";
+		MMatchPeerInfo* pPeer = FindPeer(uidPeer);
+		if (pPeer) pszName = pPeer->CharInfo.szName;
+
+		char szMsg[128];
+		sprintf(szMsg, "%s : from %s", strNotify.c_str(), pszName);
+
+
+		ZCharacter* pChar = (ZCharacter*)ZGetCharacterManager()->Find( uidPeer);
+		if ( pChar && pChar->IsAdminHide())
+			return;
+
+		ZChatOutput(szMsg, ZChat::CMT_SYSTEM);
+	}
 
