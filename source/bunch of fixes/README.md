@@ -933,7 +933,20 @@ Replace <br>
 			}
 			break;
 
+Open(ZCombatInterface.cpp) <br>
 
+Find
+
+	m_pWeaponScreenEffect->Destroy();
+
+
+Replace <br>
+
+	//Fixed calling destructor of ZWeaponScreenEffect
+	if (m_pWeaponScreenEffect)
+		m_pWeaponScreenEffect->Destroy();
+
+	SAFE_DELETE(m_pWeaponScreenEffect);
 
 
 
