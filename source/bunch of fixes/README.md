@@ -1151,11 +1151,37 @@ Replace <br>
 		}
 	}
 
+Open(ZModule_HPAP.h)
+
+Find 
+
+	__forceinline void ZModule_HPAP::SetHP(float fHP)
 
 
+Replace
 
+	__forceinline void ZModule_HPAP::SetHP(float fHP)
+	{
+		//Bugfix: Rounded DOWN damage to prevent 0 HP and 0 AP (they get 0/0 because it might be 0.1/0.2) 
+		//fHP = /*floor(*/min(max(0,fHP),GetMaxHP());//);
+		fHP = min(max(0, fHP), GetMaxHP());
 
+		if (floor(fHP) <= 0.f)
+			fHP = 0.f;
 
+		m_fHP.Set_CheckCrc(fHP + GetMask());
+	}
+
+	__forceinline void ZModule_HPAP::SetAP(float fAP)
+	{
+		//Bugfix: Rounded UP damage to prevent 0 HP and 0 AP (they get 0/0 because it might be 0.1/0.2) 
+		fAP = /*floor(*/min(max(0, fAP), GetMaxAP());//);
+
+		if (floor(fAP) <= 0.f)
+			fAP = 0.f;
+
+		m_fAP.Set_CheckCrc(fAP + GetMask());
+	}
 
 
 
