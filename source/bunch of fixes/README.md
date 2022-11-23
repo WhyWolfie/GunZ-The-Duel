@@ -1267,4 +1267,17 @@ Replace
 		return 1.f;
 	}
 
+Find <br>
 
+	if( m_pVMesh->m_SelectWeaponMotionType==eq_ws_dagger )
+	{ // dagger
+		if(m_AniState_Upper.Ref()==ZC_STATE_UPPER_SHOT)
+			return;
+      
+Replace <br>
+
+	if( m_pVMesh->m_SelectWeaponMotionType==eq_wd_dagger ||
+		m_pVMesh->m_SelectWeaponMotionType==eq_ws_dagger ) 
+	{ // dagger
+		if(m_AniState_Upper.Ref()==ZC_STATE_UPPER_SHOT)
+			return;
