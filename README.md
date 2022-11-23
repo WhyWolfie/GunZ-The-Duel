@@ -177,6 +177,7 @@ GunZ The Duel Releases <br>
 - dynamiclight fix: [dynamiclight fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dynamic%20light%20fix)
 - sql cleaning(sql2005): [sql cleaning(sql2005)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20cleaning)
 - quest combo crash: [quest combo crash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20combo%20crash)
+- no item crash fix: [no item crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20item%20crash%20fix)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
