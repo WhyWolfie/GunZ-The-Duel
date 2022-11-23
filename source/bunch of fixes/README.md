@@ -1281,3 +1281,56 @@ Replace <br>
 	{ // dagger
 		if(m_AniState_Upper.Ref()==ZC_STATE_UPPER_SHOT)
 			return;
+
+Open(ZObject.cpp) <br>
+
+Find <br>
+
+	void ZObject::ShiftFugitiveValues()
+
+Replace <br>
+
+	void ZObject::ShiftFugitiveValues()
+	{
+		if (m_pVMesh) 
+		{
+			//Disable m_pVMesh antihack
+			/*
+			// AniFramInfo
+			{
+				AniFrameInfo* old = m_pVMesh->m_FrameInfo;
+				AniFrameInfo* New = new AniFrameInfo[ani_mode_end];
+
+				for (int i=0; i<ani_mode_end; ++i)
+					New[i] = old[i];
+				delete [] old;
+
+				m_pVMesh->m_FrameInfo = New;
+			}
+
+			{
+				if (m_pVMesh->m_SelectWeaponMotionType !=
+					*m_pVMesh->m_pSelectWeaponMotionType_AntiHack)
+					g_fpOnCrcFail();
+
+				RWeaponMotionType* old = m_pVMesh->m_pSelectWeaponMotionType_AntiHack;
+				RWeaponMotionType* New = new RWeaponMotionType;
+
+				*New = *old;
+				delete old;
+
+				m_pVMesh->m_pSelectWeaponMotionType_AntiHack = New;
+			}
+			*/
+		}
+
+		if (m_pModule_Movable)
+			m_pModule_Movable->ShiftFugitiveValues();
+
+		m_Items.ShiftFugitiveValues();
+
+		m_Position.ShiftHeapPos_CheckCrc();
+
+		m_Collision.ShiftFugitiveValues();
+	}
+
