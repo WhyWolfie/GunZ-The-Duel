@@ -363,6 +363,8 @@ GunZ The Duel Releases <br>
 - raulgunz: [raulgunz](https://archive.org/details/cliente-raul-gunz)
 - lggunz beta installer 2005: [lggunz beta installer 2005](https://archive.org/details/lggun-z-beta-installer-2005)
 - ogunz: [ogunz](https://archive.org/details/ogun-z-v-2) big thanks to ogunz no encryption useful!
+- gunz installer 20070624 (ijji): [gunz installer 20070624 (ijji)](https://archive.org/details/gunz-installer-20070624)
+- gunz installer 20081121 (ijji): [gunz installer 20081121 (ijji)](https://archive.org/details/gunz-installer-20081121)
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
