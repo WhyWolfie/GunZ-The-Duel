@@ -528,11 +528,6 @@ GunZ The Duel Releases <br>
 - royalgunz: [royalgunz](https://www.royalgunz.net/)
 - ogunz: [ogunz](http://ogunz.xyz/)
 
-<b>[old forums/blogspots]</b>
-- portalcriandogunzonline: [portalcriandogunzonline](https://portalcriandogunzonline.blogspot.com/)
-- portalgs: [portalgs](https://portalgs.foroactivo.com/f26-gunz)
-- fxp.co.il: [fxp.co.il](https://www.fxp.co.il/)
-
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
 - gunz forum: [gunz forum](https://forum.ragezone.com/f311/) (gunz forum - still active)
@@ -540,6 +535,8 @@ GunZ The Duel Releases <br>
 - gitlab trinityent: [gitlab trinityent](https://gitlab.trinityent.net/explore)
 - gunz.chat: [gunz.chat](https://gunz.chat) / [discord](https://discord.com/invite/xMWZxZSmwq)  (active community)
 - reddit: [gunz reddit](https://www.reddit.com/r/gunz)
+- fxp.co.il: [fxp.co.il](https://www.fxp.co.il/)
+- portalgs: [portalgs](https://portalgs.foroactivo.com/f26-gunz)
 
 credits too everyone who work on it! <br>
 My goal is to make gunz alive again and new people to learn how to make your own gunz server <br>
