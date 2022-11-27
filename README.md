@@ -266,6 +266,7 @@ GunZ The Duel Releases <br>
 - challenge quest base(source): [challenge quest base(source)](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z)
 - summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
 - phail gunz (source): [phail gunz (source)](https://archive.org/details/phails-gunz-shit.-7z)
+- repack aren: [repack aren](https://archive.org/details/repack-aren)
 
 <b>[gunz international]</b> <br>
 - gunz international client/launcher: [gunz international clients](https://archive.org/details/gunz-international-20060726_202211)
