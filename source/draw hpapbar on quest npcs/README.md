@@ -77,6 +77,13 @@ Add under <br>
       }
     }
 
+![1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/draw%20hpapbar%20on%20quest%20npcs/1.jpg)
+
+![2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/draw%20hpapbar%20on%20quest%20npcs/2.jpg)
+
+![3](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/draw%20hpapbar%20on%20quest%20npcs/3.jpg)
+
+
 
 
 Credits to ZER0NIS
