@@ -138,6 +138,7 @@ GunZ The Duel Releases <br>
 - rank colour change: [rank colour change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20colour%20change)
 - dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options)
 - hpbar with source: [hpbar with source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hpbar)
+- hpap bar on quest npcs: [hpap bar on quest npcs](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/draw%20hpapbar%20on%20quest%20npcs)
 
 (fixes)<br>
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
