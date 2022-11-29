@@ -5,6 +5,7 @@
 - Better graphics(changing realspace2 engine), new gamemodes(for example: new tournament, clanwar system) <br>
 - Make videos for the new people who want to learn gunz so that there will be more developers in gunz community and new ideas <br>
 - Assist System (hit an opponent and you get 1 assist + but you also get half of 'exp' for it, so "KS" thingy won't be there anymore xp) <br>
+- Linux Gunz Server / Client
 
 Project ZNUG: https://docs.google.com/presentation/d/1C5HFE82BAm1N2qwxw4XQYwsZJ019EhoSNhAUKVhGAqA/edit#slide=id.p
 
