@@ -10,7 +10,7 @@
 ![gunz](https://i.imgur.com/Ltc2YLo.png)
 6. Save it YES<br>
 ![gunz](https://i.imgur.com/1tKttmU.png)<br>
-<b>[Try out your server now :)</b>
+<b>[ Try out your server now :) ]</b>
 
 ![gunz](https://i.imgur.com/r6pweqY.jpg)
 
