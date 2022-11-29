@@ -142,6 +142,7 @@ GunZ The Duel Releases <br>
 - nolead: [no lead](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20lead)
 
 (fixes)<br>
+- crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
 - dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
 - login crash(matchserver): [login crash(matchserver)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix)
 - player count server: [playercount](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5)
