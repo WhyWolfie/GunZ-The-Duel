@@ -37,6 +37,7 @@ GunZ The Duel Releases <br>
 - [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
 - [ijji website](https://github.com/tannous94/ijji-website)
 - [gunzfactor (source)](https://github.com/sohchienmin/GunZ/tree/master)
+- [gunz 2 emulator](https://gitlab.milice.se/gunz-2-private-server)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
