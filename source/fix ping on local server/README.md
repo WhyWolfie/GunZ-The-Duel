@@ -23,3 +23,6 @@
     MONITORIP="192.168.xxx.xxx" <br>
     
 SQL -> DBO.ServerStatus -> IP/AgentIP: 127.0.0.1 to 192.168.xxx.xxx
+
+
+![lowpingbruh](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/fix%20ping%20on%20local%20server/lowpingbruh.jpg)
