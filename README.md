@@ -184,6 +184,7 @@ GunZ The Duel Releases <br>
 - no item crash fix: [no item crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20item%20crash%20fix)
 - ping at server select: [ping at server select](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20at%20server%20select) 
 - change agentip address(ping 999 issue): [change agentip address(ping issue)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20agentip)
+- change gunz folder: [change gunz folder](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20nameapp)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
