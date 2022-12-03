@@ -2,6 +2,9 @@
 - new colour system easier to manage.
 - time in lobbychat/stagechat
 
+htmlcolorcodes: [htmlcolorcodes](https://htmlcolorcodes.com/) <br>
+copy hexcode and replace: 0xFF(stay like that) - FF8040 (your hex code) example: 0xFFFF8040
+
 Almost completed
 
 Open(ZCombatInterface.cpp) <br>
