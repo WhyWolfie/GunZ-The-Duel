@@ -1588,13 +1588,42 @@ Replace <br>
 		PlaySound("fx_blade_sheath", pos, bObserverTarget);
 	}
 
+Open(ZShopEquipListBox.cpp) <br>
+Find <br>
 
+	if (bSelected)
+		pDC->SetColor(220, 220, 220);
+	else if (bMouseOver)
+		pDC->SetColor(60, 60, 60);
+	else
+		pDC->SetColor(19, 19, 19);
 
+Replace <br>
 
+	if (bSelected)
+		pDC->SetColor(220, 220, 220);
+	else if (bMouseOver)
+		pDC->SetColor(60, 60, 60);
+	else
+		pDC->SetColor(20, 20, 20);
 
+Find <br>
 
+	if (ZSEIT_MATCH == m_pItemData->GetType())
+	{
+		int hint = 2000000;
+		int nResLv = m_pItemData->GetLevelRes();
+		MMatchItemDesc* pItemDesc = ((ZShopEquipItem_Match*)m_pItemData)->GetDesc();
+		if (!pItemDesc) { return 0; }
 
+Replace <br>
 
+	if (ZSEIT_MATCH == m_pItemData->GetType())
+	{
+		int hint = 2000000;
+		int nResLv = m_pItemData->GetLevelRes();
+		MMatchItemDesc* pItemDesc = ((ZShopEquipItem_Match*)m_pItemData)->GetDesc();
+		if (!pItemDesc) { _ASSERT(0); return 0; }
 
 
 
