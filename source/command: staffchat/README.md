@@ -128,5 +128,35 @@ Open(MMatchServer.h - RouteToAllClient - Add) <br>
 	void RouteToStaff(MCommand* pCommand);
 
 
+Open(ZChat.cpp) <br>
+Find <br>
+
+	bool bTeamChat = false;
+
+Replace <br>
+
+	bool bTeamChat = false;
+	if (szMsg[0] == '!') 
+	{	// Team Chat
+		bTeamChat = true;
+	} 
+	else if (szMsg[0] == '@') 
+	{	// ChatRoom
+		ZPostChatRoomChat(&szMsg[1]);
+		return true;
+	} 
+	else if (szMsg[0] == '#') 
+	{	// Clan Chat
+		ZPostClanMsg(ZGetGameClient()->GetPlayerUID(), &szMsg[1]);
+		return true;
+	}
+	else if (szMsg[0] == '$')
+	{	// Staff Chat
+		ZPostStaffChat(&szMsg[1]);
+		return true;
+	}
+
+
+
 Preview <br>
 ![img](https://i.imgur.com/LqOxlWe.png)
