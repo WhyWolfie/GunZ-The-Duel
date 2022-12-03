@@ -1719,21 +1719,41 @@ Replace <br>
 					};
 
 
+Open(ZDuelTournamentRankingListBox.cpp) <br>
+
+Find <br>
+
+	if (nIndex >= NUM_DISPLAY_DUELTOURNAMENT_RANKING) { return; }//_ASSERT(0); return; }
 
 
+Replace <br>
+
+	if (nIndex >= NUM_DISPLAY_DUELTOURNAMENT_RANKING) { _ASSERT(0); return; }
+
+Find <br>
+
+	if (!m_pBmpRankingItemBg || !m_pBmpArrowUp || !m_pBmpArrowDown || !m_pBmpArrowBar) {  return; }
+
+Replace <br>
+
+	if (!m_pBmpRankingItemBg || !m_pBmpArrowUp || !m_pBmpArrowDown || !m_pBmpArrowBar) { _ASSERT(0); return; }
 
 
+Find <br>
 
+	rc.Set((int)(0.01f*nWidth), y, (int)(fabs(0.01f - 0.11f)*nWidth), nItemHeight);
 
+Replace <br>
 
+	rc.Set((int)(0.01f*nWidth), y, (int)(fabs(0.01f - 0.23f)*nWidth), nItemHeight);
 
+Find <br>
 
+	rc.Set((int)(0.8f*nWidth), y, (int)(fabs(0.8f - 0.91f)*nWidth), nItemHeight);
 
+Replace <br>
 
-
-
-
-
+	rc.Set((int)(0.8f*nWidth), y, (int)(fabs(0.8f - 0.85f)*nWidth), nItemHeight);
 
 
 
