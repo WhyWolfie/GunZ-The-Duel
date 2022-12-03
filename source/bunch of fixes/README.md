@@ -1507,9 +1507,17 @@ Replace <br>
 			}
 			break;
 
+Open(Gunz/stdafx.h) <br>
+Find <br>
 
+	#define _MULTILANGUAGE
+	#endif
 
+Replace <br>
 
+	#if defined(_DEBUG) || defined(_RELEASE) || defined(LOCALE_KOREA) || defined(LOCALE_NHNUSA) || defined(LOCALE_JAPAN) || defined(LOCALE_BRAZIL)
+	#define _MULTILANGUAGE
+	#endif
 
 
 
