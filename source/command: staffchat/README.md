@@ -1,3 +1,6 @@
+Command: /s {text} <br>
+Command: $hello <br>
+
 Open(ZChat_cmds.cpp) <br>
 
     void ChatCmd_StaffChat(const char* line, const int argc, char** const argv);
