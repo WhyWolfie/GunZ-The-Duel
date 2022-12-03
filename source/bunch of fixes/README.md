@@ -2264,17 +2264,59 @@ Replace <br>
 	if (GetAIID() == 0) return;
 
 
+Open(ZShopEquipInterface.cpp) <br>
+Find <br>
 
+	if (!pWrapperGItem->GetHandleSell()) { return false; }
 
+Replace <br>
 
+	if (!pWrapperGItem->GetHandleSell()) { _ASSERT(0); return false; }
 
+Find <br>
 
+	if (!pWrappedZItem->GetHandleSell()) { return false; }
 
+Replace <br>
 
+	if (!pWrappedZItem->GetHandleSell()) { _ASSERT(0); return false; }
 
+Find <br>
 
+	bool ZShopEquipInterface::CheckRestrictBringAccountItem()
+	{
+		int nResult = _CheckRestrictBringAccountItem();
+		if (nResult == 0 || nResult == 2)	// Restriction Passed
+			return true;
 
+		if (nResult == -1)
+			ZGetGameInterface()->ShowErrorMessage(  MERR_NO_SELITEM );
 
+		else if (nResult == 1)	// Sex Restrict
+			ZGetGameInterface()->ShowErrorMessage( MERR_BRING_ACCOUNTITEM_BECAUSEOF_SEX );
+
+		return false;
+	}
+
+Replace <br>
+
+	bool ZShopEquipInterface::CheckRestrictBringAccountItem()
+	{
+		int nResult = _CheckRestrictBringAccountItem();
+		if (nResult == 0 || nResult == 2)	// Restriction Passed
+			return true;
+
+		if (nResult == -1)
+			ZGetGameInterface()->ShowErrorMessage(  MERR_NO_SELITEM );
+
+		else if (nResult == 1)	// Sex Restrict
+			ZGetGameInterface()->ShowErrorMessage( MERR_BRING_ACCOUNTITEM_BECAUSEOF_SEX );
+
+		else
+			_ASSERT(FALSE);	// Unknown Restriction
+
+		return false;
+	}
 
 
 
