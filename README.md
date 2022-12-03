@@ -135,14 +135,13 @@ GunZ The Duel Releases <br>
 - event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
 - channel for gm: [channel for gm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/channel%20for%20GM)
 - medkit limits: [medkit limits](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/medkit%20limits)
-- hide administrator level: [hide administrator level](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
+- hide admin level & color system & time in chat: [hide admin level & color system & time in chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
 - rank colour change: [rank colour change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20colour%20change)
 - dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options)
 - hpbar with source: [hpbar with source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hpbar)
 - hpap bar on quest npcs: [hpap bar on quest npcs](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/draw%20hpapbar%20on%20quest%20npcs)
 - nolead: [no lead](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20lead)
 - room with map name: [room with map name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room%20with%20map%20name)
-
 
 (fixes)<br>
 - crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
