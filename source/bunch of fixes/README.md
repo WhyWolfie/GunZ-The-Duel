@@ -2575,13 +2575,77 @@ Add <br>
 		if (!pAttacker) return;
 
 
+Open(RealSpace2.cpp) <br>
+Find <br>
+
+	int nSettingAA = 2;
+	
+Replace
+
+	//int nSettingAA = 2;
+
+Find <br>
+
+	ZeroMemory( &g_d3dpp, sizeof(g_d3dpp) );
+	g_d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;
+
+Replace <br>
+
+	ZeroMemory( &g_d3dpp, sizeof(g_d3dpp) );
+	g_d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;
+	g_d3dpp.BackBufferWidth = params->nWidth;
+	g_d3dpp.BackBufferHeight = params->nHeight;
+	g_d3dpp.BackBufferCount = bTripleBuffer ? 2 : 1;						// or 2 ??
+	g_d3dpp.Windowed   = !params->bFullScreen;
+	g_d3dpp.BackBufferFormat = g_PixelFormat;
+	g_d3dpp.EnableAutoDepthStencil = TRUE;
+
+	/*	
+		if( SUCCEEDED(g_pD3D->CheckDeviceMultiSampleType( D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL , g_PixelFormat, params->bFullScreen, D3DMULTISAMPLE_4_SAMPLES, NULL ))) {
+			g_MultiSample = D3DMULTISAMPLE_4_SAMPLES;
+		}	
+		else if( SUCCEEDED(g_pD3D->CheckDeviceMultiSampleType( D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL , g_PixelFormat, params->bFullScreen, D3DMULTISAMPLE_2_SAMPLES, NULL ))) {
+			g_MultiSample = D3DMULTISAMPLE_2_SAMPLES;
+		}
+		else 
+			g_MultiSample = D3DMULTISAMPLE_NONE;
+
+		mlog("sample %d \n", int(g_MultiSample));
+	*/
+		g_d3dpp.MultiSampleType =  g_MultiSample;
+	//	g_d3dpp.MultiSampleType =  D3DMULTISAMPLE_NONE;
 
 
+Find <br>
 
+	g_bFullScreen=params->bFullScreen;
+	g_nScreenWidth=params->nWidth;
 
+Replace <br>
 
+	g_bFullScreen=params->bFullScreen;
+	g_nScreenWidth=params->nWidth;
+	g_nScreenHeight=params->nHeight;
+	g_PixelFormat= params->bFullScreen ? params->PixelFormat : g_d3ddm.Format;		// À©µµ¿ì ¸ðµå´Â ¿ø·¡ Æ÷¸ËÀ¸·Î
 
+	g_d3dpp.Windowed   = !params->bFullScreen;
+ 	g_d3dpp.BackBufferWidth = g_nScreenWidth;
+ 	g_d3dpp.BackBufferHeight = g_nScreenHeight;
+	g_d3dpp.BackBufferFormat = g_PixelFormat;
+	/*
+		if( SUCCEEDED(g_pD3D->CheckDeviceMultiSampleType( D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL , g_PixelFormat, params->bFullScreen, D3DMULTISAMPLE_4_SAMPLES, NULL ))) {
+			g_MultiSample = D3DMULTISAMPLE_4_SAMPLES;
+		}	
+		else if( SUCCEEDED(g_pD3D->CheckDeviceMultiSampleType( D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL , g_PixelFormat, params->bFullScreen, D3DMULTISAMPLE_2_SAMPLES, NULL ))) {
+			g_MultiSample = D3DMULTISAMPLE_2_SAMPLES;
+		}
+		else 
+			g_MultiSample = D3DMULTISAMPLE_NONE;
 
+		mlog("sample %d \n", int(g_MultiSample));
+	*/
+		g_d3dpp.MultiSampleType =  g_MultiSample;
+	//	g_d3dpp.MultiSampleType =  D3DMULTISAMPLE_NONE;
 
 
 
