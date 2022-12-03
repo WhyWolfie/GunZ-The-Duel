@@ -744,10 +744,12 @@ Replace <br>
 		}
 	}
 
-
-
-
-
+Lobby
+![lobby](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/hide%20administrator%20level/lobby.jpg)
+Gameroom
+![Gameroom](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/hide%20administrator%20level/gameroom.jpg)
+Ingame
+![Ingame](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/hide%20administrator%20level/ingame.jpg)
 
 
 
