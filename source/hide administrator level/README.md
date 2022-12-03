@@ -136,6 +136,83 @@ Replace
 		sprintf(pItem->szName,"%d%s %s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
 
 
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+		// LV
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerSpecLevel");
+		sprintf( buf, "%s : %d %s", ZMsg( MSG_CHARINFO_LEVEL), ZGetMyInfo()->GetLevel(), ZMsg(MSG_CHARINFO_LEVELMARKER));
+		if (pLabel) pLabel->SetText(buf);
+
+Replace <br>
+
+		// LV
+		pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerSpecLevel");
+		if (ZGetMyInfo()->IsAdminGrade())
+			sprintf(buf, "%s : --", ZMsg(MSG_CHARINFO_LEVEL));
+		else
+			sprintf(buf, "%s : %d (%d%%)", ZMsg(MSG_CHARINFO_LEVEL), ZGetMyInfo()->GetLevel(), ZGetMyInfo()->GetLevelPercent());
+		if (pLabel) pLabel->SetText(buf);
+		
+		// XP
+		//pLabel = (MLabel*)pRes->FindWidget("Lobby_PlayerSpecXP");
+		//sprintf( buf, "%s : %d%%", ZMsg( MSG_CHARINFO_XP), ZGetMyInfo()->GetLevelPercent());
+		//if (pLabel) pLabel->SetText(buf);
+
+Find <br>
+
+			pLabel = (MLabel*)pRes->FindWidget("Stage_PlayerSpecLevel");
+			if ( pLabel)
+			{
+				if ( bShowMe)
+					sprintf( buf, "%s : %d %s", ZMsg( MSG_CHARINFO_LEVEL), ZGetMyInfo()->GetLevel(), ZMsg(MSG_CHARINFO_LEVELMARKER));
+				else
+					sprintf( buf, "%s : %s %s", ZMsg( MSG_CHARINFO_LEVEL), pItem->GetString( 1), ZMsg(MSG_CHARINFO_LEVELMARKER));
+				pLabel->SetText(buf);
+			}
+
+
+Replace <br>
+
+			pLabel = (MLabel*)pRes->FindWidget("Stage_PlayerSpecLevel");
+			if (pLabel)
+			{
+				if (bShowMe)
+					if (ZGetMyInfo()->IsAdminGrade())
+						sprintf(buf, "%s : --", ZMsg(MSG_CHARINFO_LEVEL));
+					else
+						sprintf(buf, "%s : %d", ZMsg(MSG_CHARINFO_LEVEL), ZGetMyInfo()->GetLevel());
+				else
+					sprintf(buf, "%s : %s", ZMsg(MSG_CHARINFO_LEVEL), pItem->GetString(1));
+				pLabel->SetText(buf);
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
