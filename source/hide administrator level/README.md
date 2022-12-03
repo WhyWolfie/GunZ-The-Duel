@@ -543,7 +543,7 @@ Find
 			if (isInViewFrustum(&box, RGetViewFrustum()))
 			{
 				/*
-#define CHARACTER_HEIGHT	185.0f
+	#define CHARACTER_HEIGHT	185.0f
 				pos.z = pos.z + CHARACTER_HEIGHT;
 				screen_pos = RGetTransformCoord(pos);
 				*/
