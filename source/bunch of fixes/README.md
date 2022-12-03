@@ -1486,9 +1486,26 @@ Replace <br>
 		return 0;
 	}
 
+Open(ZItem.cpp) <br>
+Find <br>
 
+		case MWT_REVOLVER:
+		case MWT_REVOLVERx2:
+			{
+				if(bHead)	fRatio = 0.75f; //0.9
+				else		fRatio = 0.55f; //0.7
+			}
+			break;
 
+Replace <br>
 
+		case MWT_REVOLVER:
+		case MWT_REVOLVERx2:
+			{
+				if(bHead)	fRatio = 0.8f;
+				else		fRatio = 0.6f;
+			}
+			break;
 
 
 
