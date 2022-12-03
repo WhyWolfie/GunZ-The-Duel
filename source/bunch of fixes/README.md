@@ -2354,10 +2354,174 @@ Replace <br>
 			ddm.Format = D3DFMT_R5G6B5;
 
 
+Open(ZGameInterface_OnCommand.cpp) <br>
+Find <br>
 
+	case MC_MATCH_DUELTOURNAMENT_RESPONSE_SIDERANKING_INFO:
+		{
+			MCommandParameter* pParam = pCommand->GetParameter(0);
+			if (!pParam) {  break; }
+			void* pBlob = pParam->GetPointer();
+			int nCount = MGetBlobArrayCount( pBlob);
+			
+			//_ASSERT(nCount <= NUM_DISPLAY_DUELTOURNAMENT_RANKING);
 
+			ZIDLResource* pRes = ZApplication::GetGameInterface()->GetIDLResource();
+			MWidget* pWidget = pRes->FindWidget( "Lobby_DuelTournamentRankingList" );
+			if (!pWidget) {  break; }
 
+			ZDuelTournamentRankingListBox* pRankingList = (ZDuelTournamentRankingListBox*)pWidget;
+			pRankingList->ClearAll();
 
+			for (int i=0; i<nCount; ++i)
+			{
+				DTRankingInfo *pRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, i));
+				if (!pRankInfo) {  break; }
+				
+				ZDUELTOURNAMENTRANKINGITEM tempItem;
+				tempItem.bEmptyItem		= false;
+				tempItem.nFluctuation	= pRankInfo->m_nRankingIncrease;
+				tempItem.nLosses		= pRankInfo->m_nLoses;
+				tempItem.nWins			= pRankInfo->m_nWins;
+				tempItem.nWinners		= pRankInfo->m_nFinalWins;
+				tempItem.nPoint			= pRankInfo->m_nTP;
+				tempItem.nRank			= pRankInfo->m_nRanking;
+				tempItem.nGrade			= pRankInfo->m_nGrade;
+				strcpy(tempItem.szCharName, pRankInfo->m_szCharName);
+
+				// DB¿¡¼­ ¹«È¿°ªÀ¸·Î 10¾ïÀ» »ç¿ëÇÑ´Ù, ¿©±â¼­´Â º¯µ¿¾øÀ½À¸·Î Ãâ·Â
+				if(tempItem.nFluctuation == 1000000000)
+					tempItem.nFluctuation = 0;
+
+				pRankingList->SetRankInfo(i, tempItem);
+			}
+
+			// ´ÙÀ½ ¼øÀ§±îÁö ³²Àº Æ÷ÀÎÆ® Ãâ·Â
+			int myRankIndex = -1;
+			for (int i=0; i<nCount; ++i)
+			{
+				DTRankingInfo *pRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, i));
+				if (!pRankInfo) {  break; }
+
+				if (0 == strcmp(pRankInfo->m_szCharName, ZGetMyInfo()->GetCharName())) {
+					myRankIndex = i;
+					break;
+				}
+			}
+
+			pRankingList->SetMyRankIndex(myRankIndex);
+
+			DTRankingInfo *pMyRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, myRankIndex));
+			DTRankingInfo *pCloseRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, myRankIndex - 1));
+
+			// '´ÙÀ½ ¼øÀ§±îÁö xxÆ÷ÀÎÆ® ³²¾Ò½À´Ï´Ù' Ãâ·Â
+			pWidget = pRes->FindWidget("Lobby_DuelTournamentNeedPointNextRank");
+			if (pWidget)
+			{
+				char szNeedPointToNextRank[32] = "";
+
+				char szBuffer[256] = "";
+				if (pMyRankInfo && pCloseRankInfo)
+				{
+					sprintf(szNeedPointToNextRank, "%d", pCloseRankInfo->m_nTP - pMyRankInfo->m_nTP);
+					ZTransMsg(szBuffer, MSG_LOBBY_DUELTOURNAMENT_NEEDPOINT_TONEXTRANK, 1, szNeedPointToNextRank);
+				}
+				else
+				{
+					// ³»°¡ 1µîÀÌ¶ó¼­ ³» »óÀ§ ·©Ä¿°¡ ¾ø°Å³ª, ³»°¡ ÀÌ¹øÁÖ¿¡ Ã³À½ Åä³Ê¸ÕÆ®¸¦ ÇÏ´Â°Å¶ó ·©Å·¿¡ ¾øÀ» °æ¿ì
+					// ÀÌ ¸ñ·ÏÀÌ »óÀ§ 1~5µîÀ» ³ªÅ¸³»°í ÀÖÀ½À» ¼³¸í
+					ZTransMsg(szBuffer, MSG_LOBBY_DUELTOURNAMENT_NEEDPOINT_TOPSIDERANKLIST);
+				}
+
+				pWidget->SetText(szBuffer);
+				((MLabel*)pWidget)->SetAlignment(MAM_RIGHT);
+			}
+		}
+		break;
+
+Replace <br>
+
+	case MC_MATCH_DUELTOURNAMENT_RESPONSE_SIDERANKING_INFO:
+		{
+			MCommandParameter* pParam = pCommand->GetParameter(0);
+			if (!pParam) { _ASSERT(0); break; }
+			void* pBlob = pParam->GetPointer();
+			int nCount = MGetBlobArrayCount( pBlob);
+			
+			_ASSERT(nCount <= NUM_DISPLAY_DUELTOURNAMENT_RANKING);
+
+			ZIDLResource* pRes = ZApplication::GetGameInterface()->GetIDLResource();
+			MWidget* pWidget = pRes->FindWidget( "Lobby_DuelTournamentRankingList" );
+			if (!pWidget) { _ASSERT(0); break; }
+
+			ZDuelTournamentRankingListBox* pRankingList = (ZDuelTournamentRankingListBox*)pWidget;
+			pRankingList->ClearAll();
+
+			for (int i=0; i<nCount; ++i)
+			{
+				DTRankingInfo *pRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, i));
+				if (!pRankInfo) { _ASSERT(0); break; }
+				
+				ZDUELTOURNAMENTRANKINGITEM tempItem;
+				tempItem.bEmptyItem		= false;
+				tempItem.nFluctuation	= pRankInfo->m_nRankingIncrease;
+				tempItem.nLosses		= pRankInfo->m_nLoses;
+				tempItem.nWins			= pRankInfo->m_nWins;
+				tempItem.nWinners		= pRankInfo->m_nFinalWins;
+				tempItem.nPoint			= pRankInfo->m_nTP;
+				tempItem.nRank			= pRankInfo->m_nRanking;
+				tempItem.nGrade			= pRankInfo->m_nGrade;
+				strcpy(tempItem.szCharName, pRankInfo->m_szCharName);
+
+				// DB¿¡¼­ ¹«È¿°ªÀ¸·Î 10¾ïÀ» »ç¿ëÇÑ´Ù, ¿©±â¼­´Â º¯µ¿¾øÀ½À¸·Î Ãâ·Â
+				if(tempItem.nFluctuation == 1000000000)
+					tempItem.nFluctuation = 0;
+
+				pRankingList->SetRankInfo(i, tempItem);
+			}
+
+			// ´ÙÀ½ ¼øÀ§±îÁö ³²Àº Æ÷ÀÎÆ® Ãâ·Â
+			int myRankIndex = -1;
+			for (int i=0; i<nCount; ++i)
+			{
+				DTRankingInfo *pRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, i));
+				if (!pRankInfo) { _ASSERT(0); break; }
+
+				if (0 == strcmp(pRankInfo->m_szCharName, ZGetMyInfo()->GetCharName())) {
+					myRankIndex = i;
+					break;
+				}
+			}
+
+			pRankingList->SetMyRankIndex(myRankIndex);
+
+			DTRankingInfo *pMyRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, myRankIndex));
+			DTRankingInfo *pCloseRankInfo = reinterpret_cast<DTRankingInfo*>(MGetBlobArrayElement(pBlob, myRankIndex - 1));
+
+			// '´ÙÀ½ ¼øÀ§±îÁö xxÆ÷ÀÎÆ® ³²¾Ò½À´Ï´Ù' Ãâ·Â
+			pWidget = pRes->FindWidget("Lobby_DuelTournamentNeedPointNextRank");
+			if (pWidget)
+			{
+				char szNeedPointToNextRank[32] = "";
+
+				char szBuffer[256] = "";
+				if (pMyRankInfo && pCloseRankInfo)
+				{
+					sprintf(szNeedPointToNextRank, "%d", pCloseRankInfo->m_nTP - pMyRankInfo->m_nTP);
+					ZTransMsg(szBuffer, MSG_LOBBY_DUELTOURNAMENT_NEEDPOINT_TONEXTRANK, 1, szNeedPointToNextRank);
+				}
+				else
+				{
+					// ³»°¡ 1µîÀÌ¶ó¼­ ³» »óÀ§ ·©Ä¿°¡ ¾ø°Å³ª, ³»°¡ ÀÌ¹øÁÖ¿¡ Ã³À½ Åä³Ê¸ÕÆ®¸¦ ÇÏ´Â°Å¶ó ·©Å·¿¡ ¾øÀ» °æ¿ì
+					// ÀÌ ¸ñ·ÏÀÌ »óÀ§ 1~5µîÀ» ³ªÅ¸³»°í ÀÖÀ½À» ¼³¸í
+					ZTransMsg(szBuffer, MSG_LOBBY_DUELTOURNAMENT_NEEDPOINT_TOPSIDERANKLIST);
+				}
+
+				pWidget->SetText(szBuffer);
+				((MLabel*)pWidget)->SetAlignment(MAM_RIGHT);
+			}
+		}
+		break;
 
 
 
