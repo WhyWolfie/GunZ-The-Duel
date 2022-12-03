@@ -1468,8 +1468,23 @@ Replace <br>
 		}
 
 
+Open(main.cpp) <br>
+Find <br>
 
+	if (0 != RInitD3D(&g_ModeParams))
 
+Replace <br>
+
+	if (0 != RInitD3D(&g_ModeParams))
+	{
+		if (MessageBox(NULL, "Failed to initialize DirectX,\nDirectX 9.0 or higher is required,\nWould you like the download page opened?\n\nFailed to initialize DirectX,\nDirectX 9.0 or higher is required,\nDo you want to open the page to download it to the be able to install ?\n\nI cannot initialize DirectX,\nDirectX 9.0 or higher is required,\n¿Would you like to open the download page?\n\nMislukt DirectX,\nDirectX 9.0 of hoger te initialiseren nodig is,\nWilt u download page geopend?", "DirectX Check|DirectX Check|DirectX Check|DirectX Control", MB_YESNO) == IDYES)
+		{
+			ShellExecute(NULL, "open", "http://www.microsoft.com/en-gb/download/details.aspx?id=35", NULL, NULL, SW_SHOWNORMAL);
+		}
+		DeleteFile("config.xml");
+		mlog("error init RInitD3D\n");
+		return 0;
+	}
 
 
 
