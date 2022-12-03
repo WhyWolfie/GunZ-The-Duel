@@ -2318,6 +2318,80 @@ Replace <br>
 		return false;
 	}
 
+Open(ZShop.cpp) <br>
+Find <br>
+
+	if (!pListBox) { return; }
+
+Replace <br>
+
+	if (!pListBox) { _ASSERT(0); return; }
+
+Find <br>
+
+	if (pDesc == NULL) {  continue; }
+
+Replace <br>
+
+	if (pDesc == NULL) { _ASSERT(0); continue; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
