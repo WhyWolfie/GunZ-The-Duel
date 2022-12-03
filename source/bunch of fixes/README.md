@@ -2336,10 +2336,22 @@ Replace <br>
 	if (pDesc == NULL) { _ASSERT(0); continue; }
 
 
+Open(ZOptionInterface.cpp) <br>
+
+Find <br>
+
+			D3DDISPLAYMODE ddm;
+			ddm.Width = 640;
+			ddm.Height = 480;
+			ddm.Format = D3DFMT_R5G6B5;
 
 
+Replace <br>
 
-
+			D3DDISPLAYMODE ddm;
+			ddm.Width = 800;//640;
+			ddm.Height = 600;//480;
+			ddm.Format = D3DFMT_R5G6B5;
 
 
 
