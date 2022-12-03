@@ -28,26 +28,26 @@ Find <br>
 Replace <br>
 
 				// Player
-				if ( pCharacter->GetUID() == pDuel->QInfo.m_uidChampion)
+				if (pCharacter->GetUID() == pDuel->QInfo.m_uidChampion)
 				{
-					if ( ZGetMyUID() == pDuel->QInfo.m_uidChampion)
+					if (ZGetMyUID() == pDuel->QInfo.m_uidChampion)
 					{
 						// Draw victory
-						ZGetCombatInterface()->DrawVictory( pDC, 210, 86, pDuel->QInfo.m_nVictory);
+						ZGetCombatInterface()->DrawVictory(pDC, 210, 86, pDuel->QInfo.m_nVictory);
 					}
 					else
 					{
-						if(pCharacter->IsAdminName())
-						sprintf( charName[ 0], "%s--  %s", ZMsg( MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
+						if (pCharacter->IsAdminName())
+							sprintf(charName[0], "%s--  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
 						else
-						sprintf( charName[ 0], "%s%d  %s", ZMsg( MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
-
-						if ( (ZGetMyUID() == pDuel->QInfo.m_uidChampion) || (ZGetMyUID() == pDuel->QInfo.m_uidChallenger))
+							sprintf(charName[0], "%s%d  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
+						ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharColour[0], "");
+						if ((ZGetMyUID() == pDuel->QInfo.m_uidChampion) || (ZGetMyUID() == pDuel->QInfo.m_uidChallenger))
 						{
 							// Draw victory
-							int nTextWidth = pFont->GetWidth( charName[ 0]);
-							int nWidth = ZGetCombatInterface()->DrawVictory( pDC, 162, 300, pDuel->QInfo.m_nVictory, true);
-							ZGetCombatInterface()->DrawVictory( pDC, 43+nTextWidth+nWidth, 157, pDuel->QInfo.m_nVictory);
+							int nTextWidth = pFont->GetWidth(charName[0]);
+							int nWidth = ZGetCombatInterface()->DrawVictory(pDC, 162, 300, pDuel->QInfo.m_nVictory, true);
+							ZGetCombatInterface()->DrawVictory(pDC, 43 + nTextWidth + nWidth, 157, pDuel->QInfo.m_nVictory);
 						}
 					}
 				}
@@ -76,30 +76,37 @@ Find
         
 Replace
 
-				else if ( pCharacter->GetUID() == pDuel->QInfo.m_uidChallenger)
+				else if (pCharacter->GetUID() == pDuel->QInfo.m_uidChallenger)
 				{
-					if (ZGetMyUID() != pDuel->QInfo.m_uidChallenger) {
+					if (ZGetMyUID() != pDuel->QInfo.m_uidChallenger)
+					{
 						if (pCharacter->IsAdminName())
 							sprintf(charName[0], "%s--  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
 						else
 							sprintf(charName[0], "%s%d  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
+						ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharColour[0], "");
 					}
+
 					bIsChallengerDie = pCharacter->IsDie();
 				}
 
 				// Waiting 1
-				else if (pCharacter->GetUID() == pDuel->QInfo.m_WaitQueue[0]) {
-					if(pCharacter->IsAdminName())
-						sprintf( charName[ 1], "%s--  %s", ZMsg( MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
-						else
-						sprintf( charName[ 1], "%s%d  %s", ZMsg( MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
+				else if (pCharacter->GetUID() == pDuel->QInfo.m_WaitQueue[0])
+				{
+					if (pCharacter->IsAdminName())
+						sprintf(charName[1], "%s--  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
+					else
+						sprintf(charName[1], "%s%d  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
+					ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharColour[1], "");
 				}
 				// Waiting 2
-				else if (pCharacter->GetUID() == pDuel->QInfo.m_WaitQueue[1]) {
-					if(pCharacter->IsAdminName())
-						sprintf( charName[ 2], "%s--  %s", ZMsg( MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
-						else
-						sprintf( charName[ 2], "%s%d  %s", ZMsg( MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
+				else if (pCharacter->GetUID() == pDuel->QInfo.m_WaitQueue[1])
+				{
+					if (pCharacter->IsAdminName())
+						sprintf(charName[2], "%s--  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetUserName());
+					else
+						sprintf(charName[2], "%s%d  %s", ZMsg(MSG_CHARINFO_LEVELMARKER), pCharacter->GetProperty()->nLevel, pCharacter->GetUserName());
+					ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharColour[2], "");
 				}
 			}
 		}
@@ -259,6 +266,350 @@ Replace <br>
 
 
 
+Matching colours
+Open(ZGame.cpp) <br>
+Find <br>
+
+	bool ZGame::GetUserGradeIDColor
+
+Replace <br>
+
+	bool ZGame::GetUserGradeIDColor(MMatchUserGradeID UGradeID, MCOLOR& CharNameColor, char* sp_name)
+	{
+		switch (UGradeID)
+		{
+		case MMUG_DEVELOPER:
+			CharNameColor = MCOLOR(0xFFFF4500);
+			break;
+		case MMUG_ADMIN:
+			CharNameColor = MCOLOR(0xFFFF8040);
+			break;
+		case MMUG_CHAT_LIMITED:
+			CharNameColor = MCOLOR(0xFFFF0000);
+			break;
+		case MMUG_EVENTMASTER:
+			CharNameColor = MCOLOR(0xFFFF8040);
+			break;
+		case MMUG_VIP:
+			CharNameColor = MCOLOR(0xFF228B22);
+			break;
+		default:
+			CharNameColor = MCOLOR(0xFFFFFFFF);
+			break;
+		}
+		return true;
+	}
+
+
+Open(ZGame.h) <br>
+Find <br>
+
+	void ShowReplayInfo( bool bShow);
+
+Add <br>
+
+	bool GetUserGradeIDColor(MMatchUserGradeID gid, MCOLOR& UserNameColor, char* sp_name); //Wolfie: Rank-Colours
+
+Open(ZGameClient.cpp) <br>
+Find <br>
+
+	return GetUserGradeIDColor(gid,_color,sp_name);
+
+Replace <br>
+
+	return ZGetGame()->GetUserGradeIDColor(gid, _color, sp_name);
+
+Find <br>
+
+	bool bSpUser = GetUserGradeIDColor(gid, _color, sp_name);
+
+Replace <br>
+
+	bool bSpUser = ZGetGame()->GetUserGradeIDColor(gid, _color, sp_name);
+
+Find <br>
+
+	bool bSpUser = GetUserGradeIDColor(gid,_color,sp_name);
+
+Replace <br>
+
+	bool bSpUser = ZGetGame()->GetUserGradeIDColor(gid, _color, sp_name);
+
+Open(ZObserver.cpp) <br>
+Find <br>
+
+	else if ( ZGetGame()->GetMatch()->GetMatchType() != MMATCH_GAMETYPE_DUEL)
+	{
+		char szName[128];
+		sprintf(szName, "%s (HP:%d, AP:%d)", m_pTargetCharacter->GetUserName(), (int)m_pTargetCharacter->GetHP(), (int)m_pTargetCharacter->GetAP());
+		if ( m_pTargetCharacter->IsAdminName())
+			pDC->SetColor(MCOLOR(ZCOLOR_ADMIN_NAME));
+		else if ( m_pTargetCharacter->IsDeveloperName())
+			pDC->SetColor(MCOLOR(ZCOLOR_DEVELOPER_NAME));
+		else if ( m_pTargetCharacter->IsEventMasterName())
+			pDC->SetColor(MCOLOR(ZCOLOR_EVENTMASTER_NAME));
+		else if ( m_pTargetCharacter->IsMuteName())
+			pDC->SetColor(MCOLOR(ZCOLOR_MUTE_NAME));
+		else if ( m_pTargetCharacter->IsVipName())
+			pDC->SetColor(MCOLOR(ZCOLOR_VIP_NAME));
+		else 
+			pDC->SetColor(MCOLOR(0xFFFFFFFF));
+
+		MFont *pFont = MFontManager::Get( "FONTb11b");
+		if ( pFont == NULL)
+			_ASSERT(0);
+		pDC->SetFont( pFont);
+
+		if(ZGetGameTypeManager()->IsTeamExtremeGame(ZGetGame()->GetMatch()->GetMatchType()))
+			TextRelative( pDC, 0.5f, 75.0f/800.0f, szName, true);
+		else
+			TextRelative( pDC, 0.5f, 50.0f/800.0f, szName, true);
+	}
+
+Replace <br>
+
+	else if ( ZGetGame()->GetMatch()->GetMatchType() != MMATCH_GAMETYPE_DUEL)
+	{
+		char szName[128];
+		sprintf(szName, "%s (HP:%d, AP:%d)", m_pTargetCharacter->GetUserName(), (int)m_pTargetCharacter->GetHP(), (int)m_pTargetCharacter->GetAP());
+		MCOLOR CharNameColor;
+		ZGetGame()->GetUserGradeIDColor(m_pTargetCharacter->GetUserGrade(), CharNameColor, "");
+		if (m_pTargetCharacter->IsAdminName())
+			pDC->SetColor(CharNameColor);
+		else
+			pDC->SetColor(CharNameColor);
+
+		MFont *pFont = MFontManager::Get( "FONTb11b");
+		if ( pFont == NULL)
+			_ASSERT(0);
+		pDC->SetFont( pFont);
+
+		if (ZGetGameTypeManager()->IsTeamExtremeGame(ZGetGame()->GetMatch()->GetMatchType()))
+			TextRelative( pDC, 0.5f, 75.0f/800.0f, szName, true);
+		else
+			TextRelative( pDC, 0.5f, 50.0f/800.0f, szName, true);
+	}
+
+Open(ZMiniMap.cpp) <br>
+Find <br>
+
+		MCOLOR _color = MCOLOR(0xfffff696);
+
+		MFont *pFont=NULL;
+
+		if(pCharacter->IsAdminName()) {
+					pFont = MFontManager::Get("FONTa12_O1Org");
+					pDC->SetColor(MCOLOR(ZCOLOR_ADMIN_NAME));
+				}
+				else if(pCharacter->IsDeveloperName()) {
+					pFont = MFontManager::Get("FONTa12_O1Org");
+					pDC->SetColor(MCOLOR(ZCOLOR_DEVELOPER_NAME));
+				}
+				else if(pCharacter->IsEventMasterName()) {
+					pFont = MFontManager::Get("FONTa12_O1Org");
+					pDC->SetColor(MCOLOR(ZCOLOR_EVENTMASTER_NAME));
+				}
+				else if(pCharacter->IsMuteName()) {
+					pFont = MFontManager::Get("FONTa12_O1Org");
+					pDC->SetColor(MCOLOR(ZCOLOR_MUTE_NAME));
+				}
+				else if(pCharacter->IsVipName()) {
+					pFont = MFontManager::Get("FONTa12_O1Org");
+					pDC->SetColor(MCOLOR(ZCOLOR_VIP_NAME));
+				}
+				else{
+			pFont = MFontManager::Get("FONTa12_O1Blr");
+			if(ZGetGame()->GetMatch()->IsTeamPlay())
+				if(pCharacter->GetTeamID()==MMT_RED)
+					pFont = MFontManager::Get("FONTa12_O1Red");
+			pDC->SetColor(_color);
+		}
+
+		//		pFont = MFontManager::Get("FONTa10b");
+				pDC->SetBitmap(NULL);
+
+Replace <br>
+
+		MCOLOR _color = MCOLOR(0xfffff696);
+
+		MFont *pFont=NULL;
+
+		MCOLOR CharNameColor;
+		ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharNameColor, "");
+		if (pCharacter->IsAdminName())
+		{
+			pFont = MFontManager::Get("CharFontName");
+			pDC->SetColor(CharNameColor);
+		}
+		else
+		{
+			pFont = MFontManager::Get("CharFontName");
+			pDC->SetColor(CharNameColor);
+		}
+
+		//		pFont = MFontManager::Get("FONTa10b");
+				pDC->SetBitmap(NULL);
+
+
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	if(pCharacter->IsAdminName())
+
+Replace
+
+		//if(pCharacter->IsAdminName()) {
+		//	sprintf(pItem->szLevel,"--%s", ZMsg(MSG_CHARINFO_LEVELMARKER));
+		//	pItem->SetColor(ZCOLOR_ADMIN_NAME);
+		//}
+		//else if(pCharacter->IsDeveloperName()) {
+		//	sprintf(pItem->szLevel,"%d%s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER));
+		//	pItem->SetColor(ZCOLOR_DEVELOPER_NAME);
+		//}
+		//else if(pCharacter->IsEventMasterName()) {
+		//	sprintf(pItem->szLevel,"%d%s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER));
+		//	pItem->SetColor(ZCOLOR_EVENTMASTER_NAME);
+		//}
+		//else if(pCharacter->IsMuteName()) {
+		//	sprintf(pItem->szLevel,"%d%s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER));
+		//	pItem->SetColor(ZCOLOR_MUTE_NAME);
+		//}
+		//else if(pCharacter->IsVipName()) {
+		//	sprintf(pItem->szLevel,"%d%s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER));
+		//	pItem->SetColor(ZCOLOR_VIP_NAME);
+		//}
+		//else{
+		//	sprintf(pItem->szLevel,"%d%s",pCharacter->GetProperty()->nLevel, ZMsg(MSG_CHARINFO_LEVELMARKER));
+		//}
+
+Add <br>
+
+
+		MCOLOR CharNameColor;
+		ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharNameColor, "");
+		if (pCharacter->IsDie() == true)
+			CharNameColor = MCOLOR(173, 173, 173);
+		pItem->SetColor(CharNameColor);
+		if (pCharacter->IsAdminName())
+			sprintf(pItem->szLevel, "--");
+		else
+			sprintf(pItem->szLevel, "%d", pCharacter->GetProperty()->nLevel);
+
+
+Find <br>
+
+	char	charName[ 3][ 32];
+
+Add under <br>
+
+	MCOLOR	CharColour[3];
+
+
+Find: ZCombatInterface::SetPickTarget <br>
+
+		
+		if(pCharacter->IsAdminName())
+			m_pTargetLabel->SetTextColor(ZCOLOR_ADMIN_NAME);
+
+		if(pCharacter->IsDeveloperName())
+			m_pTargetLabel->SetTextColor(ZCOLOR_DEVELOPER_NAME);
+
+		if(pCharacter->IsEventMasterName())
+			m_pTargetLabel->SetTextColor(ZCOLOR_EVENTMASTER_NAME);
+
+		if(pCharacter->IsMuteName())
+			m_pTargetLabel->SetTextColor(ZCOLOR_MUTE_NAME);
+
+		if(pCharacter->IsVipName())
+			m_pTargetLabel->SetTextColor(ZCOLOR_VIP_NAME);
+
+Replace <br>
+
+		MCOLOR CharNameColor;
+		ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharNameColor, "");
+		m_pTargetLabel->SetTextColor(CharNameColor);
+
+
+Find 
+
+			if (isInViewFrustum(&box, RGetViewFrustum()))
+			{
+				/*
+#define CHARACTER_HEIGHT	185.0f
+				pos.z = pos.z + CHARACTER_HEIGHT;
+				screen_pos = RGetTransformCoord(pos);
+				*/
+				screen_pos = RGetTransformCoord(pCharacter->GetVisualMesh()->GetHeadPosition()+rvector(0,0,30.f));
+
+				MFont *pFont=NULL;
+
+				if(pCharacter->IsAdminName()) {
+					pFont = MFontManager::Get("FONTa12_O1Red");
+					pDC->SetColor(MCOLOR(ZCOLOR_ADMIN_NAME));
+				}
+				else if(pCharacter->IsDeveloperName()) {
+					pFont = MFontManager::Get("FONTa12_O1Red");
+					pDC->SetColor(MCOLOR(ZCOLOR_DEVELOPER_NAME));
+				}
+				else if(pCharacter->IsEventMasterName()) {
+					pFont = MFontManager::Get("FONTa12_O1Red");
+					pDC->SetColor(MCOLOR(ZCOLOR_EVENTMASTER_NAME));
+				}
+				else if(pCharacter->IsMuteName()) {
+					pFont = MFontManager::Get("FONTa12_O1Red");
+					pDC->SetColor(MCOLOR(ZCOLOR_MUTE_NAME));
+				}
+				else if(pCharacter->IsVipName()) {
+					pFont = MFontManager::Get("FONTa12_O1Red");
+					pDC->SetColor(MCOLOR(ZCOLOR_VIP_NAME));
+				}
+				else{
+					pFont = MFontManager::Get("FONTa12_O1Blr");
+					pDC->SetColor(MCOLOR(0xFF00FF00));
+				}
+
+				pDC->SetBitmap(NULL);
+
+				/////// Outline Font //////////
+		//				MFont *pFont=MFontManager::Get("FONTa12_O1Blr");
+				pDC->SetFont(pFont);
+				///////////////////////////////
+
+Replace 
+
+		if (isInViewFrustum(&box, RGetViewFrustum()))
+		{
+			// ¹Ì´Ï¸ÊÀÌ¸é z °ªÀ» 0¿¡ ¸ÂÃá´Ù
+			if(ZGetCamera()->GetLookMode()==ZCAMERA_MINIMAP) {
+				rvector pos = pCharacter->GetPosition();	//mmemory proxy
+				pos.z=0;
+				screen_pos = RGetTransformCoord(pos);
+			}else
+				screen_pos = RGetTransformCoord(pCharacter->GetVisualMesh()->GetHeadPosition()+rvector(0,0,30.f));
+
+			MFont *pFont=NULL;
+
+			MCOLOR CharNameColor;
+			ZGetGame()->GetUserGradeIDColor(pCharacter->GetUserGrade(), CharNameColor, "");
+			if (pCharacter->IsAdminName())
+			{
+				pFont = MFontManager::Get("CharFontName");
+				pDC->SetColor(CharNameColor);
+			}
+			else
+			{
+				pFont = MFontManager::Get("CharFontName");
+				pDC->SetColor(CharNameColor);
+			}
+
+			pDC->SetBitmap(NULL);
+
+			/////// Outline Font //////////
+			//				MFont *pFont=MFontManager::Get("FONTa12_O1Blr");
+			if (pFont == NULL) _ASSERT(0);
+			pDC->SetFont(pFont);
+			///////////////////////////////
 
 
 
