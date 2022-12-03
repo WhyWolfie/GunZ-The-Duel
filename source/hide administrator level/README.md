@@ -1,4 +1,8 @@
-Not completed
+- masked level '--' instead of numbers.
+- new colour system easier to manage.
+- time in lobbychat/stagechat
+
+Almost completed
 
 Open(ZCombatInterface.cpp) <br>
 Find <br>
@@ -633,6 +637,122 @@ Find <br>
 Replace <br>
 
 	//bool GetUserGradeIDColor(MMatchUserGradeID gid,MCOLOR& UserNameColor,char* sp_name);
+
+Open(ZGameClient.cpp) <br>
+Find <br>
+
+	void ZGameClient::OnChannelChat(const MUID& uidChannel, char* szName, char* szChat,int nGrade)
+
+
+Replace <br>
+
+	void ZGameClient::OnChannelChat(const MUID& uidChannel, char* szName, char* szChat,int nGrade)
+	{
+		if (GetChannelUID() != uidChannel)		return;
+		if ((szChat[0]==0) || (szName[0] == 0))	return;
+
+	//	MUID uid = GetObject(szName);
+	//	MMatchObjectCache* pObjCache = FindObjCache(uid);
+		MCOLOR _color = MCOLOR(0,0,0);
+
+		MMatchUserGradeID gid = (MMatchUserGradeID) nGrade;
+	//	gid = MMUG_GM;
+
+		char sp_name[256];
+
+		bool bSpUser = ZGetGame()->GetUserGradeIDColor(gid, _color, sp_name);
+
+		char szText[512];
+
+		char szTimeStamp[512];
+		time_t currentTime;
+		struct tm *timeinfo;
+		currentTime = time(NULL);
+		timeinfo = localtime(&currentTime);
+		strftime(szTimeStamp, 30, "(%H:%M)", timeinfo);
+
+		if(bSpUser)
+		{
+			wsprintf(szText, "%s%s: %s", szTimeStamp, szName, szChat);
+			ZChatOutput(szText, ZChat::CMT_NORMAL, ZChat::CL_LOBBY,_color);
+		}
+		else if ( !ZGetGameClient()->GetRejectNormalChat() ||
+				  (strcmp( szName, ZGetMyInfo()->GetCharName()) == 0))
+		{
+			wsprintf(szText, "%s%s: %s", szTimeStamp, szName, szChat);
+			ZChatOutput(szText, ZChat::CMT_NORMAL, ZChat::CL_LOBBY);
+		}
+	}
+
+
+Find <br>
+
+	void ZGameClient::OnStageChat(const MUID& uidChar, const MUID& uidStage, char* szChat)
+
+Replace <br>
+
+	void ZGameClient::OnStageChat(const MUID& uidChar, const MUID& uidStage, char* szChat)
+	{
+		if (GetStageUID() != uidStage) return;
+		if(szChat[0]==0) return;
+
+	/*
+		ZIDLResource* pResource = ZApplication::GetGameInterface()->GetIDLResource();
+		MListBox* pWidget = (MListBox*)pResource->FindWidget("StageChattingOutput");
+	*/
+
+		string name = GetObjName(uidChar);
+
+		MCOLOR _color = MCOLOR(0,0,0);
+
+		MMatchUserGradeID gid = MMUG_FREE;
+
+		MMatchObjCache* pObjCache = FindObjCache(uidChar);
+
+		if(pObjCache) {
+			gid = pObjCache->GetUGrade();
+		}
+
+	//	gid = MMUG_GM;
+
+		char sp_name[256];
+
+		bool bSpUser = ZGetGame()->GetUserGradeIDColor(gid, _color, sp_name);
+
+		char szText[512];
+
+		char szTimeStamp[512];
+		time_t currentTime;
+		struct tm *timeinfo;
+		currentTime = time(NULL);
+		timeinfo = localtime(&currentTime);
+		strftime(szTimeStamp, 30, "(%H:%M)", timeinfo);
+
+		if(bSpUser)
+		{
+			wsprintf(szText, "%s%s: %s", szTimeStamp, pObjCache->GetName(), szChat);
+			ZChatOutput(szText, ZChat::CMT_NORMAL, ZChat::CL_STAGE,_color);
+		}
+		else if ( !ZGetGameClient()->GetRejectNormalChat() ||
+			(strcmp( pObjCache->GetName(), ZGetMyInfo()->GetCharName()) == 0))
+		{
+			wsprintf(szText, "%s%s: %s", szTimeStamp, name.c_str(), szChat);
+			ZChatOutput(szText, ZChat::CMT_NORMAL, ZChat::CL_STAGE);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
