@@ -1773,8 +1773,13 @@ Replace <br>
 			SetText(pObj->GetName());
 			m_Info.nLevel = pObj->GetLevel();
 
+Open(ZMinimap.cpp) <br>
+Find <br>
 
+	pDC->SetFont(pFont);
 
-
+Place above <br>
+		
+	if (pFont == NULL) _ASSERT(0);
 
 
