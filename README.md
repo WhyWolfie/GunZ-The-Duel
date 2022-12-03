@@ -432,6 +432,7 @@ GunZ The Duel Releases <br>
 - how to hook dll in gunz runnable: [how to hook dll in gunz runnable](https://www.youtube.com/watch?v=9459pUzbA90)
 - how to create an update for your gunz: [how to create an update for your gunz](https://www.youtube.com/watch?v=x64YV1_bWdc)
 - modificando as musicas do the duel: [modificando as musicas do the duel](https://www.youtube.com/watch?v=w5c4oLCsfwo&ab_channel=TudoSobreGunz)
+- como poner cw+quest+survival client jur13n: [como poner cw+quest+survival client jur13n](https://www.youtube.com/watch?v=iZ2_VSHQk0c)
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): [latedash reload half step(LD RHS)](https://www.youtube.com/watch?v=Xwjr9KQYCpo)
