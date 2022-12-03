@@ -1443,9 +1443,29 @@ Replace <br>
 			_ASSERT(0);
 	}
 
+Find <br>
 
+		switch (nType)
+		{
+		case ZCWT_MELEE:	nParts = (int)(MMCIP_MELEE);	break;
+		case ZCWT_PRIMARY:	nParts = (int)(MMCIP_PRIMARY);	break;
+		case ZCWT_SECONDARY:nParts = (int)(MMCIP_SECONDARY);break;
+		case ZCWT_CUSTOM1:	nParts = (int)(MMCIP_CUSTOM1);	break;
+		case ZCWT_CUSTOM2:	nParts = (int)(MMCIP_CUSTOM2);	break;
+		default: break;
+		}
 
+Replace <br>
 
+		switch (nType)
+		{
+		case ZCWT_MELEE:	nParts = (int)(MMCIP_MELEE);	break;
+		case ZCWT_PRIMARY:	nParts = (int)(MMCIP_PRIMARY);	break;
+		case ZCWT_SECONDARY:nParts = (int)(MMCIP_SECONDARY);break;
+		case ZCWT_CUSTOM1:	nParts = (int)(MMCIP_CUSTOM1);	break;
+		case ZCWT_CUSTOM2:	nParts = (int)(MMCIP_CUSTOM2);	break;
+		default: _ASSERT(0); break;
+		}
 
 
 
