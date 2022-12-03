@@ -1656,6 +1656,84 @@ Replace <br>
 			ShowWidget("Stage", true);
 
 
+Open(ZPlayerListBox.cpp) <br>
+Find <br>
+
+	if((gid==MMUG_DEVELOPER) || (gid==MMUG_ADMIN)) {
+
+Replace
+
+	//if((gid==MMUG_DEVELOPER) || (gid==MMUG_ADMIN)) {
+	//	bShow = false;
+	//}
+
+Find <br>
+
+					switch(GetMode()) {
+					case PLAYERLISTMODE_CHANNEL:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_LOBBY);
+						break;
+					case PLAYERLISTMODE_STAGE:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_STAGE);
+						break;
+					case PLAYERLISTMODE_CHANNEL_FRIEND:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_FRIEND);
+						break;
+					case PLAYERLISTMODE_STAGE_FRIEND:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_FRIEND);
+						break;
+					case PLAYERLISTMODE_CHANNEL_CLAN:
+						if(pItem->GetUID() == ZGetMyUID())
+							pMenu->SetupMenu(ZPLAYERMENU_SET_CLAN_ME);
+						else
+							pMenu->SetupMenu(ZPLAYERMENU_SET_CLAN);
+						break;
+					default:
+					break;
+						//_ASSERT("Unknown PlayerMenu Setup");
+					};
+
+Replace <br>
+
+					switch(GetMode()) {
+					case PLAYERLISTMODE_CHANNEL:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_LOBBY);
+						break;
+					case PLAYERLISTMODE_STAGE:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_STAGE);
+						break;
+					case PLAYERLISTMODE_CHANNEL_FRIEND:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_FRIEND);
+						break;
+					case PLAYERLISTMODE_STAGE_FRIEND:
+						pMenu->SetupMenu(ZPLAYERMENU_SET_FRIEND);
+						break;
+					case PLAYERLISTMODE_CHANNEL_CLAN:
+						if(pItem->GetUID() == ZGetMyUID())
+							pMenu->SetupMenu(ZPLAYERMENU_SET_CLAN_ME);
+						else
+							pMenu->SetupMenu(ZPLAYERMENU_SET_CLAN);
+						break;
+					default:
+						_ASSERT("Unknown PlayerMenu Setup");
+					};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
