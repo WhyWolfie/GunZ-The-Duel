@@ -612,11 +612,27 @@ Replace
 			///////////////////////////////
 
 
+Open(ZPlayerListBox.cpp) <br>
+Find <br>
 
+	if(bSpUser)
+		pItem->SetColor(_color);
 
+	MListBox::Add( pItem );
 
+Replace <br>
 
+	if (GetUserInfoUID(puid, _color, szName, nGrade))
+		pItem->SetColor(_color);
+	MListBox::Add(pItem);
 
+Find <br>
+
+	bool GetUserGradeIDColor(MMatchUserGradeID gid,MCOLOR& UserNameColor,char* sp_name);
+
+Replace <br>
+
+	//bool GetUserGradeIDColor(MMatchUserGradeID gid,MCOLOR& UserNameColor,char* sp_name);
 
 
 
