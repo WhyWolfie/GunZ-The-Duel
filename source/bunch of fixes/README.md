@@ -1755,10 +1755,23 @@ Replace <br>
 
 	rc.Set((int)(0.8f*nWidth), y, (int)(fabs(0.8f - 0.85f)*nWidth), nItemHeight);
 
+Open(ZCharacterView.cpp) <br>
+Find <br>
 
+			if(GetUserInfoUID(m_Info.UID,_color,sp_name,gid)) {//Æ¯º°ÇÑ À¯ÀúÀÎ °æ¿ì
+				SetText( sp_name );
+				m_Info.nLevel = 0;//pObj->GetLevel();
+			}
+			else {
+				SetText( pObj->GetName() );
+				m_Info.nLevel = pObj->GetLevel();
+			}
 
+Replace <br>
 
-
+			GetUserInfoUID(m_Info.UID, _color, sp_name, gid);
+			SetText(pObj->GetName());
+			m_Info.nLevel = pObj->GetLevel();
 
 
 
