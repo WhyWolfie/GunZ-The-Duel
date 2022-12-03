@@ -1334,3 +1334,154 @@ Replace <br>
 		m_Collision.ShiftFugitiveValues();
 	}
 
+Open(ZGameInterface.cpp) <br>
+
+Find <br>
+
+	char* GetItemSlotName( const char* szName, int nItem)
+
+Replace <br>
+
+	char* GetItemSlotName( const char* szName, int nItem)
+	{
+		static char szTemp[256];
+		strcpy( szTemp, szName);
+
+		switch (nItem)
+		{
+			case MMCIP_HEAD :		strcat( szTemp, "_EquipmentSlot_Head");			break;
+			case MMCIP_CHEST :		strcat( szTemp, "_EquipmentSlot_Chest");		break;
+			case MMCIP_HANDS :		strcat( szTemp, "_EquipmentSlot_Hands");		break;
+			case MMCIP_LEGS :		strcat( szTemp, "_EquipmentSlot_Legs");			break;
+			case MMCIP_FEET :		strcat( szTemp, "_EquipmentSlot_Feet");			break;
+			case MMCIP_FINGERL :	strcat( szTemp, "_EquipmentSlot_FingerL");		break;
+			case MMCIP_FINGERR :	strcat( szTemp, "_EquipmentSlot_FingerR");		break;
+			case MMCIP_AVATAR :		strcat( szTemp, "_EquipmentSlot_Avatar");		break;
+			case MMCIP_MELEE :		strcat( szTemp, "_EquipmentSlot_Melee");		break;
+			case MMCIP_PRIMARY :	strcat( szTemp, "_EquipmentSlot_Primary");		break;
+			case MMCIP_SECONDARY :	strcat( szTemp, "_EquipmentSlot_Secondary");	break;
+			case MMCIP_CUSTOM1 :	strcat( szTemp, "_EquipmentSlot_Custom1");		break;
+			case MMCIP_CUSTOM2 :	strcat( szTemp, "_EquipmentSlot_Custom2");		break;
+			case MMCIP_COMMUNITY1:	strcat( szTemp, "_EquipmentSlot_Community1");	break;
+			case MMCIP_COMMUNITY2:	strcat( szTemp, "_EquipmentSlot_Community2");	break;
+			case MMCIP_LONGBUFF1 :	strcat( szTemp, "_EquipmentSlot_LongBuff1");	break;
+			case MMCIP_LONGBUFF2 :	strcat( szTemp, "_EquipmentSlot_LongBuff2");	break;
+
+			default: _ASSERT(0); break;
+		}
+
+		return szTemp;
+	}
+
+
+Find <br>
+
+	void ZGameInterface::OnNetmarbleLoginCreate(void)
+
+Replace <br>
+
+	#include "ZNetmarble.h"
+	void ZGameInterface::OnNetmarbleLoginCreate(void)
+	{
+		if ( m_pBackground)
+		{
+			m_pBackground->LoadMesh();
+			m_pBackground->SetScene(LOGIN_SCENE_FIXEDSKY);
+		}
+
+		ZApplication::GetSoundEngine()->StopMusic();
+		ZApplication::GetSoundEngine()->OpenMusic( BGMID_INTRO, ZApplication::GetFileSystem());
+
+		if (m_spGameClient->IsConnected())
+		{
+			ZPostDisconnect();
+		}
+
+		HideAllWidgets();
+		ShowWidget("NetmarbleLogin", true);
+
+		ZBaseAuthInfo* pAuthInfo = ZGetLocale()->GetAuthInfo();
+		if (pAuthInfo)
+		{
+	#ifdef _DEBUG
+			mlog("Connect to Netmarble GunzServer(IP:%s , Port:%d) \n", pAuthInfo->GetServerIP(), pAuthInfo->GetServerPort());
+	#endif
+			ZPostConnect(pAuthInfo->GetServerIP(), pAuthInfo->GetServerPort());
+		}
+		else _ASSERT(0);
+	}
+
+Find <br>
+
+	void ZGameInterface::OnGameOnLoginCreate(void)
+
+Replace <br>
+
+	void ZGameInterface::OnGameOnLoginCreate(void)
+	{
+		if ( m_pBackground)
+		{
+			m_pBackground->LoadMesh();
+			m_pBackground->SetScene(LOGIN_SCENE_FIXEDSKY);
+		}
+
+		ZApplication::GetSoundEngine()->StopMusic();
+		ZApplication::GetSoundEngine()->OpenMusic( BGMID_INTRO, ZApplication::GetFileSystem());
+
+		if (m_spGameClient->IsConnected())
+		{
+			ZPostDisconnect();
+		}
+
+		HideAllWidgets();
+		ShowWidget("NetmarbleLogin", true);
+
+		ZBaseAuthInfo* pAuthInfo = ZGetLocale()->GetAuthInfo();
+		if (pAuthInfo)
+			ZPostConnect( pAuthInfo->GetServerIP(), pAuthInfo->GetServerPort());
+		else
+			_ASSERT(0);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
