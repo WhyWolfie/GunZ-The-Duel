@@ -2647,22 +2647,71 @@ Replace <br>
 		g_d3dpp.MultiSampleType =  g_MultiSample;
 	//	g_d3dpp.MultiSampleType =  D3DMULTISAMPLE_NONE;
 
+Find <br>
 
+	void ChangeAA(int AALevel)
+	{
+		nSettingAA = AALevel;
+	}
 
+Replace <br>
 
+	//void ChangeAA(int AALevel)
+	//{
+	//	nSettingAA = AALevel;
+	//}
 
+Open(main.cpp)
 
+	ChangeAA(ZGetConfiguration()->GetVideo()->nAntiAlias);
 
+Replace
 
+	//ChangeAA(ZGetConfiguration()->GetVideo()->nAntiAlias);
 
+Open(ZOptionInterface.cpp) <br>
+Find <br>
 
+		pWidget = (MComboBox*)pResource->FindWidget("AntiAlias");
 
+		if(pWidget)	{
 
+			int AntiAlias = pWidget->GetSelIndex();
 
+			if( ZGetConfiguration()->GetVideo()->nAntiAlias != AntiAlias ) {
+				ZGetConfiguration()->GetVideo()->nAntiAlias = AntiAlias;
+				ChangeAA(AntiAlias);
+				RMODEPARAMS ModeParams={ RGetScreenWidth(),RGetScreenHeight(),RIsFullScreen(),RGetPixelFormat() };
+				RResetDevice(&ModeParams);
+	
+			}
+		}
 
+Replace <br>
 
+		//pWidget = (MComboBox*)pResource->FindWidget("AntiAlias");
 
+		//if(pWidget)	{
 
+		//	int AntiAlias = pWidget->GetSelIndex();
+
+		//	if( ZGetConfiguration()->GetVideo()->nAntiAlias != AntiAlias ) {
+		//		ZGetConfiguration()->GetVideo()->nAntiAlias = AntiAlias;
+		//		ChangeAA(AntiAlias);
+		//		RMODEPARAMS ModeParams={ RGetScreenWidth(),RGetScreenHeight(),RIsFullScreen(),RGetPixelFormat() };
+		//		RResetDevice(&ModeParams);
+	
+		//	}
+		//}
+
+Open(RealSpace2.h) <br>
+Find <br>
+
+	void ChangeAA(int AALevel);
+
+Replace <br>
+
+	//void ChangeAA(int AALevel);
 
 
 
