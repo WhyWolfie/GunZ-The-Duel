@@ -235,11 +235,26 @@ Replace <br>
 		sprintf(szLevel, "%2d", nLevel);
 	szRefName = szName;
 
+Open(ZShopEquipInterface.cpp) <br>
+Find <br>
 
+	szColor = szGray;
+	if (nReqLevel > ZGetMyInfo()->GetLevel())
+		szColor = szRed;
+	sprintf(sz1, "^9%s : %s%d ^9%s", ZMsg(MSG_CHARINFO_LEVEL), szColor, ZGetMyInfo()->GetLevel(), ZMsg(MSG_CHARINFO_LEVELMARKER));
+	pTextArea[0]->AddText(sz1);
 
+Replace <br>
 
+	szColor = szGray;
+	if (nReqLevel > ZGetMyInfo()->GetLevel())
+		szColor = szRed;
 
-
+	if (ZGetMyInfo()->IsAdminGrade())
+		sprintf(sz1, "^9%s : --", ZMsg(MSG_CHARINFO_LEVEL), szColor, ZGetMyInfo()->GetLevel()/*, ZMsg(MSG_CHARINFO_LEVELMARKER)*/);
+	else
+		sprintf(sz1, "^9%s : %s%d", ZMsg(MSG_CHARINFO_LEVEL), szColor, ZGetMyInfo()->GetLevel()/*, ZMsg(MSG_CHARINFO_LEVELMARKER)*/);
+	pTextArea[0]->AddText(sz1);
 
 
 
