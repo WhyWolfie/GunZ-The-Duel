@@ -1783,3 +1783,501 @@ Place above <br>
 	if (pFont == NULL) _ASSERT(0);
 
 
+Open(ZShopEquipItem.cpp) <br>
+Find <br>
+
+	void IShopEquipItemHandle_Purchase::OpenSimpleConfirmDlg(ISimpleConfirmDlgDoneHandler* pDoneHandler)
+	{
+		ZSimpleConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSimpleConfirmDlg();
+		if (!pDlg) { return; }
+		pDlg->Open(ZMsg(MSG_SHOPEQUIP_BUY_CONFIRM), pDoneHandler);
+	}
+
+Replace <br>
+
+	void IShopEquipItemHandle_Purchase::OpenSimpleConfirmDlg(ISimpleConfirmDlgDoneHandler* pDoneHandler)
+	{
+		ZSimpleConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSimpleConfirmDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(ZMsg(MSG_SHOPEQUIP_BUY_CONFIRM), pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_Purchase::OpenCountableConfirmDlg(
+		const char* szItemName, MBitmap* pIconBmp, int nPrice, int nMax, IItemCountDlgDoneHandler* pDoneHandler)
+	{
+		ZItemCountDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetItemCountDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(ZICD_BUY, szItemName, pIconBmp, nPrice, 0, nMax, pDoneHandler);
+	}
+
+
+	// ============= ZShopEquipItemHandle_PurchaseGamble ±¸¸Å ÇÚµé·¯ : °·ºí================================================
+
+	ZShopEquipItemHandle_PurchaseGamble::ZShopEquipItemHandle_PurchaseGamble(ZShopEquipItem_Gamble* pItem)
+	{
+		m_pItem = pItem;
+		_ASSERT(m_pItem);
+	}
+
+	void ZShopEquipItemHandle_PurchaseGamble::Buy()
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+		if (!m_pItem->GetDesc()->IsCash())
+		{
+			OpenSimpleConfirmDlg(this);
+		}
+		else
+		{
+	#ifndef _PUBLISH
+			OpenSimpleConfirmDlg(this);//todok ÀÓ½Ã·Î Ä³½¬ÅÛÀ» ¹Ù¿îÆ¼·Î ±¸¸Å °¡´É
+	#endif
+		}
+	}
+
+	void ZShopEquipItemHandle_PurchaseGamble::OnDone(bool bOk)
+	{
+		if (!bOk) return;
+
+		ZPostRequestBuyItem(ZGetMyUID(), m_pItem->GetDesc()->GetGambleItemID(), 1);
+		ZPostRequestCharacterItemList(ZGetGameClient()->GetPlayerUID());
+	}
+
+	bool ZShopEquipItemHandle_PurchaseGamble::GetPrice(bool& out_bCash, bool& out_bEvent, int& out_nRentalHour, int& out_nPrice)
+	{
+		if (!m_pItem || !m_pItem->GetDesc()) { _ASSERT(0); return false; }
+		out_bCash = m_pItem->GetDesc()->IsCash();
+		//out_bEvent = m_pItem->GetDesc()->IsEventItem();
+		out_nRentalHour = 0;
+		out_nPrice = m_pItem->GetDesc()->GetPrice();
+		return true;
+	}
+
+	// ============= ZShopEquipItemHandle_PurchaseMatch ±¸¸ÅÇÚµé·¯ : Àåºñ ================================================
+
+	ZShopEquipItemHandle_PurchaseMatch::ZShopEquipItemHandle_PurchaseMatch(ZShopEquipItem_Match* pItem)
+	{
+		m_pItem = pItem;
+		_ASSERT(m_pItem);
+	}
+
+Find <br>
+
+	if (!m_pItem->GetDesc()) { return; }
+
+Replace <br>
+
+	if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+
+Find <br>
+
+	if (!m_pItem || !m_pItem->GetDesc()) { return false; }
+
+Replace <br>
+
+	if (!m_pItem || !m_pItem->GetDesc()) { _ASSERT(0); return false; }
+
+
+Find <br>
+
+	if (!m_pItem->GetDesc()) { return; }
+
+Replace <br>
+
+	if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+
+Find <br>
+
+	if (!m_pItem || !m_pItem->GetDesc()) { return false; }
+
+Replace <br>
+
+	if (!m_pItem || !m_pItem->GetDesc()) { _ASSERT(0); return false; }
+
+Find 
+
+	void IShopEquipItemHandle_Sell::OpenCountableConfirmDlg(const char* szItemName, MBitmap* pIconBmp, int nPrice, int nMax, IItemCountDlgDoneHandler* pDoneHandler)
+	{
+		ZItemCountDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetItemCountDlg();
+		if (!pDlg) { return; }
+		pDlg->Open(ZICD_SELL, szItemName, pIconBmp, nPrice, 0, nMax, pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_Sell::OpenSimpleConfirmDlg( ISimpleConfirmDlgDoneHandler* pDoneHandler )
+	{
+		ZSimpleConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSimpleConfirmDlg();
+		if (!pDlg) { return; }
+		pDlg->Open(ZMsg(MSG_SHOPEQUIP_SELL_CONFIRM), pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_Sell::OpenSellCashItemConfirmDlg( const char* szItemName, MBitmap* pIcon, int price, int count, ISellCashItemConfirmDlgDoneHandler* pHandler )
+	{
+		ZSellCashItemConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSellCashItemConfirmDlg();
+		if (!pDlg) {  return; }
+		pDlg->Open(szItemName, pIcon, price, count, pHandler);
+	}
+
+Replace <br>
+
+	void IShopEquipItemHandle_Sell::OpenCountableConfirmDlg(const char* szItemName, MBitmap* pIconBmp, int nPrice, int nMax, IItemCountDlgDoneHandler* pDoneHandler)
+	{
+		ZItemCountDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetItemCountDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(ZICD_SELL, szItemName, pIconBmp, nPrice, 0, nMax, pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_Sell::OpenSimpleConfirmDlg(ISimpleConfirmDlgDoneHandler* pDoneHandler)
+	{
+		ZSimpleConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSimpleConfirmDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(ZMsg(MSG_SHOPEQUIP_SELL_CONFIRM), pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_Sell::OpenSellCashItemConfirmDlg(const char* szItemName, MBitmap* pIcon, int price, int count, ISellCashItemConfirmDlgDoneHandler* pHandler)
+	{
+		ZSellCashItemConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSellCashItemConfirmDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(szItemName, pIcon, price, count, pHandler);
+	}
+
+Find <br>
+
+	const ZGambleItemDefine* pDesc = m_pItem->GetDesc();
+	if (!pDesc) { return false; }
+
+Replace <br>
+
+	const ZGambleItemDefine* pDesc = m_pItem->GetDesc();
+	if (!pDesc) { _ASSERT(pDesc); return false; }
+
+
+Find <br>
+
+	void ZShopEquipItemHandle_SellGamble::Sell()
+	{
+		if (!m_pItem->GetDesc()) { return; }
+
+	#ifndef _SELL_CASHITEM
+		if (m_pItem->GetDesc()->IsCash()) { return; }
+	#endif
+
+		int nPrice = 0;
+		if (!GetPrice(nPrice)) return;
+
+		const ZMyGambleItem *pMyGItem = ZGetMyInfo()->GetItemList()->GetGambleItem( GetItemUID());
+		if (!pMyGItem)  { return; }
+		int nMax = pMyGItem->GetItemCount();
+
+		OpenCountableConfirmDlg(
+			m_pItem->GetDesc()->GetName().c_str(),
+			m_pItem->GetIcon(),
+			nPrice,
+			nMax, this);
+	}
+
+
+Replace <br>
+
+	void ZShopEquipItemHandle_SellGamble::Sell()
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+
+	#ifndef _SELL_CASHITEM
+		if (m_pItem->GetDesc()->IsCash()) { _ASSERT(0); return; }
+	#endif
+
+		int nPrice = 0;
+		if (!GetPrice(nPrice)) return;
+
+		const ZMyGambleItem *pMyGItem = ZGetMyInfo()->GetItemList()->GetGambleItem(GetItemUID());
+		if (!pMyGItem)  { _ASSERT(0); return; }
+		int nMax = pMyGItem->GetItemCount();
+
+		OpenCountableConfirmDlg(
+			m_pItem->GetDesc()->GetName().c_str(),
+			m_pItem->GetIcon(),
+			nPrice,
+			nMax, this);
+	}
+
+
+Find <br>
+
+	MMatchItemDesc* pDesc = m_pItem->GetDesc();
+	if (!pDesc) {  return false; }
+
+Replace <br>
+
+	MMatchItemDesc* pDesc = m_pItem->GetDesc();
+	if (!pDesc) { _ASSERT(pDesc); return false; }
+
+
+Find <br>
+
+	void ZShopEquipItemHandle_SellMatch::Sell()
+	{
+		if (!m_pItem->GetDesc()) {  return; }
+
+	#ifndef _SELL_CASHITEM
+		if (m_pItem->GetDesc()->IsCashItem()) {  return; }
+	#endif
+
+Replace <br>
+
+	void ZShopEquipItemHandle_SellMatch::Sell()
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+
+	#ifndef _SELL_CASHITEM
+		if (m_pItem->GetDesc()->IsCashItem()) { _ASSERT(0); return; }
+	#endif
+
+
+Find <br>
+
+		ZMyItemNode* pMyItemNode = ZGetMyInfo()->GetItemList()->GetItem( GetItemUID());
+		if (!pMyItemNode) {  return; }
+		
+Replace <br>
+
+		ZMyItemNode* pMyItemNode = ZGetMyInfo()->GetItemList()->GetItem(GetItemUID());
+		if (!pMyItemNode) { _ASSERT(0); return; }
+
+Find <br>
+
+	MQuestItemDesc* pDesc = m_pItem->GetDesc();
+	if (!pDesc) { return false; }
+
+Replace <br>
+
+	MQuestItemDesc* pDesc = m_pItem->GetDesc();
+	if (!pDesc) { _ASSERT(pDesc); return false; }
+
+
+Find <br>
+
+	void ZShopEquipItemHandle_SellQuest::Sell()
+	{
+		if (!m_pItem->GetDesc()) { return; }
+		int nPrice = 0;
+		if (!GetPrice(nPrice)) return;
+
+		ZMyQuestItemNode* pMyQItem = ZGetMyInfo()->GetItemList()->GetQuestItemMap().Find( m_pItem->GetDesc()->m_nItemID);
+		if (!pMyQItem) { return; }
+
+		int nMax = pMyQItem->GetCount();
+
+		OpenCountableConfirmDlg(
+			m_pItem->GetDesc()->m_szQuestItemName,
+			m_pItem->GetIcon(),
+			nPrice,
+			nMax, this);
+	}
+
+Replace <br>
+
+	void ZShopEquipItemHandle_SellQuest::Sell()
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+		int nPrice = 0;
+		if (!GetPrice(nPrice)) return;
+
+		ZMyQuestItemNode* pMyQItem = ZGetMyInfo()->GetItemList()->GetQuestItemMap().Find(m_pItem->GetDesc()->m_nItemID);
+		if (!pMyQItem) { _ASSERT(0); return; }
+
+		int nMax = pMyQItem->GetCount();
+
+		OpenCountableConfirmDlg(
+			m_pItem->GetDesc()->m_szQuestItemName,
+			m_pItem->GetIcon(),
+			nPrice,
+			nMax, this);
+	}
+
+
+Find <br>
+
+	void ZShopEquipItemHandle_SellQuest::OnDone(int nCount)
+	{
+		if (!m_pItem->GetDesc()) { return; }
+
+		ZPostRequestSellQuestItem( ZGetGameClient()->GetPlayerUID(), m_pItem->GetDesc()->m_nItemID, nCount);
+	}
+
+
+Replace <br>
+
+	void ZShopEquipItemHandle_SellQuest::OnDone(int nCount)
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+
+		ZPostRequestSellQuestItem(ZGetGameClient()->GetPlayerUID(), m_pItem->GetDesc()->m_nItemID, nCount);
+	}
+
+Find <br>
+
+	if (!m_pItem->GetDesc()) { return; }
+	if (!m_pItem->CanSendAccount()) return;
+
+Replace <br>
+
+	if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+	if (!m_pItem->CanSendAccount()) return;
+
+Find <br>
+
+	if (!m_pItem->GetDesc()) { return; }
+	if (!m_pItem->CanSendAccount()) return;
+
+Replace <br>
+
+	if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+	if (!m_pItem->CanSendAccount()) return;
+
+Find <br>
+
+	void ZShopEquipItemHandle_SendAccountMatch::Send()
+	{
+		if (!m_pItem->GetDesc()) { return; }
+		if (!m_pItem->CanSendAccount()) { return; }
+
+		if (m_pItem->GetDesc()->IsSpendableItem())
+		{
+			ZMyItemNode* pMyItemNode = ZGetMyInfo()->GetItemList()->GetItem( GetItemUID());
+			if (!pMyItemNode) { return; }
+
+			int nMax = pMyItemNode->GetItemCount();
+
+			OpenCountableConfirmDlg(
+				m_pItem->GetDesc()->m_pMItemName->Ref().m_szItemName,
+				m_pItem->GetIcon(),
+				0,
+				nMax, this);	
+		}
+		else
+		{
+			ZPostRequestSendAccountItem(ZGetMyUID(), GetItemUID());
+		}
+	}
+
+Replace <br>
+
+	void ZShopEquipItemHandle_SendAccountMatch::Send()
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+		if (!m_pItem->CanSendAccount()) { _ASSERT(0); return; }
+
+		if (m_pItem->GetDesc()->IsSpendableItem())
+		{
+			ZMyItemNode* pMyItemNode = ZGetMyInfo()->GetItemList()->GetItem(GetItemUID());
+			if (!pMyItemNode) { _ASSERT(0); return; }
+
+			int nMax = pMyItemNode->GetItemCount();
+
+			OpenCountableConfirmDlg(
+				m_pItem->GetDesc()->m_pMItemName->Ref().m_szItemName,
+				m_pItem->GetIcon(),
+				0,
+				nMax, this);
+		}
+		else
+		{
+			ZPostRequestSendAccountItem(ZGetMyUID(), GetItemUID());
+		}
+	}
+
+
+Find <br>
+
+	void ZShopEquipItemHandle_SendAccountMatch::OnDone(int nCount)
+	{
+		if (!m_pItem->GetDesc()) { return; }
+		if (!m_pItem->CanSendAccount()) return;
+
+		if (nCount <= 0) return;
+
+		ZPostRequestSendAccountItem(ZGetMyUID(), GetItemUID(), nCount);
+	}
+
+Replace <br>
+
+	void ZShopEquipItemHandle_SendAccountMatch::OnDone(int nCount)
+	{
+		if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+		if (!m_pItem->CanSendAccount()) return;
+
+		if (nCount <= 0) return;
+
+		ZPostRequestSendAccountItem(ZGetMyUID(), GetItemUID(), nCount);
+	}
+
+Find <br>
+
+	void IShopEquipItemHandle_BringAccount::OpenSimpleConfirmDlg( ISimpleConfirmDlgDoneHandler* pDoneHandler )
+	{
+		ZSimpleConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSimpleConfirmDlg();
+		if (!pDlg) { return; }
+		pDlg->Open(ZMsg(MSG_SHOPEQUIP_BRING_CONFIRM), pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_BringAccount::OpenCountableConfirmDlg( const char* szItemName, MBitmap* pIconBmp, int nPrice, int nMax, IItemCountDlgDoneHandler* pDoneHandler )
+	{
+		ZItemCountDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetItemCountDlg();
+		if (!pDlg) { return; }
+		pDlg->Open(ZICD_BRINGACCOUNT, szItemName, pIconBmp, nPrice, 0, nMax, pDoneHandler);
+	}
+
+
+Replace <br>
+
+	void IShopEquipItemHandle_BringAccount::OpenSimpleConfirmDlg(ISimpleConfirmDlgDoneHandler* pDoneHandler)
+	{
+		ZSimpleConfirmDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetSimpleConfirmDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(ZMsg(MSG_SHOPEQUIP_BRING_CONFIRM), pDoneHandler);
+	}
+
+	void IShopEquipItemHandle_BringAccount::OpenCountableConfirmDlg(const char* szItemName, MBitmap* pIconBmp, int nPrice, int nMax, IItemCountDlgDoneHandler* pDoneHandler)
+	{
+		ZItemCountDlg* pDlg = ZGetGameInterface()->GetShopEquipInterface()->GetItemCountDlg();
+		if (!pDlg) { _ASSERT(0); return; }
+		pDlg->Open(ZICD_BRINGACCOUNT, szItemName, pIconBmp, nPrice, 0, nMax, pDoneHandler);
+	}
+
+Find <br>
+
+	if (!m_pItem->GetDesc()) { return; }
+	if (GetAIID() == 0) return;
+
+Replace <br>
+
+	if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+	if (GetAIID() == 0) return;
+
+Find <br>
+
+	if (!m_pItem->GetDesc()) { return; }
+	if (GetAIID() == 0) return;
+
+Replace <br>
+
+	if (!m_pItem->GetDesc()) { _ASSERT(0); return; }
+	if (GetAIID() == 0) return;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
