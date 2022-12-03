@@ -2523,13 +2523,56 @@ Replace <br>
 		}
 		break;
 
+Open(ZMyCharacter.cpp) <br>
+Find <br>
 
+	if (zStatus.m_bSlash)
 
+Replace <br>
 
+		if (zStatus.m_bSlash)
+		{
+			if (GetItems()->GetItem(MMCIP_MELEE) == NULL)
+			{
+				return 1.f;
+			}
 
+			MMatchItemDesc *pDesc = GetItems()->GetItem(MMCIP_MELEE)->GetDesc();
 
+			if (pDesc != NULL && pDesc->m_nWeaponType.Ref() == MWT_DOUBLE_KATANA) {
+				AniFrameInfo* pAniLow = m_pVMesh->GetFrameInfo(ani_mode_lower);
+				if (pAniLow->m_nFrame < 160 * 11) return 0;
+			}
+		}
 
+		// ½Ö°Ë Æ¯¼öµ¿ÀÛ Á¡ÇÁ ¸ð¼Ç
+		if (zStatus.m_bSkill) 
+		{
+			if (GetItems()->GetItem(MMCIP_MELEE) == NULL)
+			{
+				return 1.f;
+			}
 
+			MMatchItemDesc *pDesc = GetItems()->GetItem(MMCIP_MELEE)->GetDesc();
+
+			if (pDesc != NULL && pDesc->m_nWeaponType.Ref() == MWT_DOUBLE_KATANA) {
+				AniFrameInfo* pAniLow = m_pVMesh->GetFrameInfo(ani_mode_lower);
+				if (pAniLow->m_nFrame < 160 * 20) return 0;
+			}
+		}
+
+		return 1.f;
+	}
+
+Find <br>
+
+	void ZMyCharacter::OnDamaged(ZObject* pAttacker, rvector srcPos, ZDAMAGETYPE damageType, MMatchWeaponType weaponType, float fDamage, float fPiercingRatio, int nMeleeType)
+
+Add <br>
+
+	void ZMyCharacter::OnDamaged(ZObject* pAttacker, rvector srcPos, ZDAMAGETYPE damageType, MMatchWeaponType weaponType, float fDamage, float fPiercingRatio, int nMeleeType)
+	{
+		if (!pAttacker) return;
 
 
 
