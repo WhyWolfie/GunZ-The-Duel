@@ -189,13 +189,51 @@ Replace <br>
 
 
 
+Open(ZPlayerListBox.cpp) <br>
+Find <br>
 
+		if(GetUserGradeIDColor(nGrade,_color,sp_name)) {
+	sprintf(szLevel,"%2d",nLevel);
+	szRefName = szName;
+	bSpUser = true;
+	}
+	else {
+	sprintf(szLevel,"%2d",nLevel);
+	szRefName = szName;
+	}
 
+Replace <br>
 
+	if (IsAdminGrade(nGrade))
+		sprintf(szLevel, "--");
+	else
+		sprintf(szLevel, "%2d", nLevel);
+	szRefName = szName;
 
+Find <br>
 
+		if(GetUserInfoUID(puid,_color,sp_name,gid)){
+	sprintf(szLevel,"%2d",nLevel);
+	szRefName = szName;
+	bSpUser = true;
+	}
+	else {
+	sprintf(szLevel,"%2d",nLevel);
+	szRefName = szName;
+	}
 
+Replace <br>
 
+	if (GetUserInfoUID(puid, _color, sp_name, gid))
+	{
+		bSpUser = true;
+	}
+	MMatchObjCache* pObjCache = ZGetGameClient()->FindObjCache(puid);
+	if (IsAdminGrade(pObjCache->GetUGrade()))
+		sprintf(szLevel, "--");
+	else
+		sprintf(szLevel, "%2d", nLevel);
+	szRefName = szName;
 
 
 
