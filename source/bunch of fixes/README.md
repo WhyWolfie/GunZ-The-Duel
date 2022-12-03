@@ -1519,9 +1519,74 @@ Replace <br>
 	#define _MULTILANGUAGE
 	#endif
 
+Open(ZSoundEngine.cpp) <br>
+Find <br>
 
+	void ZSoundEngine::PlaySoundBladeConcrete(MMatchItemDesc *pDesc, rvector pos)
 
+Replace <br>
 
+	void ZSoundEngine::PlaySoundBladeConcrete(MMatchItemDesc *pDesc, rvector pos)
+	{
+		if (NULL != pDesc && strcmp("rubber", pDesc->m_szWeaponByFiber) == 0)
+		{
+			PlaySound("rubber_concrete", pos);
+			return;
+		}
+
+		PlaySound("blade_concrete", pos);
+	}
+	void ZSoundEngine::PlaySoundBladeDamage(MMatchItemDesc *pDesc, rvector& pos)
+	{
+		if (NULL != pDesc && strcmp("rubber", pDesc->m_szWeaponByFiber) == 0)
+		{
+			PlaySound("rubber_damage", pos);
+			return;
+		}
+
+		PlaySound("blade_damage", pos);
+	}
+	void ZSoundEngine::PlaySoundHangOnWall(MMatchItemDesc *pDesc, rvector& pos)
+	{
+		if (NULL != pDesc && strcmp("rubber", pDesc->m_szWeaponByFiber) == 0)
+		{
+			PlaySound("rubber_hangonwall", pos);
+			return;
+		}
+
+		PlaySound("hangonwall", pos);
+	}
+	void ZSoundEngine::PlaySoundChargeComplete(MMatchItemDesc *pDesc, const rvector& pos)
+	{
+		if (NULL != pDesc && strcmp("rubber", pDesc->m_szWeaponByFiber) == 0)
+		{
+			PlaySound("fx2/FX_rubber_ChargeComplete", pos);
+			return;
+		}
+
+		PlaySound("fx2/FX_ChargeComplete", pos);
+	}
+	void ZSoundEngine::PlaySoundSmash(MMatchItemDesc *pDesc, rvector& pos, bool bObserverTarget)
+	{
+		if (NULL != pDesc && strcmp("rubber", pDesc->m_szWeaponByFiber) == 0)
+		{
+			PlaySound(bObserverTarget ? "we_rubber_smash_2d" : "we_rubber_smash", pos);
+			return;
+		}
+
+		PlaySound(bObserverTarget ? "we_smash_2d" : "we_smash", pos);
+	}
+
+	void ZSoundEngine::PlaySoundSheath(MMatchItemDesc *pDesc, const rvector& pos, bool bObserverTarget)
+	{
+		if (NULL != pDesc && strcmp("rubber", pDesc->m_szWeaponByFiber) == 0)
+		{
+			PlaySound("fx_rubber_sheath", pos, bObserverTarget);
+			return;
+		}
+
+		PlaySound("fx_blade_sheath", pos, bObserverTarget);
+	}
 
 
 
