@@ -239,6 +239,7 @@ GunZ The Duel Releases <br>
 - admin_kill: [admin_kill](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_kill)
 - admin_killall: [admin_killall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_killall)
 - exit: [exit](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20exit)
+- myfps: [myfps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20myfps)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
