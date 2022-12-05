@@ -188,6 +188,8 @@ GunZ The Duel Releases <br>
 - change gunz folder: [change gunz folder](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20nameapp)
 - run gunz on localipaddress: [run gunz on localipaddress](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20ping%20on%20local%20server)
 - shop lobby stage fix: [shop lobby stage fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20lobby-stage%20fix)
+- automatic ranking system: [automatic ranking system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic%20ranking%20system)
+
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
