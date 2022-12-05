@@ -266,7 +266,7 @@ Find(ZGame.cpp) <br>
 
 Place under <br>
 
-	if (StrStrI(ZGetGameClient()->GetStageName(), "[naked]"))
+	if (StrStrI(ZGetGameClient()->GetStageName(), "[noclothes]"))
 	{
 		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_HEAD);
 		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_CHEST);
