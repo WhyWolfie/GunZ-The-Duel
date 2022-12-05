@@ -2714,8 +2714,32 @@ Replace <br>
 	//void ChangeAA(int AALevel);
 
 
+Open(ZActor.cpp) <br>
+Find <br>
+
+	void ZActor::Skill(int nSkill)
+
+Replace <br>
+
+	void ZActor::Skill(int nSkill)
+	{
+		ZSkillDesc *pDesc = m_pModule_Skills->GetSkill(nSkill)->GetDesc();
+		if(pDesc) {
+			if( pDesc->nCastingAnimation == 1 )
+				m_Animation.Input(ZA_EVENT_SPECIAL1);
+			else if (pDesc->nCastingAnimation == 2 )
+				m_Animation.Input(ZA_EVENT_SPECIAL2);
+			else if (pDesc->nCastingAnimation == 3 )
+				m_Animation.Input(ZA_EVENT_SPECIAL3);
+			else if (pDesc->nCastingAnimation == 4 )
+				m_Animation.Input(ZA_EVENT_SPECIAL4);
+			else if (pDesc->nCastingAnimation == 0 )
+				return;
 
 
+			else { _ASSERT(FALSE); }
+		}
+	}
 
 
 
