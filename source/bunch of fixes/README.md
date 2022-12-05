@@ -2809,18 +2809,191 @@ Add above <br>
 	ZGetCharacterManager()->Clear();
 
 
+Find <br>
+
+	void ZGame::ApplyPotion(int nItemID, ZCharacter* pCharObj, float fRemainedTime)
+	{
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+		if( pDesc == NULL ) { return; }
+
+Change <br>
+
+	void ZGame::ApplyPotion(int nItemID, ZCharacter* pCharObj, float fRemainedTime)
+	{
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+		if( pDesc == NULL ) { _ASSERT(0);  return; }
 
 
+Find <br>
+
+	else if (nDamageType == MMDT_HEAL || nDamageType == MMDT_REPAIR)
+	{
+		// Áï½Ã È¸º¹ ¾ÆÀÌÅÛ
+		if (pDesc->m_nDamageTime.Ref() == 0)
+		{
+			ZGetEffectManager()->AddPotionEffect( pCharObj->GetPosition(), pCharObj, pDesc->m_nEffectId );
+
+			if (nDamageType == MMDT_HEAL)
+			{
+				int nAddedHP = pDesc->m_nItemPower.Ref();
+				pCharObj->SetHP( min( pCharObj->GetHP() + nAddedHP, pCharObj->GetMaxHP() ) );
+			}
+			else if (nDamageType == MMDT_REPAIR)
+			{
+				int nAddedAP = pDesc->m_nItemPower.Ref();
+				pCharObj->SetAP( min( pCharObj->GetAP() + nAddedAP, pCharObj->GetMaxAP() ) );
+			}
+		}
+
+Replace <br>
+
+	else if (nDamageType == MMDT_HEAL || nDamageType == MMDT_REPAIR)
+	{
+		// БпЅГ Иёє№ ѕЖАМЕЫ
+		if (pDesc->m_nDamageTime.Ref() == 0)
+		{
+			ZGetEffectManager()->AddPotionEffect( pCharObj->GetPosition(), pCharObj, pDesc->m_nEffectId );
+
+			if (nDamageType == MMDT_HEAL)
+			{
+				int nAddedHP = pDesc->m_nItemPower.Ref();
+				pCharObj->SetHP( min( pCharObj->GetHP() + nAddedHP, pCharObj->GetMaxHP() ) );
+			}
+			else if (nDamageType == MMDT_REPAIR)
+			{
+				int nAddedAP = pDesc->m_nItemPower.Ref();
+				pCharObj->SetAP( min( pCharObj->GetAP() + nAddedAP, pCharObj->GetMaxAP() ) );
+			}
+			else
+				_ASSERT(0);
+		}
+
+Find <br>
+
+				switch (nDamageType)
+				{
+				case MMDT_HEAL:
+					ZGetEffectManager()->AddHealOverTimeBeginEffect(pCharObj->GetPosition(), pCharObj);
+					break;
+				case MMDT_REPAIR:
+					ZGetEffectManager()->AddRepairOverTimeBeginEffect(pCharObj->GetPosition(), pCharObj);
+					break;
+				}
+			}
+		}
+	}
 
 
+Change <br>
 
+				switch (nDamageType)
+				{
+				case MMDT_HEAL:
+					ZGetEffectManager()->AddHealOverTimeBeginEffect(pCharObj->GetPosition(), pCharObj);
+					break;
+				case MMDT_REPAIR:
+					ZGetEffectManager()->AddRepairOverTimeBeginEffect(pCharObj->GetPosition(), pCharObj);
+					break;
+				}
+			}
+		}
+		else
+			_ASSERT(0);
+	}
 
+Find <br>
 
+	void ZGame::OnUseTrap(int nItemID, ZCharacter* pCharObj, rvector& pos)
+	{
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+		if( pDesc == NULL ) { return; }
 
+		rvector velocity;
+		velocity	= /*pCharObj->GetVelocity()+ */pCharObj->m_TargetDir * 1300.f;
+		velocity.z  = velocity.z + 300.f;
+		m_WeaponManager.AddTrap(pos, velocity, nItemID, pCharObj);
+	}
 
+Change <br>
 
+	void ZGame::OnUseTrap(int nItemID, ZCharacter* pCharObj, rvector& pos)
+	{
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+		if( pDesc == NULL ) { _ASSERT(0); return; }
 
+		rvector velocity;
+		velocity	= /*pCharObj->GetVelocity()+ */pCharObj->m_TargetDir * 1300.f;
+		velocity.z  = velocity.z + 300.f;
+		m_WeaponManager.AddTrap(pos, velocity, nItemID, pCharObj);
+	}
 
+Find <br>
+
+	void ZGame::OnUseDynamite(int nItemID, ZCharacter* pCharObj, rvector& pos)
+	{
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+		if( pDesc == NULL ) { return; }
+
+		rvector velocity;
+		velocity	= /*pCharObj->GetVelocity()+ */pCharObj->m_TargetDir * 1300.f;
+		velocity.z  = velocity.z + 300.f;
+		m_WeaponManager.AddDynamite(pos, velocity, pCharObj);
+	}
+
+Change <br>
+
+	void ZGame::OnUseDynamite(int nItemID, ZCharacter* pCharObj, rvector& pos)
+	{
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
+		if( pDesc == NULL ) { _ASSERT(0); return; }
+
+		rvector velocity;
+		velocity	= /*pCharObj->GetVelocity()+ */pCharObj->m_TargetDir * 1300.f;
+		velocity.z  = velocity.z + 300.f;
+		m_WeaponManager.AddDynamite(pos, velocity, pCharObj);
+	}
+
+Find <br>
+
+		if (m_pGameAction)
+		{
+			int nDuration = pItemDesc->m_nDamageTime.Ref();
+			bool bApplied = false;
+			switch (pItemDesc->m_nDamageType.Ref())
+			{
+			case MMDT_FIRE:
+				// ºÒÆ®·¦Àº ItemPower°¡ ´ë¹ÌÁö¸¦ ¶æÇÔ
+				bApplied = m_pGameAction->ApplyFireEnchantDamage(pTarget, pOwnerCharacter, pItemDesc->m_nItemPower.Ref(), nDuration);
+				break;
+			case MMDT_COLD:
+				// ¾óÀ½Æ®·¦Àº ItemPower°¡ ÀÌ¼Ó°¨¼Ò·®À» ¶æÇÔ (80ÀÌ¸é 80%ÀÇ ¼Ó·ÂÀÌ µÊ)
+				bApplied = m_pGameAction->ApplyColdEnchantDamage(pTarget, pItemDesc->m_nItemPower.Ref(), nDuration);
+				break;
+			default:
+				{
+				break;
+				}
+			}
+
+Change <br>
+
+		if (m_pGameAction)
+		{
+			int nDuration = pItemDesc->m_nDamageTime.Ref();
+			bool bApplied = false;
+			switch (pItemDesc->m_nDamageType.Ref())
+			{
+			case MMDT_FIRE:
+				// єТЖ®·¦Ає ItemPower°Ў ґл№МБцё¦ ¶жЗФ
+				bApplied = m_pGameAction->ApplyFireEnchantDamage(pTarget, pOwnerCharacter, pItemDesc->m_nItemPower.Ref(), nDuration);
+				break;
+			case MMDT_COLD:
+				// ѕуАЅЖ®·¦Ає ItemPower°Ў АМјУ°ЁјТ·®А» ¶жЗФ (80АМёй 80%АЗ јУ·ВАМ µК)
+				bApplied = m_pGameAction->ApplyColdEnchantDamage(pTarget, pItemDesc->m_nItemPower.Ref(), nDuration);
+				break;
+			default:
+				_ASSERT(0);
+			}
 
 
 
