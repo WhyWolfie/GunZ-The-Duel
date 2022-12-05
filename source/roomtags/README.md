@@ -239,3 +239,31 @@ Find case ZDW_UPPERCUT & replace (ZMyCharacter.cpp) <br>
 				pMyCharacter->SetPosition(PlayerPosHotKey);
 		}
 		  return true;
+
+[WF] - Wireframe RoomTag. <br>
+Find(ZGame.cpp) <br>
+
+	if(ZGetGameInterface()->GetCombatInterface()->GetObserverMode() || m_bReplaying.Ref())
+		OnObserverRun();
+
+	ProcessDelayedCommand();
+
+Add under <br>
+
+	if (StrStrI(ZGetGameClient()->GetStageName(), "[WF]"))
+	{
+		m_bShowWireframe = true;
+	}
+	else
+		m_bShowWireframe = false;
+
+
+
+
+
+
+
+
+
+
+
