@@ -1,6 +1,8 @@
 Command: /s {text} <br>
 Command: $hello <br>
 
+Follow this part first: [Follow this part first](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
+
 Open(ZChat_cmds.cpp) <br>
 
     void ChatCmd_StaffChat(const char* line, const int argc, char** const argv);
@@ -164,4 +166,4 @@ Replace <br>
 
 
 Preview <br>
-![img](https://i.imgur.com/LqOxlWe.png)
+![img](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/command%3A%20staffchat/image.png)
