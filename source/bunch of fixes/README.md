@@ -2770,6 +2770,57 @@ Replace <br>
 		return true;
 	}
 
+Open(ZLocale.cpp) <br>
+Find <br>
+
+	void ZLocale::SetTeenMode(bool bTeenMode)
+
+Replace <br>
+
+	void ZLocale::SetTeenMode(bool bTeenMode)
+	{
+		if (m_pAuthInfo) m_pAuthInfo->SetTeenMode(bTeenMode);
+		else _ASSERT(0);
+	}
+
+Open(ZGameAction.cpp) <br>
+Find OnPeerSkill_Dash <br>
+
+	ZItem *pItem = pOwnerCharacter->GetItems()->GetItem(MMCIP_MELEE);
+	if(!pItem) return;
+	MMatchItemDesc *pDesc = pItem->GetDesc();
+	if(!pDesc) { return; }
+
+Replace <br>
+
+	ZItem *pItem = pOwnerCharacter->GetItems()->GetItem(MMCIP_MELEE);
+	if(!pItem) return;
+	MMatchItemDesc *pDesc = pItem->GetDesc();
+	if(!pDesc) { _ASSERT(FALSE); return; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
