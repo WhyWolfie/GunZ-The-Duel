@@ -2,30 +2,32 @@
 
 Open(ZChat_Cmds.cpp) <br>
 
-    void ChatCmd_AdminHwBan(const char* line, const int argc, char** const argv);
+	void ChatCmd_AdminHwid(const char* line, const int argc, char** const argv);
 
 Part 2
 
-	_CC_AC("admin_hwban", &ChatCmd_AdminHwBan, CCF_ADMIN, ARGVNoMin, ARGVNoMax, true, "/admin_hwban", "");
+	_CC_AC("hwid", &ChatCmd_AdminHwid, CCF_ADMIN, ARGVNoMin, ARGVNoMax, true, "/hwid", "");
 
 
 Part 3
 
-    void ChatCmd_AdminHwBan(const char* line, const int argc, char** const argv)
-    {
-      if (argc > 2)
-      {
-        ZPOSTCMD2(MC_ADMIN_HWBAN, MCommandParameterString(argv[1]), MCommandParameterString(argv[2]));
-      }
-      else
-      {
-        ZChatOutput("/admin_hwban <name> <reason>");
-      }
-    }
+	void ChatCmd_AdminHwid(const char* line, const int argc, char** const argv)
+	{
+
+		if (argc > 2)
+		{
+			ZPOSTCMD2(MC_ADMIN_HWBAN, MCommandParameterString(argv[1]), MCommandParameterString(argv[2]));
+		}
+		else
+		{
+			ZChatOutput("/hwid <name> <reason>");
+		}
+	}
     
 Open(MSharedCommandTable.h) <br>
 
-    #define MC_ADMIN_HWBAN						    XXXXX
+	#define MC_ADMIN_HWBAN							50071
+
 
 Open(MMatchServer_OnCommand.cpp) <br>
 
@@ -38,8 +40,8 @@ Open(MMatchServer_OnCommand.cpp) <br>
 			pCommand->GetParameter(szReason, 1, MPT_STR, 64);
 
 			OnHwBan(pCommand->GetSenderUID(), szName, szReason);
-		}			
-		break;
+			break;
+		}
 
 Open(MSharedCommandTable.cpp) <br>
 
@@ -47,62 +49,76 @@ Open(MSharedCommandTable.cpp) <br>
 		P(MPT_STR, "PlayerName");
 		P(MPT_STR, "Reason");
 
-Open(MMatchServer.h) <br>
 
-    void OnHwBan(const MUID& uidSender, const char* pName, const char* pReason);
+Open(MMatchServer.h - void OnResponseMonsterBibleInfo - Add under) <br>
 
-Open(MMatchServer_Admin.cpp) <br>
+	void OnHwBan(const MUID& uidSender, const char* pName, const char* pReason);
 
-    void MMatchServer::OnHwBan(const MUID& uidSender, const char* pName, const char* pReason)
-    {
-      MMatchObject* pObj = GetObject(uidSender);
 
-      if (pObj && IsAdminGrade(pObj))
-      {
-        char message[512];
-        char razon[500];
-        if (strstr(pName, "%") || strstr(pReason, "%")) return;
-        if(strlen(pReason) > 500)
-          strcpy_s(razon, 500, pReason);
-        else
-          strcpy(razon, pReason);
-        MMatchObject* pTarget = GetPlayerByName(pName);
-        if(pTarget)
-        {
+Open(MMatchServer_Admin.cpp - Add all the way under) <br>
 
-          m_MatchDBMgr.spBanPC(pTarget->GetAccountInfo()->m_nAID, razon);
-          Disconnect(pTarget->GetUID());
-          sprintf(message, "%s - %s", pTarget->GetAccountName(), pReason);
-          LogCommand("banpc", pObj->GetCharInfo()->m_szName, message);
-        }
-      }
-    }
+	void MMatchServer::OnHwBan(const MUID& uidSender, const char* pName, const char* pReason)
+	{
+		MMatchObject* pObj = GetObject(uidSender);
 
-Open(MMatchDBMgr.h) <br>
+		if (pObj && IsAdminGrade(pObj))
+		{
+			char message[512];
+			char razon[500];
+			if (strstr(pName, "%") || strstr(pReason, "%")) return;
+			if (strlen(pReason) > 500)
+				strcpy_s(razon, 500, pReason);
+			else
+				strcpy(razon, pReason);
+			MMatchObject* pTarget = GetPlayerByName(pName);
+			if (pTarget)
+			{
 
-    bool spBanPC(const int AID, const TCHAR* pReason);
+				m_MatchDBMgr.spBanPC(pTarget->GetAccountInfo()->m_nAID, razon);
+				Disconnect(pTarget->GetUID());
+				sprintf(message, "%s reason - %s", pTarget->GetAccountName(), pReason);
+			}
+		}
+	}
+
+Open(MMatchDBMgr.h - Under bool GetLoginInfo_Netmarble)
+
+	bool spBanPC(const int AID, const TCHAR* pReason);
 
 Open(MMatchDBMgr.cpp) <br>
 
-    bool MMatchDBMgr::spBanPC(const int AID, const TCHAR* pReason)
-    {
-      _STATUS_DB_START;
-      if (!CheckOpen()) return false;
+	TCHAR g_szDB_Ban_Hwid[] = _T("{CALL spInsertBanPC (%d, '%s')}");
+	bool MMatchDBMgr::spBanPC(const int AID, const TCHAR* pReason)
+	{
+		_STATUS_DB_START;
+		if (!CheckOpen()) return false;
 
-      CString strSQL;
+		CString strSQL;
 
-      try {
-        strSQL.Format(g_szDB_Ban_Hwid, AID, pReason);
-        m_DB.ExecuteSQL(strSQL);
-      }
-      catch (CDBException* e) {
-        ExceptionHandler(strSQL, e);
-        return false;
-      }
+		try {
+			strSQL.Format(g_szDB_Ban_Hwid, AID, pReason);
+			m_DB.ExecuteSQL(strSQL);
+		}
+		catch (CDBException* e) {
+			ExceptionHandler(strSQL, e);
+			return false;
+		}
 
-      _STATUS_DB_END(1);
-      return true;
-    }
+		_STATUS_DB_END(1);
+		return true;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
