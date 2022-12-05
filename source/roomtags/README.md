@@ -258,8 +258,29 @@ Add under <br>
 		m_bShowWireframe = false;
 
 
+[noclothes] - no clothes in rooms <br>
+Find(ZGame.cpp) <br>
 
+	bool ZGame::Create(MZFileSystem *pfs, ZLoadingProgress *pLoading )
+	{
 
+Place under <br>
+
+	if (StrStrI(ZGetGameClient()->GetStageName(), "[naked]"))
+	{
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_HEAD);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_CHEST);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_HANDS);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_LEGS);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_FEET);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_MELEE);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_PRIMARY);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_SECONDARY);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_FINGERL);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_FINGERR);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_CUSTOM1);
+		ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_CUSTOM2);
+	}
 
 
 
