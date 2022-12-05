@@ -2798,9 +2798,15 @@ Replace <br>
 	MMatchItemDesc *pDesc = pItem->GetDesc();
 	if(!pDesc) { _ASSERT(FALSE); return; }
 
+Open(ZGame.cpp) <br>
+Find <br>
 
+	char tmpbuf[128];
+	_strtime( tmpbuf );
 
+Add above <br>
 
+	ZGetCharacterManager()->Clear();
 
 
 
