@@ -2742,9 +2742,33 @@ Replace <br>
 	}
 
 
+Open(ZShopEquipItemConfirm.cpp)
+Find <br>
 
+	bool ZSimpleConfirmDlg::OnCommand(MWidget* pWidget, const char* szMessage)
+	{
 
+Replace <br>
 
+	bool ZSimpleConfirmDlg::OnCommand(MWidget* pWidget, const char* szMessage)
+	{
+		if (pWidget == m_pMsgbox)
+		{
+			if (strcmp(szMessage, MMSGBOX_OK)==0)
+			{
+				m_pMsgbox->Show(false);
+				if (!m_pDoneHandler) { _ASSERT(0); return true; }
+				m_pDoneHandler->OnDone(true);
+			}
+			else if (strcmp(szMessage, MMSGBOX_CANCEL)==0)
+			{
+				m_pMsgbox->Show(false);
+				if (!m_pDoneHandler) { _ASSERT(0); return true; }
+				m_pDoneHandler->OnDone(false);
+			}
+		}
+		return true;
+	}
 
 
 
