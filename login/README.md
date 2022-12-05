@@ -13,3 +13,18 @@
 12. ![login12](https://i.imgur.com/VXf0EiW.png) <br>
 13. ![login13](https://i.imgur.com/zM2BssW.png) <br>
 14. ![login14](https://i.imgur.com/STBlFYk.png) <br>
+15. ![login15](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login15.jpg) <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
