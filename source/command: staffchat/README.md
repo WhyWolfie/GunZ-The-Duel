@@ -98,27 +98,29 @@ Open(ZGameClient_OnCommand.cpp - MC_ADMIN_ANNOUNCE - Add) <br>
       
 Open(ZGameClient.cpp)
 
-    void ZGameClient::OnStaffHelp(const char* szMsg, const char* szUsr, const int UgradeID)
-    {
-      if (ZApplication::GetGameInterface()->GetState() == GUNZ_GAME)
-      {
-        {
-          MCOLOR Col;
-          char Chat[420];
-          sprintf(Chat, "%s^2[Staff]:^9%s", szUsr, szMsg);
-          ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg(Col, Chat);
-        }
-      }
-      else
-      {
-        {
-          MCOLOR Col;
-          char Chat[420];
-          sprintf(Chat, "%s^2[Staff]:^9%s", szUsr, szMsg);
-          ZChatOutput(Col, Chat);
-        }
-      }
-    }
+	void ZGameClient::OnStaffHelp(const char* szMsg, const char* szUsr, const int UgradeID)
+	{
+		if (ZApplication::GetGameInterface()->GetState() == GUNZ_GAME)
+		{
+			{
+				MCOLOR Col;
+				ZGetGame()->GetUserGradeIDColor((MMatchUserGradeID)UgradeID, Col, "");
+				char Chat[420];
+				sprintf(Chat, "[STAFF]%s:%s", szUsr, szMsg);
+				ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg(Col, Chat);
+			}
+		}
+		else
+		{
+			{
+				MCOLOR Col;
+				ZGetGame()->GetUserGradeIDColor((MMatchUserGradeID)UgradeID, Col, "");
+				char Chat[420];
+				sprintf(Chat, "[STAFF]%s:%s", szUsr, szMsg);
+				ZChatOutput(Col, Chat);
+			}
+		}
+	}
 
 Open(ZGameClient.h - OnAdminAnnounce - Add) <br>
 
