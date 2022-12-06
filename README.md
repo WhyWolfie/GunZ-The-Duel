@@ -87,6 +87,7 @@ GunZ The Duel Releases <br>
 - 2005 source & old patches: [2005 source](https://archive.org/details/gunz.-7z)
 - 2011 artwork & 3ds max: [2011 artwork & 3ds max](https://archive.org/details/2011-artwork-Gunz)
 - evilgunz client server & source: [evilgunz client server & source](https://archive.org/details/server-client)
+- universegamers: [universegamers](https://archive.org/details/ugg-source-2017-fixes-main)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
@@ -260,6 +261,8 @@ GunZ The Duel Releases <br>
 - shop maker: [shop maker source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20maker)
 - unreal engine 4 gunz: [unreal engine](https://www.youtube.com/watch?v=wIzNnBJiVO4)
 - gunz ranking source: [gunz ranking source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20source%20ranking)
+- zlauncher: [zlauncher](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/zlauncher)
+- zpatchbuilder: [zpatchbuilder](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/zpatchbuilder)
 
 (not done yet)
 - rocketguided: [rocketguided](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20rocketguided)
@@ -380,6 +383,8 @@ GunZ The Duel Releases <br>
 - ogunz: [ogunz](https://archive.org/details/ogun-z-v-2) big thanks to ogunz no encryption useful!
 - gunz installer 20070624 (ijji): [gunz installer 20070624 (ijji)](https://archive.org/details/gunz-installer-20070624)
 - gunz installer 20081121 (ijji): [gunz installer 20081121 (ijji)](https://archive.org/details/gunz-installer-20081121)
+- masangsoft (december 6 - 2022 latest version): [masangsoft (december 6 - 2022 latest version)](https://archive.org/details/masangsoft-december-6-2022.-7z)
+
 
 <b>[tutorials]</b>
 - movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
