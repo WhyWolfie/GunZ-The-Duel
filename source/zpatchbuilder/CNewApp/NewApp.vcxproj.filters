@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d7236d56-7dd2-4822-b295-2c0859bbbfcf}</UniqueIdentifier>
+      <Extensions>cpp;c;h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4d038b1e-382f-47c0-86c0-b928b0736955}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Wave Files">
+      <UniqueIdentifier>{cdf07db5-7fe1-4a87-b67f-72b9d6d07cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Icon Files">
+      <UniqueIdentifier>{b297d918-a7ab-46d5-a6e0-f3a2cef24309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CDDB">
+      <UniqueIdentifier>{41f78d8c-dfab-4b6b-88c2-482b6e9d0d3c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPatchNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDB.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDBAniBmp.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDBButton.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDBDialog.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Log.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPatchNode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewApp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDB.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDBAniBmp.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDBButton.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDBDialog.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\animation.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_start.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\skin_maindlg.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\skin_popupdlg.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_mainframe.ico">
+      <Filter>Resource Files\Icon Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NewApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\pushbutton.wav">
+      <Filter>Resource Files\Wave Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
