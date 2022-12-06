@@ -1,4 +1,4 @@
-Build: Release. <br>
+Build: Release(x86) <br>
 
 Paste your ZPatchBuilder in your folder "GunZUpdate" <br>
 Copy your updates like 'Gunz.exe' or 'System.mrs' into the same folder <br>
