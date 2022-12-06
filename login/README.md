@@ -14,7 +14,7 @@
 13. ![login13](https://i.imgur.com/zM2BssW.png) <br>
 14. ![login14](https://i.imgur.com/STBlFYk.png) <br>
 15. ![login15](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login15.jpg) <br>
-
+16. ![login16](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login16.jpg) <br>
 
 
 
