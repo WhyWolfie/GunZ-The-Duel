@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7f4bd973-adb6-4bd4-a9fe-a2fbd1112caf}</UniqueIdentifier>
+      <Extensions>cpp;c;h</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b284e861-602e-45d4-abf4-250d46c331f3}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Wave Files">
+      <UniqueIdentifier>{48ea950d-df31-4843-98fc-30014587d9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Icon Files">
+      <UniqueIdentifier>{62e2df06-5db9-4c15-a799-e38e4cbea9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Bitmap">
+      <UniqueIdentifier>{900a9eb3-965f-4a25-a5d5-6dd58b4b9ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CDDB">
+      <UniqueIdentifier>{ac333487-df29-4fc9-8970-a158e6f50768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NHN Auth.">
+      <UniqueIdentifier>{ded0c3c5-1303-4e94-b196-b1659e41e22f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NHN Auth.\Library">
+      <UniqueIdentifier>{478a3f26-198b-49fb-9d74-014aed9cebf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patch Updater">
+      <UniqueIdentifier>{c94218ac-8308-46af-9ba8-bc40d94c2e6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CGLEncription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CStringTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="explorer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppAboutBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppErrorDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppLicenseConfirmDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppUpdateCompleteDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppUpdateConfirm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAppWarnVista.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDB.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDBAniBmp.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDBButton.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CDDBDialog.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>CDDB</Filter>
+    </ClCompile>
+    <ClCompile Include="ZNHNAuth.cpp">
+      <Filter>NHN Auth.</Filter>
+    </ClCompile>
+    <ClCompile Include="ZNHNModule.cpp">
+      <Filter>NHN Auth.</Filter>
+    </ClCompile>
+    <ClCompile Include="ZNHNRegistInfo.cpp">
+      <Filter>NHN Auth.</Filter>
+    </ClCompile>
+    <ClCompile Include="ZFileTransfer.cpp">
+      <Filter>Patch Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="ZUpdate.cpp">
+      <Filter>Patch Updater</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGLEncription.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CStringTable.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="explorer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewApp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppAboutBox.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppErrorDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppLicenseConfirmDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppUpdateCompleteDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppUpdateConfirm.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAppWarnVista.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZGlobal.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDB.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDBAniBmp.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDBButton.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CDDBDialog.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>CDDB</Filter>
+    </ClInclude>
+    <ClInclude Include="ZNHNAuth.h">
+      <Filter>NHN Auth.</Filter>
+    </ClInclude>
+    <ClInclude Include="ZNHNModule.h">
+      <Filter>NHN Auth.</Filter>
+    </ClInclude>
+    <ClInclude Include="ZNHNRegistInfo.h">
+      <Filter>NHN Auth.</Filter>
+    </ClInclude>
+    <ClInclude Include="HanAuthForClient.h">
+      <Filter>NHN Auth.\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="HanReportForClient.h">
+      <Filter>NHN Auth.\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="ZFileTransfer.h">
+      <Filter>Patch Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="ZUpdate.h">
+      <Filter>Patch Updater</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\default.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon_mainframe_brz.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_mainframe.ico">
+      <Filter>Resource Files\Icon Files</Filter>
+    </Image>
+    <Image Include="res\animation.bmp">
+      <Filter>Resource Files\Bitmap</Filter>
+    </Image>
+    <Image Include="res\button.bmp">
+      <Filter>Resource Files\Bitmap</Filter>
+    </Image>
+    <Image Include="res\button_start.bmp">
+      <Filter>Resource Files\Bitmap</Filter>
+    </Image>
+    <Image Include="res\gunz_img.bmp">
+      <Filter>Resource Files\Bitmap</Filter>
+    </Image>
+    <Image Include="res\skin_maindlg.bmp">
+      <Filter>Resource Files\Bitmap</Filter>
+    </Image>
+    <Image Include="res\skin_popupdlg.bmp">
+      <Filter>Resource Files\Bitmap</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NewApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\updater.exe">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\pushbutton.wav">
+      <Filter>Resource Files\Wave Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\Gunz\nhn\HanAuthForClient.lib">
+      <Filter>NHN Auth.\Library</Filter>
+    </Library>
+    <Library Include="..\..\..\Gunz\nhn\HanAuthForClientD.lib">
+      <Filter>NHN Auth.\Library</Filter>
+    </Library>
+    <Library Include="..\..\..\Gunz\nhn\HanReportForClient.lib">
+      <Filter>NHN Auth.\Library</Filter>
+    </Library>
+    <Library Include="..\..\..\Gunz\nhn\HanReportForClientD.lib">
+      <Filter>NHN Auth.\Library</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\string.txt" />
+    <Text Include="res\string_usa.txt" />
+  </ItemGroup>
+</Project>
