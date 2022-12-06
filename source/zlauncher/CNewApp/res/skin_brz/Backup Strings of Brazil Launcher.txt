@@ -1,0 +1,53 @@
+STR_100,Aviso
+STR_101,No Windows Vista, The Duel não irá operar normalmente se instalado na pasta atual. Se a atualização falhar, desinstale e reinstale na pasta indicada.
+STR_102,The Duel Launcher
+STR_103,Confirmação de Atualização
+STR_104,Existem %d arquivo(s) para serem atualizados. O jogo necessita ser atualizado antes de ser iniciado. Ele será atualizado em %%d segundo(s)...
+STR_105,Atualização finalizada
+STR_106,O launcher precisa ser reiniciado para finalizar a atualização. O launcher será reiniciado em %d segundo(s)...
+STR_107,A atualização foi concluída com sucesso. O jogo será iniciado em %d segundo(s)...
+STR_108,Mensagem de Erro
+STR_109,Ocorreu um erro durante a atualização. Por favor confira a mensagem de erro e tente corrigir o problema manualmente.
+STR_110,Iniciando...
+STR_111,Pronto para começar.
+STR_112,Cancelar atualização.
+STR_113,Modo de testes Alpha.
+STR_114,Analisando informações de atualização
+STR_115,Não foi possível encontrar informações de atualização.
+STR_116,Procurando arquivos de atualização.
+STR_117,Atualizando arquivos
+STR_118,Por favor aguarde enquanto o processo de duplicação de arquivos ocorre.
+STR_119,Atualizando arquivos
+STR_120,Leia informações sobre arquivos de atualização
+STR_121,Não foi possível realizar a atualização. 
+STR_122,Atualização concluída.
+STR_123,Iniciando o jogo
+STR_124,Não foi possível abrir o arquivo
+STR_125,Verifique a permissão para gravação de arquivos
+STR_126,Arquivo corrompido ou incompleto
+STR_127,Tente remover este arquivo
+STR_128,O servidor de atualizações não está respondendo ou não está ativo no momento.
+STR_129,Verifique seu firewall.
+STR_130,Tente novamente mais tarde.
+STR_131,Não foi possível estabelecer conexão com os servidores.
+STR_132,Verifique sua conexão de internet.
+STR_133,Atualização cancelada.
+STR_134,Tente atualizar novamente.
+STR_135,Sua conexão de internet foi fechada ou este arquivo está marcado somente para leitura
+STR_136,Verifique sua conexão de internet ou remova este arquivo.
+STR_137,Arquivo de atualização com CRC inválido.
+STR_138,Verifique anti-vírus e firewall ativos no sistema.
+STR_139,AVISO: Caminho não encontrado
+STR_140,Verifique a permissão de gravação nesta pasta
+STR_141,Erro na cópia de arquivo
+STR_142,Este arquivo não pode ser modificado
+STR_143,Acesso negado.
+STR_144,Arquivo não encontrado.
+STR_145,Erro de informações.
+STR_146,Erro na requisição de arquivos.
+STR_147,Erro no servidor.
+STR_148,Acesso negado ou erro desconhecido.
+STR_149,Contrato de Licença de Uso de Software e Regulamento do Jogo
+STR_150,Por favor, leia o Contrato de Licença de Uso de Software e Regulamento do Jogo. Se aceitar os termos do contrato, clique no campo "CONCORDO".
+STR_151,CONCORDO
+STR_152,NÃO CONCORDO
