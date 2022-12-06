@@ -1,0 +1,53 @@
+STR_100,Warning
+STR_101,In Windows Vista, GunZ will not operate normally if installed at current directory.  If the patch fails, we advise you to uninstall GunZ and reinstall to its default setting.
+STR_102,GunZ Launcher
+STR_103,Update Confirm
+STR_104,There are %d file(s) to update. The game must go through updating process for normal operation.  It will update automatically after %%d second(s)...
+STR_105,Update Complete
+STR_106,The launcher has to restart in order to finish file update.  The launcher will restart in %d second(s)...
+STR_107,The Update is successfully finished.  The game will start automatically in %d second(s)...
+STR_108,Error Report
+STR_109,There was an error on the process.  We appologize for your inconvenience.  Please check the error report below and elimate the source or error manually.
+STR_110,Initializing...
+STR_111,Ready to start.
+STR_112,Skip update.
+STR_113,Alpha testing mode.
+STR_114,Analyzing patch info
+STR_115,Cannot find patch info.
+STR_116,Find new patch files.
+STR_117,Patching files
+STR_118,Please wait while the file duplication process takes place.
+STR_119,Updating files
+STR_120,Read patch file info
+STR_121,Update failed.
+STR_122,Update complete.
+STR_123,Starting game
+STR_124,Cannot open file
+STR_125,Please check for file authorization
+STR_126,This file is corrupt or missing
+STR_127,Try delete this file
+STR_128,The update server is not responding or is not running right now.
+STR_129,Please check your firewall.
+STR_130,Please try again after a while.
+STR_131,Internet connection failed.
+STR_132,Please check your internet connection.
+STR_133,Update canceled.
+STR_134,Please retry updating.
+STR_135,Internet connection closed or this file is read-only
+STR_136,Please check your internet connection or delete this file
+STR_137,Invalid CRC from the downloaded patch file.
+STR_138,Please check for anti-virus program or firewall running on your system.
+STR_139,WARNNING : This file cannot made path
+STR_140,Please check for directory authorization
+STR_141,File copy error
+STR_142,This file is currently cannot be modified
+STR_143,Access denied.
+STR_144,File not found.
+STR_145,Information error.
+STR_146,File request error.
+STR_147,Server error.
+STR_148,Access denied or unknown error.
+STR_149,Gunz License Agreement
+STR_150,Please review the license terms before starting the game.  If you accept the terms of the agreement, press I Agree to continue.  You must accept the agreement to start game.
+STR_151,I Agree
+STR_152,Deny
