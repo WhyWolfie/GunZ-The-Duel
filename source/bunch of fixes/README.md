@@ -3037,9 +3037,19 @@ Change <br>
 		}
 	}
 
+Find <br>
+
+	int ZGame::SelectSlashEffectMotion(ZCharacter* pCharacter)
+	{
+		if(pCharacter==NULL) return SEM_None;
 
 
+Replace <br>
 
+	int ZGame::SelectSlashEffectMotion(ZCharacter* pCharacter)
+	{
+		//Exploit fix (pCharacter->GetSelectItemDesc() == NULL crash)
+		if(pCharacter==NULL || pCharacter->GetSelectItemDesc() == NULL) return SEM_None;
 
 
 
