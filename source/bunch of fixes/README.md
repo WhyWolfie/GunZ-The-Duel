@@ -2995,8 +2995,47 @@ Change <br>
 				_ASSERT(0);
 			}
 
+Open(ZGame.cpp) <br>
+Find <br>
 
+	void ZGame::ProcessDelayedCommand()
+	{
+		for(ZObserverCommandList::iterator i = m_DelayedCommandList.begin(); i != m_DelayedCommandList.end();i++)
+		{
+			ZObserverCommandItem *pItem = *i;
 
+			// ½ÇÇàÇÒ ½Ã°£ÀÌ Áö³µÀ¸¸é ½ÇÇàÇÑ´Ù
+			if(GetTime() > pItem->fTime) 
+			{
+				OnCommand_Immidiate(pItem->pCommand);
+				i = m_DelayedCommandList.erase(i);
+				delete pItem->pCommand;
+				delete pItem;
+			}
+		}
+	}
+
+Change <br>
+
+	void ZGame::ProcessDelayedCommand()
+	{
+		//Iterator increment fix
+		for(ZObserverCommandList::iterator i = m_DelayedCommandList.begin(); i != m_DelayedCommandList.end();)
+		{
+			ZObserverCommandItem *pItem = *i;
+
+			// ½ÇÇàÇÒ ½Ã°£ÀÌ Áö³µÀ¸¸é ½ÇÇàÇÑ´Ù
+			if(GetTime() > pItem->fTime) 
+			{
+				OnCommand_Immidiate(pItem->pCommand);
+				i = m_DelayedCommandList.erase(i);
+				delete pItem->pCommand;
+				delete pItem;
+			}
+			else
+				++i;
+		}
+	}
 
 
 
