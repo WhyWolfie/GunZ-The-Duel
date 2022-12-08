@@ -16,3 +16,69 @@ Error -> Change too -> MSM_TEST -> Rebuild <br>
 
 MatchServer/server.ini <br>
 change -> mode=clan <br>
+
+Or
+
+
+Open(MMatchStage.cpp - line 60) <br>
+
+    if((MSM_CLAN != MGetServerConfig()->GetServerMode()) && (MSM_TEST != MGetServerConfig()->GetServerMode()) && (bIsAllowNullChannel == false) ) {
+
+Open(MMatchStage.cpp - line 861) <br>
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_LADDER) || (MGetServerConfig()->GetServerMode() == MSM_CLAN) || (MGetServerConfig()->GetServerMode() == MSM_TEST))
+
+Open(MMatchObject.cpp - line 197) <br>
+
+    if ((pChannel) && (pChannel->GetChannelType() == MCHANNEL_TYPE_CLAN) && (MGetServerConfig()->GetServerMode() == MSM_TEST))
+
+Open(MMatchServer.cpp - line 491)
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_CLAN) || (MGetServerConfig()->GetServerMode() == MSM_TEST))
+
+Open(MMatchServer.cpp - line 1117)
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_CLAN) || (MGetServerConfig()->GetServerMode() == MSM_TEST))
+
+Open(MMatchServer_Channel.cpp - line 162)
+
+    } else if ( (MGetServerConfig()->GetServerMode() == MSM_CLAN) || (MGetServerConfig()->GetServerMode() == MSM_TEST) || (MGetServerConfig()->GetServerMode() == MSM_MATCH)) {
+
+Open(MMatchServer_Char.cpp - line 233)
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_CLAN) || (MGetServerConfig()->GetServerMode() == MSM_TEST))
+
+Open(MMatchServer_Stage.cpp - line 882)
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_TEST) && (pChannel->GetChannelType() == MCHANNEL_TYPE_CLAN)
+
+Open(MMatchServer_Stage.cpp - line 2083)
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_TEST) && (pStage->GetStageType() == MST_LADDER))
+
+Open(MMatchServer_Stage.cpp - line 2504)
+
+    if ((MGetServerConfig()->GetServerMode() == MSM_TEST) && (pChannel->GetChannelType() == MCHANNEL_TYPE_CLAN))
+
+Open(MMatchConfig.cpp - line 133)
+
+    else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_TEST)) m_nServerMode = MSM_TEST;
+
+Open(MMatchConfig.h - line 201)
+
+    const bool IsClanServer() { return (MSM_CLAN == m_nServerMode || MSM_TEST == m_nServerMode); }
+
+Open(ZGameInterface.cpp - line 2010)
+
+    bool bClanBattleUI = (((ZGetGameClient()->GetServerMode() == MSM_CLAN) || (ZGetGameClient()->GetServerMode() == MSM_TEST)) && (ZGetGameClient()->GetChannelType()==MCHANNEL_TYPE_CLAN));
+
+Open(ZGameInterface.cpp - line 5443)
+
+    bool bClanBattleUI = ((nCurrentServerMode== MSM_CLAN) || (nCurrentServerMode == MSM_TEST)) && (nCurrentChannelType==MCHANNEL_TYPE_CLAN);
+
+Open(ZGameInterface.cpp - line 5790)
+
+    bool bClanServer = (ZGetGameClient()->GetServerMode()==MSM_CLAN || ZGetGameClient()->GetServerMode()==MSM_TEST);
+
+
+Credits To Ronny786
