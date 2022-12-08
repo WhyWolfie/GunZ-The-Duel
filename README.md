@@ -547,6 +547,7 @@ GunZ The Duel Releases <br>
 - huntxgunz: [huntx](http://gunz.retzu.com/)
 - royalgunz: [royalgunz](https://www.royalgunz.net/)
 - ogunz: [ogunz](http://ogunz.xyz/)
+- empiregunz: [empiregunz](http://empiregunz.com/)
 
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
