@@ -75,3 +75,6 @@ Create a file: (AntiInject.h)
 
       jumphook( (DWORD)LoadLibraryA, (DWORD)&hLoadLibraryA, 57 );
     }
+
+
+Credits to: eBoxEvo
