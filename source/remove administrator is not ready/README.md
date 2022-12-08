@@ -2,6 +2,8 @@
 Administrator: ¿î¿µÀÚ <br>
 Developer: °³¹ßÀÚ <br>
 
+![1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/remove%20administrator%20is%20not%20ready/1.jpg)
+
 
 Open up CSCommon\Source\MMatchStage.cpp <br>
 
@@ -28,6 +30,9 @@ Go to line 609 and find: <br>
 
         return false;
     }
+
+
+
 
 You have 2 options now. Show their original names or show their rank names (Administrator/Developer). <br>
 The first option is useful when you have unmasked ranks. <br>
@@ -64,6 +69,9 @@ The second option is useful when you have masked ranks. <br>
 
 
 
+![2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/remove%20administrator%20is%20not%20ready/2.png)
+
+
 2. If you want to show their rankname, replace the code with this:
 
 
@@ -90,7 +98,7 @@ The second option is useful when you have masked ranks. <br>
 
 
 
-
+![replace](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/remove%20administrator%20is%20not%20ready/replace.jpg)
 
 
 
