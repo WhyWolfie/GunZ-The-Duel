@@ -191,6 +191,8 @@ GunZ The Duel Releases <br>
 - shop lobby stage fix: [shop lobby stage fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20lobby-stage%20fix)
 - automatic ranking system: [automatic ranking system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic%20ranking%20system)
 - duel dots disable: [duel dots disable](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20dots%20disable)
+- fix nationalgunz vipwall: [fix nationalgunz vipwall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20nationalgunz%20vipwall)
+
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
