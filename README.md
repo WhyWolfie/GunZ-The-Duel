@@ -196,6 +196,7 @@ GunZ The Duel Releases <br>
 - fix nationalgunz vipwall: [fix nationalgunz vipwall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20nationalgunz%20vipwall)
 - remove ¿î¿µÀÚ and °³¹ßÀÚ not ready: [remove ¿î¿µÀÚ and °³¹ßÀÚ not ready](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remove%20administrator%20is%20not%20ready)
 - remember password at login: [remember password at login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remember%20password)
+- clan 8 players: [clan 8 players](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clanwar%208%20players)
 
 
 (anticheat and such) <br>
