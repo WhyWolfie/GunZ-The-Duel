@@ -250,6 +250,14 @@ Add <br>
 
 Open(MMatchNPCObject.h) <br>
 Find <br>
+	
+	RouteGameInfo();
+
+Replace <br>
+
+	//RouteGameInfo();
+
+Find <br>
 
     void AssignControl(MUID& uidPlayer);
 
@@ -602,8 +610,33 @@ Add under <br>
 
 	virtual void RouteGameInfoToSingle(MUID& uidPlayer);
 
+Open(MMatchServer_Stage.cpp) <br>
+Find <br>
 
+	void MMatchServer::OnRequestForcedEntry(const MUID& uidStage, const MUID& uidChar)
 
+Replace <br>
+
+	void MMatchServer::OnRequestForcedEntry(const MUID& uidStage, const MUID& uidChar)
+	{
+		MMatchStage* pStage = FindStage(uidStage);
+		if (pStage == NULL) return;
+		MMatchObject* pObj = GetObject(uidChar);
+		if (pObj == NULL) return;
+
+		pObj->SetForcedEntry(true);
+
+		if (MGetGameTypeMgr()->IsQuestDerived(pStage->GetStageSetting()->GetGameType()))
+		{
+			if (pStage->m_pRule)
+			{
+				MUID uidChar = pObj->GetUID();
+				pStage->m_pRule->OnQuestEnterBattle(uidChar);
+			}
+		}
+
+		RouteResponseToListener(pObj, MC_MATCH_STAGE_RESPONSE_FORCED_ENTRY, MOK);
+	}
 
 
 
