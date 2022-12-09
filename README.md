@@ -144,6 +144,7 @@ GunZ The Duel Releases <br>
 - nolead: [no lead](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20lead)
 - room with map name: [room with map name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room%20with%20map%20name)
 - clan member text info: [clan member text info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan%20member%20text%20info)
+- rflashwindow: [rflashwindow](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rflashwindow)
 
 (fixes)<br>
 - crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
