@@ -244,7 +244,7 @@ GunZ The Duel Releases <br>
 - exit: [exit](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20exit)
 - myfps: [myfps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20myfps)
 - admin_flip & admin_slash: [admin_flip & admin_slash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_slash%20&%20admin_flip)
-
+- forcenat: [forcenat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20forcenat)
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
