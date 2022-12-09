@@ -194,6 +194,8 @@ GunZ The Duel Releases <br>
 - duel dots disable: [duel dots disable](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20dots%20disable)
 - fix nationalgunz vipwall: [fix nationalgunz vipwall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20nationalgunz%20vipwall)
 - remove ¿î¿µÀÚ and °³¹ßÀÚ not ready: [remove ¿î¿µÀÚ and °³¹ßÀÚ not ready](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remove%20administrator%20is%20not%20ready)
+- remember password at login: [remember password at login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remember%20password)
+
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
