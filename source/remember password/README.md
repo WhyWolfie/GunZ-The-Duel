@@ -52,7 +52,7 @@ Find <br>
 
 	void ZGameInterface::OnLoginDestroy(void)
 
-Add under <br>
+Replace <br>
 
 	void ZGameInterface::OnLoginDestroy(void)
 	{
