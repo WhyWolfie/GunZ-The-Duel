@@ -3072,4 +3072,12 @@ Replace <br>
 		count = 1;
 	}
 
+Find <br>
+
+	nRelayMapListCount = 20;
+
+Replace <br>
+
+	nRelayMapListCount = 26;
+
 
