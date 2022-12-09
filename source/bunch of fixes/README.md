@@ -3178,4 +3178,26 @@ Replace <br>
 		return false;
 	}
 
+Open(MMatchConfig.cpp) <br>
+Find <br>
+
+	if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_NORMAL)) m_nServerMode = MSM_NORMALS;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_CLAN)) m_nServerMode = MSM_CLAN;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_LADDER)) m_nServerMode = MSM_LADDER;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_EVENT)) m_nServerMode = MSM_EVENT;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_TEST)) m_nServerMode = MSM_CLAN;
+
+	m_bEnabledSurvivalMode = (0 != GetPrivateProfileInt("SERVER", "SURVIVALENABLE", 1, SERVER_CONFIG_FILENAME));
+
+Replace <br>
+
+	if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_NORMAL)) m_nServerMode = MSM_NORMALS;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_CLAN)) m_nServerMode = MSM_CLAN;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_LADDER)) m_nServerMode = MSM_LADDER;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_EVENT)) m_nServerMode = MSM_EVENT;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_TEST)) m_nServerMode = MSM_CLAN;
+	else { _ASSERT(0); }
+
+	m_bEnabledSurvivalMode = (0 != GetPrivateProfileInt("SERVER", "SURVIVALENABLE", 1, SERVER_CONFIG_FILENAME));
+
 
