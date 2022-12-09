@@ -453,6 +453,156 @@ Add under <br>
 		return;
 	}
 
+Open(MMatchServer.h) <br>
+Find <br>
+
+	void OnQuestRequestDead(const MUID& uidVictim);
+
+Copy and Paste too <br>
+
+	public :
+		void OnRequestCharQuestItemList( const MUID& uidSender );
+		void OnQuestRequestDead(const MUID& uidVictim);
+
+Open(MMatchRuleQuest.h) <br>
+Find <br>
+
+	virtual bool CheckNPCSpawnEnable()
+
+Add under <br>
+
+	virtual void RouteGameInfo();
+	virtual void RouteGameInfoToSingle(MUID& uidPlayer);
+
+Find <br>
+
+	virtual MMATCH_GAMETYPE GetGameType() { return MMATCH_GAMETYPE_QUEST; }
+
+Add under <br>
+
+	virtual void PostNPCInfoForSingle(MUID& uidPlayer);
+
+
+Open(MMatchRuleSurvival.cpp) <br>
+Find <br>
+
+	void MMatchRuleSurvival::RouteGameInfo()
+
+Add under <br>
+
+	void MMatchRuleSurvival::RouteGameInfoToSingle(MUID& uidPlayer)
+	{
+		MCommand* pCmd = MMatchServer::GetInstance()->CreateCommand(MC_QUEST_GAME_INFO, MUID(0,0));
+
+		void* pBlobGameInfoArray = MMakeBlobArray(sizeof(MTD_QuestGameInfo), 1);
+		MTD_QuestGameInfo* pGameInfoNode = (MTD_QuestGameInfo*)MGetBlobArrayElement(pBlobGameInfoArray, 0);
+
+		if (m_pQuestLevel)
+		{
+			m_pQuestLevel->Make_MTDQuestGameInfo(pGameInfoNode, MMATCH_GAMETYPE_SURVIVAL);
+		}
+
+		pCmd->AddParameter(new MCommandParameterBlob(pBlobGameInfoArray, MGetBlobArraySize(pBlobGameInfoArray)));
+		MEraseBlobArray(pBlobGameInfoArray);
+
+		MMatchObject* pObj = MMatchServer::GetInstance()->GetObject(uidPlayer);
+		if(!IsEnabledObject(pObj)) return;
+		MMatchServer::GetInstance()->RouteToListener(pObj, pCmd);
+	}
+
+Find <br>
+
+	const bool MMatchRuleSurvival::PostNPCInfo()
+
+Add under <br>
+
+	void MMatchRuleSurvival::PostNPCInfoForSingle(MUID& uidPlayer)
+	{
+		MMatchQuest*		pQuest			= MMatchServer::GetInstance()->GetQuest();
+		MQuestScenarioInfo* pScenarioInfo	= pQuest->GetSurvivalScenarioInfo( m_StageGameInfo.nScenarioID );
+
+		if( NULL == pScenarioInfo )
+		{
+			return;
+		}
+
+		void* pBlobNPC = MMakeBlobArray(sizeof(MTD_NPCINFO), int(m_vecNPCInThisScenario.size()) );
+		if( NULL == pBlobNPC || m_vecNPCInThisScenario.size() == 0 )
+		{
+			return;
+		}
+
+		vector< MQUEST_NPC >::iterator	itNL;
+		vector< MQUEST_NPC >::iterator	endNL;
+		MQuestNPCInfo*					pQuestNPCInfo		= NULL;
+		int								nNPCIndex			= 0;
+		MTD_NPCINFO*					pMTD_QuestNPCInfo	= NULL;
+		ItorReinforedNPCStat			itStat;
+
+		endNL = m_vecNPCInThisScenario.end();
+		for( itNL = m_vecNPCInThisScenario.begin(); endNL != itNL; ++ itNL )
+		{
+			pQuestNPCInfo = pQuest->GetNPCInfo( (*itNL) );	
+			if( NULL == pQuestNPCInfo )
+			{
+				MEraseBlobArray( pBlobNPC );
+				return;
+			}
+
+			pMTD_QuestNPCInfo = reinterpret_cast< MTD_NPCINFO* >( MGetBlobArrayElement(pBlobNPC, nNPCIndex++) );
+			if( NULL == pMTD_QuestNPCInfo )
+			{
+				//_ASSERT( 0 );
+				MEraseBlobArray( pBlobNPC );
+				return;
+			}
+
+			CopyMTD_NPCINFO( pMTD_QuestNPCInfo, pQuestNPCInfo );
+
+			if (m_pQuestLevel)
+			{
+				// ±âº» NPCÁ¤º¸ À§¿¡ ½Ã³ª¸®¿À ¹Ýº¹¿¡ µû¶ó °­È­µÈ ´É·ÂÄ¡¸¦ µ¤¾î¾´´Ù
+				itStat = m_mapReinforcedNPCStat.find((*itNL));
+				if (itStat != m_mapReinforcedNPCStat.end())
+				{
+					pMTD_QuestNPCInfo->m_nMaxAP = (int)itStat->second.fMaxAP;
+					pMTD_QuestNPCInfo->m_nMaxHP = (int)itStat->second.fMaxHP; 
+				}
+			}
+					//_ASSERT(0);
+			}
+
+		MCommand* pCmdNPCList = MGetMatchServer()->CreateCommand( MC_QUEST_NPCLIST, MUID(0, 0) );
+		if( NULL == pCmdNPCList )
+		{
+			MEraseBlobArray( pBlobNPC );
+			return;
+		}
+
+		pCmdNPCList->AddParameter( new MCommandParameterBlob(pBlobNPC, MGetBlobArraySize(pBlobNPC)) );
+		pCmdNPCList->AddParameter( new MCommandParameterInt(GetGameType()) );
+
+		MMatchObject* pObj = MMatchServer::GetInstance()->GetObject(uidPlayer);
+
+		if(!IsEnabledObject(pObj)) return;
+
+		MGetMatchServer()->RouteToListener(pObj, pCmdNPCList );
+
+		MEraseBlobArray( pBlobNPC );
+
+		return;
+	}
+
+Open(MMatchRuleSurvival.h) <br>
+Find <br>
+
+	virtual void RouteGameInfo();
+
+Add under <br>
+
+	virtual void RouteGameInfoToSingle(MUID& uidPlayer);
+
+
 
 
 
