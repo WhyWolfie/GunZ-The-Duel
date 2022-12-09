@@ -197,6 +197,7 @@ GunZ The Duel Releases <br>
 - remove ¿î¿µÀÚ and °³¹ßÀÚ not ready: [remove ¿î¿µÀÚ and °³¹ßÀÚ not ready](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remove%20administrator%20is%20not%20ready)
 - remember password at login: [remember password at login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remember%20password)
 - clan 8 players: [clan 8 players](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clanwar%208%20players)
+- duel admin hidden in que: [duel admin hidden in que](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20hidden%20admin)
 
 
 (anticheat and such) <br>
