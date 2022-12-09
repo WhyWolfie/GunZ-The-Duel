@@ -3371,9 +3371,23 @@ Replace <br>
 
 	m_Monitor.OnPostAsyncCpuUsage(pJob->GetProtocolID(), pJob->GetTaskName(), uiCpuUsage);
 
+Open(ZStageInterface.cpp) <br>
+Find <br>
 
+	if( !xmlQuestItemDesc.LoadFromMemory( buffer))
+	{
+		xmlQuestItemDesc.Destroy();
+		return false;
+	}
 
+Replace <br>
 
+	if( !xmlQuestItemDesc.LoadFromMemory( buffer))
+	{
+		delete[] buffer;
+		xmlQuestItemDesc.Destroy();
+		return false;
+	}
 
 
 
