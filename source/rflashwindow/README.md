@@ -120,6 +120,10 @@ Add Above <br>
     }
     #endif
 
+Open(stdafx.h) <br>
+Add <br>
+
+	#define _RFLASH
 
 
 
