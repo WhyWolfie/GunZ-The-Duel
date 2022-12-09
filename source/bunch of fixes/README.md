@@ -3052,7 +3052,24 @@ Replace <br>
 		if(pCharacter==NULL || pCharacter->GetSelectItemDesc() == NULL) return SEM_None;
 
 
+Open(MMatchStage.cpp) <br>
+Find <br>
 
+	if (count == 0 && !MMATCH_GAMETYPE_DUEL)
+	{
+		pRelayMapList[0].nMapID = MMATCH_MAP_MANSION;
+		count = 1;
+	}else{
+		pRelayMapList[0].nMapID = MMATCH_MAP_HALL;
+		count = 1;
+	}
 
+Replace <br>
+
+	if (count == 0)
+	{
+		pRelayMapList[0].nMapID = MMATCH_MAP_MANSION;
+		count = 1;
+	}
 
 
