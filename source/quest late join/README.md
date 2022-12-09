@@ -305,4 +305,156 @@ Replace <br>
     }
 
 
+Open(MMatchRuleBaseQuest.h) <br>
+Find <br>
+
+	class MMatchQuestGameLogInfoManager;
+
+Replace <br>
+
+	//class MMatchQuestGameLogInfoManager;
+
+Find <br>
+
+	virtual void RouteGameInfo() = 0;
+
+Add under <br>
+
+	virtual void RouteGameInfoToSingle(MUID& uidPlayer) = 0;
+
+Find <br>
+
+	public:
+		MMatchRuleBaseQuest(MMatchStage* pStage);			///< »ý¼ºÀÚ
+		virtual ~MMatchRuleBaseQuest();						///< ¼Ò¸êÀÚ
+		virtual void OnEnterBattle(MUID& uidChar);			///< °ÔÀÓÁß ³­ÀÔÇÒ¶§ È£ÃâµÈ´Ù.
+		virtual void OnLeaveBattle(MUID& uidChar);			///< °ÔÀÓÁß ³ª°¬À»¶§ È£ÃâµÈ´Ù.
+
+		virtual void RefreshStageGameInfo() = 0;
+	};
+
+Replace <br>
+
+	public:
+		MMatchRuleBaseQuest(MMatchStage* pStage);			///< »ý¼ºÀÚ
+		virtual ~MMatchRuleBaseQuest();						///< ¼Ò¸êÀÚ
+		virtual void OnEnterBattle(MUID& uidChar);			///< °ÔÀÓÁß ³­ÀÔÇÒ¶§ È£ÃâµÈ´Ù.
+		virtual void OnQuestEnterBattle(MUID& uidChar);			///< °ÔÀÓÁß ³­ÀÔÇÒ¶§ È£ÃâµÈ´Ù.
+		virtual void PostNPCInfoForSingle(MUID& uidPlayer) {}
+		virtual void OnQuestStageLaunch();			///< °ÔÀÓÁß ³­ÀÔÇÒ¶§ È£ÃâµÈ´Ù.
+		virtual void OnLeaveBattle(MUID& uidChar);			///< °ÔÀÓÁß ³ª°¬À»¶§ È£ÃâµÈ´Ù.
+		MQuestPlayerManager* GetPlayerManager() { return &m_PlayerManager; }
+
+		virtual void RefreshStageGameInfo() = 0;
+	};
+
+Open(MMatchRuleQuest.cpp) <br>
+Find <br>
+
+	void MMatchRuleQuest::RouteGameInfo()
+
+Add under <br>
+
+	void MMatchRuleQuest::RouteGameInfoToSingle(MUID& uidPlayer)
+	{
+		MCommand* pCmd = MMatchServer::GetInstance()->CreateCommand(MC_QUEST_GAME_INFO, MUID(0,0));
+
+		void* pBlobGameInfoArray = MMakeBlobArray(sizeof(MTD_QuestGameInfo), 1);
+		MTD_QuestGameInfo* pGameInfoNode = (MTD_QuestGameInfo*)MGetBlobArrayElement(pBlobGameInfoArray, 0);
+
+		if (m_pQuestLevel)
+		{
+			m_pQuestLevel->Make_MTDQuestGameInfo(pGameInfoNode, MMATCH_GAMETYPE_QUEST);
+		}
+
+		pCmd->AddParameter(new MCommandParameterBlob(pBlobGameInfoArray, MGetBlobArraySize(pBlobGameInfoArray)));
+		MEraseBlobArray(pBlobGameInfoArray);
+
+		MMatchObject* pObj = MMatchServer::GetInstance()->GetObject(uidPlayer);
+		if(!IsEnabledObject(pObj)) return;
+
+		MMatchServer::GetInstance()->RouteToListener(pObj, pCmd);
+	}
+
+Find <br> 
+
+	const bool MMatchRuleQuest::PostNPCInfo()
+
+Add under <br>
+
+	void MMatchRuleQuest::PostNPCInfoForSingle(MUID& uidPlayer)
+	{
+		MMatchQuest*		pQuest			= MMatchServer::GetInstance()->GetQuest();
+		MQuestScenarioInfo* pScenarioInfo	= pQuest->GetScenarioInfo( m_StageGameInfo.nScenarioID );
+		if( NULL == pScenarioInfo )
+		{
+			return;
+		}
+
+		vector< MQUEST_NPC > NPCList;
+
+		for( size_t i = 0; i < SCENARIO_STANDARD_DICE_SIDES; ++i )
+		{
+			MakeJacoNPCList( NPCList, pScenarioInfo->Maps[i] );
+			MakeNomalNPCList( NPCList, pScenarioInfo->Maps[i], pQuest );
+		}
+
+		void* pBlobNPC = MMakeBlobArray(sizeof(MTD_NPCINFO), int(NPCList.size()) );
+		if( NULL == pBlobNPC )
+		{
+			return;
+		}
+
+		vector< MQUEST_NPC >::iterator	itNL;
+		vector< MQUEST_NPC >::iterator	endNL;
+		MQuestNPCInfo*					pQuestNPCInfo		= NULL;
+		int								nNPCIndex			= 0;
+		MTD_NPCINFO*					pMTD_QuestNPCInfo	= NULL;
+
+		endNL = NPCList.end();
+		for( itNL = NPCList.begin(); endNL != itNL; ++ itNL )
+		{
+			pQuestNPCInfo = pQuest->GetNPCInfo( (*itNL) );	
+			if( NULL == pQuestNPCInfo )
+			{
+				MEraseBlobArray( pBlobNPC );
+				return;
+			}
+
+			pMTD_QuestNPCInfo = reinterpret_cast< MTD_NPCINFO* >( MGetBlobArrayElement(pBlobNPC, nNPCIndex++) );
+			if( NULL == pMTD_QuestNPCInfo )
+			{
+				//_ASSERT( 0 );
+				MEraseBlobArray( pBlobNPC );
+				return;
+			}
+
+			CopyMTD_NPCINFO( pMTD_QuestNPCInfo, pQuestNPCInfo );
+		}
+
+		MCommand* pCmdNPCList = MGetMatchServer()->CreateCommand( MC_QUEST_NPCLIST, MUID(0, 0) );
+		if( NULL == pCmdNPCList )
+		{
+			MEraseBlobArray( pBlobNPC );
+			return;
+		}
+
+		pCmdNPCList->AddParameter( new MCommandParameterBlob(pBlobNPC, MGetBlobArraySize(pBlobNPC)) );
+		pCmdNPCList->AddParameter( new MCommandParameterInt(GetGameType()) );
+
+		MMatchObject* pObj = MMatchServer::GetInstance()->GetObject(uidPlayer);
+
+		if(!IsEnabledObject(pObj)) return;
+
+		MGetMatchServer()->RouteToListener(pObj, pCmdNPCList );
+
+		MEraseBlobArray( pBlobNPC );
+
+		return;
+	}
+
+
+
+
+
 
