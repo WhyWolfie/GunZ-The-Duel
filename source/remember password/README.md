@@ -47,13 +47,144 @@ Add under <br>
 		</BOUNDS>
 	</BUTTON>
 
+Open(ZGameInterface.cpp) <br>
+Find <br>
 
+	void ZGameInterface::OnLoginDestroy(void)
 
+Add under <br>
 
+	void ZGameInterface::OnLoginDestroy(void)
+	{
+		ShowWidget("Login", false);
 
+		MWidget* pWidget = m_IDLResource.FindWidget("LoginID");
+		if (pWidget)
+		{
+			// �α��� �����ϸ� write �ؾ� �ϳ�.. ���� check out ����� ����� -_-;
+			ZGetApplication()->SetSystemValue("LoginID", pWidget->GetText());
 
+			if (m_pBackground)
+				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
+		}
 
+		pWidget = m_IDLResource.FindWidget("LoginPassword");
+		if (pWidget)
+		{
+			MButton* pw = (MButton*)m_IDLResource.FindWidget("LoginRememberPass");
 
+			if (pw && pWidget)
+			{
+				if (pw->GetCheck())
+				{
+
+					ZGetApplication()->SetSystemValue("LoginPassword", pWidget->GetText());
+				}
+				else
+				{
+					ZGetApplication()->SetSystemValue("LoginPassword", "");
+				}
+			}
+
+			if (m_pBackground)
+				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
+		}
+
+		// ��� �̹����� �޸𸮷κ��� �����Ѵ�
+		if (m_pLoginBG != NULL)
+		{
+			// ��� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
+			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_BackgrdImg");
+			if (pPicture)
+				pPicture->SetBitmap(NULL);
+
+			delete m_pLoginBG;
+			m_pLoginBG = NULL;
+		}
+
+		// �г� �̹����� �޸𸮷κ��� �����Ѵ�
+		if (m_pLoginPanel != NULL)
+		{
+			// �г� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
+			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_Panel");
+			if (pPicture)
+				pPicture->SetBitmap(NULL);
+
+			delete m_pLoginPanel;
+			m_pLoginPanel = NULL;
+		}
+
+		ZGetShop()->Destroy();
+	}
+
+Find <br>
+
+	void ZGameInterface::OnLoginDestroy(void)
+
+Replace <br>
+
+	void ZGameInterface::OnLoginDestroy(void)
+	{
+		ShowWidget("Login", false);
+
+		MWidget* pWidget = m_IDLResource.FindWidget("LoginID");
+		if (pWidget)
+		{
+			// �α��� �����ϸ� write �ؾ� �ϳ�.. ���� check out ����� ����� -_-;
+			ZGetApplication()->SetSystemValue("LoginID", pWidget->GetText());
+
+			if (m_pBackground)
+				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
+		}
+
+		pWidget = m_IDLResource.FindWidget("LoginPassword");
+		if (pWidget)
+		{
+			MButton* pw = (MButton*)m_IDLResource.FindWidget("LoginRememberPass");
+
+			if (pw && pWidget)
+			{
+				if (pw->GetCheck())
+				{
+
+					ZGetApplication()->SetSystemValue("LoginPassword", pWidget->GetText());
+				}
+				else
+				{
+					ZGetApplication()->SetSystemValue("LoginPassword", "");
+				}
+			}
+
+			if (m_pBackground)
+				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
+		}
+
+		// ��� �̹����� �޸𸮷κ��� �����Ѵ�
+		if (m_pLoginBG != NULL)
+		{
+			// ��� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
+			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_BackgrdImg");
+			if (pPicture)
+				pPicture->SetBitmap(NULL);
+
+			delete m_pLoginBG;
+			m_pLoginBG = NULL;
+		}
+
+		// �г� �̹����� �޸𸮷κ��� �����Ѵ�
+		if (m_pLoginPanel != NULL)
+		{
+			// �г� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
+			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_Panel");
+			if (pPicture)
+				pPicture->SetBitmap(NULL);
+
+			delete m_pLoginPanel;
+			m_pLoginPanel = NULL;
+		}
+
+		ZGetShop()->Destroy();
+	}
 
 
 
