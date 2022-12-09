@@ -61,7 +61,6 @@ Replace <br>
 		MWidget* pWidget = m_IDLResource.FindWidget("LoginID");
 		if (pWidget)
 		{
-			// �α��� �����ϸ� write �ؾ� �ϳ�.. ���� check out ����� ����� -_-;
 			ZGetApplication()->SetSystemValue("LoginID", pWidget->GetText());
 
 			if (m_pBackground)
@@ -90,10 +89,8 @@ Replace <br>
 				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
 		}
 
-		// ��� �̹����� �޸𸮷κ��� �����Ѵ�
 		if (m_pLoginBG != NULL)
 		{
-			// ��� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
 			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_BackgrdImg");
 			if (pPicture)
 				pPicture->SetBitmap(NULL);
@@ -102,10 +99,8 @@ Replace <br>
 			m_pLoginBG = NULL;
 		}
 
-		// �г� �̹����� �޸𸮷κ��� �����Ѵ�
 		if (m_pLoginPanel != NULL)
 		{
-			// �г� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
 			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_Panel");
 			if (pPicture)
 				pPicture->SetBitmap(NULL);
