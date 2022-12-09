@@ -3096,9 +3096,86 @@ Replace <br>
 					mlog("Making Ack Msg Failed. (Error code = %x)\n", dwRet);*/
 
 
+Open(MBaseChannelRule.cpp) <br>
+Find <br>
 
+	bool MChannelRuleMapList::Exist(int nMapID, bool bOnlyDuel)
+	{
+		set<int>::iterator itor = m_Set.find( nMapID);
 
+		if ( itor != m_Set.end())
+		{
+			int id = (*itor);
+			if ( !bOnlyDuel && MGetMapDescMgr()->IsMapOnlyDuel(id)) return false;
+			if ( bOnlyDuel && !MGetMapDescMgr()->IsMapOnlyDuel(id)) return false;
+			return true;
+		}
 
+		return false;
+	}
 
+Replace <br>
+
+	bool MChannelRuleMapList::Exist(int nMapID, bool bOnlyDuel)
+	{
+		set<int>::iterator itor = m_Set.find( nMapID);
+
+		if ( itor != m_Set.end())
+		{
+			int id = (*itor);
+
+			if ( !bOnlyDuel && MGetMapDescMgr()->IsMapOnlyDuel(id))
+				return false;
+
+			return true;
+		}
+
+		return false;
+	}
+
+Find <br>
+
+	bool MChannelRuleMapList::Exist(const char* pszMapName, bool bOnlyDuel)
+	{
+		for (set<int>::iterator itor = m_Set.begin(); itor != m_Set.end(); ++itor)
+		{
+			int id = (*itor);
+
+			if ((id >= 0) && (id < MMATCH_MAP_MAX))
+			{
+				if ( !stricmp(pszMapName, MGetMapDescMgr()->GetMapName(id)) )
+				{
+					if ( !bOnlyDuel && MGetMapDescMgr()->IsMapOnlyDuel(id)) return false;
+					if ( bOnlyDuel && !MGetMapDescMgr()->IsMapOnlyDuel(id)) return false;
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+Replace <br>
+
+	bool MChannelRuleMapList::Exist(const char* pszMapName, bool bOnlyDuel)
+	{
+		for (set<int>::iterator itor = m_Set.begin(); itor != m_Set.end(); ++itor)
+		{
+			int id = (*itor);
+
+			if ((id >= 0) && (id < MMATCH_MAP_MAX))
+			{
+				if ( !stricmp(pszMapName, MGetMapDescMgr()->GetMapName(id)) )
+				{
+					if ( !bOnlyDuel && MGetMapDescMgr()->IsMapOnlyDuel(id))
+						return false;
+
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
 
 
