@@ -3389,14 +3389,157 @@ Replace <br>
 		return false;
 	}
 
+Open(MMatchConfig.cpp) <br>
+Find <br>
+
+	if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_NORMAL)) m_nServerMode = MSM_NORMALS;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_CLAN)) m_nServerMode = MSM_CLAN;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_LADDER)) m_nServerMode = MSM_LADDER;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_EVENT)) m_nServerMode = MSM_EVENT;
+	else if (!stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_TEST)) m_nServerMode = MSM_TEST;
+	else { _ASSERT(0); }
+
+Replace <br>
+
+	if (!_stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_NORMAL)) m_nServerMode = MSM_NORM;
+	else if (!_stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_CLAN)) m_nServerMode = MSM_CLAN;
+	else if (!_stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_LADDER)) m_nServerMode = MSM_LADDER;
+	else if (!_stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_EVENT)) m_nServerMode = MSM_EVENT;
+	else if (!_stricmp(szServerMode, SERVER_CONFIG_SERVERMODE_TEST)) m_nServerMode = MSM_TEST;
+	else { _ASSERT(0); }
+
+Find <br>
+
+	if( 0 == stricmp("0", szDebug) )
+
+Replace <br>
+
+	if( 0 == _stricmp("0", szDebug) )
+
+Find <br>
+
+	if( 0 == stricmp("r", szNHNServerMode) )
+	{
+		m_NHNServerMode = NSM_REAL;
+		//mlog( "nhn server mode is real\n" );
+	}
+	else if( 0 == stricmp("a", szNHNServerMode) )
+	{
+		m_NHNServerMode = NSM_ALPHA;
+		//mlog( "nhn server mode is alpha\n" );
+	}
+
+Replace <br>
+
+	if( 0 == _stricmp("r", szNHNServerMode) )
+	{
+		m_NHNServerMode = NSM_REAL;
+		//mlog( "nhn server mode is real\n" );
+	}
+	else if( 0 == _stricmp("a", szNHNServerMode) )
+	{
+		m_NHNServerMode = NSM_ALPHA;
+		//mlog( "nhn server mode is alpha\n" );
+	}
+
+Find <br>
+
+	if( 0 == stricmp("1", szUseHShield) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szUseHShield) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szUseXTrap) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szUseXTrap) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szUseEvent) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szUseEvent) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szUseFileCrc) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szUseFileCrc) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szUseMD5) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szUseMD5) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szBlockFlooding) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szBlockFlooding) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szBlockHacking) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szBlockHacking) )
+
+Find <br>
+
+	if( 0 == stricmp("1", szItemConsistency) )	m_bIsUseItemConsistency = true;
+	else										m_bIsUseItemConsistency = false;
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szItemConsistency) )	m_bIsUseItemConsistency = true;
+	else										m_bIsUseItemConsistency = false;
+	
+Find <br>
+
+	if( 0 == stricmp("1", szUseResourceCRC32CacheCheck) )
+
+Replace <br>
+
+	if( 0 == _stricmp("1", szUseResourceCRC32CacheCheck) )
+
+Find <br>
+
+	if (stricmp("1", szUseLoopLog) == 0)
+
+Replace <br>
+
+	if (_stricmp("1", szUseLoopLog) == 0)
+
+Find <br>
+
+			if (!stricmp(szInputMapName, MGetMapDescMgr()->GetMapName(i)))
+			{
+				nMapIndex = i;
+				break;
+			}
 
 
+Replace <br>
 
-
-
-
-
-
+			if (!_stricmp(szInputMapName, MGetMapDescMgr()->GetMapName(i)))
+			{
+				nMapIndex = i;
+				break;
+			}
 
 
 
