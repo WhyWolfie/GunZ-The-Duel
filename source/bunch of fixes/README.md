@@ -3328,8 +3328,39 @@ Replace <br>
 		buffer = NULL; 
 	}
 
+Open(MTeamGameStrategy.cpp) <br>
+Find <br>
 
+	MBaseTeamGameStrategy* MBaseTeamGameStrategy::GetInstance(MMatchServerMode nServerMode)
+	{
+		switch (nServerMode)
+		{
+		case MSM_LADDER:
+			return MLadderGameStrategy::GetInstance();
+		case MSM_CLAN:
+			return MClanGameStrategy::GetInstance();
+		default:
+			{
+			}
+		}
+		return NULL;
+	}
 
+Replace <br>
+
+	MBaseTeamGameStrategy* MBaseTeamGameStrategy::GetInstance(MMatchServerMode nServerMode)
+	{
+		switch (nServerMode)
+		{
+		case MSM_LADDER:
+			return MLadderGameStrategy::GetInstance();
+		case MSM_CLAN:
+			return MClanGameStrategy::GetInstance();
+		default:
+			_ASSERT(0);
+		}
+		return NULL;
+	}
 
 
 
