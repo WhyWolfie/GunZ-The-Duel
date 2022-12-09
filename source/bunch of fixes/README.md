@@ -3080,4 +3080,25 @@ Replace <br>
 
 	nRelayMapListCount = 26;
 
+Open(ZGameClient_OnCommand.cpp) <br>
+Find <br>
+
+				DWORD dwRet = _AhnHS_MakeAckMsg(pReqMsg, ZGetMyInfo()->GetSystemInfo()->pbyAckMsg);
+
+				if(dwRet != ERROR_SUCCESS)
+					mlog("Making Ack Msg Failed. (Error code = %x)\n", dwRet);
+
+Replace <br>
+
+				/*DWORD dwRet = _AhnHS_MakeAckMsg(pReqMsg, ZGetMyInfo()->GetSystemInfo()->pbyAckMsg);
+
+				if(dwRet != ERROR_SUCCESS)
+					mlog("Making Ack Msg Failed. (Error code = %x)\n", dwRet);*/
+
+
+
+
+
+
+
 
