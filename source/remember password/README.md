@@ -119,71 +119,33 @@ Add under <br>
 
 Find <br>
 
-	void ZGameInterface::OnLoginDestroy(void)
-
-Replace <br>
-
-	void ZGameInterface::OnLoginDestroy(void)
+	MWidget* pWidget = m_IDLResource.FindWidget("LoginID");
+	if (pWidget)
 	{
-		ShowWidget("Login", false);
+		char buffer[256];
+		if (ZGetApplication()->GetSystemValue("LoginID", buffer))
+			pWidget->SetText(buffer);
+	}
 
-		MWidget* pWidget = m_IDLResource.FindWidget("LoginID");
-		if (pWidget)
+Add under <br>
+
+	pWidget = m_IDLResource.FindWidget("LoginPassword");
+	if (pWidget)
+	{
+		char buffer[256];
+		MButton* pw = (MButton*)m_IDLResource.FindWidget("LoginRememberPass");
+
+		if (ZGetApplication()->GetSystemValue("LoginPassword", buffer))
 		{
-			// �α��� �����ϸ� write �ؾ� �ϳ�.. ���� check out ����� ����� -_-;
-			ZGetApplication()->SetSystemValue("LoginID", pWidget->GetText());
-
-			if (m_pBackground)
-				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
-		}
-
-		pWidget = m_IDLResource.FindWidget("LoginPassword");
-		if (pWidget)
-		{
-			MButton* pw = (MButton*)m_IDLResource.FindWidget("LoginRememberPass");
-
-			if (pw && pWidget)
+			pWidget->SetText(buffer);
+			if (pw)
 			{
-				if (pw->GetCheck())
-				{
-
-					ZGetApplication()->SetSystemValue("LoginPassword", pWidget->GetText());
-				}
+				if (strcmp(buffer, "") == 0)
+					pw->SetCheck(false);
 				else
-				{
-					ZGetApplication()->SetSystemValue("LoginPassword", "");
-				}
+					pw->SetCheck(true);
 			}
-
-			if (m_pBackground)
-				m_pBackground->SetScene(LOGIN_SCENE_FALLDOWN);
 		}
-
-		// ��� �̹����� �޸𸮷κ��� �����Ѵ�
-		if (m_pLoginBG != NULL)
-		{
-			// ��� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
-			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_BackgrdImg");
-			if (pPicture)
-				pPicture->SetBitmap(NULL);
-
-			delete m_pLoginBG;
-			m_pLoginBG = NULL;
-		}
-
-		// �г� �̹����� �޸𸮷κ��� �����Ѵ�
-		if (m_pLoginPanel != NULL)
-		{
-			// �г� �̹����� �����ִ� ������ ��Ʈ�� �̹��� �����͸� �����Ѵ�
-			MPicture* pPicture = (MPicture*)m_IDLResource.FindWidget("Login_Panel");
-			if (pPicture)
-				pPicture->SetBitmap(NULL);
-
-			delete m_pLoginPanel;
-			m_pLoginPanel = NULL;
-		}
-
-		ZGetShop()->Destroy();
 	}
 
 
