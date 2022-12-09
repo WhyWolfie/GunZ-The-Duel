@@ -744,6 +744,19 @@ Replace <br>
 		}
 	}
 
+Open(MMatchStage.cpp) <br>
+Find <br>
+
+
+			if(_GetUserGradeIDName(pObj->GetAccountInfo()->m_nUGrade,sp_name))  szName = sp_name;
+			else																szName = pObj->GetName();
+
+Replace <br>
+
+	szName = pObj->GetName();
+
+
+
 Lobby
 ![lobby](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/hide%20administrator%20level/lobby.jpg)
 Gameroom
