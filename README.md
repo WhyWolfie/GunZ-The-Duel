@@ -279,6 +279,7 @@ GunZ The Duel Releases <br>
 - hwid: [hwid](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hwid%20ban)
 - admin_slap: [admin_slap](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_slap)
 - admin_pause: [admin_pause](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_pauze)
+- quest late join: [quest late join](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20late%20join)
 
 <br>
 
