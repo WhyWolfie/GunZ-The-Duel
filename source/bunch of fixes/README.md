@@ -3200,4 +3200,151 @@ Replace <br>
 
 	m_bEnabledSurvivalMode = (0 != GetPrivateProfileInt("SERVER", "SURVIVALENABLE", 1, SERVER_CONFIG_FILENAME));
 
+Open(MMatchMap.cpp) <br> 
+Find <br>
+
+		for (int i = 0; i < iCount; i++)
+		{
+			aChild = aParent.GetChildNode(i);
+			aChild.GetTagName(szTagName);
+			if(stricmp(szTagName,MMAP_MAP)==0)
+			{
+				if (szTagName[0] == '#') continue;
+
+				//_ASSERT( 0 <= num && num < MMATCH_MAP_COUNT);
+
+				aChild.GetAttribute(&m_MapVectors[num].nMapID, MMAP_ID);
+				aChild.GetAttribute(m_MapVectors[num].szMapName , MMAP_NAME);
+				aChild.GetAttribute(m_MapVectors[num].szMapImageName , MMAP_IMAGENAME);
+				aChild.GetAttribute(m_MapVectors[num].szBannerName , MMAP_BANNERNAME);
+				aChild.GetAttribute(&m_MapVectors[num].fExpRatio , MMAP_EXPRATIO);
+				aChild.GetAttribute(&m_MapVectors[num].nMaxPlayers , MMAP_MAXPLAYERS);
+				aChild.GetAttribute(&m_MapVectors[num].bOnlyDuelMap , MMAP_ONLYDUELMAP);
+				aChild.GetAttribute(&m_MapVectors[num].bIsCTFMap , MMAP_ISCTFMAP);
+
+				num++;
+			}
+		}
+
+		return true;
+	}
+
+Replace <br>
+
+		for (int i = 0; i < iCount; i++)
+		{
+			aChild = aParent.GetChildNode(i);
+			aChild.GetTagName(szTagName);
+			if(stricmp(szTagName,MMAP_MAP)==0)
+			{
+				if (szTagName[0] == '#') continue;
+
+				_ASSERT( 0 <= num && num < MMATCH_MAP_COUNT);
+
+				if (num < 0 || num >= MMATCH_MAP_COUNT)
+					return false;
+
+				aChild.GetAttribute(&m_MapVectors[num].nMapID, MMAP_ID);
+				aChild.GetAttribute(m_MapVectors[num].szMapName , MMAP_NAME);
+				aChild.GetAttribute(m_MapVectors[num].szMapImageName , MMAP_IMAGENAME);
+				aChild.GetAttribute(m_MapVectors[num].szBannerName , MMAP_BANNERNAME);
+				aChild.GetAttribute(&m_MapVectors[num].fExpRatio , MMAP_EXPRATIO);
+				aChild.GetAttribute(&m_MapVectors[num].nMaxPlayers , MMAP_MAXPLAYERS);
+				aChild.GetAttribute(&m_MapVectors[num].bOnlyDuelMap , MMAP_ONLYDUELMAP);
+				aChild.GetAttribute(&m_MapVectors[num].bIsCTFMap, MMAP_ISCTFMAP);
+				num++;
+			}
+		}
+
+		return true;
+	}
+
+Find <br>
+
+	for (int i = 0; i < iCount; i++)
+	{
+		aChild = aParent.GetChildNode(i);
+		aChild.GetTagName(szTagName);
+		if(stricmp(szTagName,MMAP_MAP)==0)
+		{
+			if (szTagName[0] == '#') continue;
+
+			if (num >= MMATCH_MAP_COUNT)
+			{
+				_ASSERT(0);
+				return false;
+			}
+			
+			aChild.GetAttribute(&m_MapVectors[num].nMapID, MMAP_ID);
+			aChild.GetAttribute(m_MapVectors[num].szMapName , MMAP_NAME);
+			aChild.GetAttribute(m_MapVectors[num].szMapImageName , MMAP_IMAGENAME);
+			aChild.GetAttribute(m_MapVectors[num].szBannerName , MMAP_BANNERNAME);
+			aChild.GetAttribute(&m_MapVectors[num].fExpRatio , MMAP_EXPRATIO);
+			aChild.GetAttribute(&m_MapVectors[num].nMaxPlayers , MMAP_MAXPLAYERS);
+			aChild.GetAttribute(&m_MapVectors[num].bOnlyDuelMap , MMAP_ONLYDUELMAP);
+			aChild.GetAttribute(&m_MapVectors[num].bIsCTFMap, MMAP_ISCTFMAP);		
+			num++;
+		}
+	}
+    
+	if(buffer)
+	{
+		delete[] buffer;
+		buffer = NULL; 
+	}
+
+
+Replace <br>
+
+	for (int i = 0; i < iCount; i++)
+	{
+		aChild = aParent.GetChildNode(i);
+		aChild.GetTagName(szTagName);
+		if(stricmp(szTagName,MMAP_MAP)==0)
+		{
+			if (szTagName[0] == '#') continue;
+
+			if (num >= MMATCH_MAP_COUNT)
+			{
+				_ASSERT(0);
+				return false;
+			}
+			
+			aChild.GetAttribute(&m_MapVectors[num].nMapID, MMAP_ID);
+			aChild.GetAttribute(m_MapVectors[num].szMapName , MMAP_NAME);
+			aChild.GetAttribute(m_MapVectors[num].szMapImageName , MMAP_IMAGENAME);
+			aChild.GetAttribute(m_MapVectors[num].szBannerName , MMAP_BANNERNAME);
+			aChild.GetAttribute(&m_MapVectors[num].fExpRatio , MMAP_EXPRATIO);
+			aChild.GetAttribute(&m_MapVectors[num].nMaxPlayers , MMAP_MAXPLAYERS);
+			aChild.GetAttribute(&m_MapVectors[num].bOnlyDuelMap , MMAP_ONLYDUELMAP);
+			aChild.GetAttribute(&m_MapVectors[num].bIsCTFMap, MMAP_ISCTFMAP);		
+			num++;
+		}
+	}
+    
+	if(buffer)
+	{
+		delete[] buffer;
+		buffer = NULL; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
