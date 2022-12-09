@@ -3362,6 +3362,14 @@ Replace <br>
 		return NULL;
 	}
 
+Open(OnProcessAsyncJob.cpp) <br>
+Find <br>
+
+	//	m_Monitor.OnPostAsyncCpuUsage(pJob->GetProtocolID(), pJob->GetTaskName(), uiCpuUsage);
+
+Replace <br>
+
+	m_Monitor.OnPostAsyncCpuUsage(pJob->GetProtocolID(), pJob->GetTaskName(), uiCpuUsage);
 
 
 
