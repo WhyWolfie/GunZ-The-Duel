@@ -3559,10 +3559,11 @@ Replace <br>
 		MTD_BuffInfo* pBuffInfo = NULL;
 		int numElem = MGetBlobArrayCount(pBlobBuffInfo);
 
-		// patch
-		if (MGetBlobArraySize(pBlobBuffInfo) != (8 + (sizeof(MTD_BuffInfo) * numElem))) {
-			return;
-		}
+		//Exploit fix (MTD_PeerBuffInfo blob overflow)
+	    if (MGetBlobArraySize(pBlobBuffInfo) != (8 + (sizeof(MTD_BuffInfo) * numElem)))
+		{
+		return;
+	    }
 
 		for (int i=0; i<numElem; ++i)
 		{
@@ -3572,10 +3573,176 @@ Replace <br>
 		}
 	}
 
+Find <br>
 
+		else
+		{
+	// 		sprintf(szMsg, "%s´ÔÀÌ %s´ÔÀ¸·ÎºÎÅÍ ½Â¸®ÇÏ¿´½À´Ï´Ù.", szAttacker, szVictim );
+			ZTransMsg( szMsg, MSG_GAME_WHO_WIN_FROM_OTHER, 2, szAttacker, szVictim );
+			ZChatOutput(MCOLOR(0xFF707070), szMsg);
 
+			// Admin Grade
+			if (ZGetMyInfo()->IsAdminGrade()) {
+				MMatchObjCache* pCache = ZGetGameClient()->FindObjCache(ZGetMyUID());
+				if (pCache && pCache->CheckFlag(MTD_PlayerFlags_AdminHide))
+				{
+					sprintf( szMsg, "^%d%s^9 ½Â¸®,  ^%d%s^9 ÆÐ¹è",
+								(pAttacker->GetTeamID() == MMT_BLUE) ? 3 : 1, pAttacker->GetProperty()->GetName(),
+								(pVictim->GetTeamID() == MMT_BLUE) ? 3 : 1,   pVictim->GetProperty()->GetName());
+					ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg( szMsg);
+				}
+			}
+		}
+	}
 
+Replace <br>
 
+		else
+		{
+	 		//sprintf(szMsg, "%s´ÔÀÌ %s´ÔÀ¸·ÎºÎÅÍ ½Â¸®ÇÏ¿´½À´Ï´Ù.", szAttacker, szVictim );
+			ZTransMsg( szMsg, MSG_GAME_WHO_WIN_FROM_OTHER, 2, szAttacker, szVictim );
+			ZChatOutput(MCOLOR(0xFF707070), szMsg);
+
+			// Admin Grade
+			if (ZGetMyInfo()->IsAdminGrade()) {
+				MMatchObjCache* pCache = ZGetGameClient()->FindObjCache(ZGetMyUID());
+				if (pCache && pCache->CheckFlag(MTD_PlayerFlags_AdminHide))
+				{
+					//Changed string
+					sprintf( szMsg, "^%d%s^9 wins,  ^%d%s^9 loses", //sprintf( szMsg, "^%d%s^9 ½Â¸®,  ^%d%s^9 ÆÐ¹è",
+								(pAttacker->GetTeamID() == MMT_BLUE) ? 3 : 1, pAttacker->GetProperty()->GetName(),
+								(pVictim->GetTeamID() == MMT_BLUE) ? 3 : 1,   pVictim->GetProperty()->GetName());
+					ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg( szMsg);
+				}
+			}
+		}
+	}
+
+Find <br>
+
+		else
+		{
+			//sprintf(szMsg, "%s´ÔÀÌ ½º½º·Î ÆÐ¹èÇÏ¿´½À´Ï´Ù.", szAttacker);
+			ZTransMsg( szMsg, MSG_GAME_WHO_LOSE_SELF, 1, szAttacker );
+			ZChatOutput(MCOLOR(0xFF707070), szMsg);
+
+			// Admin Grade
+			if (ZGetMyInfo()->IsAdminGrade()) {
+				MMatchObjCache* pCache = ZGetGameClient()->FindObjCache(ZGetMyUID());
+				if (pCache && pCache->CheckFlag(MTD_PlayerFlags_AdminHide))
+				{
+					sprintf( szMsg, "^%d%s^9 ½º½º·Î ÆÐ¹è",
+									(pAttacker->GetTeamID() == MMT_BLUE) ? 3 : 1,
+									pAttacker->GetProperty()->GetName());
+					ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg( szMsg);
+				}
+			}
+		}
+
+	}
+
+Replace <br>
+
+		else
+		{
+			//sprintf(szMsg, "%s´ÔÀÌ ½º½º·Î ÆÐ¹èÇÏ¿´½À´Ï´Ù.", szAttacker);
+			ZTransMsg( szMsg, MSG_GAME_WHO_LOSE_SELF, 1, szAttacker );
+			ZChatOutput(MCOLOR(0xFF707070), szMsg);
+
+			// Admin Grade
+			if (ZGetMyInfo()->IsAdminGrade()) {
+				MMatchObjCache* pCache = ZGetGameClient()->FindObjCache(ZGetMyUID());
+				if (pCache && pCache->CheckFlag(MTD_PlayerFlags_AdminHide))
+				{
+					//Added pAttacker check (stupid MAIET)
+					if (pAttacker)
+					{
+						//Changed string
+						sprintf( szMsg, "^%d%s^9 has committed suicide.",//sprintf( szMsg, "^%d%s^9 ½º½º·Î ÆÐ¹è",
+										(pAttacker->GetTeamID() == MMT_BLUE) ? 3 : 1,
+										pAttacker->GetProperty()->GetName());
+						ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg( szMsg);
+					}
+					else
+					{
+						sprintf( szMsg, "^9%s^9 has committed suicide.", szAttacker);
+						ZGetGameInterface()->GetCombatInterface()->m_AdminMsg.OutputChatMsg( szMsg);
+					}
+				}
+			}
+		}
+
+	}
+
+Find <br>
+
+	bool ZGame::CanAttack(ZObject *pAttacker, ZObject *pTarget)
+
+Replace <br>
+
+	bool ZGame::CanAttack(ZObject *pAttacker, ZObject *pTarget)
+	{
+		//### ÀÌ ÇÔ¼ö¸¦ ¼öÁ¤ÇÏ¸é ¶È°°ÀÌ CanAttack_DebugRegister()¿¡µµ Àû¿ëÇØ ÁÖ¾î¾ß ÇÕ´Ï´Ù. ###
+		if(!IsReplay())
+			if(GetMatch()->GetRoundState() != MMATCH_ROUNDSTATE_PLAY) return false;
+		if(pAttacker==NULL) return true;
+
+		//Silly Gunz crash fix
+		if (pTarget == NULL)
+			return false;
+
+		if ( GetMatch()->IsTeamPlay() ) {
+			//Element crash bug fix. Not a really nice fix
+			__try
+			{
+				if (pAttacker->GetTeamID() == pTarget->GetTeamID()) {
+					if (!GetMatch()->GetTeamKillEnabled()) 
+						return false;
+				}
+			}
+			__except(EXCEPTION_EXECUTE_HANDLER) // GetExceptionCode() == EXCEPTION_ACCESS_VIOLATION 
+			{
+				mlog("MERROR_1\n");
+				return false;
+			}
+		}
+
+Find <br>
+
+	bool ZGame::CanAttack_DebugRegister(ZObject *pAttacker, ZObject *pTarget)
+	{
+
+Replace <br>
+
+	bool ZGame::CanAttack_DebugRegister(ZObject *pAttacker, ZObject *pTarget)
+	{
+		if(!IsReplay())
+			if(GetMatch()->GetRoundState() != MMATCH_ROUNDSTATE_PLAY) return false;
+		if(pAttacker==NULL) return true;
+
+		//Silly Gunz crash fix
+		if (pTarget == NULL)
+			return false;
+
+		if ( GetMatch()->IsTeamPlay() ) {
+			if (pAttacker->GetTeamID() == pTarget->GetTeamID()) {
+				if (!GetMatch()->GetTeamKillEnabled()) 
+					return false;
+			}
+		}
+
+	#ifdef _QUEST
+		if (ZGetGameTypeManager()->IsQuestDerived(ZGetGameClient()->GetMatchStageSetting()->GetGameType()))
+		{
+			if (pAttacker->GetTeamID() == pTarget->GetTeamID())
+			{
+				return false;
+			}
+		}
+
+	#endif
+		return true;
+	}
 
 
 
