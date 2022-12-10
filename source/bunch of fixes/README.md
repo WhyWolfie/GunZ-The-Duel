@@ -3541,6 +3541,44 @@ Replace <br>
 				break;
 			}
 
+Open(ZGame.cpp) <br>
+Find <br>
+
+	void ZGame::OnPeerBuffInfo(const MUID& uidSender, void* pBlobBuffInfo)
+
+Replace <br>
+
+	void ZGame::OnPeerBuffInfo(const MUID& uidSender, void* pBlobBuffInfo)
+	{
+		if (uidSender == ZGetMyUID()) return;
+
+		ZCharacter* pSender = ZGetCharacterManager()->Find(uidSender);
+		if (!pSender) return;
+		if (!pBlobBuffInfo) return;
+
+		MTD_BuffInfo* pBuffInfo = NULL;
+		int numElem = MGetBlobArrayCount(pBlobBuffInfo);
+
+		// patch
+		if (MGetBlobArraySize(pBlobBuffInfo) != (8 + (sizeof(MTD_BuffInfo) * numElem))) {
+			return;
+		}
+
+		for (int i=0; i<numElem; ++i)
+		{
+			pBuffInfo = (MTD_BuffInfo*)MGetBlobArrayElement(pBlobBuffInfo, i);
+
+			ApplyPotion(pBuffInfo->nItemId, pSender, (float)pBuffInfo->nRemainedTime);
+		}
+	}
+
+
+
+
+
+
+
+
 
 
 
