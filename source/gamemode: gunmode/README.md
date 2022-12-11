@@ -1,3 +1,4 @@
+Gamemode: Gunmode
 Open(MBaseGameType.h) <br>
 Find <br>
 
@@ -191,10 +192,39 @@ Add under <br>
 	void GunMode(ZCharacter* pCharacter, int GunLevel);
 	int AddGunLevel(){ return m_nGunLevel++; };
 
+Open(ZRuleDeathMatch.cpp) <br>
+Find <br>
 
+	ZRuleTeamDeathMatch::ZRuleTeamDeathMatch(ZMatch* pMatch) : ZRule(pMatch)
+	{
 
+	}
 
+Add under <br>
 
+	ZRuleGunMode::ZRuleGunMode(ZMatch* pMatch) : ZRule(pMatch)
+	{
+
+	}
+
+	ZRuleGunMode::~ZRuleGunMode()
+	{
+
+	}
+
+Open(ZRuleDeathMatch.cpp) <br>
+Find <br>
+
+	class ZRuleSoloDeathMatch : public ZRule
+
+Add under <br>
+
+	class ZRuleGunMode : public ZRule
+	{
+	public:
+		ZRuleGunMode(ZMatch* pMatch);
+		virtual ~ZRuleGunMode();
+	};
 
 
 
