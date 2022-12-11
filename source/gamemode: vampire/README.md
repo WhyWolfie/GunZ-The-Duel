@@ -343,6 +343,28 @@ Add under <br>
       virtual ~ZRuleVampire();
     };
 
+Open(ZRuleDeathMatch.cpp) <br>
+Find <br>
+
+	ZRuleSoloDeathMatch::ZRuleSoloDeathMatch(ZMatch* pMatch) : ZRule(pMatch)
+	{
+	}
+
+	ZRuleSoloDeathMatch::~ZRuleSoloDeathMatch()
+	{
+	}
+
+Add under <br>
+
+	/////////////////////////////////////////////////////////////////////////////////////////
+	ZRuleVampire::ZRuleVampire(ZMatch* pMatch) : ZRuleSoloDeathMatch(pMatch)
+	{
+	}
+
+	ZRuleVampire::~ZRuleVampire()
+	{
+	}
+
 
 [Extras] <br>
 Open(ZWorld.cpp) <br>
