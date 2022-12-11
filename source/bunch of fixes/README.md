@@ -3873,7 +3873,21 @@ Replace <br>
 	}
 
 
+Open(ZShopEquipItem.cpp) <br>
+Find <br>
 
+	static MMatchItemDesc nullItem;
+	MMatchItemDesc* pEquipedItemDesc = &nullItem;
+	MMatchCharItemParts parts = ZGetGameInterface()->GetShopEquipInterface()->RecommendEquipParts( m_pItemDesc->m_nSlot);
+	ZMyItemNode* pMyItemNode = ZGetMyInfo()->GetItemList()->GetEquipedItem( parts);
+	if ( pMyItemNode)
+		pEquipedItemDesc = MGetMatchItemDescMgr()->GetItemDesc( pMyItemNode->GetItemID());
+
+Add under <br>
+
+	//Shop equip bugfix
+	if (!pEquipedItemDesc)
+		return;
 
 
 
