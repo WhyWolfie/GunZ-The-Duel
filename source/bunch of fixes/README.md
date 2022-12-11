@@ -3978,9 +3978,19 @@ Replace <br>
 			sprintf( winning, "0.0%%");
 		}
 
+Open(ZItemSlotView.cpp) <br>
+Find <br>
 
+		unsigned long int nItemID = ZGetMyInfo()->GetItemList()->GetEquipedItemID(m_nParts);
+		MMatchItemDesc* pItemDesc = NULL;
+		if (nItemID != 0)
+		{
+			pItemDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemID);
 
+Add under <br>
 
+		//Item slot view bugfix crash
+		if (!pItemDesc) return false;
 
 
 
