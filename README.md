@@ -262,7 +262,7 @@ GunZ The Duel Releases <br>
 - playerwars: [playerwars](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/playerwars)
 - ninja: [ninja](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20ninja)
 - vampire: [vampire](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20vampire)
-
+- paintball: [paintball](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20paintball)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
