@@ -456,8 +456,26 @@ Add under <br>
 	};
 
 
+Do you have any errors <br>
+
+Open(MMatchRuleTraining.h) <br>
+Add <br>
+
+	class MMatchRuleTeamPaintball : public MMatchRuleTeamDeath
+	{
+	public:
+		MMatchRuleTeamPaintball(MMatchStage* pStage);
+		virtual ~MMatchRuleTeamPaintball() { }
+		virtual MMATCH_GAMETYPE GetGameType() { return MMATCH_GAMETYPE_TEAM_TRAINING; }
+	};
 
 
+Open(MMatchRuleTraining.cpp) <br>
+Add <br>
+
+	MMatchRuleTeamPaintball::MMatchRuleTeamPaintball(MMatchStage* pStage) : MMatchRuleTeamDeath(pStage)
+	{
+	}
 
 
 
