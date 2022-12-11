@@ -1,4 +1,4 @@
-Roomtag: [PAINT] <br>
+Roomtag: [ph] - bullets won't clear from the walls <br>
 Gamemode: Paintball <br>
 Decompile SFX.mrs - unzip the sfx.zip (SFX/paintball01.tga)<br>
 
@@ -87,7 +87,7 @@ Find <br>
 Replace <br>
 
     void ZEffectBulletMarkList::Update(float fElapsed) {
-      if (!strstr(strlwr((char*)ZGetGameClient()->GetStageName()), "[PAINT]")) {
+      if (!strstr(strlwr((char*)ZGetGameClient()->GetStageName()), "[ph]")) {
         if ((ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_PAINTBALL_SOLO) != 0) {
           if ((ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_PAINTBALL_TEAM) != 0) {
             for (iterator i = begin(); i != end();) {
@@ -477,11 +477,60 @@ Add <br>
 	{
 	}
 
+System/ChannelRule.xml <br>
+
+		<GAMETYPE id="16" />
+		<GAMETYPE id="17" />
+
+System/Gametypecfg.xml <br>
+
+	<GAMETYPE id="16">	<!-- SOLO PAINTBALL -->
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" />
+		<ROUNDS    round="50"	str="50" default="true" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="99999"	str="STR:GAMETYPECFG_LIMITTIME_INFINITE" />
+		<LIMITTIME sec="10"	str="STR:GAMETYPECFG_LIMITTIME_10MIN" />
+		<LIMITTIME sec="20"	str="STR:GAMETYPECFG_LIMITTIME_20MIN" />
+		<LIMITTIME sec="30"	str="STR:GAMETYPECFG_LIMITTIME_30MIN" default="true" />
+		<LIMITTIME sec="40"	str="STR:GAMETYPECFG_LIMITTIME_40MIN" />
+		<LIMITTIME sec="50"	str="STR:GAMETYPECFG_LIMITTIME_50MIN" />
+		<LIMITTIME sec="60"	str="STR:GAMETYPECFG_LIMITTIME_60MIN" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+	
+	<GAMETYPE id="17">	<!-- TEAM PAINTBALL -->
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" default="true" />
+		<ROUNDS    round="50"	str="50" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="99999"	str="STR:GAMETYPECFG_LIMITTIME_INFINITE" />
+		<LIMITTIME sec="5"	str="STR:GAMETYPECFG_LIMITTIME_5MIN" />
+		<LIMITTIME sec="10"	str="STR:GAMETYPECFG_LIMITTIME_10MIN" default="true" />
+		<LIMITTIME sec="15"	str="STR:GAMETYPECFG_LIMITTIME_15MIN" />
+		<LIMITTIME sec="20"	str="STR:GAMETYPECFG_LIMITTIME_20MIN" />
+		<LIMITTIME sec="25"	str="STR:GAMETYPECFG_LIMITTIME_25MIN" />
+		<LIMITTIME sec="30"	str="STR:GAMETYPECFG_LIMITTIME_30MIN" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+Replace those files with MatchServer too. <br>
 
 
 
+![paintball](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20paintball/paintball.jpg)
 
-
+Rebuild Gunz & MatchServer.
 
 
 
