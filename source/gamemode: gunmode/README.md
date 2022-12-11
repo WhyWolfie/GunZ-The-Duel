@@ -226,6 +226,121 @@ Add under <br>
 		virtual ~ZRuleGunMode();
 	};
 
+Open(MMatchRuleDeathMatch.cpp) <br>
+Find <br>
+
+	MMatchRuleTeamDeath::MMatchRuleTeamDeath(MMatchStage* pStage) : MMatchRule(pStage)
+	{
+	}
+
+Add under <br>
+
+	// MMatchRuleGunMode ///////////////////////////////////////////////////////////
+	MMatchRuleGunMode::MMatchRuleGunMode(MMatchStage* pStage) : MMatchRule(pStage)
+	{
+
+	}
+
+	void MMatchRuleGunMode::OnBegin()
+	{
+
+	}
+	void MMatchRuleGunMode::OnEnd()
+	{
+	}
+
+	bool MMatchRuleGunMode::RoundCount()
+	{
+		if (++m_nRoundCount < 1) return true;
+		return false;
+	}
+
+	bool MMatchRuleGunMode::CheckKillCount(MMatchObject* pOutObject)
+	{
+		MMatchStage* pStage = GetStage();
+		for (MUIDRefCache::iterator i = pStage->GetObjBegin(); i != pStage->GetObjEnd(); i++)
+		{
+			MMatchObject* pObj = (MMatchObject*)(*i).second;
+			if (pObj->GetEnterBattle() == false) continue;
+
+			if (pObj->GetKillCount() >= (unsigned int)pStage->GetStageSetting()->GetRoundMax())
+			{
+				pOutObject = pObj;
+				return true;
+			}
+		}
+		return false;
+	}
+
+	bool MMatchRuleGunMode::OnCheckRoundFinish()
+	{
+		MMatchObject* pObject = NULL;
+
+		if (CheckKillCount(pObject))
+		{
+			return true;
+		}
+		return false;
+	}
+
+	void MMatchRuleGunMode::OnRoundTimeOut()
+	{
+		SetRoundArg(MMATCH_ROUNDRESULT_DRAW);
+	}
+
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	void ZCombatInterface::ShowInfo(bool bVisible)
+
+Add under <br>
+
+	void ZCombatInterface::GunMode(ZCharacter* pCharacter, const int Level)
+	{
+		//ZGetScreenEffectManager()->AddRoundStart(Level);
+		int nItemMelee = 0;
+		int nItemPistol = 0;
+		int nItemSecun = 0;
+
+		int aleatorio = rand() % 3;
+		if (aleatorio == 0)
+		{
+			nItemMelee = 7;
+			nItemPistol = 505005;
+			nItemSecun = 5019;
+		}
+		if (aleatorio == 1)
+		{
+			nItemMelee = 502013;
+			nItemPistol = 504006;
+			nItemSecun = 507001;
+		}
+		if (aleatorio == 2)
+		{
+			nItemMelee = 18;
+			nItemPistol = 506007;
+			nItemSecun = 508001; //braker 8
+		}
+
+		pCharacter->GetItems()->EquipItem(MMCIP_PRIMARY, nItemPistol);  // Rocket
+		pCharacter->ChangeWeapon(MMCIP_PRIMARY);
+		pCharacter->ChangeWeapon(MMCIP_PRIMARY);
+		pCharacter->GetItems()->EquipItem(MMCIP_SECONDARY, nItemSecun);  // grenade
+		pCharacter->ChangeWeapon(MMCIP_SECONDARY);
+		pCharacter->GetItems()->EquipItem(MMCIP_MELEE, nItemMelee);  // dagger
+		pCharacter->ChangeWeapon(MMCIP_MELEE);
+		pCharacter->ChangeWeapon(MMCIP_CUSTOM1);
+		pCharacter->ChangeWeapon(MMCIP_CUSTOM2);
+		pCharacter->InitItemBullet();
+
+	}
+
+
+Rebuild Gunz & MatchServer
+
+
+
 
 
 
