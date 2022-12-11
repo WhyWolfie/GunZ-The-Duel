@@ -3890,9 +3890,23 @@ Add under <br>
 		return;
 
 
+Open(ZCharacter.h) <br>
+Find <br>
 
+	struct ZUserAndClanName
+	{
+		char m_szUserName[MATCHOBJECT_NAME_LENGTH];
+		char m_szUserAndClanName[MATCHOBJECT_NAME_LENGTH];
+	};
 
+Replace <br>
 
+	struct ZUserAndClanName
+	{
+		char m_szUserName[MATCHOBJECT_NAME_LENGTH];
+		//Char name + Clan name fix
+		char m_szUserAndClanName[MATCHOBJECT_NAME_LENGTH + CLAN_NAME_LENGTH];
+	};
 
 
 
