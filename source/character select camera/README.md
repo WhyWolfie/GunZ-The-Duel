@@ -40,7 +40,6 @@ Replace <br>
 		{
 			// Get current clock
 			DWORD dwClock = ( timeGetTime() - m_dwClock);
-			float fGain = ( cos( dwClock * 0.0012f) + 1.0f) / 2.0f;
 			
 			//Don't shift camera position + direction
 			float fGain = 1.0f;
