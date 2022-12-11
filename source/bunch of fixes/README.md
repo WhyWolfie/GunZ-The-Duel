@@ -3908,6 +3908,71 @@ Replace <br>
 		char m_szUserAndClanName[MATCHOBJECT_NAME_LENGTH + CLAN_NAME_LENGTH];
 	};
 
+Open(ZGameClient.cpp) <br>
+Find <br>
+
+	case ZAAT_MSGBOX:
+		{
+			if (ZApplication::GetGameInterface()->GetState() != GUNZ_GAME)
+			{
+				ZApplication::GetGameInterface()->ShowMessage(szMsg);
+			}
+			else
+			{
+				ZChatOutput(szMsg);
+			}
+		}
+		break;
+
+Replace <br>
+
+	case ZAAT_MSGBOX:
+		{
+			if (ZApplication::GetGameInterface()->GetState() != GUNZ_GAME)
+			{
+				ZApplication::GetGameInterface()->ShowMessage(szMsg);
+			}
+			else
+			{
+				//Fixed Gunz bug - popup announces showing in-game as normal text, not Green.
+				char szText[512];
+				ZTransMsg( szText, MSG_ADMIN_ANNOUNCE, 1, szMsg );
+				ZChatOutput(szText, ZChat::CMT_SYSTEM);
+
+				//ZChatOutput(szMsg);
+			}
+		}
+		break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
