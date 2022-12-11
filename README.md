@@ -201,6 +201,7 @@ GunZ The Duel Releases <br>
 - duel admin hidden in que: [duel admin hidden in que](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20hidden%20admin)
 - dual daggers fix: [dual daggers fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20dual%20daggers)
 - whisper long name fix: [whisper long name fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/whisper%20long%20name%20fix)
+- select character camera not more moving: [select character camera not more moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/character%20select%20camera)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
