@@ -348,15 +348,88 @@ Add under <br>
     {
     }
 
+Open(ZEffectManager.h) <br>
+Find <br>
+
+	RMeshMgr* m_pEffectMeshMgr;
+
+Add under <br>
+
+	//Paintball declaration
+	ZEffectBulletMarkList        m_PaintballMarkList;
+	ZEffectBulletMarkList        m_Paintball2MarkList;
+	ZEffectBulletMarkList        m_Paintball3MarkList;
+	ZEffectBulletMarkList        m_Paintball4MarkList;
+	ZEffectBulletMarkList        m_Paintball5MarkList;
+	ZEffectBulletMarkList        m_Paintball6MarkList;
+	ZEffectBulletMarkList        m_Paintball7MarkList;
+
+Open(MBaseGameType.h) <br>
+Find <br>
+
+	inline bool MBaseGameTypeCatalogue::IsTeamExtremeGame(MMATCH_GAMETYPE nGameType)
+
+Add under <br>
+
+	inline bool IsGameRulePaintballTeam(MMATCH_GAMETYPE nGameType)
+	{
+		return (nGameType == MMATCH_GAMETYPE_PAINTBALL_TEAM);
+	}
+
+	inline bool IsGameRulePaintballSolo(MMATCH_GAMETYPE nGameType)
+	{
+		return (nGameType == MMATCH_GAMETYPE_PAINTBALL_SOLO);
+	}
+
+Open(ZRuleDeathMatch.cpp) <br>
+Find <br>
+
+	ZRuleTeamDeathMatch::ZRuleTeamDeathMatch(ZMatch* pMatch) : ZRule(pMatch)
+
+Add under <br>
+
+	ZRuleSoloPaintball::ZRuleSoloPaintball(ZMatch* pMatch) : ZRuleSoloDeathMatch(pMatch)
+	{
+	}
+
+	ZRuleSoloPaintball::~ZRuleSoloPaintball()
+	{
+	}
+	ZRuleTeamPaintball::ZRuleTeamPaintball(ZMatch* pMatch) : ZRuleTeamDeathMatch(pMatch)
+	{
+	}
+
+	ZRuleTeamPaintball::~ZRuleTeamPaintball()
+	{
+	}
+
+Open(ZRuleDeathMatch.h) <br>
+Find <br>
+
+	class ZRuleTeamDeathMatch : public ZRule
+	{
+	public:
+		ZRuleTeamDeathMatch(ZMatch* pMatch);
+		virtual ~ZRuleTeamDeathMatch();
+	};
+
+Add under <br>
 
 
+	class ZRuleSoloPaintball : public ZRuleSoloDeathMatch
+	{
+	public:
+		ZRuleSoloPaintball(ZMatch* pMatch);
+		virtual ~ZRuleSoloPaintball();
+	};
 
 
-
-
-
-
-
+	class ZRuleTeamPaintball : public ZRuleTeamDeathMatch
+	{
+	public:
+		ZRuleTeamPaintball(ZMatch* pMatch);
+		virtual ~ZRuleTeamPaintball();
+	};
 
 
 
