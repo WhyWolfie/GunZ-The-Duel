@@ -261,6 +261,8 @@ GunZ The Duel Releases <br>
 - gungame packet: [gungame packet](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gungame%20packet)
 - playerwars: [playerwars](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/playerwars)
 - ninja: [ninja](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20ninja)
+- vampire: [vampire](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20vampire)
+
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
