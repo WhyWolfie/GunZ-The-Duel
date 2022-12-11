@@ -3944,8 +3944,39 @@ Replace <br>
 		}
 		break;
 
+Open(ZGameClient.cpp) <br>
+Find <br>
 
+		ZPlayerInfo* pInfo = ZGetPlayerManager()->Find( (MUID)uidChar);
+		if ( pInfo != NULL)
+		{
+			sprintf( kill, "%d %s", pInfo->GetKill(), ZMsg( MSG_CHARINFO_KILL));
+			sprintf( death, "%d %s", pInfo->GetDeath(), ZMsg( MSG_CHARINFO_DEATH));
+			sprintf( winning, "%.1f%%", pInfo->GetWinningRatio());
+		}
+		else
+		{
+			sprintf( kill, "? %s", ZMsg( MSG_CHARINFO_KILL));
+			sprintf( death, "? %s", pInfo->GetDeath(), ZMsg( MSG_CHARINFO_DEATH));
+			sprintf( winning, "0.0%%");
+		}
 
+Replace <br>
+
+		ZPlayerInfo* pInfo = ZGetPlayerManager()->Find( (MUID)uidChar);
+		if ( pInfo != NULL)
+		{
+			sprintf( kill, "%d %s", pInfo->GetKill(), ZMsg( MSG_CHARINFO_KILL));
+			sprintf( death, "%d %s", pInfo->GetDeath(), ZMsg( MSG_CHARINFO_DEATH));
+			sprintf( winning, "%.1f%%", pInfo->GetWinningRatio());
+		}
+		else
+		{
+			sprintf( kill, "? %s", ZMsg( MSG_CHARINFO_KILL));
+			//Removed pInfo->GetDeath(), from underlying code as it caused crashes
+			sprintf( death, "? %s", ZMsg( MSG_CHARINFO_DEATH));
+			sprintf( winning, "0.0%%");
+		}
 
 
 
