@@ -13,6 +13,29 @@ Add <br>
 	MMATCH_GAMETYPE_PAINTBALL_SOLO     = 16,
 	MMATCH_GAMETYPE_PAINTBALL_TEAM     = 17,
 
+Find <br>
+
+	inline bool MBaseGameTypeCatalogue::IsTeamGame(MMATCH_GAMETYPE nGameType)
+
+Add under <br>
+
+	(nGameType == MMATCH_GAMETYPE_PAINTBALL_TEAM) ||
+
+Find <br>
+
+	inline bool MBaseGameTypeCatalogue::IsTeamLimitTime(MMATCH_GAMETYPE nGameType)
+
+Add under <br>
+	
+	(nGameType == MMATCH_GAMETYPE_PAINTBALL_TEAM) ||
+
+Find <br>
+
+	inline bool MBaseGameTypeCatalogue::IsWaitForRoundEnd(MMATCH_GAMETYPE nGameType)
+
+Add under <br>
+
+	(nGameType == MMATCH_GAMETYPE_PAINTBALL_TEAM) ||
 
 Open(MBaseGameType.cpp) <br>
 Find <br>
