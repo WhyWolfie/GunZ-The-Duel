@@ -421,10 +421,13 @@ Add <br>
 Open(ZWorld.cpp) <br>
 Find <br>
 
-	sprintf(szBuf, "%s%s/smoke.xml", szMapPath, ZGetGameClient()->GetMatchStageSetting()->GetMapName());
-	m_pMapDesc->LoadSmokeDesc(szBuf);
+		FogInfo finfo = GetBsp()->GetFogInfo();
+		m_bFog = finfo.bFogEnable;
+		m_fFogNear = finfo.fNear;
+		m_fFogFar = finfo.fFar;
+		m_dwFogColor = finfo.dwFogColor;
 
-Add under <br>
+Replace <br>
 
 	if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_VAMPIRE)
 	{
@@ -432,6 +435,14 @@ Add under <br>
 		m_fFogNear = 0.0f;
 		m_fFogFar = 6000.0f;
 		m_dwFogColor = 0xC30404;
+	}
+	else
+	{
+		FogInfo finfo = GetBsp()->GetFogInfo();
+		m_bFog = finfo.bFogEnable;
+		m_fFogNear = finfo.fNear;
+		m_fFogFar = finfo.fFar;
+		m_dwFogColor = finfo.dwFogColor;
 	}
 
 
