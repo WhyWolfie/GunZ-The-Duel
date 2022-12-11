@@ -365,6 +365,20 @@ Add under <br>
 	{
 	}
 
+Open(MMatchRuleDeathMatch.cpp) <br>
+Find <br>
+
+	void MMatchRuleSoloDeath::OnRoundTimeOut()
+	{
+		SetRoundArg(MMATCH_ROUNDRESULT_DRAW);
+	}
+
+Add under <br>
+
+	MMatchRuleVampire::MMatchRuleVampire(MMatchStage* pStage) : MMatchRuleSoloDeath(pStage)
+	{
+	}
+
 
 [Extras] <br>
 Open(ZWorld.cpp) <br>
