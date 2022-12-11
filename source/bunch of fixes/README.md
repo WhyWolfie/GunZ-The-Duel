@@ -3745,7 +3745,21 @@ Replace <br>
 	}
 
 
+Open(ZGameClient.cpp) <br>
+Find <br>
 
+	void ZGameClient::RequestOnLobbyCreated()
+
+Replace <br>
+
+	void ZGameClient::RequestOnLobbyCreated()
+	{
+		ZPostRequestStageList(GetPlayerUID(), GetChannelUID(), 0);
+		ZPostRequestChannelPlayerList(GetPlayerUID(), GetChannelUID(), 0);
+
+		//Auto-load friend list
+		ZPostFriendList();
+	}
 
 
 
