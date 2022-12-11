@@ -200,6 +200,7 @@ GunZ The Duel Releases <br>
 - clan 8 players: [clan 8 players](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clanwar%208%20players)
 - duel admin hidden in que: [duel admin hidden in que](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20hidden%20admin)
 - dual daggers fix: [dual daggers fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20dual%20daggers)
+- whisper long name fix: [whisper long name fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/whisper%20long%20name%20fix)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
