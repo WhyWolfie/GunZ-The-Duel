@@ -3761,5 +3761,126 @@ Replace <br>
 		ZPostFriendList();
 	}
 
+Open(ZGameInput.cpp) <br>
+Find <br>
+
+	void ZGameInput::GameCheckSequenceKeyCommand()
+
+Replace <br>
+
+	void ZGameInput::GameCheckSequenceKeyCommand()
+	{
+		// Ã¶Áö³­ Å° ÀÔ·ÂÀº ÀÏ´Ü Á¦°ÅÇÑ´Ù.
+		while(m_ActionKeyHistory.size()>0 && (ZGetGame()->GetTime()-(*m_ActionKeyHistory.begin()).fTime>MAX_KEY_SEQUENCE_TIME))
+		{
+			m_ActionKeyHistory.erase(m_ActionKeyHistory.begin());
+		}
+
+		//Iterator decrement fix
+		if(m_ActionKeyHistory.size())
+		{
+			for(int ai=0;ai<(int)m_SequenceActions.size();ai++)
+			{
+				ZKEYSEQUENCEACTION action=m_SequenceActions.at(ai);
+
+				list<ZACTIONKEYITEM>::reverse_iterator itr = m_ActionKeyHistory.rbegin();
+
+				bool bAction = true;
+
+				for( int i = action.nKeyCount - 1; i >= 0; --i )
+				{
+					// fix
+					if( itr == m_ActionKeyHistory.rend() )
+					{
+						bAction = false;
+						break;
+					}
+
+					ZACTIONKEYITEM itm=*itr;
+
+					if(i==0)
+					{
+						if(ZGetGame()->GetTime()-itm.fTime>action.fTotalTime)
+						{
+							bAction=false;
+							break;
+						}
+					}
+					if(itm.nActionKey!=action.pKeys[i].nActionKey || itm.bPressed!=action.pKeys[i].bPressed)
+					{
+						bAction=false;
+						break;
+					}
+					if(i!=0 && itr==m_ActionKeyHistory.rend()) 
+					{
+						bAction=false;
+						break;
+					}
+
+					++itr;
+				}
+
+				if(bAction)
+				{
+					if( m_ActionKeyHistory.size() )
+						m_ActionKeyHistory.clear();
+
+					if(ai>=0 && ai<=3)
+						ZGetGame()->m_pMyCharacter->OnTumble(ai);
+				}
+
+				/*
+				list<ZACTIONKEYITEM>::iterator itr=m_ActionKeyHistory.end();
+				itr--;
+				bool bAction=true;
+				for(int i=action.nKeyCount-1;i>=0;i--)
+				{
+					ZACTIONKEYITEM itm=*itr;
+					if(i==0)
+					{
+						if(ZGetGame()->GetTime()-itm.fTime>action.fTotalTime)
+						{
+							bAction=false;
+							break;
+						}
+					}
+					if(itm.nActionKey!=action.pKeys[i].nActionKey || itm.bPressed!=action.pKeys[i].bPressed)
+					{
+						bAction=false;
+						break;
+					}
+					if(i!=0 && itr==m_ActionKeyHistory.begin()) 
+					{
+						bAction=false;
+						break;
+					}
+					itr--;
+				}
+
+				if(bAction)
+				{
+					while(m_ActionKeyHistory.size())
+					{
+						m_ActionKeyHistory.erase(m_ActionKeyHistory.begin());
+					}
+
+					if(ai>=0 && ai<=3)		// ´ýºí¸µ
+						ZGetGame()->m_pMyCharacter->OnTumble(ai);
+				}
+				*/
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 
