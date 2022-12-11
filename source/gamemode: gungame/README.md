@@ -154,5 +154,50 @@ Add under <br>
 
     (pSetting->nGameType == MMATCH_GAMETYPE_GUNMODE) ||
 
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	UpdateCombo(pCharacter);
+
+Add under <br>
+
+	m_nGunLevel = AddGunLevel();
+	
+
+Find <br>
+
+	m_nBulletSpare = 0;
+	m_nBulletCurrMagazine = 0;
+
+Add under <br>
+
+	m_nGunLevel = 1;
+
+Open(ZCombatInterface.h) <br>
+Find <br>
+
+	int					m_nMagazine;
+
+Add under <br>
+
+	int                 m_nGunLevel;
+
+Find <br>
+
+	bool IsMenuVisible() { return m_bMenuVisible; }
+
+Add under <br>
+
+	void GunMode(ZCharacter* pCharacter, int GunLevel);
+	int AddGunLevel(){ return m_nGunLevel++; };
+
+
+
+
+
+
+
+
+
 
 
