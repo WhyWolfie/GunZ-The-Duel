@@ -1,5 +1,6 @@
 Roomtag: [PAINT] <br>
 Gamemode: Paintball <br>
+Decompile SFX.mrs - unzip the sfx.zip (SFX/paintball01.tga)<br>
 
 Open(MBaseGameType.h) <br>
 Find <br>
