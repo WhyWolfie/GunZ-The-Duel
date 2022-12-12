@@ -1,6 +1,9 @@
 Gamemode: Infected <br>
 
 #define INFECTED_MIN_PLAYER_COUNT 4 (2) players <br>
+#define ZOMBIE_MELEE_ITEMID		6000000 (melee - zitem.xml ID) <br>
+#define ZOMBIE_AVATAR_M_ITEMID		6000001 (avatar male - zitem.xml ID) <br>
+#define ZOMBIE_AVATAR_F_ITEMID		6000002 (avatar female - zitem.xml ID) <br>
 
 Open(MBaseGameType.h) <br>
 Find <br> 
@@ -2386,6 +2389,37 @@ Add Above <br>
 			}
 		}
 	}
+
+System/ChannelRule.xml <br>
+
+		<GAMETYPE id="19" />
+
+
+System/GameTypecfg.xml <br>
+
+	<GAMETYPE id="19">	<!-- Infected -->
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" default="true" />
+		<ROUNDS    round="50"	str="50" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="99999"	str="STR:GAMETYPECFG_LIMITTIME_INFINITE" />
+		<LIMITTIME sec="5"	str="STR:GAMETYPECFG_LIMITTIME_5MIN" />
+		<LIMITTIME sec="10"	str="STR:GAMETYPECFG_LIMITTIME_10MIN" default="true" />
+		<LIMITTIME sec="15"	str="STR:GAMETYPECFG_LIMITTIME_15MIN" />
+		<LIMITTIME sec="20"	str="STR:GAMETYPECFG_LIMITTIME_20MIN" />
+		<LIMITTIME sec="25"	str="STR:GAMETYPECFG_LIMITTIME_25MIN" />
+		<LIMITTIME sec="30"	str="STR:GAMETYPECFG_LIMITTIME_30MIN" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+Add those files(MatchServer/System.mrs) <br>
+
+Rebuild Gunz & Matchserver. <br>
 
 
 ![1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20infected/1.jpg)
