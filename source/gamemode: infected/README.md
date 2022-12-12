@@ -1569,22 +1569,203 @@ Replace <br>
 	}
 
 
+Open(MMatchStage.h) <br>
+Find <br>
+
+	void OnGameKill(const MUID& uidAttacker, const MUID& uidVictim);
+	bool CheckAutoTeamBalancing();	// trueÀÌ¸é ÆÀ¿øÀ» ¼¯¾î¾ß ÇÑ´Ù.
+	void ShuffleTeamMembers();
+
+Add <br>
+
+	void SwitchPlayerTeamForInfected(const MUID& uidPlayer);
+	void SwitchPlayerTeam(const MUID& uidPlayer);
+
+
+Open(MMatchStage.cpp) <br>
+Find <br>
+
+	void MMatchStage::SetRelayMapList(RelayMap* pRelayMapList)
+	{
+
+
+Add <br>
+
+	void MMatchStage::SwitchPlayerTeam(const MUID& uidPlayer)
+	{
+		if (m_StageSetting.IsTeamPlay() == false) return;
+		if (m_ObjUIDCaches.empty()) return;
+
+		MMatchObject* pPlayer = MMatchServer::GetInstance()->GetObject(uidPlayer);
+		if (!IsEnabledObject(pPlayer))
+			return;
+
+		vector<MMatchObject*> sortedObjectList;
+
+		for (MUIDRefCache::iterator i = m_ObjUIDCaches.begin(); i != m_ObjUIDCaches.end(); i++)
+		{
+			MMatchObject* pObj = (MMatchObject*)(*i).second;
+
+			if ((pObj->GetEnterBattle() == true) && (pObj->GetGameInfo()->bJoinedGame == true) && !pObj->CheckPlayerFlags(MTD_PlayerFlags_AdminHide))
+			{
+				if (pObj->GetUID() == uidPlayer)
+					sortedObjectList.push_back(pObj);
+			}
+		}
+
+		int nCounter = 0;
+		for (vector<MMatchObject*>::iterator itor = sortedObjectList.begin(); itor != sortedObjectList.end(); ++itor)
+		{
+			MMatchObject* pObj = (*itor);
+			PlayerTeam(pObj->GetUID(), NegativeTeam(MMatchTeam(pObj->GetTeam())));
+			nCounter++;
+		}
+
+		if (nCounter <= 0)
+			return;
+
+		nCounter = 0;
+
+		MCommand* pCmd = MMatchServer::GetInstance()->CreateCommand(MC_MATCH_RESET_TEAM_MEMBERS, MUID(0, 0));
+		int nMemberCount = (int)sortedObjectList.size(); //(int)m_ObjUIDCaches.size();
+		void* pTeamMemberDataArray = MMakeBlobArray(sizeof(MTD_ResetTeamMembersData), nMemberCount);
+
+		for (vector<MMatchObject*>::iterator itor = sortedObjectList.begin(); itor != sortedObjectList.end(); ++itor)
+		{
+			MMatchObject* pObj = (*itor);
+			MTD_ResetTeamMembersData* pNode = (MTD_ResetTeamMembersData*)MGetBlobArrayElement(pTeamMemberDataArray, nCounter++);
+			pNode->m_uidPlayer = pObj->GetUID();
+			pNode->nTeam = (char)pObj->GetTeam();
+		}
+
+		pCmd->AddParameter(new MCommandParameterBlob(pTeamMemberDataArray, MGetBlobArraySize(pTeamMemberDataArray)));
+		MEraseBlobArray(pTeamMemberDataArray);
+		MMatchServer::GetInstance()->RouteToBattle(GetUID(), pCmd);
+	}
+
+
+	void MMatchStage::SwitchPlayerTeamForInfected(const MUID& uidPlayer)
+	{
+		if (m_StageSetting.IsTeamPlay() == false) return;
+		if (m_ObjUIDCaches.empty()) return;
+
+		MMatchObject* pPlayer = MMatchServer::GetInstance()->GetObject(uidPlayer);
+		if (!IsEnabledObject(pPlayer))
+			return;
+
+		if (pPlayer->GetEnterBattle() == false || pPlayer->GetGameInfo()->bJoinedGame == false || pPlayer->CheckPlayerFlags(MTD_PlayerFlags_AdminHide))
+			return;
+
+		vector<MMatchObject*> sortedObjectList;
+
+		for (MUIDRefCache::iterator i = m_ObjUIDCaches.begin(); i != m_ObjUIDCaches.end(); i++)
+		{
+			MMatchObject* pObj = (MMatchObject*)(*i).second;
+
+			if ((pObj->GetEnterBattle() == true) && (pObj->GetGameInfo()->bJoinedGame == true) && !pObj->CheckPlayerFlags(MTD_PlayerFlags_AdminHide))
+			{
+				//if (pObj->GetUID() == uidPlayer || (pObj->GetUID() != pPlayer->GetUID() && pObj->GetTeam() == pPlayer->GetTeam()))
+				if ((pObj->GetTeam() == MMT_RED && pObj->GetUID() != pPlayer->GetUID()) || pObj->GetUID() == uidPlayer)
+					sortedObjectList.push_back(pObj);
+			}
+		}
+
+		int nCounter = 0;
+		for (vector<MMatchObject*>::iterator itor = sortedObjectList.begin(); itor != sortedObjectList.end(); ++itor)
+		{
+			MMatchObject* pObj = (*itor);
+
+			if (pObj->GetUID() == pPlayer->GetUID())
+				PlayerTeam(pObj->GetUID(), MMT_RED);
+			else
+				PlayerTeam(pObj->GetUID(), MMT_BLUE);
+
+			nCounter++;
+		}
+
+		if (nCounter <= 0)
+			return;
+
+		nCounter = 0;
+
+		MCommand* pCmd = MMatchServer::GetInstance()->CreateCommand(MC_MATCH_RESET_TEAM_MEMBERS, MUID(0, 0));
+		int nMemberCount = (int)sortedObjectList.size();
+		void* pTeamMemberDataArray = MMakeBlobArray(sizeof(MTD_ResetTeamMembersData), nMemberCount);
+
+		for (vector<MMatchObject*>::iterator itor = sortedObjectList.begin(); itor != sortedObjectList.end(); ++itor)
+		{
+			MMatchObject* pObj = (*itor);
+			MTD_ResetTeamMembersData* pNode = (MTD_ResetTeamMembersData*)MGetBlobArrayElement(pTeamMemberDataArray, nCounter++);
+			pNode->m_uidPlayer = pObj->GetUID();
+			pNode->nTeam = (char)pObj->GetTeam();
+		}
+
+		pCmd->AddParameter(new MCommandParameterBlob(pTeamMemberDataArray, MGetBlobArraySize(pTeamMemberDataArray)));
+		MEraseBlobArray(pTeamMemberDataArray);
+		MMatchServer::GetInstance()->RouteToBattle(GetUID(), pCmd);
+	}
+
+Open(MSharedCommandTable.h) <br>
+Find <br>
+
+	#define MC_MATCH_FLAG_EFFECT					50010
+
+
+Add <br>
+
+	//Infected Mode
+	#define MC_MATCH_REQUEST_INFECT		60032
+	#define MC_MATCH_INFECT			60033
+	#define MC_MATCH_LASTSURVIVOR		60034
+
+Open(MSharedCommandTable.cpp) <br>
+Find <br>
 
 
 
+Add <br>
+
+        	//Infected Mode
+		C(MC_MATCH_REQUEST_INFECT, "Match.Infected.RequestInfect", "Request Infected", MCDT_MACHINE2MACHINE)
+			P(MPT_UID, "uidInfector")
+
+		C(MC_MATCH_INFECT, "Match.Infected.Infect", "Infect", MCDT_MACHINE2MACHINE)
+			P(MPT_UID, "uidPlayer")
+
+		C(MC_MATCH_LASTSURVIVOR, "Match.Infected.LastSurvivor", "Last Survivor Notify", MCDT_MACHINE2MACHINE)
+			P(MPT_UID, "uidPlayer")
 
 
+Open(ZCommandUDPHackShield.cpp) <br>
+Find <br>
 
+	AddDeniedCommand(MC_MATCH_FLAG_EFFECT);
+	AddDeniedCommand(MC_MATCH_FLAG_CAP);
+	AddDeniedCommand(MC_MATCH_FLAG_STATE);
 
+Add <br>
 
+	//Infected
+	AddDeniedCommand(MC_MATCH_REQUEST_INFECT);
+	AddDeniedCommand(MC_MATCH_INFECT);
+	AddDeniedCommand(MC_MATCH_LASTSURVIVOR);
 
+Open(ZGame.cpp) <br>
+Find <br>
 
+	bool ZGame::OnRuleCommand(MCommand* pCommand)
+	{
+	#ifdef _QUEST
+		if (ZGetQuest()->OnGameCommand(pCommand)) return true;
+	#endif
 
+		switch (pCommand->GetID())
+		{
 
+Add <br>
 
-
-
-
+	case MC_MATCH_INFECT:
+	case MC_MATCH_LASTSURVIVOR:
 
 
 
