@@ -1327,8 +1327,7 @@ Replace <br>
 	void ZMatch::InitCharactersPosition()
 	{
 		// ÆÀÀüÀÏ °æ¿ì
-		if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_INFECTED)
-			if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_SPY)
+	    if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_INFECTED)
 		{
 			int nSpawnIndex[2] = { 0, 0 };
 
@@ -1413,7 +1412,7 @@ Replace <br>
 
 		//Infected game mode room list
 		if ((nTeam != MMT_SPECTATOR) && (ZGetGameTypeManager()->IsTeamGame(pStageSetting->nGameType) == false) ||
-			pStageSetting->nGameType == MMATCH_GAMETYPE_INFECTED || pStageSetting->nGameType == MMATCH_GAMETYPE_SPY)
+			pStageSetting->nGameType == MMATCH_GAMETYPE_INFECTED)
 		{
 			nTeam = MMT_ALL;
 		}
@@ -1721,7 +1720,8 @@ Add <br>
 Open(MSharedCommandTable.cpp) <br>
 Find <br>
 
-
+	C(MC_MATCH_DUELTOURNAMENT_GAME_NEXT_MATCH_PLYAERINFO, "Match.DuelTournament.Game Next Match Player Info", "Duel Tournament Game Next Match Player Info", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "NextMatchPlayerInfo");
 
 Add <br>
 
@@ -1769,24 +1769,133 @@ Add <br>
 
 
 
+Open(ZCharacter.h) <br>
+Find <br>
+
+	float	m_fGlobalHP;			// ´Ù¸¥»ç¶÷µéÀÌ º¼¶§ ÀÌÄ³¸¯ÅÍÀÇ HPÀÇ Æò±Õ.. ÅõÇ¥¸¦ À§ÇÔ.
+	int		m_nReceiveHPCount;		// Æò±Õ³»±âÀ§ÇÑ...
+
+Add under <br>
+
+	//Infected
+	bool	m_bInfected;
 
 
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	ZCharaterStatusBitPacking uState;
+	uState.dwFlagsPublic = 1;
+
+Add <br>
+
+	m_bInfected = false;
 
 
+Find <br>
+
+	void ZCharacter::OnKnockback(rvector& dir, float fForce)
+	{
+		// ³²ÀÇ Ä³¸¯ÅÍ´Â ³Ë¹éÀ» ¾ø¾Ø´Ù
+		if(IsHero())
+			ZCharacterObject::OnKnockback(dir,fForce);
+	}
+
+Replace <br>
+
+	void ZCharacter::OnKnockback(rvector& dir, float fForce)
+	{
+		// ³²ÀÇ Ä³¸¯ÅÍ´Â ³Ë¹éÀ» ¾ø¾Ø´Ù
+		if (IsHero())
+		{
+			// Custom: Infected game mode
+			float fForceMod = fForce;
+
+			if (m_bInfected)
+				fForceMod *= 15.f;
+
+			ZCharacterObject::OnKnockback(dir, fForceMod);
+		}
+	}
+
+Find <br>
+
+	void ZCharacter::TestToggleCharacter()
+
+Add <br>
 
 
+	//Infected Mode
+	void ZCharacter::InfectCharacter(bool bFirst)
+	{
+	#define ZOMBIE_MELEE_ITEMID			6000000
+	#define ZOMBIE_AVATAR_M_ITEMID		6000001
+	#define ZOMBIE_AVATAR_F_ITEMID		6000002
+	#define ZOMBIE_HP					500.f
+	#define ZOMBIE_MINOR_HP				250.f
+	#define ZOMBIE_AP					0.f
 
+		if (m_bInfected)
+			return;
 
+		/*if (!m_pVMesh->GetMesh())
+		return;*/
+		if (!m_pVMesh->m_pMesh)
+			return;
 
+		m_bInfected = true;
 
+		// lol scales dont work
+		//m_pVMesh->SetScale(D3DXVECTOR3(m_pVMesh->GetScale().x*1.5f, m_pVMesh->GetScale().y*1.5f, m_pVMesh->GetScale().z*1.5f));
 
+		unsigned long nEquipedItemDesc[MMCIP_END], nEquipedItemCount[MMCIP_END];
+		memset(nEquipedItemDesc, 0, sizeof(nEquipedItemDesc));
+		memset(nEquipedItemCount, 0, sizeof(nEquipedItemCount));
 
+		nEquipedItemDesc[MMCIP_AVATAR] = (m_Property.nSex == MMS_MALE) ? ZOMBIE_AVATAR_M_ITEMID : ZOMBIE_AVATAR_F_ITEMID;
+		nEquipedItemDesc[MMCIP_MELEE] = ZOMBIE_MELEE_ITEMID;
 
+		nEquipedItemCount[MMCIP_AVATAR] = 1;
+		nEquipedItemCount[MMCIP_MELEE] = 1;
 
+		ZChangeCharParts(m_pVMesh, m_Property.nSex, m_Property.nHair, m_Property.nFace, nEquipedItemDesc);
 
+		for (int i = 0; i < MMCIP_END; i++)
+		{
+			m_Items.EquipItem(MMatchCharItemParts(i), nEquipedItemDesc[i], nEquipedItemCount[i]);
+		}
 
+		// change the weapon
+		ChangeWeapon(MMCIP_MELEE);
 
+		MMatchItemDesc* pSelectedItemDesc = m_Items.GetSelectedWeapon()->GetDesc();
 
+		if (pSelectedItemDesc == NULL)
+		{
+			m_Items.SelectWeapon(MMCIP_MELEE);
+		}
+		else
+			OnChangeWeapon(pSelectedItemDesc->m_pMItemName->Ref().m_szMeshName);
+
+		SetMaxHP(bFirst ? ZOMBIE_HP : ZOMBIE_MINOR_HP);
+		SetHP(bFirst ? ZOMBIE_HP : ZOMBIE_MINOR_HP);
+		m_Property.fMaxHP.Set(bFirst ? ZOMBIE_HP : ZOMBIE_MINOR_HP);
+		m_Property.fMaxHP.MakeCrc();
+		SetMaxAP(ZOMBIE_AP);
+		SetAP(ZOMBIE_AP);
+		m_Property.fMaxAP.Set(ZOMBIE_AP);
+		m_Property.fMaxAP.MakeCrc();
+	}
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	void TestChangePartsAll();
+	void TestToggleCharacter();
+
+Add <br>
+
+	void InfectCharacter(bool bFirst);
 
 
 
