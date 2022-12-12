@@ -565,6 +565,7 @@ GunZ The Duel Releases <br>
 - royalgunz: [royalgunz](https://www.royalgunz.net/)
 - ogunz: [ogunz](http://ogunz.xyz/)
 - empiregunz: [empiregunz](http://empiregunz.com/)
+- fxpgunz: [fxpgunz](https://fxpgunz.com)
 
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
