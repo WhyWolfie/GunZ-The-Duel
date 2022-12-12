@@ -2228,6 +2228,8 @@ Add <br>
 
 
 
+![1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20infected/1.jpg)
+![2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20infected/2.jpg)
 
 
 Credits To FreeStyleGunz
