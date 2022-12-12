@@ -854,6 +854,736 @@ Add <br>
 	}
 
 
+Find <br>
+
+	if (uStatus.m_bDamaged && (!IsDie()) && (GetHP() < 30.f))
+
+Add above <br>
+
+	//Changed hurt sounds for infected game mode
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED && uStatus.m_bDamaged && (!IsDie()) && m_bInfected)
+	{
+		DWORD currTime = timeGetTime();
+
+		if ((m_damageInfo.Ref().m_dwLastDamagedTime + 5000) < currTime)
+		{
+			int nRandId = rand() % 6 + 1;
+
+			char szSndName[128];
+			memset(szSndName, 0, sizeof(szSndName));
+			sprintf_s(szSndName, "zombie_pain%d", nRandId);
+
+			ZGetSoundEngine()->PlaySound(szSndName, GetPosition(), IsObserverTarget());
+
+			MEMBER_SET_CHECKCRC(m_damageInfo, m_dwLastDamagedTime, currTime);
+		}
+
+		uStatus.m_bDamaged = false;
+		return;
+	}
+
+Find <br>
+
+	void ZCharacter::InitRound()
+
+Replace <br>
+
+	void ZCharacter::InitRound()
+	{
+		// ¿Â°ÔÀÓ³ÝÀÇ ¿äÃ»À¸·Î Â¯ ¾ÆÀÌÄÜÀ» ´Þ¾ÆÁØ´Ù. initround½Ã¿¡, ³­ÀÔÇÒ¶§ ´Þ¾ÆÁØ´Ù
+		if (GetUserGrade() == MMUG_STAR)
+		{
+			ZGetEffectManager()->AddStarEffect(this);
+		}
+		// Custom: Infected
+		//if (m_pVMesh)
+		//	m_pVMesh->ClearScale();
+
+		m_bInfected = false;
+
+		if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+		{
+			const MTD_CharInfo* pCharInfo = &m_MInitialInfo.Ref();
+
+			for (int i = 0; i < MMCIP_END; i++) {	///< ¾ÆÀÌÅÛ ¼¼ÆÃ
+
+				//m_Items.EquipItem(MMatchCharItemParts(i), pCharInfo->nEquipedItemDesc[i], pCharInfo->nEquipedItemCount[i], pCharInfo->nEquipedItemRarity[i], pCharInfo->nEquipedItemLevel[i]);
+				m_Items.EquipItem(MMatchCharItemParts(i), pCharInfo->nEquipedItemDesc[i], pCharInfo->nEquipedItemCount[i]);
+			}
+
+			float fAddedAP = DEFAULT_CHAR_AP;			///< AP ÀçÁ¶Á¤
+			for (int i = 0; i < MMCIP_END; i++) {
+				if (!m_Items.GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+					//ÇÙ ¹æ¾î¿ë ÀÓ½ÃÄÚµå
+					// Custom: Bypass AP limit of 40 (MAIET trap check)
+					//if(m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() > 40) {
+					//	m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() = 0; 
+					//}
+					fAddedAP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref();
+				}
+			}
+
+			float fAddedHP = DEFAULT_CHAR_HP;			///< HP ÀçÁ¶Á¤
+			for (int i = 0; i < MMCIP_END; i++) {
+				if (!m_Items.GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+					fAddedHP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nHP.Ref();
+				}
+			}
+
+			m_Property.fMaxAP.Set_CheckCrc(pCharInfo->nAP + fAddedAP);
+			m_Property.fMaxHP.Set_CheckCrc(pCharInfo->nHP + fAddedHP);
+
+			m_fPreMaxHP = pCharInfo->nHP + fAddedHP;
+			m_fPreMaxAP = pCharInfo->nAP + fAddedAP;
+
+			ZItem* pMeleeItem = m_Items.GetItem(MMCIP_MELEE);
+			if (pMeleeItem != NULL && pMeleeItem->GetDesc() != NULL)
+			{
+				OnChangeWeapon(pMeleeItem->GetDesc()->m_pMItemName->Ref().m_szMeshName);
+				ChangeWeapon(MMCIP_MELEE);
+			}
+
+			InitMeshParts();
+		}
+	}
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	m_bNetworkAlive = true;		// ÀÎÅÍ³Ý ¿¬°áµÇ¾îÀÖÀ½
+	m_dLastTimeTick = 0;
+	m_dAbuseHandicapTick = 0;
+
+	m_bSkipUIDrawByRule = false;
+
+Add <br>
+
+	m_pInfectedOverlay = NULL;
+	m_pInfectedWidescreenOverlay = NULL;
+
+
+Find <br>
+
+		else
+		{
+			pWidget->Show( false);
+
+			MWidget *pPicture = ZApplication::GetGameInterface()->GetIDLResource()->FindWidget( "TDM_RedWin");
+			if ( pPicture)
+				pPicture->Show( false);
+			pPicture = ZApplication::GetGameInterface()->GetIDLResource()->FindWidget( "TDM_BlueWin");
+			if ( pPicture)
+				pPicture->Show( false);
+		}
+
+Add <br>
+
+	// Infected
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		SAFE_DELETE(m_pInfectedOverlay);
+		SAFE_DELETE(m_pInfectedWidescreenOverlay);
+		m_pInfectedOverlay = new MBitmapR2;
+		m_pInfectedWidescreenOverlay = new MBitmapR2;
+		m_pInfectedOverlay->Create("zombie_overlay.dds", RGetDevice(), "interface/Default/Combat/zombie_overlay.dds");
+		m_pInfectedWidescreenOverlay->Create("zombie_overlay_ws.dds", RGetDevice(), "interface/Default/Combat/zombie_overlay_ws.dds");
+	}
+
+Find <br>
+
+	void ZCombatInterface::OnDestroy()
+	{
+		if(m_nClanIDBlue) {
+			ZGetEmblemInterface()->DeleteClanInfo(m_nClanIDBlue);
+			m_nClanIDBlue = 0;
+		}
+		if(m_nClanIDRed) {
+			ZGetEmblemInterface()->DeleteClanInfo(m_nClanIDRed);
+			m_nClanIDRed = 0;
+		}
+
+Add <br>
+
+	// Infected Mode
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		SAFE_DELETE(m_pInfectedOverlay);
+		SAFE_DELETE(m_pInfectedWidescreenOverlay);
+	}
+
+Find <br>
+
+	bool bDrawAllPlayerName = false;
+
+Add <br>
+
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED &&
+		ZGetGame()->m_pMyCharacter->GetTeamID() == MMT_RED)
+
+
+Find <br>
+
+		if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_BERSERKER)
+		{
+			if (pCharacter->IsTagger()) pItem->bCommander = true;
+		}
+
+Add <br>
+
+		if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED && pCharacter->m_dwStatusBitPackingValue.Ref().m_bCommander)
+			pItem->bCommander = true;
+
+Find <br>
+
+			if(ZGetGameInterface()->GetCamera()->GetLookMode()==ZCAMERA_DEFAULT)
+				m_CrossHair.Draw(pDC);
+		}
+
+Add <br>
+
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+		{
+			ZBmNumLabel* pBmNumLabel = NULL;
+			MPOINT point;
+
+			pBmNumLabel = (ZBmNumLabel*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("TDM_Score_Max");
+			if (pBmNumLabel)
+			{
+				point = pBmNumLabel->GetPosition();
+
+				if (RGetIsWidthScreen() || RGetIsLongScreen())
+				{
+					point.x += 28;
+					point.y += 50;
+				}
+				else
+				{
+					point.x += 14;
+					point.y += 50;
+				}
+
+				if (g_bShowCTFMsg && GetTickCount() - g_dwCTFMsgShowTime < 5000)
+				{
+					point = pBmNumLabel->GetPosition();
+
+					if (RGetIsWidthScreen() || RGetIsLongScreen())
+					{
+						point.x -= 90;
+						point.y += 145;
+					}
+					else
+					{
+						point.x -= 100;
+						point.y += 145;
+					}
+
+					pDC->SetFont(MFontManager::Get("FONTa10_O2Wht"));
+					pDC->SetColor(MCOLOR(0xFF00FFDC));
+					pDC->Text(point, g_szCTFMsg);
+				}
+			}
+		}
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+
+	char szVictim[256];
+	strcpy(szVictim, pVictim ? pVictim->GetUserAndClanName() : szAnonymous);
+
+	char szAttacker[256];
+	strcpy(szAttacker, pAttacker ? pAttacker->GetUserAndClanName() : szAnonymous);
+
+Add <br>
+
+	if (GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		char szInfectedMsg[128];
+		memset(szInfectedMsg, 0, sizeof(szInfectedMsg));
+
+		if (pVictim == pAttacker && pVictim->GetTeamID() == MMT_BLUE)
+			sprintf_s(szInfectedMsg, "Human '%s' has died!", pVictim ? pVictim->GetUserName() : "Unknown");
+		else if (pVictim->GetTeamID() == MMT_RED)
+		{
+			sprintf_s(szInfectedMsg, "Zombie '%s' has been slain!", pVictim ? pVictim->GetUserName() : "Unknown");
+			ZGetSoundEngine()->PlaySound("zombie_die");
+		}
+		else if (pVictim->GetTeamID() == MMT_BLUE)
+			sprintf_s(szInfectedMsg, "Human '%s' has been infected!", pVictim ? pVictim->GetUserName() : "Unknown");
+		ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg(szInfectedMsg);
+	}
+
+
+Find <br>
+
+						if (GetMatch()->GetMatchType() == MMATCH_GAMETYPE_ASSASSINATE)
+						{
+							if ( nTeamWon == MMT_RED)
+								ZGetGameInterface()->PlayVoiceSound( VOICE_BLUETEAM_BOSS_DOWN, 2100);
+							else
+								ZGetGameInterface()->PlayVoiceSound( VOICE_REDTEAM_BOSS_DOWN, 2000);
+						}
+
+Replace  <br>
+
+						if (GetMatch()->GetMatchType() == MMATCH_GAMETYPE_ASSASSINATE || GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+						{
+							if (nTeamWon == MMT_RED)
+								ZGetGameInterface()->PlayVoiceSound(VOICE_BLUETEAM_BOSS_DOWN, 2100);
+							else
+								ZGetGameInterface()->PlayVoiceSound(VOICE_REDTEAM_BOSS_DOWN, 2000);
+						}
+
+
+Find <br>
+
+	if(ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_DUEL)
+	{
+		ZRuleDuel* pDuel = (ZRuleDuel*)ZGetGameInterface()->GetGame()->GetMatch()->GetRule();
+		nWritten = zfwrite(&pDuel->QInfo,sizeof(MTD_DuelQueueInfo),1,m_pReplayFile);
+		if(nWritten==0) goto RECORDING_FAIL;
+	}
+
+Add <br>
+
+	else if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		ZRuleTeamInfected* pTeamInfected = (ZRuleTeamInfected*)ZGetGameInterface()->GetGame()->GetMatch()->GetRule();
+		nWritten = zfwrite(&pTeamInfected->m_uidPatientZero, sizeof(MUID), 1, m_pReplayFile);
+		if (nWritten == 0) goto RECORDING_FAIL;
+	}
+
+
+Find <br>
+
+	void ZGame::OnResetTeamMembers(MCommand* pCommand)
+	{
+		if (!m_Match.IsTeamPlay()) return;
+
+		ZChatOutput( MCOLOR(ZCOLOR_GAME_INFO), ZMsg(MSG_GAME_MAKE_AUTO_BALANCED_TEAM) );
+
+
+Replace <br>
+
+	void ZGame::OnResetTeamMembers(MCommand* pCommand)
+	{
+		if (!m_Match.IsTeamPlay()) return;
+
+		if (m_Match.GetMatchType() != MMATCH_GAMETYPE_INFECTED)
+			ZChatOutput(MCOLOR(ZCOLOR_GAME_INFO), ZMsg(MSG_GAME_MAKE_AUTO_BALANCED_TEAM));
+
+Open(ZGameClient.cpp) <br>
+Find <br>
+
+			sprintf(szTranslated, szErrStr, szArg);
+			ZChatOutput(szTranslated, ZChat::CMT_SYSTEM);
+
+
+Add <br>
+
+			if (ZGetGame() && ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+			{
+				if (idErrMsg == MERR_TIME_10REMAINING || idErrMsg == MERR_TIME_30REMAINING || idErrMsg == MERR_TIME_60REMAINING)
+				{
+					ZGetSoundEngine()->PlaySound("time_tick_alert");
+				}
+			}
+
+
+Find <br>
+
+		ZTransMsg(szText, MSG_JOINED_STAGE, 1, szTmp);
+		ZChatOutput(szText, ZChat::CMT_SYSTEM, ZChat::CL_STAGE);
+
+
+Add <br>
+
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+		{
+			ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_AVATAR);
+		}
+
+
+Find <br>
+
+	string name = GetObjName(uidChar);
+	char szText[256];
+	if (uidChar == GetPlayerUID())
+	{
+		ZGetGameInterface()->GetChat()->Clear(ZChat::CL_STAGE);
+
+		char szTmp[ 256];
+		sprintf(szTmp, "(%03d)%s", nRoomNo, szStageName);
+
+		ZTransMsg( szText, MSG_JOINED_STAGE, 1, szTmp);
+		ZChatOutput(szText, ZChat::CMT_SYSTEM, ZChat::CL_STAGE);
+	}
+
+Replace <br>
+
+	string name = GetObjName(uidChar);
+	char szText[256];
+	if (uidChar == GetPlayerUID())
+	{
+		ZGetGameInterface()->GetChat()->Clear(ZChat::CL_STAGE);
+
+		char szTmp[ 256];
+		sprintf(szTmp, "(%03d)%s", nRoomNo, szStageName);
+
+		//Infected game mode avatar check
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+		{
+			ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_AVATAR);
+		}
+
+		ZTransMsg( szText, MSG_JOINED_STAGE, 1, szTmp);
+		ZChatOutput(szText, ZChat::CMT_SYSTEM, ZChat::CL_STAGE);
+	}
+
+
+Find <br>
+
+	void ZGameClient::UpdateStageSetting(MSTAGE_SETTING_NODE* pSetting, STAGE_STATE nStageState, const MUID& uidMaster)
+	{
+		//m_MatchStageSetting.ShiftHeapPos();
+		m_MatchStageSetting.UpdateStageSetting(pSetting);
+		m_MatchStageSetting.SetMasterUID(uidMaster);
+		m_MatchStageSetting.SetStageState(nStageState);
+
+		bool bForceEntry = false;
+		if (nStageState != STAGE_STATE_STANDBY)
+		{
+			bForceEntry = true;
+		}
+		m_bForcedEntry = bForceEntry;
+
+		ZApplication::GetGameInterface()->SerializeStageInterface();
+	}
+
+Replace <br>
+
+
+	void ZGameClient::UpdateStageSetting(MSTAGE_SETTING_NODE* pSetting, STAGE_STATE nStageState, const MUID& uidMaster)
+	{
+		//m_MatchStageSetting.ShiftHeapPos();
+		m_MatchStageSetting.UpdateStageSetting(pSetting);
+		m_MatchStageSetting.SetMasterUID(uidMaster);
+		m_MatchStageSetting.SetStageState(nStageState);
+
+		//Infected game mode avatar check
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+		{
+			ZPostRequestTakeoffItem(ZGetGameClient()->GetPlayerUID(), MMCIP_AVATAR);
+		}
+
+		bool bForceEntry = false;
+		if (nStageState != STAGE_STATE_STANDBY)
+		{
+			bForceEntry = true;
+		}
+		m_bForcedEntry = bForceEntry;
+
+		ZApplication::GetGameInterface()->SerializeStageInterface();
+	}
+
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+	ZGetGameTypeManager()->SetGameTypeStr(MMATCH_GAMETYPE_DUELTOURNAMENT, ZMsg(MSG_MT_DUELTOURNAMENT));
+
+Add <br>
+
+	ZGetGameTypeManager()->SetGameTypeStr( MMATCH_GAMETYPE_INFECTED, "Infected");
+
+Find <br>
+
+	void ZGameInterface::UpdateBlueRedTeam( void)
+	{
+		MButton* pBlueTeamBtn  = (MButton*)m_IDLResource.FindWidget("StageTeamBlue");
+		MButton* pBlueTeamBtn2 = (MButton*)m_IDLResource.FindWidget("StageTeamBlue2");
+		MButton* pRedTeamBtn  = (MButton*)m_IDLResource.FindWidget("StageTeamRed");
+		MButton* pRedTeamBtn2 = (MButton*)m_IDLResource.FindWidget("StageTeamRed2");
+		if ((pRedTeamBtn == NULL) || (pBlueTeamBtn == NULL) || (pRedTeamBtn2 == NULL) || (pBlueTeamBtn2 == NULL))
+			return;
+
+Add <br>
+
+	bool bInfectedMode = ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED;
+
+
+Open(ZMatch.cpp) <br>
+Find <br>
+
+	void ZMatch::InitCharactersPosition()
+	{
+	    // ?????? °?¿?
+	    if (IsTeamPlay())
+	    {
+		int nSpawnIndex[ 2] = { 0, 0 };
+
+
+Replace <br>
+
+	void ZMatch::InitCharactersPosition()
+	{
+		// ÆÀÀüÀÏ °æ¿ì
+		if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_INFECTED)
+			if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_SPY)
+		{
+			int nSpawnIndex[2] = { 0, 0 };
+
+Find <br>
+
+	  switch(m_nRoundState) 
+	    {
+
+    case MMATCH_ROUNDSTATE_PREPARE: 
+        {
+
+        }
+        break;
+    case MMATCH_ROUNDSTATE_PRE_COUNTDOWN:
+        {
+        }
+        break;
+    case MMATCH_ROUNDSTATE_COUNTDOWN : 
+        {
+            OutputDebugString("MMATCH_ROUNDSTATE_COUNTDOWN>> InitRound BEGIN \n");
+            InitRound();
+            OutputDebugString("MMATCH_ROUNDSTATE_COUNTDOWN>> InitRound END \n");
+        }
+        break;
+    case MMATCH_ROUNDSTATE_PLAY:
+        {
+            if (!IsTeamPlay())
+            {
+
+            }
+        }
+        break;
+
+Replace <br>
+
+    switch(m_nRoundState) 
+    {
+
+    case MMATCH_ROUNDSTATE_PREPARE: 
+        {
+
+        }
+        break;
+	case MMATCH_ROUNDSTATE_PRE_COUNTDOWN:
+	{
+		if (GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+			InitRound();
+	}
+	break;
+	case MMATCH_ROUNDSTATE_COUNTDOWN:
+	{
+		OutputDebugString("MMATCH_ROUNDSTATE_COUNTDOWN>> InitRound BEGIN \n");
+		if (GetMatchType() != MMATCH_GAMETYPE_INFECTED)
+			InitRound();
+		OutputDebugString("MMATCH_ROUNDSTATE_COUNTDOWN>> InitRound END \n");
+	}
+	break;
+    case MMATCH_ROUNDSTATE_PLAY:
+        {
+            if (!IsTeamPlay())
+            {
+
+            }
+        }
+        break;
+
+
+Open(ZPlayerListBox.cpp) <br>
+Find <br>
+
+		const MSTAGE_SETTING_NODE* pStageSetting = ZGetGameClient()->GetMatchStageSetting()->GetStageSetting();
+
+		if ( (nTeam != MMT_SPECTATOR) && (ZGetGameTypeManager()->IsTeamGame(pStageSetting->nGameType) == false))
+		{
+			nTeam = MMT_ALL;
+		}
+
+
+Replace <br>
+
+		const MSTAGE_SETTING_NODE* pStageSetting = ZGetGameClient()->GetMatchStageSetting()->GetStageSetting();
+
+		//Infected game mode room list
+		if ((nTeam != MMT_SPECTATOR) && (ZGetGameTypeManager()->IsTeamGame(pStageSetting->nGameType) == false) ||
+			pStageSetting->nGameType == MMATCH_GAMETYPE_INFECTED || pStageSetting->nGameType == MMATCH_GAMETYPE_SPY)
+		{
+			nTeam = MMT_ALL;
+		}
+
+Open(ZReplay.cpp) <br>
+Find <br>
+
+	bool ZReplayLoader::LoadStageSettingEtc(ZFile* file)
+	{
+		// °ÔÀÓ·ê º° Ãß°¡ ¼¼ÆÃ°ª ·Îµå
+		if(m_StageSetting.nGameType==MMATCH_GAMETYPE_DUEL)
+		{
+			ZRuleDuel* pDuel = (ZRuleDuel*)ZGetGameInterface()->GetGame()->GetMatch()->GetRule();
+			int nRead = zfread(&pDuel->QInfo,sizeof(MTD_DuelQueueInfo),1,file);
+			if(nRead==0) return false;
+		}
+Add <br>
+
+	if (m_StageSetting.nGameType == MMATCH_GAMETYPE_INFECTED)
+	{
+		ZRuleTeamInfected* pTeamInfected = (ZRuleTeamInfected*)ZGetGameInterface()->GetGame()->GetMatch()->GetRule();
+
+		MUID uidPatientZero;
+		int nRead = zfread(&uidPatientZero, sizeof(MUID), 1, file);
+		if (nRead == 0) return false;
+
+		pTeamInfected->m_uidPatientZero = uidPatientZero;
+	}
+
+Find <br>
+
+			pChar->SetVisible(true);
+	#ifdef _REPLAY_TEST_LOG
+			mlog("[Add Character %s(%d)]\n", pChar->GetUserName());
+	#endif
+
+		}
+
+Add under <br>
+
+	// lazy way of "fixing"
+	if (m_StageSetting.nGameType == MMATCH_GAMETYPE_INFECTED)
+	{
+		if (ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY)
+		{
+			for (ZCharacterManager::iterator itor = ZGetGame()->m_CharacterManager.begin(); itor != ZGetGame()->m_CharacterManager.end(); ++itor)
+			{
+				ZCharacter* pCharacter = (ZCharacter*)(*itor).second;
+				if (pCharacter)
+				{
+					if (pCharacter->GetInitialized() && !pCharacter->IsAdminHide() && pCharacter->GetTeamID() == MMT_RED && !pCharacter->IsDie())
+						pCharacter->InfectCharacter(false);
+				}
+			}
+		}
+	}
+
+Open(ZRule.cpp) <br>
+Find <br>
+
+	case MMATCH_GAMETYPE_DUELTOURNAMENT:
+		{
+			return (new ZRuleDuelTournament(pMatch));
+		}
+		break;
+
+Add <br>
+
+	case MMATCH_GAMETYPE_INFECTED:
+	{
+		return (new ZRuleTeamInfected(pMatch));
+	}
+	break;
+
+Open(ZShopEquipInterface.cpp) <br>
+Find <br>
+
+	bool ZShopEquipInterface::Equip(MMatchCharItemParts parts, MUID& uidItem)
+	{
+
+Replace <br>
+
+	bool ZShopEquipInterface::Equip(MMatchCharItemParts parts, MUID& uidItem)
+	{
+		ZPostRequestEquipItem(ZGetGameClient()->GetPlayerUID(), uidItem, parts);
+		return true;
+
+		//Infected game mode avatar check
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+		{
+			if (parts == MMCIP_AVATAR)
+				return false;
+		}
+	}
+
+
+Find <br>
+
+	case MMATCH_GAMETYPE_DEATHMATCH_SOLO:
+
+Add <br>
+
+	case MMATCH_GAMETYPE_INFECTED:
+
+Find <br>
+
+	else if ( pSetting->nGameType == MMATCH_GAMETYPE_QUEST)						// Äù½ºÆ® ¸ðµåÀÌ¸é...
+	{
+		// ¸Ê ÀÌ¸§ ¹è°æ ÀÌ¹ÌÁö º¯È¯
+		if ( pAniMapImg)
+			pAniMapImg->SetCurrentFrame( 2);
+
+		// Äù½ºÆ® UI º¸ÀÓ
+		bQuestUI = true;
+	}
+
+Add <br>
+
+	else if (pSetting->nGameType == MMATCH_GAMETYPE_INFECTED)					// Infected Mode
+	{
+		if (pAniMapImg)
+			pAniMapImg->SetCurrentFrame(3);
+
+		bQuestUI = false;
+	}
+
+
+Open(ZWorld.cpp) <br>
+Find <br>
+
+		FogInfo finfo = GetBsp()->GetFogInfo();
+		m_bFog = finfo.bFogEnable;
+		m_fFogNear = finfo.fNear;
+		m_fFogFar = finfo.fFar;
+		m_dwFogColor = finfo.dwFogColor;
+
+Replace <br>
+
+	if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		m_bFog = true;
+		m_fFogNear = 0;
+		m_fFogFar = 5000;
+		m_dwFogColor = 0xffff0000;
+	}
+	else
+	{
+		FogInfo finfo = GetBsp()->GetFogInfo();
+		m_bFog = finfo.bFogEnable;
+		m_fFogNear = finfo.fNear;
+		m_fFogFar = finfo.fFar;
+		m_dwFogColor = finfo.dwFogColor;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
