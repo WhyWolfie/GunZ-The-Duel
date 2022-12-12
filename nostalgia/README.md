@@ -21,4 +21,4 @@
 - urbangunz: [urbangunz](https://web.archive.org/web/20080706155317/http://urbangamerz.net/)
 - mysticgunz: [mysticgunz](https://web.archive.org/web/20090121215947/http://www.mysticgamerz.tk/)
 - systemgunz: [systemgunz](https://web.archive.org/web/20081208025723/http://sgunz.no-ip.org/Gunz/)
-
+- herogamersgunz: [herogamersgunz](https://web.archive.org/web/20221017051051/https://gunz.herogamers.net/)
