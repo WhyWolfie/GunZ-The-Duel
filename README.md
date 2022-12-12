@@ -256,7 +256,6 @@ GunZ The Duel Releases <br>
 - forcenat: [forcenat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20forcenat)
 - servertime: [servertime](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20servertime)
 
-
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
 - staffmode: [staffmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20staffmode)
@@ -266,6 +265,7 @@ GunZ The Duel Releases <br>
 - vampire: [vampire](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20vampire)
 - paintball: [paintball](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20paintball)
 - gunmode: [gunmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gunmode)
+- infected: [infected](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20infected)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
