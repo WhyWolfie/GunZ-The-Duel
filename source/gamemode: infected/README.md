@@ -2226,6 +2226,166 @@ Add <br>
 	DWORD g_dwCTFMsgShowTime = 0;
 	static char g_szCTFMsg[128] = { 0, };
 
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+	if ( m_bTeamPlay)
+	{
+		pRedTeamBtn->Show(true);
+		pRedTeamBtn2->Show(true);
+		pBlueTeamBtn->Show(true);
+		pBlueTeamBtn2->Show(true);
+
+Replace <br>
+
+	if (m_bTeamPlay && !bInfectedMode)
+	{
+		pRedTeamBtn->Show(true);
+		pRedTeamBtn2->Show(true);
+		pBlueTeamBtn->Show(true);
+		pBlueTeamBtn2->Show(true);
+
+Open(ZCombatInterface.h) <br>
+Find <br>
+
+	bool				m_bNetworkAlive;
+	DWORD				m_dLastTimeTick;
+	DWORD				m_dAbuseHandicapTick;
+
+Add <br>
+
+	MBitmapR2*			m_pInfectedOverlay;
+	MBitmapR2*			m_pInfectedWidescreenOverlay;
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	m_bNetworkAlive = true;		// ÀÎÅÍ³Ý ¿¬°áµÇ¾îÀÖÀ½
+	m_dLastTimeTick = 0;
+	m_dAbuseHandicapTick = 0;
+
+	m_bSkipUIDrawByRule = false;
+
+Add <br>
+
+	m_pInfectedOverlay = NULL;
+	m_pInfectedWidescreenOverlay = NULL;
+
+Find <br>
+
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_DUELTOURNAMENT)
+	{
+
+Add <br>
+
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		SAFE_DELETE(m_pInfectedOverlay);
+		SAFE_DELETE(m_pInfectedWidescreenOverlay);
+		m_pInfectedOverlay = new MBitmapR2;
+		m_pInfectedWidescreenOverlay = new MBitmapR2;
+		m_pInfectedOverlay->Create("zombie_overlay.dds", RGetDevice(), "interface/Default/Combat/zombie_overlay.dds");
+		m_pInfectedWidescreenOverlay->Create("zombie_overlay_ws.dds", RGetDevice(), "interface/Default/Combat/zombie_overlay_ws.dds");
+	}
+
+Find <br>
+
+	void ZCombatInterface::OnDestroy()
+	{
+		if (m_nClanIDBlue) {
+			ZGetEmblemInterface()->DeleteClanInfo(m_nClanIDBlue);
+			m_nClanIDBlue = 0;
+		}
+		if (m_nClanIDRed) {
+			ZGetEmblemInterface()->DeleteClanInfo(m_nClanIDRed);
+			m_nClanIDRed = 0;
+		}
+
+
+Add <br>
+
+	// Infected Mode
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED)
+	{
+		SAFE_DELETE(m_pInfectedOverlay);
+		SAFE_DELETE(m_pInfectedWidescreenOverlay);
+	}
+
+
+Find <br>
+
+	if (m_bShowResult)	// °á°ú È­¸é
+		return;
+
+	bool bDrawAllPlayerName = false;
+
+Add <br>
+
+	if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_INFECTED &&
+		ZGetGame()->m_pMyCharacter->GetTeamID() == MMT_RED)
+
+Find <br>
+
+	if(IsShowUI())				// ¸ðµç UI °¨Ãß±â... by kam 20081020
+	{
+		// Ã¤ÆÃ ÀÎÇ² Ã¢À» ±×¸°´Ù.
+		m_Chat.OnDraw(pDC);
+
+		if (!m_bSkipUIDrawByRule)
+
+Add Above <br>
+
+	if (IsShowUI() && !m_bSkipUIDrawByRule)
+	{
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_INFECTED
+			&& (ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY || ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_FINISH))
+		{
+			static int nFadeOpacity = 150;
+			static bool bUp = true;
+			static int dwLastModTime = 0;
+			if ((!m_Observer.IsVisible() && ZGetGame()->m_pMyCharacter->m_bInfected) || (m_Observer.IsVisible() && m_Observer.GetTargetCharacter()->m_bInfected))
+			{
+				// Resolution change fix
+				MBitmap* pBitmapSelection = (RGetIsWidthScreen() || RGetIsLongScreen()) ? m_pInfectedWidescreenOverlay : m_pInfectedOverlay;
+
+				if (pBitmapSelection)
+				{
+					DWORD elapsed = timeGetTime() - dwLastModTime;
+
+					pDC->SetEffect(MDE_ADD); // the magic trick to ignore black for alpha
+					pDC->SetOpacity(nFadeOpacity); // 75 percent of 0xFF (255)
+					pDC->SetBitmap(pBitmapSelection);
+					pDC->Draw(0, 0, RGetScreenWidth(), RGetScreenHeight());
+					pDC->SetOpacity(255); // Reset opacity
+					pDC->SetBitmap(NULL); // Reset bitmap
+					pDC->SetEffect(MDE_NORMAL);
+
+					if (bUp)
+					{
+						if (nFadeOpacity == 255)
+							bUp = false;
+
+						if (elapsed > 300)
+						{
+							dwLastModTime = timeGetTime();
+							nFadeOpacity++;
+						}
+					}
+					else
+					{
+						if (nFadeOpacity == 150)
+							bUp = true;
+
+						if (elapsed > 300)
+						{
+							dwLastModTime = timeGetTime();
+							nFadeOpacity--;
+						}
+					}
+				}
+			}
+		}
+	}
 
 
 ![1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20infected/1.jpg)
