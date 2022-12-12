@@ -1,3 +1,7 @@
+Gamemode: Infected <br>
+
+#define INFECTED_MIN_PLAYER_COUNT 4 (2) players <br>
+
 Open(MBaseGameType.h) <br>
 Find <br> 
 
@@ -2221,28 +2225,6 @@ Add <br>
 	bool g_bShowCTFMsg = false;
 	DWORD g_dwCTFMsgShowTime = 0;
 	static char g_szCTFMsg[128] = { 0, };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
