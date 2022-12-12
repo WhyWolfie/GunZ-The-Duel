@@ -1897,18 +1897,309 @@ Add <br>
 
 	void InfectCharacter(bool bFirst);
 
+Open(ZRuleDeathMatch.cpp) <br>
+Find <br>
+
+	ZRuleSoloDeathMatch::ZRuleSoloDeathMatch(ZMatch* pMatch) : ZRule(pMatch)
+	{
+
+	}
+
+Add <br>
+
+	//Infected Mode
+	ZRuleTeamInfected::ZRuleTeamInfected(ZMatch* pMatch) : ZRule(pMatch)
+	{
+		m_bLastFive = false;
+	}
+
+	ZRuleTeamInfected::~ZRuleTeamInfected()
+	{
+
+	}
+
+	bool ZRuleTeamInfected::OnCommand(MCommand* pCommand)
+	{
+		if (!ZGetGame()) return false;
+
+		switch (pCommand->GetID())
+		{
+		case MC_MATCH_ASSIGN_COMMANDER:
+		{
+			MUID uidPlayer;
+
+			pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+			//pCommand->GetParameter(&uidBlueCommander,	1, MPT_UID);
+
+			OnInfected(uidPlayer, true);
+		}
+		break;
+
+		case MC_MATCH_INFECT:
+		{
+			MUID uidPlayer;
+
+			pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+			OnInfected(uidPlayer, false);
+		}
+		break;
+
+		case MC_MATCH_LASTSURVIVOR:
+		{
+			MUID uidPlayer;
+			pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+			if (uidPlayer.IsInvalid())
+				break;
+
+			ZCharacter* pChar = (ZCharacter*)ZGetGame()->m_CharacterManager.Find(uidPlayer);
+			if (pChar)
+			{
+				char szInfectedMsg[128];
+				memset(szInfectedMsg, 0, sizeof(szInfectedMsg));
+
+				if (pChar == ZGetGame()->m_pMyCharacter && !ZGetGameInterface()->GetCombatInterface()->GetObserverMode())
+				{
+					sprintf_s(szInfectedMsg, "You are the last survivor.");
+					ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg(szInfectedMsg);
+				}
+				else
+				{
+					sprintf_s(szInfectedMsg, "'%s' is the last survivor.", pChar->GetUserName());
+					ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg(szInfectedMsg);
+				}
+			}
+
+			ZGetSoundEngine()->PlaySound("last_survivor");
+		}
+		break;
+		}
+
+		return false;
+	}
+
+	void ZRuleTeamInfected::OnInfected(const MUID& uidPlayer, bool bFirst)
+	{
+		if (!ZGetGame()) return;
+
+		if (uidPlayer.IsInvalid()) return;
+
+		char szTest[128];
+		memset(szTest, 0, sizeof(szTest));
+
+		//sprintf_s (szTest, "player [%u-%u] - infect call start", uidPlayer.High, uidPlayer.Low);
+		//ZChatOutput(szTest, ZChat::CMT_SYSTEM);
+
+		if (bFirst)
+		{
+			for (ZCharacterManager::iterator itor = ZGetGame()->m_CharacterManager.begin(); itor != ZGetGame()->m_CharacterManager.end(); ++itor)
+			{
+				ZGetEffectManager()->Clear();
+				ZCharacter* pCharacter = (ZCharacter*)(*itor).second;
+				pCharacter->m_dwStatusBitPackingValue.Ref().m_bCommander = false;
+			}
+		}
+
+		ZCharacter* pChar = (ZCharacter*)ZGetGame()->m_CharacterManager.Find(uidPlayer);
+
+		if (pChar)
+		{
+			if (pChar->m_bInfected)
+			{
+				//sprintf_s (szTest, "player [%u-%u] - infect FAIL (done)", uidPlayer.High, uidPlayer.Low);
+				//ZChatOutput(szTest, ZChat::CMT_SYSTEM);
+				return;
+			}
+
+			if (!pChar->GetInitialized() || pChar->IsAdminHide())
+				return;
+
+			//sprintf_s (szTest, "player [%u-%u] - infect OK", uidPlayer.High, uidPlayer.Low);
+			//ZChatOutput(szTest, ZChat::CMT_SYSTEM);
+
+			pChar->SetVisible(true);
+			pChar->Revival();
+			pChar->InfectCharacter(bFirst);
+			pChar->OnScream();
+
+			// because revival() resets the commander flag
+			if (bFirst)
+			{
+				ZGetEffectManager()->AddCommanderIcon(pChar, 0);
+				pChar->m_dwStatusBitPackingValue.Ref().m_bCommander = true;
+				m_uidPatientZero = pChar->GetUID();
+			}
+			else
+			{
+				ZGetSoundEngine()->PlaySound("scored");
+				ZCharacter* pMaster = (ZCharacter*)ZGetGame()->m_CharacterManager.Find(m_uidPatientZero);
+
+				if (pMaster && pMaster == ZGetGame()->m_pMyCharacter)
+				{
+					pMaster->SetHP(500.f); // ZOMBIE_HP
+				}
+			}
+
+			int nRandId = rand() % 14 + 1;
+
+			char szSndName[128];
+			memset(szSndName, 0, sizeof(szSndName));
+			sprintf_s(szSndName, "zombie_voice_idle%d", nRandId);
+
+			ZGetSoundEngine()->PlaySound(szSndName/*, pChar->GetPosition(), pChar->IsObserverTarget()*/);
+
+			if ((!ZGetGameInterface()->GetCombatInterface()->GetObserverMode() && pChar == ZGetGame()->m_pMyCharacter) || (ZGetGameInterface()->GetCombatInterface()->GetObserverMode() && pChar == ZGetGameInterface()->GetCombatInterface()->GetObserver()->GetTargetCharacter()))
+			{
+				// don't release
+				if (pChar == ZGetGame()->m_pMyCharacter)
+					ZGetGame()->ReleaseObserver();
+
+				ZGetCamera()->Shock(2000.0f, .7f, rvector(0.0f, 0.0f, -1.0f)); // Vibrate camera
+
+				char szInfectedMsg[128];
+				memset(szInfectedMsg, 0, sizeof(szInfectedMsg));
+
+				sprintf_s(szInfectedMsg, "YOU are Infected. KILL THEM ALL!");
+
+				ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg(szInfectedMsg);
+				ZGetSoundEngine()->PlaySound("you_infected");
+			}
+		}
+	}
+
+	void ZRuleTeamInfected::OnSetRoundState(MMATCH_ROUNDSTATE roundState)
+	{
+		switch (roundState)
+		{
+		case MMATCH_ROUNDSTATE_PRE_COUNTDOWN:
+		{
+			ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg("Zombies will spawn soon. HIDE!");
+			m_bLastFive = false;
+			m_uidPatientZero = MUID(0, 0);
+			//ZChatOutput("HIDE NOW", ZChat::CMT_SYSTEM);
+			ZGetSoundEngine()->PlaySound("wait_zombie_player");
+		}
+		break;
+		case MMATCH_ROUNDSTATE_COUNTDOWN:
+		{
+			//ZChatOutput("", ZChat::CMT_SYSTEM);
+		}
+		break;
+		case MMATCH_ROUNDSTATE_PLAY:
+		{
+			if (ZGetGame()->IsReplay() && m_uidPatientZero.IsValid() && ZGetGame()->m_pMyCharacter->GetUID() == m_uidPatientZero && !ZGetGame()->m_pMyCharacter->m_bInfected)
+				ZGetGame()->m_pMyCharacter->InfectCharacter(true);
+
+			if (ZGetGame()->IsReplay() && m_uidPatientZero.IsValid() && ZGetGame()->m_pMyCharacter->GetTeamID() == MMT_RED && !ZGetGame()->m_pMyCharacter->m_bInfected)
+				ZGetGame()->m_pMyCharacter->InfectCharacter(false);
+
+			ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg("RUN!");
+			ZChatOutput("RUN! The zombies come for you, remember to work as a team.", ZChat::CMT_SYSTEM);
+			ZGetSoundEngine()->PlaySound("run_for_you_life");
+		}
+		break;
+
+		case MMATCH_ROUNDSTATE_FREE:
+		{
+			ZGetGameInterface()->GetCombatInterface()->UpdateCTFMsg("4 or more players are required to start the game.");
+			m_bLastFive = false;
+			m_uidPatientZero = MUID(0, 0);
+			//ZChatOutput("RS -> (Free)", ZChat::CMT_SYSTEM);
+			ZGetSoundEngine()->PlaySound("player_4");
+		}
+		break;
+		}
+	}
+
+	void ZRuleTeamInfected::OnResponseRuleInfo(MTD_RuleInfo* pInfo)
+	{
+		MTD_RuleInfo_Assassinate* pAssassinateRule = (MTD_RuleInfo_Assassinate*)pInfo;
+		OnInfected(pAssassinateRule->uidRedCommander, true);
+	}
+
+	void ZRuleTeamInfected::OnUpdate(float fDelta)
+	{
+		if (ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY)
+		{
+			DWORD dwTime = ZGetGame()->GetMatch()->GetRemaindTime();
+			DWORD dwLimitTime = ZGetGameClient()->GetMatchStageSetting()->GetStageSetting()->nLimitTime;
+			if (dwLimitTime != 99999)
+			{
+				dwLimitTime *= 60000;
+				if (dwTime <= dwLimitTime)
+				{
+					dwTime = (dwLimitTime - dwTime) / 1000;
+
+					if ((dwTime / 60) == 0 && (dwTime % 60) == 5 && !m_bLastFive)
+					{
+						m_bLastFive = true;
+						ZGetSoundEngine()->PlaySound("time_tick_last5");
+					}
+				}
+			}
+		}
+	   }
+
+Open(ZRuleDeathMatch.h) <br>
+Find <br>
+
+	class ZRuleSoloDeathMatch : public ZRule
+	{
+	public:
+		ZRuleSoloDeathMatch(ZMatch* pMatch);
+		virtual ~ZRuleSoloDeathMatch();
+	};
+
+Add <br>
+
+	class ZRuleTeamInfected : public ZRule
+	{
+	public:
+		ZRuleTeamInfected(ZMatch* pMatch);
+		virtual ~ZRuleTeamInfected();
+
+		virtual bool OnCommand(MCommand* pCommand);
+		virtual void OnSetRoundState(MMATCH_ROUNDSTATE roundState);
+		virtual void OnResponseRuleInfo(MTD_RuleInfo* pInfo);
+
+		MUID m_uidPatientZero;
+
+	private:
+		virtual void OnUpdate(float fDelta);
+		void OnInfected(const MUID& uidPlayer, bool bFirst);
+		bool m_bLastFive;
+	};
 
 
+Open(ZCombatInterface.cpp) <br>
+Find <br>
 
+	void ZCombatInterface::DrawAfterWidgets(MDrawContext* pDC)
+	{
+		// µà¾óÅä³Ê¸ÕÆ® °á°úÃ¢¿ë ´ëÁøÇ¥¸¦ ±×¸°´Ù.
+		if (m_bShowResult)
+			if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_DUELTOURNAMENT)
+				((ZRuleDuelTournament*)ZGetGame()->GetMatch()->GetRule())->ShowMatchOrder(pDC, true, m_fElapsed);
+	}
 
+add <br>
 
+	void ZCombatInterface::UpdateCTFMsg(const char* szMsg)
+	{
+		g_bShowCTFMsg = true;
+		g_dwCTFMsgShowTime = GetTickCount();
+		strcpy_s(g_szCTFMsg, szMsg);
+	}
 
+Open(ZCombatInterface.h) <br>
+Find <br>
 
+	void OnAddCharacter(ZCharacter *pChar);
 
+Add <br>
 
-
-
-
+	void UpdateCTFMsg(const char* szMsg);
 
 
 
