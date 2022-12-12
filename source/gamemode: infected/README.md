@@ -2202,11 +2202,25 @@ Add <br>
 	void UpdateCTFMsg(const char* szMsg);
 
 
+Open(ZCombatInterface.cpp) <br>
+Find <br>
 
+	#define TEXT_COLOR_TITLE			0xFFAAAAAA
+	#define TEXT_COLOR_DEATH_MATCH		0xfffff696
+	#define TEXT_COLOR_DEATH_MATCH_DEAD	0xff807b4b
+	#define TEXT_COLOR_BLUE_TEAM		0xff8080ff
+	#define TEXT_COLOR_BLUE_TEAM_DEAD	0xff606080
+	#define TEXT_COLOR_RED_TEAM			0xffff8080
+	#define TEXT_COLOR_RED_TEAM_DEAD	0xff806060
+	#define TEXT_COLOR_SPECTATOR		0xff808080
+	#define TEXT_COLOR_CLAN_NAME		0xffffffff
 
+Add <br>
 
-
-
+	// Custom: CTF
+	bool g_bShowCTFMsg = false;
+	DWORD g_dwCTFMsgShowTime = 0;
+	static char g_szCTFMsg[128] = { 0, };
 
 
 
