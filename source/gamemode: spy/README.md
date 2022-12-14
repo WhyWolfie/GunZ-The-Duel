@@ -2163,10 +2163,299 @@ Add under <br>
 	m_pSpyBanMapListFrameImg = NULL;
 	m_nSpyBanMapListFramePos = 0;
 
+Open(ZMessages.h) <br>
+Find <br>
 
+	#define MSG_BONUS_REWARD_GET						2060	///< [xxxÀÌº¥Æ®] ¤·¤·¤·´ÔÀÌ ¤·¤·¤·¸¦ ¹ÞÀ¸¼Ì½À´Ï´Ù.
+	#define MSG_BONUS_REWARD_REMAIN						2061	///< ³²Àº º¸³Ê½º ±âÈ¸ : 00È¸
+	#define MSG_BONUS_REWARD_NOCHANCE					2062	///< [xxxÀÌº¥Æ®] ³²Àº º¸³Ê½º ±âÈ¸°¡ ¾ø¾î º¸³Ê½º¸¦ ¹ÞÁö ¸øÇß½À´Ï´Ù.
+	#define MSG_BONUS_REWARD_RESET						2063	///< ¤·¤·¿¡ º¸³Ê½º ±âÈ¸°¡ ÃæÀüµË´Ï´Ù.
 
+Add under <br>
 
+	#define MSG_SPY_WAITING_FOR_PLAYERS					2200
+	#define MSG_SPY_SPYSIDE_SPY_LOCATION_OPEN			2201
+	#define MSG_SPY_TRACKERSIDE_SPY_LOCATION_OPEN		2202
+	#define MSG_SPY_TIP_FROZEN_TRAP						2203
+	#define MSG_SPY_TIP_FLASH_BANG						2204
+	#define MSG_SPY_TIP_SMOKE							2205
+	#define MSG_SPY_TIP_STUN_GRENADE					2206
+	#define MSG_SPY_TIP_LANDMINE						2207
+	#define MSG_SPY_TIP_SPYSIDE							2208
+	#define MSG_SPY_TIP_TRACKERSIDE						2209
+	#define MSG_SPY_BAN_MAPLIST_UPDATE					2210
+	#define MSG_SPY_AUTO_UNBAN_MAP						2211
+	#define MSG_SPY_WON_POINT							2212
+	#define MSG_SPY_WORD_PLAYERS						2213
+	#define MSG_SPY_PARTICIPATION_GUIDANCE				2214
+	#define MSG_SPY_EXP_BONUS							2215
+	#define MSG_SPY_IDENTITY							2216
+	#define MSG_SPY_NO_SUITABLE_MAP						2217
 
+Open(ZGameClient.cpp) <br>
+Find <br>
+
+		} else if (nType == MATCHCACHEMODE_REMOVE) {
+			for(int i=0; i<nCount; i++){
+				MMatchObjCache* pCache = (MMatchObjCache*)MGetBlobArrayElement(pBlob, i);
+				pList->DelPlayer(pCache->GetUID());
+
+				ZGetPlayerManager()->RemovePlayer( pCache->GetUID());
+			}
+
+			// Ãß¹æ ÈÄ¿¡ Ã»/È«ÆÀÀÇ »ç¶÷ ¼ö¸¦ ´Ù½Ã ±¸ÇÑ´Ù.(µ¿È­´Ï°¡ Ãß°¡)
+			ZApplication::GetGameInterface()->UpdateBlueRedTeam();
+		}
+
+Replace <br>
+
+		} else if (nType == MATCHCACHEMODE_REMOVE) {
+			for(int i=0; i<nCount; i++){
+				MMatchObjCache* pCache = (MMatchObjCache*)MGetBlobArrayElement(pBlob, i);
+				pList->DelPlayer(pCache->GetUID());
+				ZGetPlayerManager()->RemovePlayer( pCache->GetUID());
+			}
+			ZApplication::GetGameInterface()->UpdateBlueRedTeam();
+			ZApplication::GetStageInterface()->CreateSpyBanMapList();
+		}
+
+Find <br>
+
+	bool bEndRelayMap = !bIsRelayMapUnFinish;
+	ZApplication::GetStageInterface()->SetEnableWidgetByRelayMap(bEndRelayMap);
+
+	ZPostRequestStageSetting(ZGetGameClient()->GetStageUID());	
+	}
+
+Replace <br>
+
+	bool bEndRelayMap = !bIsRelayMapUnFinish;
+	ZApplication::GetStageInterface()->SetEnableWidgetByRelayMap(bEndRelayMap);
+
+	ZPostRequestStageSetting(ZGetGameClient()->GetStageUID());	
+	ZPostRequestSpyBanMapList();
+	}
+
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+	SetListenerWidget("Stage_RelayMap_OK_Button", ZGetRelayMapOKButtonListener());
+	SetListenerWidget("Stage_RelayMapBoxOpen", ZStageRelayMapBoxOpen());
+	SetListenerWidget("Stage_RelayMapBoxClose", ZStageRelayMapBoxClose());
+
+Add under <br>
+
+	SetListenerWidget("Stage_SpyBanMapList", ZGetSpyBanMapListListener());
+	SetListenerWidget("Stage_SpyBanMapBoxOpen", ZStageSpyBanMapBoxOpen());
+	SetListenerWidget("Stage_SpyBanMapBoxClose", ZStageSpyBanMapBoxClose());
+
+Find <br>
+
+	MPicture* pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Stage_StripBottom");
+	if (pPicture != NULL)	pPicture->SetBitmapColor(0xFFFFFFFF);
+	pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Stage_StripTop");
+	if (pPicture != NULL)	pPicture->SetBitmapColor(0xFFFFFFFF);
+
+	ZPostRequestStageSetting(ZGetGameClient()->GetStageUID());
+	SerializeStageInterface();
+
+Add under <br>
+
+	ZPostRequestSpyBanMapList();
+
+Find <br>
+
+		MListBox* pRelayMapListBox = (MListBox*)m_IDLResource.FindWidget("Stage_RelayMapListbox");
+		if (pRelayMapListBox)
+		{
+			pRelayMapListBox->m_FontAlign = MAM_LEFT;
+			pRelayMapListBox->AddField("ICON", 23);
+			pRelayMapListBox->AddField("NAME", 170);
+			pRelayMapListBox->SetItemHeight(23);
+			pRelayMapListBox->SetVisibleHeader(false);
+			pRelayMapListBox->m_bNullFrame = true;
+		}
+	}
+	
+Add under <br>
+
+	MListBox* pSpyBanMapListBox = (MListBox*)m_IDLResource.FindWidget("Stage_SpyBanMapList");
+	if (pSpyBanMapListBox)
+	{
+		pSpyBanMapListBox->m_FontAlign = MAM_LEFT;
+		pSpyBanMapListBox->AddField("ICON", 23);
+		pSpyBanMapListBox->AddField("NAME", 170);
+		pSpyBanMapListBox->SetItemHeight(23);
+		pSpyBanMapListBox->SetVisibleHeader(false);
+		pSpyBanMapListBox->m_bNullFrame = true;
+	}
+
+Find <br>
+
+			if ( rect.x != nEndPos)
+			{
+				int nNewPos = rect.x + ( nEndPos - rect.x) * 0.25;
+				if ( nNewPos == rect.x)		// not changed
+					rect.x = nEndPos;
+				else						// changed
+					rect.x = nNewPos;
+
+				pWidget->SetBounds( rect);
+
+				if ( rect.x == 0)
+				{
+					pWidget = pRes->FindWidget( "Stage_CharacterInfo");
+					if ( pWidget)
+						pWidget->Enable( false);
+				}
+			}
+		}
+	}
+
+Replace <br>
+
+			if (rect.x != nEndPos)
+			{
+				int nNewPos = rect.x + (nEndPos - rect.x) * 0.25;
+				if (nNewPos == rect.x)		// not changed
+					rect.x = nEndPos;
+				else						// changed
+					rect.x = nNewPos;
+
+				pWidget->SetBounds(rect);
+
+				if (rect.x == 0)
+				{
+					pWidget = pRes->FindWidget("Stage_CharacterInfo");
+					if (pWidget)
+						pWidget->Enable(false);
+				}
+			}
+			pWidget = pRes->FindWidget("Stage_SpyBanMapListView");
+			if (!pWidget)
+				return;
+
+			nEndPos = ZApplication::GetStageInterface()->m_nSpyBanMapListFramePos;
+			rect = pWidget->GetRect();
+			if (rect.x != nEndPos)
+			{
+				int nNewPos = rect.x + (nEndPos - rect.x) * 0.25;
+				if (nNewPos == rect.x)
+					rect.x = nEndPos;
+				else
+					rect.x = nNewPos;
+
+				pWidget->SetBounds(rect);
+
+				if (rect.x == 0)
+				{
+					pWidget = pRes->FindWidget("Stage_CharacterInfo");
+					if (pWidget)
+						pWidget->Enable(false);
+				}
+			}
+		}
+	}
+
+Open(ZPost.h) <br>
+Find <br>
+
+	inline void ZPostRequestUseSpendableBuffItem( const MUID& uid )
+	{
+		ZPOSTCMD1( MC_MATCH_REQUEST_USE_SPENDABLE_BUFF_ITEM, MCmdParamUID(uid) );
+	}
+
+Add <br>
+
+	inline void ZPostRequestSpyBanMapList()
+	{
+		ZPOSTCMD0(MC_SPY_STAGE_REQUEST_BAN_MAP_LIST);
+	}
+
+Open(ZStageInterface.h) <br>
+Find <br>
+
+	// ¸±·¹ÀÌ¸Ê ÀÏ½Ã ¸Ê ¸®½ºÆ®
+	class RelayMapList : public MListItem
+	{
+	protected:
+		char				m_szName[ 128];
+		MBitmap*			m_pBitmap;
+
+	public:
+		RelayMapList();
+		RelayMapList( const char* szName, MBitmap* pBitmap)
+		{
+			strcpy( m_szName, szName);
+			m_pBitmap = pBitmap;
+		}
+
+		virtual void SetString(const char *szText)
+		{
+			strcpy(m_szName, szText);
+		}
+		virtual const char* GetString( void)
+		{
+			return m_szName;
+		}
+		virtual const char* GetString( int i)
+		{
+			if ( i == 1)
+				return m_szName;
+
+			return NULL;
+		}
+		virtual MBitmap* GetBitmap( int i)
+		{
+			if ( i == 0)
+				return m_pBitmap;
+
+			return NULL;
+		}
+
+		const char* GetItemName( void)		{ return m_szName; }
+	};
+
+Add under <br>
+
+	class SpyBanMapList : public RelayMapList
+	{
+	protected:
+		int					m_nMapID;
+		MCOLOR				m_Color;
+
+	public:
+		SpyBanMapList(const char* szName, MBitmap* pBitmap, int nMapID) : RelayMapList(szName, pBitmap)
+		{
+			m_nMapID = nMapID;
+			m_Color = MCOLOR(DEFCOLOR_MLIST_TEXT);
+		}
+
+		virtual int GetMapID()
+		{
+			return m_nMapID;
+		}
+
+		virtual const MCOLOR GetColor(void) { return GetColor(0); }
+		virtual const MCOLOR GetColor(int i) {
+			return m_Color;
+		}
+
+		virtual void SetColor(const MCOLOR& color)	{
+			m_Color = color;
+		}
+	};
+
+Find <br>
+
+	// Listner
+	MListener* ZGetSacrificeItemListBoxListener( void);
+	MListener* ZGetRelayMapListBoxListener( void);
+	MListener* ZGetMapListBoxListener( void);
+
+Add under <br>
+
+	MListener* ZGetSpyBanMapListListener(void);
 
 
 
