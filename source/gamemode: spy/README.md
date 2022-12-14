@@ -4133,6 +4133,36 @@ Replace <br>
 		if (m_pLabelBitmap == NULL) return;
 
 
+Open(ZGame.cpp) <br>
+Find <br>
+
+	case MC_MATCH_DUELTOURNAMENT_GAME_INFO:
+	case MC_MATCH_DUELTOURNAMENT_GAME_ROUND_RESULT_INFO:
+	case MC_MATCH_DUELTOURNAMENT_GAME_MATCH_RESULT_INFO:
+
+Add under <br>
+
+	case MC_SPY_GAME_INFO:
+	case MC_SPY_GAME_RESULT:
+
+Open(ZGameAction.cpp) <br>
+Find <br>
+
+	MMatchItemDesc *pDesc = pItem->GetDesc();
+	if(!pDesc) { _ASSERT(FALSE); return; }
+
+Add under <br>
+
+	bool bSpyCase = (pDesc->m_nWeaponType.Ref() == MWT_SPYCASE);
+
+Find <br>
+
+	float fDist = Magnitude(OwnerPosition + OwnerDir*10.f - TargetPosition);
+
+Add under <br>
+
+	if(bSpyCase)
+		fDist *= 1.5f;
 
 
 
