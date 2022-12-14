@@ -4161,6 +4161,10 @@ Add under <br>
 	case MC_SPY_GAME_INFO:
 	case MC_SPY_GAME_RESULT:
 
+
+
+(this part is not done yet for the spycase, use a different katana for now)
+
 Open(ZGameAction.cpp) <br>
 Find <br>
 
