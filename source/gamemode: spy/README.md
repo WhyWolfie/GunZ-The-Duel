@@ -3952,8 +3952,106 @@ Add under <br>
 	  </BITMAPALIAS>
 	  </XML> 
 
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+	pBmNumLabel = (ZBmNumLabel*)m_IDLResource.FindWidget("SurvivalResult_GetBounty");
+	if (pBmNumLabel)
+	{
+		pBmNumLabel->SetCharMargin(nMargin);
+		pBmNumLabel->SetIndexOffset(16);
+	}
+
+Add under <br>
+
+	int nSpyMargin[BMNUM_NUMOFCHARSET] = { 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 20, 20, 20 };
+
+	pBmNumLabel = (ZBmNumLabel*)m_IDLResource.FindWidget("Spy_CountDownTime");
+	if (pBmNumLabel)
+	{
+		pBmNumLabel->SetAlignmentMode(MAM_HCENTER);
+		pBmNumLabel->SetNumber(0);
+		pBmNumLabel->SetHeightRatio(64);
+		pBmNumLabel->SetCharMargin(nSpyMargin);
+	}
+	pBmNumLabel = (ZBmNumLabel*)m_IDLResource.FindWidget("Spy_CountDownTime_Red");
+	if (pBmNumLabel)
+	{
+		pBmNumLabel->SetAlignmentMode(MAM_HCENTER);
+		pBmNumLabel->SetNumber(0);
+		pBmNumLabel->SetHeightRatio(64);
+		pBmNumLabel->SetCharMargin(nSpyMargin);
+	}
 
 
+Open(ZBmNumLabel.h) <br>
+Find <br>
+
+	class ZBmNumLabel : public MWidget{
+	protected:
+		MBitmap*		m_pLabelBitmap;
+		MSIZE			m_CharSize;
+		MAlignmentMode	m_AlignmentMode;
+		int				m_nIndexOffset;
+		int				m_nCharMargin[ BMNUM_NUMOFCHARSET];
+
+Add under <br>
+
+	int				m_nHeightRatio;
+
+Find <br>
+	
+	void SetIndexOffset(int nOffset) { m_nIndexOffset = nOffset; }
+	void SetCharMargin( int* nMargin);
+	void SetAlignmentMode( MAlignmentMode am)			{ m_AlignmentMode = am; }
+
+Add under <br>
+
+	void SetHeightRatio(int n)	{ m_nHeightRatio = n; }
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	m_bNetworkAlive = true;		// ÀÎÅÍ³Ý ¿¬°áµÇ¾îÀÖÀ½
+	m_dLastTimeTick = 0;
+	m_dAbuseHandicapTick = 0;
+
+	m_bSkipUIDrawByRule = false;
+
+Add under <br>
+
+	m_bSpyLocationOpened = false;
+	m_pSpyIcon = NULL;
+
+	m_dwSpyTimer = 0;
+
+	m_bSpyNoticePlaying = false;
+	m_dwSpyNoticePlayStartedTime = 0;
+
+Find <br>
+
+	if (m_pTargetLabel)
+	{
+		delete m_pTargetLabel;
+		m_pTargetLabel = NULL;
+	}
+	ShowInfo(false);
+
+Replace <br>
+
+	if (m_pTargetLabel)
+	{
+		delete m_pTargetLabel;
+		m_pTargetLabel = NULL;
+	}
+	ShowInfo(false);
+	if (m_pSpyIcon)
+	{
+		delete m_pSpyIcon;
+		m_pSpyIcon = NULL;
+	}
+
+	OnSpyDestroy();
 
 
 
