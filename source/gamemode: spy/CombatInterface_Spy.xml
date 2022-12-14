@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<XML ID="CombatInterface_Spy">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+	<!-- 스파이모드 컴뱃 UI -->
+	<FRAME item="CombatSpyInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- ZBMNUMLABEL : 시간 카운트 다운 -->
+	<ZBMNUMLABEL item="Spy_CountDownTime" parent="CombatSpyInfo">
+		<BOUNDS>
+			<X>250</X>
+			<Y>16</Y>
+			<W>300</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>Spy_TimeNum.png</BITMAP>
+		<FONTSIZE>
+			<W>64</W>
+			<H>64</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<!-- ZBMNUMLABEL : 붉은색 시간 카운트 다운 -->
+	<ZBMNUMLABEL item="Spy_CountDownTime_Red" parent="CombatSpyInfo">
+		<BOUNDS>
+			<X>250</X>
+			<Y>16</Y>
+			<W>300</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>Spy_TimeNum_Red.png</BITMAP>
+		<FONTSIZE>
+			<W>64</W>
+			<H>64</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<!-- Picture : 이벤트 메시지 -->
+	<PICTURE item="Spy_EventMsg" parent="CombatSpyInfo">
+		<BOUNDS>
+			<X>230</X>
+			<Y>58</Y>
+			<W>340</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- PICTURE : 팁 배경 -->
+	<PICTURE item="Spy_TipBG" parent="CombatSpyInfo">
+		<BOUNDS>
+			<X>160</X>
+			<Y>540</Y>
+			<W>480</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>bgtxtr_grd.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 팁 -->
+	<LABEL item="Spy_Tip" parent="CombatSpyInfo">
+		<FONT>FONTa9</FONT>
+		<BOUNDS>
+			<X>160</X>
+			<Y>540</Y>
+			<W>480</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- PICTURE : 스파이 공개 알림 -->
+	<PICTURE item="Spy_Notice" parent="CombatSpyInfo">
+		<BOUNDS>
+			<X>205</X>
+			<Y>260</Y>
+			<W>390</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+</XML>
