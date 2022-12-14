@@ -4053,7 +4053,84 @@ Replace <br>
 
 	OnSpyDestroy();
 
+Open(ZBmNumLabel.cpp) <br>
+Find <br>
 
+	ZBmNumLabel::ZBmNumLabel(const char* szName, MWidget* pParent, MListener* pListener)
+	: MWidget(szName, pParent, pListener)
+	{
+		m_pLabelBitmap = NULL;
+		m_AlignmentMode = MAM_RIGHT;
+		m_nIndexOffset = 0;
+
+		SetCharSize( MSIZE(32, 32));
+	}
+
+Replace <br>
+
+	ZBmNumLabel::ZBmNumLabel(const char* szName, MWidget* pParent, MListener* pListener)
+	: MWidget(szName, pParent, pListener)
+	{
+		m_pLabelBitmap = NULL;
+		m_AlignmentMode = MAM_RIGHT;
+		m_nIndexOffset = 0;
+		m_nHeightRatio = 32;
+
+		SetCharSize( MSIZE(32, 32));
+	}
+
+Find <br>
+
+	int GetIndex(char c)
+	{
+		int n=-1;
+		switch (c)
+		{
+		case ',' : n = 10; break;
+		case '/' : n = 11; break;
+		case '.' : n = 12; break;
+		default:
+			if (isdigit(c))
+				n = c - '0';
+		}
+		return n;
+	}
+
+Replace <br>
+
+	int GetIndex(char c)
+	{
+		int n=-1;
+		switch (c)
+		{
+		case ',' : 
+		case ':' : n = 10; break;
+		case '/' : n = 11; break;
+		case '.' : n = 12; break;
+		default:
+			if (isdigit(c))
+				n = c - '0';
+		}
+		return n;
+	}
+
+Find <br>
+
+	void ZBmNumLabel::OnDraw(MDrawContext* pDC)
+	{
+		// ³ôÀÌ°¡ ¿ø·¡´Â 32 ÀÌ´Ù. ÇØ»óµµ¿¡ µû¶ó ºñÀ²À» ¸ÂÃá´Ù
+		float fRatio = (float)m_Rect.h / (float)32;
+
+		if (m_pLabelBitmap == NULL) return;
+
+Replace <br>
+
+	void ZBmNumLabel::OnDraw(MDrawContext* pDC)
+	{
+		// ³ôÀÌ°¡ ¿ø·¡´Â 32 ÀÌ´Ù. ÇØ»óµµ¿¡ µû¶EºñÀ²À» ¸ÂÃá´Ù
+		float fRatio = (float)m_Rect.h / (float)m_nHeightRatio;
+
+		if (m_pLabelBitmap == NULL) return;
 
 
 
@@ -4061,13 +4138,6 @@ Replace <br>
 
 Replace (Matchserver & System.mrs) <br>
 Rebuild (Matchserver & Gunz project) <br>
-
-
-
-
-
-
-
 
 
 
