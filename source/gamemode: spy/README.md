@@ -66,6 +66,16 @@ Add <br>
 
     _InitGameType(MMATCH_GAMETYPE_SPY, MMATCH_GAMETYPE_SPY, MMATCH_GAMETYPE_SPY_STR, 1.0f, 0.8f, 0.3f);
 
+Find <br>
+
+	"DUELT",	// DUELTOURNAMENT	
+	"CTF",		// CAPTURE THE FLAG
+
+Add <br>
+
+	"SPY",		// SPY
+
+
 Open(MMatchRule.cpp) <br>
 Find <br>
 
@@ -4163,6 +4173,8 @@ Add under <br>
 
 	if(bSpyCase)
 		fDist *= 1.5f;
+
+
 
 
 
