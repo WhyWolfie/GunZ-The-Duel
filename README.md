@@ -267,6 +267,7 @@ GunZ The Duel Releases <br>
 - gunmode: [gunmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gunmode)
 - infected: [infected](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20infected)
 - no-kstyle: [no-kstyle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20nokstyle)
+- spymode: [spymode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20spy)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
