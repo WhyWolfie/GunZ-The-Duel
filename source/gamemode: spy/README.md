@@ -3386,10 +3386,31 @@ Add under <br>
 		ZApplication::GetStageInterface()->CloseSpyBanMapBox();
 	END_IMPLEMENT_LISTENER()
 
+System/Gametypecfg.xml <br>
 
+	<GAMETYPE id="21">	<!-- GAMETYPE_SPY -->
+		<ROUNDS    round="3"	str="3" default="true"/>
+		<ROUNDS    round="4"	str="4" />
+		<ROUNDS    round="5"	str="5" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="5"  str="5" />
+		<MAXPLAYERS player="6"  str="6" />
+		<MAXPLAYERS player="7"  str="7" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="9"  str="9" />
+		<MAXPLAYERS player="10"  str="10" />
+		<MAXPLAYERS player="11"  str="11" />
+		<MAXPLAYERS player="12"  str="12" />
+		<LIMITTIME sec="-1"	str="STR:GAMETYPECFG_LIMITTIME_INFINITE" />
+	</GAMETYPE>	
 
+System/ChannelRule.xml <br>
 
+	<GAMETYPE id="21" />
 
+Replace (Matchserver & System.mrs) <br>
+
+Rebuild (Matchserver & Gunz project) <br>
 
 
 
