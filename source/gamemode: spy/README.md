@@ -1017,49 +1017,19 @@ Replace <br>
 
 Find <br>
 
-	else if (ZGetGame()->GetMatch()->GetMatchType() != MMATCH_GAMETYPE_DUEL)
-	{
-		char szName[128];
-		sprintf(szName, "%s (HP:%d, AP:%d)", m_pTargetCharacter->GetUserName(), (int)m_pTargetCharacter->GetHP(), (int)m_pTargetCharacter->GetAP());
-		MCOLOR CharNameColor;
-		ZGetGame()->GetUserGradeIDColor(m_pTargetCharacter->GetUserGrade(), CharNameColor, "");
-		if (m_pTargetCharacter->IsAdminName())
-			pDC->SetColor(CharNameColor);
-		else
-			pDC->SetColor(CharNameColor);
-
 		MFont* pFont = MFontManager::Get("FONTb11b");
 		if (pFont == NULL)
-			_ASSERT(0);
+			//_ASSERT(0);
 		pDC->SetFont(pFont);
-
-		if (ZGetGameTypeManager()->IsTeamExtremeGame(ZGetGame()->GetMatch()->GetMatchType()))
-			TextRelative(pDC, 0.5f, 75.0f / 800.0f, szName, true);
-		else
-			TextRelative(pDC, 0.5f, 50.0f / 800.0f, szName, true);
-	}
 
 Replace <br>
 
-	else if ( ZGetGame()->GetMatch()->GetMatchType() != MMATCH_GAMETYPE_DUEL)
-	{
-		char szName[128];
-		sprintf(szName, "%s (HP:%d, AP:%d)", m_pTargetCharacter->GetUserName(), (int)m_pTargetCharacter->GetHP(), (int)m_pTargetCharacter->GetAP());
-		int nRed = m_pTargetCharacter->GetCharInfo()->nRedColor, nGreen = m_pTargetCharacter->GetCharInfo()->nGreenColor, nBlue = m_pTargetCharacter->GetCharInfo()->nBlueColor;
-		pDC->SetColor(MCOLOR(nRed, nGreen, nBlue));
-
-		MFont *pFont = MFontManager::Get( "FONTb11b");
-		if ( pFont == NULL)
+		MFont* pFont = MFontManager::Get("FONTb11b");
+		if (pFont == NULL)
 			//_ASSERT(0);
-				pDC->SetFont( pFont);
+			pDC->SetFont(pFont);
 		if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_SPY)
 			TextRelative(pDC, 0.5f, 763.0f / 800.0f, szName, true);
-
-		if(ZGetGameTypeManager()->IsTeamExtremeGame(ZGetGame()->GetMatch()->GetMatchType()))
-			TextRelative( pDC, 0.5f, 75.0f/800.0f, szName, true);
-		else
-			TextRelative( pDC, 0.5f, 50.0f/800.0f, szName, true);
-	}
 
 
 Open(ZPlayerListBox.cpp) <br>
