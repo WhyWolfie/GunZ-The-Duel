@@ -536,8 +536,6 @@ Replace <br>
 
 					if (pFont == NULL) _ASSERT(0);
 					pDC->SetFont(pFont);
-					if (pPickedCharacter->IsAdminName())
-						pDC->SetColor(CharNameColor);
 					int x = Cp.x - pDC->GetFont()->GetWidth(pPickedCharacter->GetUserName()) / 2;
 					pDC->Text(x, Cp.y - pDC->GetFont()->GetHeight() - 10, pPickedCharacter->GetUserName());
 
