@@ -2896,7 +2896,466 @@ Add <br>
 		ZPOSTCMD2(MC_SPY_STAGE_ACTIVATE_MAP, MCmdParamInt(nMapID), MCmdParamBool(bExclude));
 	}
 
+Open(ZCombatInterface.cpp) <br>
+Find <br>
 
+	void ZCombatInterface::OnRestore()
+	{
+		ZCharacterView* pCharView = GetWidgetCharViewLeft();
+		if (pCharView)
+			pCharView->OnRestore();
+		pCharView = GetWidgetCharViewRight();
+		if (pCharView)
+			pCharView->OnRestore();
+		pCharView = GetWidgetCharViewResult();
+		if (pCharView)
+			pCharView->OnRestore();
+	}
+
+Add under <br>
+
+
+	////////// Spy mode ////////// 
+	void ZCombatInterface::OnSpyCreate()
+	{
+		CreateSpyWaitInterface();
+	}
+
+	void ZCombatInterface::OnSpyDestroy()
+	{
+		ZIDLResource* pIDLResource = ZApplication::GetGameInterface()->GetIDLResource();
+
+		MFrame* pFrame = (MFrame*)pIDLResource->FindWidget("CombatSpyInfo");
+		if (pFrame)
+			pFrame->Show(false);
+
+		ZBmNumLabel* pNumLabel = (ZBmNumLabel*)pIDLResource->FindWidget("Spy_CountDownTime");
+		if (pNumLabel)
+			pNumLabel->Show(false);
+
+		pNumLabel = (ZBmNumLabel*)pIDLResource->FindWidget("Spy_CountDownTime_Red");
+		if (pNumLabel)
+			pNumLabel->Show(false);
+
+		SetSpyEventMsg(NULL);
+		SetSpyTip(NULL);
+		SetSpyNotice(NULL);
+	}
+
+	void ZCombatInterface::CreateSpyGameInterface()
+	{
+		ZIDLResource* pIDLResource = ZApplication::GetGameInterface()->GetIDLResource();
+
+		MFrame* pFrame = (MFrame*)pIDLResource->FindWidget("CombatSpyInfo");
+		if (pFrame)
+			pFrame->Show(true);
+
+		ZBmNumLabel* pNumLabel = (ZBmNumLabel*)pIDLResource->FindWidget("Spy_CountDownTime");
+		if (pNumLabel)
+			pNumLabel->Show(true);
+
+		pNumLabel = (ZBmNumLabel*)pIDLResource->FindWidget("Spy_CountDownTime_Red");
+		if (pNumLabel)
+			pNumLabel->Show(false);
+
+		SetSpyEventMsg(NULL);
+		SetSpyTip(NULL);
+		SetSpyNotice(NULL);
+
+		m_bSpyLocationOpened = false;
+	}
+
+	void ZCombatInterface::CreateSpyWaitInterface()
+	{
+		ZIDLResource* pIDLResource = ZApplication::GetGameInterface()->GetIDLResource();
+
+		MFrame* pFrame = (MFrame*)pIDLResource->FindWidget("CombatSpyInfo");
+		if (pFrame)
+			pFrame->Show(true);
+
+		ZBmNumLabel* pNumLabel = (ZBmNumLabel*)pIDLResource->FindWidget("Spy_CountDownTime");
+		if (pNumLabel)
+			pNumLabel->Show(false);
+
+		pNumLabel = (ZBmNumLabel*)pIDLResource->FindWidget("Spy_CountDownTime_Red");
+		if (pNumLabel)
+			pNumLabel->Show(false);
+
+		SetSpyEventMsg(NULL);
+
+		char minPlayers[32];
+		sprintf(minPlayers, "%d", MMatchSpyMode::GetMinPlayers());
+
+		char tip[256];
+		ZTransMsg(tip, MSG_SPY_WAITING_FOR_PLAYERS, 4, minPlayers);
+
+		SetSpyTip(tip);
+
+		SetSpyNotice("Spy_Notice_Wait_OtherPlayer.png");
+
+		m_bSpyLocationOpened = false;
+	}
+
+	void ZCombatInterface::OnSpyUpdate(float fElapsed)
+	{
+		DWORD dwNowTime = timeGetTime();
+
+		int nRemainedTime = (int)(m_dwSpyTimer - dwNowTime);
+		SetSpyTimeLimitValue((DWORD)((nRemainedTime < 0) ? (0) : (nRemainedTime)));
+
+		if (ZGetGame())
+		{
+			if (ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY)
+			{
+				const MMatchSpyMapNode* pSpyMap = MMatchSpyMap::GetMap(ZGetGame()->GetMatch()->GetMapName());
+				_ASSERT(pSpyMap != NULL);
+
+				if (((nRemainedTime / 1000) <= pSpyMap->nSpyOpenTime))
+				{
+	#define SPYTIME_FLASHING_INTERVAL	300
+
+					bool bRedTime = ((nRemainedTime % (SPYTIME_FLASHING_INTERVAL * 2)) < SPYTIME_FLASHING_INTERVAL);
+
+					ZBmNumLabel* pNumLabel = (ZBmNumLabel*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_CountDownTime");
+					if (pNumLabel)
+						pNumLabel->Show(!bRedTime);
+
+					pNumLabel = (ZBmNumLabel*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_CountDownTime_Red");
+					if (pNumLabel)
+						pNumLabel->Show(bRedTime);
+
+					if (!m_bSpyLocationOpened)
+					{
+						if (ZGetScreenEffectManager())
+							ZGetScreenEffectManager()->AddScreenEffect("spy_location");
+
+						m_bSpyLocationOpened = true;
+
+						SetDefaultSpyTip(ZGetGame()->m_pMyCharacter->GetTeamID());
+					}
+				}
+			}
+		}
+
+		if (m_bSpyNoticePlaying)
+		{
+			MPicture* pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_Notice");
+			if (pPicture)
+			{
+	#define SPYNOTICE_PLAYER_WAITTIME	1000
+	#define SPYNOTICE_PLAYER_FADETIME	300
+	#define SPYNOTICE_PLAYER_SHOWTIME	3000
+
+				/*
+				DWORD dwPlayTime = dwNowTime - m_dwSpyNoticePlayStartedTime;
+
+				if(dwPlayTime < SPYNOTICE_PLAYER_WAITTIME)
+				{
+				pPicture->SetOpacity(0);
+				}
+				else if(dwPlayTime < (SPYNOTICE_PLAYER_WAITTIME + SPYNOTICE_PLAYER_FADETIME))
+				{
+				float fOpacity = ((float)dwPlayTime / ((float)255 / (float)SPYNOTICE_PLAYER_FADETIME));
+				if(fOpacity < 0.f) fOpacity = 0.f;
+
+				pPicture->SetOpacity((unsigned char)fOpacity);
+				}
+				else if(dwPlayTime < (SPYNOTICE_PLAYER_WAITTIME + SPYNOTICE_PLAYER_FADETIME + SPYNOTICE_PLAYER_SHOWTIME))
+				{
+				pPicture->SetOpacity(255);
+				}
+				else if(dwPlayTime < (SPYNOTICE_PLAYER_WAITTIME + SPYNOTICE_PLAYER_FADETIME + SPYNOTICE_PLAYER_SHOWTIME + SPYNOTICE_PLAYER_FADETIME))
+				{
+				int fOpacity = (((float)SPYNOTICE_PLAYER_FADETIME - (float)dwPlayTime) / ((float)SPYNOTICE_PLAYER_FADETIME / (float)255));
+				if(fOpacity > 255.f) fOpacity = 255.f;
+
+				pPicture->SetOpacity((unsigned char)fOpacity);
+				}
+				else
+				{
+				pPicture->Show(false);
+				pPicture->SetBitmap(NULL);
+				}
+				*/
+
+				DWORD dwPlayTime = dwNowTime - m_dwSpyNoticePlayStartedTime;
+
+				if (dwPlayTime >= (SPYNOTICE_PLAYER_WAITTIME + SPYNOTICE_PLAYER_FADETIME + SPYNOTICE_PLAYER_SHOWTIME + SPYNOTICE_PLAYER_FADETIME))
+				{
+					pPicture->Show(false);
+					pPicture->SetBitmap(NULL);
+				}
+				else if (dwPlayTime >= (SPYNOTICE_PLAYER_WAITTIME + SPYNOTICE_PLAYER_FADETIME + SPYNOTICE_PLAYER_SHOWTIME))
+				{
+					pPicture->SetOpacity(0);
+				}
+				else if (dwPlayTime >= (SPYNOTICE_PLAYER_WAITTIME + SPYNOTICE_PLAYER_FADETIME))
+				{
+					pPicture->SetOpacity(255);
+				}
+			}
+		}
+	}
+
+	void ZCombatInterface::OnSpyDraw(MDrawContext* pDC)
+	{
+		if (!ZGetGame())
+		{
+			_ASSERT(0);
+			return;
+		}
+
+		if (ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY)
+		{
+			int nElapsedTime = (int)ZGetGame()->GetMatch()->GetRemaindTime();
+
+			if (nElapsedTime >= 2500 && nElapsedTime < 7500)
+			{
+				if (!m_Observer.IsVisible())
+				{
+					MFont* pFont = MFontManager::Get("FONTa12_O2Wht");
+					_ASSERT(pFont != NULL);
+
+					pDC->SetFont(pFont);
+					pDC->Text(MRECT(MGetWorkspaceWidth() / 2, MGetWorkspaceHeight() / 2, 0, 0), ZMsg(MSG_SPY_IDENTITY), MAM_HCENTER | MAM_VCENTER);
+
+					int nFontHeight = pFont->GetHeight();
+
+					pFont = MFontManager::Get("FONTa12_O1Red");
+					_ASSERT(pFont != NULL);
+
+					char szSpyName[256] = "";
+
+					for (ZCharacterManager::iterator it = ZGetGame()->m_CharacterManager.begin(); it != ZGetGame()->m_CharacterManager.end(); it++)
+					{
+						ZCharacter* pCharacter = (*it).second;
+
+						if (pCharacter->GetTeamID() == MMT_RED)
+						{
+							strcat(szSpyName, pCharacter->GetUserName());
+							strcat(szSpyName, " ");
+						}
+					}
+
+					int nTextLen = (int)strlen(szSpyName);
+
+					if (szSpyName[nTextLen] == ' ')
+						szSpyName[nTextLen] = '\0';
+
+					pDC->SetFont(pFont);
+					pDC->Text(MRECT(MGetWorkspaceWidth() / 2, MGetWorkspaceHeight() / 2 + nFontHeight, 0, 0), szSpyName, MAM_HCENTER | MAM_VCENTER);
+				}
+			}
+		}
+	}
+
+	void ZCombatInterface::SetSpyTip(const char* msg)
+	{
+		MLabel* pLabel = (MLabel*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_Tip");
+		if (pLabel)
+		{
+			if (pLabel->GetFont())
+			{
+				pLabel->SetSize(pLabel->GetFont()->GetWidth(msg), 20.f / 600.f * MGetWorkspaceHeight());
+				pLabel->SetPosition(MGetWorkspaceWidth() / 2 - pLabel->GetRect().w / 2, 540.f / 600.f * MGetWorkspaceHeight());
+			}
+
+			if (msg)
+			{
+				pLabel->SetText(msg);
+				pLabel->Show(true);
+			}
+			else
+			{
+				pLabel->SetText("");
+				pLabel->Show(false);
+			}
+		}
+
+		MPicture* pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_TipBG");
+		if (pPicture)
+		{
+			if (pLabel && pLabel->GetFont())
+			{
+				pPicture->SetSize(pLabel->GetFont()->GetWidth(msg) * 1.04f, 20.f / 600.f * MGetWorkspaceWidth());
+				pPicture->SetPosition(MGetWorkspaceWidth() / 2 - pPicture->GetRect().w / 2, 540.f / 600.f * MGetWorkspaceHeight());
+			}
+
+			if (msg)
+			{
+				pPicture->SetOpacity(100);
+				pPicture->Show(true);
+			}
+			else
+			{
+				pPicture->SetOpacity(255);
+				pPicture->Show(false);
+			}
+		}
+	}
+
+	void ZCombatInterface::SetSpyEventMsg(const char* imgName)
+	{
+		/*
+		Spy_EventMsg_ComingSoonOpenSpy.png  :   for when Counting down.
+		Spy_EventMsg_Survive.png            :   for Spy side.
+		Spy_EventMsg_EliminateSpy.png       :   for Tracker side.
+		*/
+
+		MPicture* pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_EventMsg");
+		if (pPicture)
+		{
+			if (imgName)
+			{
+				MBitmap* pBitmap = (MBitmap*)MBitmapManager::Get(imgName);
+				if (pBitmap)
+				{
+					pPicture->SetBitmap(pBitmap);
+					pPicture->Show(true);
+				}
+				else _ASSERT(0);
+			}
+			else
+			{
+				pPicture->Show(false);
+				pPicture->SetBitmap(NULL);
+			}
+		}
+	}
+
+	void ZCombatInterface::SetSpyNotice(const char* imgName)
+	{
+		/*
+		Spy_Notice_Wait_OtherPlayer.png    :   Waiting for other players.
+		Spy_Notice_Tracer.png              :   You are selected as tracker.
+		Spy_Notice_Spy.png                 :   You are selected as spy.
+		*/
+
+		m_bSpyNoticePlaying = false;
+
+		MPicture* pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_Notice");
+		if (pPicture)
+		{
+			if (imgName)
+			{
+				MBitmap* pBitmap = (MBitmap*)MBitmapManager::Get(imgName);
+				if (pBitmap)
+				{
+					pPicture->SetBitmap(pBitmap);
+					pPicture->SetOpacity(255);
+					pPicture->Show(true);
+				}
+				else _ASSERT(0);
+			}
+			else
+			{
+				pPicture->Show(false);
+				pPicture->SetBitmap(NULL);
+			}
+		}
+	}
+
+	void ZCombatInterface::SetDefaultSpyTip(MMatchTeam team)
+	{
+		if (m_Observer.IsVisible())
+		{
+			SetSpyTip(ZMsg(MSG_SPY_PARTICIPATION_GUIDANCE));
+		}
+		else
+		{
+			if (team == MMT_RED)
+			{
+				if (m_bSpyLocationOpened)
+					SetSpyTip(ZMsg(MSG_SPY_SPYSIDE_SPY_LOCATION_OPEN));
+				else
+					SetSpyTip(ZMsg(MSG_SPY_TIP_SPYSIDE));
+			}
+			else
+			{
+				if (m_bSpyLocationOpened)
+					SetSpyTip(ZMsg(MSG_SPY_TRACKERSIDE_SPY_LOCATION_OPEN));
+				else
+					SetSpyTip(ZMsg(MSG_SPY_TIP_TRACKERSIDE));
+			}
+		}
+	}
+
+	const char* ZCombatInterface::GetSuitableSpyItemTip(int itemid)
+	{
+		switch (itemid)
+		{
+		case 601001:	// flashbang.
+			return ZMsg(MSG_SPY_TIP_FLASH_BANG);
+		case 601002:	// smoke.
+			return ZMsg(MSG_SPY_TIP_SMOKE);
+		case 601003:	// frozen trap.
+			return ZMsg(MSG_SPY_TIP_FROZEN_TRAP);
+		case 601004:	// stun grenade.
+			return ZMsg(MSG_SPY_TIP_STUN_GRENADE);
+		case 601005:	// landmine.
+			return ZMsg(MSG_SPY_TIP_LANDMINE);
+		}
+
+		return NULL;	// nothing found.
+	}
+
+	void ZCombatInterface::SetSpyTimeLimitValue(int m, int s, int ms)
+	{
+		char szText[256];
+		sprintf(szText, "%d:%02d:%02d", m, s, ms);
+
+		ZBmNumLabel* pNumLabel = (ZBmNumLabel*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_CountDownTime");
+		if (pNumLabel)
+			pNumLabel->SetText(szText);
+
+		pNumLabel = (ZBmNumLabel*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_CountDownTime_Red");
+		if (pNumLabel)
+			pNumLabel->SetText(szText);
+	}
+
+	void ZCombatInterface::SetSpyTimeLimitValue(DWORD dwTime)
+	{
+		int m = (int)(dwTime / 1000 / 60);
+		int s = (int)(dwTime / 1000 % 60);
+		int ms = (int)(dwTime % 1000 / 10);
+
+		SetSpyTimeLimitValue(m, s, ms);
+	}
+
+	void ZCombatInterface::SetSpyTimer(DWORD dwTimeLimit)
+	{
+		DWORD dwNowTime = timeGetTime();
+		DWORD dwEndTime = dwNowTime + dwTimeLimit;
+
+		SetSpyTimeLimitValue(dwTimeLimit);
+
+		m_dwSpyTimer = dwEndTime;
+	}
+
+	void ZCombatInterface::PlaySpyNotice(const char* imgName)
+	{
+		if (!imgName)
+		{
+			_ASSERT(0);
+			return;
+		}
+
+		MPicture* pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Spy_Notice");
+		if (pPicture)
+		{
+			MBitmap* pBitmap = (MBitmap*)MBitmapManager::Get(imgName);
+			if (pBitmap)
+			{
+				pPicture->SetBitmap(pBitmap);
+				pPicture->SetOpacity(0);
+				pPicture->Show(true);
+			}
+			else _ASSERT(0);
+		}
+
+		m_dwSpyNoticePlayStartedTime = timeGetTime();
+		m_bSpyNoticePlaying = true;
+	}
 
 
 
