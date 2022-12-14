@@ -1792,16 +1792,106 @@ Replace <br>
 		int m_nSpyBanMapListFramePos;
 	};
 
+Open(MMatchStageSetting.h) <br>
+Find <br>
 
+		// ÇÙ¹æ¾î¿ë Å¬¶ó¿¡¼­¸¸ È£Ãâ
+		void AntiHack_ShiftHeapPos()	{ m_StageSetting.ShiftHeapPos(); }
+		void AntiHack_CheckCrc()		{ m_StageSetting.CheckCrc(); }
+	};
 
+Replace <br>
 
+	// ÇÙ¹æ¾î¿ë Å¬¶ó¿¡¼­¸¸ È£Ãâ
+	void AntiHack_ShiftHeapPos()	{ m_StageSetting.ShiftHeapPos(); }
+	void AntiHack_CheckCrc()		{ m_StageSetting.CheckCrc(); }
 
+	// Spy Mode...
+	public:
+		vector<int>		m_vecSpyBanMapList;
 
+		void ExcludeSpyMap(int nMapID);
+		void IncludeSpyMap(int nMapID);
 
+		bool IsExcludedSpyMap(int nMapID);
+		bool IsIncludedSpyMap(int nMapID);
 
+		void UnbanAllSpyMap();
+	};
 
+Open(MMatchStageSetting.cpp) <br>
+Find <br>
 
+	void MMatchStageSetting::Clear()
+	{
+		SetDefault();
+		m_CharSettingList.DeleteAll();
+		m_uidMaster = MUID(0,0);
+		m_nStageState = STAGE_STATE_STANDBY;
+		m_bIsCheckTicket = false;
 
+	}
+
+Replace <br>
+
+	void MMatchStageSetting::Clear()
+	{
+		SetDefault();
+		m_CharSettingList.DeleteAll();
+		m_uidMaster = MUID(0,0);
+		m_nStageState = STAGE_STATE_STANDBY;
+		m_bIsCheckTicket = false;
+		m_vecSpyBanMapList.reserve(MMATCH_SPY_MAP_MAX - 1);
+
+	}
+
+Find <br>
+
+	void MMatchStageSetting::SetRelayMapList(RelayMap* pValue)
+	{ 
+		m_StageSetting.CheckCrc();
+		memcpy(m_StageSetting.Ref().MapList, pValue, sizeof(m_StageSetting.Ref().MapList));
+		m_StageSetting.MakeCrc();
+	}
+
+Add under <br>
+
+	void MMatchStageSetting::ExcludeSpyMap(int nMapID)
+	{
+		vector<int>::iterator itBegin = m_vecSpyBanMapList.begin(), itEnd = m_vecSpyBanMapList.end();
+		vector<int>::iterator itFound = std::find(itBegin, itEnd, nMapID);
+
+		if (itFound != itEnd) return;
+		m_vecSpyBanMapList.push_back(nMapID);
+	}
+
+	void MMatchStageSetting::IncludeSpyMap(int nMapID)
+	{
+		vector<int>::iterator itBegin = m_vecSpyBanMapList.begin(), itEnd = m_vecSpyBanMapList.end();
+		vector<int>::iterator itFound = std::find(itBegin, itEnd, nMapID);
+
+		if (itFound == itEnd) return;
+		m_vecSpyBanMapList.erase(itFound);
+	}
+
+	bool MMatchStageSetting::IsExcludedSpyMap(int nMapID)
+	{
+		vector<int>::iterator itBegin = m_vecSpyBanMapList.begin(), itEnd = m_vecSpyBanMapList.end();
+		vector<int>::iterator itFound = std::find(itBegin, itEnd, nMapID);
+
+		return itFound != itEnd;
+	}
+
+	bool MMatchStageSetting::IsIncludedSpyMap(int nMapID)
+	{
+		return !IsExcludedSpyMap(nMapID);
+	}
+
+	void MMatchStageSetting::UnbanAllSpyMap()
+	{
+		m_vecSpyBanMapList.clear();
+
+	}
 
 
 
