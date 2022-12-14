@@ -619,15 +619,360 @@ Replace <br>
 
 
 
+Open(ZGame.cpp) <br>
+Find <br>
+
+	void ZGame::OnChangeWeapon(MUID& uid, MMatchCharItemParts parts)
+	{
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+	//	if (uid == ZGetGameClient()->GetUID()) pCharacter = m_pMyCharacter;
+	//	_ASSERT(pCharacter != NULL);
+
+		if (pCharacter && pCharacter!=m_pMyCharacter)		// ³» Ä³¸¯ÅÍ´Â ÀÌ¹Ì ¹Ù²å´Ù.
+		{
+			pCharacter->ChangeWeapon(parts);
+		}
+	}
+
+Replace <br>
+
+	void ZGame::OnChangeWeapon(MUID& uid, MMatchCharItemParts parts)
+	{
+		ZCharacter* pCharacter = m_CharacterManager.Find(uid);
+
+		if (pCharacter && pCharacter != m_pMyCharacter)
+		{
+			pCharacter->ChangeWeapon(parts);
+		}
+		if (pCharacter)
+		{
+			if (pCharacter == m_pMyCharacter)
+			{
+				if (m_Match.GetMatchType() == MMATCH_GAMETYPE_SPY && m_Match.GetRoundState() == MMATCH_ROUNDSTATE_PLAY)
+				{
+					if (!ZApplication::GetGameInterface()->GetCombatInterface()) return;
+
+					ZApplication::GetGameInterface()->GetCombatInterface()->SetDefaultSpyTip(m_pMyCharacter->GetTeamID());
+
+					if (!ZApplication::GetGameInterface()->GetCombatInterface()->m_bSpyLocationOpened && !ZApplication::GetGameInterface()->GetCombatInterface()->GetObserverMode())
+					{
+						ZItem* pItem = m_pMyCharacter->GetItems()->GetItem(parts);
+						if (!pItem) return;
+
+						const char* pszSpyTip = ZApplication::GetGameInterface()->GetCombatInterface()->GetSuitableSpyItemTip((int)pItem->GetDescID());
+						if (pszSpyTip)
+							ZApplication::GetGameInterface()->GetCombatInterface()->SetSpyTip(pszSpyTip);
+					}
+				}
+			}
+			else
+			{
+				pCharacter->ChangeWeapon(parts);
+			}
+		}
+	}
+
+Find <br>
+
+	case MMATCH_ROUNDSTATE_PLAY:
+		{
+			if (GetMatch()->GetMatchType() == MMATCH_GAMETYPE_CTF)
+			{
+			ZGetGameInterface()->PlayVoiceSound( VOICE_CTF, 1600);
+			ZGetScreenEffectManager()->AddScreenEffect("ctf_splash");
+			}
+			else
+			ZGetScreenEffectManager()->AddRock();
+		}
+		break;
+
+Replace <br>
+
+	case MMATCH_ROUNDSTATE_PLAY:
+	{
+		if (GetMatch()->GetMatchType() == MMATCH_GAMETYPE_CTF)
+		{
+			ZGetGameInterface()->PlayVoiceSound(VOICE_CTF, 1600);
+			ZGetScreenEffectManager()->AddScreenEffect("ctf_splash");
+		}
+		MMATCH_GAMETYPE gameType = ZGetGameClient()->GetMatchStageSetting()->GetGameType();
+		if (gameType == MMATCH_GAMETYPE_SPY)
+		{
+			ZGetScreenEffectManager()->AddScreenEffect("spy_selection");
+			if (m_pMyCharacter->GetTeamID() == MMT_RED)
+			{
+				if (m_pMyCharacter->GetProperty()->nSex == MMS_MALE)
+					ZGetGameInterface()->PlayVoiceSound("fx2/MAL01", 1500);
+				else if (m_pMyCharacter->GetProperty()->nSex == MMS_FEMALE)
+					ZGetGameInterface()->PlayVoiceSound("fx2/FEM01", 1500);
+			}
+			else
+				ZGetGameInterface()->PlayVoiceSound(VOICE_LETS_ROCK, 1100);
+		}
+		ZGetScreenEffectManager()->AddRock();
+	}
+	break;;
+
+Find <br>
+
+					if((bAllKill) && (pAllKillPlayer))
+					{
+						MEMBER_SET_CHECKCRC(pAllKillPlayer->GetStatus(), nAllKill, pAllKillPlayer->GetStatus().Ref().nAllKill+1);
+						pAllKillPlayer->AddIcon(ZCI_ALLKILL);
+					}
+
+Replace <br>
+
+				if (GetMatch()->GetMatchType() == MMATCH_GAMETYPE_SPY)
+					bAllKill = false;
+
+				if ((bAllKill) && (pAllKillPlayer))
+				{
+					MEMBER_SET_CHECKCRC(pAllKillPlayer->GetStatus(), nAllKill, pAllKillPlayer->GetStatus().Ref().nAllKill + 1);
+					pAllKillPlayer->AddIcon(ZCI_ALLKILL);
+				}
+
+Find <br>
+
+	if(ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_DUEL)
+	{
+		ZRuleDuel* pDuel = (ZRuleDuel*)ZGetGameInterface()->GetGame()->GetMatch()->GetRule();
+		nWritten = zfwrite(&pDuel->QInfo,sizeof(MTD_DuelQueueInfo),1,m_pReplayFile);
+		if(nWritten==0) goto RECORDING_FAIL;
+	}
+
+Add under <br>
+
+	else if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_SPY)
+	{
+		ZRuleSpy* pSpy = (ZRuleSpy*)m_Match.GetRule();
+
+		int nSpyItemCount = (int)pSpy->m_vtLastSpyItem.size();
+		nWritten = zfwrite(&nSpyItemCount, sizeof(int), 1, m_pReplayFile);
+		if (nWritten == 0) goto RECORDING_FAIL;
+
+		nWritten = zfwrite((void*)&pSpy->m_vtLastSpyItem[0], sizeof(MMatchSpyItem), nSpyItemCount, m_pReplayFile);
+		if (nWritten == 0) goto RECORDING_FAIL;
+
+		int nTrackerItemCount = (int)pSpy->m_vtLastTrackerItem.size();
+		nWritten = zfwrite(&nTrackerItemCount, sizeof(int), 1, m_pReplayFile);
+		if (nWritten == 0) goto RECORDING_FAIL;
+
+		nWritten = zfwrite((void*)&pSpy->m_vtLastTrackerItem[0], sizeof(MMatchSpyItem), nTrackerItemCount, m_pReplayFile);
+		if (nWritten == 0) goto RECORDING_FAIL;
+	}
+
+Open(ZGameClient.h) <br>
+Find <br>
+
+	bool IsDuelTournamentGame() { return m_MatchStageSetting.GetGameType() == MMATCH_GAMETYPE_DUELTOURNAMENT; }
+
+Add under <br>
+
+	bool IsSpyMode() { return m_MatchStageSetting.GetGameType() == MMATCH_GAMETYPE_SPY; }
+
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+	ZGetGameTypeManager()->SetGameTypeStr(MMATCH_GAMETYPE_DEATHMATCH_SOLO, ZMsg(MSG_MT_DEATHMATCH_SOLO));
+
+Add under <br>
+
+	ZGetGameTypeManager()->SetGameTypeStr(MMATCH_GAMETYPE_SPY, "Spymode");
+
+Find <br>
+
+	MButton* pBlueTeamBtn  = (MButton*)m_IDLResource.FindWidget("StageTeamBlue");
+	MButton* pBlueTeamBtn2 = (MButton*)m_IDLResource.FindWidget("StageTeamBlue2");
+	MButton* pRedTeamBtn  = (MButton*)m_IDLResource.FindWidget("StageTeamRed");
+	MButton* pRedTeamBtn2 = (MButton*)m_IDLResource.FindWidget("StageTeamRed2");
+	if ((pRedTeamBtn == NULL) || (pBlueTeamBtn == NULL) || (pRedTeamBtn2 == NULL) || (pBlueTeamBtn2 == NULL))
+		return;
+
+Add under <br>
+
+	bool bSpyMode = ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_SPY;
 
 
+Open(ZInterfaceListener.cpp) <br>
+Find <br>
+
+				// ¸Ê µî·ÏÀÌ ¾ÈµÇ¾î ÀÖÀ¸¸é °ÔÀÓ ½ÃÀÛÀº ÇØÁÖÁö ¾Ê´Â´Ù.
+				if(!ZApplication::GetStageInterface()->GetIsRelayMapRegisterComplete())
+				{
+					ZGetGameInterface()->ShowMessage(MSG_GAME_RELAYMAP_CONFIRM_BUTTON_PUSH);
+					return true;
+				}
+
+				// ¸ÊÀÌ °ñ¶óÁ³À»¶§ ½ÃÀÛ °¡´É.
+				if(ZGetGameClient()->GetMatchStageSetting()->GetMapName()[0]!=0)
+				{
+					ZApplication::GetStageInterface()->ChangeStageEnableReady( true);
+
+					ZPostStageStart(ZGetGameClient()->GetPlayerUID(), ZGetGameClient()->GetStageUID());
+				}
+				else
+				{
+					ZGetGameInterface()->ShowMessage("¼±ÅÃÇÏ½Å ¸ÊÀÌ ¾ø½À´Ï´Ù. ¸ÊÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä.");
+				}
+
+				return true;
+			}
+			return false;
+		}
+	};
+	MGameStartListener	g_GameStartListener;
+
+Replace <br>
+
+				if (pStageSetting->nGameType == MMATCH_GAMETYPE_SPY)
+				{
+					if (nPlayerCnt >= MMatchSpyMode::GetMinPlayers())
+					{
+						vector<int> vecMapIDs;
+
+						if (ZApplication::GetStageInterface()->GetPlayableSpyMapList(nPlayerCnt, vecMapIDs))
+						{
+							ZApplication::GetStageInterface()->ChangeStageEnableReady(true);
+
+							void* pMapListBlob = MMakeBlobArray(sizeof(int), (int)vecMapIDs.size());
+
+							for (int i = 0; i < (int)vecMapIDs.size(); i++)
+								*(int*)MGetBlobArrayElement(pMapListBlob, i) = vecMapIDs[i];
+
+							ZPostSpyStageStart(pMapListBlob);
+
+							MEraseBlobArray(pMapListBlob);
+						}
+						else
+						{
+							ZGetGameInterface()->ShowMessage(MSG_SPY_NO_SUITABLE_MAP);
+						}
+					}
+					else
+					{
+						ZGetGameInterface()->ShowErrorMessage(MERR_SPY_LACKING_PLAYERS);
+					}
+				}
+				else
+				{
+					if (ZGetGameClient()->GetMatchStageSetting()->GetMapName()[0] != 0)
+					{
+						ZApplication::GetStageInterface()->ChangeStageEnableReady(true);
+
+						ZPostStageStart(ZGetGameClient()->GetPlayerUID(), ZGetGameClient()->GetStageUID());
+					}
+					else
+					{
+						ZGetGameInterface()->ShowMessage("¼±ÅÃÇÏ½Å ¸ÊÀÌ ¾ø½À´Ï´Ù. ¸ÊÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä.");
+					}
+				}
+				return true;
+			}
+			return false;
+		}
+	};
+	MGameStartListener	g_GameStartListener;
+
+Open(ZMatch.cpp) <br>
+Find <br>
+
+        if (IsTeamPlay())
+        {
+            int nSpawnIndex[2] = { 0, 0 };
+            for (int i = 0; i < 2; i++)
+                if (ZGetGame()->m_pMyCharacter->GetTeamID() == MMT_RED + i)
+                    pSpawnData = ZGetGame()->GetMapDesc()->GetSpawnManager()->GetTeamData(i, nSpawnIndex[i]);
+        }
+        else
+            pSpawnData = ZGetGame()->GetMapDesc()->GetSpawnManager()->GetSoloRandomData();
+        
+
+Replace <br>
+
+		if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_SPY)
+		{
+			int nSpawnIndex[2] = { 0, 0 };
+			for (int i = 0; i < 2; i++)
+				if (ZGetGame()->m_pMyCharacter->GetTeamID() == MMT_RED + i)
+					pSpawnData = ZGetGame()->GetMapDesc()->GetSpawnManager()->GetTeamData(i, nSpawnIndex[i]);
+		}
+		else
+			pSpawnData = ZGetGame()->GetMapDesc()->GetSpawnManager()->GetSoloRandomData();
 
 
+Find <br>
+
+	void ZMatch::InitCharactersPosition()
+	{
+	    // ÆÀÀüÀÏ °æ¿ì
+	    if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_INFECTED)
+		{
+		    int nSpawnIndex[2] = { 0, 0 };
 
 
+Replace <br>
 
+	void ZMatch::InitCharactersPosition()
+	{
+		// ÆÀÀüÀÏ °æ¿ì
+		if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_INFECTED)
+			if (IsTeamPlay() && GetMatchType() != MMATCH_GAMETYPE_SPY)
+		{
+			int nSpawnIndex[2] = { 0, 0 };
 
+Find <br>
 
+                else if (nArg == MMATCH_ROUNDRESULT_DRAW)
+                {
+                    // Do nothing...
+                } 
+                else {
+                    MMatchTeam nTeamWon = (nArg == MMATCH_ROUNDRESULT_REDWON ? MMT_RED : MMT_BLUE);
+                    if (nTeamWon == MMT_RED)
+                        m_nTeamScore[MMT_RED]++;
+                    else if (nTeamWon == MMT_BLUE)
+                        m_nTeamScore[MMT_BLUE]++;
+                }
+            }
+        }
+        break;
+
+Replace <br>
+
+			else if (nArg == MMATCH_ROUNDRESULT_DRAW)
+			{
+				// Do nothing...
+			}
+			else {
+				MMatchTeam nTeamWon = (nArg == MMATCH_ROUNDRESULT_REDWON ? MMT_RED : MMT_BLUE);
+				if (nTeamWon == MMT_RED)
+					m_nTeamScore[MMT_RED]++;
+				else if (nTeamWon == MMT_BLUE)
+					m_nTeamScore[MMT_BLUE]++;
+			}
+		}
+
+		if (GetMatchType() == MMATCH_GAMETYPE_SPY)
+		{
+			MMatchTeam nWinnerTeam = (nArg == MMATCH_ROUNDRESULT_REDWON || nArg == MMATCH_ROUNDRESULT_BLUE_ALL_OUT ? MMT_RED : MMT_BLUE);
+
+			for (ZCharacterManager::iterator i = ZGetGame()->m_CharacterManager.begin(); i != ZGetGame()->m_CharacterManager.end(); i++)
+			{
+				ZCharacter* pCharacter = (*i).second;
+
+				if (pCharacter->GetTeamID() != nWinnerTeam)
+				{
+					pCharacter->ActDead();
+					pCharacter->Die();
+				}
+			}
+		}
+	}
+	break;
+
+Open(ZObserver.cpp) <br>
+Find <br>
 
 
 
