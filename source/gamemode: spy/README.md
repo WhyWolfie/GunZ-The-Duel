@@ -805,6 +805,23 @@ Add under <br>
 
 	bool bSpyMode = ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_SPY;
 
+Find <br>
+
+	if (m_bTeamPlay && !bInfectedMode)
+	{
+	
+Replace <br>
+
+	if (m_bTeamPlay && !bSpyMode && !bInfectedMode)
+	{
+
+Find <br>
+
+	if( pSItem->m_nTeam == 0)
+
+Replace <br>
+
+	if (pSItem->m_nTeam == 0 || bSpyMode)
 
 Open(ZInterfaceListener.cpp) <br>
 Find <br>
