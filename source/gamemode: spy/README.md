@@ -3473,6 +3473,7 @@ Add under <br>
 	<MSG id="2216">Static public spy! :</MSG>
 	<MSG id="2217">All of maps that can be started have been excluded from the list.</MSG>
 
+
 System/Strings.xml <br>
 Find <br>
 
@@ -3852,6 +3853,11 @@ Add under <br>
 		<MOVABLE>false</MOVABLE>
 		<EDITABLE>false</EDITABLE>
 	</TEXTAREA>
+
+Default/main.xml<br>
+Add <br>
+
+	<INCLUDE>CombatInterface_Spy.xml</INCLUDE>
 
 Copy from Github(Default/CombatInterface_Spy.xml) <br>
 
