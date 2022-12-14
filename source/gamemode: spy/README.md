@@ -1,5 +1,13 @@
 Gamemode: Spymode <br>
 CSCommon/Spymode files <br>
+- MMatchRuleSpy.cpp
+- MMatchRuleSpy.h
+- MMatchServer_Spy.cpp
+- MMatchSpyMap.cpp
+- MMatchSpyMap.h
+- MMatchSpyMode.cpp
+- MMatchSpyMode.h
+
 Gunz/Spymode files <br>
 - ZRuleSpy.cpp
 - ZRuleSpy.h
@@ -301,7 +309,7 @@ Add <br>
           m_WorldItemManager.RouteAllItems(pObj);
           m_ActiveTrapManager.RouteAllTraps(pObj);
 
-          if (m_StageSetting.GetGameType() == MMATCH_GAMETYPE_SPY && m_StageSetting.GetGameType() == MMATCH_GAMETYPE_DROPMAGIC)
+          if (m_StageSetting.GetGameType() == MMATCH_GAMETYPE_SPY)
           {
             if (m_pRule)
               ((MMatchRuleSpy*)m_pRule)->SendGameInfo();
@@ -2456,6 +2464,257 @@ Find <br>
 Add under <br>
 
 	MListener* ZGetSpyBanMapListListener(void);
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+	#include "ZRuleDuel.h"
+	#include "ZRuleDeathMatch.h"
+	#include "ZMyCharacter.h"
+	#include "MMatchCRC32XORCache.h"
+	#include "MMatchObjCache.h"
+
+	#include "ZModule_HealOverTime.h"
+
+Add under <br>
+
+	#include "ZRuleSpy.h"
+
+Open(MMatchStage.cpp) <br>
+Find <br>
+
+	#include "MMatchRuleBerserker.h"
+	#include "MMatchRuleDuel.h"
+	#include "MMatchRuleDuelTournament.h"
+	#include "MMatchCRC32XORCache.h"
+
+Add <br>
+
+	#include "../CSCommon/MMatchRuleSpy.h"
+
+Open(MMatchRule.cpp) <br>
+Find <br>
+
+	#include "MBlobArray.h"
+	#include "MMatchConfig.h"
+	#include "MMatchEventFactory.h"
+
+Add under <br>
+
+	#include "MMatchSpyMode.h"
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+	void ZCombatInterface::DrawAllPlayerName(MDrawContext* pDC)
+	{
+
+Add under <br>
+
+	void ZCombatInterface::DrawSpyName(MDrawContext* pDC)
+	{
+		ZCharacter* pTargetCharacter = GetTargetCharacter();
+		if (!pTargetCharacter) return;
+
+		bool bCountDown = ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_COUNTDOWN;
+		bool bOpen = ZGetGame()->GetMatch()->GetRoundState() == MMATCH_ROUNDSTATE_PLAY && m_bSpyLocationOpened;
+
+		for (ZCharacterManager::iterator itor = ZGetGame()->m_CharacterManager.begin();
+			itor != ZGetGame()->m_CharacterManager.end(); ++itor)
+		{
+			rvector pos, screen_pos;
+			ZCharacter* pCharacter = (*itor).second;
+			if (!pCharacter->IsVisible()) continue;
+			if (pCharacter->IsDie()) continue;
+			if (pCharacter == pTargetCharacter) continue;
+
+			if ((!bCountDown) && (!bOpen || pTargetCharacter->GetTeamID() == MMT_RED))
+				if (pCharacter->GetTeamID() != pTargetCharacter->GetTeamID())
+					continue;
+
+			pos = pCharacter->GetPosition();
+			RVisualMesh* pVMesh = pCharacter->m_pVMesh;
+			RealSpace2::rboundingbox box;
+
+			if (pVMesh == NULL) continue;
+
+			box.vmax = pos + rvector(50.f, 50.f, 190.f);
+			box.vmin = pos + rvector(-50.f, -50.f, 0.f);
+
+			if (isInViewFrustum(&box, RGetViewFrustum()))
+			{
+				if (ZGetCamera()->GetLookMode() == ZCAMERA_MINIMAP) {
+					rvector pos = pCharacter->GetPosition();
+					pos.z = 0;
+					screen_pos = RGetTransformCoord(pos);
+				}
+				else
+					screen_pos = RGetTransformCoord(pCharacter->GetVisualMesh()->GetHeadPosition() + rvector(0, 0, 30.f));
+
+				MFont *pFont = NULL;
+
+				if (pCharacter->IsAdminName()) {
+					pFont = MFontManager::Get("FONTa12_O1Org");
+					pDC->SetColor(MCOLOR(ZCOLOR_ADMIN_NAME));
+				}
+				else {
+					if (bCountDown)
+						pFont = MFontManager::Get("FONTa12_O1Blr");
+					else if (pTargetCharacter->GetTeamID() != pCharacter->GetTeamID())
+						pFont = MFontManager::Get("FONTa12_O1Red");
+					else
+						pFont = MFontManager::Get("FONTa12_O1Blr");
+
+					pDC->SetColor(MCOLOR(0xFF2669B2));
+				}
+
+				pDC->SetBitmap(NULL);
+
+				if (pFont == NULL) _ASSERT(0);
+				pDC->SetFont(pFont);
+				int x = screen_pos.x - pDC->GetFont()->GetWidth(pCharacter->GetUserName()) / 2;
+
+				pDC->Text(x, screen_pos.y - 12, pCharacter->GetUserName());
+
+				if (bOpen && pTargetCharacter->GetTeamID() == MMT_BLUE && pCharacter->GetTeamID() == MMT_RED)
+				{
+					const int nIconWidth = 48, nIconHeight = 48;
+
+					pDC->SetBitmap((MBitmap*)m_pSpyIcon);
+					pDC->Draw(screen_pos.x - nIconWidth / 2, screen_pos.y - nIconHeight / 2 - 34, nIconWidth, nIconHeight);
+				}
+			}
+		}
+	}
+
+Open(ZCombatInterface.h) <br>
+Find <br>
+
+	void DrawFriendName(MDrawContext* pDC);			// °°ÀºÆí ÀÌ¸§
+	void DrawEnemyName(MDrawContext* pDC);			// Àû ÀÌ¸§
+	void DrawAllPlayerName(MDrawContext* pDC);
+
+Add under <br>
+
+	void DrawSpyName(MDrawContext* pDC);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
