@@ -3358,12 +3358,33 @@ Add under <br>
 	}
 
 
+Find <br>
 
+	#include "ZModule_QuestStatus.h"
+	#include "ZLocale.h"
 
+	#include "ZRuleDuel.h"
+	#include "ZRuleDuelTournament.h"
+	#include "ZInput.h"
 
+	#include "ZNHN_USA_Report.h"
 
+Add under <br>
 
+	#include "../CSCommon/MMatchSpyMap.h"
 
+Open(ZInterfaceListener.cpp) <br>
+Find <br>
+
+	BEGIN_IMPLEMENT_LISTENER(ZStageSpyBanMapBoxOpen, MBTN_CLK_MSG)
+		ZApplication::GetStageInterface()->OpenSpyBanMapBox();
+	END_IMPLEMENT_LISTENER()
+
+Add under <br>
+
+	BEGIN_IMPLEMENT_LISTENER(ZStageSpyBanMapBoxClose, MBTN_CLK_MSG)
+		ZApplication::GetStageInterface()->CloseSpyBanMapBox();
+	END_IMPLEMENT_LISTENER()
 
 
 
