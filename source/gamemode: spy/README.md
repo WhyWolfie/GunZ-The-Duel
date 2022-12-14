@@ -1627,6 +1627,178 @@ Replace <br>
 		}
 	}
 
+Open(MMatchServer.h) <br>
+Find <br>
+
+		void OnAsyncRequest_RewardCharBP(const MUID& uidPlayer, int nBRID, int nBRTID, int nRewardCount, int nBattleTime, int nKillCount, int nItemID, int nItemCnt, int nRentHourPeriod);
+		void OnAsyncRequest_UpdateCharBRInfo(const MUID& uidPlayer, int nBRID, int nBRTID, int nRewardCount, int nBattleTime, int nKillCount);
+
+Add under <br>
+
+	MCommand* BuildSpyBanMapListCommand(MMatchStageSetting* pSetting);
+
+	void OnSpyStageRequestBanMapList(const MUID& uidPlayer);
+	void OnSpyStageActivateMap(const MUID& uidPlayer, int nMapID, bool bExclude);
+	void OnSpyStageStart(const MUID& uidPlayer, void* pMapListBlob);
+
+Open(MMatchServer_OnCommand.cpp) <br>
+Find <br>
+
+		case MC_MATCH_DUELTOURNAMENT_REQUEST_SIDERANKING_INFO :
+			{
+				MUID uidPlayer;
+
+				pCommand->GetParameter(&uidPlayer, 0, MPT_UID);
+
+				if( MGetServerConfig()->IsEnabledDuelTournament() ){
+					ResponseDuelTournamentCharSideRanking(uidPlayer);
+				}
+			}
+			break;
+
+Add <br>
+
+	case MC_SPY_STAGE_REQUEST_BAN_MAP_LIST:
+	{
+		OnSpyStageRequestBanMapList(pCommand->GetSenderUID());
+	}
+	break;
+
+	case MC_SPY_STAGE_ACTIVATE_MAP:
+	{
+		int nMapID;
+		bool bExclude;
+
+		pCommand->GetParameter(&nMapID, 0, MPT_INT);
+		pCommand->GetParameter(&bExclude, 1, MPT_BOOL);
+
+		OnSpyStageActivateMap(pCommand->GetSenderUID(), nMapID, bExclude);
+	}
+	break;
+
+	case MC_SPY_STAGE_REQUEST_START:
+	{
+		MCommandParameter* pParam = pCommand->GetParameter(0);
+		if ((!pParam) || (pParam->GetType() != MPT_BLOB) || (pParam->GetSize() < (sizeof(int) * 2)))
+		{
+			_ASSERT(0);
+			break;
+		}
+
+		void* pBlob = pParam->GetPointer();
+		if (MGetBlobArraySize(pBlob) != (pParam->GetSize() - sizeof(int)))
+		{
+			_ASSERT(0);
+			break;
+		}
+
+		OnSpyStageStart(pCommand->GetSenderUID(), pBlob);
+	}
+	break;
+
+Open(ZGameInterface_OnCommand.cpp) <br>
+Find <br>
+
+	case MC_MATCH_CLAN_ACCOUNCE_DELETE :
+		{
+			char szDeleteDate[ 128 ] = {0,};
+			pCommand->GetParameter( szDeleteDate, 0, MPT_STR, 128 );
+
+			ZApplication::GetGameInterface()->OnAnnounceDeleteClan( szDeleteDate );
+		}
+		break;
+
+Add under <br>
+
+	case MC_SPY_STAGE_BAN_MAP_LIST:
+	{
+		MCommandParameter* pParam = pCommand->GetParameter(0);
+		if(pParam->GetType() != MPT_BLOB) 
+		{
+			_ASSERT(0);
+			break;
+	}
+
+		void* pMapListBlob = pParam->GetPointer();
+		if (!pMapListBlob)
+		{
+			_ASSERT(0);
+			break;
+		}
+
+		ZApplication::GetStageInterface()->OnSpyStageBanMapList(pMapListBlob);
+		}
+	break;
+
+	case MC_SPY_STAGE_ACTIVATE_MAP:
+	{
+		int nMapID;
+		bool bExclude;
+
+		pCommand->GetParameter(&nMapID, 0, MPT_INT);
+		pCommand->GetParameter(&bExclude, 1, MPT_BOOL);
+
+		ZApplication::GetStageInterface()->OnSpyStageActivateMap(nMapID, bExclude);
+	}
+	break;
+
+Open(ZStageInterface.h) <br>
+Find <br>
+
+	#ifdef _QUEST_ITEM
+		bool OnResponseDropSacrificeItemOnSlot( const int nResult, const MUID& uidRequester, const int nSlotIndex, const int nItemID );
+		bool OnResponseCallbackSacrificeItem( const int nResult, const MUID& uidRequester, const int nSlotIndex, const int nItemID );
+		bool OnResponseQL( const int nQL );
+		bool OnResponseSacrificeSlotInfo( const MUID& uidOwner1, const unsigned long int nItemID1, 
+										  const MUID& uidOwner2, const unsigned long int nItemID2 );
+		bool OnNotAllReady();
+		bool OnQuestStartFailed( const int nState );
+		bool OnStageGameInfo( const int nQL, const int nMapsetID, const unsigned int nScenarioID );
+	#endif
+
+		bool OnStopVote();
+	};
+
+Replace <br>
+
+	#ifdef _QUEST_ITEM
+		bool OnResponseDropSacrificeItemOnSlot( const int nResult, const MUID& uidRequester, const int nSlotIndex, const int nItemID );
+		bool OnResponseCallbackSacrificeItem( const int nResult, const MUID& uidRequester, const int nSlotIndex, const int nItemID );
+		bool OnResponseQL( const int nQL );
+		bool OnResponseSacrificeSlotInfo( const MUID& uidOwner1, const unsigned long int nItemID1, 
+										  const MUID& uidOwner2, const unsigned long int nItemID2 );
+		bool OnNotAllReady();
+		bool OnQuestStartFailed( const int nState );
+		bool OnStageGameInfo( const int nQL, const int nMapsetID, const unsigned int nScenarioID );
+	#endif
+
+		bool OnStopVote();
+
+		// Spy Mode.
+	protected:
+		MBitmapR2*		m_pSpyBanMapListFrameImg;
+	public:
+		void OpenSpyBanMapBox();
+		void CloseSpyBanMapBox();
+		void HideSpyBanMapBox();
+		void SetSpyBanMapBoxPos(int nBoxPos);
+
+		void CreateSpyBanMapList();
+		bool GetPlayableSpyMapList(int players, vector<int>& out);
+
+		void OnSpyStageActivateMap(int nMapID, bool bExclude);
+		void OnSpyStageBanMapList(void* pMapListBlob);
+
+		int m_nSpyBanMapListFramePos;
+	};
+
+
+
+
+
+
+
+
 
 
 
