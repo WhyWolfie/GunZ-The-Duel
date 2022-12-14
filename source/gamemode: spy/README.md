@@ -2599,18 +2599,44 @@ Add under <br>
 	void DrawSpyName(MDrawContext* pDC);
 
 
+Open(ZInterfaceListener.cpp) <br>
+Find <br>
 
+	BEGIN_IMPLEMENT_LISTENER( ZGetRelayMapOKButtonListener, MBTN_CLK_MSG)
+		ZApplication::GetStageInterface()->PostRelayMapInfoUpdate();
+	END_IMPLEMENT_LISTENER();
 
+Add under <br>
 
+	BEGIN_IMPLEMENT_LISTENER(ZStageSpyBanMapBoxOpen, MBTN_CLK_MSG)
+	ZApplication::GetStageInterface()->OpenSpyBanMapBox();
+	END_IMPLEMENT_LISTENER()
 
+Open(ZInterfaceListener.h) <br>
+Find <br>
 
+	DECLARE_LISTENER(ZStageRelayMapBoxClose)
+	DECLARE_LISTENER(ZGetRelayMapOKButtonListener)
 
+Add under <br>
 
+	DECLARE_LISTENER(ZStageSpyBanMapBoxOpen)
+	DECLARE_LISTENER(ZStageSpyBanMapBoxClose)
 
+Open(ZPost.h) <br>
+Find <br>
 
+	inline void ZPostRequestGamble( const MUID& uid)
+	{
+		ZPOSTCMD1( MC_MATCH_REQUEST_GAMBLE, MCmdParamUID(uid) );
+	}
 
+Add under <br>
 
-
+	inline void ZPostSpyStageStart(void* pMapListBlob)
+	{
+		ZPOSTCMD1(MC_SPY_STAGE_REQUEST_START, MCmdParamBlob(pMapListBlob, MGetBlobArraySize(pMapListBlob)));
+	}
 
 
 
