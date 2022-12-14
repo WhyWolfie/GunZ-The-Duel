@@ -1893,6 +1893,166 @@ Add under <br>
 
 	}
 
+Open(MMatchTransDataType.h) <br>
+Find <br>
+
+	struct MTD_ShopItemInfo
+	{
+		unsigned int	nItemID;
+		int				nItemCount;
+	};
+
+Add under <br>
+
+	struct MTD_SpyRoundFinishInfo
+	{
+		MUID uidPlayer;
+		int nXP;
+		int nPercent;
+		int nBP;
+		int nPoint;
+	};
+
+	struct MTD_SpyPlayerScoreInfo
+	{
+		MUID uidPlayer;
+		int nWin;
+		int nLose;
+		int nPoint;
+	};
+
+Open(MMatchServer_Stage.cpp) <br>
+Find <br>
+
+	#include "MMatchRuleDuel.h"
+	#include "MCrashDump.h"
+
+Add <br>
+
+	#include "MMatchRuleSpy.h"
+
+Open(ZCombatInterface.h) <br>
+Find <br>
+
+		const char* GetRedClanName() const { return m_szRedClanName; }
+		const char* GetBlueClanName() const { return m_szBlueClanName; }
+	};
+
+Replace <br>
+
+		const char* GetRedClanName() const { return m_szRedClanName; }
+		const char* GetBlueClanName() const { return m_szBlueClanName; }
+		ZWeaponScreenEffect* GetWeaponScreenEffect() { return m_pWeaponScreenEffect; }
+	public:
+		void OnSpyCreate();
+		void OnSpyDestroy();
+
+		void CreateSpyGameInterface();
+		void CreateSpyWaitInterface();
+
+		void OnSpyUpdate(float fElapsed);
+		void OnSpyDraw(MDrawContext* pDC);
+
+		void SetSpyTip(const char* msg);
+		void SetSpyEventMsg(const char* imgName);
+		void SetSpyNotice(const char* imgName);
+
+		void SetDefaultSpyTip(MMatchTeam team);
+		const char* GetSuitableSpyItemTip(int itemid);
+
+		bool m_bSpyLocationOpened;
+
+	protected:
+		MBitmapR2* m_pSpyIcon;
+
+	protected:
+		void SetSpyTimeLimitValue(int m, int s, int ms);
+		void SetSpyTimeLimitValue(DWORD dwTime);
+
+	public:
+		void SetSpyTimer(DWORD dwTimeLimit);
+	protected:
+		DWORD m_dwSpyTimer;
+
+	public:
+		void PlaySpyNotice(const char* imgName);
+	protected:
+		bool m_bSpyNoticePlaying;
+		DWORD m_dwSpyNoticePlayStartedTime;
+	};
+
+Open(MSharedCommandTable.h) <br>
+Find <br>
+
+	#define MC_LOCAL_UPDATE_CUSTOM_IP				50008
+	#define MC_LOCAL_UPDATE_ACCEPT_INVALID_IP		50009
+
+Add under <br>
+
+	//SpyMode
+	#define MC_SPY_STAGE_REQUEST_BAN_MAP_LIST			            60040
+	#define MC_SPY_STAGE_BAN_MAP_LIST					            60041
+	#define MC_SPY_STAGE_ACTIVATE_MAP					            60042
+	#define MC_SPY_STAGE_REQUEST_START					            60043
+	#define MC_SPY_GAME_INFO							            60044
+	#define MC_SPY_GAME_RESULT							            60045
+	#define MC_SPY_GAME_SCORE							            60046
+
+Open(MSharedCommandTable.cpp) <br>
+Find <br>
+
+	END_CMD_DESC();
+	
+Add Above <br>
+
+
+	////////// Spy Mode //////////
+	C(MC_SPY_STAGE_ACTIVATE_MAP, "Ban/UnBan Spy Map", "Mark Spy Mode map as (de)activated.", MCDT_MACHINE2MACHINE)
+		P(MPT_INT, "Map ID")
+		P(MPT_BOOL, "Exclude")
+
+	C(MC_SPY_STAGE_REQUEST_BAN_MAP_LIST, "Request Spy Map List", "Keep client's spy ban map list correct.", MCDT_MACHINE2MACHINE)
+
+	C(MC_SPY_STAGE_BAN_MAP_LIST, "Spy Map List", "Sync map list info of Spy Mode between Client and Server.", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "Map IDs")
+
+	C(MC_SPY_STAGE_REQUEST_START, "Start Spy Mode stage", "Start Spy Mode game.", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "Map IDs")
+
+	C(MC_SPY_GAME_INFO, "Spy Mode game info", "Refresh Spy Mode status of client.", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "Spy UIDs")
+		P(MPT_BLOB, "Spy-side Items")
+		P(MPT_UINT, "Spy bonus HP/AP")
+		P(MPT_BLOB, "Tracker-side Items")
+
+	C(MC_SPY_GAME_RESULT, "Spy Mode game result", "Spy Mode round finish info to client.", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "EXP Bonus Info")
+
+	C(MC_SPY_GAME_SCORE, "Spy Mode game score", "Client/Server Sync Spy Mode character score info.", MCDT_MACHINE2MACHINE)
+		P(MPT_BLOB, "Char Score Info")
+
+Open(ZCommandUDPHackShield.cpp) <br>
+Find <br>
+
+	AddDeniedCommand(MC_MATCH_RESPONSE_MONSTER_BIBLE_INFO);
+	AddDeniedCommand(MC_MATCH_FLAG_EFFECT);
+	AddDeniedCommand(MC_MATCH_FLAG_CAP);
+	AddDeniedCommand(MC_MATCH_FLAG_STATE);
+
+Add under <br>
+
+	AddDeniedCommand(MC_SPY_STAGE_ACTIVATE_MAP);
+	AddDeniedCommand(MC_SPY_STAGE_REQUEST_BAN_MAP_LIST);
+	AddDeniedCommand(MC_SPY_STAGE_BAN_MAP_LIST);
+	AddDeniedCommand(MC_SPY_STAGE_REQUEST_START);
+	AddDeniedCommand(MC_SPY_GAME_INFO);
+	AddDeniedCommand(MC_SPY_GAME_RESULT);
+	AddDeniedCommand(MC_SPY_GAME_SCORE);
+
+
+
+
+
 
 
 
