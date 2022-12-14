@@ -2606,19 +2606,295 @@ Add under <br>
 		ZPOSTCMD1(MC_SPY_STAGE_REQUEST_START, MCmdParamBlob(pMapListBlob, MGetBlobArraySize(pMapListBlob)));
 	}
 
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	void ZCharacter::ApplyBuffEffect()
+	{
+
+	}
+
+Add under <br>
+
+	void ZCharacter::SpyHealthBonus(int nHPAP)
+	{
+		const MTD_CharInfo* pCharInfo = &m_MInitialInfo.Ref();
+
+		float fAddedAP = DEFAULT_CHAR_AP;
+		for (int i = 0; i < MMCIP_END; i++) {
+			if (!m_Items.GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+				if (m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() > 40) {
+					m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref() = 0;
+				}
+				fAddedAP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nAP.Ref();
+			}
+		}
+
+		float fAddedHP = DEFAULT_CHAR_HP;
+		for (int i = 0; i < MMCIP_END; i++) {
+			if (!m_Items.GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+				fAddedHP += m_Items.GetItem(MMatchCharItemParts(i))->GetDesc()->m_nHP.Ref();
+			}
+		}
+
+		m_Property.fMaxAP.Set_CheckCrc(pCharInfo->nAP + fAddedAP + (float)nHPAP);
+		m_Property.fMaxHP.Set_CheckCrc(pCharInfo->nHP + fAddedHP + (float)nHPAP);
 
 
+		m_fPreMaxHP = pCharInfo->nHP + fAddedHP;
+		m_fPreMaxAP = pCharInfo->nAP + fAddedAP;
 
 
+		InitHPAP();
+	}
+
+	void ZCharacter::InitSpyWeaponBullet()
+	{
+		for (int i = MMCIP_MELEE; i <= MMCIP_CUSTOM2; i++)
+		{
+			ZItem* pItem = m_Items.GetItem((MMatchCharItemParts)i);
+			if (pItem->IsEmpty()) continue;
+
+			if (MMatchSpyMode::IsSpyItem((int)pItem->GetDescID()))
+			{
+				pItem->SetBulletCurrMagazine(pItem->GetItemCount());
+				pItem->SetBulletSpare(pItem->GetBulletCurrMagazine());
+			}
+		}
+	}
+
+	void ZCharacter::DistributeSpyItem(vector<MMatchSpyItem> &vt)
+	{
+		if (GetTeamID() == MMT_RED)
+		{
+			m_Items.EquipItem(MMCIP_MELEE, 0, 0);
+			m_Items.EquipItem(MMCIP_PRIMARY, 0, 0);
+			m_Items.EquipItem(MMCIP_SECONDARY, 0, 0);
+			m_Items.EquipItem(MMCIP_CUSTOM1, 0, 0);
+			m_Items.EquipItem(MMCIP_CUSTOM2, 0, 0);
+		}
+		else
+		{
+			m_Items.EquipItem(MMCIP_CUSTOM1, 0, 0);
+			m_Items.EquipItem(MMCIP_CUSTOM2, 0, 0);
+		}
+
+		for (vector<MMatchSpyItem>::iterator i = vt.begin(); i != vt.end(); i++)
+		{
+			MMatchSpyItem* pItem = &(*i);
+
+			MMatchCharItemParts nParts = MMCIP_END;
+			switch (pItem->nItemID)
+			{
+			case 601001:
+				nParts = MMCIP_SECONDARY;	break;
+			case 601002:
+				nParts = MMCIP_CUSTOM2;		break;
+			case 601003:
+				nParts = MMCIP_CUSTOM1;		break;
+			case 601004:
+				nParts = MMCIP_CUSTOM1;		break;
+			case 601005:
+				nParts = MMCIP_CUSTOM2;		break;
+			case 601006:
+				nParts = MMCIP_MELEE;		break;
+			default:
+				_ASSERT(0);					break;
+			}
+
+			m_Items.EquipItem(nParts, pItem->nItemID, pItem->nItemCount, false);
+		}
+
+		InitSpyWeaponBullet();
+
+		ChangeWeapon(MMCIP_MELEE, true);
+	}
+
+	void ZCharacter::TakeoutSpyItem()
+	{
+		const MTD_CharInfo* pCharInfo = &m_MInitialInfo.Ref();
+
+		for (int i = 0; i < MMCIP_END; i++)
+		{
+			m_Items.EquipItem(MMatchCharItemParts(i), pCharInfo->nEquipedItemDesc[i], pCharInfo->nEquipedItemCount[i]);
+		}
+
+		InitItemBullet();
+
+		ChangeWeapon(MMCIP_MELEE, true);
+	}
+
+Find <br>
+
+	void ZCharacter::ChangeWeapon(MMatchCharItemParts nParts, bool bReSelect)
+	{
+
+Replace <br>
+
+	void ZCharacter::ChangeWeapon(MMatchCharItemParts nParts, bool bReSelect)
+	{
+		if(!bReSelect){
+			if(m_Items.GetSelectedWeaponParts()==nParts) 
+				return;
+		}
+
+		if( nParts < 0 || nParts > MMCIP_END )
+			return;
+
+		if (m_Items.GetItem(nParts) == NULL) 
+			return;
+
+		if (m_Items.GetItem(nParts)->GetDesc() == NULL)
+			return;
+
+		if (ZGetGame()->GetMatch()->IsRuleGladiator()){
+			if ((nParts == MMCIP_PRIMARY) || (nParts == MMCIP_SECONDARY))
+				return;
+		}
+
+		MMatchCharItemParts BackupParts = m_Items.GetSelectedWeaponParts();
+		m_Items.SelectWeapon(nParts);
+
+		if(m_Items.GetSelectedWeapon()==NULL) 
+			return;
+
+		MMatchItemDesc* pSelectedItemDesc = m_Items.GetSelectedWeapon()->GetDesc();
+		if (pSelectedItemDesc==NULL) {
+			m_Items.SelectWeapon(BackupParts);
+		//	mlog("¼±ÅÃµÈ ¹«±âÀÇ µ¥ÀÌÅÍ°¡ ¾ø´Ù.\n");
+		//	mlog("ZCharacter ¹«±â»óÅÂ¿Í RVisualMesh ÀÇ ¹«±â»óÅÂ°¡ Æ²·ÁÁ³´Ù\n");
+			return;
+		}
+
+		OnChangeWeapon(pSelectedItemDesc->m_pMItemName->Ref().m_szMeshName);
+
+		if(nParts!=MMCIP_MELEE)
+		{
+			m_bCharged->Set_CheckCrc(false);
+		}
+	}
 
 
+Open(ZCharacter.h) <br>
+Find <br>
+
+	const MTD_CharInfo* GetCharInfo() const { return &m_MInitialInfo.Ref(); }
+
+Add under <br>
+
+	public:
+		ZSkill m_Skill;
+		void SpyHealthBonus(int nHPAP);
+
+		void InitSpyWeaponBullet();
+
+		virtual void DistributeSpyItem(vector<MMatchSpyItem> &vt);
+		void TakeoutSpyItem();
+
+Find <br>
+
+	#include "MMatchObject.h"
+	#include "RCharCloth.h"
+	#include "ZFile.h"
+	#include "Mempool.h"
+
+	#include "ZModule_HPAP.h"
+
+	#include <list>
+	#include <string>
+
+Add under <br>
+
+	#include "../CSCommon/MMatchSpyMode.h"
+
+Find <br>
+
+	enum ZC_SHOT_SP_TYPE {
+		ZC_WEAPON_SP_NONE = 0,
+
+		// grenade type
+		ZC_WEAPON_SP_GRENADE,
+		ZC_WEAPON_SP_ROCKET,
+		ZC_WEAPON_SP_FLASHBANG,
+		ZC_WEAPON_SP_SMOKE,
+		ZC_WEAPON_SP_TEAR_GAS,
+
+Add under <br>
+
+	ZC_WEAPON_SP_FLASHBANG_SPY,
+	ZC_WEAPON_SP_SMOKE_SPY,
+	ZC_WEAPON_SP_TRAP_SPY,
+	ZC_WEAPON_SP_STUN_SPY,
+
+Find <br>
+
+	void ChangeWeapon(MMatchCharItemParts nParts);
+
+Replace <br>
+
+	void ChangeWeapon(MMatchCharItemParts nParts, bool bReSelect = false);
 
 
+Open(ZCharacterItem.h) <br>
+Find <br>
+	
+	bool EquipItem(MMatchCharItemParts parts, int nItemDescID, int nItemCount = 1);
 
 
+Replace <br>
+
+	bool EquipItem(MMatchCharItemParts parts, int nItemDescID, int nItemCount = 1, bool bValidationCheck = true);
+
+Open(ZCharacterItem.cpp) <br>
+Find <br>
+
+	bool ZCharacterItem::EquipItem(MMatchCharItemParts parts, int nItemDescID, int nItemCount, bool bValidationCheck)
+	{
 
 
+Replace <br>
 
+	bool ZCharacterItem::EquipItem(MMatchCharItemParts parts, int nItemDescID, int nItemCount, bool bValidationCheck)
+	{
+		if (nItemDescID == 0) {
+			m_Items[parts].Create(MUID(0,0), NULL, 0);
+			return true;
+		}
+
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(nItemDescID);
+
+		if (pDesc == NULL) { return false; }
+		if (!Confirm(parts, pDesc)) {
+			return false;
+		}
+
+		m_Items[parts].Create(MUID(0,0), pDesc, 1, nItemCount);
+		return true;
+	}
+
+Open(MErrorTable.h) <br>
+Find <br>
+
+	#define MERR_HE_IS_NOT_READY								200008 //  '%s'´ÔÀº ÁØºñ°¡ ¾ÈµÇ¾ú½À´Ï´Ù.
+
+Add <br>
+
+	#define MERR_SPY_LACKING_PLAYERS							200009 /// <SpyMode>
+
+Open(ZPost.h)
+Find <br>
+
+	inline void ZPostSpyStageStart(void* pMapListBlob)
+	{
+		ZPOSTCMD1(MC_SPY_STAGE_REQUEST_START, MCmdParamBlob(pMapListBlob, MGetBlobArraySize(pMapListBlob)));
+	}
+
+Add <br>
+
+	inline void ZPostActivateSpyMap(int nMapID, bool bExclude)
+	{
+		ZPOSTCMD2(MC_SPY_STAGE_ACTIVATE_MAP, MCmdParamInt(nMapID), MCmdParamBool(bExclude));
+	}
 
 
 
