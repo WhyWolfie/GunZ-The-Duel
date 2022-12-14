@@ -1,5 +1,8 @@
 Gamemode: Spymode <br>
 CSCommon/Spymode files <br>
+Gunz/Spymode files <br>
+- ZRuleSpy.cpp
+- ZRuleSpy.h
 
 Open(MBaseGameType.h) <br>
 Find <br>
@@ -2049,19 +2052,116 @@ Add under <br>
 	AddDeniedCommand(MC_SPY_GAME_RESULT);
 	AddDeniedCommand(MC_SPY_GAME_SCORE);
 
+Open(MMatchStageSetting.cpp) <br>
+Find <br>
 
+	#include "stdafx.h"
+	#include "MMatchStageSetting.h"
+	#include "MMatchServer.h"
+	#include "MMatchObject.h"
 
+Add <br>
 
+	#include "MMatchSpyMap.h"
 
+Add ZRuleSpy.cpp & ZRuleSpy.h in Gunz Project<br>
 
+Open(ZReplay.cpp) <br>
+Find <br>
 
+	#include "ZRuleDuel.h"
+	#include "ZRuleDuelTournament.h"
+	#include "ZRuleDeathMatch.h"
+	#include "ZWorldItem.h"
 
+Add <br>
 
+	#include "ZRuleSpy.h"
 
+Open(ZInterfaceListener.cpp) <br>
+Find <br>
 
+	#include "ZShopEquipInterface.h"
+	#include "ZShopEquipListbox.h"
 
+	#ifdef LOCALE_NHNUSA
+	#include "ZNHN_USA_Report.h"
+	#endif
 
+Add <br>
 
+	#include "../CSCommon/MMatchSpyMode.h"
+	#include "../CSCommon/MMatchSpyMap.h"
+
+Open(ZRule.cpp) <br>
+Find <br>
+
+	#include "ZRuleBerserker.h"
+	#include "ZRuleDuel.h"
+	#include "ZRuleDuelTournament.h"
+
+Add <br>
+
+	#include "ZRuleSpy.h"
+
+Open(ZStageInterface.cpp) <br>
+Find <br>
+
+	#include "ZItemSlotView.h"
+	#include "ZMessages.h"
+	#include "ZLanguageConf.h"
+
+Add <br>
+
+	#include "../CSCommon/MMatchSpyMap.h"
+
+Find <br>
+
+	MAnimation* pAniMapImg = (MAnimation*)pResource->FindWidget( "Stage_MapNameBG");
+	bool bQuestUI = false;
+
+Replace <br>
+
+	MAnimation* pAniMapImg = (MAnimation*)pResource->FindWidget( "Stage_MapNameBG");
+	bool bQuestUI = false, bSpyUI = false;
+
+Find <br>
+
+	pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget( "Stage_RelayMapListBG");
+	if ( pPicture)
+		pPicture->SetBitmap( NULL);
+
+Add under <br>
+
+	pPicture = (MPicture*)ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Stage_SpyBanMapListBG");
+	if (pPicture)
+		pPicture->SetBitmap(NULL);
+
+Find <br>
+
+	if (m_pRelayMapListFrameImg != NULL)
+	{
+		delete m_pRelayMapListFrameImg;
+		m_pRelayMapListFrameImg = NULL;
+	}
+
+Add Under <br>
+
+	if (m_pSpyBanMapListFrameImg != NULL)
+	{
+		delete m_pSpyBanMapListFrameImg;
+		m_pSpyBanMapListFrameImg = NULL;
+	}
+
+Find <br>
+
+	m_bRelayMapRegisterComplete = true;
+	m_bEnableWidgetByRelayMap = true;
+
+Add under <br>
+
+	m_pSpyBanMapListFrameImg = NULL;
+	m_nSpyBanMapListFramePos = 0;
 
 
 
