@@ -1,3 +1,6 @@
+Gamemode: Spymode <br>
+CSCommon/Spymode files <br>
+
 Open(MBaseGameType.h) <br>
 Find <br>
 
@@ -973,6 +976,672 @@ Replace <br>
 
 Open(ZObserver.cpp) <br>
 Find <br>
+
+		if(SetFirstTarget())
+		{
+			m_fDelay=ZOBSERVER_DEFAULT_DELAY_TIME;
+			ShowInfo(true);
+			m_bVisible = true;
+			//ZApplication::GetGameInterface()->SetCursorEnable(true);
+
+			return;
+		}
+	}
+
+Replace <br>
+
+		if(SetFirstTarget())
+		{
+			m_fDelay=ZOBSERVER_DEFAULT_DELAY_TIME;
+			ShowInfo(true);
+			m_bVisible = true;
+			//			ZApplication::GetGameInterface()->SetCursorEnable(true);
+
+			if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_SPY)
+				ZApplication::GetGameInterface()->GetCombatInterface()->SetDefaultSpyTip(ZGetGame()->m_pMyCharacter->GetTeamID());
+
+			return;
+		}
+	}
+
+Find <br>
+
+	else if (ZGetGame()->GetMatch()->GetMatchType() != MMATCH_GAMETYPE_DUEL)
+	{
+		char szName[128];
+		sprintf(szName, "%s (HP:%d, AP:%d)", m_pTargetCharacter->GetUserName(), (int)m_pTargetCharacter->GetHP(), (int)m_pTargetCharacter->GetAP());
+		MCOLOR CharNameColor;
+		ZGetGame()->GetUserGradeIDColor(m_pTargetCharacter->GetUserGrade(), CharNameColor, "");
+		if (m_pTargetCharacter->IsAdminName())
+			pDC->SetColor(CharNameColor);
+		else
+			pDC->SetColor(CharNameColor);
+
+		MFont* pFont = MFontManager::Get("FONTb11b");
+		if (pFont == NULL)
+			_ASSERT(0);
+		pDC->SetFont(pFont);
+
+		if (ZGetGameTypeManager()->IsTeamExtremeGame(ZGetGame()->GetMatch()->GetMatchType()))
+			TextRelative(pDC, 0.5f, 75.0f / 800.0f, szName, true);
+		else
+			TextRelative(pDC, 0.5f, 50.0f / 800.0f, szName, true);
+	}
+
+Replace <br>
+
+	else if ( ZGetGame()->GetMatch()->GetMatchType() != MMATCH_GAMETYPE_DUEL)
+	{
+		char szName[128];
+		sprintf(szName, "%s (HP:%d, AP:%d)", m_pTargetCharacter->GetUserName(), (int)m_pTargetCharacter->GetHP(), (int)m_pTargetCharacter->GetAP());
+		int nRed = m_pTargetCharacter->GetCharInfo()->nRedColor, nGreen = m_pTargetCharacter->GetCharInfo()->nGreenColor, nBlue = m_pTargetCharacter->GetCharInfo()->nBlueColor;
+		pDC->SetColor(MCOLOR(nRed, nGreen, nBlue));
+
+		MFont *pFont = MFontManager::Get( "FONTb11b");
+		if ( pFont == NULL)
+			//_ASSERT(0);
+				pDC->SetFont( pFont);
+		if (ZGetGame()->GetMatch()->GetMatchType() == MMATCH_GAMETYPE_SPY)
+			TextRelative(pDC, 0.5f, 763.0f / 800.0f, szName, true);
+
+		if(ZGetGameTypeManager()->IsTeamExtremeGame(ZGetGame()->GetMatch()->GetMatchType()))
+			TextRelative( pDC, 0.5f, 75.0f/800.0f, szName, true);
+		else
+			TextRelative( pDC, 0.5f, 50.0f/800.0f, szName, true);
+	}
+
+
+Open(ZPlayerListBox.cpp) <br>
+Find <br>
+
+	void ZPlayerListBox::AddPlayer(MUID& puid, MMatchObjectStageState state, int nLevel, char* szName, char* szClanName, unsigned int nClanID, bool isMaster, MMatchTeam nTeam, int duelTournamentGrade
+		, int nR, int nG, int nB)
+	{
+		if ((int)strlen(szName) == 0)
+			return;
+
+
+		char szFileName[64] = "";
+		char szFileNameState[64] = "";
+		char szLevel[64] = "";
+
+		char* szRefName = NULL;
+
+		MCOLOR _color = MCOLOR(nR, nG, nB);
+		char sp_name[256];
+		bool bSpUser = false;
+
+		MMatchUserGradeID gid = MMUG_FREE;
+
+		if (GetUserInfoUID(puid, _color, sp_name, gid)) {
+			sprintf(szLevel, "--");
+			szRefName = szName;
+			bSpUser = true;
+		}
+		else {
+			sprintf(szLevel, "%2d", nLevel);
+			szRefName = szName;
+		}
+
+Add under <br>
+
+	if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_SPY)
+		nTeam = MMT_ALL;
+
+Find <br>
+
+	void ZPlayerListBox::UpdatePlayer(MUID& puid,MMatchObjectStageState state, bool isMaster,MMatchTeam nTeam)
+	{
+		ZStagePlayerListItem* pItem = (ZStagePlayerListItem*)GetUID(puid);
+
+		if(pItem) {
+
+			char szFileName[64] = "";
+			char szFileNameState[64] = "";
+
+			MBitmap* pBitmap = NULL;
+			MBitmap* pBitmapState = NULL;
+
+			const MSTAGE_SETTING_NODE* pStageSetting = ZGetGameClient()->GetMatchStageSetting()->GetStageSetting();
+
+
+Add under <br>
+
+		//Infected game mode room list
+		if ((nTeam != MMT_SPECTATOR) && (ZGetGameTypeManager()->IsTeamGame(pStageSetting->nGameType) == false) ||
+			pStageSetting->nGameType == MMATCH_GAMETYPE_INFECTED || pStageSetting->nGameType == MMATCH_GAMETYPE_SPY)
+		{
+			nTeam = MMT_ALL;
+		}
+
+
+Find <br>
+
+	void ZPlayerListBox::UpdatePlayer(MUID& puid,MMatchObjectStageState state, char* szName, int  nLevel ,bool isMaster,MMatchTeam nTeam)
+	{
+		return;
+
+		ZStagePlayerListItem* pItem = (ZStagePlayerListItem*)GetUID(puid);
+		if(pItem) {
+
+			char szFileName[64] = "";
+			char szFileNameState[64] = "";
+			char szLevel[64];
+
+			MBitmap* pBitmap = NULL;
+			MBitmap* pBitmapState = NULL;
+
+Add under <br>
+
+		if (ZGetGameClient()->GetMatchStageSetting()->GetGameType() == MMATCH_GAMETYPE_SPY)
+			nTeam = MMT_ALL;
+
+
+Open(ZReplay.cpp) <br>
+Find <br>
+
+	if(m_StageSetting.nGameType==MMATCH_GAMETYPE_DUEL)
+	{
+		ZRuleDuel* pDuel = (ZRuleDuel*)ZGetGameInterface()->GetGame()->GetMatch()->GetRule();
+		int nRead = zfread(&pDuel->QInfo,sizeof(MTD_DuelQueueInfo),1,file);
+		if(nRead==0) return false;
+	}
+
+Add under <br>
+
+	else if (m_StageSetting.nGameType == MMATCH_GAMETYPE_SPY)
+	{
+		ZRuleSpy* pSpy = (ZRuleSpy*)ZGetGame()->GetMatch()->GetRule();
+
+		int nSpyItemCount;
+		int nRead = zfread(&nSpyItemCount, sizeof(int), 1, file);
+		if (nRead == 0) return false;
+
+		vector<MMatchSpyItem> vecSpyItem;
+		for (int i = 0; i < nSpyItemCount; i++)
+		{
+			MMatchSpyItem item;
+			nRead = zfread(&item, sizeof(MMatchSpyItem), 1, file);
+			if (nRead == 0) return false;
+
+			vecSpyItem.push_back(item);
+		}
+
+		pSpy->m_vtLastSpyItem = vecSpyItem;
+
+		int nTrackerItemCount;
+		nRead = zfread(&nTrackerItemCount, sizeof(int), 1, file);
+		if (nRead == 0) return false;
+
+		vector<MMatchSpyItem> vecTrackerItem;
+		for (int i = 0; i < nTrackerItemCount; i++)
+		{
+			MMatchSpyItem item;
+			nRead = zfread(&item, sizeof(MMatchSpyItem), 1, file);
+			if (nRead == 0) return false;
+
+			vecTrackerItem.push_back(item);
+		}
+
+		pSpy->m_vtLastTrackerItem = vecTrackerItem;
+	}
+
+
+Open(ZRule.cpp) <br>
+Find <br>
+
+	case MMATCH_GAMETYPE_DEATHMATCH_SOLO:
+		{
+			return (new ZRuleSoloDeathMatch(pMatch));
+		}
+		break;
+
+Add under <br>
+
+	case MMATCH_GAMETYPE_SPY:
+	{
+		return (new ZRuleSpy(pMatch));
+	}
+	break;
+
+Open(ZStageInterface.cpp) <br>
+Find <br>
+
+		MComboBox* pCombo = (MComboBox*)pResource->FindWidget("Stage_RelayMapType");			
+		if ( pCombo)
+			pCombo->CloseComboBoxList();
+		pCombo = (MComboBox*)pResource->FindWidget("Stage_RelayMapRepeatCount");					
+		if ( pCombo)
+			pCombo->CloseComboBoxList();
+
+		MListBox* pListBox = (MListBox*)pResource->FindWidget( "Stage_RelayMapListbox");
+		if ( pListBox)
+			pListBox->RemoveAll();
+		pListBox = (MListBox*)pResource->FindWidget( "Stage_MapListbox");
+		if ( pListBox)
+			pListBox->RemoveAll();
+	}
+
+Add under <br>
+
+	{ // SPY mode : ban map list.
+		pPicture = (MPicture*)pResource->FindWidget("Stage_SpyBanMapListBG");
+		if (pPicture)
+		{ // f¸±·¹ÀÌ¸Ê ¸®½ºÆ® ¹è°EÀÌ¹ÌÁE
+			m_pSpyBanMapListFrameImg = new MBitmapR2;
+			((MBitmapR2*)m_pSpyBanMapListFrameImg)->Create("spybanmaplistframe.tga", RGetDevice(), "interface/loadable/spybanmaplistframe.tga");
+
+			if (m_pSpyBanMapListFrameImg != NULL)
+				pPicture->SetBitmap(m_pSpyBanMapListFrameImg->GetSourceBitmap());
+		}
+		MWidget* pWidget = (MWidget*)pResource->FindWidget("Stage_SpyBanMapListView");
+		if (pWidget)
+		{
+			MRECT rect;
+			rect = pWidget->GetRect();
+			rect.x = -rect.w;
+			m_nSpyBanMapListFramePos = rect.x;
+			pWidget->SetBounds(rect);
+		}
+
+		MListBox* pListBox = (MListBox*)pResource->FindWidget("Stage_SpyBanMapList");
+		if (pListBox)
+			pListBox->RemoveAll();
+
+		pLabel = (MLabel*)pResource->FindWidget("Stage_SpyRandomMapLabel");
+		if (pLabel)
+			pLabel->Show(false);
+
+		MComboBox* pComboBox = (MComboBox*)pResource->FindWidget("MapSelection");
+		if (pComboBox)
+			pComboBox->Show(true);
+	}
+
+Find <br>
+
+		if ( ZGetGameClient()->GetMatchStageSetting()->GetStageState() == STAGE_STATE_STANDBY)
+		{
+			ZGetGameClient()->ReleaseForcedEntry();
+
+			// ÀÎÅÍÆäÀÌ½º°ü·Ã
+			ZApplication::GetGameInterface()->EnableWidget( "StageSettingCaller", true);	// ¹æ¼³Á¤ ¹öÆ°
+			ZApplication::GetGameInterface()->EnableWidget( "MapSelection", true);			// ¸Ê¼±ÅÃ ÄÞº¸¹Ú½º
+			ZApplication::GetGameInterface()->EnableWidget( "StageType", true);				// °ÔÀÓ¹æ½Ä ÄÞº¸¹Ú½º
+			ZApplication::GetGameInterface()->EnableWidget( "StageMaxPlayer", true);		// ÃÖ´ëÀÎ¿ø ÄÞº¸¹Ú½º
+			ZApplication::GetGameInterface()->EnableWidget( "StageRoundCount", true);		// °æ±âÈ½¼ö ÄÞº¸¹Ú½º
+		}
+		
+Replace <br>
+
+		if ( ZGetGameClient()->GetMatchStageSetting()->GetStageState() == STAGE_STATE_STANDBY)
+		{
+			ZGetGameClient()->ReleaseForcedEntry();
+
+			// ÀÎÅÍÆäÀÌ½º°ü·Ã
+			ZApplication::GetGameInterface()->EnableWidget("StageSettingCaller", ZGetGameClient()->GetMatchStageSetting()->GetGameType() != MMATCH_GAMETYPE_SPY);	// ¹æ¼³Á¤ ¹öÆ°
+			ZApplication::GetGameInterface()->EnableWidget("MapSelection", true);			// ¸Ê¼±ÅÃ ÄÞº¸¹Ú½º
+		}
+
+
+Find <br>
+
+		case MMATCH_GAMETYPE_DUELTOURNAMENT:
+			color = SDM_COLOR;
+			break;
+			
+Add under <br>
+
+		case MMATCH_GAMETYPE_SPY:
+			color = TDM_COLOR;
+			break;
+
+
+Find <br>
+
+	else if ( pSetting->nGameType == MMATCH_GAMETYPE_QUEST)						// Äù½ºÆ® ¸ðµåÀÌ¸é...
+	{
+		// ¸Ê ÀÌ¸§ ¹è°æ ÀÌ¹ÌÁö º¯È¯
+		if ( pAniMapImg)
+			pAniMapImg->SetCurrentFrame( 2);
+
+		// Äù½ºÆ® UI º¸ÀÓ
+		bQuestUI = true;
+	}
+	
+Add under <br>
+
+	else if (pSetting->nGameType == MMATCH_GAMETYPE_SPY)
+	{
+		if (pAniMapImg)
+			pAniMapImg->SetCurrentFrame(4);
+		bQuestUI = false;
+		bSpyUI = true;
+	}
+
+Find <br>
+
+	if (pSetting->bIsRelayMap)
+		OpenRelayMapBox();
+	else
+		HideRelayMapBox();
+		
+Add under <br>
+
+	///// SPY MODE /////
+	if (bSpyUI)
+		OpenSpyBanMapBox();
+	else
+		HideSpyBanMapBox();
+
+	MLabel* pSpyRandomMapLabel = (MLabel*)pResource->FindWidget("Stage_SpyRandomMapLabel");
+	if (pSpyRandomMapLabel)
+		pSpyRandomMapLabel->Show(bSpyUI);
+
+	pCombo = (MComboBox*)pResource->FindWidget("MapSelection");
+	if (pCombo)
+		pCombo->Show(!bSpyUI);
+	////////////////////
+
+Find <br>
+
+	if ( (pSetting->nGameType == MMATCH_GAMETYPE_SURVIVAL) || (pSetting->nGameType == MMATCH_GAMETYPE_QUEST))
+		ZApplication::GetGameInterface()->EnableWidget( "StageSettingCaller", false);
+
+Replace <br>
+
+	if ((pSetting->nGameType == MMATCH_GAMETYPE_SURVIVAL) || (pSetting->nGameType == MMATCH_GAMETYPE_QUEST) || (pSetting->nGameType == MMATCH_GAMETYPE_SPY))
+		ZApplication::GetGameInterface()->EnableWidget("StageSettingCaller", false);
+
+Find <br>
+
+		if ( ZGetGameClient()->AmIStageMaster())
+		{
+			ZApplication::GetGameInterface()->EnableWidget( "MapSelection", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageType", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageMaxPlayer", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageRoundCount", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageSettingCaller", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "Stage_RelayMap_OK_Button", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "Stage_RelayMapType", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "Stage_RelayMapRepeatCount", !bReady);
+		}
+
+Replace <br>
+
+		if ( ZGetGameClient()->AmIStageMaster())
+		{
+			ZApplication::GetGameInterface()->EnableWidget( "MapSelection", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageType", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageMaxPlayer", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "StageRoundCount", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget("StageSettingCaller", !bReady && m_nGameType != MMATCH_GAMETYPE_SPY);
+			ZApplication::GetGameInterface()->EnableWidget( "Stage_RelayMap_OK_Button", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "Stage_RelayMapType", !bReady);
+			ZApplication::GetGameInterface()->EnableWidget( "Stage_RelayMapRepeatCount", !bReady);
+		}
+
+Find <br>
+
+		else if( INVALID_MAP == nType )
+		{
+			char szMsg[ 128 ];
+
+				sprintf( szMsg, "INVALID MAP!" );
+					//MGetStringResManager()->GetErrorStr(MERR_CANNOT_START_NEED_TICKET), 
+					//ZApplication::GetInstance()->GetGameClient()->GetObjName(uidParam).c_str() );
+
+				ZIDLResource* pResource = ZApplication::GetGameInterface()->GetIDLResource();
+				ZChatOutput(szMsg, ZChat::CMT_BROADCAST);
+		}
+
+		// Stage UI Enable
+		ChangeStageEnableReady( false);
+	}
+
+Add under <br>
+
+	////////////////////////////////// Spy Mode. //////////////////////////////////
+	class MSpyBanMapListListener : public MListener
+	{
+	public:
+		virtual bool OnCommand(MWidget* pWidget, const char* szMessage)
+		{
+			// ½ºÅ×ÀÌÁE¸¶½ºÅÍ°¡ ¾Æ´Ï¸E¸Ê ¸®½ºÆ®¸¦ ÄÁÆ®·Ñ ÇÒ¼ö¾ø´Ù.
+			if (!ZGetGameClient()->AmIStageMaster())
+				return false;
+			// On select
+			if (MWidget::IsMsg(szMessage, MLB_ITEM_SEL) == true)
+			{
+				MListBox* pListBox = (MListBox*)ZGetGameInterface()->GetIDLResource()->FindWidget("Stage_SpyBanMapList");
+				if (!pListBox) return false;
+
+				SpyBanMapList* pSpyBanMapList = (SpyBanMapList*)pListBox->GetSelItem();
+				if (!MMatchSpyMap::IsExistingMap(pSpyBanMapList->GetMapID())) return false;
+
+				ZPostActivateSpyMap(pSpyBanMapList->GetMapID(), ZGetGameClient()->GetMatchStageSetting()->IsIncludedSpyMap(pSpyBanMapList->GetMapID()));
+				return true;
+			}
+
+			return false;
+		}
+	};
+	MSpyBanMapListListener g_SpyBanMapListListener;
+	MListener* ZGetSpyBanMapListListener(void)
+	{
+		return &g_SpyBanMapListListener;
+	}
+
+	///////////////////////////////////////////////////////
+
+	void ZStageInterface::OpenSpyBanMapBox()
+	{
+		ZIDLResource* pResource = ZApplication::GetGameInterface()->GetIDLResource();
+
+		MButton* pButton = (MButton*)pResource->FindWidget("Stage_SpyBanMapBoxOpen");
+		if (pButton)
+			pButton->Show(false);
+		pButton = (MButton*)pResource->FindWidget("Stage_SpyBanMapBoxClose");
+		if (pButton)
+			pButton->Show(true);
+
+		SetSpyBanMapBoxPos(2);
+
+		CreateSpyBanMapList();
+	}
+
+	void ZStageInterface::CloseSpyBanMapBox()
+	{
+		ZIDLResource* pResource = ZApplication::GetGameInterface()->GetIDLResource();
+
+		MButton* pButton = (MButton*)pResource->FindWidget("Stage_SpyBanMapBoxClose");
+		if (pButton)
+			pButton->Show(false);
+		pButton = (MButton*)pResource->FindWidget("Stage_SpyBanMapBoxOpen");
+		if (pButton)
+			pButton->Show(true);
+
+		MWidget* pWidget = pResource->FindWidget("Stage_CharacterInfo");
+		if (pWidget)
+			pWidget->Enable(true);
+
+		SetSpyBanMapBoxPos(1);
+	}
+
+	void ZStageInterface::HideSpyBanMapBox()
+	{
+		ZIDLResource* pResource = ZApplication::GetGameInterface()->GetIDLResource();
+
+		MButton* pButton = (MButton*)pResource->FindWidget("Stage_SpyBanMapBoxClose");
+		if (pButton)
+			pButton->Show(false);
+		pButton = (MButton*)pResource->FindWidget("Stage_SpyBanMapBoxOpen");
+		if (pButton)
+			pButton->Show(true);
+
+		MWidget* pWidget = pResource->FindWidget("Stage_CharacterInfo");
+		if (pWidget)
+			pWidget->Enable(true);
+
+		SetSpyBanMapBoxPos(0);
+	}
+
+	void ZStageInterface::SetSpyBanMapBoxPos(int nBoxPos)
+	{
+		MWidget* pWidget = ZApplication::GetGameInterface()->GetIDLResource()->FindWidget("Stage_SpyBanMapListView");
+		if (pWidget)
+		{
+			MRECT rect;
+
+			switch (nBoxPos)
+			{
+			case 0:		// Hide
+				rect = pWidget->GetRect();
+				m_nSpyBanMapListFramePos = -rect.w;
+				break;
+
+			case 1:		// Close
+				rect = pWidget->GetRect();
+				m_nSpyBanMapListFramePos = -rect.w + (rect.w * 0.14);
+				break;
+
+			case 2:		// Open
+				m_nSpyBanMapListFramePos = 0;
+				break;
+			}
+		}
+	}
+
+	void ZStageInterface::CreateSpyBanMapList()
+	{
+		// ¸Ê ¸®½ºÆ® ¸¸µé¾EÁÖ±E
+		MListBox* pMapListBox = (MListBox*)ZGetGameInterface()->GetIDLResource()->FindWidget("Stage_SpyBanMapList");
+		if (pMapListBox == NULL) return;
+
+		pMapListBox->RemoveAll();	// ±âÁ¸ ¸±·¹ÀÌ¸Ê ¸®½ºÆ®¸¦ ¸ðµÎ Áö¿öÁØ´Ù.
+		int nCurrPlayers = (int)ZGetGameClient()->GetMatchStageSetting()->m_CharSettingList.size();
+
+		for (int i = MMATCH_SPY_MAP_MANSION; i < MMATCH_SPY_MAP_MAX; i++)
+		{
+			char szListName[256];
+			sprintf(szListName, "(%d~%d%s) %s", g_SpyMapNode[i].nMinPlayers, g_SpyMapNode[i].nMaxPlayers, ZMsg(MSG_SPY_WORD_PLAYERS), g_SpyMapNode[i].szName);
+
+			SpyBanMapList* pSpyBanMapList = new SpyBanMapList(szListName,
+				MBitmapManager::Get(
+				ZGetGameClient()->GetMatchStageSetting()->IsIncludedSpyMap(g_SpyMapNode[i].nID) ?
+				"Mark_Arrow.bmp" : "Mark_X.bmp"),
+				g_SpyMapNode[i].nID);
+
+			if (nCurrPlayers < g_SpyMapNode[i].nMinPlayers || nCurrPlayers > g_SpyMapNode[i].nMaxPlayers)
+			{
+				pSpyBanMapList->SetColor(MCOLOR(0xFFFF0000));	// RED color.
+			}
+
+			pMapListBox->Add(pSpyBanMapList);
+		}
+	}
+
+	bool ZStageInterface::GetPlayableSpyMapList(int players, vector<int>& out)
+	{
+		int nCurrPlayers = (int)ZGetGameClient()->GetMatchStageSetting()->m_CharSettingList.size();
+
+		for (int i = MMATCH_SPY_MAP_MANSION; i < MMATCH_SPY_MAP_MAX; i++)
+		{
+			if (ZGetGameClient()->GetMatchStageSetting()->IsIncludedSpyMap(g_SpyMapNode[i].nID))
+			{
+	#if !defined(_ARTIC_DEBUG)
+				if (nCurrPlayers >= g_SpyMapNode[i].nMinPlayers && nCurrPlayers <= g_SpyMapNode[i].nMaxPlayers)
+	#endif
+				{
+					out.push_back(g_SpyMapNode[i].nID);
+				}
+			}
+		}
+
+		return !out.empty();
+	}
+
+	void ZStageInterface::OnSpyStageActivateMap(int nMapID, bool bExclude)
+	{
+		MMatchStageSetting* pSetting = ZGetGameClient()->GetMatchStageSetting();
+
+		if (bExclude)
+			pSetting->ExcludeSpyMap(nMapID);
+		else
+			pSetting->IncludeSpyMap(nMapID);
+
+		CreateSpyBanMapList();	// Refresh.
+	}
+
+	void ZStageInterface::OnSpyStageBanMapList(void* pMapListBlob)
+	{
+		MMatchStageSetting* pSetting = ZGetGameClient()->GetMatchStageSetting();
+		pSetting->UnbanAllSpyMap();
+
+		int nCount = MGetBlobArrayCount(pMapListBlob);
+
+		for (int i = 0; i < nCount; i++)
+			pSetting->ExcludeSpyMap(*(int*)MGetBlobArrayElement(pMapListBlob, i));
+
+		CreateSpyBanMapList();
+	}
+	///////////////////////////////////////////////////////////////////////////////
+
+Open(ZStageSetting.cpp) <br>
+Find <br>
+
+	ZGameTypeConfig* pGameTypeCfg = ZGetConfiguration()->GetGameTypeList()->GetGameTypeCfg(pOutNode->nGameType);
+	if (pGameTypeCfg)
+	{
+		// ÃÖ´ë ÀÎ¿ø
+		if (!BUILD_STAGESETTING_LISTITEM(pResource, "StageMaxPlayer", pOutNode->nMaxPlayers, pGameTypeCfg->m_MaxPlayers))
+			return false;
+
+		// ¶ó¿îµå
+		if (!BUILD_STAGESETTING_LISTITEM(pResource, "StageRoundCount", pOutNode->nRoundMax, pGameTypeCfg->m_Round))
+			return false;
+
+		// Á¦ÇÑ½Ã°£
+		if (!BUILD_STAGESETTING_LISTITEM(pResource, "StageLimitTime", pOutNode->nLimitTime, pGameTypeCfg->m_LimitTime))
+			return false;
+	}
+
+Replace <br>
+
+	ZGameTypeConfig* pGameTypeCfg = ZGetConfiguration()->GetGameTypeList()->GetGameTypeCfg(pOutNode->nGameType);
+	if (pGameTypeCfg)
+	{
+		// ÃÖ´ë ÀÎ¿ø
+		BUILD_STAGESETTING_LISTITEM("StageMaxPlayer", pOutNode->nMaxPlayers, pGameTypeCfg->m_MaxPlayers);
+
+		// ¶ó¿îµå
+		BUILD_STAGESETTING_LISTITEM("StageRoundCount", pOutNode->nRoundMax, pGameTypeCfg->m_Round);
+
+		if (pOutNode->nGameType == MMATCH_GAMETYPE_SPY)
+		{
+			pOutNode->nLimitTime = -1;//99999;
+		}
+		else
+		{
+			// Á¦ÇÑ½Ã°£
+			BUILD_STAGESETTING_LISTITEM("StageLimitTime", pOutNode->nLimitTime, pGameTypeCfg->m_LimitTime);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
