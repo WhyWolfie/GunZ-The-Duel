@@ -837,6 +837,12 @@ Find <br>
 
 Replace <br>
 
+				if(!ZApplication::GetStageInterface()->GetIsRelayMapRegisterComplete())
+				{
+					ZGetGameInterface()->ShowMessage(MSG_GAME_RELAYMAP_CONFIRM_BUTTON_PUSH);
+					return true;
+				}
+			
 				if (pStageSetting->nGameType == MMATCH_GAMETYPE_SPY)
 				{
 					if (nPlayerCnt >= MMatchSpyMode::GetMinPlayers())
