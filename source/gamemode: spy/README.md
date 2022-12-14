@@ -4187,7 +4187,8 @@ Add under <br>
 Replace (Matchserver & System.mrs) <br>
 Rebuild (Matchserver & Gunz project) <br>
 
-
+![spy](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20spy/spy.jpg) <br>
+![spy2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20spy/spy2.jpg)
 
 
 
