@@ -3408,58 +3408,538 @@ System/ChannelRule.xml <br>
 
 	<GAMETYPE id="21" />
 
+
+System/Messages.xml <br>
+Find <br>
+
+	<!-- 플레이 보너스 보상 -->
+	<MSG id="2060">[$1] $2 received $3!</MSG>
+	<MSG id="2061">Remaining bonus chance : $1</MSG>
+	<MSG id="2062">[$1] There are no bonus chances remaining.</MSG>
+	<MSG id="2063">Bonus chance has been recharged : $1</MSG>
+
+Add under <br>
+
+	<!-- Spymode -->
+	<MSG id="2200">Board games are waiting for more people. (You need at least $1)</MSG>
+	<MSG id="2201">A crawler has been launched to the location. It must survive!</MSG>
+	<MSG id="2202">The location of Spy has been revealed. We have to hurry!</MSG>
+	<MSG id="2203">Tip: Freeze spy photo is activated immediately, the effect will be much better.</MSG>
+	<MSG id="2204">Tip: Spy flares explode immediately, and almost do not affect the spy.</MSG>
+	<MSG id="2205">Tip: Spy Smoke spreads immediately, and the range is wide.</MSG>
+	<MSG id="2206">Tip: Use the stun grenade, while below it is characteristic of a spy.</MSG>
+	<MSG id="2207">Tip: You can also see the installed spyware mines.</MSG>
+	<MSG id="2208">Tip: You can create spy weapons, but only from ice shots / Flares / smoke bombs to receive payment.</MSG>
+	<MSG id="2209">Tip: Using the spy tracker is useful for grenades and mines, you must acquire it in order to use it.</MSG>
+	<MSG id="2210">The list of maps has been updated.</MSG>
+	<MSG id="2211">People are not suitable for current maps, except the selected one.</MSG>
+	<MSG id="2212">He has scored points !!!</MSG>
+	<MSG id="2213">Quote</MSG>
+	<MSG id="2214">You can participate in the game from the next round</MSG>
+	<MSG id="2215">Win a round the Coins $1 y $2 obtained from experience.</MSG>
+	<MSG id="2216">Static public spy! :</MSG>
+	<MSG id="2217">All of maps that can be started have been excluded from the list.</MSG>
+
+System/Strings.xml <br>
+Find <br>
+
+	<STR id="ZITEM_NAME_600306">Giston's Eye</STR>
+	<STR id="ZITEM_DESC_600306">[Enchant Lv.0] Enchanted on this tiny jewel is the power of Giston. Melee weapon fires up when charged. Any opponent hit by enchant attack will get damaged at every second for a certain amount of time.</STR>
+
+Add under <br>
+
+	<STR id="ZITEM_NAME_601001">Flare SPY Flare</STR>
+	<STR id="ZITEM_DESC_601001">Spy flares explode immediately, and almost no spy is affected.</STR>
+
+	<STR id="ZITEM_NAME_601002">SPY Smoke</STR>
+	<STR id="ZITEM_DESC_601002">Spy smoke smoke immediately unfolded, and the range is too wide.</STR>
+
+	<STR id="ZITEM_NAME_601003">SPY Photos Freeze</STR>
+	<STR id="ZITEM_DESC_601003">freezing and activated immediately, the effect is much better.</STR>
+
+	<STR id="ZITEM_NAME_601004">Stun Grenades</STR>
+	<STR id="ZITEM_DESC_601004">Spy according to stun grenades stunned for a moment falls into the state.</STR>
+
+	<STR id="ZITEM_NAME_601005">Explosive Mines</STR>
+	<STR id="ZITEM_DESC_601005">To quote an invisible spy from Minas, and it will last a minute.</STR>
+
+	<STR id="ZITEM_NAME_601006">Confidential Briefcase</STR>
+	<STR id="ZITEM_DESC_601006">This is the briefcase where the spy has the papers and ammunition forbidden under the astra world.</STR>
+
+System/Zitem.xml <br>
+
+	<!-- Mode SPY Items -->
+	  <ITEM id="601001" name="STR:ZITEM_NAME_601001" mesh_name="flashbang01" totalpoint="0" type="custom" res_sex="a" res_level="0" slot="custom" weapon="flashbang_spy" weight="0" bt_price="0" delay="1500" damage="0" ctrl_ability="20" magazine="4" maxbullet="4" reloadtime="10" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="STR:ZITEM_DESC_601001" iscashitem="true"/>
+	  <ITEM id="601002" name="STR:ZITEM_NAME_601002" mesh_name="smoke01" totalpoint="0" type="custom" res_sex="a" res_level="0" slot="custom" weapon="smoke_spy" weight="0" bt_price="0" delay="1500" damage="0" ctrl_ability="20" magazine="10" maxbullet="10" reloadtime="10" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="STR:ZITEM_DESC_601001" iscashitem="true"/>
+	  <ITEM id="601003" name="STR:ZITEM_NAME_601003" mesh_name="trap_frozenfield" type="custom" slot="custom" weapon="trap_spy" spendable="true" spendtype="normal" itempower="20" damagetime="3000" damagetype="cold" magazine="5" maxbullet="5" lifetime="6000" weight="0" delay="1000" totalpoint="0" res_sex="a" res_level="0" bt_price="500000" color="#FFFFFFFF" snd_fire="we_grenade_fire" desc="STR:ZITEM_DESC_601001" iscashitem="true"/>
+	  <ITEM id="601004" name="STR:ZITEM_NAME_601004" mesh_name="spy_stungrenade" type="custom" slot="custom" weapon="stungrenade_spy" spendable="true" spendtype="normal" damage="20" magazine="1" maxbullet="1" weight="0" delay="1500" totalpoint="0" res_sex="a" res_level="0" bt_price="500000" color="#FFFFFFFF" snd_fire="we_grenade_fire" bullet_image_id="0" magazine_image_id="0" desc="STR:ZITEM_DESC_601004" iscashitem="true"/>
+	  <ITEM id="601005" name="STR:ZITEM_NAME_601005" mesh_name="spy_landmine" totalpoint="0" type="custom" res_sex="a" res_level="0" slot="custom" weapon="landmine_spy" weight="0" bt_price="400" delay="400" damage="0" ctrl_ability="0" magazine="3" maxbullet="3" reloadtime="10" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="3" bullet_image_id="0" magazine_image_id="0" snd_fire="we_grenade_fire" desc="STR:ZITEM_DESC_601005" iscashitem="true"/>
+	  <ITEM id="601006" name="STR:ZITEM_NAME_601006" mesh_name="katana_spycase" totalpoint="0" type="melee" res_sex="a" res_level="0" slot="melee" weapon="spy_case" weight="0" bt_price="500000" delay="329" damage="0" range="200" ctrl_ability="0" magazine="0" reloadtime="0" slug_output="false" gadget_id="0" hp="0" ap="0" maxwt="0" sf="0" fr="0" cr="0" pr="0" lr="0" color="#FFFFFFFF" image_id="0" bullet_image_id="0" magazine_image_id="0" snd_weapon_fiber="rubber" desc="STR:ZITEM_DESC_601006" iscashitem="true"/>
+
+Default/Lobby.xml <br>
+Find <br>
+
+	BITMAP type="icon" mode="12">ChallengeQuest_Guerilla-mode.tga</BITMAP>
+
+Add under <br>
+
+	<BITMAP type="icon" mode="21">Spy_mode.tga</BITMAP>
+
+Default/Templates.xml <br>
+Find <br>
+
+	<ANIMATIONTEMPLATE item="MapAnimation">
+		<BITMAP>gametype_solo.tga</BITMAP>
+		<BITMAP>gametype_team.tga</BITMAP>
+
+Add under <br>
+
+	<BITMAP>gametype_spy.tga</BITMAP>
+
+Default/Stage.xml <br>
+Find <br>
+	
+	<!-- BMBUTTON : 릴레이맵 리스트 닫기 버튼 -->
+	<BMBUTTON item="Stage_RelayMapBoxClose" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>195</X>
+			<Y>162</Y>
+			<W>21</W>
+			<H>100</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeclosebtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeclosebtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeclosebtn_on.tga</BITMAP>
+	</BMBUTTON>
+
+Add <br>
+
+	<!-- FRAME : 스파이모드 밴맵 리스트 뷰어 -->
+	<FRAME item="Stage_SpyBanMapListView" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>117</Y>
+			<W>226</W>
+			<H>425</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 스파이모드 밴맵 리스트 배경 이미지 출력 -->
+	<PICTURE item ="Stage_SpyBanMapListBG" parent="Stage_SpyBanMapListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>226</W>
+			<H>425</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- BMBUTTON : 스파이모드 밴맵 리스트 열기 버튼 -->
+	<BMBUTTON item="Stage_SpyBanMapBoxOpen" parent="Stage_SpyBanMapListView">
+		<BOUNDS>
+			<X>195</X>
+			<Y>162</Y>
+			<W>21</W>
+			<H>100</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeopenbtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeopenbtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeopenbtn_on.tga</BITMAP>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 스파이모드 밴맵 리스트 닫기 버튼 -->
+	<BMBUTTON item="Stage_SpyBanMapBoxClose" parent="Stage_SpyBanMapListView">
+		<BOUNDS>
+			<X>195</X>
+			<Y>162</Y>
+			<W>21</W>
+			<H>100</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">listframeclosebtn_off.tga</BITMAP>
+		<BITMAP type="over">listframeclosebtn_on.tga</BITMAP>
+		<BITMAP type="down">listframeclosebtn_on.tga</BITMAP>
+	</BMBUTTON>
+	
+	<!-- LABEL : 스파이모드 '맵을 클릭해 제외할 수 있습니다.' -->
+	<LABEL item="Stage_SpyBanMapLabel" parent="Stage_SpyBanMapListView">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>7</X>
+			<Y>7</Y>
+			<W>185</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_502</TEXT>
+	</LABEL>
+	
+	<!-- LISTBOX : 스파이모드 밴맵 리스트 -->
+	<LISTBOX item="Stage_SpyBanMapList" parent="Stage_SpyBanMapListView">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>7</X>
+			<Y>32</Y>
+			<W>185</W>
+			<H>393</H>
+		</BOUNDS>
+		<STRETCH/>
+	</LISTBOX>
+	
+	<!-- LABEL : 스파이모드 맵 선택에 랜덤 맵이라고 표시 -->
+	<LABEL item="Stage_SpyRandomMapLabel" parent="StageGameInfo">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>336</X>
+			<Y>40</Y>
+			<W>218</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_STAGE_501</TEXT>
+	</LABEL>
+
+Default/GameResult.xml <br>
+Find <br>
+
+	<!-- Label : 보상아이템 이름 표시 -->
+	<LABEL item="CQ_Result_RewardText" parent="ChallengeQuestResult">
+		<FONT>FONTa6b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>80</G>
+			<B>80</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>568</X>
+			<Y>521</Y>
+			<W>140</W>
+			<H>12</H>
+		</BOUNDS>
+	</LABEL>
+
+Add under <br>
+
+	<!-- FRAME : Combat Result 화면 구성 -->
+	<FRAME item="SpyResult" parent="GameResult">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>20</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : Finish -->
+	<PICTURE item="SpyResult_Finish" parent="SpyResult">
+		<BOUNDS>
+			<X>135</X>
+			<Y>34</Y>
+			<W>310</W>
+			<H>77</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>result_finish.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : Header -->
+	<PICTURE item="SpyResult_Header" parent="SpyResult">
+		<BOUNDS>
+			<X>57</X>
+			<Y>139</Y>
+			<W>453</W>
+			<H>21</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 플레이어 이름 리스트 레이블 -->
+	<LABEL item="SpyResult_PlayerNameListLabel" parent="SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>60</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_01</TEXT>
+	</LABEL>
+
+	<!-- TEXTAREA : 플레이어 이름 리스트 -->
+	<TEXTAREA item = "SpyResult_PlayerNameList" parent = "SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>60</X>
+			<Y>165</Y>
+			<W>260</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 점수 리스트 레이블 -->
+	<LABEL item="SpyResult_PlayerScoreListLabel" parent="SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>335</X>
+			<Y>140</Y>
+			<W>65</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_06</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 점수 리스트 -->
+	<TEXTAREA item = "SpyResult_PlayerScoreList" parent = "SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>345</X>
+			<Y>165</Y>
+			<W>55</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- Label : 플레이어 승 리스트 레이블 -->
+	<LABEL item="SpyResult_PlayerWinListLabel" parent="SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>140</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_07</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 승 리스트 -->
+	<TEXTAREA item = "SpyResult_PlayerWinList" parent = "SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>410</X>
+			<Y>165</Y>
+			<W>40</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<!-- Label : 플레이어 패 리스트 레이블 -->
+	<LABEL item="SpyResult_PlayerLoseListLabel" parent="SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>140</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_ETC_08</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 플레이어 패 리스트 -->
+	<TEXTAREA item = "SpyResult_PlayerLoseList" parent = "SpyResult">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>460</X>
+			<Y>165</Y>
+			<W>40</W>
+			<H>400</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+Copy from Github(Default/CombatInterface_Spy.xml) <br>
+
+Default/CombatInterface.xml <br>
+Find <br>
+
+	<INCLUDE>CombatInterface_DuelTournament.xml</INCLUDE>
+
+Add under <br>
+
+	<INCLUDE>CombatInterface_Spy.xml</INCLUDE>
+
+Default/Screeneffect.xml <br>
+Find <br>
+
+	<AddEffectElu name="duel9">
+		<AddBaseModel name="duel9" filename="ef_duel_num_9.elu" />
+		<AddAnimation name="play" filename="ef_duel_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+Add under <br>
+
+	<!--SPYMODE-->	
+		<AddEffectElu name="spy_selection">
+			<AddBaseModel name="spy_selection" filename="ef_spy_selection.elu" />
+			<AddAnimation name="play" filename="ef_spy_selection.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+		</AddEffectElu>
+	
+	<AddEffectElu name="spy_eliminationAllKill">
+		<AddBaseModel name="spy_eliminationAllKill" filename="ef_spy_eliminationAllKill.elu" />
+		<AddAnimation name="play" filename="ef_spy_eliminationAllKill.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	
+	<AddEffectElu name="spy_elimination1Remain">
+		<AddBaseModel name="spy_elimination1Remain" filename="ef_spy_elimination1Remain.elu" />
+		<AddAnimation name="play" filename="ef_spy_elimination1Remain.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	
+		<AddEffectElu name="spy_elimination2Remain">
+		<AddBaseModel name="spy_elimination2Remain" filename="ef_spy_elimination2Remain.elu" />
+		<AddAnimation name="play" filename="ef_spy_elimination2Remain.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+	
+	<AddEffectElu name="spy_location">
+		<AddBaseModel name="spy_location" filename="ef_spy_location.elu" />
+		<AddAnimation name="play" filename="ef_spy_location.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddEffectElu>
+
+	<AddEffectElu name="ef_in_icon_spy_landmine.elu">
+		<AddBaseModel name="ef_in_icon_spy_landmine.elu" filename="ef_in_icon_spy_landmine.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_spy_stungrenade.elu">
+		<AddBaseModel name="ef_in_icon_spy_stungrenade.elu" filename="ef_in_icon_spy_stungrenade.elu" />
+	</AddEffectElu>
+	<AddEffectElu name="ef_in_icon_spy_spycase.elu">
+		<AddBaseModel name="ef_in_icon_spy_spycase.elu" filename="ef_in_icon_spy_spycase.elu" />
+	</AddEffectElu>	
+
+Default/BitmapAlias.xml <br>
+Find <br>
+
+	  <BITMAPALIAS name="dt_grade2.png">
+		<SOURCE>interface.tga</SOURCE>
+		<BOUNDS>
+			<X>96</X>
+			<Y>198</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+	  </BITMAPALIAS>
+	  <BITMAPALIAS name="dt_grade1.png">
+		<SOURCE>interface.tga</SOURCE>
+		<BOUNDS>
+			<X>128</X>
+			<Y>198</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+	  </BITMAPALIAS>
+
+Add under <br>
+
+	  <!-- 스파이모드 이벤트 메시지 -->
+	  <BITMAPALIAS name="Spy_EventMsg_ComingSoonOpenSpy.png">
+	    <SOURCE>Spy_EventMsg.png</SOURCE>
+	    <BOUNDS> <X>0</X> <Y>0</Y> <W>1024</W> <H>72</H> </BOUNDS>
+	  </BITMAPALIAS>
+	  <BITMAPALIAS name="Spy_EventMsg_Survive.png">
+	    <SOURCE>Spy_EventMsg.png</SOURCE>
+	    <BOUNDS> <X>0</X> <Y>72</Y> <W>1024</W> <H>72</H> </BOUNDS>
+	  </BITMAPALIAS>
+	  <BITMAPALIAS name="Spy_EventMsg_EliminateSpy.png">
+	    <SOURCE>Spy_EventMsg.png</SOURCE>
+	    <BOUNDS> <X>0</X> <Y>144</Y> <W>1024</W> <H>72</H> </BOUNDS>
+	  </BITMAPALIAS>
+
+	  <BITMAPALIAS name="Spy_Notice_Wait_OtherPlayer.png">
+	    <SOURCE>Spy_EventMsg.png</SOURCE>
+	    <BOUNDS> <X>0</X> <Y>753</Y> <W>675</W> <H>109</H> </BOUNDS>
+	  </BITMAPALIAS>
+	  <BITMAPALIAS name="Spy_Notice_Tracer.png">
+	    <SOURCE>Spy_EventMsg.png</SOURCE>
+	    <BOUNDS> <X>0</X> <Y>862</Y> <W>390</W> <H>80</H> </BOUNDS>
+	  </BITMAPALIAS>
+	  <BITMAPALIAS name="Spy_Notice_Spy.png">
+	    <SOURCE>Spy_EventMsg.png</SOURCE>
+	    <BOUNDS> <X>0</X> <Y>943</Y> <W>390</W> <H>80</H> </BOUNDS>
+	  </BITMAPALIAS>
+	  </XML> 
+
+
+
+
+
+
+
+
+
+
 Replace (Matchserver & System.mrs) <br>
-
 Rebuild (Matchserver & Gunz project) <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
