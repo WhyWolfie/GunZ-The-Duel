@@ -266,6 +266,7 @@ GunZ The Duel Releases <br>
 - paintball: [paintball](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20paintball)
 - gunmode: [gunmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gunmode)
 - infected: [infected](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20infected)
+- no-kstyle: [no-kstyle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20nokstyle)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
