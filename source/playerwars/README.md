@@ -3356,6 +3356,22 @@ Open(MSharedCommandTable.cpp - Scroll all the way down and add this code...)
 	C(MC_MATCH_PLAYERWARS_SIDERANK, "MC_MATCH_PLAYERWARS_SIDERANK", "Player Wars Side Rank Info", MCDT_MACHINE2MACHINE)
 		P(MPT_BLOB, "Data")
 
+Request cancel challenge <br>
+Find <br>
+
+		C(MC_MATCH_LADDER_REQUEST_CANCEL_CHALLENGE, "Match.Ladder.Request.CancelChallenge", "Request Cancel Challenge", MCDT_MACHINE2MACHINE)
+		C(MC_MATCH_LADDER_CANCEL_CHALLENGE, "Match.Ladder.CancelChallenge", "Cancel Ladder Challenge", MCDT_MACHINE2MACHINE)
+			P(MPT_STR, "CharName")
+
+Replace <br>
+
+		C(MC_MATCH_LADDER_REQUEST_CANCEL_CHALLENGE, "Match.Ladder.Request.CancelChallenge", "Request Cancel Challenge", MCDT_MACHINE2MACHINE)
+			P(MPT_BOOL, "Result")
+		C(MC_MATCH_LADDER_CANCEL_CHALLENGE, "Match.Ladder.CancelChallenge", "Cancel Ladder Challenge", MCDT_MACHINE2MACHINE)
+			P(MPT_STR, "CharName")
+			P(MPT_BOOL, "AAAAA")
+
+
 
 
 
