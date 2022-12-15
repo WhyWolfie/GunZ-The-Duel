@@ -257,6 +257,8 @@ GunZ The Duel Releases <br>
 - admin_flip & admin_slash: [admin_flip & admin_slash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_slash%20&%20admin_flip)
 - forcenat: [forcenat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20forcenat)
 - servertime: [servertime](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20servertime)
+- music stop play prev next: [music stop play prev next](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20music%20stop%20next%20prev%20play)
+
 
 (gamemodes) <br>
 - team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
