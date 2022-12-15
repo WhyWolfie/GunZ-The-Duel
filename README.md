@@ -202,6 +202,8 @@ GunZ The Duel Releases <br>
 - dual daggers fix: [dual daggers fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20dual%20daggers)
 - whisper long name fix: [whisper long name fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/whisper%20long%20name%20fix)
 - select character camera not more moving: [select character camera not more moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/character%20select%20camera)
+- instant bgm / effect slider: [instant bgm / effect slider](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20bgm%20effect%20slider)
+
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
@@ -235,7 +237,7 @@ GunZ The Duel Releases <br>
 - extra: [extra](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20extra)
 - serverping: [serverping](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20pingserver)
 - admin_muteall: [admin_muteall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20muteall)
-- admin_tp: [admin_tp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
+- admin_teleport: [admin_teleport](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
 - admin_esp: [admin_esp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_esp)
 - admin_senditem: [admin_senditem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20senditem)
 - admin_godmode: [admin_godmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20godmode)
