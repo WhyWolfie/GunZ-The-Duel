@@ -1,4 +1,18 @@
-Not done yet. <br>
+Commands: /play, /next, /prev, /stop <br>
+Make a folder "/bgm" or change your path "#define BGM_FOLDER"<br>
+Add your music<br>
+"Lobby.mp3",  <br>
+"InGame2.mp3",  <br>
+"InGame4.mp3",  <br>
+"InGame3.mp3", <br>
+"InGame6.mp3", <br>
+"InGame1.mp3", <br>
+"InGame5.mp3", <br>
+"InGame7.mp3", <br>
+"InGame8.mp3", <br>
+"InGame9.mp3", <br>
+"InGame10.mp3", <br>
+"EndGame.mp3" }; <br>
 
 Open(ZChat_Cmds.cpp) <br>
 Find <br>
@@ -190,6 +204,93 @@ Find <br>
 Add <br>
 
 	int				m_nCurrBGMIndex;
+
+Open(ZSoundEngine.cpp) <br>
+Find <br>
+
+	bool ZSoundEngine::OpenMusic(int nBgmIndex)
+
+Replace <br>
+
+	bool ZSoundEngine::OpenMusic(int nBgmIndex)
+	{
+	//	if( !m_bSoundEnable ) return false;
+
+		// °¡Â¥
+		static char m_stSndCustomFile[MAX_BGM][64] = {"CharSelect.mp3", 
+													"Lobby.mp3", 
+													"InGame2.mp3", 
+													"InGame4.mp3", 
+													"InGame3.mp3",
+													"InGame6.mp3",
+													"InGame1.mp3",
+													"InGame5.mp3",
+													"InGame7.mp3",
+													"InGame8.mp3",
+													"InGame9.mp3",
+													"InGame10.mp3",
+													"EndGame.mp3" };
+
+		char szFileName[256] = "";
+	#define BGM_FOLDER		"BGM/"
+
+		int nRealBgmIndex = nBgmIndex;
+		if ((nBgmIndex >= BGMID_BATTLE) && (nBgmIndex < BGMID_FIN)) nRealBgmIndex = RandomNumber(BGMID_BATTLE, BGMID_BATTLE+2);
+
+		sprintf(szFileName, "%s%s", BGM_FOLDER, m_stSndFileName[nRealBgmIndex]);
+
+		return RealSound2::OpenMusic((const char*)szFileName);
+	}
+
+
+Find <br>
+
+	const char* ZSoundEngine::GetBGMFileName(int nBgmIndex)
+
+Replace <br>
+
+	const char* ZSoundEngine::GetBGMFileName(int nBgmIndex)
+	{
+		static char m_stSndCustomFile[MAX_BGM][64] = {"CharSelect.mp3", 
+													"Lobby.mp3", 
+													"InGame2.mp3", 
+													"InGame4.mp3", 
+													"InGame3.mp3",
+													"InGame6.mp3",
+													"InGame1.mp3",
+													"InGame5.mp3",
+													"InGame7.mp3",
+													"InGame8.mp3",
+													"InGame9.mp3",
+													"InGame10.mp3",
+													"EndGame.mp3" };
+
+		static char szFileName[256] = "";
+	#define BGM_FOLDER		"BGM/"
+
+		int nRealBgmIndex = nBgmIndex;
+		//if ((nBgmIndex >= BGMID_BATTLE) && (nBgmIndex < BGMID_FIN)) nRealBgmIndex = RandomNumber(BGMID_BATTLE, BGMID_FIN-1);
+		sprintf(szFileName, "%s%s", BGM_FOLDER, m_stSndCustomFile[nRealBgmIndex]);
+
+		return szFileName;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
