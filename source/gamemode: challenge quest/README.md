@@ -32,6 +32,16 @@ Gunz <br>
 - ZActorAction.h
 - ZFSMParser.h
 - ZFSM.h
+- ZFSMState.h
+- ZNavigationMesh.h
+- ZWorldObject_Navigation.cpp
+- ZWorldObject_Navigation.h
+- ZWorldObject.cpp
+- ZWorldObject.h
+- ZWorldObject_Movable.cpp
+- ZWorldObject_Movable.h
+- ZObjectVMesh.cpp
+- ZObjectVMesh.h
 
 Open(MBaseGameType.h) <br>
 Find <br>
@@ -1044,11 +1054,20 @@ Add <br>
 Open(ZMapDesc.h) <br>
 Find <br>
 
+	int GetTeamCount(int nTeamIndex);
+	
+Add <br>
+
+	int GetCustomSpawnCount(const char* szSpawnName);
+
+Find <br>
+
 	ZMapSpawnData* GetSpawnData(ZMapSpawnType nSpawnType, int nIndex);
 
 Add <br>
 
 	ZMapSpawnData* GetCustomSpawnData(int nCustomSpawnIndex, int nIndex);
+	rvector GetRoutePos(ZMapSpawnType nSpawnType, char* name);
 
 Find <br>
 
@@ -1074,6 +1093,7 @@ Find <br>
 
 Add <br>
 
+	ZMST_ROUTE,
 	ZMST_NPC_CUSTOM,
 
 
@@ -1102,28 +1122,455 @@ Add <br>
 
 	void OnStartCQ(MMatchStage* m_pStage, int nRounds);
 
+Open(ZGame.h) <br>
+Find <br>
+
+	#include "ZCharacterManager.h"
+	#include "ZObjectManager.h"
+	#include "ZWorld.h"
+
+Add <br>
+
+	#include "ZNavigationMesh.h"
+
+Find <br>
+
+	bool Pick(ZObject* pOwnerObject, rvector& origin, rvector& dir, ZPICKINFO* pickinfo, DWORD dwPassFlag = RM_FLAG_ADDITIVE | RM_FLAG_HIDE, bool bMyChar = false);
+	bool PickTo(ZObject* pOwnerObject, rvector& origin, rvector& to, ZPICKINFO* pickinfo, DWORD dwPassFlag = RM_FLAG_ADDITIVE | RM_FLAG_HIDE, bool bMyChar = false);
+	bool PickHistory(ZObject* pOwnerObject, float fTime, const rvector& origin, const rvector& to, ZPICKINFO* pickinfo, DWORD dwPassFlag, bool bMyChar = false);
+	bool ObjectColTest(ZObject* pOwner, rvector& origin, rvector& to, float fRadius, ZObject** poutTarget);
+
+Add <br>
+
+	bool PickWorld(const rvector& pos, const rvector& dir, RBSPPICKINFO* pOut, DWORD dwPassFlag = RM_FLAG_ADDITIVE | RM_FLAG_USEOPACITY | RM_FLAG_HIDE);
+	bool CheckWall(rvector& origin, rvector& targetpos, float fRadius, float fHeight = 0.f, RCOLLISIONMETHOD method = RCW_CYLINDER, int nDepth = 0, rplane* pimpactplane = NULL);
+	// ¾î¶² ¿ÀºêÁ§Æ®°¡ diff¸¸Å­ ÀÌµ¿ÇÏ·Á ÇÒ¶§ ´Ù¸¥ Ä³¸¯ÅÍ¿ÍÀÇ Ãæµ¹À» °í·ÁÇØ diff¸¦ ¼öÁ¤ÇØÁÖ´Â ÇÔ¼ö
+	void AdjustMoveDiff(ZObject* pObject, rvector& diff);
+
+	ZNavigationMesh GetNavigationMesh();	// ´Ü¼ø Æ÷ÀÎÅÍ ·¡ÆÛÀÌ¹Ç·Î ±×³É return by value
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+	#include "ZRuleDuel.h"
+	#include "ZRuleDeathMatch.h"
+	#include "ZMyCharacter.h"
+	#include "MMatchCRC32XORCache.h"
+	#include "MMatchObjCache.h"
+
+	#include "ZModule_HealOverTime.h"
+
+Add <br>
+
+	#include "ZNavigationMesh.h"
+
+Find <br>
+
+	void ZGame::CheckZoneTrap(MUID uidOwner,rvector pos,MMatchItemDesc* pItemDesc, MMatchTeam nTeamID)
+	{
+
+Add <br>
+
+	ZNavigationMesh ZGame::GetNavigationMesh()
+	{
+		return ZNavigationMesh( GetWorld()->GetBsp()->GetNavigationMesh());
+	}
+
+Open(ZGlobal.h) <br>
+Find <br>
+
+	#define ZGetWorldManager()		ZApplication::GetInstance()->GetWorldManager()
+	#define ZGetWorld()				(ZGetWorldManager()->GetCurrent())
+
+Add <br>
+
+	#define ZGetNavigationMesh() (ZApplication::GetGameInterface()->GetGame()->GetNavigationMesh())
+
+Open(RVisualMesh.h) <br>
+Find <br>
+
+	public:
+		const rmatrix&	GetWorldMat()			{ return m_WorldMat; }
+		RMesh*			GetMesh()				{ return m_pMesh; }
+		RMeshNode**		GetTMesh()				{return m_pTMesh;}
+		void			SetMesh(RMesh* pMesh)	{ m_pMesh = pMesh; }
+
+	private:
+
+Add <br>
+
+	RMesh*			m_pLowPolyMesh;
+
+Find <br>
+
+	// Light Setting
+
+	void SetLight(int index,D3DLIGHT9* light,bool ShaderOnly) {	m_LightMgr.SetLight(index,light,ShaderOnly);}
+	void UpdateLight() { m_LightMgr.UpdateLight(); }
+
+	public:
+
+	//	RQuery			m_RenderQuery;
+
+Replace <br>
+
+	// Light Setting
+
+	RVisualLightMgr* GetLightMgr() { return &m_LightMgr; }
+	void SetLight(int index,D3DLIGHT9* light,bool ShaderOnly) {	m_LightMgr.SetLight(index,light,ShaderOnly);}
+	void UpdateLight() { m_LightMgr.UpdateLight(); }
+
+	private:
+
+	//	RQuery			m_RenderQuery;
+
+Find <br>
+
+	rvector			m_vPos;
+	rvector			m_vDir;
+	rvector			m_vUp;
+	rmatrix			m_WorldMat;
+	rmatrix			m_ScaleMat;
+	RMeshNode**		m_pTMesh;
+	RMesh*			m_pMesh;
+	RMesh*			m_pLowPolyMesh;
+
+Replace <br>
+
+	private:
+		rvector			m_vPos;
+		rvector			m_vDir;
+		rvector			m_vUp;
+		rmatrix			m_WorldMat;
+		rmatrix			m_ScaleMat;
+		RMeshNode**		m_pTMesh;
+		RMesh*			m_pMesh;
+		RMesh*			m_pLowPolyMesh;
+
+Find <br>
+
+	rvector			m_vTargetPos;
+	rvector			m_vRotXYZ;
+	RFrameTime		m_FrameTime;
+
+	rmatrix			m_RotMat;
+
+Add <br>
+
+	public:
+		bool IsNpc()			{ return m_bIsNpc; }
+		bool IsCharacter()		{ return m_bIsCharacter; }
+
+		void SetDrawTracksMotion(int i, bool b) { m_bDrawTracksMotion[i] = b; }
+
+		const rvector& GetScale()		{ return m_vScale; }
+		const rvector& GetTargetPos()	{ return m_vTargetPos; }
+		const rvector& GetPosition()	{return m_vPos; }
+
+		const rvector& GetRotXYZ()		{ return m_vRotXYZ; }
+		void SetRotXYZ(const rvector& v){ m_vRotXYZ = v; }
+		void SetRotX(float x)			{ m_vRotXYZ.x = x; }
+		void SetRotY(float y)			{ m_vRotXYZ.y = y; }
+		void SetRotZ(float z)			{ m_vRotXYZ.z = z; }
+		void SetPosition(const rvector& pos) { m_vPos = pos; }
+		RFrameTime* GetFrameTime()		{ return &m_FrameTime; }
+
+	public:
+
+Find <br>
+
+		bool			m_bCalcBoxWithScale;
+		bool			m_bSkipRenderFaceParts;
+	};
+
+Replace <br>
+
+	bool			m_bCalcBoxWithScale;
+	bool			m_bSkipRenderFaceParts;
+
+public:
+
+		int GetId()				{ return m_id; }
+		void SetId(int id)		{ m_id = id; }
+
+		D3DCOLORVALUE GetNPCBlendColor() { return m_NPCBlendColor; }
+
+		const D3DXVECTOR3& GetBoundMax() { return m_vBMax; }
+		const D3DXVECTOR3& GetBoundMin() { return m_vBMin; }
+
+		const D3DXMATRIX& GetWeaponDummyMatrix(WeaponDummyType type) { return m_WeaponDummyMatrix[type]; }
+		RWeaponMotionType GetSelectWeaponMotionType() { return m_SelectWeaponMotionType; }
+
+		rmatrix* GetBipMatrixArray()	{ return m_pBipMatrix; }
+		const rmatrix& GetUpperRotMat()	{ return m_UpperRotMat; }
+
+		ROcclusionList*	GetTOCCL()		{ return m_pTOCCL; }
+
+		float GetUAniValue() { return m_fUAniValue; }
+		float GetVAniValue() { return m_fVAniValue; }
+		bool IsUVAni()		 { return m_bUVAni; }
+
+		bool IsRenderMatrix() { return m_bRenderMatrix; }
+
+		bool IsRender()				{ return m_bIsRender; }
+		bool IsRenderWeapon()		{ return m_bIsRenderWeapon; }
+		bool IsRenderFirst()		{ return m_bIsRenderFirst; }
+		bool IsCheckViewFrustum()	{ return m_bCheckViewFrustum; }
+		void SetGrenadeFire(bool b)	{ m_bGrenadeFire = b; }
+		void SetAddGrenade(bool b)	{ m_bAddGrenade = b; }
+		bool IsAddGrenade()			{ return m_bAddGrenade; }
+		void SetGrenadeFireTime(DWORD time)		{ m_GrenadeFireTime = time; }
+
+		void SetCalcBoxWithScale(bool b) { m_bCalcBoxWithScale = b; }
+		bool IsCalcBoxWithScale() { return m_bCalcBoxWithScale; }
+
+		void SetSkipRenderFaceParts(bool b) { m_bSkipRenderFaceParts = b; }
+
+		//void ShiftFugitiveValues();
+	};
+
+	////////////////////////////////////////////////////////
+	// ÀÏ¹Ý ÀÌÆåÆ®³ª ¸Ê¿ÀºêÁ§Æ® ¿ë°ú Ä³¸¯ÅÍ¿ëÀ» ±¸ºÐÇÏÀÚ..
+
+	//class RCharacterVisualMesh : public RVisualMesh {
+	//public:
+	//	RCharacterVisualMesh() {
+	//
+	//	}
+	//	~RCharacterVisualMesh() {
+	//
+	//	}
+	//
+	//public:
+	//
+	//};
+
+	_NAMESPACE_REALSPACE2_END
+
+	#endif//_RVisualMesh
 
 
+Open(RVisualMeshMgr.cpp) <br>
+Find <br>
+
+	RVisualMeshMgr::RVisualMeshMgr() {
+
+		m_id_last = 0;
+		m_node_table.reserve(MAX_VMESH_TABLE);//±âº»
+
+		for(int i=0;i<MAX_VMESH_TABLE;i++)
+			m_node_table[i] = NULL;
+
+	}
+
+Replace <br>
+
+	RVisualMeshMgr::RVisualMeshMgr() {
+
+		m_id_last = 0;
+		m_node_table.reserve(MAX_VMESH_TABLE);//±âº»
+
+		if (m_node_table.size() > 0)
+		{
+			for (int i = 0; i < MAX_VMESH_TABLE; i++)
+				m_node_table[i] = NULL;
+		}
+	}
+
+Find <br>
+
+	node->m_id = m_id_last;
 
 
+Replace <br>
+
+	node->SetId(m_id_last);
 
 
+Find <br>
+
+	node->m_id = m_id_last;
+
+Replace <br>
+
+	node->SetId(m_id_last);
+
+Find <br>
+
+	if((*node)->m_id == id) {
+
+Replace <br>
+
+	if((*node)->GetId() == id) {
+
+Find <br>
+
+	if((*node)->m_id == id) {
+
+Replace <br>
+
+	if((*node)->GetId() == id) {
+
+Open(RBspObject.cpp) <br>
+Find <br>
+
+		rboundingbox bb;
+		bb.vmax=pInfo->pVisualMesh->m_vBMax;
+		bb.vmin=pInfo->pVisualMesh->m_vBMin;
+
+Replace <br>
+
+		rboundingbox bb;
+		bb.vmax=pInfo->pVisualMesh->GetBoundMax();
+		bb.vmin=pInfo->pVisualMesh->GetBoundMin();
+
+Find <br>
+
+		if( !m_bNotOcclusion ) {
+			if(!IsVisible(bb)) {
+				m_DebugInfo.nMapObjectOcclusionCulled++;
+				continue;
+			}
+		}else {
+			pInfo->pVisualMesh->m_bCheckViewFrustum = false;
+		}
+
+Replace <br>
+
+		if( !m_bNotOcclusion ) {
+			if(!IsVisible(bb)) {
+				m_DebugInfo.nMapObjectOcclusionCulled++;
+				continue;
+			}
+		}else {
+			pInfo->pVisualMesh->SetCheckViewFrustum(false);
+		}
+
+Find <br>
+
+	rvector center = (pInfo->pVisualMesh->m_vBMax+pInfo->pVisualMesh->m_vBMin)*.5f;
+
+Replace <br>
+
+	rvector center = (pInfo->pVisualMesh->GetBoundMax()+pInfo->pVisualMesh->GetBoundMin())*.5f;
+
+Find <br>
+
+		if(pInfo->pVisualMesh && pInfo->pVisualMesh->m_pMesh)
+			bLight = !pInfo->pVisualMesh->m_pMesh->m_LitVertexModel;
+
+Replace <br>
+
+		if(pInfo->pVisualMesh && pInfo->pVisualMesh->GetMesh())
+			bLight = !pInfo->pVisualMesh->GetMesh()->m_LitVertexModel;
+
+Find <br>
+
+	if(!pInfo->pVisualMesh->m_bIsRender) m_DebugInfo.nMapObjectFrustumCulled++;
+
+Replace <br>
+
+	if(!pInfo->pVisualMesh->IsRender()) m_DebugInfo.nMapObjectFrustumCulled++;
+
+Find <br>
+
+		if(pInfo) {
+			t_vec = rvector(pInfo->pVisualMesh->m_WorldMat._41,
+							pInfo->pVisualMesh->m_WorldMat._42,
+							pInfo->pVisualMesh->m_WorldMat._43 );
+			t_vec = camera_pos - t_vec;
+			pInfo->fDist = Magnitude(t_vec);
+		}
+	}
+
+Replace <br>
+
+		if (pInfo) {
+			t_vec = rvector(pInfo->pVisualMesh->GetWorldMat()._41,
+				pInfo->pVisualMesh->GetWorldMat()._42,
+				pInfo->pVisualMesh->GetWorldMat()._43);
+			t_vec = camera_pos - t_vec;
+			pInfo->fDist = Magnitude(t_vec);
+		}
+	}
+
+Open(RMesh_Frame.cpp) <br>
+Find <br>
+
+	rvector vTargetPos = pVMesh->m_vTargetPos;
+	rmatrix world = pVMesh->m_WorldMat;
+
+Replace <br>
+
+	rvector vTargetPos = pVMesh->GetTargetPos();
+	rmatrix world = pVMesh->GetWorldMat();
+
+Find <br>
+
+			mat->_11 = pVisualMesh->m_UpperRotMat._11;
+			mat->_12 = pVisualMesh->m_UpperRotMat._12;
+			mat->_13 = pVisualMesh->m_UpperRotMat._13;
+
+			mat->_21 = pVisualMesh->m_UpperRotMat._21;
+			mat->_22 = pVisualMesh->m_UpperRotMat._22;
+			mat->_23 = pVisualMesh->m_UpperRotMat._23;
+
+			mat->_31 = pVisualMesh->m_UpperRotMat._31;
+			mat->_32 = pVisualMesh->m_UpperRotMat._32;
+			mat->_33 = pVisualMesh->m_UpperRotMat._33;
 
 
+Replace <br>
+
+			mat->_11 = pVisualMesh->GetUpperRotMat()._11;
+			mat->_12 = pVisualMesh->GetUpperRotMat()._12;
+			mat->_13 = pVisualMesh->GetUpperRotMat()._13;
+
+			mat->_21 = pVisualMesh->GetUpperRotMat()._21;
+			mat->_22 = pVisualMesh->GetUpperRotMat()._22;
+			mat->_23 = pVisualMesh->GetUpperRotMat()._23;
+
+			mat->_31 = pVisualMesh->GetUpperRotMat()._31;
+			mat->_32 = pVisualMesh->GetUpperRotMat()._32;
+			mat->_33 = pVisualMesh->GetUpperRotMat()._33;
+
+Find <br>
+
+		float add_value = pVisualMesh->m_FrameTime.GetValue();
+		float add_value_npc = 0.f;
+
+		float rot_x = pVisualMesh->m_vRotXYZ.x;
+		float rot_y = pVisualMesh->m_vRotXYZ.y;		// + add_value;
+
+Replace <br>
+
+		float add_value = pVisualMesh->GetFrameTime()->GetValue();
+		float add_value_npc = 0.f;
+
+		float rot_x = pVisualMesh->GetRotXYZ().x;
+		float rot_y = pVisualMesh->GetRotXYZ().y;		// + add_value;
 
 
+Open(ZCharacter.cpp) <br>
+Find <br>
 
+	if (IsDie()) { //Çã¸® º¯Çü ¾ø´Ù~
 
+		m_pVMesh->m_vRotXYZ.x = 0.f;
+		m_pVMesh->m_vRotXYZ.y = 0.f;
+		m_pVMesh->m_vRotXYZ.z = 0.f;
+		
+		return;
+	}
 
+Replace <br>
 
+	if (IsDie()) { //Çã¸® º¯Çü ¾ø´Ù~
 
+		m_pVMesh->SetRotXYZ(rvector(0, 0, 0));
 
-
-
-
-
-
-
+		return;
+	}
 
 
 
