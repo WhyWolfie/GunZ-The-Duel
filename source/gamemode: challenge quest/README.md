@@ -2,10 +2,15 @@ Gamemode: Challenge Quest <br>
 
 Not Finished! <br>
 CSCommon <br>
+- MMatchRuleQuestChallenge.cpp <br>
 - MMatchRuleQuestChallenge.h <br>
 - IMatchRuleNewQuest.h <br>
 - MNewQuestScenario.h <br>
 - MActorDef.h <br>
+- MNewQuestPlayerManager.cpp <br>
+- MNewQuestPlayerManager.h <br>
+- MNewQuestNpcManager.h <br>
+- MNewQuestNpcManager.cpp <br>
 
 Gunz <br>
 - ZActorWithFSM.h
@@ -691,6 +696,7 @@ Add <br>
     #define MC_NEWQUEST_NEW_CONTROLLER			6406
     #define MC_NEWQUEST_LATE_NPC_SPAWN			6407
     #define MC_NEWQUEST_STAGE_GAME_INFO			6408
+    #define MC_MATCH_LATEJOIN_CQ			6409
 
 Open(MSharedCommandTable.cpp) <br>
 Find <br>
@@ -749,6 +755,12 @@ Add <br>
 			P(MPT_INT,"a")
 			P(MPT_INT,"b")
 
+
+		C(MC_MATCH_LATEJOIN_CQ,"","",MCDT_MACHINE2MACHINE)
+			P(MPT_UID, "targetPlayer")
+			P(MPT_INT, "currSector")
+			P(MPT_UINT, "currTime")
+
 Open(ZGame.cpp) <br>
 Find <br>
 
@@ -768,6 +780,327 @@ Add <br>
 	case MC_NEWQUEST_LATE_NPC_SPAWN:
 	case MC_NEWQUEST_MOVE_TO_NEXT_SECTOR:
 	case MC_NEWQUEST_NEW_CONTROLLER:
+	case MC_MATCH_LATEJOIN_CQ:
+
+Open(ZCharacter.h) <br>
+Find <br>
+
+	int GetDTLastWeekGrade() { return m_MInitialInfo.Ref().nDTLastWeekGrade; }
+	MTD_CharInfo* GetCharInfo() const { return (MTD_CharInfo*)&m_MInitialInfo.Ref(); }
+
+Add <br>
+
+	MUID GetLastTarget() { return m_uidLastTarget; }
+	void SetLastTarget(MUID uidTarget) { m_uidLastTarget = uidTarget; }
+
+Find <br>
+
+	MProtectValue<MTD_CharInfo>			m_MInitialInfo;
+
+Add <br>
+
+	MUID								m_uidLastTarget;
+
+Open(ZMapDesc.cpp) <br>
+Find <br>
+
+	ZMapSpawnManager::ZMapSpawnManager()
+	{
+		for(int i=0;i>MAX_BACKUP_SPAWN;i++)
+			m_nBackUpIndex[i] = -1;
+		m_nBackUpIndexCnt = MAX_BACKUP_SPAWN;
+	}
+
+Replace <br>
+
+	ZMapSpawnManager::ZMapSpawnManager()
+	{
+		for (int i = 0; i < 5; ++i)
+		{
+			m_nBackUpIndex[i] = -1;
+		}
+		m_nBackUpIndexCnt = MAX_BACKUP_SPAWN;
+	}
+
+Find <br>
+
+	void ZMapSpawnManager::Clear()
+
+Replace <br>
+
+	void ZMapSpawnManager::Clear()
+	{
+		for (ZMapSpawnList::iterator itor = m_Spawns.begin(); itor != m_Spawns.end(); ++itor)
+		{
+			ZMapSpawnData* pSpawnData = (*itor);
+			delete pSpawnData;
+		}
+		m_Spawns.clear();
+
+		for (int i = 0; i < ZMST_MAX; i++)
+		{
+			m_SpawnArray[i].clear();
+		}
+		for (ZMapSpawnNpcCustom::iterator it=m_SpawnNpcCustom.begin(); it!=m_SpawnNpcCustom.end(); ++it)
+		{
+			delete it->second;
+		}
+		m_SpawnNpcCustom.clear();
+
+		for (int i = 0; i < 5; ++i)
+		{
+			m_nBackUpIndex[i] = -1;
+		}
+
+		m_nBackUpIndexCnt = 0;
+	}
+
+	int ZMapSpawnManager::GetCustomSpawnCount(const char* szSpawnName)
+	{
+		ZMapSpawnNpcCustom::iterator it = m_SpawnNpcCustom.find(szSpawnName);
+		if (it == m_SpawnNpcCustom.end())
+			return 0;
+		ZMapSpawnList* pSpawnList = it->second;
+		return (int)pSpawnList->size();
+	}
+
+Find <br>
+
+	//////////////////////////////////////////////////////////////////////////////
+	ZMapDesc::ZMapDesc()
+
+Add Above <br>
+
+	rvector ZMapSpawnManager::GetRoutePos(ZMapSpawnType nSpawnType, char* name)
+	{
+		int nPositionsCount = GetSpawnCount(nSpawnType);
+		if (nPositionsCount <= 0)
+		{
+			// ½ºÆù Æ÷Áö¼ÇÀÌ 1°³µµ ¾ø´Ù.
+			//		_ASSERT(0);
+			return rvector(0, 0, 0);
+		}
+
+		for (int i = 0; i < nPositionsCount; i++)
+		{
+			if (!_stricmp(m_SpawnArray[nSpawnType][i]->m_szSpawnName, name))
+				return m_SpawnArray[nSpawnType][i]->m_Pos;
+		}
+		return rvector(0, 0, 0);
+	}
+
+Find <br>
+
+	ZMapDesc::~ZMapDesc()
+
+Replace <br>
+
+	ZMapDesc::~ZMapDesc()
+	{
+		m_SmokeDummyMgr.Destroy();
+		m_SpawnManager.Clear();
+	}
+
+Find <br>
+
+		if (!strnicmp(pDummy->szName.c_str(), ZTOK_SPAWN, nSpawnTokLen))
+		{
+			char szSpawnName[256];
+			strcpy(szSpawnName, szDummyName);
+
+			m_SpawnManager.AddSpawnData(szSpawnName, pDummy->Position, pDummy->Direction);
+		}
+
+Replace <br>
+
+		if (!strnicmp(pDummy->szName.c_str(), ZTOK_SPAWN, nSpawnTokLen)||
+			!strnicmp(pDummy->szName.c_str(), "route_",(int)strlen("route_")))
+		{
+			char szSpawnName[256];
+			strcpy(szSpawnName, szDummyName);
+
+			m_SpawnManager.AddSpawnData(szSpawnName, pDummy->Position, pDummy->Direction);
+		}
+
+
+Find <br>
+
+	#define ZTOK_SPAWN_NPC_MELEE	"spawn_npc_melee"
+	#define ZTOK_SPAWN_NPC_RANGE	"spawn_npc_range"
+	#define ZTOK_SPAWN_NPC_BOSS		"spawn_npc_boss"
+
+Add <br>
+
+	#define ZTOK_SPAWN			"spawn"
+	#define ZTOK_SPAWN_SOLO		"spawn_solo"
+	#define ZTOK_SPAWN_TEAM		"spawn_team"
+
+	#define ZTOK_SPAWN_NPC_MELEE	"spawn_npc_melee"
+	#define ZTOK_SPAWN_NPC_RANGE	"spawn_npc_range"
+	#define ZTOK_SPAWN_NPC_BOSS		"spawn_npc_boss"
+	#define ZTOK_SPAWN_NPC			"spawn_npc_"
+	#define ZTOK_SPAWN_BARRICADE	"spawn_blitz_barricade_"
+	#define ZTOK_SPAWN_GUARDIAN		"spawn_blitz_guardian"
+	#define ZTOK_SPAWN_RADAR		"spawn_blitz_radar_"
+	#define ZTOK_SPAWN_TRESURE		"spawn_blitz_honoritem_"
+
+	#define ZTOK_WAIT_CAMERA_POS	"wait_pos"
+
+	#define ZTOK_SMOKE_SS			"smk_ss_"
+	#define ZTOK_SMOKE_TS			"smk_ts_"
+	#define ZTOK_SMOKE_ST			"smk_st_"
+
+	#define ZTOK_DUMMY_LINK			"link"
+	#define ZTOK_DUMMY_ROUTE		"route_"
+
+	#define ZTOK_SPAWN_GROUP "GROUP"
+	//todo: determine the usage of this, maiet left no notes on it
+
+Find <br>
+
+	ZMapSpawnData* ZMapSpawnManager::GetSpawnData(ZMapSpawnType nSpawnType, int nIndex)
+	{
+
+Add Above <br>
+
+	ZMapSpawnData* ZMapSpawnManager::GetCustomSpawnData(int nCustomSpawnIndex, int nIndex)
+	{
+		// nCustomSpawnIndex: Ä¿½ºÅÒ½ºÆù ÁöÁ¡µéÀ» ÀÌ¸§À¸·Î Á¤·ÄÇÑ ¸ñ·Ï¿¡¼­ÀÇ ÀÎµ¦½º
+		// nIndex: ÇØ¼º Ä¿½ºÅÒ½ºÆù ¸íÀ» °¡Áø ÁöÁ¡µéÀÇ ¹è¿­ ÀÎµ¦½º
+
+		if (nCustomSpawnIndex < 0 || nIndex < 0 ) { _ASSERT(0); return NULL; }
+
+		if ((int)m_SpawnNpcCustom.size() <= nCustomSpawnIndex)
+		{
+			_ASSERT(0);
+			return NULL;
+		}
+
+		ZMapSpawnNpcCustom::iterator it = m_SpawnNpcCustom.begin();
+		for (int i=0; i<nCustomSpawnIndex; ++i)
+			++it;
+
+		ZMapSpawnList* pSpawnList = it->second;
+		if ((int)pSpawnList->size() <= nIndex)
+		{
+			_ASSERT(0);
+			return NULL;
+		}
+
+		return (*pSpawnList)[nIndex];
+	}
+
+
+Find <br>
+
+	if( !Data.LoadFromMemory(buffer) )
+	{
+		delete buffer;
+		return false;
+	}
+
+	delete buffer;
+	mzf.Close();
+
+Replace <br>
+
+	if( !Data.LoadFromMemory(buffer) )
+	{
+		delete[] buffer;
+		return false;
+	}
+
+	delete[] buffer;
+	mzf.Close();
+
+Find <br>
+
+	else if (!strnicmp(pMapSpawnData->m_szSpawnName, ZTOK_SPAWN_NPC_BOSS, strlen(ZTOK_SPAWN_NPC_BOSS)))
+	{
+		pMapSpawnData->m_nType = ZMST_NPC_BOSS;
+		m_SpawnArray[ZMST_NPC_BOSS].push_back(pMapSpawnData);
+	}
+
+Add <br>
+
+	else if (!strnicmp(pMapSpawnData->m_szSpawnName, ZTOK_SPAWN_NPC_BOSS, strlen(ZTOK_SPAWN_NPC_BOSS)))
+	{
+		pMapSpawnData->m_nType = ZMST_NPC_BOSS;
+		m_SpawnArray[ZMST_NPC_BOSS].push_back(pMapSpawnData);
+	}
+	else if (!strnicmp(pMapSpawnData->m_szSpawnName, ZTOK_SPAWN_NPC, strlen(ZTOK_SPAWN_NPC)))
+	{
+		// spawn_npc_xxxx Ã³·³ ½ºÆù³ëµå ÀÌ¸§À» ÀÓÀÇ·Î Á¤ÇÏ´Â °ÍµéÀ» ÀÌ¸§º°·Î ¸®½ºÆ®¿¡ ³Ö´Â´Ù
+		pMapSpawnData->m_nType = ZMST_NPC_CUSTOM;
+		ZMapSpawnNpcCustom::iterator it = m_SpawnNpcCustom.find(pMapSpawnData->m_szSpawnName);
+		if (it==m_SpawnNpcCustom.end())
+			m_SpawnNpcCustom[pMapSpawnData->m_szSpawnName] = new ZMapSpawnList;
+		
+		m_SpawnNpcCustom[pMapSpawnData->m_szSpawnName]->push_back(pMapSpawnData);
+	}
+
+	return true;
+
+Open(ZMapDesc.h) <br>
+Find <br>
+
+	ZMapSpawnData* GetSpawnData(ZMapSpawnType nSpawnType, int nIndex);
+
+Add <br>
+
+	ZMapSpawnData* GetCustomSpawnData(int nCustomSpawnIndex, int nIndex);
+
+Find <br>
+
+	class ZMapSpawnList : public vector<ZMapSpawnData*> { };
+
+Add <br>
+
+	class ZMapSpawnNpcCustom : public map<string, ZMapSpawnList*> { };
+
+Find <br>
+
+	ZMapSpawnList	m_SpawnArray[ZMST_MAX];
+
+Add <br>
+
+	ZMapSpawnNpcCustom	m_SpawnNpcCustom;
+
+Find <br>
+
+	ZMST_NPC_MELEE,
+	ZMST_NPC_RANGE,
+	ZMST_NPC_BOSS,
+
+Add <br>
+
+	ZMST_NPC_CUSTOM,
+
+
+Open(MMatchServer_Stage.cpp) <br>
+Find <br>
+
+	void MMatchServer::SaveGamePlayerLog(MMatchObject* pObj, unsigned int nStageID)
+	{	
+
+Add <br>
+
+	void MMatchServer::OnStartCQ(MMatchStage* m_pStage, int nRounds)
+	{
+		MMatchStageSetting* pSetting = m_pStage->GetStageSetting();
+		pSetting->SetRoundMax(nRounds);
+		MCommand* pCmd = CreateCmdResponseStageSetting(m_pStage->GetUID());
+		RouteToStage(m_pStage->GetUID(), pCmd);
+	}
+
+Open(MMatchServer.h) <br>
+Find <br>
+
+	void OnQuestSendPing(const MUID& uidStage, unsigned long int t);
+
+Add <br>
+
+	void OnStartCQ(MMatchStage* m_pStage, int nRounds);
 
 
 
@@ -777,4 +1110,25 @@ Add <br>
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
