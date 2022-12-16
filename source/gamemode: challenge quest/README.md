@@ -4814,6 +4814,202 @@ Replace <br>
 	char					m_szElu[256];
 	const char*				GetEluName();
 
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+		} else {
+			char* szMeshName;
+			MMatchItemDesc* pDesc = pAvatarItem->GetDesc();
+			if( pDesc != NULL ) {
+				m_pVMesh->ClearParts();
+
+				szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHeadMeshName;
+				if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_head, szMeshName);
+				else							ChangeCharHair(m_pVMesh, m_Property.nSex, m_Property.nHair);
+
+				szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szChestMeshName;
+				if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_chest, szMeshName);
+				else							m_pVMesh->SetBaseParts(eq_parts_chest);
+
+				szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHandMeshName;
+				if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_hands, szMeshName);
+				else							m_pVMesh->SetBaseParts(eq_parts_hands);
+
+				szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szLegsMeshName;
+				if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_legs, szMeshName);
+				else							m_pVMesh->SetBaseParts(eq_parts_legs);
+
+				szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szFeetMeshName;
+				if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_feet, szMeshName);
+				else							m_pVMesh->SetBaseParts(eq_parts_feet);
+
+				m_pVMesh->SetSkipRenderFaceParts(true);
+			}
+		}
+	}
+
+Replace <br>
+
+			} else {
+				char* szMeshName;
+				MMatchItemDesc* pDesc = pAvatarItem->GetDesc();
+				if( pDesc != NULL ) {
+					m_pVMesh->ClearParts();
+
+					szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHeadMeshName;
+					if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_head, szMeshName, pDesc->GetEluName());
+					else							ChangeCharHair(m_pVMesh, m_Property.nSex, m_Property.nHair);
+
+					szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szChestMeshName;
+					if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_chest, szMeshName, pDesc->GetEluName());
+					else							m_pVMesh->SetBaseParts(eq_parts_chest);
+
+					szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHandMeshName;
+					if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_hands, szMeshName, pDesc->GetEluName());
+					else							m_pVMesh->SetBaseParts(eq_parts_hands);
+
+					szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szLegsMeshName;
+					if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_legs, szMeshName, pDesc->GetEluName());
+					else							m_pVMesh->SetBaseParts(eq_parts_legs);
+
+					szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szFeetMeshName;
+					if( strlen(szMeshName) > 0 )	m_pVMesh->SetParts(eq_parts_feet, szMeshName, pDesc->GetEluName());
+					else							m_pVMesh->SetBaseParts(eq_parts_feet);
+
+					m_pVMesh->SetSkipRenderFaceParts(true);
+				}
+			}
+		}
+
+Find <br>
+
+	pVMesh->SetParts(eq_parts_face, szMeshName);
+
+Replace <br>
+
+	pVMesh->SetParts(eq_parts_face, szMeshName,nullptr);
+
+Find <br>
+
+		if( pAvatarItem && pAvatarItem->IsEmpty() ) {
+			for (int i = 0; i < MMCIP_END;i++) {
+				switch (MMatchCharItemParts(i))
+				{
+				case MMCIP_HEAD:	mesh_parts_type = eq_parts_head;	break;
+				case MMCIP_CHEST:	mesh_parts_type = eq_parts_chest;	break;
+				case MMCIP_HANDS:	mesh_parts_type = eq_parts_hands;	break;
+				case MMCIP_LEGS:	mesh_parts_type = eq_parts_legs;	break;
+				case MMCIP_FEET:	mesh_parts_type = eq_parts_feet;	break;
+				default: continue;
+				}
+
+				if (!GetItems()->GetItem(MMatchCharItemParts(i))->IsEmpty()) {
+					m_pVMesh->SetParts(mesh_parts_type, GetItems()->GetItem(MMatchCharItemParts(i))->GetDesc()->m_pMItemName->Ref().m_szMeshName);
+				}
+				else {
+					m_pVMesh->SetBaseParts(mesh_parts_type);
+				}
+			}	// for
+
+Replace <br>
+
+		if( pAvatarItem && pAvatarItem->IsEmpty() )
+		{
+			for (int i = 0; i < MMCIP_END;i++) {
+				switch (MMatchCharItemParts(i))
+				{
+				case MMCIP_HEAD:	mesh_parts_type = eq_parts_head;	break;
+				case MMCIP_CHEST:	mesh_parts_type = eq_parts_chest;	break;
+				case MMCIP_HANDS:	mesh_parts_type = eq_parts_hands;	break;
+				case MMCIP_LEGS:	mesh_parts_type = eq_parts_legs;	break;
+				case MMCIP_FEET:	mesh_parts_type = eq_parts_feet;	break;
+				default: continue;
+				}
+
+				if (!GetItems()->GetItem(MMatchCharItemParts(i))->IsEmpty())
+				{
+					MMatchItemDesc* itemDesc = GetItems()->GetItem(MMatchCharItemParts(i))->GetDesc();
+					if (itemDesc->GetEluName() != nullptr)
+					{
+						RMesh* playerMesh = nullptr;
+						if (_stricmp(m_pVMesh->GetMesh()->GetName(), "heroman1") == 0)
+						{
+							playerMesh = ZGetMeshMgr()->Get("heroman1");
+						}
+						else
+						{
+							playerMesh = ZGetMeshMgr()->Get("herowoman1");
+						}
+						if (playerMesh->m_parts_mgr->Find(itemDesc->m_szElu) == false)
+						{
+							string filePath = itemDesc->m_szElu;
+							if (filePath.find("woman") != std::string::npos)
+							{
+								filePath = string("model/woman/") + itemDesc->m_szElu;
+							}
+							else
+							{
+								filePath = string("model/man/") + itemDesc->m_szElu;
+							}
+							playerMesh->m_parts_mgr->Add((char*)filePath.c_str());
+							MeshesFinishedLoading = false;
+							meshupdatetime = 0;
+						}
+						else
+						{
+							m_pVMesh->SetParts(mesh_parts_type, itemDesc->m_pMItemName->Ref().m_szMeshName, itemDesc->m_szElu);
+						}
+					}
+					//m_pVMesh->SetParts(mesh_parts_type, itemDesc->m_pMItemName->Ref().m_szMeshName, itemDesc->m_szElu);
+				}
+				else {
+					m_pVMesh->SetBaseParts(mesh_parts_type);
+				}
+			}	// for
+
+
+Open(ZCharacter.h) <br>
+Find <br>
+
+	class ZCharacter : public ZCharacterObject
+	{
+		MDeclareRTTI;
+		//friend class ZCharacterManager;
+	private:
+
+Add <br>
+
+	bool MeshesFinishedLoading;
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	void ZCharacter::OnUpdate(float fDelta)
+
+Add Above <br>
+
+	static DWORD meshupdatetime = 0;
+
+Open(RMeshMgr.h) <br>
+Find <br>
+
+	vector<RMesh*> m_node_table;
+	DWORD	m_cur;
+
+Add <br>
+
+	bool Find(const char* name);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
