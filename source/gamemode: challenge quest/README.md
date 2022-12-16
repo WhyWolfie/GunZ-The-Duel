@@ -5,8 +5,11 @@ CSCommon <br>
 - MMatchRuleQuestChallenge.cpp <br>
 - MMatchRuleQuestChallenge.h <br>
 - IMatchRuleNewQuest.h <br>
+- IMatchRuleNewQuest.cpp <br>
 - MNewQuestScenario.h <br>
+- MNewQuestScenario.cpp <br>
 - MActorDef.h <br>
+- MActorDef.cpp <br>
 - MNewQuestPlayerManager.cpp <br>
 - MNewQuestPlayerManager.h <br>
 - MNewQuestNpcManager.h <br>
@@ -43,6 +46,17 @@ Gunz <br>
 - ZWorldObject_Movable.h
 - ZObjectVMesh.cpp
 - ZObjectVMesh.h
+- ZActorAction.cpp
+- ZFSMState.cpp
+- ZFSMState.h
+- ZFSMTransition.h
+- ZFSMTransition.cpp
+- ZFSM.cpp
+- ZFSMCondition.cpp
+- ZActorActionManager.cpp
+- ZFSMFunctionServer.cpp
+- ZFSMManager.cpp
+- ZFSMParser.cpp
 
 Open(MBaseGameType.h) <br>
 Find <br>
@@ -5000,9 +5014,60 @@ Add <br>
 
 	bool Find(const char* name);
 
+Open(RMeshMgr.cpp) <br>
+Find <br>
+
+	RMeshNode* RMeshMgr::GetPartsNode(char* name)
+	{
+		r_mesh_node node;
+		RMesh* pMesh = NULL;
+		RMeshNode* pMeshNode = NULL;
+
+		for(node = m_list.begin(); node != m_list.end(); ++node) {
+			pMesh = (*node);
+			pMeshNode = pMesh->GetMeshData(name);
+			if(pMeshNode)
+				return pMeshNode;
+		}
+		return NULL;
+	}
 
 
+Add <br>
 
+	//Dynamic resource loading
+	bool RMeshMgr::Find(const char* name)
+	{
+		r_mesh_node node;
+		for (node = m_list.begin(); node != m_list.end(); ++node)
+		{
+			string modelName = (*node)->m_FileName.substr((*node)->m_FileName.find_last_of('/') + 1);
+			if (modelName == name)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+	void ZGame::OnExplosionDynamite(MUID uidOwner, rvector pos, float fDamage, float fRange, float fKnockBack, MMatchTeam nTeamID)
+	{
+
+Add <br>
+
+	bool ZGame::PickWorld( const rvector &pos, const rvector &dir,RBSPPICKINFO *pOut,DWORD dwPassFlag)
+	{
+		RBspObject*  r_map = GetWorld()->GetBsp();
+		return r_map->Pick(pos, dir, pOut, dwPassFlag);
+	}
+
+	bool ZGame::CheckWall(rvector &origin, rvector &targetpos, float fRadius, float fHeight, RCOLLISIONMETHOD method, int nDepth, rplane *pimpactplane)
+	{
+		return GetWorld()->GetBsp()->CheckWall(origin,targetpos,35,60,RCW_CYLINDER,0,pimpactplane);
+	}
 
 
 
