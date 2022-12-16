@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML id="gungame">
+	<SET id="1">
+		<!--Black Iron Sword, Iron Crow Machine Gun, Walcom L1 mk. II-->
+		<ITEMSET melee="67" primary="508001" secondary="9003" />
+		<!--Ritual Dagger, Nico R2, Incinerator-->
+		<ITEMSET melee="500008" primary="7001" secondary="508002" />
+		<!--Golden Dragon Sword, Elite Soldier's SMG, Raptor 120 x2-->
+		<ITEMSET melee="17" primary="505008" secondary="4004" />
+		<!--Justice, Breaker 3, Raven 8-->
+		<ITEMSET melee="502014" primary="6001" secondary="4021" />
+		<!--Rusty Dagger, Iris Revolver x2, Soldier's Revolver-->
+		<ITEMSET melee="1" primary="504501" secondary="504507" />
+		<!--PlungerX, Renard V, Zaurus A-->
+		<ITEMSET melee="502010" primary="5007" secondary="4007" />
+		<!--Adventurer Dagger, Raven 8 x2, Walcom XLS-->
+		<ITEMSET melee="500001" primary="4022" secondary="5017" />
+		<!--Military Kodachi, Minic 567 MK.II, Zaurus A-->
+		<ITEMSET melee="70" primary="4511" secondary="4007" />
+		<!--, Biggie Shotgun, Iron Crow Shotgun-->
+		<ITEMSET melee="300025" primary="506003" secondary="506002" />
+		<!--, Soldier's Launcher, Elite Soldier's Shotgun-->
+		<ITEMSET melee="300011" primary="509010" secondary="506014" />
+		<!--Veteran Soldier's Scimitar, Ellan x2, Zaurus A x2-->
+		<ITEMSET melee="502024" primary="5006" secondary="4008" />
+		<!--Golden Dragon Sword, Breaker 9P, Iris Shotgun-->
+		<ITEMSET melee="17" primary="6008" secondary="506001" />
+		<!--, Pressure RX, Zaurus A-->
+		<ITEMSET melee="300018" primary="509003" secondary="4007" />
+		<!--Alloy Kodachi, New Renard V, Iron Crow Revolver x2-->
+		<ITEMSET melee="72" primary="5011" secondary="504502" />
+		<!--, Soldier's Pistol, Nico MG-K8-->
+		<ITEMSET melee="300037" primary="504008" secondary="8001" />
+		<!--Thunder Bird, Palmpow's Launcher, Renard VI-->
+		<ITEMSET melee="502008" primary="400528" secondary="5015" />
+		<!--Skeleton Sword, Walcom XLS x2, Zaurus A x2-->
+		<ITEMSET melee="300031" primary="5018" secondary="4008" />
+		<!--Soldier's Dagger, Raptor 200, Maxwell LX44-->
+		<ITEMSET melee="500009" primary="4019" secondary="7006" />
+		<!--Military Sword, Peacemaker x2, CRUZ-FX177-->
+		<ITEMSET melee="13" primary="504504" secondary="509004" />
+		<!--Crystal Blade, Maxwell RW-66, Raven 5-->
+		<ITEMSET melee="8" primary="9006" secondary="4011" />
+		<!--Giant Sword, Palmpow's Launcher, Iron Crow Shotgun-->
+		<ITEMSET melee="51" primary="400528" secondary="506002" />
+		<!--, Iron Crow Shotgun, Nico MG-K11-->
+		<ITEMSET melee="300011" primary="506002" secondary="8004" />
+		<!--, Raven 8 x2, Zaurus B x2-->
+		<ITEMSET melee="300033" primary="4022" secondary="4514" />
+		<!--Shura, Raven 5 x2, Garm-->
+		<ITEMSET melee="18" primary="4012" secondary="507004" />
+		<!--, Raptor 120, Nico MG-K9-->
+		<ITEMSET melee="300014" primary="4003" secondary="8002" />
+		<!--Phantom Slaying Dagger, Walcom S7 x2, Iron Crow Rifle-->
+		<ITEMSET melee="6" primary="5020" secondary="507002" />
+		<!--Veteran Soldier's Dagger, Renard V, Raptor 80-->
+		<ITEMSET melee="500010" primary="5007" secondary="4009" />
+		<!--Elite Soldier's Katana, Biggie Shotgun, Walcom XL-->
+		<ITEMSET melee="502022" primary="506003" secondary="5013" />
+		<!--Golden Dragon Dual Sword, Walcom S6, Raven 6-->
+		<ITEMSET melee="502007" primary="5009" secondary="4013" />
+		<!--Elite Soldier's Dagger, Dynax 7000, Iris Shotgun-->
+		<ITEMSET melee="500011" primary="4501" secondary="506001" />
+		<!--Justice, Phantom Cruise, Soldier's Revolver-->
+		<ITEMSET melee="502014" primary="4505" secondary="504507" />
+		<!--, Judgment, Zaurus A-->
+		<ITEMSET melee="300026" primary="504006" secondary="4007" />
+		<!--Veteran Soldier's Katana, New Renard V, Minic 567 MK.II x2-->
+		<ITEMSET melee="502021" primary="5011" secondary="4512" />
+		<!--, A-3, Minic 567 MK.II x2-->
+		<ITEMSET melee="300039" primary="506010" secondary="4512" />
+		<!--PlungerX, Veteran Soldier's Pistol, A-3-->
+		<ITEMSET melee="502009" primary="504009" secondary="506010" />
+		<!--Mace, Soldier's Rifle, Raptor 160-->
+		<ITEMSET melee="502005" primary="507005" secondary="4015" />
+		<!--, Raven 8, Adventurer Shotgun-->
+		<ITEMSET melee="300016" primary="4021" secondary="506009" />
+		<!--, Phantom Cruise, Soldier's Shotgun-->
+		<ITEMSET melee="300012" primary="4505" secondary="506012" />
+		<!--샤크티스, Walcom L1 mk. II, Pioneer-->
+		<ITEMSET melee="502026" primary="9003" secondary="506005" />
+		<!--Veteran Soldier's Dagger, Nico R2, Iron Crow Revolver x2-->
+		<ITEMSET melee="500010" primary="7001" secondary="504502" />
+		<!--Iron Kodachi, Shattered Iron, New Renard V x2-->
+		<ITEMSET melee="31" primary="400513" secondary="5012" />
+		<!--Slicer, Renard V, Walcom S6 x2-->
+		<ITEMSET melee="502017" primary="5007" secondary="5010" />
+		<!--Outdated Kodachi, Biggie Shotgun, Maxwell LX44-->
+		<ITEMSET melee="69" primary="506003" secondary="7006" />
+		<!--Demon Bringer, Walcom S6 x2, Pressure RX-->
+		<ITEMSET melee="400502" primary="5010" secondary="509003" />
+		<!--PlungerX, Minic 567, Veteran Soldier's Revolver-->
+		<ITEMSET melee="502009" primary="4005" secondary="504508" />
+		<!--Mace, A-3, Walcom Warrior 88-->
+		<ITEMSET melee="502005" primary="506010" secondary="7008" />
+		<!--Inferno, Pressure RX, Prime TX-->
+		<ITEMSET melee="500007" primary="509003" secondary="507003" />
+		<!--Adventurer Long Sword, Nico MG-K9, Minic 567 MK.II x2-->
+		<ITEMSET melee="502001" primary="8002" secondary="4512" />
+		<!--Goblin Commander's Club, Golden Olympus, Iris Pistol Limited x2-->
+		<ITEMSET melee="400519" primary="504505" secondary="4023" />
+		<!--Mace, Walcom S6 x2, Soldier's Rifle-->
+		<ITEMSET melee="502005" primary="5010" secondary="507005" />
+		<!--Shadow Vane, CK-1, Soldier's Rifle-->
+		<ITEMSET melee="500006" primary="509007" secondary="507005" />
+		<!--Elite Soldier's Katana, Goblin King's Rocket, Pressure RX-->
+		<ITEMSET melee="502022" primary="400501" secondary="509003" />
+		<!--Military Kodachi, Walcom L1 mk. II, Raven 5-->
+		<ITEMSET melee="70" primary="9003" secondary="4011" />
+		<!--Iron Sword, 둠 슬링어, Iron Crow Revolver x2-->
+		<ITEMSET melee="12" primary="509013" secondary="504502" />
+		<!--Devil Slayer, Veteran Soldier's Revolver, Optimite Launcher-->
+		<ITEMSET melee="16" primary="504508" secondary="509008" />
+		<!--Red Blood, Raven 8 x2, Iris Pistol Limited x2-->
+		<ITEMSET melee="34" primary="4022" secondary="4023" />
+		<!--Wings of Catastrophe, Walcom XL x2, Dynax 800C-->
+		<ITEMSET melee="400508" primary="5014" secondary="4515" />
+		<!--Soldier's Katana, Elite Soldier's Shotgun, Walcom L1-->
+		<ITEMSET melee="502020" primary="506014" secondary="9001" />
+		<!--PlungerX, Judgment, Walcom S6-->
+		<ITEMSET melee="502009" primary="504006" secondary="5009" />
+		<!--Alloy Sword, Nico MG-KX, Prime TX-->
+		<ITEMSET melee="68" primary="8003" secondary="507003" />
+		<!--Sacrifice, Raptor 50 x2, Soldier's Rifle-->
+		<ITEMSET melee="502006" primary="4002" secondary="507005" />
+		<!--Alloy Kodachi, Soldier's Machine Gun, Soldier's Pistol-->
+		<ITEMSET melee="72" primary="508004" secondary="504008" />
+		<!--Umbrella , Elite Soldier's SMG, Jaws Launcher-->
+		<ITEMSET melee="502019" primary="505008" secondary="509005" />
+		<!--Koden Knife, Veteran Soldier's Launcher, Raven 8 x2-->
+		<ITEMSET melee="500002" primary="509011" secondary="4022" />
+		<!--Golden Dragon Sword, Maxwell RW-66, Raptor 160-->
+		<ITEMSET melee="17" primary="9006" secondary="4015" />
+		<!--Golden Dragon Sword, A-3, Raven 5-->
+		<ITEMSET melee="17" primary="506010" secondary="4011" />
+		<!--Rusty Sword, Iron Crow Revolver x2, Adventurer Shotgun-->
+		<ITEMSET melee="2" primary="504502" secondary="506009" />
+		<!--, Iron Crow Rifle, Red Arquebus-->
+		<ITEMSET melee="300014" primary="507002" secondary="506007" />
+		<!--Alloy Kodachi, Raven 8, Nico MG-K11-->
+		<ITEMSET melee="72" primary="4021" secondary="8004" />
+		<!--샤크티스, Renard V x2, Raptor 120-->
+		<ITEMSET melee="502026" primary="5008" secondary="4003" />
+		<!--Goblin Commander's Club, Raven 5, Soldier's Shotgun-->
+		<ITEMSET melee="400519" primary="4011" secondary="506012" />
+		<!--, Raven 8, Iris SMG x2-->
+		<ITEMSET melee="300033" primary="4021" secondary="505002" />
+		<!--Dark Karma, Requiem, CK-1-->
+		<ITEMSET melee="502003" primary="504005" secondary="509007" />
+		<!--Dark-Sun Martial Dagger, Dynax 8000, Phantom Cruise-->
+		<ITEMSET melee="500003" primary="4509" secondary="4505" />
+		<!--, Adventurer Shotgun, Shattered Iron-->
+		<ITEMSET melee="300017" primary="506009" secondary="400513" />
+		<!--Palmpow's Ice Blade, Goblin King's Rocket, Breaker 3-->
+		<ITEMSET melee="400531" primary="400501" secondary="6001" />
+		<!--Golden Dragon Dual Sword, Thor, Walcom Warrior 88-->
+		<ITEMSET melee="502007" primary="506011" secondary="7008" />
+		<!--PlungerX, Raven 5 x2, Soldier's Shotgun-->
+		<ITEMSET melee="502009" primary="4012" secondary="506012" />
+		<!--Goblin Commander's Club, Walcom L1 mk. II, Nico MG-K11-->
+		<ITEMSET melee="400519" primary="9003" secondary="8004" />
+		<!--Dual Scimitar, Soldier's Rifle, A-3-->
+		<ITEMSET melee="35" primary="507005" secondary="506010" />
+		<!--, Raven 6, Zaurus B x2-->
+		<ITEMSET melee="300015" primary="4013" secondary="4514" />
+		<!--, Raven 8 x2, Raptor 80-->
+		<ITEMSET melee="300015" primary="4022" secondary="4009" />
+		<!--, Ellan x2, Raptor 50 x2-->
+		<ITEMSET melee="300022" primary="5006" secondary="4002" />
+		<!--, Raptor 120 x2, Walcom XL-->
+		<ITEMSET melee="300023" primary="4004" secondary="5013" />
+		<!--Black Iron Sword, Dynax 7000, Iron Crow Rocket-->
+		<ITEMSET melee="67" primary="4501" secondary="509002" />
+		<!--Dark-Sun Martial Dagger, Renard VI, Thor-->
+		<ITEMSET melee="500003" primary="5015" secondary="506011" />
+		<!--, Raven 8 x2, Raven 8 x2-->
+		<ITEMSET melee="300015" primary="4022" secondary="4022" />
+		<!--, Zaurus B x2, Raptor 120-->
+		<ITEMSET melee="300012" primary="4514" secondary="4003" />
+		<!--High-class Sword, Veteran Soldier's Pistol, Iris Revolver x2-->
+		<ITEMSET melee="15" primary="504009" secondary="504501" />
+		<!--, Soldier's Revolver, Walcom L1 mk. II-->
+		<ITEMSET melee="300014" primary="504507" secondary="9003" />
+		<!--, Golden Olympus, Nico MG-K11-->
+		<ITEMSET melee="300034" primary="504505" secondary="8004" />
+		<!--Ridic Hunter Dagger, Veteran Soldier's Rifle, Walcom XL x2-->
+		<ITEMSET melee="500004" primary="507006" secondary="5014" />
+		<!--Alloy Sword, Judgment, Elite Soldier's Shotgun-->
+		<ITEMSET melee="68" primary="504006" secondary="506014" />
+		<!--Cakram, Goblin King's Rocket, Adventurer Shotgun-->
+		<ITEMSET melee="500005" primary="400501" secondary="506009" />
+		<!--, Nico MG-K9, Walcom S6 x2-->
+		<ITEMSET melee="300026" primary="8002" secondary="5010" />
+		<!--Harvester, Maxwell RW-66, New Renard V x2-->
+		<ITEMSET melee="502016" primary="9006" secondary="5012" />
+		<!--Ritual Dagger, 디스트로이어, Soldier's Pistol-->
+		<ITEMSET melee="500008" primary="506017" secondary="504008" />
+		<!--Elite Soldier's Scimitar, Adventurer Shotgun, Jaws Launcher-->
+		<ITEMSET melee="502025" primary="506009" secondary="509005" />
+		<!--Elite Soldier's Scimitar, A-3, Maxwell RW-77-->
+		<ITEMSET melee="502025" primary="506010" secondary="9002" />
+		<!--, Nico MG-K8, Storm Bringer-->
+		<ITEMSET melee="300039" primary="8001" secondary="506008" />
+		<!--Military Dagger, CRUZ-FX177, Walcom Warrior 88-->
+		<ITEMSET melee="3" primary="509004" secondary="7008" />
+	</SET>
+	<SET id="2">
+		<!--Ridic Hunter Dagger, Maxwell LX30, Iris Revolver x2-->
+		<ITEMSET melee="500004" primary="7004" secondary="504501" />
+		<!--PlungerX, Ellan x2, Veteran Soldier's SMG-->
+		<ITEMSET melee="502010" primary="5006" secondary="505007" />
+		<!--Lightweight Dagger, Walcom S7 x2, Veteran Soldier's Launcher-->
+		<ITEMSET melee="4" primary="5020" secondary="509011" />
+		<!--, Peacemaker x2, Minic 567 x2-->
+		<ITEMSET melee="300022" primary="504504" secondary="4006" />
+		<!--Elite Soldier's Katana, Iron Crow Rifle, Incinerator-->
+		<ITEMSET melee="502022" primary="507002" secondary="508002" />
+		<!--Dual Scimitar, Iron Crow Pistol x2, A-9 Iconoclast-->
+		<ITEMSET melee="35" primary="504004" secondary="509009" />
+		<!--Slicer, Renard V, Raven 5-->
+		<ITEMSET melee="502017" primary="5007" secondary="4011" />
+		<!--Alloy Dagger, Dynax 7000, Walcom S7 x2-->
+		<ITEMSET melee="64" primary="4501" secondary="5020" />
+		<!--Black Iron Sword, Iris Revolver x2, Red Arquebus-->
+		<ITEMSET melee="67" primary="504501" secondary="506007" />
+		<!--Iron Sword, Jaws Launcher, Requiem-->
+		<ITEMSET melee="12" primary="509005" secondary="504005" />
+		<!--, Iron Crow Pistol x2, GM 머신건-->
+		<ITEMSET melee="300018" primary="504004" secondary="399997" />
+		<!--, Jaws Launcher, Phantom Cruise x2-->
+		<ITEMSET melee="300032" primary="509005" secondary="4506" />
+		<!--Red Blood, Nico R5, A-3-->
+		<ITEMSET melee="34" primary="7002" secondary="506010" />
+		<!--, Zaurus B x2, Elite Soldier's Shotgun-->
+		<ITEMSET melee="601006" primary="4514" secondary="506014" />
+		<!--Red Blood, Raven 5 x2, Adventurer Shotgun-->
+		<ITEMSET melee="34" primary="4012" secondary="506009" />
+		<!--Veteran Soldier's Katana, Raven 8, Soldier's Shotgun-->
+		<ITEMSET melee="502021" primary="4021" secondary="506012" />
+		<!--Outdated Kodachi, CK-1, Minic 567 MK.II-->
+		<ITEMSET melee="69" primary="509007" secondary="4511" />
+		<!--Ridic Hunter Dagger, Incinerator, Iris Pistol x2-->
+		<ITEMSET melee="500004" primary="508002" secondary="504003" />
+		<!--Golden Dragon Sword, Soldier's Shotgun, Raptor 120-->
+		<ITEMSET melee="17" primary="506012" secondary="4003" />
+		<!--Black Iron Sword, Biggie Shotgun, Optimite Launcher-->
+		<ITEMSET melee="67" primary="506003" secondary="509008" />
+		<!--Military Sword, Phantom Cruise, Zaurus A-->
+		<ITEMSET melee="13" primary="4505" secondary="4007" />
+		<!--, Renard V, Veteran Soldier's SMG-->
+		<ITEMSET melee="300034" primary="5007" secondary="505007" />
+		<!--Chain Sword, Raptor 120, Walcom Warrior 88-->
+		<ITEMSET melee="502013" primary="4003" secondary="7008" />
+		<!--Dark Karma, Golden Olympus, Nico R5-->
+		<ITEMSET melee="502003" primary="504505" secondary="7002" />
+		<!--, Walcom XLS x2, Peacemaker x2-->
+		<ITEMSET melee="300035" primary="5018" secondary="504504" />
+		<!--Palmpow's Ice Blade, Zaurus B x2, Raptor 80-->
+		<ITEMSET melee="400531" primary="4514" secondary="4009" />
+		<!--Steel Dagger, Iris Revolver x2, Iron Crow Rocket-->
+		<ITEMSET melee="61" primary="504501" secondary="509002" />
+		<!--Iron Kodachi, Breaker 3, Iris Revolver x2-->
+		<ITEMSET melee="31" primary="6001" secondary="504501" />
+		<!--Inferno, Iron Crow Rifle, Raven 5-->
+		<ITEMSET melee="500007" primary="507002" secondary="4011" />
+		<!--Bonewrecker, Nico MG-K8, Raven 6-->
+		<ITEMSET melee="502018" primary="8001" secondary="4013" />
+		<!--PlungerX, Renard V, Walcom XL-->
+		<ITEMSET melee="502010" primary="5007" secondary="5013" />
+		<!--Ridic Hunter Dagger, Maxwell RW-88, New Renard V x2-->
+		<ITEMSET melee="500004" primary="9004" secondary="5012" />
+		<!--Alloy Sword, Raptor 200 x2, Shattered Iron-->
+		<ITEMSET melee="68" primary="4020" secondary="400513" />
+		<!--Rusty Sword, Dynax 7000, Garm-->
+		<ITEMSET melee="2" primary="4501" secondary="507004" />
+		<!--Wings of Catastrophe, Phantom Cruise, CRUZ-FX177-->
+		<ITEMSET melee="400508" primary="4505" secondary="509004" />
+		<!--Veteran Soldier's Dagger, Incinerator, Nico MG-K11-->
+		<ITEMSET melee="500010" primary="508002" secondary="8004" />
+		<!--Justice, Iron Crow Rifle, Iris Pistol x2-->
+		<ITEMSET melee="502014" primary="507002" secondary="504003" />
+		<!--Elite Soldier's Dagger, Nico R2, Minic 567 Limited x2-->
+		<ITEMSET melee="500011" primary="7001" secondary="4504" />
+		<!--, Iron Crow Rifle, Phantom Cruise x2-->
+		<ITEMSET melee="300025" primary="507002" secondary="4506" />
+		<!--, Walcom XLS x2, Prime TX-->
+		<ITEMSET melee="300013" primary="5018" secondary="507003" />
+		<!--Ridic Hunter Dagger, Walcom L1 mk. II, Iron Crow Pistol x2-->
+		<ITEMSET melee="500004" primary="9003" secondary="504004" />
+		<!--Phantom Slaying Dagger, Minic 567, Walcom XL-->
+		<ITEMSET melee="6" primary="4005" secondary="5013" />
+		<!--Veteran Soldier's Dagger, Nico MG-KX, New Renard V x2-->
+		<ITEMSET melee="500010" primary="8003" secondary="5012" />
+		<!--Battle Axe, Maxwell RW-66, Jaws Launcher-->
+		<ITEMSET melee="400514" primary="9006" secondary="509005" />
+		<!--Dark Karma, Golden Olympus, Iron Crow Rifle-->
+		<ITEMSET melee="502003" primary="504505" secondary="507002" />
+		<!--Dark-Sun Martial Dagger, CK-1, Iris Rocket-->
+		<ITEMSET melee="500003" primary="509007" secondary="509001" />
+		<!--Silver Fang, Nico MG-KX, Prime TX-->
+		<ITEMSET melee="502015" primary="8003" secondary="507003" />
+		<!--Hunter Sword, Nico MG-K8, Nico MG-K8-->
+		<ITEMSET melee="66" primary="8001" secondary="8001" />
+		<!--Ritual Dagger, New Renard V, Minic 567 x2-->
+		<ITEMSET melee="500008" primary="5011" secondary="4006" />
+		<!--, Palmpow's Launcher, Iron Crow Pistol x2-->
+		<ITEMSET melee="300025" primary="400528" secondary="504004" />
+		<!--Hunter Dagger, 디스트로이어, Raptor 120-->
+		<ITEMSET melee="62" primary="506017" secondary="4003" />
+		<!--Battle Axe, Jaws Launcher, Optimite Launcher-->
+		<ITEMSET melee="400514" primary="509005" secondary="509008" />
+		<!--, Raptor 50 x2, Iris Pistol Limited x2-->
+		<ITEMSET melee="300021" primary="4002" secondary="4023" />
+		<!--Red Blood, Maxwell RW-99, Renard V x2-->
+		<ITEMSET melee="34" primary="9007" secondary="5008" />
+		<!--Devil Slayer, GM 머신건, Soldier's SMG-->
+		<ITEMSET melee="16" primary="399997" secondary="505006" />
+		<!--PlungerX, Raven 7, Peacemaker x2-->
+		<ITEMSET melee="502010" primary="4017" secondary="504504" />
+		<!--PlungerX, Soldier's Revolver, Palmpow's Launcher-->
+		<ITEMSET melee="502009" primary="504507" secondary="400528" />
+		<!--, Iron Crow Machine Gun, Raven 5-->
+		<ITEMSET melee="300016" primary="508001" secondary="4011" />
+		<!--Soldier's Dagger, Iron Crow Machine Gun, A-3-->
+		<ITEMSET melee="500009" primary="508001" secondary="506010" />
+		<!--Umbrella , Raptor 80, Raptor 160-->
+		<ITEMSET melee="502019" primary="4009" secondary="4015" />
+		<!--, Phantom Cruise, Iron Crow Shotgun-->
+		<ITEMSET melee="300022" primary="4505" secondary="506002" />
+		<!--Steel Dagger, Maxwell RW-77, Iron Crow SMG x2-->
+		<ITEMSET melee="61" primary="9002" secondary="505003" />
+		<!--Military Kodachi, A-3, Raptor 120 x2-->
+		<ITEMSET melee="70" primary="506010" secondary="4004" />
+		<!--Mace, Walcom S7, Soldier's Revolver-->
+		<ITEMSET melee="502005" primary="5019" secondary="504507" />
+		<!--Veteran Soldier's Katana, Jaws Launcher, New Renard V-->
+		<ITEMSET melee="502021" primary="509005" secondary="5011" />
+		<!--, Walcom L1 mk. II, Avenger MK.II-->
+		<ITEMSET melee="300023" primary="9003" secondary="6007" />
+		<!--Dual Scimitar, Veteran Soldier's Rifle, Iris Machine Gun-->
+		<ITEMSET melee="35" primary="507006" secondary="508003" />
+		<!--Demon Bringer, Nico MG-K8, Thor-->
+		<ITEMSET melee="400502" primary="8001" secondary="506011" />
+		<!--, Dynax 7000, Raptor 50-->
+		<ITEMSET melee="300032" primary="4501" secondary="4001" />
+		<!--Alloy Kodachi, Dynax 800C x2, Maxwell LX44-->
+		<ITEMSET melee="72" primary="4516" secondary="7006" />
+		<!--Red Blood, Iron Crow Rifle, Nico MG-KX-->
+		<ITEMSET melee="34" primary="507002" secondary="8003" />
+		<!--, Raven 6, Minic 567 x2-->
+		<ITEMSET melee="300011" primary="4013" secondary="4006" />
+		<!--, Palmpow's Launcher, CK-1-->
+		<ITEMSET melee="300035" primary="400528" secondary="509007" />
+		<!--Battle Axe, New Renard V x2, Optimite Launcher-->
+		<ITEMSET melee="400514" primary="5012" secondary="509008" />
+		<!--, Soldier's Machine Gun, Soldier's SMG-->
+		<ITEMSET melee="300017" primary="508004" secondary="505006" />
+		<!--Golden Dragon Dual Sword, Raptor 50 x2, Walcom L1 mk. II-->
+		<ITEMSET melee="502007" primary="4002" secondary="9003" />
+		<!--Soldier's Scimitar, Iron Crow Shotgun, Walcom XLS-->
+		<ITEMSET melee="502023" primary="506002" secondary="5017" />
+		<!--Soldier's Scimitar, Walcom S7, Raven 8 x2-->
+		<ITEMSET melee="502023" primary="5019" secondary="4022" />
+		<!--Lightweight Dagger, Cruelizon, Peacemaker x2-->
+		<ITEMSET melee="4" primary="506004" secondary="504504" />
+		<!--, Raven 8, CRUZ-FX177-->
+		<ITEMSET melee="300037" primary="4021" secondary="509004" />
+		<!--Rusty Dagger, Renard x2, Nico R5-->
+		<ITEMSET melee="1" primary="5002" secondary="7002" />
+		<!--, Soldier's Machine Gun, Raptor 200 x2-->
+		<ITEMSET melee="601006" primary="508004" secondary="4020" />
+		<!--Shura, Raven 5, Phantom Cruise x2-->
+		<ITEMSET melee="18" primary="4011" secondary="4506" />
+		<!--Harvester, Walcom XLS x2, Iron Crow Rifle-->
+		<ITEMSET melee="502016" primary="5018" secondary="507002" />
+		<!--Wooden Sword, Raptor 200, Walcom S5 x2-->
+		<ITEMSET melee="502004" primary="4019" secondary="5004" />
+		<!--Adventurer Long Sword, Nico R2, Bird's Sniper Rifle SN40-->
+		<ITEMSET melee="502001" primary="7001" secondary="10001" />
+		<!--샤크티스, Maxwell RW-66, CK-1-->
+		<ITEMSET melee="502026" primary="9006" secondary="509007" />
+		<!--Iron Dagger, Iron Crow Rifle, Walcom S6-->
+		<ITEMSET melee="11" primary="507002" secondary="5009" />
+		<!--Iron Kodachi, Elite Soldier's Revolver, Ellan x2-->
+		<ITEMSET melee="31" primary="504509" secondary="5006" />
+		<!--Koden Knife, GM 머신건, Breaker 9P-->
+		<ITEMSET melee="500002" primary="399997" secondary="6008" />
+		<!--Thunder Bird, Avenger, Zaurus A-->
+		<ITEMSET melee="502008" primary="6005" secondary="4007" />
+		<!--Demon Bringer, Minic 567, Raven 8 x2-->
+		<ITEMSET melee="400502" primary="4005" secondary="4022" />
+		<!--Cakram, Raptor 50 x2, Iris Pistol Limited x2-->
+		<ITEMSET melee="500005" primary="4002" secondary="4023" />
+		<!--, Renard V, GM 머신건-->
+		<ITEMSET melee="300014" primary="5007" secondary="399997" />
+		<!--Harvester, Nico R2, Maxwell LX30-->
+		<ITEMSET melee="502016" primary="7001" secondary="7004" />
+		<!--Salamanda, Jaws Launcher, Zaurus A-->
+		<ITEMSET melee="502002" primary="509005" secondary="4007" />
+		<!--Elite Soldier's Katana, Walcom S5, GM 머신건-->
+		<ITEMSET melee="502022" primary="5003" secondary="399997" />
+		<!--Outdated Kodachi, Raptor 200 x2, Raptor 50-->
+		<ITEMSET melee="69" primary="4020" secondary="4001" />
+		<!--Military Dagger, Adventurer Shotgun, Peacemaker x2-->
+		<ITEMSET melee="3" primary="506009" secondary="504504" />
+		<!--Elite Soldier's Katana, Iris Revolver x2, A-9 Iconoclast-->
+		<ITEMSET melee="502022" primary="504501" secondary="509009" />
+		<!--, Dynax 8000, Iris SMG x2-->
+		<ITEMSET melee="300013" primary="4509" secondary="505002" />
+	</SET>
+	<SET id="3">
+		<!--Inferno, Walcom XLS, Phantom Cruise x2-->
+		<ITEMSET melee="500007" primary="5017" secondary="4506" />
+		<!--Golden Goblin Club, Veteran Soldier's Rifle, Walcom Warrior 88-->
+		<ITEMSET melee="400525" primary="507006" secondary="7008" />
+		<!--Adventurer Long Sword, CK-1, Iron Crow Rocket-->
+		<ITEMSET melee="502001" primary="509007" secondary="509002" />
+		<!--, Elite Soldier's Revolver, Raptor 80-->
+		<ITEMSET melee="300024" primary="504509" secondary="4009" />
+		<!--Iron Kodachi, Raptor 200, Zaurus A x2-->
+		<ITEMSET melee="31" primary="4019" secondary="4008" />
+		<!--Battle Axe, Peacemaker x2, Palmpow's Launcher-->
+		<ITEMSET melee="400514" primary="504504" secondary="400528" />
+		<!--ROCK, CK-1, New Renard V-->
+		<ITEMSET melee="502011" primary="509007" secondary="5011" />
+		<!--, Iron Crow Revolver x2, Thor-->
+		<ITEMSET melee="300026" primary="504502" secondary="506011" />
+		<!--, Raptor 200 x2, Walcom L1-->
+		<ITEMSET melee="300034" primary="4020" secondary="9001" />
+		<!--, Minic 567, Phantom Cruise x2-->
+		<ITEMSET melee="300032" primary="4005" secondary="4506" />
+		<!--Crystal Blade, Ellan x2, Raptor 160-->
+		<ITEMSET melee="8" primary="5006" secondary="4015" />
+		<!--Iron Kodachi, Raptor 200, Minic 567 MK.II-->
+		<ITEMSET melee="31" primary="4019" secondary="4511" />
+		<!--Black Iron Dagger, Soldier's Revolver, Walcom XL-->
+		<ITEMSET melee="63" primary="504507" secondary="5013" />
+		<!--Mace, Nico MG-KX, Walcom S6 x2-->
+		<ITEMSET melee="502005" primary="8003" secondary="5010" />
+		<!--High-Class Kodachi, Minic 567 MK.II, Minic 567 x2-->
+		<ITEMSET melee="33" primary="4511" secondary="4006" />
+		<!--, Dynax 8000 x2, Soldier's Revolver-->
+		<ITEMSET melee="300021" primary="4510" secondary="504507" />
+		<!--Veteran Soldier's Dagger, Dynax 800C x2, Iris Pistol x2-->
+		<ITEMSET melee="500010" primary="4516" secondary="504003" />
+		<!--Steel Sword, Dynax 800C x2, Zaurus A-->
+		<ITEMSET melee="65" primary="4516" secondary="4007" />
+		<!--Golden Dragon Sword, Walcom S7, Soldier's Shotgun-->
+		<ITEMSET melee="17" primary="5019" secondary="506012" />
+		<!--PlungerX, Breaker 8, Minic 567 Limited-->
+		<ITEMSET melee="502009" primary="6006" secondary="4503" />
+		<!--Military Dagger, Goblin King's Rocket, Soldier's SMG-->
+		<ITEMSET melee="3" primary="400501" secondary="505006" />
+		<!--Rusty Sword, Incinerator, Walcom L1 mk. II-->
+		<ITEMSET melee="2" primary="508002" secondary="9003" />
+		<!--Golden Dragon Dual Sword, Soldier's Rifle, Veteran Soldier's Launcher-->
+		<ITEMSET melee="502007" primary="507005" secondary="509011" />
+		<!--Golden Dragon Dual Sword, Raptor 80, Walcom S6-->
+		<ITEMSET melee="502007" primary="4009" secondary="5009" />
+		<!--Golden Dragon Dual Sword, Walcom S7, Walcom L1 mk. II-->
+		<ITEMSET melee="502007" primary="5019" secondary="9003" />
+		<!--, Veteran Soldier's Shotgun, Peacemaker x2-->
+		<ITEMSET melee="300039" primary="506013" secondary="504504" />
+		<!--Rusty Dagger, Minic 567 MK.II, Nico MG-K9-->
+		<ITEMSET melee="1" primary="4511" secondary="8002" />
+		<!--Salamanda, Iris Revolver x2, Soldier's SMG-->
+		<ITEMSET melee="502002" primary="504501" secondary="505006" />
+		<!--Alloy Sword, CRUZ-FX177, Maxwell LX44-->
+		<ITEMSET melee="68" primary="509004" secondary="7006" />
+		<!--Golden Dragon Sword, Raven 8, Palmpow's Launcher-->
+		<ITEMSET melee="17" primary="4021" secondary="400528" />
+		<!--Golden Goblin Club, Walcom XLS, Iris Machine Gun-->
+		<ITEMSET melee="400525" primary="5017" secondary="508003" />
+		<!--Soldier's Katana, CK-1, Raptor 80-->
+		<ITEMSET melee="502020" primary="509007" secondary="4009" />
+		<!--Golden Dragon Dual Sword, Elite Soldier's Revolver, Nico MG-KX-->
+		<ITEMSET melee="502007" primary="504509" secondary="8003" />
+		<!--Adventurer Dagger, Nico MG-KX, Soldier's Pistol-->
+		<ITEMSET melee="500001" primary="8003" secondary="504008" />
+		<!--Lightweight Sword, Dynax 8000, Garm-->
+		<ITEMSET melee="14" primary="4509" secondary="507004" />
+		<!--Koden Knife, Veteran Soldier's Launcher, Raven 5-->
+		<ITEMSET melee="500002" primary="509011" secondary="4011" />
+		<!--Wooden Sword, Phantom Cruise, Peacemaker x2-->
+		<ITEMSET melee="502004" primary="4505" secondary="504504" />
+		<!--Shadow Vane, Raptor 200 x2, Dynax 800C-->
+		<ITEMSET melee="500006" primary="4020" secondary="4515" />
+		<!--Veteran Soldier's Scimitar, Punisher x2, Raven 8 x2-->
+		<ITEMSET melee="502024" primary="505005" secondary="4022" />
+		<!--Soldier's Dagger, Judgment, Phantom Cruise-->
+		<ITEMSET melee="500009" primary="504006" secondary="4505" />
+		<!--Steel Sword, CRUZ-FX177, Phantom Cruise-->
+		<ITEMSET melee="65" primary="509004" secondary="4505" />
+		<!--Golden Goblin Club, Walcom XL x2, Walcom L1 mk. II-->
+		<ITEMSET melee="400525" primary="5014" secondary="9003" />
+		<!--Koden Knife, Punisher x2, Elite Soldier's Launcher-->
+		<ITEMSET melee="500002" primary="505005" secondary="509012" />
+		<!--Rusty Sword, Raptor 120, Raptor 120-->
+		<ITEMSET melee="2" primary="4003" secondary="4003" />
+		<!--Ridic Hunter Dagger, Nico R5, Breaker 9P-->
+		<ITEMSET melee="500004" primary="7002" secondary="6008" />
+		<!--, Raven 8, Zaurus A x2-->
+		<ITEMSET melee="300022" primary="4021" secondary="4008" />
+		<!--Shura, Nico R2, Walcom XLS-->
+		<ITEMSET melee="18" primary="7001" secondary="5017" />
+		<!--Black Iron Sword, Maxwell LX30, Nico MG-K9-->
+		<ITEMSET melee="67" primary="7004" secondary="8002" />
+		<!--, Renard x2, Incinerator-->
+		<ITEMSET melee="300014" primary="5002" secondary="508002" />
+		<!--PlungerX, Renard V, Nico R7-->
+		<ITEMSET melee="502009" primary="5007" secondary="7007" />
+		<!--Black Iron Kodachi, Raven 6, Nico MG-KX-->
+		<ITEMSET melee="71" primary="4013" secondary="8003" />
+		<!--Shura, Raven 6, 디스트로이어-->
+		<ITEMSET melee="18" primary="4013" secondary="506017" />
+		<!--샤크티스, Walcom XLS x2, Nico MG-K9-->
+		<ITEMSET melee="502026" primary="5018" secondary="8002" />
+		<!--Lightweight Dagger, Soldier's Rifle, Thor-->
+		<ITEMSET melee="4" primary="507005" secondary="506011" />
+		<!--ROCK, Pressure RX, Raptor 120-->
+		<ITEMSET melee="502011" primary="509003" secondary="4003" />
+		<!--Military Sword, Renard V, Raptor 50-->
+		<ITEMSET melee="13" primary="5007" secondary="4001" />
+		<!--Black Dragon Sword, Walcom L1 mk. II, Walcom S6-->
+		<ITEMSET melee="502012" primary="9003" secondary="5009" />
+		<!--Salamanda, Biggie Shotgun, Iron Crow Rocket-->
+		<ITEMSET melee="502002" primary="506003" secondary="509002" />
+		<!--Lightweight Kodachi, Incinerator, Nico MG-K11-->
+		<ITEMSET melee="32" primary="508002" secondary="8004" />
+		<!--Alloy Kodachi, A-3, Walcom S5 x2-->
+		<ITEMSET melee="72" primary="506010" secondary="5004" />
+		<!--Elite Soldier's Dagger, Storm Bringer, Walcom S5 x2-->
+		<ITEMSET melee="500011" primary="506008" secondary="5004" />
+		<!--Rusty Sword, Peacemaker x2, Iris Pistol Limited x2-->
+		<ITEMSET melee="2" primary="504504" secondary="4023" />
+		<!--Silver Fang, Iron Crow Revolver x2, Zaurus A-->
+		<ITEMSET melee="502015" primary="504502" secondary="4007" />
+		<!--Black Iron Kodachi, Thor, Requiem-->
+		<ITEMSET melee="71" primary="506011" secondary="504005" />
+		<!--Red Blood, Avenger, Pioneer-->
+		<ITEMSET melee="34" primary="6005" secondary="506005" />
+		<!--Steel Sword, Breaker 8, Nico MG-K9-->
+		<ITEMSET melee="65" primary="6006" secondary="8002" />
+		<!--High-Class Dagger, Breaker 3, Walcom S7 x2-->
+		<ITEMSET melee="5" primary="6001" secondary="5020" />
+		<!--Alloy Kodachi, Nico MG-K9, 디스트로이어-->
+		<ITEMSET melee="72" primary="8002" secondary="506017" />
+		<!--, Renard V, Walcom S7 x2-->
+		<ITEMSET melee="300023" primary="5007" secondary="5020" />
+		<!--, Dynax 8000 x2, Minic 567 Limited-->
+		<ITEMSET melee="300012" primary="4510" secondary="4503" />
+		<!--, Walcom S6 x2, Iron Crow Rocket-->
+		<ITEMSET melee="300023" primary="5010" secondary="509002" />
+		<!--ROCK, Nico R5, Pressure RX-->
+		<ITEMSET melee="502011" primary="7002" secondary="509003" />
+		<!--Lightweight Sword, Requiem, Raven 8 x2-->
+		<ITEMSET melee="14" primary="504005" secondary="4022" />
+		<!--Rusty Sword, Raven 5, Nico R5-->
+		<ITEMSET melee="2" primary="4011" secondary="7002" />
+		<!--Battle Axe, Walcom S6 x2, Veteran Soldier's SMG-->
+		<ITEMSET melee="400514" primary="5010" secondary="505007" />
+		<!--High-Class Dagger, Elite Soldier's Revolver, CK-1-->
+		<ITEMSET melee="5" primary="504509" secondary="509007" />
+		<!--PlungerX, Walcom S6, Pioneer-->
+		<ITEMSET melee="502010" primary="5009" secondary="506005" />
+		<!--Dual Scimitar, Breaker 3, Soldier's Launcher-->
+		<ITEMSET melee="35" primary="6001" secondary="509010" />
+		<!--High-Class Dagger, Avenger, Walcom XL-->
+		<ITEMSET melee="5" primary="6005" secondary="5013" />
+		<!--, Raven 8, Minic 567 x2-->
+		<ITEMSET melee="300023" primary="4021" secondary="4006" />
+		<!--Slicer, Maxwell RW-88, Phantom Cruise-->
+		<ITEMSET melee="502017" primary="9004" secondary="4505" />
+		<!--Rusty Dagger, Raptor 80, Palmpow's Launcher-->
+		<ITEMSET melee="1" primary="4009" secondary="400528" />
+		<!--PlungerX, CK-1, Walcom XLS-->
+		<ITEMSET melee="502009" primary="509007" secondary="5017" />
+		<!--Golden Dragon Sword, Veteran Soldier's Pistol, Nico MG-K8-->
+		<ITEMSET melee="17" primary="504009" secondary="8001" />
+		<!--Black Dragon Sword, Raptor 50 x2, Requiem-->
+		<ITEMSET melee="502012" primary="4002" secondary="504005" />
+		<!--Lightweight Kodachi, Veteran Soldier's Rifle, Minic 567 Limited-->
+		<ITEMSET melee="32" primary="507006" secondary="4503" />
+		<!--Warlord's Gut Ripper, Walcom XLS, Walcom XL-->
+		<ITEMSET melee="7" primary="5017" secondary="5013" />
+		<!--Mace, Biggie Shotgun, Zaurus A x2-->
+		<ITEMSET melee="502005" primary="506003" secondary="4008" />
+		<!--Dark Karma, Maxwell RW-88, Iris Rocket-->
+		<ITEMSET melee="502003" primary="9004" secondary="509001" />
+		<!--Adventurer Dagger, Nico MG-K8, Nico MG-K8-->
+		<ITEMSET melee="500001" primary="8001" secondary="8001" />
+		<!--Black Iron Kodachi, Minic 567, Pioneer-->
+		<ITEMSET melee="71" primary="4005" secondary="506005" />
+		<!--, Walcom S7 x2, Nico R5-->
+		<ITEMSET melee="300037" primary="5020" secondary="7002" />
+		<!--, Breaker 5, Raven 6-->
+		<ITEMSET melee="300016" primary="6002" secondary="4013" />
+		<!--Palmpow's Ice Blade, Walcom L1 mk. II, Bird's Sniper Rifle SN40-->
+		<ITEMSET melee="400531" primary="9003" secondary="10001" />
+		<!--Iron Sword, Iron Crow Pistol x2, Iris Rocket-->
+		<ITEMSET melee="12" primary="504004" secondary="509001" />
+		<!--Demon Bringer, Pressure RX, Raptor 200-->
+		<ITEMSET melee="400502" primary="509003" secondary="4019" />
+		<!--샤크티스, Iron Crow Revolver x2, Iron Crow Revolver x2-->
+		<ITEMSET melee="502026" primary="504502" secondary="504502" />
+		<!--Battle Axe, Nico MG-K9, Maxwell RW-77-->
+		<ITEMSET melee="400514" primary="8002" secondary="9002" />
+		<!--Inferno, Maxwell RW-77, New Renard V x2-->
+		<ITEMSET melee="500007" primary="9002" secondary="5012" />
+		<!--Ritual Dagger, Walcom S5 x2, Soldier's Shotgun-->
+		<ITEMSET melee="500008" primary="5004" secondary="506012" />
+		<!--, New Renard V x2, Elite Soldier's Launcher-->
+		<ITEMSET melee="300013" primary="5012" secondary="509012" />
+	</SET>
+</XML>
