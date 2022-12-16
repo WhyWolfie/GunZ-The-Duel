@@ -268,11 +268,12 @@ GunZ The Duel Releases <br>
 - ninja: [ninja](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20ninja)
 - vampire: [vampire](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20vampire)
 - paintball: [paintball](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20paintball)
-- gunmode: [gunmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gunmode)
+- gunmode(client side only): [gunmode(client side only)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gunmode)
 - infected: [infected](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20infected)
 - no-kstyle: [no-kstyle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20nokstyle)
 - spymode: [spymode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20spy)
 - reverse berserker: [reverse berserker](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20reverse%20berserker)
+- gungame(server&client side): [gungame(server&client side)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gungame)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
