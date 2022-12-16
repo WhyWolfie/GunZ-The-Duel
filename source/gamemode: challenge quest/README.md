@@ -1572,6 +1572,929 @@ Replace <br>
 		return;
 	}
 
+Find <br>
+
+	m_pVMesh->m_vRotXYZ.x = -fAngle*180/pi *.9f;
+
+Replace <br>
+
+	m_pVMesh->SetRotX(-fAngle*180/pi *.9f);
+
+Find <br>
+
+	m_pVMesh->m_vRotXYZ.y = (m_TargetDir.z+0.05f) * 50.f;
+
+Replace <br>
+
+	m_pVMesh->SetRotY((m_TargetDir.z+0.05f) * 50.f);
+
+Find <br>
+
+		m_pVMesh->m_vRotXYZ.x = 0.f;
+		m_pVMesh->m_vRotXYZ.y = 0.f;
+		m_pVMesh->m_vRotXYZ.z = 0.f;
+
+Replace <br>
+
+		m_pVMesh->SetRotXYZ(rvector(0,0,0));
+
+Find <br>
+
+	m_bRendered = m_pVMesh->m_bIsRender;	// ½ÇÁ¦ ·»´õ¸µ µÇ¾ú´Â°¡
+
+	if(m_pVMesh->m_bIsRenderWeapon && (m_pVMesh->GetVisibility() > 0.05f))
+	{
+		DrawEnchant(m_AniState_Lower.Ref(), m_bCharged->Ref());	//mmemory proxy
+	}
+	
+Replace <br>
+
+	m_bRendered = m_pVMesh->IsRender();	// ½ÇÁ¦ ·»´õ¸µ µÇ¾ú´Â°¡
+
+	if(m_pVMesh->IsRenderWeapon() && (m_pVMesh->GetVisibility() > 0.05f))
+	{
+		DrawEnchant(m_AniState_Lower.Ref(), m_bCharged->Ref());	//mmemory proxy
+	}
+
+Open(RVisualMesh.h) <br>
+Find <br>
+
+	void	SetRotXYZ(rvector v);
+
+Replace <br>
+
+	//void	SetRotXYZ(rvector v);
+
+Open(ZEffectMaanger.cpp) <br>
+Find <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->m_bCheckViewFrustum = false;
+
+Replace <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->SetCheckViewFrustum(false);
+
+Find <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->m_bCheckViewFrustum = false;
+
+Replace <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->SetCheckViewFrustum(false);
+
+Find <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->m_bCheckViewFrustum = false;
+
+Replace <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->SetCheckViewFrustum(false);
+
+Find <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->m_bCheckViewFrustum = false;
+
+Replace <br>
+
+	if (pObj->GetUID() == ZGetMyUID())
+		((ZEffectDash*)pNew)->GetVMesh()->SetCheckViewFrustum(false);
+
+Open(ZEffectAniMesh.cpp) <br>
+Find <br>
+
+	m_VMesh.m_bCalcBoxWithScale = true;
+
+Replace <br>
+
+	m_VMesh.SetCalcBoxWithScale(true);
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	if(m_pVMesh->m_bAddGrenade)
+
+
+Replace <br>
+
+	if(m_pVMesh->IsAddGrenade()) {
+
+Find <br>
+
+	m_pVMesh->m_bAddGrenade = false;
+
+Replace <br>
+
+	m_pVMesh->SetAddGrenade(false);
+
+Open(ZEffectAniMesh.cpp) <br>
+Find <br>
+
+	if(m_bRender){
+		m_VMesh.Render();
+		m_bisRendered = m_VMesh.m_bIsRender;
+	} 
+
+Replace <br>
+
+	if(m_bRender){
+		m_VMesh.Render();
+		m_bisRendered = m_VMesh.IsRender();
+	} 
+
+Find <br>
+
+			if(pVMesh)
+				if(!pVMesh->m_bIsRender) return false;
+
+Replace <br>
+
+			if(pVMesh)
+				if(!pVMesh->IsRender()) return false;
+
+
+Open(ZEffectBillboardList.cpp) <br>
+Find <br>
+
+			pChar = (ZCharacter*)ZGetCharacterManager()->Find(p->CharUID);
+
+			if( pChar ) {
+				if( pChar->m_pVMesh ) {
+					if( pChar->m_pVMesh->m_bIsRender==false) {//ºÎ¸ð°¡ ¾È±×·ÁÁ³À¸¸é skip...
+						itr++;
+						continue;
+					}
+				}
+			}
+
+Replace <br>
+
+			pChar = (ZCharacter*) ZGetCharacterManager()->Find(p->CharUID);
+
+			if( pChar ) {
+				if( pChar->m_pVMesh ) {
+					if( pChar->m_pVMesh->IsRender()==false) {//ºÎ¸ð°¡ ¾È±×·ÁÁ³À¸¸é skip...
+						itr++;
+						continue;
+					}
+				}
+			}
+
+
+Open(ZEffectManager.cpp) <br>
+Find <br>
+
+	void ZEffectManager::AddCharacterIcon(ZObject* pObj,int nIcon)
+	{
+		if(!pObj->GetInitialized()) return;
+		if(!pObj->GetVisualMesh()->m_bIsRender) return;
+
+		ZEffect* pNew = NULL;
+		pNew = new ZEffectIcon(m_pCharacterIcons[nIcon],pObj);
+		((ZEffectIcon*)pNew)->SetAlignType(2);
+		Add(pNew);
+	}
+
+Replace <br>
+
+	void ZEffectManager::AddCharacterIcon(ZObject* pObj,int nIcon)
+	{
+		if(!pObj->GetInitialized()) return;
+		if(!pObj->GetVisualMesh()->IsRender()) return;
+
+		ZEffect* pNew = NULL;
+		pNew = new ZEffectIcon(m_pCharacterIcons[nIcon],pObj);
+		((ZEffectIcon*)pNew)->SetAlignType(2);
+		Add(pNew);
+	}
+
+Open(ZEffectStaticMesh.cpp) <br>
+Find <br>
+
+	if(m_bRender) {
+		m_VMesh.Render();
+		m_bisRendered = m_VMesh.m_bIsRender;
+	} 
+
+Replace <br>
+
+	if(m_bRender) {
+		m_VMesh.Render();
+		m_bisRendered = m_VMesh.IsRender();
+	} 
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	if( pItemID[MMCIP_AVATAR] != 0 ) {
+		ChangeEquipAvatarParts(pVMesh, pItemID, nSex, nHair);
+		
+		// ¾Æ¹ÙÅ¸ Âø¿ë½Ã face¸Þ½¬´Â ¼û±ä´Ù
+		pVMesh->m_bSkipRenderFaceParts = true;
+	} 
+	else {
+		ChangeEquipParts(pVMesh, pItemID);		// hair, faceº¸´Ù Àåºñ¸¦ ¸ÕÀú ¹Ù²ã¾ß ÇÑ´Ù.
+
+		// Áö±ÝÀº ¸Ó¸®¾ÆÀÌÅÛ°ú ¸Ó¸®Ä«¶ô ¸Þ½¬¸¦ ¼­·Î °øÀ¯ÇÏ°í ÀÖ´Ù. - ³ªÁß¿¡ ¶¼¾î³õµµ·Ï ÇÏÀÚ
+		if (pItemID[MMCIP_HEAD] == 0) {
+			ChangeCharHair(pVMesh, nSex, nHair);
+		}
+
+		pVMesh->m_bSkipRenderFaceParts = false;
+
+		ChangeCharFace(pVMesh, nSex, nFace);
+	}
+
+Replace <br>
+
+	if( pItemID[MMCIP_AVATAR] != 0 ) {
+		ChangeEquipAvatarParts(pVMesh, pItemID, nSex, nHair);
+		
+		// ¾Æ¹ÙÅ¸ Âø¿ë½Ã face¸Þ½¬´Â ¼û±ä´Ù
+		pVMesh->SetSkipRenderFaceParts(true);
+	} 
+	else
+	{
+		ChangeEquipParts(pVMesh, pItemID);		// hair, faceº¸´Ù Àåºñ¸¦ ¸ÕÀú ¹Ù²ã¾ß ÇÑ´Ù.
+
+		// Áö±ÝÀº ¸Ó¸®¾ÆÀÌÅÛ°ú ¸Ó¸®Ä«¶ô ¸Þ½¬¸¦ ¼­·Î °øÀ¯ÇÏ°í ÀÖ´Ù. - ³ªÁß¿¡ ¶¼¾î³õµµ·Ï ÇÏÀÚ
+		if (pItemID[MMCIP_HEAD] == 0) {
+			ChangeCharHair(pVMesh, nSex, nHair);
+		}
+
+		pVMesh->SetSkipRenderFaceParts(false);
+
+		ChangeCharFace(pVMesh, nSex, nFace);
+	}
+
+
+Find <br>
+
+	if( ( m_pVMesh->m_SelectWeaponMotionType == eq_wd_katana ) || 
+		( m_pVMesh->m_SelectWeaponMotionType == eq_wd_sword  ) || 
+		( m_pVMesh->m_SelectWeaponMotionType == eq_wd_blade  ) ) 
+	{
+
+Replace <br>
+
+	if( ( m_pVMesh->GetSelectWeaponMotionType() == eq_wd_katana ) || 
+		( m_pVMesh->GetSelectWeaponMotionType() == eq_wd_sword  ) || 
+		( m_pVMesh->GetSelectWeaponMotionType() == eq_wd_blade  ) ) 
+	{
+
+
+Find <br>
+
+	if(m_pVMesh->m_SelectWeaponMotionType == eq_wd_blade) 
+	{
+			 if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK1 ) GetDTM(bDTM,0,bMan);
+		else if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK2 ) GetDTM(bDTM,1,bMan);
+		else if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK3 ) GetDTM(bDTM,2,bMan);
+		else if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK4 ) GetDTM(bDTM,3,bMan);
+	}
+
+	m_pVMesh->m_bDrawTracksMotion[0] = bDTM[0];
+	m_pVMesh->m_bDrawTracksMotion[1] = bDTM[1];
+
+Replace <br>
+
+	if(m_pVMesh->GetSelectWeaponMotionType() == eq_wd_blade) 
+	{
+			 if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK1 ) GetDTM(bDTM,0,bMan);
+		else if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK2 ) GetDTM(bDTM,1,bMan);
+		else if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK3 ) GetDTM(bDTM,2,bMan);
+		else if( m_AniState_Lower.Ref() == ZC_STATE_LOWER_ATTACK4 ) GetDTM(bDTM,3,bMan);
+	}
+
+	m_pVMesh->SetDrawTracksMotion(0, bDTM[0]);
+	m_pVMesh->SetDrawTracksMotion(1, bDTM[1]);
+
+
+Find <br>
+
+			if( pWVMesh ) {
+				if(pWVMesh->m_pMesh) {
+					if(strncmp( pWVMesh->m_pMesh->GetName(), "flashbang", 9) == 0) {
+						type = ZC_WEAPON_SP_FLASHBANG;
+					}
+					else if(strncmp( pWVMesh->m_pMesh->GetName(), "smoke", 5) == 0) {
+						type = ZC_WEAPON_SP_SMOKE;
+					}
+					else if(strncmp( pWVMesh->m_pMesh->GetName(), "tear_gas", 8) == 0) {
+						type = ZC_WEAPON_SP_TEAR_GAS;	
+					} 
+					else if(strncmp( pWVMesh->m_pMesh->GetName(), "trap", 4) == 0) {
+						type = ZC_WEAPON_SP_TRAP;
+					}
+					else if(strncmp( pWVMesh->m_pMesh->GetName(), "dynamite", 8) == 0) {
+						type = ZC_WEAPON_SP_DYNAMITE;
+					}
+				}
+			}
+
+Replace <br>
+
+			if( pWVMesh ) {
+				if(pWVMesh->GetMesh()) {
+					if(strncmp( pWVMesh->GetMesh()->GetName(), "flashbang", 9) == 0) {
+						type = ZC_WEAPON_SP_FLASHBANG;
+					}
+					else if(strncmp( pWVMesh->GetMesh()->GetName(), "smoke", 5) == 0) {
+						type = ZC_WEAPON_SP_SMOKE;
+					}
+					else if(strncmp( pWVMesh->GetMesh()->GetName(), "tear_gas", 8) == 0) {
+						type = ZC_WEAPON_SP_TEAR_GAS;	
+					} 
+					else if(strncmp( pWVMesh->GetMesh()->GetName(), "trap", 4) == 0) {
+						type = ZC_WEAPON_SP_TRAP;
+					}
+					else if(strncmp( pWVMesh->GetMesh()->GetName(), "dynamite", 8) == 0) {
+						type = ZC_WEAPON_SP_DYNAMITE;
+					}
+					else if (strncmp(pWVMesh->GetMesh()->GetName(), "spy_stungrenade", 15) == 0) {
+						type = ZC_WEAPON_SPY_STUNGRENADE;
+					}
+				}
+			}
+
+
+Find <br>
+
+	bool ZCharacter::IsMan() 
+	{
+		if(m_pVMesh) {
+			if(m_pVMesh->m_pMesh) {
+				if(strcmp(m_pVMesh->m_pMesh->GetName(),"heroman1")==0) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+
+Replace <br>
+
+
+	bool ZCharacter::IsMan() 
+	{
+		if(m_pVMesh) {
+			if(m_pVMesh->GetMesh()) {
+				if(strcmp(m_pVMesh->GetMesh()->GetName(),"heroman1")==0) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+
+Find <br>
+
+	m_pVMesh->m_vRotXYZ = vRot;
+
+Replace <br>
+
+	m_pVMesh->SetRotXYZ(vRot);
+
+Find <br>
+
+			if(m_pVMesh) {
+
+				AniFrameInfo* pAniLow = m_pVMesh->GetFrameInfo(ani_mode_lower);
+				AniFrameInfo* pAniUp = m_pVMesh->GetFrameInfo(ani_mode_upper);
+				//m_pVMesh->m_pMesh->SetAnimation( m_pVMesh->m_pAniSet[0],m_pVMesh->m_pAniSet[1] );
+				//m_pVMesh->m_pMesh->SetFrame(m_pVMesh->m_nFrame[0],m_pVMesh->m_nFrame[1]);
+				m_pVMesh->m_pMesh->SetAnimation( pAniLow->m_pAniSet,pAniUp->m_pAniSet );
+				m_pVMesh->m_pMesh->SetFrame( pAniLow->m_nFrame , pAniUp->m_nFrame);
+				m_pVMesh->m_pMesh->SetMeshVis(m_pVMesh->m_fVis);
+				m_pVMesh->m_pMesh->SetVisualMesh(m_pVMesh);
+
+				m_pVMesh->m_pMesh->RenderFrame();
+
+				RMeshNode* pNode = NULL;
+
+				pNode = m_pVMesh->m_pMesh->FindNode(eq_parts_pos_info_Head);
+
+				if(pNode) { 
+
+					headpos.x = pNode->m_mat_result._41;
+					headpos.y = pNode->m_mat_result._42;
+					headpos.z = pNode->m_mat_result._43;
+				}
+			}
+
+Replace <br>
+
+			if(m_pVMesh) {
+
+				AniFrameInfo* pAniLow = m_pVMesh->GetFrameInfo(ani_mode_lower);
+				AniFrameInfo* pAniUp = m_pVMesh->GetFrameInfo(ani_mode_upper);
+				//m_pVMesh->GetMesh()->SetAnimation( m_pVMesh->m_pAniSet[0],m_pVMesh->m_pAniSet[1] );
+				//m_pVMesh->GetMesh()->SetFrame(m_pVMesh->m_nFrame[0],m_pVMesh->m_nFrame[1]);
+				m_pVMesh->GetMesh()->SetAnimation( pAniLow->m_pAniSet,pAniUp->m_pAniSet );
+				m_pVMesh->GetMesh()->SetFrame( pAniLow->m_nFrame , pAniUp->m_nFrame);
+				m_pVMesh->GetMesh()->SetMeshVis(m_pVMesh->GetVisibility());
+				m_pVMesh->SetVisualMeshToMesh();
+
+				m_pVMesh->GetMesh()->RenderFrame();
+
+				RMeshNode* pNode = NULL;
+
+				pNode = m_pVMesh->GetMesh()->FindNode(eq_parts_pos_info_Head);
+
+				if(pNode) { 
+
+					headpos.x = pNode->m_mat_result._41;
+					headpos.y = pNode->m_mat_result._42;
+					headpos.z = pNode->m_mat_result._43;
+				}
+			}
+
+Find <br>
+
+	rvector _dir=rvector(0,0,1);
+
+	if(pChar) {
+		if(pChar->m_pVMesh) {
+			rmatrix* mat = &pChar->m_pVMesh->m_WeaponDummyMatrix[weapon_dummy_muzzle_flash];
+
+			_dir.x = mat->_21;
+			_dir.y = mat->_22;
+			_dir.z = mat->_23;
+		}
+	}
+	
+Replace <br>
+
+	rvector _dir=rvector(0,0,1);
+
+	if(pChar) {
+		if(pChar->m_pVMesh) {
+			const rmatrix* mat = &pChar->m_pVMesh->GetWeaponDummyMatrix(weapon_dummy_muzzle_flash);
+
+			_dir.x = mat->_21;
+			_dir.y = mat->_22;
+			_dir.z = mat->_23;
+		}
+	}
+
+Open(ZEffectManager.cpp) <br>
+Find <br>
+
+		rvector _dir=rvector(0,0,1);
+
+		if(pObj) {
+			if(pObj->m_pVMesh) {
+				rmatrix* mat = &pObj->m_pVMesh->m_WeaponDummyMatrix[weapon_dummy_muzzle_flash];
+				
+				_dir.x = mat->_21;
+				_dir.y = mat->_22;
+				_dir.z = mat->_23;
+			}
+		}
+
+Replace <br>
+
+		rvector _dir=rvector(0,0,1);
+
+		if(pObj) {
+			if(pObj->m_pVMesh) {
+				const rmatrix* mat = &pObj->m_pVMesh->GetWeaponDummyMatrix(weapon_dummy_muzzle_flash);
+				
+				_dir.x = mat->_21;
+				_dir.y = mat->_22;
+				_dir.z = mat->_23;
+			}
+		}
+
+Open(ZMyCharacter.cpp) <br>
+Find <br>
+
+	if(m_pVMesh->IsSelectWeaponGrenade()) {	//¸ð¼Ç¸¸ ½ÃÀÛµÈ´Ù..
+		// ¼ö·ùÅº ´øÁö´Â Æ¯Á¤ ÇÁ·¹ÀÓ¿¡¼­ ¹ß»ç..
+		m_pVMesh->m_bGrenadeFire = true;
+		m_pVMesh->m_GrenadeFireTime = timeGetTime();
+	}
+
+Replace <br>
+
+	if(m_pVMesh->IsSelectWeaponGrenade()) {	//¸ð¼Ç¸¸ ½ÃÀÛµÈ´Ù..
+		// ¼ö·ùÅº ´øÁö´Â Æ¯Á¤ ÇÁ·¹ÀÓ¿¡¼­ ¹ß»ç..
+		m_pVMesh->SetGrenadeFire(true);
+		m_pVMesh->SetGrenadeFireTime(timeGetTime());
+	}
+
+Find <br>
+
+	// ´Ü°Ë
+	if( //m_pVMesh->m_SelectWeaponMotionType==eq_wd_dagger ||
+		m_pVMesh->m_SelectWeaponMotionType==eq_ws_dagger ) 
+	{ // dagger
+		if(m_AniState_Upper.Ref()==ZC_STATE_UPPER_SHOT)
+			return;
+
+Replace <br>
+
+	// ´Ü°Ë
+	if( m_pVMesh->GetSelectWeaponMotionType()==eq_wd_dagger ||
+		m_pVMesh->GetSelectWeaponMotionType()==eq_ws_dagger ) 
+	{ // dagger
+		if(m_AniState_Upper.Ref()==ZC_STATE_UPPER_SHOT)
+			return;
+
+Find <br>
+
+	if(GetItems()->GetSelectedWeapon()->GetBulletCurrMagazine() <= 0 ) {
+		if( m_pVMesh->m_SelectWeaponMotionType != eq_wd_grenade && 
+			m_pVMesh->m_SelectWeaponMotionType != eq_wd_item && 
+			m_pVMesh->m_SelectWeaponMotionType != eq_wd_katana && 
+			m_pVMesh->m_SelectWeaponMotionType != eq_ws_dagger && 
+			m_pVMesh->m_SelectWeaponMotionType != eq_wd_dagger && 
+			m_pVMesh->m_SelectWeaponMotionType != eq_wd_sword &&
+			m_pVMesh->m_SelectWeaponMotionType != eq_wd_blade )	{
+			if( GetItems()->GetSelectedWeapon()->GetBulletSpare() <= 0 ) {
+				ZGetSoundEngine()->PlaySEDryFire( GetItems()->GetSelectedWeapon()->GetDesc(), 0, 0, 0, true );
+			} else {
+				m_dwStatusBitPackingValue.Ref().m_bSpMotion = false;// Æ¯¼ö¸ð¼ÇÀº Ãë¼Ò.. 
+				ZPostReload();	
+			}
+		}
+	}
+
+Replace <br>
+
+	if(GetItems()->GetSelectedWeapon()->GetBulletCurrMagazine() <= 0 ) {
+		if( m_pVMesh->GetSelectWeaponMotionType() != eq_wd_grenade && 
+			m_pVMesh->GetSelectWeaponMotionType() != eq_wd_item && 
+			m_pVMesh->GetSelectWeaponMotionType() != eq_wd_katana && 
+			m_pVMesh->GetSelectWeaponMotionType() != eq_ws_dagger && 
+			m_pVMesh->GetSelectWeaponMotionType() != eq_wd_dagger && 
+			m_pVMesh->GetSelectWeaponMotionType() != eq_wd_sword &&
+			m_pVMesh->GetSelectWeaponMotionType() != eq_wd_blade &&
+			m_pVMesh->GetSelectWeaponMotionType() != eq_wd_spycase )	{
+			if( GetItems()->GetSelectedWeapon()->GetBulletSpare() <= 0 ) {
+				ZGetSoundEngine()->PlaySEDryFire( GetItems()->GetSelectedWeapon()->GetDesc(), 0, 0, 0, true );
+			} else {
+				m_dwStatusBitPackingValue.Ref().m_bSpMotion = false;// Æ¯¼ö¸ð¼ÇÀº Ãë¼Ò.. 
+				ZPostReload();	
+			}
+		}
+	}
+
+Find <br>
+
+			switch( m_pVMesh->m_SelectWeaponMotionType ) {
+				case eq_wd_item :		if (uStatus.m_bLand) OnShotItem(); break; //OnShotItem(uStatus.m_bLand); break;
+				case eq_wd_grenade :	OnShotCustom();	break;		
+				case eq_wd_rlauncher :	OnShotRocket();	break;
+				case eq_wd_katana :
+				case eq_ws_dagger :
+				case eq_wd_dagger :
+				case eq_wd_sword :
+				case eq_wd_blade :		OnShotMelee();	break;
+				default:				OnShotRange();	break;
+			}
+		}
+
+		UpdateStylishShoted();
+	}
+
+Replace <br>
+
+		switch( m_pVMesh->GetSelectWeaponMotionType() ) {
+			case eq_wd_item :		if (uStatus.m_bLand) OnShotItem(); break; //OnShotItem(uStatus.m_bLand); break;
+			case eq_wd_grenade :	OnShotCustom();	break;		
+			case eq_wd_rlauncher :	OnShotRocket();	break;
+			case eq_wd_katana :
+			case eq_ws_dagger :
+			case eq_wd_dagger :
+			case eq_wd_sword :
+			case eq_wd_blade :
+			case eq_wd_spycase:		OnShotMelee();	break;
+			default:				OnShotRange();	break;
+		}
+
+		UpdateStylishShoted();
+	}
+
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+				if(pChar!=m_pMyCharacter &&
+					( pChar->m_pVMesh->m_SelectWeaponMotionType==eq_wd_dagger ||
+					pChar->m_pVMesh->m_SelectWeaponMotionType==eq_ws_dagger )) { // dagger
+						pChar->SetAnimationUpper(ZC_STATE_UPPER_SHOT);
+					}
+
+Replace <br>
+
+				if(pChar!=m_pMyCharacter &&
+					( pChar->m_pVMesh->GetSelectWeaponMotionType()==eq_wd_dagger ||
+					pChar->m_pVMesh->GetSelectWeaponMotionType()==eq_ws_dagger )) { // dagger
+						pChar->SetAnimationUpper(ZC_STATE_UPPER_SHOT);
+					}
+
+Find <br>
+
+				if(pChar!=m_pMyCharacter &&
+					( pChar->m_pVMesh->m_SelectWeaponMotionType==eq_wd_dagger ||
+					pChar->m_pVMesh->m_SelectWeaponMotionType==eq_ws_dagger )) { // dagger
+						pChar->SetAnimationUpper(ZC_STATE_UPPER_SHOT);
+					}
+
+Replace <br>
+
+				if(pChar!=m_pMyCharacter &&
+					( pChar->m_pVMesh->GetSelectWeaponMotionType()==eq_wd_dagger ||
+					pChar->m_pVMesh->GetSelectWeaponMotionType()==eq_ws_dagger )) { // dagger
+						pChar->SetAnimationUpper(ZC_STATE_UPPER_SHOT);
+					}
+
+Open(ZMeshView.cpp) <br>
+Find <br>
+
+	RVisualMesh* RTVisualMesh::GetVMesh(bool b)
+	{
+		if(m_pVisualMesh->m_pMesh==NULL) {
+			if( bInit == false ) {
+				if(b) {
+					mlog("RTVisualMesh::GetVMesh() ÃÊ±âÈ­ µÇÁö ¾ÊÀº »óÅÂ¿¡¼­ »ç¿ëÇÏ·Á ÇÑ´Ù.ÁÖÀÇ.\n");
+				}
+			}
+		}
+		return m_pVisualMesh;
+	}
+
+
+Replace <br>
+
+	ZObjectVMesh* RTVisualMesh::GetVMesh(bool b)
+	{
+		if(m_pVisualMesh->GetMesh()==NULL) {
+			if( bInit == false ) {
+				if(b) {
+					mlog("RTVisualMesh::GetVMesh() ÃÊ±âÈ­ µÇÁö ¾ÊÀº »óÅÂ¿¡¼­ »ç¿ëÇÏ·Á ÇÑ´Ù.ÁÖÀÇ.\n");
+				}
+			}
+		}
+		return m_pVisualMesh;
+	}
+
+Open(ZMyCharacter.cpp) <br>
+Find <br>
+
+	void ZMyCharacter::OnGadget_Hanging()
+	{
+		switch(m_pVMesh->m_SelectWeaponMotionType)
+		{	
+
+Replace <br>
+
+	void ZMyCharacter::OnGadget_Hanging()
+	{
+		switch(m_pVMesh->GetSelectWeaponMotionType())
+		{	
+
+
+Find <br>
+
+					if(m_nShot.Ref()==3) // sword ´Â ´Ù¸¥ Ä®µé°ú ´Þ¸®..3Å¸±îÁö¸¸ÀÌ°í 3Å¸ ¸®ÅÏÀÌ ¾ø´Ù..
+						if( m_pVMesh->m_SelectWeaponMotionType == eq_wd_sword ) {
+							m_nShot.Set_CheckCrc(0);
+							zStatus.m_bShot=false;
+							zStatus.m_bShotReturn = false;
+						}
+
+Replace <br>
+
+					if(m_nShot.Ref()==3) // sword ´Â ´Ù¸¥ Ä®µé°ú ´Þ¸®..3Å¸±îÁö¸¸ÀÌ°í 3Å¸ ¸®ÅÏÀÌ ¾ø´Ù..
+						if( m_pVMesh->GetSelectWeaponMotionType() == eq_wd_sword ) {
+							m_nShot.Set_CheckCrc(0);
+							zStatus.m_bShot=false;
+							zStatus.m_bShotReturn = false;
+						}
+
+
+Find <br>
+
+					if(m_nShot.Ref()==3) // sword ´Â ´Ù¸¥ Ä®µé°ú ´Þ¸®..3Å¸±îÁö¸¸ÀÌ°í 3Å¸ ¸®ÅÏÀÌ ¾ø´Ù..
+						if( m_pVMesh->m_SelectWeaponMotionType == eq_wd_sword ) {
+							m_nShot.Set_CheckCrc(0);
+							zStatus.m_bShot=false;
+							zStatus.m_bShotReturn = false;
+						}
+
+Replace <br>
+
+					if(m_nShot.Ref()==3) // sword ´Â ´Ù¸¥ Ä®µé°ú ´Þ¸®..3Å¸±îÁö¸¸ÀÌ°í 3Å¸ ¸®ÅÏÀÌ ¾ø´Ù..
+						if( m_pVMesh->GetSelectWeaponMotionType() == eq_wd_sword ) {
+							m_nShot.Set_CheckCrc(0);
+							zStatus.m_bShot=false;
+							zStatus.m_bShotReturn = false;
+						}
+
+
+Find <br>
+
+	void ZObject::Tremble(float fValue, DWORD nMaxTime, DWORD nReturnMaxTime)
+	{
+		if(m_pVMesh)
+		{
+			RFrameTime* ft = &m_pVMesh->m_FrameTime;
+			if(ft && !ft->m_bActive)
+				ft->Start(fValue,nMaxTime,nReturnMaxTime);// °­µµ , ÃÖ´ë½Ã°£ , º¹±Í½Ã°£...
+		}
+
+	}
+
+Replace <br>
+
+	void ZObject::Tremble(float fValue, DWORD nMaxTime, DWORD nReturnMaxTime)
+	{
+		if(m_pVMesh)
+		{
+			RFrameTime* ft = m_pVMesh->GetFrameTime();
+			if(ft && !ft->m_bActive)
+				ft->Start(fValue,nMaxTime,nReturnMaxTime);// °­µµ , ÃÖ´ë½Ã°£ , º¹±Í½Ã°£...
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
