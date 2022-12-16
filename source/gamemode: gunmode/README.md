@@ -1,4 +1,4 @@
-Gamemode: Gunmode
+Gamemode: Gunmode (Only Clientside not Serverside) <br>
 Open(MBaseGameType.h) <br>
 Find <br>
 
@@ -44,7 +44,7 @@ Find <br>
 
 Add under <br>
 
-    #define MMATCH_GAMETYPE_GUNMODE_STR			    "GunGame"
+    #define MMATCH_GAMETYPE_GUNMODE_STR			    "GunMode"
 
 
 Find <br>
