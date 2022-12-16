@@ -1,3 +1,4 @@
+Gamemode: Reverse Berserker <br>
 Open(MBaseGameType.h) <br>
 Find <br>
 
