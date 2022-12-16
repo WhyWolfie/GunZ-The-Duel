@@ -15,6 +15,7 @@ CSCommon <br>
 Gunz <br>
 - ZActorWithFSM.h
 - ZActorBase.h
+- ZActorBase.cpp
 - ZFSMCondition.h
 - ZFSMStateEnteredTimeStamper.h
 - ZFSMFunctionServer.h
@@ -3686,17 +3687,1132 @@ Replace <br>
 		}
 	}
 
+Open(ZBrain.cpp) <br>
+Find <br>
+
+	// Use default attack
+	if ( bDefaultAttackEnabled && m_pBody->CanAttackMelee( GetTarget()) && !ZGetGame()->CheckWall(m_pBody, GetTarget(), true))
+	{	// (½ÇÁ¦ ±ÙÁ¢Å¸°Ý ÆÇÁ¤ÇÒ¶§ º®Ã¼Å©ÇÏ´Â ÇÔ¼ö) CheckWall·Î Å¸°Ù°ú ³ª »çÀÌ¿¡ Àå¾Ö¹°ÀÌ ¾ø´ÂÁö È®ÀÎ- ¾È±×·¯¸é ±âµÕ µÚ¿¡¼­ °è¼Ó Çê¹æÄ£´Ù
+
+		float fNextCoolTime = MakeDefaultAttackCoolTime();
+		m_DefaultAttackTimer.Init( fNextCoolTime);
+
+		ZTask* pNew = ZTaskManager::CreateAttackMelee( m_pBody);
+		m_pBody->m_TaskManager.PushFront( pNew);
+
+		return;
+	}
+
+Replace <br>
+
+	// Use default attack
+	if ( bDefaultAttackEnabled && m_pBody->CanAttackMelee( GetTarget()) && !ZGetGame()->IsWallBlocked(m_pBody, GetTarget(), true))
+	{	// (½ÇÁ¦ ±ÙÁ¢Å¸°Ý ÆÇÁ¤ÇÒ¶§ º®Ã¼Å©ÇÏ´Â ÇÔ¼ö) CheckWall·Î Å¸°Ù°ú ³ª »çÀÌ¿¡ Àå¾Ö¹°ÀÌ ¾ø´ÂÁö È®ÀÎ- ¾È±×·¯¸é ±âµÕ µÚ¿¡¼­ °è¼Ó Çê¹æÄ£´Ù
+
+		float fNextCoolTime = m_pBody->MakeDefaultAttackCoolTime();
+		m_DefaultAttackTimer.Init( fNextCoolTime);
+
+		ZTask* pNew = ZTaskManager::CreateAttackMelee( m_pBody);
+		m_pBody->GetTaskManager()->PushFront( pNew);
+
+		return;
+	}
+
+
+Open(ZActor.cpp) <br>
+Find <br>
+
+	void ZActor::OnNeglect( int nNum)
+	{
+		if ( nNum == 1)
+			m_Animation.Input( ZA_EVENT_NEGLECT1);
+		else if ( nNum == 2)
+			m_Animation.Input( ZA_EVENT_NEGLECT2);
+	}
+
+Add <br>
+
+	float ZActor::MakeSpeed( float fSpeed)
+	{
+		MQuestNPCGlobalAIValue* pGlobalAIValue = ZGetQuest()->GetNPCCatalogue()->GetGlobalAIValue();
+		float fShakingRatio = pGlobalAIValue->m_fSpeed_ShakingRatio;
+		float fExtraValue = fSpeed * fShakingRatio;
+		float fMinSpeed = max( (fSpeed - fExtraValue), 0.0f);
+		float fMaxSpeed = fSpeed + fExtraValue;
+
+		return RandomNumber( fMinSpeed, fMaxSpeed);
+	}
+
+
+	float ZActor::MakePathFindingUpdateTime( char nIntelligence)
+	{
+		MQuestNPCGlobalAIValue* pGlobalAIValue = ZGetQuest()->GetNPCCatalogue()->GetGlobalAIValue();
+		float fShakingRatio = pGlobalAIValue->m_fPathFinding_ShakingRatio;
+		float fTime = pGlobalAIValue->m_fPathFindingUpdateTime[ nIntelligence - 1];
+		float fExtraValue = fTime * fShakingRatio;
+		float fMinTime = fTime - fExtraValue;
+		if ( fMinTime < 0.0f)
+			fMinTime = 0.0f;
+		float fMaxTime = fTime + fExtraValue;
+
+		return RandomNumber( fMinTime, fMaxTime);
+	}
+
+	float ZActor::MakeAttackUpdateTime( char nAgility)
+	{
+		MQuestNPCGlobalAIValue* pGlobalAIValue = ZGetQuest()->GetNPCCatalogue()->GetGlobalAIValue();
+		float fShakingRatio = pGlobalAIValue->m_fAttack_ShakingRatio;
+		float fTime = pGlobalAIValue->m_fAttackUpdateTime[ nAgility - 1];
+		float fExtraValue = fTime * fShakingRatio;
+		float fMinTime = fTime - fExtraValue;
+		if ( fMinTime < 0.0f)
+			fMinTime = 0.0f;
+		float fMaxTime = fTime + fExtraValue;
+
+		return RandomNumber( fMinTime, fMaxTime);
+	}
+
+
+	float ZActor::MakeDefaultAttackCoolTime()
+	{
+		if ( !m_pNPCInfo)
+			return 0.0f;
+
+		float fShakingRatio = 0.3f;
+		float fCoolTime = m_pNPCInfo->fAttackCoolTime;
+		float fExtraValue = fCoolTime * fShakingRatio;
+		float fMinCoolTime = max( (fCoolTime - fExtraValue), 0.01f);
+		float fMaxCoolTime = fCoolTime + fExtraValue;
+
+		return RandomNumber( fMinCoolTime, fMaxCoolTime);
+	}
+
+
+	void ZActor::ShockBossGauge( float fDamage )
+	{
+		ZGetScreenEffectManager()->ShockBossGauge(fDamage);
+	}
+
+	void ZActor::LinkAniEventSet( MQUEST_NPC nNPCType )
+	{
+		//¾Ö´Ï¸ÞÀÌ¼Ç ÀÌº¥Æ® ¸Å´ÏÀú¿¡¼­ ÇØ´ç npc¿¡ ¸Â´Â ÀÌº¥Æ® ºÒ·¯¿À±â
+		RAniIDEventSet* pAniIdEventSet = ZGetAniEventMgr()->GetAniIDEventSet((int)nNPCType);
+		//ºñÁê¾ó ¸Þ½¬¿¡ ÇØ´ç ÀÌº¥Æ® ¼Â ¿¬°áÇÏ±â
+		m_pVMesh->GetFrameInfo(RAniMode(0))->SetAniIdEventSet(pAniIdEventSet);
+	}
+
+	void ZActor::AddLandingEffect( rvector vPos, rvector vDir )
+	{
+		ZGetEffectManager()->AddLandingEffect(vPos,vDir);//³»ºÎ¿¡¼­ ¿É¼Ç¿¡ µû¶ó~
+	}
+
+	const MTD_NPCINFO* ZActor::GetMyActorServerNPCInfo( const MQUEST_NPC nNPCID )
+	{
+		if (!ZGetQuest()) return NULL;
+		return ZGetQuest()->GetNPCInfoFromServerMgr().GetNPCInfo( nNPCID );
+	}
+
+	bool ZActor::GetQuestCheat( ZQuestCheetType cheat )
+	{
+	//#ifdef _DEBUG
+	//	return (ZGetQuest()->GetCheet(cheat) == true);
+	//#endif
+		return false;
+	}
+
+	int ZActor::GetActualHP()
+	{
+		return (int)((float)m_pModule_HPAP->GetHP() * m_fTC);
+	}
+
+	int ZActor::GetActualAP()
+	{
+		return (int)((float)m_pModule_HPAP->GetAP() * m_fTC);
+	}
+
+	int ZActor::GetActualMaxHP()
+	{
+		const MTD_NPCINFO* pSvrQuestNPCInfo = GetMyActorServerNPCInfo( m_pNPCInfo->nID );
+		if( NULL == pSvrQuestNPCInfo )
+		{
+			return 0;
+		}
+
+		//return (int)((float)pSvrQuestNPCInfo->m_nMaxHP * m_fTC); // ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ MaxHP°¡ º¯°æ ¾ÈµÈ »óÅÂ
+		// ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ ÀÌ¹Ì MaxHP°¡ º¯°æµÈ »óÅÂ·Î Ã³¸®ÇØ¾ß °ÔÀÌÁö ¹Ù°¡ Á¦´ë·Î Ãâ·ÂµÈ´Ù.
+		return (int)((float)m_pModule_HPAP->GetMaxHP() * m_fTC);
+	}
+
+	int ZActor::GetActualMaxAP()
+	{
+		const MTD_NPCINFO* pSvrQuestNPCInfo = GetMyActorServerNPCInfo( m_pNPCInfo->nID );
+		if( NULL == pSvrQuestNPCInfo )
+		{
+			return 0;
+		}
+
+		//return (int)((float)pSvrQuestNPCInfo->m_nMaxAP * m_fTC); // ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ MaxAP°¡ º¯°æ ¾ÈµÈ »óÅÂ
+		// ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ ÀÌ¹Ì MaxAP°¡ º¯°æµÈ »óÅÂ·Î Ã³¸®ÇØ¾ß °ÔÀÌÁö ¹Ù°¡ Á¦´ë·Î Ãâ·ÂµÈ´Ù.
+		return (int)((float)m_pModule_HPAP->GetMaxAP() * m_fTC);
+	}
+
+	void ZActor::GetDebugInfoString(char* szBuf1, char* szBuf2, int index)
+	{
+	#ifndef _PUBLISH
+		rvector pos = GetPosition();
+		rvector dir = GetDirection();
+		rvector vel = GetVelocity();
+
+		MQuestNPCInfo* pNPCInfo = GetNPCInfo();
+		int nTaskCount = GetTaskManager()->GetCount();
+		ZTask* pCurrTask = GetTaskManager()->GetCurrTask();
+		char szTaskName[256] = "None";
+		if (pCurrTask)
+		{
+			strcpy(szTaskName, pCurrTask->GetTaskName());
+		}
+
+		sprintf(szBuf1, "[%02d], %s, HP(%02d)AP(%2d) pos(%.2f %.2f %.2f), dir(%.2f %.2f %.2f), vel(%.2f %.2f %.2f), Task: %d, CurrTask: %s",
+			index, pNPCInfo->szName, 
+			GetHP(), GetAP(),
+			pos.x, pos.y, pos.z, dir.x, dir.y, dir.z, vel.x, vel.y, vel.z,
+			nTaskCount, szTaskName);
+
+		char szFlagLand[8] = "¡Û";
+		char szFlagBlast[8] = "¡Û";
+		char szFlagBlastDagger[8] = "¡Û";
+		char szFlagMoving[8] = "¡Û";
+		char szFlagDead[8] = "¡Û";
+		char szFlagRequestedDead[8] = "¡Û";
+		char szFlagMyControl[8] = "¡Û";
+
+		if (CheckFlag(AF_LAND)) strcpy(szFlagLand, "¡Ü");
+		if (CheckFlag(AF_BLAST)) strcpy(szFlagBlast, "¡Ü");
+		if (CheckFlag(AF_BLAST_DAGGER)) strcpy(szFlagBlastDagger, "¡Ü");
+		if (CheckFlag(AF_MOVING)) strcpy(szFlagMoving, "¡Ü");
+		if (CheckFlag(AF_DEAD)) strcpy(szFlagDead, "¡Ü");
+		if (CheckFlag(AF_REQUESTED_DEAD)) strcpy(szFlagRequestedDead, "¡Ü");
+		if (CheckFlag(AF_MY_CONTROL)) strcpy(szFlagMyControl, "¡Ü");
+
+		sprintf(szBuf2, "     LAND(%s), BLAST(%s), BLASTDAGGER(%s), MOVING(%s), DEAD(%s), REQUESTED_DEAD(%s), MY_CONTROL(%s), DistFloor(%.2f)",
+			szFlagLand, szFlagBlast, szFlagBlastDagger ,szFlagMoving, szFlagDead, szFlagRequestedDead, szFlagMyControl, GetDistToFloor());
+	#endif
+	}
+
+Open(ZActor.h) <br>
+Find <br>
 
 
 
 
+Add <br>
+
+		// ¿ÜºÎ°´Ã¼¿¡ ÀÇÁ¸ÇÏ°í ÀÖ´Â ÄÚµå¸¦ °¡»óÇÔ¼ö·Î °¨½Î¼­ testableÇÏµµ·Ï ¸¸µë
+	protected:
+		virtual MQuestNPCInfo* GetQuestNPCInfo(MQUEST_NPC nNPCType) { return ZGetQuest()->GetNPCInfo(nNPCType); }
+		virtual MUID GetQuestBossUid() { return ZGetQuest()->GetGameInfo()->GetBoss(); }
+		virtual bool GetQuestCheat(ZQuestCheetType cheat);
+		virtual const MTD_NPCINFO* GetMyActorServerNPCInfo( const MQUEST_NPC nNPCID );
+		virtual void AddLandingEffect(rvector vPos, rvector vDir);
+		virtual void ShockBossGauge(float fDamage);
+		virtual void LinkAniEventSet(MQUEST_NPC nNPCType);
+		virtual float MakeSpeed( float fSpeed);
+
+	public:
+		virtual float MakePathFindingUpdateTime( char nIntelligence);
+		virtual float MakeAttackUpdateTime( char nAgility);
+		virtual float MakeDefaultAttackCoolTime();
+
+		virtual void GetDebugInfoString(char* szBuf1, char* szBuf2, int index);
+	};
+
+Find <br>
+
+	public:
+		ZActor();
+		virtual ~ZActor();
+		static ZActor* CreateActor(MQUEST_NPC nNPCType, float fTC, int nQL, bool bForceCollRadius35=false);
+		void InputBasicInfo(ZBasicInfo* pni, BYTE anistate);
+		void InputBossHpAp(float fHp, float fAp);
+		void Input(AI_INPUT_SET nInput);
+		void DebugTest();
+		void SetMyControl(bool bMyControl);
+
+		inline ZA_ANIM_STATE	GetCurrAni();
+		inline void SetFlag(unsigned int nFlag, bool bValue);
+		inline bool CheckFlag(unsigned int nFlag);
+		inline void SetFlags(unsigned int nFlags);
+		inline unsigned long GetFlags();
+		inline bool IsMyControl();
+		inline int GetHP();
+		inline int GetAP();
+		inline float GetTC();
+		inline int GetQL();
+		inline float GetHitRate();
+		inline int GetActualHP();
+		inline int GetActualAP();
+		inline int GetActualMaxHP();
+		inline int GetActualMaxAP();
+	public:
+
+Replace <br>
+
+	public:
+		ZActor();
+		virtual ~ZActor();
+		static ZActor* CreateActor(MQUEST_NPC nNPCType, float fTC, int nQL, bool bForceCollRadius35);
+		virtual void InputBasicInfo(ZBasicInfo* pni, BYTE anistate);
+		virtual void InputBossHpAp(float fHp, float fAp);
+		void Input(AI_INPUT_SET nInput);
+		void DebugTest();
+		virtual void SetMyControl(bool bMyControl);
+
+		inline ZA_ANIM_STATE	GetCurrAni();
+		inline void SetFlag(unsigned int nFlag, bool bValue);
+		inline bool CheckFlag(unsigned int nFlag);
+		inline void SetFlags(unsigned int nFlags);
+		inline unsigned long GetFlags();
+		virtual bool IsMyControl() { return CheckFlag(AF_MY_CONTROL); }
+		inline int GetHP();
+		inline int GetAP();
+		inline float GetTC();
+		inline int GetQL();
+		inline float GetHitRate();
+		virtual int GetActualHP();
+		virtual int GetActualAP();
+		virtual int GetActualMaxHP();
+		virtual int GetActualMaxAP();
+		virtual bool IsNeverPushed() { if (m_pNPCInfo) return m_pNPCInfo->bNeverPushed; return false; }
+		virtual float GetCollideRadius() { if (m_pNPCInfo) return m_pNPCInfo->fCollRadius; return 0;}
+		virtual float ModifyAttackDamage(float fDamage)
+		{
+			return fDamage * (GetQL() * 0.2f + 1);
+		}
+	public:
+
+Find <br>
+
+	inline bool ZActor::IsMyControl()
+	{
+		return CheckFlag(AF_MY_CONTROL);
+	}
+
+	inline int ZActor::GetActualHP()
+	{
+		return (int)((float)m_pModule_HPAP->GetHP() * m_fTC);
+	}
+
+	inline int ZActor::GetActualAP()
+	{
+		return (int)((float)m_pModule_HPAP->GetAP() * m_fTC);
+	}
+
+	inline int ZActor::GetActualMaxHP()
+	{
+		const MTD_NPCINFO* pSvrQuestNPCInfo = GetMyActorServerNPCInfo( m_pNPCInfo->nID );
+		if( NULL == pSvrQuestNPCInfo )
+		{
+			return 0;
+		}
+
+		//return (int)((float)pSvrQuestNPCInfo->m_nMaxHP * m_fTC); // ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ MaxHP°¡ º¯°æ ¾ÈµÈ »óÅÂ
+		// ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ ÀÌ¹Ì MaxHP°¡ º¯°æµÈ »óÅÂ·Î Ã³¸®ÇØ¾ß °ÔÀÌÁö ¹Ù°¡ Á¦´ë·Î Ãâ·ÂµÈ´Ù.
+		return (int)((float)m_pModule_HPAP->GetMaxHP() * m_fTC);
+	}
+
+	inline int ZActor::GetActualMaxAP()
+	{
+		const MTD_NPCINFO* pSvrQuestNPCInfo = GetMyActorServerNPCInfo( m_pNPCInfo->nID );
+		if( NULL == pSvrQuestNPCInfo )
+		{
+			return 0;
+		}
+
+		//return (int)((float)pSvrQuestNPCInfo->m_nMaxAP * m_fTC); // ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ MaxAP°¡ º¯°æ ¾ÈµÈ »óÅÂ
+		// ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ ÀÌ¹Ì MaxAP°¡ º¯°æµÈ »óÅÂ·Î Ã³¸®ÇØ¾ß °ÔÀÌÁö ¹Ù°¡ Á¦´ë·Î Ãâ·ÂµÈ´Ù.
+		return (int)((float)m_pModule_HPAP->GetMaxAP() * m_fTC);
+	}
+
+Replace <br>
+
+	/*
+	inline bool ZActor::IsMyControl()
+	{
+		return CheckFlag(AF_MY_CONTROL);
+	}
+
+	inline int ZActor::GetActualHP()
+	{
+		return (int)((float)m_pModule_HPAP->GetHP() * m_fTC);
+	}
+
+	inline int ZActor::GetActualAP()
+	{
+		return (int)((float)m_pModule_HPAP->GetAP() * m_fTC);
+	}
+
+	inline int ZActor::GetActualMaxHP()
+	{
+		const MTD_NPCINFO* pSvrQuestNPCInfo = GetMyActorServerNPCInfo( m_pNPCInfo->nID );
+		if( NULL == pSvrQuestNPCInfo )
+		{
+			return 0;
+		}
+
+		//return (int)((float)pSvrQuestNPCInfo->m_nMaxHP * m_fTC); // ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ MaxHP°¡ º¯°æ ¾ÈµÈ »óÅÂ
+		// ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ ÀÌ¹Ì MaxHP°¡ º¯°æµÈ »óÅÂ·Î Ã³¸®ÇØ¾ß °ÔÀÌÁö ¹Ù°¡ Á¦´ë·Î Ãâ·ÂµÈ´Ù.
+		return (int)((float)m_pModule_HPAP->GetMaxHP() * m_fTC);
+	}
+
+	inline int ZActor::GetActualMaxAP()
+	{
+		const MTD_NPCINFO* pSvrQuestNPCInfo = GetMyActorServerNPCInfo( m_pNPCInfo->nID );
+		if( NULL == pSvrQuestNPCInfo )
+		{
+			return 0;
+		}
+
+		//return (int)((float)pSvrQuestNPCInfo->m_nMaxAP * m_fTC); // ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ MaxAP°¡ º¯°æ ¾ÈµÈ »óÅÂ
+		// ³­ÀÌµµ Á¶Àý °è¼ö(m_fTC)·Î ÀÎÇØ ÀÌ¹Ì MaxAP°¡ º¯°æµÈ »óÅÂ·Î Ã³¸®ÇØ¾ß °ÔÀÌÁö ¹Ù°¡ Á¦´ë·Î Ãâ·ÂµÈ´Ù.
+		return (int)((float)m_pModule_HPAP->GetMaxAP() * m_fTC);
+	}*/
+
+
+Open(ZCharacter.h) <br>
+Find <br>
+
+	void ZChangeCharParts(RVisualMesh* pVMesh, MMatchSex nSex, int nHair, int nFace, const unsigned long int* pItemID);
+	void ZChangeCharWeaponMesh(RVisualMesh* pVMesh, unsigned long int nWeaponID);
+	bool CheckTeenVersionMesh(RMesh** ppMesh);
+
+Replace <br>
+
+	void ZChangeCharParts(ZObjectVMesh* pVMesh, MMatchSex nSex, int nHair, int nFace, const unsigned long int* pItemID);
+	void ZChangeCharWeaponMesh(ZObjectVMesh* pVMesh, unsigned long int nWeaponID);
+	bool CheckTeenVersionMesh(RMesh** ppMesh);
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	void ChangeCharHair(RVisualMesh* pVMesh, MMatchSex nSex, int nHairIndex)
+	{
+
+	void ChangeEquipAvatarParts(RVisualMesh* pVMesh, const unsigned long int* pItemID, MMatchSex nSex, int nHairIndex)
+	{
+
+	void ChangeEquipParts(RVisualMesh* pVMesh, const unsigned long int* pItemID)
+	{
+
+
+	void ChangeCharFace(ZObjectVMesh* pVMesh, MMatchSex nSex, int nFaceIndex)
+	{
+
+
+	void ZChangeCharParts(RVisualMesh* pVMesh, MMatchSex nSex, int nHair, int nFace, const unsigned long int* pItemID)
+	{
+
+	void ZChangeCharWeaponMesh(RVisualMesh* pVMesh, unsigned long int nWeaponID)
+	{
+
+
+Replace <br>
+
+	void ChangeCharHair(ZObjectVMesh* pVMesh, MMatchSex nSex, int nHairIndex)
+	{
+
+	void ChangeEquipAvatarParts(ZObjectVMesh* pVMesh, const unsigned long int* pItemID, MMatchSex nSex, int nHairIndex)
+	{
+
+	void ChangeEquipParts(ZObjectVMesh* pVMesh, const unsigned long int* pItemID)
+	{
+
+	void ChangeCharFace(ZObjectVMesh* pVMesh, MMatchSex nSex, int nFaceIndex)
+	{
+
+	void ZChangeCharParts(ZObjectVMesh* pVMesh, MMatchSex nSex, int nHair, int nFace, const unsigned long int* pItemID)
+	{
+
+	void ZChangeCharWeaponMesh(ZObjectVMesh* pVMesh, unsigned long int nWeaponID)
+	{
+
+
+Open(ZActor.cpp) <br>
+Find <br>
+
+	void ZActor::InitMesh(char* szMeshName, MQUEST_NPC nNPCType)
+	{
+		// for test
+		RMesh* pMesh;
+
+		pMesh = ZGetNpcMeshMgr()->Get(szMeshName);//¿øÇÏ´Â ¸ðµ¨À» ºÙ¿©ÁÖ±â..
+		if(!pMesh) 
+		{
+			_ASSERT(0);
+			mlog("ZActor::InitMesh() -  ¿øÇÏ´Â ¸ðµ¨À» Ã£À»¼ö ¾øÀ½\n");
+			return;
+		}
+
+		int nVMID = ZGetGame()->m_VisualMeshMgr.Add(pMesh);
+		if(nVMID==-1) mlog("ZActor::InitMesh() - Ä³¸¯ÅÍ »ý¼º ½ÇÆÐ\n");
+
+		RVisualMesh* pVMesh = ZGetGame()->m_VisualMeshMgr.GetFast(nVMID);
+
+		SetVisualMesh(pVMesh);
+
+		pVMesh->SetScale(rvector(15,15,15));
+
+		m_Animation.Set(ZA_ANIM_RUN);
+
+		//¾Ö´Ï¸ÞÀÌ¼Ç ÀÌº¥Æ® ¸Å´ÏÀú¿¡¼­ ÇØ´ç npc¿¡ ¸Â´Â ÀÌº¥Æ® ºÒ·¯¿À±â
+		RAniIDEventSet* pAniIdEventSet = ZGetAniEventMgr()->GetAniIDEventSet((int)nNPCType);
+		//ºñÁê¾ó ¸Þ½¬¿¡ ÇØ´ç ÀÌº¥Æ® ¼Â ¿¬°áÇÏ±â
+		pVMesh->m_FrameInfo[0].SetAniIdEventSet(pAniIdEventSet);
+	}
+
+Replace <br>
+
+	void ZActor::InitMesh(char* szMeshName, MQUEST_NPC nNPCType)
+	{
+		_ASSERT(m_pVMesh == NULL);
+		AllocObjectVMesh();
+		m_pVMesh->InitNpcMesh(this, szMeshName);
+
+		m_pVMesh->SetScale(rvector(15,15,15));
+
+		m_Animation.Set(ZA_ANIM_RUN);
+
+		LinkAniEventSet(nNPCType);
+	}
+
+Open(ZActor.h) <br>
+Find <br>
+
+	#include "MMatchTransDataType.h"
+	#include "ZNPCInfoFromServer.h"
+	
+Replace <br>
+
+	#include "ZActorBase.h"
+
+Find <br>
+
+	class ZActor : public ZCharacterObject
+	{
+
+
+Replace <br>
+
+	class ZActor : public ZActorBase
+	{
+
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+	void ZGameInterface::TestChangeWeapon(ZObjectVMesh* pVMesh)
+	{
+
+Replace <br>
+
+	void ZGameInterface::TestChangeWeapon(RVisualMesh* pVMesh)
+	{
+
+
+Open(ZGameInterface.h) <br>
+Find <br>
+
+	void TestChangeWeapon(RVisualMesh* pVMesh = NULL);
+
+Replace <br>
+
+	void TestChangeWeapon(ZObjectVMesh* pVMesh = NULL);
+
+Open(ZMeshView.h) <br>
+Find <br>
+
+	RTVisualMesh() {
+		m_pVisualMesh = new RVisualMesh;
+		bInit = false;
+	}
+
+Replace <br>
+
+	RTVisualMesh() {
+		m_pVisualMesh = new ZObjectVMesh;
+		m_pVisualMesh->InitOwnVMesh();
+		bInit = true;
+	}
+
+Find <br>
+
+	bool bInit;
+	RVisualMesh* GetVMesh(bool b=true);
+	RVisualMesh* m_pVisualMesh;
+
+Replace <br>
+
+	bool bInit;
+	ZObjectVMesh* GetVMesh(bool b=true);
+	ZObjectVMesh* m_pVisualMesh;
+
+Find <br>
+
+	//	void SetMesh(RVisualMesh* pVisualMesh);
+		void SetLight(rvector LPos);
+
+	void SetEnableRotateZoom(bool bEnableRotate, bool bEnableZoom);
+
+	RVisualMesh* GetVisualMesh() { 
+		return m_pTVisualMesh.GetVMesh();
+
+Replace <br>
+
+	//	void SetMesh(ZObjectVMesh* pVisualMesh);
+		void SetLight(rvector LPos);
+
+		void SetEnableRotateZoom(bool bEnableRotate, bool bEnableZoom);
+
+		ZObjectVMesh* GetVisualMesh() { 
+			return m_pTVisualMesh.GetVMesh(); 
+
+
+Open(ZCharacterSelectView.h) <br>
+Find <br>
+
+	RVisualMesh*			m_pVisualMesh;
+
+Replace <br>
+
+	ZObjectVMesh*			m_pVisualMesh;
+
+
+Open(ZCharacterSelectView.cpp) <br>
+Find <br>
+
+	//m_pMesh = new RMesh;
+	m_pVisualMesh = new RVisualMesh;
+
+Replace <br>
+
+	//m_pMesh = new RMesh;
+	m_pVisualMesh = new ZObjectVMesh;
+
+Open(RMeshUtil.h) <br>
+Find <br>
+
+	T Find(char *name) {
+
+Replace <br>
+
+	T Find(const char* name) {
+
+Open(ZActor.cpp) <br>
+Find <br>
+
+	MImplementRTTI(ZActor, ZCharacterObject);
+
+	///////////////////////////////////////////////////////////////////////
+	ZActor::ZActor() : ZCharacterObject(), m_nFlags(0), m_nNPCType(NPC_GOBLIN_KING), m_pNPCInfo(NULL), m_pModule_Skills(NULL), m_fSpeed(0.0f), m_pBrain(NULL)
+	{
+
+Replace <br>
+
+	MImplementRTTI(ZActor, ZActorBase);
+
+	///////////////////////////////////////////////////////////////////////
+	ZActor::ZActor() 
+	: ZActorBase()
+	, m_nFlags(0)
+	, m_pNPCInfo(NULL)
+	, m_pModule_Skills(NULL), m_fSpeed(0.0f), m_pBrain(NULL)
+	{
+
+Open(ZQuest.cpp) <br>
+Find <br>
+
+	float fTC = m_GameInfo.GetNPC_TC();
+	ZActor* pNewActor = ZActor::CreateActor(NPCType, fTC, m_GameInfo.GetQuestLevel());
+	if (pNewActor)
+
+Replace <br>
+
+	float fTC = m_GameInfo.GetNPC_TC();
+	ZActorBase* pNewActor = ZActor::CreateActor(NPCType, fTC, m_GameInfo.GetQuestLevel(), false);
+	if (pNewActor)
+
+Open(ZGameInput_Debug.cpp) <br>
+Find <br>
+
+						if(ZGetQuest())
+							pNPCInfo = 	ZGetQuest()->GetNPCInfo(MQUEST_NPC(nNPCType));
+
+						ZActor* pNewActor = ZActor::CreateActor(MQUEST_NPC(nNPCType), 1.0f, 0);
+						if (pNewActor)
+
+
+Replace <br>
+
+						if(ZGetQuest())
+							pNPCInfo = 	ZGetQuest()->GetNPCInfo(MQUEST_NPC(nNPCType));
+
+						ZActor* pNewActor = ZActor::CreateActor(MQUEST_NPC(nNPCType), 1.0f, 0, false);
+						if (pNewActor)
+
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+	bool ZGame::CheckWall(ZObject* pObj1,ZObject* pObj2, bool bCoherentToPeer)
+	{
+
+
+Replace <br>
+
+	/*
+	bool ZGame::CheckWall(ZObject* pObj1,ZObject* pObj2, bool bCoherentToPeer)
+	{	// ÇÇ¾î³¢¸® ÁÂÇ¥¸¦ º¸³¾¶§ ÇöÀç´Â float->short Ä³½ºÆÃÀÌ ÀÏ¾î³­´Ù (Áï ¼Ò¼öÁ¡ÀÌÇÏ ¹ö¸²)
+		// µû¶ó¼­ Å¬¶óÀÌ¾ðÆ®µéÀÌ °¢ÀÚ ÆÇÁ¤ÇÑ °ªÀÌ ¹Ì¹¦ÇÏ°Ô ´Ù¸¦ ¼ö°¡ ÀÖ´Ù. ÀÌ°ÍÀÌ ±âÁ¸¿¡ ¹®Á¦¸¦ ÀÏÀ¸Å°Áø ¾Ê¾ÒÀ¸³ª
+		// ¼­¹ÙÀÌ¹ú¿¡¼­ ³·Àº È®·ü·Î ¹®Á¦°¡ ¹ß»ý: npc°¡ ÇÃ·¹ÀÌ¾î¸¦ ±ÙÁ¢°ø°ÝÇÏ·Á°í ÇÒ¶§, npc ÄÁÆ®·Ñ·¯´Â °ø°Ý °¡´ÉÇÏ´Ù°í ÆÇÁ¤.
+		// ÇÇ°Ý´çÇÏ´Â Å¬¶óÀÌ¾ðÆ®´Â °ø°Ý °¡´ÉÇÏÁö ¾Ê´Ù°í ÆÇÁ¤. ÀÌ·Î½á ÇÇ°ÝµÇ´Â À¯Àú°¡ À§Ä¡¸¦ ¹Ù²ÙÁö ¾Ê´ÂÇÑ ¸ó½ºÅÍ´Â Á¦ÀÚ¸®¿¡¼­ ¹«ÇÑ Çê¹æÀ» Ä¡°ÔµÊ (¼Ö±î¸» ¾Ç¿ë ºÒ°¡¶ó°í »ý°¢ÇÏÁö¸¸ ÆÛºí¸®¼ÅÀÇ ±Ù¼º¿¡ Á³À½)
+		// bCoherentToPeer==true ÀÏ¶§ ÇÇ¾î¿¡°Ô º¸³½ °Í°ú °°Àº °ªÀ» »ç¿ëÇÔ..
+
+		if( (pObj1==NULL) || (pObj2==NULL) )
+			return false;
+
+		if( (pObj1->GetVisualMesh()==NULL) || (pObj2->GetVisualMesh()==NULL) )
+			return false;
+
+		// ¿¡´Ï¸ÞÀÌ¼Ç ¶§¹®¿¡ º®À» ¶Õ°í µé¾î°¡´Â °æ¿ìµµ ÀÖ¾î¼­..
+		rvector p1 = pObj1->GetPosition() + rvector(0.f,0.f,100.f);
+		rvector p2 = pObj2->GetPosition() + rvector(0.f,0.f,100.f);
+
+		if (bCoherentToPeer)
+		{
+			p1.x = short(p1.x);
+			p1.y = short(p1.y);
+			p1.z = short(p1.z);
+			p2.x = short(p2.x);
+			p2.y = short(p2.y);
+			p2.z = short(p2.z);
+			// ¿ÀÂ÷·Î ÀÎÇÑ ¹ö±× ÀçÇö Å×½ºÆ®¸¦ ½±°Ô ÇÏ±â À§ÇØ 1ÀÇ ÀÚ¸®±îÁö Àý»çÇÑ ¹öÀü
+			/*p1.x = (short(p1.x * 0.1f)) * 10.f;
+			p1.y = (short(p1.y * 0.1f)) * 10.f;
+			p1.z = (short(p1.z * 0.1f)) * 10.f;
+			p2.x = (short(p2.x * 0.1f)) * 10.f;
+			p2.y = (short(p2.y * 0.1f)) * 10.f;
+			p2.z = (short(p2.z * 0.1f)) * 10.f;
+		}
+
+		rvector dir = p2 - p1;
+
+		Normalize(dir);
+
+		ZPICKINFO pickinfo;
+
+		if( Pick( pObj1 , p1 , dir, &pickinfo ) ) {//º®ÀÌ¶ó¸é
+			if(pickinfo.bBspPicked)//¸ÊÀÌ °É¸°°æ¿ì
+				return true;
+		}
+
+		return false;
+	}
+	//jintriple3 µð¹ö±× ·¹Áö½ºÅÍ ÇØÅ·.....ºñ±³¸¦ À§ÇØ¼­
+	bool ZGame::CheckWall(ZObject* pObj1,ZObject* pObj2, int & nDebugRegister/*´Ü¼ø ºñ±³¿ë, bool bCoherentToPeer)
+	{	//bCoherentToPeer¿¡ ´ëÇÑ°ÍÀº ¿øº» CheckWall ÁÖ¼® Âü°í
+
+		if( (pObj1==NULL) || (pObj2==NULL) )
+		{
+			nDebugRegister = -10;	//¿ª½Ã³ª ¼ýÀÚ´Â ÀÇ¹Ì°¡ ¾ø´Ù..
+			return false;
+		}
+
+		if( (pObj1->GetVisualMesh()==NULL) || (pObj2->GetVisualMesh()==NULL) )
+		{
+			nDebugRegister = -10;
+			return false;
+		}
+
+		// ¿¡´Ï¸ÞÀÌ¼Ç ¶§¹®¿¡ º®À» ¶Õ°í µé¾î°¡´Â °æ¿ìµµ ÀÖ¾î¼­..
+		rvector p1 = pObj1->GetPosition() + rvector(0.f,0.f,100.f);
+		rvector p2 = pObj2->GetPosition() + rvector(0.f,0.f,100.f);
+
+		if (bCoherentToPeer)
+		{
+			p1.x = short(p1.x);
+			p1.y = short(p1.y);
+			p1.z = short(p1.z);
+			p2.x = short(p2.x);
+			p2.y = short(p2.y);
+			p2.z = short(p2.z);
+			// ¿ÀÂ÷·Î ÀÎÇÑ ¹ö±× ÀçÇö Å×½ºÆ®¸¦ ½±°Ô ÇÏ±â À§ÇØ 1ÀÇ ÀÚ¸®±îÁö Àý»çÇÑ ¹öÀü
+			/*p1.x = (short(p1.x * 0.1f)) * 10.f;
+			p1.y = (short(p1.y * 0.1f)) * 10.f;
+			p1.z = (short(p1.z * 0.1f)) * 10.f;
+			p2.x = (short(p2.x * 0.1f)) * 10.f;
+			p2.y = (short(p2.y * 0.1f)) * 10.f;
+			p2.z = (short(p2.z * 0.1f)) * 10.f;
+		}
+
+		rvector dir = p2 - p1;
+
+		Normalize(dir);
+
+		ZPICKINFO pickinfo;
+
+		if( Pick( pObj1 , p1 , dir, &pickinfo ) ) {//º®ÀÌ¶ó¸é
+			if(pickinfo.bBspPicked)//¸ÊÀÌ °É¸°°æ¿ì
+			{
+				nDebugRegister = FOR_DEBUG_REGISTER;
+				return true;
+			}
+		}
+		nDebugRegister = -10;
+		return false;
+	}*/
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	char* GetPartsNextName(RMeshPartsType ptype,RVisualMesh* pVMesh,bool bReverse)
+	{
+
+Replace <br>
+
+	char* GetPartsNextName(RMeshPartsType ptype,ZObjectVMesh* pVMesh,bool bReverse)
+	{
+
+Find <br>
+
+		pMesh = ZGetMeshMgr()->Get(szMeshName);//¿øÇÏ´Â ¸ðµ¨À» ºÙ¿©ÁÖ±â..
+
+		if(!pMesh) {
+			mlog("AddCharacter ¿øÇÏ´Â ¸ðµ¨À» Ã£À»¼ö ¾øÀ½\n");
+		}
+
+		int nVMID = ZGetGame()->m_VisualMeshMgr.Add(pMesh);
+
+		if(nVMID==-1) {
+			mlog("AddCharacter Ä³¸¯ÅÍ »ý¼º ½ÇÆÐ\n");
+		}
+
+		m_nVMID.Set_CheckCrc(nVMID);
+
+		RVisualMesh* pVMesh = ZGetGame()->m_VisualMeshMgr.GetFast(nVMID);
+		SetVisualMesh(pVMesh);
+
+		// low polygon model ºÙ¿©ÁÖ±â..
+		// ³²³à±¸ºÐ¾øÀÌ
+	/*
+		if (m_Property.nSex == MMS_MALE) {
+			strcpy(szMeshName, "heroman_low1");
+		}
+		else {
+			strcpy(szMeshName, "heroman_low2");
+		}
+	*/	
+	}
+
+Replace <br>
+
+
+		_ASSERT(m_pVMesh==NULL);
+		m_pVMesh = new ZObjectVMesh;
+		int nVMID = m_pVMesh->InitCharacterMesh(this, szMeshName);
+
+		m_nVMID.Set_CheckCrc(nVMID);
+	}
+
+
+Open(ZGameInterface.cpp) <br>
+Find <br>
+
+						if (ZGetCharacterViewList(GUNZ_LOBBY) != NULL)
+						{
+							RVisualMesh* pVMesh = 
+								ZGetCharacterViewList(GUNZ_LOBBY)->Get(ZGetGameClient()->GetPlayerUID())->GetVisualMesh();
+
+							TestChangeWeapon(pVMesh);
+						}
+
+Replace <br>
+
+						if (ZGetCharacterViewList(GUNZ_LOBBY) != NULL)
+						{
+							ZObjectVMesh* pVMesh = 
+								ZGetCharacterViewList(GUNZ_LOBBY)->Get(ZGetGameClient()->GetPlayerUID())->GetVisualMesh();
+
+							TestChangeWeapon(pVMesh);
+						}
 
 
 
+Open(ZMeshView.cpp) <br>
+Find <br>
+
+	list<ZMeshView*> ZMeshView::msMeshViewList;
+
+	RVisualMesh* RTVisualMesh::GetVMesh(bool b)
+	{
+		if(m_pVisualMesh->GetMesh()==NULL) {
+			if( bInit == false ) {
+				if(b) {
+					mlog("RTVisualMesh::GetVMesh() ÃÊ±âÈ­ µÇÁö ¾ÊÀº »óÅÂ¿¡¼­ »ç¿ëÇÏ·Á ÇÑ´Ù.ÁÖÀÇ.\n");
+				}
+			}
+		}
+		return m_pVisualMesh;
+	}
+
+Replace <br>
+
+	list<ZMeshView*> ZMeshView::msMeshViewList;
+
+	ZObjectVMesh* RTVisualMesh::GetVMesh(bool b)
+	{
+		if(m_pVisualMesh->GetMesh()==NULL) {
+			if( bInit == false ) {
+				if(b) {
+					mlog("RTVisualMesh::GetVMesh() ÃÊ±âÈ­ µÇÁö ¾ÊÀº »óÅÂ¿¡¼­ »ç¿ëÇÏ·Á ÇÑ´Ù.ÁÖÀÇ.\n");
+				}
+			}
+		}
+		return m_pVisualMesh;
+	}
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	pVMesh->SetParts(eq_parts_head, szMeshName);
+
+Replace <br>
+
+	pVMesh->SetParts(eq_parts_head, szMeshName,nullptr);
+
+Find <br>
+
+	void ChangeEquipAvatarParts(ZObjectVMesh* pVMesh, const unsigned long int* pItemID, MMatchSex nSex, int nHairIndex)
+	{
+		pVMesh->ClearParts();
+
+		char* szMeshName;
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(pItemID[MMCIP_AVATAR]);
+		if( pDesc != NULL ) {
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHeadMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_head, szMeshName);
+			else							ChangeCharHair(pVMesh, nSex, nHairIndex);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szChestMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_chest, szMeshName);
+			else							pVMesh->SetBaseParts(eq_parts_chest);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHandMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_hands, szMeshName);
+			else							pVMesh->SetBaseParts(eq_parts_hands);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szLegsMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_legs, szMeshName);
+			else							pVMesh->SetBaseParts(eq_parts_legs);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szFeetMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_feet, szMeshName);
+			else							pVMesh->SetBaseParts(eq_parts_feet);
+		}
+
+		//pVMesh->SetBaseParts(eq_parts_face);
+	}
 
 
+Replace <br>
 
+	void ChangeEquipAvatarParts(ZObjectVMesh* pVMesh, const unsigned long int* pItemID, MMatchSex nSex, int nHairIndex)
+	{
+		pVMesh->ClearParts();
 
+		char* szMeshName;
+		MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(pItemID[MMCIP_AVATAR]);
+		if( pDesc != NULL )
+		{
+			if (pDesc->GetEluName() != nullptr)
+			{
+				RMesh* playerMesh = nullptr;
+				if (_stricmp(pVMesh->GetMesh()->GetName(), "heroman1") == 0)
+				{
+					playerMesh = ZGetMeshMgr()->Get("heroman1");
+				}
+				else
+				{
+					playerMesh = ZGetMeshMgr()->Get("herowoman1");
+				}
+				if (playerMesh->m_parts_mgr->Find(pDesc->m_szElu) == false)//Find(playerItem->m_szElu) == false)
+				{
+					string filePath = pDesc->m_szElu;
+					if (filePath.find("woman") != std::string::npos)
+					{
+						filePath = string("model/woman/") + pDesc->m_szElu;
+					}
+					else
+					{
+						filePath = string("model/man/") + pDesc->m_szElu;
+					}
+					playerMesh->m_parts_mgr->Add((char*)filePath.c_str());// ("man")->AddNode(playerItem->m_szElu);//Add((char*)filePath.c_str());
+				}
+			}
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHeadMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_head, szMeshName,pDesc->GetEluName());
+			else							ChangeCharHair(pVMesh, nSex, nHairIndex);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szChestMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_chest, szMeshName, pDesc->GetEluName());
+			else							pVMesh->SetBaseParts(eq_parts_chest);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szHandMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_hands, szMeshName, pDesc->GetEluName());
+			else							pVMesh->SetBaseParts(eq_parts_hands);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szLegsMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_legs, szMeshName, pDesc->GetEluName());
+			else							pVMesh->SetBaseParts(eq_parts_legs);
+
+			szMeshName = pDesc->m_pAvatarMeshName->Ref().m_szFeetMeshName;
+			if( strlen(szMeshName) > 0 )	pVMesh->SetParts(eq_parts_feet, szMeshName, pDesc->GetEluName());
+			else							pVMesh->SetBaseParts(eq_parts_feet);
+		}
+
+		//pVMesh->SetBaseParts(eq_parts_face);
+	}
+
+Find <br>
+
+	void ChangeEquipParts(ZObjectVMesh* pVMesh, const unsigned long int* pItemID)
+	{
+		pVMesh->ClearParts();
+
+		struct _ZPARTSPAIR
+		{
+			_RMeshPartsType			meshparts;
+			MMatchCharItemParts		itemparts;
+		};
+
+		static _ZPARTSPAIR PartsPair[] = 
+		{
+			{eq_parts_head,		MMCIP_HEAD},
+			{eq_parts_chest,	MMCIP_CHEST},
+			{eq_parts_hands,	MMCIP_HANDS},
+			{eq_parts_legs,		MMCIP_LEGS},
+			{eq_parts_feet,		MMCIP_FEET}
+		};
+
+		for (int i = 0; i < 5; i++) {
+			if (pItemID[PartsPair[i].itemparts] != 0) {
+				MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(pItemID[PartsPair[i].itemparts]);
+				if (pDesc != NULL) {
+					pVMesh->SetParts(PartsPair[i].meshparts, pDesc->m_pMItemName->Ref().m_szMeshName);
+				}
+			}
+			else {
+				pVMesh->SetBaseParts( PartsPair[i].meshparts );
+			}
+		}
+
+		pVMesh->SetBaseParts(eq_parts_face);
+	}
+
+Replace <br>
+
+	void ChangeEquipParts(ZObjectVMesh* pVMesh, const unsigned long int* pItemID)
+	{
+		pVMesh->ClearParts();
+
+		if (pVMesh->GetMesh() == nullptr)
+			return;
+
+		struct _ZPARTSPAIR
+		{
+			_RMeshPartsType			meshparts;
+			MMatchCharItemParts		itemparts;
+		};
+
+		static _ZPARTSPAIR PartsPair[] = 
+		{
+			{eq_parts_head,		MMCIP_HEAD},
+			{eq_parts_chest,	MMCIP_CHEST},
+			{eq_parts_hands,	MMCIP_HANDS},
+			{eq_parts_legs,		MMCIP_LEGS},
+			{eq_parts_feet,		MMCIP_FEET}
+		};
+
+		//Dynamic resource loading
+		for (int i = 0; i < 5; i++)
+		{
+			if (pItemID[PartsPair[i].itemparts] != 0)
+			{
+				MMatchItemDesc* pDesc = MGetMatchItemDescMgr()->GetItemDesc(pItemID[PartsPair[i].itemparts]);
+				if (pDesc != NULL)
+				{
+					if (pDesc->GetEluName() != nullptr)
+					{
+						RMesh* playerMesh = nullptr;
+						if (_stricmp(pVMesh->GetMesh()->GetName(),"heroman1")==0)
+						{
+							playerMesh = ZGetMeshMgr()->Get("heroman1");
+						}
+						else
+						{
+							playerMesh = ZGetMeshMgr()->Get("herowoman1");
+						}
+						if (playerMesh->m_parts_mgr->Find(pDesc->m_szElu) == false)//Find(playerItem->m_szElu) == false)
+						{
+							string filePath = pDesc->m_szElu;
+							if (filePath.find("woman") != std::string::npos)
+							{
+								filePath = string("model/woman/") + pDesc->m_szElu;
+							}
+							else
+							{
+								filePath = string("model/man/") + pDesc->m_szElu;
+							}
+							playerMesh->m_parts_mgr->Add((char*)filePath.c_str());// ("man")->AddNode(playerItem->m_szElu);//Add((char*)filePath.c_str());
+						}
+						else
+						{
+							pVMesh->SetParts(PartsPair[i].meshparts, pDesc->m_pMItemName->Ref().m_szMeshName, pDesc->GetEluName());
+						}
+					}
+				}
+			}
+			else {
+				pVMesh->SetBaseParts( PartsPair[i].meshparts );
+			}
+		}
+
+		pVMesh->SetBaseParts(eq_parts_face);
+	}
+
+Open(MMatchItem.cpp) <br>
+Find <br>
+
+	MUID MMatchItemMap::m_uidGenerate = MUID(0,0);
+	MCriticalSection MMatchItemMap::m_csUIDGenerateLock;
+
+Add <br>
+
+	const char* MMatchItemDesc::GetEluName()
+	{
+		if (strlen(m_szElu) > 0)
+			return m_szElu;
+
+		return nullptr;
+	}
+
+Open(MMatchItem.h) <br>
+Find <br>
+
+	bool					m_bIsEnableMoveToAccountItem;
+
+Replace <br>
+
+	//Dynamic resource loading
+	char					m_szElu[256];
+	const char*				GetEluName();
 
 
 
