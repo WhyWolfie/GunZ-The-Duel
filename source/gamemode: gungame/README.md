@@ -9,6 +9,7 @@ Add (CSCommon/MMatchRuleGunGame.h) <br>
 Add (Gunz/ZRuleGunGame.cpp) <br>
 Add (Gunz/ZRuleGunGame.h) <br>
 
+gungame.xml in Matchserver folder <br>
 
 Open(MBaseGameType.h) <br>
 Find <br>
