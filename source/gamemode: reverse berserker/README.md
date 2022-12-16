@@ -511,8 +511,8 @@ Add <br>
       }
     }
 
-
-
+![1](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20reverse%20berserker/1.png)
+![2](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20reverse%20berserker/2.png)
 
 
 
