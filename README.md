@@ -272,6 +272,7 @@ GunZ The Duel Releases <br>
 - infected: [infected](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20infected)
 - no-kstyle: [no-kstyle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20nokstyle)
 - spymode: [spymode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20spy)
+- reverse berserker: [reverse berserker](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20reverse%20berserker)
 
 (others)<br>
 - basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
