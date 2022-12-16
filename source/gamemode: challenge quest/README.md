@@ -2328,160 +2328,1363 @@ Replace <br>
 
 	}
 
+Open(RVisualMesh.cpp) <br>
+Find <br>
+
+	void RVisualMesh::SetParts(RMeshPartsType parts,char* name)
+	{
+		if(parts < 0 && parts >= eq_parts_end ) 
+			return;
+
+		if(m_pTMesh==NULL) return;
+
+		if(!m_pMesh) return;
+
+		RMeshNode* pNode = m_pMesh->GetPartsNode(name);
+
+		if(pNode) 
+		{
+	//		if(m_pTMesh[parts] != pNode) 
+			{
+				m_pTMesh[parts] = pNode;
+				m_pMesh->ConnectPhysiqueParent(pNode);
+			}
+		}
+	}
+
+Replace <br>
+
+	//Dynamic resource loading
+	void RVisualMesh::SetParts(RMeshPartsType parts,char* name, const char* eluName)
+	{
+		if(parts < 0 && parts >= eq_parts_end ) 
+			return;
+
+		if(m_pTMesh==NULL) return;
+
+		if(!m_pMesh || m_pMesh->m_isMeshLoaded == false) return;
+
+		RMeshNode* pNode = m_pMesh->GetPartsNode(name,eluName);
+
+		if(pNode) 
+		{
+	//		if(m_pTMesh[parts] != pNode) 
+			{
+				m_pTMesh[parts] = pNode;
+				m_pMesh->ConnectPhysiqueParent(pNode);
+			}
+		}
+	}
+
+Open(ZScreenEffectMaanger.cpp) <br>
+Find <br>
+
+	void ZKOEffect::InitFrame()
+	{
+		m_VMesh.Stop(ani_mode_lower);
+		m_VMesh.m_pMesh->SetFrame(0 , 0);
+		m_VMesh.Play(ani_mode_lower);
+	}
+
+	void ZKOEffect::SetFrame(int nFrame)
+	{
+		m_VMesh.m_pMesh->SetFrame(nFrame , 0);
+	}
+	
+Replace <br>
+
+	void ZKOEffect::InitFrame()
+	{
+		m_VMesh.Stop(ani_mode_lower);
+		m_VMesh.GetMesh()->SetFrame(0 , 0);
+		m_VMesh.Play(ani_mode_lower);
+	}
+
+	void ZKOEffect::SetFrame(int nFrame)
+	{
+		m_VMesh.GetMesh()->SetFrame(nFrame , 0);
+	}
+
+Find <br>
+
+		// ¸¸¾à ÀÌ¹Ì ±×¸®°í ÀÖÀ¸¸é ±×¸®Áö ¾Ê´Â´Ù.
+		for (iterator itor = begin(); itor != end(); ++itor)
+		{
+			ZScreenEffect* pEffect = (ZScreenEffect*)(*itor);
+			if (pEffect->GetVMesh()->m_pMesh == m_pAlertEffect[nIndex]) return;
+		}
+
+Replace <br>
+
+		// ¸¸¾à ÀÌ¹Ì ±×¸®°í ÀÖÀ¸¸é ±×¸®Áö ¾Ê´Â´Ù.
+		for (iterator itor = begin(); itor != end(); ++itor)
+		{
+			ZScreenEffect* pEffect = (ZScreenEffect*)(*itor);
+			if (pEffect->GetVMesh()->GetMesh() == m_pAlertEffect[nIndex]) return;
+		}
+
+Open(ZShadow.cpp) <br>
+Find <br>
+
+	//matrix setup
+	float fSize = vmesh.m_vScale.x * size_;
+	rmatrix scaleMat = setSize( size_ );
+
+Replace <br>
+
+	//matrix setup
+	float fSize = vmesh.GetScale().x * size_;
+	rmatrix scaleMat = setSize( size_ );
+
+Open(ZSkyBox.cpp) <br>
+Find <br>
+
+	bool ZSkyBox::Create( RVisualMesh* pvMesh_ )
+	{
+		mpVMesh = pvMesh_;
+		mpVMesh->m_pMesh->mbSkyBox	= true;
+		return true;
+	}
+	
+Replace <br>
+
+	bool ZSkyBox::Create( RVisualMesh* pvMesh_ )
+	{
+		mpVMesh = pvMesh_;
+		mpVMesh->GetMesh()->mbSkyBox	= true;
+		return true;
+	}
+
+Open(ZWeapon.cpp) <br>
+Find <br>
+
+	void ZWeaponItemKit::Render()
+	{
+		if(m_bInit) {
+			if(m_pVMesh->m_pMesh) {
+			// ¹«±â ÆÄÃ÷¸¦ Ä³¸¯ÅÍ¿¡ ºÙ¾îÀÖÀ»°æ¿ì Á¶¸íÀ» ¹Þ°í ¾ÈºÙ¾îÀÖÀ»°æ¿ì Á¶¸íÀ» ¾È¹Þ´Â 2°¡Áö¿ëµµ·Î»ç¿ëÇÏ±â¶§¹®		
+
+			rmatrix mat;
+			MakeWorldMatrix(&mat,m_Position,m_Dir,m_Up);
+			m_pVMesh->SetWorldMatrix(mat);
+	//		m_pVMesh->m_pMesh->m_LitVertexModel = true;
+			ZMovingWeapon::Render();
+	//		m_pVMesh->m_pMesh->m_LitVertexModel = false;
+
+			}
+		}
+	}
+
+Replace <br>
+
+	void ZWeaponItemKit::Render()
+	{
+		if (m_bInit) {
+			if (m_pVMesh->GetMesh()) {
+				// ¹«±â ÆÄÃ÷¸¦ Ä³¸¯ÅÍ¿¡ ºÙ¾îÀÖÀ»°æ¿ì Á¶¸íÀ» ¹Þ°í ¾ÈºÙ¾îÀÖÀ»°æ¿ì Á¶¸íÀ» ¾È¹Þ´Â 2°¡Áö¿ëµµ·Î»ç¿ëÇÏ±â¶§¹®		
+
+				rmatrix mat;
+				MakeWorldMatrix(&mat, m_Position, m_Dir, m_Up);
+				m_pVMesh->SetWorldMatrix(mat);
+				//		m_pVMesh->m_pMesh->m_LitVertexModel = true;
+				ZMovingWeapon::Render();
+				//		m_pVMesh->m_pMesh->m_LitVertexModel = false;
+
+			}
+		}
+	}
+
+Open(ZWorldItem.cpp) <br>
+Find <br>
+
+	if(pVMesh->m_bIsRender==false)
+		return;
+
+Replace <br>
+
+	if(pVMesh->IsRender()==false)
+		return;
+
+Open(ZCharacter.cpp) <br>
+Find <br>
+
+	void ZCharacter::TestToggleCharacter()
+	{
+		if(m_pVMesh->m_pMesh) {
+
+			RMesh* pMesh = NULL;
+
+			if( strcmp(m_pVMesh->m_pMesh->GetName(),"heroman1")==0 ) {
+				pMesh = ZGetMeshMgr()->Get("herowoman1");//¿øÇÏ´Â ¸ðµ¨À» ºÙ¿©ÁÖ±â..
+				m_pVMesh->m_pMesh = pMesh;
+				m_pVMesh->ClearParts();//³²³à°¡ Æ²·Á¼­.
+				TestChangePartsAll();
+			}
+			else {
+				pMesh = ZGetMeshMgr()->Get("heroman1");//¿øÇÏ´Â ¸ðµ¨À» ºÙ¿©ÁÖ±â..
+				m_pVMesh->m_pMesh = pMesh;
+				m_pVMesh->ClearParts();
+				TestChangePartsAll();
+			}
+		}
+	}
+
+Replace <br>
+
+	void ZCharacter::TestToggleCharacter()
+	{
+		if(m_pVMesh->GetMesh()) {
+
+			RMesh* pMesh = NULL;
+
+			if( strcmp(m_pVMesh->GetMesh()->GetName(),"heroman1")==0 ) {
+				pMesh = ZGetMeshMgr()->Get("herowoman1");//¿øÇÏ´Â ¸ðµ¨À» ºÙ¿©ÁÖ±â..
+				m_pVMesh->SetMesh(pMesh);
+				m_pVMesh->ClearParts();//³²³à°¡ Æ²·Á¼­.
+				TestChangePartsAll();
+			}
+			else {
+				pMesh = ZGetMeshMgr()->Get("heroman1");//¿øÇÏ´Â ¸ðµ¨À» ºÙ¿©ÁÖ±â..
+				m_pVMesh->SetMesh(pMesh);
+				m_pVMesh->ClearParts();
+				TestChangePartsAll();
+			}
+		}
+	}
+
+Find <br>
+
+	bool ZCharacter::CheckDrawGrenade()
+	{
+		if(m_Items.GetSelectedWeapon()==NULL) return false;
+
+		if( m_pVMesh ) {
+			if( m_pVMesh->m_SelectWeaponMotionType==eq_wd_grenade ) {
+				if( m_Items.GetSelectedWeapon()->GetBulletCurrMagazine() ) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+Replace <br>
+
+	bool ZCharacter::CheckDrawGrenade()
+	{
+		if(m_Items.GetSelectedWeapon()==NULL) return false;
+
+		if( m_pVMesh ) {
+			if( m_pVMesh->GetSelectWeaponMotionType()==eq_wd_grenade ) {
+				if( m_Items.GetSelectedWeapon()->GetBulletCurrMagazine() ) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 
+Find <br>
+
+	if(pVMesh) {
+		if(pVMesh->m_pMesh) {
+			if(strcmp(pVMesh->m_pMesh->GetName(),"heroman1")!=0) {
+				mode +=6;
+			}
+		}
+	}
 
+Replace <br>
 
+	if(pVMesh) {
+		if(pVMesh->GetMesh()) {
+			if(strcmp(pVMesh->GetMesh()->GetName(),"heroman1")!=0) {
+				mode +=6;
+			}
+		}
+	}
 
+Find <br>
 
+	m_pVMesh->m_bSkipRenderFaceParts = false;
 
 
+Replace <br>
 
+	m_pVMesh->SetSkipRenderFaceParts(false);
 
+Find <br>
 
+	m_pVMesh->m_bSkipRenderFaceParts = true;
 
+Replace <br>
 
+	m_pVMesh->SetSkipRenderFaceParts(true);
 
+Open(ZCharacterObject.cpp) <br>
+Find <br>
 
+	bool ZCharacterObject::IsDoubleGun() { 
 
+		if(m_pVMesh) {
+			if(m_pVMesh->m_SelectWeaponMotionType==eq_wd_pistol) {
+				return true;
+			} else if(m_pVMesh->m_SelectWeaponMotionType==eq_wd_smg) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 
+Replace <br>
 
 
+	bool ZCharacterObject::IsDoubleGun() { 
 
+		if(m_pVMesh) {
+			if(m_pVMesh->GetSelectWeaponMotionType()==eq_wd_pistol) {
+				return true;
+			} else if(m_pVMesh->GetSelectWeaponMotionType()==eq_wd_smg) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 
+Find <br>
 
+	bool ZCharacterObject::GetCurrentWeaponDirection(rvector* dir)
+	{
+		if(m_pVMesh && dir) {
 
+			rmatrix* mat = &m_pVMesh->m_WeaponDummyMatrix[weapon_dummy_muzzle_flash];//ÃÑ±¸
 
+			dir->x = mat->_21;
+			dir->y = mat->_22;
+			dir->z = mat->_23;
 
+			return true;
+		}
+		return false;
+	}
 
 
+Replace <br>
 
+	bool ZCharacterObject::GetCurrentWeaponDirection(rvector* dir)
+	{
+		if(m_pVMesh && dir) {
 
+			const rmatrix* mat = &m_pVMesh->GetWeaponDummyMatrix(weapon_dummy_muzzle_flash);//ÃÑ±¸
 
+			dir->x = mat->_21;
+			dir->y = mat->_22;
+			dir->z = mat->_23;
 
+			return true;
+		}
+		return false;
+	}
 
+Open(ZCombatInterface.cpp) <br>
+Find <br>
 
+	if (pMyChar && pMyChar->m_pVMesh) {
 
+		RWeaponMotionType type = (RWeaponMotionType)pMyChar->m_pVMesh->GetSetectedWeaponMotionID();
+
+		if ((type == eq_wd_katana) || (type == eq_wd_grenade) || (type == eq_ws_dagger) || (type == eq_wd_dagger)
+			|| (type == eq_wd_item) || (type == eq_wd_sword) || (type == eq_wd_blade)) {
+			bPick = false;
+		}
 
+		if (pMyChar->m_pVMesh->m_vRotXYZ.y > -20.f && pMyChar->m_pVMesh->m_vRotXYZ.y < 30.f) {
+			bPick = false;
+		}
 
+		if (pMyChar->m_pVMesh->m_vRotXYZ.y < -25.f)
+			bPick = true;
 
+		if (pMyChar->IsMan()) { // ¸ðµ¨ÀÌ ³²ÀÚ°í
+			if (pMyChar->m_pVMesh->m_vRotXYZ.x < -20.f) {//¿À¸¥ÂÊÀ¸·Î ÀÌµ¿Áß¿¡
+				if (RCameraDirection.z < -0.2f)
+					bPick = true;
+			}
+		}
 
+Replace <br>
 
+	if(pMyChar && pMyChar->m_pVMesh) {
+		
+		rvector vRot = pMyChar->m_pVMesh->GetRotXYZ();
 
+		RWeaponMotionType type = (RWeaponMotionType)pMyChar->m_pVMesh->GetSetectedWeaponMotionID();
+
+		if( (type==eq_wd_katana) || (type==eq_wd_grenade) || (type==eq_ws_dagger) || (type==eq_wd_dagger) 
+			|| (type==eq_wd_item) || (type==eq_wd_sword) || (type==eq_wd_blade) || (type == eq_wd_spycase)) {
+			bPick = false;
+		}
+
+		if(vRot.y  > -20.f &&  vRot.y < 30.f) {
+			bPick = false;
+		}
+
+		if(vRot.y < -25.f)
+			bPick = true;
+
+		if( pMyChar->IsMan() ) { // ¸ðµ¨ÀÌ ³²ÀÚ°í
+			if( vRot.x < -20.f) {//¿À¸¥ÂÊÀ¸·Î ÀÌµ¿Áß¿¡
+				if( RCameraDirection.z < -0.2f)
+					bPick = true;
+			}
+		}
+
+Open(ZMeshView.cpp) <br>
+Find <br>
+
+	if(m_pVisualMesh->m_pMesh==NULL) {
+
+Replace <br>
+
+	if(m_pVisualMesh->GetMesh()==NULL) {
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+	void ZGame::OnExplosionGrenade(MUID uidOwner,rvector pos,float fDamage,float fRange,float fMinDamage,float fKnockBack,MMatchTeam nTeamID)
+	{
+
+Add Above <br>
+
+	bool ZGame::IsWallBlocked(ZObject* pObj1, ZObject* pObj2, bool bCoherentToPeer)
+	{
+		//### ÀÌ ÇÔ¼ö¸¦ ¼öÁ¤ÇÏ?E¶È°°ÀÌ IsWallBlocked()¿¡µµ Àû?E?ÁÖ¾ûÚß ÇÕ´Ï´Ù. ###
+
+		// ÇÇ¾ûÏ¢¸® ÁÂÇ¥¸¦ º¸³¾¶§ ÇöÀç´Â float->short Ä³½ºÆÃÀÌ ÀÏ¾ûÏ­´Ù (?E¼Ò¼öÁ¡ÀÌÇÏ ¹ö¸²)
+		// µû¶ó¼­ Å¬¶óÀÌ¾ðÆ®µéÀÌ °¢ÀÚ ÆÇÁ¤ÇÑ °ªÀÌ ¹Ì¹¦ÇÏ°Ô ´Ù¸¦ ¼ö°¡ ÀÖ´Ù. ÀÌ°ÍÀÌ ±âÁ¸¿¡ ¹®Á¦¸¦ ÀÏÀ¸Å°?E¾Ê¾ÒÀ¸³ª
+		// ¼­¹ÙÀÌ¹ú¿¡¼­ ³·Àº È®?E?¹®Á¦°¡ ¹ß»ý: npc°¡ ÇÃ·¹ÀÌ¾ûÔ¦ ±ÙÁ¢°ø°ÝÇÏ·Á?EÇÒ¶§, npc ÄÁÆ®·Ñ·¯´Â °ø°Ý °¡´ÉÇÏ´Ù?EÆÇÁ¤.
+		// ÇÇ°Ý´çÇÏ´Â Å¬¶óÀÌ¾ðÆ®´Â °ø°Ý °¡´ÉÇÏ?E¾Ê´Ù?EÆÇÁ¤. ÀÌ·Î?EÇÇ°ÝµÇ´Â À¯Àú°¡ À§Ä¡¸¦ ¹Ù²Ù?E¾Ê´ÂÇÑ ¸ó½ºÅÍ´Â Á¦ÀÚ¸®¿¡¼­ ¹«ÇÑ ?EæÀ?Ä¡°ÔµÊ (¼Ö±ûÔ» ¾Ç?EºÒ°¡¶ó?E»ý°¢ÇÏÁö¸¸ ÆÛºúÔ®¼ÅÀÇ ±Ù¼º¿¡ Á³À½)
+		// bCoherentToPeer==true ÀÏ¶§ ÇÇ¾ûÛ¡°Ô º¸³½ °Í?E°°Àº °ªÀ» »ç?E?.
+
+		if ((pObj1 == NULL) || (pObj2 == NULL))
+			return false;
+
+		if ((pObj1->GetVisualMesh() == NULL) || (pObj2->GetVisualMesh() == NULL))
+			return false;
+
+		// ¿¡´Ï¸ÞÀÌ¼Ç ¶§¹®¿¡ º®À» ¶Õ?Eµé¾ûÌ¡´Â °æ?E?ÀÖ¾ûØ­..
+		rvector p1 = pObj1->GetPosition() + rvector(0.f, 0.f, 100.f);
+		rvector p2 = pObj2->GetPosition() + rvector(0.f, 0.f, 100.f);
+
+		if (bCoherentToPeer)
+		{
+			p1.x = short(p1.x);
+			p1.y = short(p1.y);
+			p1.z = short(p1.z);
+			p2.x = short(p2.x);
+			p2.y = short(p2.y);
+			p2.z = short(p2.z);
+			// ¿ÀÂ÷·Î ÀÎÇÑ ¹ö±× Àç?EÅ×½ºÆ®¸¦ ½±°Ô ÇÏ?EÀ§ÇØ 1ÀÇ ÀÚ¸®±û?EÀý»çÇÑ ¹ö?E
+			/*p1.x = (short(p1.x * 0.1f)) * 10.f;
+			p1.y = (short(p1.y * 0.1f)) * 10.f;
+			p1.z = (short(p1.z * 0.1f)) * 10.f;
+			p2.x = (short(p2.x * 0.1f)) * 10.f;
+			p2.y = (short(p2.y * 0.1f)) * 10.f;
+			p2.z = (short(p2.z * 0.1f)) * 10.f;*/
+		}
+
+		rvector dir = p2 - p1;
 
+		Normalize(dir);
 
+		ZPICKINFO pickinfo;
 
+		if (Pick(pObj1, p1, dir, &pickinfo)) {//º®ÀÌ¶ó?E
+			if (pickinfo.bBspPicked)//¸ÊÀÌ °É¸°°æ?E
+				return true;
+		}
+
+		return false;
+	}
+	//jintriple3 µð¹ö±× ·¹Áö½ºÅÍ ÇØÅ·.....ºñ±³¸¦ À§ÇØ¼­
+	bool ZGame::IsWallBlocked(ZObject* pObj1, ZObject* pObj2, int & nDebugRegister/*´Ü?Eºñ±³?E*/, bool bCoherentToPeer)
+	{	//bCoherentToPeer¿¡ ?EÑ°ÍÀ?¿øº» CheckWall ÁÖ¼® ?EE
 
+		if ((pObj1 == NULL) || (pObj2 == NULL))
+		{
+			nDebugRegister = -10;	//¿ª½Ã³ª ¼ýÀÚ´Â ÀÇ¹Ì°¡ ¾ø´Ù..
+			return false;
+		}
 
+		if ((pObj1->GetVisualMesh() == NULL) || (pObj2->GetVisualMesh() == NULL))
+		{
+			nDebugRegister = -10;
+			return false;
+		}
 
+		// ¿¡´Ï¸ÞÀÌ¼Ç ¶§¹®¿¡ º®À» ¶Õ?Eµé¾ûÌ¡´Â °æ?E?ÀÖ¾ûØ­..
+		rvector p1 = pObj1->GetPosition() + rvector(0.f, 0.f, 100.f);
+		rvector p2 = pObj2->GetPosition() + rvector(0.f, 0.f, 100.f);
 
+		if (bCoherentToPeer)
+		{
+			p1.x = short(p1.x);
+			p1.y = short(p1.y);
+			p1.z = short(p1.z);
+			p2.x = short(p2.x);
+			p2.y = short(p2.y);
+			p2.z = short(p2.z);
+			// ¿ÀÂ÷·Î ÀÎÇÑ ¹ö±× Àç?EÅ×½ºÆ®¸¦ ½±°Ô ÇÏ?EÀ§ÇØ 1ÀÇ ÀÚ¸®±û?EÀý»çÇÑ ¹ö?E
+			/*p1.x = (short(p1.x * 0.1f)) * 10.f;
+			p1.y = (short(p1.y * 0.1f)) * 10.f;
+			p1.z = (short(p1.z * 0.1f)) * 10.f;
+			p2.x = (short(p2.x * 0.1f)) * 10.f;
+			p2.y = (short(p2.y * 0.1f)) * 10.f;
+			p2.z = (short(p2.z * 0.1f)) * 10.f;*/
+		}
 
+		rvector dir = p2 - p1;
 
+		Normalize(dir);
 
+		ZPICKINFO pickinfo;
 
+		if (Pick(pObj1, p1, dir, &pickinfo)) {//º®ÀÌ¶ó?E
+			if (pickinfo.bBspPicked)//¸ÊÀÌ °É¸°°æ?E
+			{
+				nDebugRegister = FOR_DEBUG_REGISTER;
+				return true;
+			}
+		}
+		nDebugRegister = -10;
+		return false;
+	}
 
+Open(ZGame.h) <br>
+Find <br>
 
+	int  SelectSlashEffectMotion(ZCharacter* pCharacter);
+	//jintriple3 µð¹ö±× ·¹Áö½ºÅÍ ÇØÅ· ¹æÁö~!!!
+	bool CheckWall(ZObject* pObj1,ZObject* pObj2, bool bCoherentToPeer=false);
+	bool CheckWall(ZObject* pObj1,ZObject* pObj2, int & nDebugRegister/*´Ü¼ø ºñ±³¿ë*/, bool bCoherentToPeer=false);
 
+	void InitRound();
 
+Replace <br>
 
+	int  SelectSlashEffectMotion(ZCharacter* pCharacter);
+	//jintriple3 µð¹ö±× ·¹Áö½ºÅÍ ÇØÅ· ¹æÁö~!!!
+	bool IsWallBlocked(ZObject* pObj1, ZObject* pObj2, bool bCoherentToPeer = false);
+	bool IsWallBlocked(ZObject* pObj1, ZObject* pObj2, int& nDebugRegister/*´Ü¼ø ºñ±³¿ë*/, bool bCoherentToPeer = false);
 
+	bool InRanged(ZObject* pAttacker, ZObject* pVictim);
 
 
+	void InitRound();
 
 
+Open(RMesh_Mtrl.cpp) <br>
+Find <br>
 
+	void RMesh::SetMtrlUvAni_ON()
+	{
+		if( m_pVisualMesh && m_pVisualMesh->m_bUVAni) { // on
 
+			rmatrix mat;
+			D3DXMatrixIdentity(&mat);
 
+			float add_t = timeGetTime() / 1000.f;
 
+			mat._31 = add_t * m_pVisualMesh->m_fUAniValue;
+			mat._32 = add_t * m_pVisualMesh->m_fVAniValue;
 
+			RGetDevice()->SetTransform( D3DTS_TEXTURE0, &mat);
+			RGetDevice()->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_COUNT2 ); 
+			RGetDevice()->SetTextureStageState( 0, D3DTSS_TEXCOORDINDEX, 0 );
+		}
+	}
 
+	void RMesh::SetMtrlUvAni_OFF()
+	{
+		if( m_pVisualMesh && m_pVisualMesh->m_bUVAni) {//off
 
+			RGetDevice()->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_DISABLE );
 
+		}
+	}
 
+Replace <br>
 
+	void RMesh::SetMtrlUvAni_ON()
+	{
+		if( m_pVisualMesh && m_pVisualMesh->IsUVAni()) { // on
 
+			rmatrix mat;
+			D3DXMatrixIdentity(&mat);
 
+			float add_t = timeGetTime() / 1000.f;
 
+			mat._31 = add_t * m_pVisualMesh->GetUAniValue();
+			mat._32 = add_t * m_pVisualMesh->GetVAniValue();
 
+			RGetDevice()->SetTransform( D3DTS_TEXTURE0, &mat);
+			RGetDevice()->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_COUNT2 ); 
+			RGetDevice()->SetTextureStageState( 0, D3DTSS_TEXCOORDINDEX, 0 );
+		}
+	}
 
+	void RMesh::SetMtrlUvAni_OFF()
+	{
+		if( m_pVisualMesh && m_pVisualMesh->IsUVAni()) {//off
 
+			RGetDevice()->SetTextureStageState( 0, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_DISABLE );
 
+		}
+	}
 
+Find <br>
 
+	if( m_pVisualMesh && !pMNode->m_bNpcWeaponMeshNode ) { 
+		_color = m_pVisualMesh->m_NPCBlendColor; 
+	}
 
+Replace <br>
 
+	if( m_pVisualMesh && !pMNode->m_bNpcWeaponMeshNode ) { 
+		_color = m_pVisualMesh->GetNPCBlendColor(); 
+	}
 
 
+Open(RMesh_Render.cpp) <br>
+Find <br>
 
+	if(m_pVisualMesh && m_pVisualMesh->m_bIsCharacter)
+		m_pVisualMesh->ClearPartInfo();
 
+Replace <br>
 
+	if(m_pVisualMesh && m_pVisualMesh->IsCharacter())
+		m_pVisualMesh->ClearPartInfo();
 
 
+Find <br>
 
+		if(pPartsMeshNode->m_isDummyMesh)	{ //Bip,Bone,Dummy Skip
 
+			if( m_pVisualMesh ) {
+				if( m_pVisualMesh->m_pBipMatrix ) {
+					if(pMeshNode->m_PartsPosInfoType!=eq_parts_pos_info_etc) { 
+						m_pVisualMesh->m_pBipMatrix[pMeshNode->m_PartsPosInfoType] = pMeshNode->m_mat_result;
+					}
+				}
+			}
+			it_obj++;
+			continue;
+		}
 
+Replace <br>
 
+		if(pPartsMeshNode->m_isDummyMesh)	{ //Bip,Bone,Dummy Skip
 
+			if( m_pVisualMesh ) {
+				if( m_pVisualMesh->GetBipMatrixArray()) {
+					if(pMeshNode->m_PartsPosInfoType!=eq_parts_pos_info_etc) { 
+						m_pVisualMesh->GetBipMatrixArray()[pMeshNode->m_PartsPosInfoType] = pMeshNode->m_mat_result;
+					}
+				}
+			}
+			it_obj++;
+			continue;
+		}		
 
+Find <br>
 
+	if(m_pVisualMesh->m_pTOCCL)
 
+Replace <br>
 
+	if(m_pVisualMesh->GetTOCCL())
 
+Find <br>
 
+				if(m_pVisualMesh->m_bCheckViewFrustum) {//tool ÀÌ¶ó¸é false
+					if(isInViewFrustumWithZ( &bb, RGetViewFrustum()) == false) {
+						return false;
+					}
+				}
 
+				return m_pVisualMesh->m_pTOCCL->IsVisible(bb);
+			}
 
+Replace <br>
 
+				if(m_pVisualMesh->IsCheckViewFrustum()) {//tool ÀÌ¶ó¸é false
+					if(isInViewFrustumWithZ( &bb, RGetViewFrustum()) == false) {
+						return false;
+					}
+				}
 
+				return m_pVisualMesh->GetTOCCL()->IsVisible(bb);
+			}
 
+Find <br>
 
+	if(m_pVisualMesh)
+		if(m_pVisualMesh->m_bRenderMatrix)//¸ÅÆ®¸¯½º °»½Å¸¸ ¿øÇÏ´Â °æ¿ì¶ó¸é....
+			return;
 
 
+Replace <br>
 
+	if(m_pVisualMesh)
+		if(m_pVisualMesh->IsRenderMatrix())//¸ÅÆ®¸¯½º °»½Å¸¸ ¿øÇÏ´Â °æ¿ì¶ó¸é....
+			return;
 
 
+Open(RVisualMesh.cpp) <br>
+Find <br>
 
+			pSInfo->SetName( m_pAniSet->GetSoundFileName() );
+			pSInfo->SetRelatedToBsp( m_pAniSet->IsSoundRelatedToMap() );
+			pSInfo->SetPos( pVMesh->m_WorldMat._41, pVMesh->m_WorldMat._42, pVMesh->m_WorldMat._43 );
+		}
+	}
 
+Replace <br>
 
+			pSInfo->SetName( m_pAniSet->GetSoundFileName() );
+			pSInfo->SetRelatedToBsp( m_pAniSet->IsSoundRelatedToMap() );
+			pSInfo->SetPos( pVMesh->GetWorldMat()._41, pVMesh->GetWorldMat()._42, pVMesh->GetWorldMat()._43 );
+		}
+	}
 
+Find <br>
 
+			if( m_pAniSet->IsHaveSoundFile()) {
+				RAniSoundInfo* pSInfo = &m_SoundInfo;
+				pSInfo->isPlay = true;
+				pSInfo->SetName(m_pAniSet->GetSoundFileName());
+				pSInfo->SetRelatedToBsp(m_pAniSet->IsSoundRelatedToMap());
+				pSInfo->SetPos(pVMesh->m_WorldMat._41,pVMesh->m_WorldMat._42,pVMesh->m_WorldMat._43);
+			}
 
+Replace <br>
 
+			if( m_pAniSet->IsHaveSoundFile()) {
+				RAniSoundInfo* pSInfo = &m_SoundInfo;
+				pSInfo->isPlay = true;
+				pSInfo->SetName(m_pAniSet->GetSoundFileName());
+				pSInfo->SetRelatedToBsp(m_pAniSet->IsSoundRelatedToMap());
+				pSInfo->SetPos(pVMesh->GetWorldMat()._41,pVMesh->GetWorldMat()._42,pVMesh->GetWorldMat()._43);
+			}
 
+Find <br>
 
+				if( (*(m_pAniNameEventSet->m_AniNameEventSetIter))->GetBeginFrame() <= m_nFrame )
+				{
+					(*(m_pAniNameEventSet->m_AniNameEventSetIter))->m_vPos.x = pVMesh->m_WorldMat._41;
+					(*(m_pAniNameEventSet->m_AniNameEventSetIter))->m_vPos.y = pVMesh->m_WorldMat._42;
+					(*(m_pAniNameEventSet->m_AniNameEventSetIter))->m_vPos.z = pVMesh->m_WorldMat._43;
+					m_pEventFunc((*m_pAniNameEventSet->m_AniNameEventSetIter));		
+					(*m_iterCheckAniEvent) = true;
+				}
 
+Replace <br>
 
+				if( (*(m_pAniNameEventSet->m_AniNameEventSetIter))->GetBeginFrame() <= m_nFrame )
+				{
+					(*(m_pAniNameEventSet->m_AniNameEventSetIter))->m_vPos.x = pVMesh->GetWorldMat()._41;
+					(*(m_pAniNameEventSet->m_AniNameEventSetIter))->m_vPos.y = pVMesh->GetWorldMat()._42;
+					(*(m_pAniNameEventSet->m_AniNameEventSetIter))->m_vPos.z = pVMesh->GetWorldMat()._43;
+					m_pEventFunc((*m_pAniNameEventSet->m_AniNameEventSetIter));		
+					(*m_iterCheckAniEvent) = true;
+				}
 
+Find <br>
 
+	void RVisualLightMgr::Clone(RVisualMesh* pVMesh)
+	{
+		if(!pVMesh) return;
 
+		for(int i=0;i<VISUAL_LIGHT_MAX;i++) 
+		{
+			pVMesh->m_LightMgr.m_Light[i]		= m_Light[i];
+			pVMesh->m_LightMgr.m_LightEnable[i] = m_LightEnable[i];
+		}
+	}
 
+Replace <br>
 
+	void RVisualLightMgr::Clone(RVisualMesh* pVMesh)
+	{
+		if(!pVMesh) return;
 
+		for(int i=0;i<VISUAL_LIGHT_MAX;i++) 
+		{
+			pVMesh->GetLightMgr()->m_Light[i]		= m_Light[i];
+			pVMesh->GetLightMgr()->m_LightEnable[i] = m_LightEnable[i];
+		}
+	}
 
+Find <br>
 
+	void RVisualMeshMgr::Render(int id) {
 
+		if(m_list.empty()) return;
 
+		r_vmesh_node node;
+		for(node = m_list.begin(); node != m_list.end();) {
+			if((*node)->m_id == id) {
+				(*node)->Render();
+				return;
+			}
+			else ++node;
+		}
+	}
 
+Replace <br>
 
+	void RVisualMeshMgr::Render(int id) {
 
+		if(m_list.empty()) return;
 
+		r_vmesh_node node;
+		for(node = m_list.begin(); node != m_list.end();) {
+			if((*node)->GetId() == id) {
+				(*node)->Render();
+				return;
+			}
+			else ++node;
+		}
+	}
 
+Find <br>
 
+	void RVisualMeshMgr::Del(int id) {
 
+		if(m_list.empty()) return;
 
+		r_vmesh_node node;
 
+		for(node = m_list.begin(); node != m_list.end();) {
+			if((*node)->m_id == id) {
+				delete (*node);
+				node = m_list.erase(node);
+			}
+			else ++node;
+		}
+	}
 
+Replace <br>
 
+	void RVisualMeshMgr::Del(int id) {
 
+		if(m_list.empty()) return;
 
+		r_vmesh_node node;
 
+		for(node = m_list.begin(); node != m_list.end();) {
+			if((*node)->GetId() == id) {
+				delete (*node);
+				node = m_list.erase(node);
+			}
+			else ++node;
+		}
+	}
 
+Open(ZGame.h) <br>
+Find <br>
 
+		void OnPreDraw();
+		bool OnRuleCommand(MCommand* pCommand);
+		bool InRanged( ZObject* pAttacker, ZObject* pVictim);
+		bool InRanged( ZObject* pAttacker, ZObject* pVictim, int &nDebugRegister/*µð¹ö±× ·¹Áö½ºÅÍ ÇØÅ· ¹æÁö¸¦ À§ÇÑ º¯¼ö*/);
 
+	public:
 
+Replace <br>
 
+	void OnPreDraw();
+	bool OnRuleCommand(MCommand* pCommand);
+	bool InRanged(ZObject* pAttacker, ZObject* pVictim, int& nDebugRegister/*µð¹ö±× ·¹Áö½ºÅÍ ÇØÅ· ¹æÁö¸¦ À§ÇÑ º¯¼ö*/);
 
+	public:
 
+Open(ZGameAction.cpp) <br>
+Find <br>
+
+			bReturnValue = ZGetGame()->CheckWall( pOwnerCharacter, pTar) == true;
+			if( ZGetGame()->CheckWall( pOwnerCharacter,pTar ) == true)
+				PROTECT_DEBUG_REGISTER(bReturnValue)
+					continue;
+
+Replace <br>
+
+			bReturnValue = ZGetGame()->IsWallBlocked( pOwnerCharacter, pTar) == true;
+			if( ZGetGame()->IsWallBlocked( pOwnerCharacter,pTar ) == true)
+				PROTECT_DEBUG_REGISTER(bReturnValue)
+					continue;
+
+Find <br>
+
+				if(ZGetGame()->CheckWall(pOwnerCharacter,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+					bCheck = false;
+
+Replace <br>
+
+				if(ZGetGame()->IsWallBlocked(pOwnerCharacter,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+					bCheck = false;
+Find <br>
+
+				if(ZGetGame()->CheckWall(pOwnerCharacter,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+					bCheck = false;
+
+Replace <br>
+
+				if(ZGetGame()->IsWallBlocked(pOwnerCharacter,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+					bCheck = false;
+
+Open(ZMyCharacter.cpp) <br>
+Find <br>
+
+					if(ZGetGame()->CheckWall(this,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+						bCheck = false;
+
+Replace <br>
+
+					if(ZGetGame()->IsWallBlocked(this,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+						bCheck = false;
+
+Find <br>
+
+				if (ZGetGame()->CheckWall(this, pTar) == true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+					bCheck = false;
+					
+Replace <br>
+
+				if(ZGetGame()->IsWallBlocked(this,pTar)==true) //Áß°£¿¡ º®ÀÌ ¸·°í ÀÖ´Â°¡?
+					bCheck = false;
+
+Open(ZEffectAniMesh.cpp) <br>
+Find <br>
+
+	bool ZEffectAniMesh::Draw(unsigned long int nTime)
+	{
+		if(m_VMesh.m_pMesh==NULL)
+			return false;
+
+Replace <br>
+
+	bool ZEffectAniMesh::Draw(unsigned long int nTime)
+	{
+		if(m_VMesh.GetMesh()==NULL)
+			return false;
+
+Find <br>
+
+		if(m_nAutoAddEffect == ZEffectAutoAddType_Methor ) {
+
+			pNode = m_VMesh.m_pMesh->GetMeshData("methor");
+
+Replace <br>
+
+		if(m_nAutoAddEffect == ZEffectAutoAddType_Methor ) {
+
+			pNode = m_VMesh.GetMesh()->GetMeshData("methor");
+
+
+Open(ZEffectManager.cpp) <br>
+Find <br>
+
+	void ZEffectManager::AddHasteBeginEffect(const rvector& Target, ZObject* pObj)
+	{
+		ZEffect* pNew = NULL;
+
+		rvector pos = Target;
+		rvector dir = -RealSpace2::RCameraDirection;
+		dir.z = 0.f;
+
+		pNew = new ZEffectDash(m_pHasteBeginEffect,pos,dir,pObj->GetUID());
+		((ZEffectDash*)pNew)->SetScale(rvector(15,15,15));
+		((ZEffectDash*)pNew)->SetAlignType(1);
+
+		if (pObj->GetUID() == ZGetMyUID())
+			((ZEffectDash*)pNew)->GetVMesh()->m_bCheckViewFrustum = false;
+
+		Add(pNew);
+	}
+
+Replace <br>
+
+	void ZEffectManager::AddHasteBeginEffect(const rvector& Target, ZObject* pObj)
+	{
+		ZEffect* pNew = NULL;
+
+		rvector pos = Target;
+		rvector dir = -RealSpace2::RCameraDirection;
+		dir.z = 0.f;
+
+		pNew = new ZEffectDash(m_pHasteBeginEffect,pos,dir,pObj->GetUID());
+		((ZEffectDash*)pNew)->SetScale(rvector(15,15,15));
+		((ZEffectDash*)pNew)->SetAlignType(1);
+
+		if (pObj->GetUID() == ZGetMyUID())
+			((ZEffectDash*)pNew)->GetVMesh()->SetCheckViewFrustum(false);
+
+		Add(pNew);
+	}
+
+Open(ZEffectStaticMesh.cpp) <br>
+Find <br>
+
+	bool ZEffectStaticMesh::Draw(unsigned long int nTime)
+	{
+		if(m_VMesh.m_pMesh==NULL) 
+			return false;
+
+Replace <br>
+
+	bool ZEffectStaticMesh::Draw(unsigned long int nTime)
+	{
+		if(m_VMesh.GetMesh()==NULL) 
+			return false;
+
+Open(ZObject.cpp) <br>
+Find <br>
+
+	void ZObject::SetVisualMesh(RVisualMesh* pVMesh)
+	{ 
+		m_pVMesh = pVMesh; 
+
+		// ¾Ö´Ï¸ÞÀÌ¼Ç ÄÝ¹é µî·Ï
+		for(int i=0;i<ani_mode_end;i++)
+		{
+			m_pVMesh->GetFrameInfo((RAniMode)i)->SetAnimEventHandler(ZAniEventHandler::ZAniEventHandlerCB);
+		}
+	}
+
+Replace <br>
+
+	void ZObject::SetVisualMesh(ZObjectVMesh* pVMesh)
+	{ 
+		m_pVMesh = pVMesh; 
+
+		// ¾Ö´Ï¸ÞÀÌ¼Ç ÄÝ¹é µî·Ï
+		for(int i=0;i<ani_mode_end;i++)
+		{
+			m_pVMesh->GetFrameInfo((RAniMode)i)->SetAnimEventHandler(ZAniEventHandler::ZAniEventHandlerCB);
+		}
+	}
+
+Open(ZObject.h) <br>
+Find <br>
+
+	void SetVisualMesh(RVisualMesh* pVMesh);
+	RVisualMesh* GetVisualMesh()					{ return m_pVMesh; }
+
+Replace <br>
+
+
+	void SetVisualMesh(ZObjectVMesh* pVMesh);
+	ZObjectVMesh* GetVisualMesh()					{ return m_pVMesh; }
+
+
+Find <br>
+
+	#include "MMemoryProxy.h"
+
+	#include <list>
+	#include <string>
+
+
+Replace <br>
+
+	#include "ZObjectVMesh.h"
+
+Open(ZObject.h) <br>
+Find <br>
+
+	RVisualMesh*			m_pVMesh;
+
+Replace <br>
+
+	ZObjectVMesh*			m_pVMesh;
+
+Open(RVisualMesh.cpp) <br>
+Find <br>
+
+	void RVisualMesh::SetRotXYZ(rvector v) {
+		m_vRotXYZ = v;
+	}
+
+Replace <br>
+
+	//void RVisualMesh::SetRotXYZ(rvector v) {
+	//	m_vRotXYZ = v;
+	//}
+
+Open(RVisualMesh.h) <br>
+Find <br>
+
+	void SetParts(RMeshPartsType parts,RMeshNode* pMN);
+	void SetParts(RMeshPartsType parts,char* name);
+
+Replace <br>
+
+	void SetParts(RMeshPartsType parts,RMeshNode* pMN);
+	void SetParts(RMeshPartsType parts,char* name, const char* eluName);
+
+Find <br>
+
+	bool SetAnimation(RAnimation* pAniSet,bool b=false);
+	bool SetAnimation(char* ani_name,bool b=false);
+	bool SetAnimation(RAniMode animode,RAnimation* pAniSet,bool b=false);
+	bool SetAnimation(RAniMode animode,char* ani_name,bool b=false);
+
+Replace <br>
+
+	bool SetAnimation(RAnimation* pAniSet,bool b=false);
+	bool SetAnimation(const char* ani_name,bool b=false);
+	bool SetAnimation(RAniMode animode,RAnimation* pAniSet,bool b=false);
+	bool SetAnimation(RAniMode animode,const char* ani_name,bool b=false);
+
+
+
+Open(RVisualMesh.cpp) <br>
+Find <br>
+
+	bool RVisualMesh::SetAnimation(RAniMode animode,char* ani_name,bool b)
+	{
+
+Replace <br>
+
+	bool RVisualMesh::SetAnimation(RAniMode animode,const char* ani_name,bool b)
+	{
+
+Find <br>
+
+	bool RVisualMesh::SetAnimation(char* ani_name,bool b)
+	{
+		return SetAnimation(ani_mode_lower,ani_name,b);
+	}
+
+Replace <br>
+
+	bool RVisualMesh::SetAnimation(const char* ani_name,bool b)
+	{
+		return SetAnimation(ani_mode_lower,ani_name,b);
+	}
+
+Open(ZCombatInterface.cpp) <br>
+Find <br>
+
+		pos = pObject->GetPosition();
+		RVisualMesh* pVMesh = pObject->m_pVMesh;
+		RealSpace2::rboundingbox box;
+
+		if (pVMesh == NULL) continue;
+
+Replace <br>
+
+		pos = pObject->GetPosition();
+		RealSpace2::rboundingbox box;
+
+		if (pObject->m_pVMesh == NULL) continue;
+
+
+Open(ZGame.cpp) <br>
+Find <br>
+
+		// °ø°ÝÀÚ¿Í Å¸°Ù »çÀÌ¿¡ º®ÀÌ ¸·°í ÀÖÀ¸¸é ´ÙÀ½ Å¸°ÙÀ¸·Î ³Ñ¾î°£´Ù.
+		int nDebugRegister = 0;
+		bRetVal = CheckWall( pAttacker, pVictim, nDebugRegister, true);
+		//jintriple3 µð¹ö±× ·¹Áö½ºÅÍ ÇÙ ¹æÁö....
+		if ( bRetVal)
+			PROTECT_DEBUG_REGISTER(nDebugRegister == FOR_DEBUG_REGISTER)
+				continue;
+
+Replace <br>
+
+		// °ø°ÝÀÚ¿Í Å¸°Ù »çÀÌ¿¡ º®ÀÌ ¸·°í ÀÖÀ¸¸é ´ÙÀ½ Å¸°ÙÀ¸·Î ³Ñ¾î°£´Ù.
+		int nDebugRegister = 0;
+		bRetVal = IsWallBlocked( pAttacker, pVictim, nDebugRegister, true);
+		//jintriple3 µð¹ö±× ·¹Áö½ºÅÍ ÇÙ ¹æÁö....
+		if ( bRetVal)
+			PROTECT_DEBUG_REGISTER(nDebugRegister == FOR_DEBUG_REGISTER)
+				continue;
+
+Open(ZObjectManager.cpp) <br>
+Find <br>
+
+		RVisualMesh* pVMesh = pMyCharacter->GetVisualMesh();
+
+Replace <br>
+
+		ZObjectVMesh* pVMesh = pMyCharacter->GetVisualMesh();
+
+Open(ZShadow.cpp) <br>
+Find <br>
+
+	bool ZShadow::setMatrix( RVisualMesh& vmesh, float size_ /* = 100.f  */, RBspObject* p_map /* = 0 */)
+	{
+
+Replace <br>
+
+	bool ZShadow::setMatrix( ZObjectVMesh& vmesh, float size_ /* = 100.f  */, RBspObject* p_map /* = 0 */)
+	{
+
+Open(ZShadow.h) <br>
+Find <br>
+
+	bool setMatrix( ZCharacterObject& char_, float size_ = 100.0f );	// ¸Å ÇÁ·¹ÀÓ¸¶´Ù ºÒ·ÁÁ®¾ß ÇÔ
+	bool setMatrix( RVisualMesh& vmesh, float size_ = 100.f, RBspObject* p_map  = 0 );
+	void draw(bool bForced=false);
+
+Replace <br>
+
+	bool setMatrix( ZCharacterObject& char_, float size_ = 100.0f );	// ¸Å ÇÁ·¹ÀÓ¸¶´Ù ºÒ·ÁÁ®¾ß ÇÔ
+	bool setMatrix( ZObjectVMesh& vmesh, float size_ = 100.f, RBspObject* p_map  = 0 );
+	void draw(bool bForced=false);
+
+Open(RAnimationMgr.h) <br>
+Find <br>
+
+	RAnimation* GetAnimation(char* name,int MotionTypeID=-1);
+	RAnimation* GetAnimation(int sID,int MotionTypeID=-1);
+	RAnimation* GetAnimationListMap(char* name,int wtype);
+
+Replace <br>
+
+	RAnimation* GetAnimation(const char* name,int MotionTypeID=-1);
+	RAnimation* GetAnimation(int sID,int MotionTypeID=-1);
+	RAnimation* GetAnimationListMap(const char* name,int wtype);
+
+Open(RAnimationMgr.cpp) <br>
+Find <br>
+
+	RAnimation* RAnimationMgr::GetAnimationListMap(char* name,int wtype) {
+
+		if(m_list_map_size==0) return NULL;
+
+		if(m_list_map_size-1 < wtype) {
+			return NULL;
+		}
+
+		RAnimation* pAni = m_list_map[wtype].Find(name);
+
+		return pAni;
+	}
+
+	RAnimation* RAnimationMgr::GetAnimation(char* name,int wtype) 
+	{
+		if(!name) 
+			return NULL;
+
+		if(name[0]==0) 
+			return NULL;
+
+		if(m_list.empty())
+			return NULL;
+
+		RAnimation* pAni = NULL;
+
+		if(wtype != -1)
+			pAni = GetAnimationListMap(name,wtype);
+
+		if(pAni) {
+			return pAni;
+		}
+
+		pAni = m_list.Find(name);
+		return pAni;
+	}
+
+Replace <br>
+
+	RAnimation* RAnimationMgr::GetAnimationListMap(const char* name,int wtype) {
+
+		if(m_list_map_size==0) return NULL;
+
+		if(m_list_map_size-1 < wtype) {
+			return NULL;
+		}
+
+		RAnimation* pAni = m_list_map[wtype].Find(name);
+
+		return pAni;
+	}
+
+	RAnimation* RAnimationMgr::GetAnimation(const char* name,int wtype) 
+	{
+		if(!name) 
+			return NULL;
+
+		if(name[0]==0) 
+			return NULL;
+
+		if(m_list.empty())
+			return NULL;
+
+		RAnimation* pAni = NULL;
+
+		if(wtype != -1)
+			pAni = GetAnimationListMap(name,wtype);
+
+		if(pAni) {
+			return pAni;
+		}
+
+		pAni = m_list.Find(name);
+		return pAni;
+	}
+
+Find <br>
+
+	void RAnimationMgr::ReloadAll()
+	{
+		RAnimationHashList_Iter node;
+		RAnimation* pANode = NULL;
+
+		for(node = m_list.begin(); node != m_list.end(); ++node) {
+			pANode = *node;
+			if(pANode) {
+				if(pANode->IsLoadDone()==false) {
+					if (!pANode->LoadAni(pANode->m_filename)) {
+						mlog("elu %s file loading failure !!!\n",pANode->m_filename);
+					}
+					pANode->SetLoadDone(true);
+				}
+			}
+		}
+	}
+
+Replace <br>
+
+	void RAnimationMgr::ReloadAll()
+	{
+		RAnimationHashList_Iter node;
+		RAnimation* pANode = NULL;
+
+		for(node = m_list.begin(); node != m_list.end(); ++node)
+		{
+			if (*node == nullptr)
+			{
+				mlog("Error, node is nullptr, skip\n");
+				continue;
+			}
+			pANode = *node;
+			if(pANode) {
+				if(pANode->IsLoadDone()==false) {
+					if (!pANode->LoadAni(pANode->m_filename)) {
+						mlog("elu %s file loading failure !!!\n",pANode->m_filename);
+					}
+					pANode->SetLoadDone(true);
+				}
+			}
+		}
+	}
 
 
 
