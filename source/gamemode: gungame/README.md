@@ -467,4 +467,6 @@ System/Matchserver (Gametypecfg.xml) <br>
 	</GAMETYPE>
 
 
+![gungame](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/source/gamemode%3A%20gungame/gungame.jpg)
+
 Credits To Jetman. <br>
