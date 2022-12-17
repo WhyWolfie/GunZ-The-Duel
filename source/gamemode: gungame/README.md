@@ -109,9 +109,9 @@ Find <br>
 
 Add <br>
 
-	if (!MGetChannelRuleMgr()->ReadXml(FILENAME_CHANNELRULE))
+	if (!MGetGunGame()->ReadXML("gungame.xml"))
 	{
-		Log(LOG_PROG, "Load ChannelRule.xml Failed\n");
+		Log(LOG_PROG, "Load GunGame.xml Failed\n");
 		return false;
 	}
 
