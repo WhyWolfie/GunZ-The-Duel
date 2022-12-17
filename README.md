@@ -510,6 +510,7 @@ GunZ The Duel Releases <br>
 - the world's most technical third-person shooter: [the world's most technical third-person shooter](https://www.youtube.com/watch?v=zvC67kmYxPA)
 
 <b>(active youtube channels)</b>
+- GUNZ Cowgirl: [GUNZ Cowgirl](https://www.youtube.com/@gunzcowgirl)
 - gunlin:  [gunlin](https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos)
 - 건즈평가사 (masangsoft):  [건즈평가사](https://www.youtube.com/channel/UCljaHynSadfY5DvlTFowWfQ)
 - crusader john gaming:  [crusader john gaming](https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos)
