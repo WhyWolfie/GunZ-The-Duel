@@ -147,6 +147,7 @@ GunZ The Duel Releases <br>
 - rflashwindow: [rflashwindow](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rflashwindow)
 - killcam: [killcam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/killcam)
 - discord rpc: [discord rpc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/discord%20rpc)
+- rotation base cw & team deathmatch: [rotation base cw & team deathmatch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rotation%20base%20(cw%20and%20team%20deathmatch))
 
 (fixes)<br>
 - crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
