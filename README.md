@@ -146,6 +146,7 @@ GunZ The Duel Releases <br>
 - clan member text info: [clan member text info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan%20member%20text%20info)
 - rflashwindow: [rflashwindow](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rflashwindow)
 - killcam: [killcam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/killcam)
+- discord rpc: [discord rpc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/discord%20rpc)
 
 (fixes)<br>
 - crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
