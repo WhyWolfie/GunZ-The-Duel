@@ -148,6 +148,8 @@ GunZ The Duel Releases <br>
 - killcam: [killcam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/killcam)
 - discord rpc: [discord rpc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/discord%20rpc)
 - rotation base cw & team deathmatch: [rotation base cw & team deathmatch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rotation%20base%20(cw%20and%20team%20deathmatch))
+- sword trail color: [sword trail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sword%20trail%20color)
+
 
 (fixes)<br>
 - crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
