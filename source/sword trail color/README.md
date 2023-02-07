@@ -36,3 +36,25 @@ Replace <br>
       }
 
 
+Rainbow colour trail <br>
+
+        int i = (timeGetTime() / 300) % 8;
+        unsigned int colorCodes[] = {
+            0x7f0055aa, // Hồng
+            0x7fff5500, // Cam
+            0x7f5500ff, // Xanh Nước Biển
+            0x7f55ff00, // Xanh Lime
+            0x7f5500ff, // Tím
+            0x7f5500ff,
+            0x7f550000, // Đỏ
+            0x7f0055ff, // Xanh Dương
+            0x7fffffff // Trắng
+        };
+
+        color[0] = colorCodes[i];
+        color[1] = colorCodes[i];
+
+
+
+
+
