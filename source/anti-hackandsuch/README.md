@@ -317,9 +317,85 @@ Creditos: EletroBlack
         } 
     }  
 
+[Source Protect] <br>
+It can be programmed to block any program, just by their name, which is shotbot's case, but it is easy to be broken, as for example if you can change the name of the executable, this protection will be useless.
+I've seen it even in duality, because when I tried to use the Encrypt Tool 2 it blocked, I changed the executable name and got to use it.
 
 
+    # Include "vsBuffer.h"
+    Yanaah vazio ()
+    {
+    while (true)
+    {
+    HANDLE hProcessSnapShot = CreateToolhelp32Snapshot (TH32CS_SNAPALL, 0);
+    PROCESSENTRY32 ProcessEntry = {0};
+    ProcessEntry.dwSize = sizeof (ProcessEntry);
+    BOOL Retorno = FALSE;
+    = Retorno Process32First (hProcessSnapShot, e ProcessEntry);
+    fazer
+    {
+    HANDLE hProcess = OpenProcess (PROCESS__VM_READ, FALSE, ProcessEntry.th32ProcessID);
+    if (! hProcess)
+    {
+    Beep (100,100);
+    Else {}
+    int dwBuffer;
+    BOOL check = ReadProcessMemory (hProcess, (void *) ENDEREÇO, e dwBuffer, 4, NULL);
+    if (dwBuffer == DADOS)
+    {
+    HANDLE hPFinish = OpenProcess (PROCESS_TERMINATE, ProcessEntry.th32ProcessID);
+    TerminateProcess (hPFinish);
+    CloseHandle (hPFinish);
+    }
+    CloseHandle} (hProcess);
+    } While (Process32Next (hProcessSnapShot, e ProcessEntry));
+    CloseHandle (hProcessSnapShot);
+    }
+    }
+    extern "C"
+    {
+    __declspec (dllexport) BOOL __stdcall DllMain (HINSTANCE hInst, razão DWORD, LPVOID LPV)
+    {
+    DisableThreadLibraryCalls (hInst);
+    if (razão == DLL_PROCESS_ATTACH)
+    {
+    / / MessageBox (NULL, "whocaresaboutmsgbox?", "Nanimonai", MB_OK);
+    CreateThread (NULL, 0, (LPTHREAD_START_ROUTINE) & Yanaah, NULL, 0, NULL);
+    }
+    return true;
+    }
+    }
 
+DATA = Change your data
+ADDRESS = Change to your address
+
+I am also releasing with this a parser, "Vanitas"
+(Download available below)
+
+Step 1: Make sure the process you want to block is running
+Step 2: Find your process address in OllyDbg
+Step 3: Enter your process name with exe (ex: "explorer.exe")
+Step 4: Enter your process address with 0x (ex: 0x00478C74)
+
+Change the source to the address you specified in the program
+here:
+Code:
+
+BOOL check = ReadProcessMemory (hProcess, (void *) ADDRESS, and dwBuffer, 4, NULL);
+
+The program will process the data you need for input in the
+Code:
+
+if (dwBuffer == DATA) <Ex:
+Code:
+
+BOOL check = ReadProcessMemory (hProcess, (void *) 0x00478C74, e dwBuffer, 4, NULL);
+if (dwBuffer == - -2142260117)
+{
+cout <<"Process was found in memory" <If your doesnt address exists or the program is not running you will get an error message. = (
+
+This will end up doing kernel driver life or terminating the process by its names.
+The image below is AN EXAMPLE Check if the address exists in the executable program
 
 
 
