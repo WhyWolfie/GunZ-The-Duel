@@ -1,0 +1,23 @@
+#include "freebase.h"
+
+1 VERSIONINFO FILEVERSION VERSION_FILE
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904B0"
+		BEGIN
+			VALUE "CompanyName",		"Snail"
+			VALUE "FileDescription",	"Freebase"
+			VALUE "FileVersion",		VERSION_FILESTR
+			VALUE "ProductName",		"freebase.dll"
+			VALUE "ProductVersion",		VERSION_FILESTR
+			VALUE "InternalName",		"freebase.dll"
+			VALUE "LegalCopyright",		"Copyright � 2002-2009 Snail"
+		END
+	END
+
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1200
+	END
+END

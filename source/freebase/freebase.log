@@ -1,0 +1,42 @@
+Build started 2/26/2010 2:11:46 AM.
+     1>Project "D:\Programs\bensprinkle\freebase\freebase\freebase\freebase.vcxproj" on node 1 (build target(s)).
+     1>_PrepareForBuild:
+         Creating "Debug\freebase.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Microsoft DirectX SDK (February 2010)\Include" /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D FREEBASE_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt d3d9.cpp d3d9dev.cpp d3d9int.cpp d3d9tex.cpp d3dfont.cpp freebase.cpp SIRC.cpp
+         SIRC.cpp
+         freebase.cpp
+         d3dfont.cpp
+         d3d9tex.cpp
+         d3d9int.cpp
+         d3d9dev.cpp
+         d3d9.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\freebase.res" freebase.rc 
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\freebase.dll.embed.manifest.res" Debug\freebase_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Programs\bensprinkle\freebase\freebase\Debug\freebase.dll" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"freebase.def" /MANIFEST:NO /DEBUG /PDB:"D:\Programs\bensprinkle\freebase\freebase\Debug\freebase.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Programs\bensprinkle\freebase\freebase\Debug\freebase.lib" /MACHINE:X86 /DLL Debug\freebase.res
+         Debug\d3d9.obj
+         Debug\d3d9dev.obj
+         Debug\d3d9int.obj
+         Debug\d3d9tex.obj
+         Debug\d3dfont.obj
+         Debug\freebase.obj
+         Debug\SIRC.obj
+         Debug\freebase.dll.embed.manifest.res
+            Creating library D:\Programs\bensprinkle\freebase\freebase\Debug\freebase.lib and object D:\Programs\bensprinkle\freebase\freebase\Debug\freebase.exp
+     1>detours.lib(detours.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(detours.obj)' or at 'D:\Programs\bensprinkle\freebase\freebase\Debug\detours.pdb'; linking object as if no debug info
+     1>detours.lib(disasm.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'detours.lib(disasm.obj)' or at 'D:\Programs\bensprinkle\freebase\freebase\Debug\detours.pdb'; linking object as if no debug info
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         freebase.vcxproj -> D:\Programs\bensprinkle\freebase\freebase\Debug\freebase.dll
+       _AfterBuild:
+         Deleting file "Debug\freebase.unsuccessfulbuild".
+         Touching "Debug\freebase.lastbuildstate".
+     1>Done Building Project "D:\Programs\bensprinkle\freebase\freebase\freebase\freebase.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.96

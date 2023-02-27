@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freebase", "freebase\freebase.vcproj", "{56B678C1-EAA2-4E2D-8457-A37CBEDB4FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56B678C1-EAA2-4E2D-8457-A37CBEDB4FFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{56B678C1-EAA2-4E2D-8457-A37CBEDB4FFE}.Debug|Win32.Build.0 = Debug|Win32
+		{56B678C1-EAA2-4E2D-8457-A37CBEDB4FFE}.Release|Win32.ActiveCfg = Release|Win32
+		{56B678C1-EAA2-4E2D-8457-A37CBEDB4FFE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
