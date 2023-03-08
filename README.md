@@ -207,7 +207,7 @@ GunZ The Duel Releases <br>
 - whisper long name fix: [whisper long name fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/whisper%20long%20name%20fix)
 - select character camera not more moving: [select character camera not more moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/character%20select%20camera)
 - instant bgm / effect slider: [instant bgm / effect slider](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20bgm%20effect%20slider)
-
+- fps drop fix (jur13n): [fps drop fix (jur13n)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20drop%20fix)
 
 (anticheat and such) <br>
 - anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
