@@ -427,6 +427,7 @@ GunZ The Duel Releases <br>
 - map xml generator: [map xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map)
 - shop xml generator: [shop xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop)
 - zitem xml tutorial [zitem xml tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/zitem)
+- create a own map(momar): [create a own map(momar)](https://forum.ragezone.com/f497/how-to-make-gunz-map-746408/)
 
 <b>[video tutorials - will update it in the future]</b><br>
 <b>(blender)</b>
