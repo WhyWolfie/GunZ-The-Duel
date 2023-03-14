@@ -292,6 +292,7 @@ GunZ The Duel Releases <br>
 - gunz ranking source: [gunz ranking source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20source%20ranking)
 - zlauncher: [zlauncher](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/zlauncher)
 - zpatchbuilder: [zpatchbuilder](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/zpatchbuilder)
+- [sql] receive coins for hours our minutes: [receive coins for hours our minutes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/query/receive%20coins%20for%20hours%20our%20minutes)
 
 (not done yet)
 - rocketguided: [rocketguided](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20rocketguided)
