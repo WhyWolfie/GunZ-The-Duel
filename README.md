@@ -88,6 +88,7 @@ GunZ The Duel Releases <br>
 - 2011 artwork & 3ds max: [2011 artwork & 3ds max](https://archive.org/details/2011-artwork-Gunz)
 - evilgunz client server & source: [evilgunz client server & source](https://archive.org/details/server-client)
 - universegamers: [universegamers](https://archive.org/details/ugg-source-2017-fixes-main)
+- hazegunz(jur13n): [hazegunz](https://archive.org/details/haze-gun-z-source-jur-13n-jurien-hamaker)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
