@@ -450,7 +450,7 @@ GunZ The Duel Releases <br>
 - how to create animation jjang: [animation jjang](https://www.youtube.com/watch?v=mPn98RElnKg)
 
 <b>(others)</b>
-- how to create a gunz private server (less than 10 seconds): [How to create a Gunz Private Server (less than 10 seconds)](https://www.youtube.com/watch?v=3JuTTnx-Aks)
+- how to create a gunz private server: [How to create a Gunz Private Server (less than 10 seconds)](https://www.youtube.com/watch?v=3JuTTnx-Aks)
 - how to add custom maps: [how to add custom maps](https://www.youtube.com/watch?v=hqSnAsM6ezc)
 - how to add a encryption with gunnycrypt: [how to add a encryption with gunnycrypt](https://www.youtube.com/watch?v=qXGwBLxi2Iw)
 - create a server windows 11: [create a server windows 11](https://www.youtube.com/watch?v=TXn9QEJv6VU)
