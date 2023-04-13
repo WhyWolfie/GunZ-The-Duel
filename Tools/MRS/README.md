@@ -23,6 +23,7 @@
 - netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115) (MRSDecompiler Ultimate)
 - gunz the duel by bazilio: [duel by bazilio](https://archive.org/details/gunz-the-duel-by-bazilio) (MRSDecompiler Ultimate) (monstergunz items)
 - lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1) (LastGunZ mrs)
+- gunz online chinese: [gunz online chinese](https://archive.org/details/gunz-online) (gunz online chinese mrs)
 
 
 <b>[Need Unpacked]</b> <br>
