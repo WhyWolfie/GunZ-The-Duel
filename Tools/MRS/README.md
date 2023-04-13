@@ -22,6 +22,8 @@
 - netmarblegunz(v176): [netmarblegunz(v176)](https://archive.org/details/netmarble-gunz-176) (MRSDecompiler Ultimate)
 - netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115) (MRSDecompiler Ultimate)
 - gunz the duel by bazilio: [duel by bazilio](https://archive.org/details/gunz-the-duel-by-bazilio) (MRSDecompiler Ultimate) (monstergunz items)
+- lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1) (LastGunZ mrs)
+
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
@@ -58,7 +60,6 @@
 - drgunz: [drgunz](https://archive.org/details/install-drgun-z)
 - ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
 - knightgunzv3: [knightgunzv3](https://archive.org/details/knight-gun-zv-3)
-- lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1)
 - lastgunzv2: [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer)
 - maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer)
 - masangsoft (2016-01-07): [masangsoft(2016-01-07)](https://archive.org/details/gunz-setup-main-20160107)
