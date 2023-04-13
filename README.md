@@ -586,7 +586,7 @@ GunZ The Duel Releases <br>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
 - gunz forum: [gunz forum](https://forum.ragezone.com/f311/) (gunz forum - still active)
 - files trinityent: [files trinityent](https://files.trinityent.net/)
-- gitlab trinityent: [gitlab trinityent](https://git.trinityent.net/)
+- git trinityent: [git trinityent](https://git.trinityent.net/)
 - gunz.chat: [gunz.chat](https://gunz.chat) / [discord](https://discord.com/invite/xMWZxZSmwq)  (active community)
 - reddit: [gunz reddit](https://www.reddit.com/r/gunz)
 - fxp.co.il: [fxp.co.il](https://www.fxp.co.il/)
