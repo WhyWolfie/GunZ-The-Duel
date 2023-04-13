@@ -73,8 +73,9 @@ GunZ The Duel Releases <br>
 - standalone edition #2: [download](https://archive.org/details/gun-z-2-standalone-edition)
 - SDK: [download](https://archive.org/details/sdk_20201112)
 - DATA: [download](https://archive.org/details/data_20201112_202011)
+- gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
 
-<b>[source]</b>
+<b>[clients / source]</b><br>
 - oldgunz(2007source): [oldgunz](https://github.com/WhyWolfie/source2007)
 - gunz emulator 2013: [gunz emulator 2013](https://github.com/WhyWolfie/Gunz2013)
 - fgunz: [fgunz](https://github.com/WhyWolfie/FGunZ)
@@ -90,6 +91,16 @@ GunZ The Duel Releases <br>
 - universegamers: [universegamers](https://archive.org/details/ugg-source-2017-fixes-main)
 - hazegunz(jur13n): [hazegunz](https://archive.org/details/haze-gun-z-source-jur-13n-jurien-hamaker)
 - android28 source: [android28 source](https://archive.org/details/gunz-sourceandroid-28)
+- jur13n (clean/edited version 1.5) [jur13n 1.5 cleaned-edited](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw)
+- nationalgunz(client/server/source): [nationalgunz source-client-server](https://archive.org/details/national-gunz-source-client-server-files)
+- phoenix (2008 client): [phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
+- phoenix repack 2008: [phoenix repack 2008](https://archive.org/details/gunz-2008-server-client-repack)
+- zer0nis (clean version: 1.5): [zeronis](https://github.com/ZER0NIS/Gunz-Base)
+- jetman (clean version: 1.5): [jetman](https://github.com/Jetman823/Gunz1.5)
+- challenge quest base(source): [challenge quest base(source)](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z)
+- summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
+- phail gunz (source): [phail gunz (source)](https://archive.org/details/phails-gunz-shit.-7z)
+- repack aren: [repack aren](https://archive.org/details/repack-aren)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
@@ -304,19 +315,6 @@ GunZ The Duel Releases <br>
 - quest late join: [quest late join](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20late%20join)
 
 <br>
-
-<b>[clients / source]</b><br>
-- jur13n (clean/edited version 1.5) [jur13n 1.5 cleaned-edited](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw)
-- nationalgunz(client/server/source): [nationalgunz source-client-server](https://archive.org/details/national-gunz-source-client-server-files)
-- phoenix (2008 client): [phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
-- phoenix repack 2008: [phoenix repack 2008](https://archive.org/details/gunz-2008-server-client-repack)
-- zer0nis (clean version: 1.5): [zeronis](https://github.com/ZER0NIS/Gunz-Base)
-- jetman (clean version: 1.5): [jetman](https://github.com/Jetman823/Gunz1.5)
-- gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
-- challenge quest base(source): [challenge quest base(source)](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z)
-- summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
-- phail gunz (source): [phail gunz (source)](https://archive.org/details/phails-gunz-shit.-7z)
-- repack aren: [repack aren](https://archive.org/details/repack-aren)
 
 <b>[gunz international]</b> <br>
 - gunz international client/launcher: [gunz international clients](https://archive.org/details/gunz-international-20060726_202211)
