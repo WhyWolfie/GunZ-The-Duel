@@ -21,6 +21,7 @@
 - netmarblegunz(v193): [netmarblegunz(v193)](https://archive.org/details/netmarble-gunz-v-193) (MRSDecompiler Ultimate)
 - netmarblegunz(v176): [netmarblegunz(v176)](https://archive.org/details/netmarble-gunz-176) (MRSDecompiler Ultimate)
 - netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115) (MRSDecompiler Ultimate)
+- gunz the duel by bazilio: [duel by bazilio](https://archive.org/details/gunz-the-duel-by-bazilio) (MRSDecompiler Ultimate) (monstergunz items)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
