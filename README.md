@@ -89,6 +89,7 @@ GunZ The Duel Releases <br>
 - evilgunz client server & source: [evilgunz client server & source](https://archive.org/details/server-client)
 - universegamers: [universegamers](https://archive.org/details/ugg-source-2017-fixes-main)
 - hazegunz(jur13n): [hazegunz](https://archive.org/details/haze-gun-z-source-jur-13n-jurien-hamaker)
+- android28 source: [android28 source](https://archive.org/details/gunz-sourceandroid-28)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
