@@ -101,6 +101,7 @@ GunZ The Duel Releases <br>
 - summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
 - phail gunz (source): [phail gunz (source)](https://archive.org/details/phails-gunz-shit.-7z)
 - repack aren: [repack aren](https://archive.org/details/repack-aren)
+- m2o(gunzduels)(source): [m2o(gunzduels)(source)](https://archive.org/details/stable-m-2-o-gunz)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
