@@ -25,6 +25,7 @@
 - lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1) (LastGunZ mrs)
 - gunz online chinese: [gunz online chinese](https://archive.org/details/gunz-online) (gunz online chinese mrs)
 - deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) (DeackglerGamerzGunz MRS)
+- gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
@@ -76,7 +77,6 @@
 - gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 - firegunz: [firegunz](https://archive.org/details/fire-gunz)
-- gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra)
 - gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
 - vietgunzv9: [vietgunzv9](https://archive.org/details/viet-gunz-v-9)
 - mundial gamers gunzv2: [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2)
