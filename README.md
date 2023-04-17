@@ -5,6 +5,9 @@ GunZ The Duel Releases <br>
 <b> Have something important to upload on my Github project, you can always ask questions and add me on Discord. </b>
 - Discord: Duzopy#5653
 
+Or join our Discord (development server)
+- Discord Server: [Gunz Development](https://discord.gg/FKE8CP9Y3W) <br>
+
 <b>Want To Learn GunZ ?</b>
 - [bunch of tutorials](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial) <br>
 
