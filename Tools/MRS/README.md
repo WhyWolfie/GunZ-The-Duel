@@ -24,7 +24,7 @@
 - gunz the duel by bazilio: [duel by bazilio](https://archive.org/details/gunz-the-duel-by-bazilio) (MRSDecompiler Ultimate) (monstergunz items)
 - lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1) (LastGunZ mrs)
 - gunz online chinese: [gunz online chinese](https://archive.org/details/gunz-online) (gunz online chinese mrs)
-
+- deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) (DeackglerGamerzGunz MRS)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
@@ -44,7 +44,6 @@
 - abbygamerz: [abbygamerz 2015](https://archive.org/details/abby-gamerz-2015)
 - accelgamersgunz: [accelgamersgunz](https://archive.org/details/accel-gamers-gun-z-09062015)
 - aerogamers: [aerogamers](https://archive.org/details/aero-gamers)
-- deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014)
 - fantasygunz: [fantasygunz](https://archive.org/details/client-fg-2016)
 - atgunz: [atgunz](https://archive.org/details/atgun-z)
 - bloodlinegunz: [bloodlinegunz](https://archive.org/details/bloodline-gun-z-the-beginning-installer)
