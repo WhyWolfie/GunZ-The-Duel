@@ -607,6 +607,7 @@ Or join our Discord (development server)
 - royalgunz: [royalgunz](https://www.royalgunz.net/)
 - ogunz: [ogunz](http://ogunz.xyz/)
 - empiregunz: [empiregunz](http://empiregunz.com/)
+- gunz competitivo: [gunz competitivo](https://gunz.com.br/)
 
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
