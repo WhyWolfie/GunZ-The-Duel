@@ -25,7 +25,7 @@
 24. ![login24](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login24.png) <br>
 25. ![login25](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login25.png) <br>
 26. ![login26](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login26.png) <br>
-
+27. ![login27](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login27.png) <br>
 
 
 
