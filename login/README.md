@@ -34,6 +34,7 @@
 33. ![login33](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login33.png) <br>
 34. ![login34](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login34.png) <br>
 35. ![login35](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login35.png) <br>
+36. ![login36](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/master/login/login36.png) <br>
 
 
 
