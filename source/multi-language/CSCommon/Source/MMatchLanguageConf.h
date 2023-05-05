@@ -1,5 +1,4 @@
 #pragma once
-//#Fixed By Jorklenis2
 #include "MLanguageConf.h"
 
 class MMessenger;
@@ -12,7 +11,7 @@ public :
 	MMatchMessageNameGroup() {}
 	virtual ~MMatchMessageNameGroup() {}
 
-	// name group¿¡´ëÇØ Ãß°¡ÀûÀÎ Á¦¾î°¡ ÇÊ¿äÇÏ¸é ÀÌ°÷¿¡ Ãß°¡ÇÏ¸é µÊ.
+	// name groupì—ëŒ€í•´ ì¶”ê°€ì ì¸ ì œì–´ê°€ í•„ìš”í•˜ë©´ ì´ê³³ì— ì¶”ê°€í•˜ë©´ ë¨.
 };
 
 
