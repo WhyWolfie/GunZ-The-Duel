@@ -48,8 +48,3 @@ example]
       
       nMaxCurrBullet(0),
       
-      
-      
-<b> Credits too Jorklenis2 </b>
-      
-
