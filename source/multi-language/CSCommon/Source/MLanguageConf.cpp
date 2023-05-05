@@ -1,5 +1,4 @@
 #include <crtdbg.h>
-//#Fixed By Jorklenis2
 #include "stdafx.h"
 #include "MZFileSystem.h"
 #include "MMessenger.h"
