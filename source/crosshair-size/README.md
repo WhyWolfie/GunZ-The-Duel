@@ -87,7 +87,6 @@ XML Interface
     
     
     
-  Credits to: Jorklenis2
   
   
   
