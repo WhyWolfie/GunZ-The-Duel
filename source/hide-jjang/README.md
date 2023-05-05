@@ -27,13 +27,13 @@ ZCharacter.h
     
 ZChat_Cmds.cpp
 
-    void ChatCmd_HideJjangJork(const char* line, const int argc, char** const argv); 
+    void ChatCmd_HideJjang(const char* line, const int argc, char** const argv); 
 
 
-    _CC_AC("hj",                   &ChatCmd_HideJjangJork,         CCF_GAME, ARGVNoMin, ARGVNoMax, true, "/hj", ""); 
+    _CC_AC("hj",                   &ChatCmd_HideJjang,         CCF_GAME, ARGVNoMin, ARGVNoMax, true, "/hj", ""); 
     
 
-    void ChatCmd_HideJjangJork(const char* line, const int argc, char** const argv)
+    void ChatCmd_HideJjang(const char* line, const int argc, char** const argv)
     {
         char szMsg[256];
         if (!ZGetMyInfo()->IsEventGrade())
@@ -62,4 +62,4 @@ ZChat_Cmds.cpp
         ZChatOutput(szMsg);
     } 
     
-Credits to: Jorklenis2 (preview: https://streamable.com/pu1m74)
+(preview: https://streamable.com/pu1m74)
