@@ -1,5 +1,4 @@
 #pragma once
-//#Fixed By Jorklenis2
 #include <map>
 #include <string>
 using std::map;
@@ -8,7 +7,7 @@ using std::pair;
 
 class MZFileSystem;
 
-/// ¸Ş¼¼Áö¸¦ ´ã°í ÀÖ´Â ±âº» Å¬·¡½º
+/// ë©”ì„¸ì§€ë¥¼ ë‹´ê³  ìˆëŠ” ê¸°ë³¸ í´ë˜ìŠ¤
 class MMessenger
 {
 public :
