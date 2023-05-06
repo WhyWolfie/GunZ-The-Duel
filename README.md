@@ -608,6 +608,7 @@ Or join our Discord (development server)
 - ogunz: [ogunz](http://ogunz.xyz/)
 - empiregunz: [empiregunz](http://empiregunz.com/)
 - gunz competitivo: [gunz competitivo](https://gunz.com.br/)
+- hypergunz: [hypergunz](http://hgunz.kro.kr/GUNZ/MAIN/home)
 
 <b>[resources]</b>
 - archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
