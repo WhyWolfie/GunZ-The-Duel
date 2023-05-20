@@ -347,6 +347,7 @@ Or join our Discord (development server)
 - history for now unofficial maiet.net: [history for now unonfficial maiet.net](https://archive.org/details/history-for-now-unofficial-maiet.net)
 
 <b>[custom clients]</b>
+- mpogspain gunz(27/08/2007): [mpogspain gunz(27/08/2007)](https://archive.org/details/mpogspain-gun-z-27082007-ful)
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
 - competitive V3: [competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
 - fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
