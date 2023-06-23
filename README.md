@@ -188,6 +188,8 @@ Or join our Discord (development server)
 - rotation base cw & team deathmatch: [rotation base cw & team deathmatch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rotation%20base%20(cw%20and%20team%20deathmatch))
 - sword trail color: [sword trail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sword%20trail%20color)
 - sword trail in the options: [sword trail in the options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/swordtrail%20color)
+- additional quest maps in comboBox at stagecreate: [additional quest maps in comboBox at stagecreate](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/additional%20quest%20maps%20in%20comboBox%20at%20stagecreate)
+
 
 (fixes)<br>
 - crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
