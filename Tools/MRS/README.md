@@ -29,6 +29,8 @@
 - earthgunz: [earthgunz](https://archive.org/details/earth-gunz-install) (earthgunz mrs)
 - mtggunz(v10): [mtggunz(v10)](https://archive.org/details/gunz-viet-nam) (mtggunzv10 mrs)
 - mtggunz(v8): [mtggunz(v8)](https://archive.org/details/setup-gunz-mtg-v-8_202011) (mtggunzv8 mrs)
+- spacegunz: [spacegunz](https://archive.org/details/space-gunz) (spacegunz mrs)
+- spacegunz(2014): [spacegunz(2014)](https://archive.org/details/space-gunz-2014) (spacegunz(2014) mrs)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
