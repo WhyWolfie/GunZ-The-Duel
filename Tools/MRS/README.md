@@ -32,7 +32,7 @@
 - spacegunz: [spacegunz](https://archive.org/details/space-gunz) (spacegunz mrs)
 - spacegunz(2014): [spacegunz(2014)](https://archive.org/details/space-gunz-2014) (spacegunz(2014) mrs)
 - gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client) (gunz2034 mrs)
-
+- mocrogunz: [mocrogunz](https://archive.org/details/mocro-gunz) (mocrogunz mrs)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
