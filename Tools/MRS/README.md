@@ -26,6 +26,7 @@
 - gunz online chinese: [gunz online chinese](https://archive.org/details/gunz-online) (gunz online chinese mrs)
 - deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) (DeackglerGamerzGunz MRS)
 - gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra) (MRSDecompiler Ultimate)
+- earthgunz: [earthgunz](https://archive.org/details/earth-gunz-install) (earthgunz mrs)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
