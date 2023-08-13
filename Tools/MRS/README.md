@@ -27,6 +27,8 @@
 - deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) (DeackglerGamerzGunz MRS)
 - gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra) (MRSDecompiler Ultimate)
 - earthgunz: [earthgunz](https://archive.org/details/earth-gunz-install) (earthgunz mrs)
+- mtggunz(v10): [mtggunz(v10)]() (mtggunzv10 mrs)
+- mtggunz(v8): [mtggunz(v8)](https://archive.org/details/setup-gunz-mtg-v-8_202011) (mtggunzv8 mrs)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
@@ -37,7 +39,6 @@
 - vinagunzv12: [vinagunzv12](https://archive.org/details/vinagun-zv-12-1)
 - gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client)
 - trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
-- gunz mtg v8: [gunz mtg v8](https://archive.org/details/setup-gunz-mtg-v-8_202011)
 - ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
 - trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
 - ghostgunzv3: [ghostgunzv3](https://archive.org/details/ghostgunz-install-v-3)
