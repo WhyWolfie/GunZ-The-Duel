@@ -31,6 +31,8 @@
 - mtggunz(v8): [mtggunz(v8)](https://archive.org/details/setup-gunz-mtg-v-8_202011) (mtggunzv8 mrs)
 - spacegunz: [spacegunz](https://archive.org/details/space-gunz) (spacegunz mrs)
 - spacegunz(2014): [spacegunz(2014)](https://archive.org/details/space-gunz-2014) (spacegunz(2014) mrs)
+- gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client) (gunz2034 mrs)
+
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
@@ -39,7 +41,6 @@
 - masangsoftgunz: [masangsoftgunz](https://archive.org/details/gun-zsetup-masang)
 - maximogunz: [maximogunz](https://archive.org/details/maximo-gun-z)
 - vinagunzv12: [vinagunzv12](https://archive.org/details/vinagun-zv-12-1)
-- gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client)
 - trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
 - ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
 - trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
