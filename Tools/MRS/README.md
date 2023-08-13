@@ -27,7 +27,7 @@
 - deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) (DeackglerGamerzGunz MRS)
 - gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra) (MRSDecompiler Ultimate)
 - earthgunz: [earthgunz](https://archive.org/details/earth-gunz-install) (earthgunz mrs)
-- mtggunz(v10): [mtggunz(v10)]() (mtggunzv10 mrs)
+- mtggunz(v10): [mtggunz(v10)](https://archive.org/details/gunz-viet-nam) (mtggunzv10 mrs)
 - mtggunz(v8): [mtggunz(v8)](https://archive.org/details/setup-gunz-mtg-v-8_202011) (mtggunzv8 mrs)
 
 <b>[Need Unpacked]</b> <br>
@@ -76,7 +76,6 @@
 - rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
 - p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
 - reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
-- gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
 - dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
 - firegunz: [firegunz](https://archive.org/details/fire-gunz)
 - gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
