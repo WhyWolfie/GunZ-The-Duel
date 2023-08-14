@@ -34,7 +34,7 @@
 - gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client) (gunz2034 mrs)
 - mocrogunz: [mocrogunz](https://archive.org/details/mocro-gunz) (mocrogunz mrs)
 - maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer) (maximogunz mrs)
-
+- savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
@@ -76,7 +76,6 @@
 - masangsoft (20160107): [masangsoft (20160107)](https://archive.org/details/gunz-setup-main-20160107)
 - mundialgunzv2: [mundialgunzv2](https://archive.org/details/mundial-gunz-v-2)
 - nationalgunz: [nationalgunz](https://archive.org/details/national-gunz-6.6.2015)
-- savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april)
 - progunzv5: [progunzv5](https://archive.org/details/pro-gunz-v-5)
 - rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
 - p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
