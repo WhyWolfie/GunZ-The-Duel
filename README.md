@@ -3,7 +3,7 @@ GunZ The Duel Releases <br>
 ![gunz logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
 
 <b> Have something important to upload on my Github project, you can always ask questions and add me on Discord. </b>
-- Discord: Duzopy#5653
+- Discord: Duzopy
 
 Or join our Discord (development server)
 - Discord Server: [Gunz Development](https://discord.gg/FKE8CP9Y3W) <br>
