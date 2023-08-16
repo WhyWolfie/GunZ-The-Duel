@@ -125,7 +125,10 @@ Or join our Discord (development server)
 - ig / ugg fixes: [ig / ugg fixes](https://archive.org/details/Fixes)
 - ugg source 2017 fixes main: [ugg source 2017 fixes main](https://archive.org/details/ugg-source-2017-fixes-main)
 - ugg fixed atlantis: [ugg fixed atlantis](https://archive.org/details/ugg-fixed-atlantis)
-
+- epixgunz(source/client/server): [epixgunz(source/client/server)](https://archive.org/details/epix-gunz-source-client-serverfiles)
+- jorklenis2(source/client/server): [jorklenis2(source/client/server)](https://archive.org/details/Jorklenis2-Scammer-Edition-LOL)
+- jetman(1.5 source/client/server): [jetman(1.5 source/client/server)](https://archive.org/details/gunz-1.5-main)
+- gunzduels(m2o) source: [gunzduels(m2o) source](https://archive.org/details/stable-m-2-o-gunz)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
