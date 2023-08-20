@@ -35,6 +35,7 @@
 - mocrogunz: [mocrogunz](https://archive.org/details/mocro-gunz) (mocrogunz mrs)
 - maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer) (maximogunz mrs)
 - savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april) (MRSDecompiler Ultimate)
+- startgunzv1: [startgunzv1](https://archive.org/details/start-gunz-v-1)(MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
