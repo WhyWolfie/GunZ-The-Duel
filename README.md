@@ -458,6 +458,7 @@ Or join our Discord (development server)
 - shop xml generator: [shop xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop)
 - zitem xml tutorial [zitem xml tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/zitem)
 - create a own map(momar): [create a own map(momar)](https://forum.ragezone.com/f497/how-to-make-gunz-map-746408/)
+- watch .gzr replays: [watch .gzr replays](https://www.youtube.com/watch?v=0mUmqhkuiCY)
 
 <b>[video tutorials - will update it in the future]</b><br>
 <b>(blender)</b>
