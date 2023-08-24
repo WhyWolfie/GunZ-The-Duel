@@ -99,7 +99,7 @@
 - enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
 - globalgames: [globalgames](https://archive.org/details/global-games)
 - lggunz beta installer 2005: [lggunz beta installer 2005](https://archive.org/details/lggun-z-beta-installer-2005)
-
+- igunz legacygamers special: [igunz legacygamers special](https://archive.org/details/i-gun-z-legacy-gamers-special)
 
 <b>[Not worth it]</b> <br>
 - freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
