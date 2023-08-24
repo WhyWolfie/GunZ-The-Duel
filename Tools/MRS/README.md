@@ -37,6 +37,7 @@
 - savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april) (MRSDecompiler Ultimate)
 - startgunzv1: [startgunzv1](https://archive.org/details/start-gunz-v-1)(MRSDecompiler Ultimate)
 - duelgunzv3: [duelgunzv3](https://archive.org/details/duel-gunz-v-3-instalador-new)(duelgunzv3 mrs)
+- wickedgunz: [wickedgunz](https://archive.org/details/winked-gun-z) (MRSDecompiler Ultimate)
 
 <b>[Need Unpacked]</b> <br>
 <b>[custom clients]</b>
