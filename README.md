@@ -41,6 +41,7 @@ Or join our Discord (development server)
 - [ijji website](https://github.com/tannous94/ijji-website)
 - [gunzfactor (source)](https://github.com/sohchienmin/GunZ/tree/master)
 - [gunz 2 emulator](https://gitlab.milice.se/gunz-2-private-server)
+- [google archive gunz websites](https://code.google.com/archive/p/web-site-mygunz/downloads)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
@@ -506,6 +507,14 @@ Or join our Discord (development server)
 - how to create an update for your gunz: [how to create an update for your gunz](https://www.youtube.com/watch?v=x64YV1_bWdc)
 - modificando as musicas do the duel: [modificando as musicas do the duel](https://www.youtube.com/watch?v=w5c4oLCsfwo&ab_channel=TudoSobreGunz)
 - como poner cw+quest+survival client jur13n: [como poner cw+quest+survival client jur13n](https://www.youtube.com/watch?v=iZ2_VSHQk0c)
+- how to make maps for gunz [hebrew tut]: [how to make maps for gunz](https://www.youtube.com/watch?v=oOmTfgrhej4)
+- gunz map in gtk radaint speed art [ctfzorv2]: [gunz map in gtk radaint speed art](https://www.youtube.com/watch?v=oY6ZV4V6pHY)
+- gunz map speed art [training room v2]: [gunz map speed art](https://www.youtube.com/watch?v=z8jFaASZ1KY)
+- bulli10 making map live part [1]: [bulli10 making map live part](https://www.youtube.com/watch?v=BnzwZbF_-l4)
+- bulli10 making map live part [2] finished!: [bulli10 making map live part 2 finished!](https://www.youtube.com/watch?v=9nQpo1JqCOE)
+- bulli10 - gunz map make : under : [bulli10 - gunz map make : under](https://www.youtube.com/watch?v=MVu2B0WpGjc)
+- gunz map making [classroom] - 1 / 2: [gunz map making classroom - 1 / 2](https://www.youtube.com/watch?v=j2QBRUuUfbQ)
+- gunz map making [classroom] - 2 / 2: [gunz map making classroom - 2 / 2](https://www.youtube.com/watch?v=LvYWFVQameI)
 
 <b>(gameplay)</b>
 - latedash reload half step(LD RHS): [latedash reload half step(LD RHS)](https://www.youtube.com/watch?v=Xwjr9KQYCpo)
