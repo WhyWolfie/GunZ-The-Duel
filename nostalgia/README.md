@@ -8,6 +8,9 @@
 - aeriagames: [aeriagames](https://web.archive.org/web/20120503025853/http://gunz.aeriagames.com/)
 - masangsoft: [masangsoft](https://web.archive.org/web/20160520040558/https://gz.masangsoft.com/)
 - gunzwei(sns): [gunzwei(sns)](https://web.archive.org/web/20070221195921/http://gunzsns.modifier.jp/?m=pc&a=page_o_login)
+- gunzonline(register): [gunzonline(register)](https://web.archive.org/web/20051106012431/http://www.gunzonline.com/GunzWeb/FormSignUp.aspx)
+- gunz(india 2006): [gunz(india)](https://web.archive.org/web/20060513230734/http://www.gunzonline.co.in:80/)
+
 
 [some old servers]
 - nlgunz.net: [nlgunz](https://web.archive.org/web/20090221173713/http://www.nlgunz.net:80/)
