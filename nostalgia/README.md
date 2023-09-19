@@ -1,5 +1,7 @@
 [ will update it in the future ^^ ]
 
+- gunz the duel interview mrkim07: [interview mrkim07](https://www.4gamer.net/specials/2004summer/mrkim/mrkim07.html)
+
 [original]
 - netmarble: [netmarble(2006)](https://web.archive.org/web/20060209033457/http://game3.netmarble.net/cp_site/gunz/)
 - ijji: [ijji](https://web.archive.org/web/20061109133906/http://gunz.ijji.com/)
