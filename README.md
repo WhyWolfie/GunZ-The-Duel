@@ -45,6 +45,7 @@ Or join our Discord (development server)
 - [playgunz (source)](https://github.com/WhyWolfie/PlayGunz-Source)
 - [summer 1.5 (clean source)](https://github.com/WhyWolfie/Summer-Source-1.5)
 - [streakgunz (source)](https://github.com/WhyWolfie/StreakGunZ-Source)
+- [undergunz v7 (source)](https://github.com/WhyWolfie/UnderGunZ-Source)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
