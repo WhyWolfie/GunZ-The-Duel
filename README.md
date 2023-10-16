@@ -474,6 +474,7 @@ Or join our Discord (development server)
 - import custom item in your game: [import custom item in your game](https://www.youtube.com/watch?v=48gPuvo8pWA)
 - create a katana: [create a katana](https://www.youtube.com/watch?v=zzsfJ6Ok6cs)
 - create a katana2: [create a katana2](https://www.youtube.com/watch?v=vm50YDH1tcY)
+- setup blender & importing maps town.mrs: [setup blender & importing maps town.mrs](https://www.youtube.com/watch?v=MOPi5RvxZgc)
 
 <b>(photoshop)</b>
 - how to change gunz dash color: [how to change gunz dash color](https://www.youtube.com/watch?v=kmxnjpJj6CM) 
