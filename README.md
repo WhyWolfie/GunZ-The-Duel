@@ -47,6 +47,7 @@ Or join our Discord (development server)
 - [streakgunz (source)](https://github.com/WhyWolfie/StreakGunZ-Source)
 - [undergunz v7 (source)](https://github.com/WhyWolfie/UnderGunZ-Source)
 - [gunbi (source)](https://github.com/WhyWolfie/Gunbi-Source)
+- [wg vs2022(source)](https://github.com/HoaNgocTram/WG-Source)
 
 <b>[db]</b>
 - GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
