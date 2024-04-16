@@ -135,6 +135,7 @@ Or join our Discord (development server)
 - jorklenis2(source/client/server): [jorklenis2(source/client/server)](https://archive.org/details/Jorklenis2-Scammer-Edition-LOL)
 - jetman(1.5 source/client/server): [jetman(1.5 source/client/server)](https://archive.org/details/gunz-1.5-main)
 - gunzduels(m2o) source: [gunzduels(m2o) source](https://archive.org/details/stable-m-2-o-gunz)
+- abbygunz (source/client/server): [abbygunz (source/client/server)](https://archive.org/details/new-gunz)
 
 <b>[1.5 snippets]</b><br>
 (client)<br>
