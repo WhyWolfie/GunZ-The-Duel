@@ -17,20 +17,20 @@ We need your contribution to developing more upgraded codes.
 
 [![Video](https://img.youtube.com/vi/VrpgBPoiLIU/0.jpg)](https://www.youtube.com/watch?v=VrpgBPoiLIU)
 
-
 Gunz -> ZEffectManager.h
-Add
 
-    RMesh* m_pDamageFloat[10];
+    class ZEffectManager
+
+-> Add inside (protected)
+
+    RMeshMgr* m_pEffectMeshDmg; 
     RMesh* m_pDamageFloatx[10];
-    RMesh* m_pDamageFloatxx[10];
 
------
+-> Add inside too (public)
 
-    RMeshMgr* m_pEffectMeshDmg;    RMesh* m_pDamageFloat[10];    RMesh* m_pDamageFloatx[10];    RMesh* m_pDamageFloatxx[10];    void AddDamageEffect(int Dmg, ZObject* pObj, ZObject* pOwner);
+    void AddDamageEffect(int Dmg, ZObject* pObj, ZObject* pOwner);
 
 Gunz -> ZeffectManager.cpp
-Add
 
     void ZEffectManager::AddDamageEffect(int Dmg, ZObject* pObj, ZObject* pOwner)
     {
@@ -72,7 +72,7 @@ Add
         char buffer[32];
         sprintf(buffer, "%d", abs(Dmg));
         int nCount = (int)strlen(buffer);
-        float fScale, dist;
+        float fScale, dist, fPosX;
     
         float dx = pObj->GetPosition().x - pOwner->GetPosition().x;
         float dy = pObj->GetPosition().y - pOwner->GetPosition().y;
@@ -84,33 +84,45 @@ Add
             if (nCount == 3)
             {
                 if (i == 0) {
-                    pNew = new ZEffectDmgfloating(m_pDamageFloat[buffer[i] - '0'], pObj);
-                    DeleteSameType((ZEffectAniMesh*)pNew);
-                }
-                if (i == 1)
                     pNew = new ZEffectDmgfloating(m_pDamageFloatx[buffer[i] - '0'], pObj);
-                if (i == 2)
-                    pNew = new ZEffectDmgfloating(m_pDamageFloatxx[buffer[i] - '0'], pObj);
+                    DeleteSameType((ZEffectAniMesh*)pNew);
+                    fPosX = -25; // You can adjust the Horizontal of the elu by changing the fPosX.
+                }                         // The default width of the elu provided is 24.
+                if (i == 1) {
+                    pNew = new ZEffectDmgfloating(m_pDamageFloatx[buffer[i] - '0'], pObj);
+                    fPosX = 0;
+                }
+                if (i == 2) {
+                    pNew = new ZEffectDmgfloating(m_pDamageFloatx[buffer[i] - '0'], pObj);
+                    fPosX = 25;
+                }
             }
             if (nCount == 2)
             {
                 if (i == 0) {
                     pNew = new ZEffectDmgfloating(m_pDamageFloatx[buffer[i] - '0'], pObj);
                     DeleteSameType((ZEffectAniMesh*)pNew);
+                    fPosX = 0;
                 }
-                if (i == 1)
-                    pNew = new ZEffectDmgfloating(m_pDamageFloatxx[buffer[i] - '0'], pObj);
+                if (i == 1) {
+                    pNew = new ZEffectDmgfloating(m_pDamageFloatx[buffer[i] - '0'], pObj);
+                    fPosX = 25;
+                }
             }
             if (nCount == 1)
             {
                 if (i == 0) {
                     pNew = new ZEffectDmgfloating(m_pDamageFloatx[buffer[i] - '0'], pObj);
                     DeleteSameType((ZEffectAniMesh*)pNew);
+                    fPosX = 0;
                 }
             }
     
-            fScale = 1.0f + 0.001f * dist; //Size adjustment according to distance
+            fScale = 1.0f + 0.001f * dist; //Adjusting the size by distance
+            fPosX = fPosX + 0.001f * dist * fPosX; //Adjusting the Letter-spacing by distance
             ((ZEffectDmgfloating*)pNew)->SetScale(rvector(fScale, fScale, fScale));
+            ((ZEffectDmgfloating*)pNew)->SetwPos(fPosX);
+            ((ZEffectDmgfloating*)pNew)->SetwPosS(true);
             Add(pNew);
         }
     }
@@ -119,7 +131,7 @@ Find
 
     bool ZEffectManager::Create(void)
 
-Add inside
+-> Add inside
 
     m_pEffectMeshDmg = new RMeshMgr;
     if (m_pEffectMeshDmg->LoadXmlList("SFX/dmg/float_damage.xml") == -1) {
@@ -128,26 +140,21 @@ Add inside
 
     for (int i = 0; i < 10; i++)
     {
-        char meshname[256];
         char meshnamex[256];
-        char meshnamexx[256];
-        sprintf(meshname, "dmg%d", i);
-        m_pDamageFloat[i] = m_pEffectMeshDmg->Get(meshname);
         sprintf(meshnamex, "dmgx%d", i);
         m_pDamageFloatx[i] = m_pEffectMeshDmg->Get(meshnamex);
-        sprintf(meshnamexx, "dmgxx%d", i);
-        m_pDamageFloatxx[i] = m_pEffectMeshDmg->Get(meshnamexx);
     }
 
 Gunz -> ZCharacter.h
+
 Find
 
     struct ZCharacterStatus
 
-Add inside And on top of 'nScore;'
+-> Add inside And on top of 'nScore;'
 
     float        nRoundGivenDamage;
-----
+    ----
     nRoundGivenDamage(0),
 
 Gunz -> ZGame.h
@@ -156,7 +163,7 @@ Find
 
     void OnPeerShotgun_Damaged(~~);
 
-Change (Add `int Repeatcount` at the far end of the factor)
+-> Change (Add `int Repeatcount` at the far end of the factor)
 
     void OnPeerShotgun_Damaged(ZObject* pOwner, float fShotTime, const rvector& pos, rvector& dir, ZPICKINFO pickinfo, DWORD dwPickPassFlag, rvector& v1, rvector& v2, ZItem* pItem, rvector& BulletMarkNormal, bool& bBulletMark, ZTargetType& nTargetType, bool& bHitEnemy, int Repeatcount);
 
@@ -166,13 +173,13 @@ Find
 
     void ZGame::OnPeerShot_Range_Damaged
 
-Add inside (In the part where you calculate the damage)
+-> Add inside (In the part where you calculate the damage)
 
     ZGetGame()->m_pMyCharacter->GetStatus().CheckCrc();
     ZGetGame()->m_pMyCharacter->GetStatus().Ref().nRoundGivenDamage = fActualDamage;
      ZGetGame()->m_pMyCharacter->GetStatus().MakeCrc();
 
-Add inside too (OnPeerShot_Range_Damaged's end)
+-> Add inside too (OnPeerShot_Range_Damaged's end)
 
     if ((pObject->GetUID() != ZGetMyUID()) && (pOwner->GetUID() == ZGetMyUID()))
     {
@@ -193,24 +200,24 @@ Find
 
     void ZGame::OnPeerShotgun_Damaged
 
-Change (Add `int Repeatcount` at the far end of the factor)
+-> Change (Add `int Repeatcount` at the far end of the factor)
 
     void ZGame::OnPeerShotgun_Damaged(ZObject* pOwner, float fShotTime, const rvector& pos, rvector& dir, ZPICKINFO pickinfo, DWORD dwPickPassFlag, rvector& v1, rvector& v2, ZItem *pItem, rvector& BulletMarkNormal, bool& bBulletMark, ZTargetType& nTargetType, bool& bHitEnemy, int Repeatcount)
 
-Add inside
+-> Add inside
 
     //Initialize the variable at the first of the iterations of this function
-    if (Repeatcount == 0) {
-        ZGetGame()->m_pMyCharacter->GetStatus().CheckCrc();
-        ZGetGame()->m_pMyCharacter->GetStatus().Ref().nRoundGivenDamage = 0;
-        ZGetGame()->m_pMyCharacter->GetStatus().MakeCrc();
-    }
+        if (Repeatcount == 0) {
+            ZGetGame()->m_pMyCharacter->GetStatus().CheckCrc();
+            ZGetGame()->m_pMyCharacter->GetStatus().Ref().nRoundGivenDamage = 0;
+            ZGetGame()->m_pMyCharacter->GetStatus().MakeCrc();
+        }
 
-Add inside too (In the part where you calculate the SG damage)
+-> Add inside too (In the part where you calculate the SG damage)
 
     ZGetGame()->m_pMyCharacter->GetStatus().Ref().nRoundGivenDamage += fActualDamage;
 
-Add inside too
+-> Add inside too
 
     if ((pObject->GetUID() != ZGetMyUID()) && (pOwner->GetUID() == ZGetMyUID()))
     {
@@ -218,11 +225,11 @@ Add inside too
          ZGetEffectManager()->AddDamageEffect(nCurrDamage, pObject, pOwner);
     }
 
-Melee
+-> Melee
 
     void ZGame::OnPeerShot_Melee
 
-Explosion(rocket, granade)
+-> Explosion(rocket, granade)
 
     void ZGame::OnExplosionGrenade
 
@@ -231,49 +238,71 @@ Verify that the target is npc(mobs).
 
     !pObject->IsNPC()
 
+Gunz -> ZEffectAniMesh.h
+
+Find
+
+    class ZEffectAniMesh : public ZEffect
+
+-> Add inside (protected)
+
+    float    m_wPosX;
+    bool    m_wPosS;
+
+-> Add inside too(public)
+
+    void SetwPos(float a);
+    void SetwPosS(bool b);
+
+Gunz -> ZEffectAniMesh.cpp
+
+Find
+
+    void ZEffectAniMesh::SetScale(rvector s)
+
+-> Add Under
+
+    void ZEffectAniMesh::SetwPos(float a)
+    {
+        m_wPosX = a;
+    }
+    
+    void ZEffectAniMesh::SetwPosS(bool b)
+    {
+        m_wPosS = b;
+    }
+
+Find
+
+    ZEffectAniMesh::ZEffectAniMesh(RMesh* pMesh, const rvector& Pos, rvector& dir)
+
+-> Add inside
+
+    m_wPosS        = false;
+    m_wPosX        = 0;
+
+
+Find
+
+    bool ZEffectAniMesh::Draw(unsigned long int nTime)
+
+-> Find inside
+
+    MakeWorldMatrix(&World, m_Pos, Dir, Up);
+
+-> Add under 'MakeWorldMatrix'
+
+    if (m_wPosS == true)
+    {
+        rmatrix _tPosWorld;
+
+        D3DXMatrixTranslation(&_tPosWorld, m_wPosX, 0, 0);
+        World = _tPosWorld * World;
+    }
+
 SFX.mrs/dmg/float_damage.xml
 
-<!-- 데미지플로팅 -->
-    <AddEffectElu name="dmg0">
-        <AddBaseModel name="dmg0" filename="dmg/ef_exp_num_0.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg1">
-        <AddBaseModel name="dmg1" filename="dmg/ef_exp_num_1.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg2">
-        <AddBaseModel name="dmg2" filename="dmg/ef_exp_num_2.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg3">
-        <AddBaseModel name="dmg3" filename="dmg/ef_exp_num_3.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg4">
-        <AddBaseModel name="dmg4" filename="dmg/ef_exp_num_4.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg5">
-        <AddBaseModel name="dmg5" filename="dmg/ef_exp_num_5.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg6">
-        <AddBaseModel name="dmg6" filename="dmg/ef_exp_num_6.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg7">
-        <AddBaseModel name="dmg7" filename="dmg/ef_exp_num_7.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg8">
-        <AddBaseModel name="dmg8" filename="dmg/ef_exp_num_8.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmg9">
-        <AddBaseModel name="dmg9" filename="dmg/ef_exp_num_9.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
+<!-- Dmg Floating -->
     <AddEffectElu name="dmgx0">
         <AddBaseModel name="dmgx0" filename="dmg/ef_exp_num_x0.elu" />
         <AddAnimation name="play" filename="dmg/ef_exp_num_x0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
@@ -314,46 +343,8 @@ SFX.mrs/dmg/float_damage.xml
         <AddBaseModel name="dmgx9" filename="dmg/ef_exp_num_x9.elu" />
         <AddAnimation name="play" filename="dmg/ef_exp_num_x9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
     </AddEffectElu>
-    <AddEffectElu name="dmgxx0">
-        <AddBaseModel name="dmgxx0" filename="dmg/ef_exp_num_xx0.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx1">
-        <AddBaseModel name="dmgxx1" filename="dmg/ef_exp_num_xx1.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx2">
-        <AddBaseModel name="dmgxx2" filename="dmg/ef_exp_num_xx2.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx3">
-        <AddBaseModel name="dmgxx3" filename="dmg/ef_exp_num_xx3.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx4">
-        <AddBaseModel name="dmgxx4" filename="dmg/ef_exp_num_xx4.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx5">
-        <AddBaseModel name="dmgxx5" filename="dmg/ef_exp_num_xx5.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx6">
-        <AddBaseModel name="dmgxx6" filename="dmg/ef_exp_num_xx6.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx7">
-        <AddBaseModel name="dmgxx7" filename="dmg/ef_exp_num_xx7.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx8">
-        <AddBaseModel name="dmgxx8" filename="dmg/ef_exp_num_xx8.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
-    <AddEffectElu name="dmgxx9">
-        <AddBaseModel name="dmgxx9" filename="dmg/ef_exp_num_xx9.elu" />
-        <AddAnimation name="play" filename="dmg/ef_exp_num_xx9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
-    </AddEffectElu>
+
+
 
 
 Credits to Kwh2009 & Desperate.
