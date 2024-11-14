@@ -7,6 +7,7 @@ GunZ The Duel Releases <br>
 
 Or join our Discord (development server)
 - Discord Server: [Gunz Development](https://discord.gg/FKE8CP9Y3W) <br>
+- Masangsoft Official Discord [Masangsoft Discord](https://discord.gg/q7ykbaqVa4) <br>
 
 <b>Want To Learn GunZ ?</b>
 - [bunch of tutorials](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial) <br>
