@@ -291,5 +291,7 @@ int MDrawContextR2::Text(int x, int y, const char* szText)
 
 and now okey let cook (korean & vietnamese display same time)
 
+![unicode](https://raw.githubusercontent.com/WhyWolfie/GunZ-The-Duel/refs/heads/master/source/unicode%20for%20client/unicode.png)
+
 Credits Too: Desperate
 
