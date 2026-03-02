@@ -1,662 +1,248 @@
-# GunZ The Duel
-GunZ The Duel Releases <br>
-![gunz logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
+# GunZ: The Duel – Eternal Community Resource Hub  
+**#GunZNeverDie** ⚔️
 
-<b> Have something important to upload on my Github project, you can always ask questions and add me on Discord. </b>
-- Discord: Duzopy
+![GunZ Logo](https://cdn2.steamgriddb.com/file/sgdb-cdn/logo_thumb/735dd629ab696e3a1bfcc0fe0d687bb1.png)
 
-Or join our Discord (development server)
-- Discord Server: [Gunz Development](https://discord.gg/FKE8CP9Y3W) <br>
-- Masangsoft Official Discord [Masangsoft Discord](https://discord.gg/q7ykbaqVa4) <br>
+> **Contact & Community**  
+> • **Discord (main dev contact)**: Duzopy  
+> • Development Server: [GunZ Development](https://discord.gg/FKE8CP9Y3W)  
+> • Masangsoft Official GunZ: [Masangsoft Discord](https://discord.gg/q7ykbaqVa4)  
 
-<b>Want To Learn GunZ ?</b>
-- [bunch of tutorials](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial) <br>
+## 🚀 Quick Start
 
-<b>How To Make GunZ (Client/Server/DB)</b> <br>
-- [how to make a gunz server tutorial](https://www.youtube.com/watch?v=qTIk722vrKE) <br>
-
-<b>[GunZ in Browser]</b> <br>
-- [gunz.sigr.io (Gunz in Browser by LostMyCode)](https://gunz.sigr.io/) <br>
-
-<b>[github]</b> <br>
-- [refinedgunz (source)](https://github.com/Asunaya/refinedgunz) <br>
-- [gunz replay](https://github.com/mataha/gunz-replay) <br>
-- [z3resex](https://github.com/x1nixmzeng/z3ResEx) <br>
-- [infamous](https://github.com/Theoretical/Infamous) <br>
-- [gunz2shark](https://github.com/Gunz2Dev/Gunz2Shark) <br>
-- [gunz-proto](https://github.com/MrSuicideFish/GunZ-proto) <br>
-- [three gunz](https://github.com/LostMyCode/three-gunz) <br>
-- [blender elu importer (2.8 or higher)](https://github.com/goweiwen/blender-elu-importer)
-- [gunzpedia](https://github.com/zkxjzmswkwl/Gunzpedia) <br>
-- [practica00 website](https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ) <br>
-- [zpatchbuilder](https://github.com/x1nixmzeng/ZPatchBuilder) <br>
-- [gunz simple web](https://github.com/tannous94/GunZ-simple-web) <br>
-- [gunzcord](https://github.com/emisandgunz/gunzcord) <br>
-- [gunz bunch of items](https://github.com/Durial06/GunZ-The-Duel-Items) <br>
-- [repack jorklenis2 (source)](https://github.com/Jorklenis/Repack-Jorklenis2) <br>
-- [fxpgunz repacked (source)](https://github.com/fxpgunz/FxpGZ-Repacked) <br>
-- [ogz (source)](https://github.com/open-gunz/ogz-source) <br>
-- [(io scene gzrs2) - amazing blender project](https://github.com/Krunklehorn/io-scene-gzrs2) <br>
-- [zeronis(source)](https://github.com/ZER0NIS/Gunz-Base) <br>
-- [jetman (source)](https://github.com/Jetman823/Gunz1.5) <br>
-- [gunz set rotation](https://github.com/Eronisch/Gunz-Set-Rotation) <br>
-- [gunz cms](https://github.com/Eronisch/Gunz-CMS) <br>
-- [freestyle gunz nop antihack](https://github.com/cgaebel/NOP)
-- [ijji website](https://github.com/tannous94/ijji-website)
-- [gunzfactor (source)](https://github.com/sohchienmin/GunZ/tree/master)
-- [gunz 2 emulator](https://gitlab.milice.se/gunz-2-private-server)
-- [google archive gunz websites](https://code.google.com/archive/p/web-site-mygunz/downloads)
-- [playgunz (source)](https://github.com/WhyWolfie/PlayGunz-Source)
-- [summer 1.5 (clean source)](https://github.com/WhyWolfie/Summer-Source-1.5)
-- [streakgunz (source)](https://github.com/WhyWolfie/StreakGunZ-Source)
-- [undergunz v7 (source)](https://github.com/WhyWolfie/UnderGunZ-Source)
-- [gunbi (source)](https://github.com/WhyWolfie/Gunbi-Source)
-- [wg vs2022(source)](https://github.com/HoaNgocTram/WG-Source)
-
-<b>[db]</b>
-- GunzDBFixed: [GunzDBFixed](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
-
-(sql: 2005) <br>
-
-- SQL(2005 x64bit)Server/Express: [SQL(2005 x64bit)Server/Express](https://archive.org/details/SQLEXPR)
-- SQL(2005 x32bit)Server/Express: [SQL(2005 x32bit)Server/Express](https://archive.org/details/sqlserver-2005-ssmsee_202203)
-
-(sql: 2014) <br>
-
-- SQL Server Express 2014 (x64): [SQL Server Express 2014 (x64)](https://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/Express%2064BIT/SQLEXPR_x64_ENU.exe)
-- SQL Management Studio 2014: [SQL Management Studio 2014](https://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/MgmtStudio%2064BIT/SQLManagementStudio_x64_ENU.exe)
-
-(sql: 2022) <br>
-
-- SQL Server Express 2022 (x64): [SQL Server Express 2022 (x64)](https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37b0/SQL2019-SSEI-Eval.exe)
-- SQL Management Studio 2022 [SQL Management Studio 2022](https://download.microsoft.com/download/c/7/c/c7ca93fc-3770-4e4a-8a13-1868cb309166/SSMS-Setup-ENU.exe)
+- **Best beginner tutorials** → [WhyWolfie/GunZ-The-Duel/tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial)  
+- **Full server setup video** → [YouTube Guide](https://www.youtube.com/watch?v=qTIk722vrKE)  
+- **Play GunZ right now in browser** → [gunz.sigr.io](https://gunz.sigr.io/) (by LostMyCode)
 
 
-<b>[tools]</b>
-- visual all runtimes: [download](https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020)
-- visual studio .NET 2003: [download](https://archive.org/details/visual-studio.-net-2003)
-- DXSDK June 10: [download](https://archive.org/details/dxsdk-jun-10)
+## 📦 Core Sources & Clean Bases (1.5 era)
+| Repository                          | Description                              | Link                                                                 |
+|-------------------------------------|------------------------------------------|----------------------------------------------------------------------|
+| RefinedGunZ                         | Polished & maintained client/server      | https://github.com/Asunaya/refinedgunz                               |
+| Open-Gunz / Ogz-Source              | Open community effort                    | https://github.com/open-gunz/ogz-source                              |
+| ZER0NIS/Gunz-Base                   | Very clean 1.5 base                      | https://github.com/ZER0NIS/Gunz-Base                                 |
+| Jetman823/Gunz1.5                   | Another clean & well-commented 1.5       | https://github.com/Jetman823/Gunz1.5                                 |
+| Summer-Source-1.5        | Clean Summer 1.5 variant             | [WhyWolfie/Summer-Source-1.5](https://github.com/WhyWolfie/Summer-Source-1.5) |
+| PlayGunz-Source          | Full PlayGunZ source                 | [WhyWolfie/PlayGunz-Source](https://github.com/WhyWolfie/PlayGunz-Source) |
+| StreakGunZ-Source        | StreakGunZ custom source             | [WhyWolfie/StreakGunZ-Source](https://github.com/WhyWolfie/StreakGunZ-Source) |
+| UnderGunZ-Source         | UnderGunZ v7 source                  | [WhyWolfie/UnderGunZ-Source](https://github.com/WhyWolfie/UnderGunZ-Source) |
+| Gunbi-Source             | Gunbi custom source                  | [WhyWolfie/Gunbi-Source](https://github.com/WhyWolfie/Gunbi-Source)  |
+| WG-Source (VS2022)       | WG source updated to VS2022          | [HoaNgocTram/WG-Source](https://github.com/HoaNgocTram/WG-Source)    |
+| FxpGZ-Repacked           | FXP repacked source                  | [fxpgunz/FxpGZ-Repacked](https://github.com/fxpgunz/FxpGZ-Repacked)  |
+| Repack-Jorklenis2        | Jorklenis2 repacked source           | [Jorklenis/Repack-Jorklenis2](https://github.com/Jorklenis/Repack-Jorklenis2) |
+| GunzFactor               | GunZFactor server source             | [sohchienmin/GunZ](https://github.com/sohchienmin/GunZ/tree/master)  |
 
-<b>[gunz2]</b>
-- client: [download](https://archive.org/details/gunz-2)
-- others: [download](https://archive.org/details/gunz2_20120524.7z)
-- realspace3 engine: [download](https://archive.org/details/gunz-2-real-space-3-engine)
-- realspace3 engine p2: [download](https://archive.org/details/gunz-2-real-space-3-engine-p-2)
-- realspace3 engine p3: [download](https://archive.org/details/gunz-2-real-space-3-engine-p-3)
-- standalone edition: [download](https://archive.org/details/gun-z-2-standalone-edition_202011)
-- standalone edition #2: [download](https://archive.org/details/gun-z-2-standalone-edition)
-- SDK: [download](https://archive.org/details/sdk_20201112)
-- DATA: [download](https://archive.org/details/data_20201112_202011)
-- gunz2: [gunz2](https://files.trinityent.net/?dir=GunZ%202)
+## 🛠️ Tools & Utilities
 
-<b>[clients / source]</b><br>
-- oldgunz(2007source): [oldgunz](https://github.com/WhyWolfie/source2007)
-- gunz emulator 2013: [gunz emulator 2013](https://github.com/WhyWolfie/Gunz2013)
-- fgunz: [fgunz](https://github.com/WhyWolfie/FGunZ)
-- trinitygunz: [trinitygunz](https://github.com/WhyWolfie/TrinityGunZ)
-- gregon13source: [gregon13source](https://github.com/WhyWolfie/Gregon13Source)
-- challengequest: [challengequest](https://github.com/WhyWolfie/ChallengeQuest)
-- nationalgunz: [nationalgunz](https://github.com/WhyWolfie/NationalGunZ)
-- repack-aren: [repack-aren](https://github.com/WhyWolfie/Repack-Aren)
-- gfzsource: [gfz source](https://github.com/sohchienmin/GunZ/tree/master)
-- 2005 source & old patches: [2005 source](https://archive.org/details/gunz.-7z)
-- 2011 artwork & 3ds max: [2011 artwork & 3ds max](https://archive.org/details/2011-artwork-Gunz)
-- evilgunz client server & source: [evilgunz client server & source](https://archive.org/details/server-client)
-- universegamers: [universegamers](https://archive.org/details/ugg-source-2017-fixes-main)
-- hazegunz(jur13n): [hazegunz](https://archive.org/details/haze-gun-z-source-jur-13n-jurien-hamaker)
-- android28 source: [android28 source](https://archive.org/details/gunz-sourceandroid-28)
-- jur13n (clean/edited version 1.5) [jur13n 1.5 cleaned-edited](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw)
-- nationalgunz(client/server/source): [nationalgunz source-client-server](https://archive.org/details/national-gunz-source-client-server-files)
-- phoenix (2008 client): [phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
-- phoenix repack 2008: [phoenix repack 2008](https://archive.org/details/gunz-2008-server-client-repack)
-- zer0nis (clean version: 1.5): [zeronis](https://github.com/ZER0NIS/Gunz-Base)
-- jetman (clean version: 1.5): [jetman](https://github.com/Jetman823/Gunz1.5)
-- challenge quest base(source): [challenge quest base(source)](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z)
-- summer 1.5 (source): [summer 1.5 (source)](https://archive.org/details/source-code.-7-z)
-- phail gunz (source): [phail gunz (source)](https://archive.org/details/phails-gunz-shit.-7z)
-- repack aren: [repack aren](https://archive.org/details/repack-aren)
-- m2o(gunzduels)(source): [m2o(gunzduels)(source)](https://archive.org/details/stable-m-2-o-gunz)
-- immortalgunz(source): [immortalgunz](https://archive.org/details/z-aj-ugg)
-- multi language(source): [multi language](https://archive.org/details/source-multi-lenguage-by-jorklenis-2-and-maiet)
-- vip shop parts: [vip shop parts](https://archive.org/details/vip-shop-parts.-7z)
-- gunbi(source): [gunbi](https://archive.org/details/gunbi-source)
-- globalgunz(source): [globalgunz](https://archive.org/details/globalgunz-source.-7z)
-- evilgunz(source): [evilgunz](https://archive.org/details/evilgunz-source)
-- articgunz(source): [articgunz](https://archive.org/details/artic-source)
-- freshgunz(source): [freshgunz](https://archive.org/details/freshgunz-source)
-- playgunz(source): [playgunz](https://archive.org/details/play-gun-z-todo)
-- undergunz(source): [undergunz](https://archive.org/details/source-under)
-- trinitygunz(source): [trinitygunz](https://archive.org/details/trinity-gunz-source.-7z)
-- evilgunz(client/server/source): [evilgunz(client/server/source)](https://archive.org/details/server-client)
-- jork stuff: [jork stuff](https://archive.org/details/jork_20201112_202011)
-- gunz resource files r395: [gunz resource files r395](https://archive.org/details/gunz-resource-files-r-395)
-- ugg fixed aj 021017: [ugg fixed aj 021017](https://archive.org/details/ugg-fixed-aj-021017)
-- ugg original fixed: [ugg original fixed](https://archive.org/details/ugg-original-fixed)
-- ugg source 2017 folder lucas: [ugg source 2017 folder lucas](https://archive.org/details/ugg-source-2017-folder-lucas)
-- ig / ugg fixes: [ig / ugg fixes](https://archive.org/details/Fixes)
-- ugg source 2017 fixes main: [ugg source 2017 fixes main](https://archive.org/details/ugg-source-2017-fixes-main)
-- ugg fixed atlantis: [ugg fixed atlantis](https://archive.org/details/ugg-fixed-atlantis)
-- jorklenis2(source/client/server): [jorklenis2(source/client/server)](https://archive.org/details/Jorklenis2-Scammer-Edition-LOL)
-- jetman(1.5 source/client/server): [jetman(1.5 source/client/server)](https://archive.org/details/gunz-1.5-main)
-- gunzduels(m2o) source: [gunzduels(m2o) source](https://archive.org/details/stable-m-2-o-gunz)
-- abbygunz (source/client/server): [abbygunz (source/client/server)](https://archive.org/details/new-gunz)
+| Tool                     | Purpose                              | Link                                                                 |
+|--------------------------|--------------------------------------|----------------------------------------------------------------------|
+| io-scene-gzrs2           | Blender addon: maps/models/items     | [Krunklehorn/io-scene-gzrs2](https://github.com/Krunklehorn/io-scene-gzrs2) |
+| blender-elu-importer     | ELU/ANI/XML import for Blender 2.8+  | [goweiwen/blender-elu-importer](https://github.com/goweiwen/blender-elu-importer) |
+| z3ResEx                  | Extract .mrs / client filesystems    | [x1nixmzeng/z3ResEx](https://github.com/x1nixmzeng/z3ResEx)          |
+| ZPatchBuilder            | Create .zpatch updates               | [x1nixmzeng/ZPatchBuilder](https://github.com/x1nixmzeng/ZPatchBuilder) |
+| gunz-replay              | Analyze .gzr replay files            | [mataha/gunz-replay](https://github.com/mataha/gunz-replay)          |
+| GunZ-proto               | Networking protocol docs             | [MrSuicideFish/GunZ-proto](https://github.com/MrSuicideFish/GunZ-proto) |
+| three-gunz               | Browser GunZ (Three.js)              | [LostMyCode/three-gunz](https://github.com/LostMyCode/three-gunz)    |
+| Gunzpedia                | GunZ wiki & archive API              | [zkxjzmswkwl/Gunzpedia](https://github.com/zkxjzmswkwl/Gunzpedia)    |
+| gunzcord                 | Discord Rich Presence                | [emisandgunz/gunzcord](https://github.com/emisandgunz/gunzcord)      |
+| GunZ-The-Duel-Items      | Large item collection/XML            | [Durial06/GunZ-The-Duel-Items](https://github.com/Durial06/GunZ-The-Duel-Items) |
+| Gunz-Set-Rotation        | Fix model rotations                  | [Eronisch/Gunz-Set-Rotation](https://github.com/Eronisch/Gunz-Set-Rotation) |
+| Gunz-CMS                 | Web CMS/control panel                | [Eronisch/Gunz-CMS](https://github.com/Eronisch/Gunz-CMS)            |
+| GunZ-simple-web          | Basic GunZ website                   | [tannous94/GunZ-simple-web](https://github.com/tannous94/GunZ-simple-web) |
+| ijji-website             | Recreated IJJI site                  | [tannous94/ijji-website](https://github.com/tannous94/ijji-website)  |
+| Practica00-Website-GUNZ  | Simple GunZ frontend example         | [Aguilera-Agustin/Practica00-Website-GUNZ](https://github.com/Aguilera-Agustin/Practica00-Website-GUNZ) |
+| Gunz2Shark               | GunZ 2 tools/packet utils            | [Gunz2Dev/Gunz2Shark](https://github.com/Gunz2Dev/Gunz2Shark)        |
+| gunz-2-private-server    | GunZ 2 emulator project              | [gitlab.milice.se/gunz-2-private-server](https://gitlab.milice.se/gunz-2-private-server) |
+| NOP (Freestyle)          | Freestyle GunZ antihack bypass       | [cgaebel/NOP](https://github.com/cgaebel/NOP)                        |
+| Infamous                 | Alternative GunZ mod/source          | [Theoretical/Infamous](https://github.com/Theoretical/Infamous)      |
 
-<b>[1.5 snippets]</b><br>
-(client)<br>
-- automatic ads: [automatic ads](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic-ads)
-- bullet colored: [bullet colored](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored)
-- chat background: [chat background](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground)
-- crosshair size: [crosshair size](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size)
-- extra info: [extra info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5)
-- hide jjang: [hide jjang](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang)
-- hillclimb: [hillclimb](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix)
-- icon death scoreboard: [icon death scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard)
-- item shop search: [item shop search](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/item-search-shop)
-- kill feed: [kill feed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-feed)
-- killstreak system: [killstreak system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-streak-system)
-- live player in room: [live player in room](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/live-player-in-the-event-channel)
-- multi language: [multi language](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multi-language)
-- duplicate client: [duplicate client](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multiclient-duplicate-procress)
-- pingbar: [pingbar](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/pingbar)
-- player online channel: [player online channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/players-online-channel)
-- random annoucement lobby: [random annoucement lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/random-annoucement-lobby-interface)
-- room with empty name: [room with empty name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room-with-empty-name)
-- simple levelup sound: [simple levelup sound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/simple-levelup-sound)
-- snowtownparticlesystem: [snowtownparticlesystem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/snowtownparticlesystem)
-- vipshop parts: [vipshop parts](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts)
-- weapon information: [weapon information](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information)
-- roomtags: [roomtags](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags)
-- charging while moving: [charging while moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving)
-- effect spark shot: [effect spark shot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot)
-- threaded screenshots: [threaded screenshots](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots)
-- staff jjang for staff: [staff jjang for staff](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/new%20jjang%20for%20staff)
-- bunch of features: [bunch of features](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features)
-- weapon shoot nade: [weapon shoot nade](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade)
-- heal over time (1+hp): [heal over time (1+hp)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time)
-- clan 1v1: [clan 1v1](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/clanwar%201v1/)
-- shop layout: [shop layout](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20layout)
-- emoticon chat: [emoticon chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/emoticon%20chat)
-- ugrade manager: [ugrade manager](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/ugrade%20manager/)
-- duel tournament 2pp & 4pp: [duel tournament 2pp & 4pp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20tournament%202players%20&%204%20players)
-- level in lobby: [level in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/level%20in%20lobby)
-- taunt after round: [taunt after round](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/taunt%20after%20round%20is%20over)
-- fps in lobby: [fps in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20in%20lobby)
-- rank on scoreboard: [rank on scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20on%20scoreboard)
-- add maps to ctf and duel: [add maps to ctf and duel](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/tutorial/maps/README.md)
-- ping colour: [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour)
-- load all loadingscreens: [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md)
-- event channel: [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel)
-- channel for gm: [channel for gm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/channel%20for%20GM)
-- medkit limits: [medkit limits](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/medkit%20limits)
-- hide admin level & color system & time in chat: [hide admin level & color system & time in chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level)
-- rank colour change: [rank colour change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20colour%20change)
-- dash in options: [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options)
-- hpbar with source: [hpbar with source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hpbar)
-- hpap bar on quest npcs: [hpap bar on quest npcs](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/draw%20hpapbar%20on%20quest%20npcs)
-- nolead: [no lead](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20lead)
-- room with map name: [room with map name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room%20with%20map%20name)
-- clan member text info: [clan member text info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan%20member%20text%20info)
-- rflashwindow: [rflashwindow](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rflashwindow)
-- killcam: [killcam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/killcam)
-- discord rpc: [discord rpc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/discord%20rpc)
-- rotation base cw & team deathmatch: [rotation base cw & team deathmatch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rotation%20base%20(cw%20and%20team%20deathmatch))
-- sword trail color: [sword trail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sword%20trail%20color)
-- sword trail in the options: [sword trail in the options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/swordtrail%20color)
-- additional quest maps in comboBox at stagecreate: [additional quest maps in comboBox at stagecreate](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/additional%20quest%20maps%20in%20comboBox%20at%20stagecreate)
+## 🗄️ Database & SQL Setup
 
+**Recommended starter database**  
+- GunZDBFixed (1.5 compatible) → [Download ZIP](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/database/1.5/GunZDBFixed.zip)
 
-(fixes)<br>
-- crash list: [crash list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/crashes)
-- dual mode crash fix: [dual mode crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crash-fixed-duel-mode)
-- login crash(matchserver): [login crash(matchserver)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20crash%20(matchserver)%20fix)
-- player count server: [playercount](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/servercrashfix1.5)
-- resolution fix: [resolution fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/resolution%20fix)
-- wide/stretched/refresh rate: [widescreen](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/wide%20resolution%20fix)
-- map limit: [map limit](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/map%20limit%20fix)
-- anti macro spam: [anti macro spam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20macro%20spam)
-- bunch of fixes: [bunch of fixes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20fixes)
-- cant buy database fix(1.5): [cant buy database fix(1.5)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/cant%20buy1.5)
-- fix sniper zoom: [fix sniper zoom](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20sniper%20zoom)
-- window toggle: [window toggle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix)
-- uc patch: [uc patch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch)
-- login %s crash: [login %s crash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix)
-- auto korean message: [auto korean message](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message)
-- auto select server: [auto select server](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20select%20server)
-- instant login: [instant login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20login)
-- show my own ping at scoreboard: [show my own ping at scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping)
-- clan close fix: [clan close fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix)
-- clan/quest/survival: [clan/quest/survival](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix)
-- adding effect combo: [adding effect combo](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo)
-- gunz patches: [gunz patches](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library)
-- optimize windowed mode fps: [optimize windowed mode fps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/optimize%20windowed%20mode%20fps)
-- duel tournament player rank: [duel tournament player rank](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/duel%20tournament%20player%20rank%20fix)
-- matchagent winver change: [matchagent winver change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/matchagent%20winver%20change)
-- config changes: [config changes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/config%20change)
-- ctf ae flaggrab exploit patch: [ctf ae flaggrab](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ctf%20ae%20flaggrab%20exploit%20patch)
-- shop jump fix: [shop jump fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20jump%20fix)
-- xp kernel32 problem fix: [xp kernel32 problem fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/xp%20kernel32.dll%20problem%20fix)
-- patch for crashes: [patch for crashes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/patch%20for%20stupid%20crash%20being%20abused%20by%20hackers)
-- fix agent error: [fix agent error](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20agent%20error)
-- dll hacking fix [dll hacking fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dll%20hacking%20fix)
-- activate serialkey: [activate serialkey](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/activate%20serialkey)
-- disable nhn auth: [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth)
-- custom shotgun sounds: [custom shotgun sounds](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/custom%20shotgun%20sounds)
-- dynamiclight fix: [dynamiclight fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dynamic%20light%20fix)
-- sql cleaning(sql2005): [sql cleaning(sql2005)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20cleaning)
-- quest combo crash: [quest combo crash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20combo%20crash)
-- no item crash fix: [no item crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20item%20crash%20fix)
-- ping at server select: [ping at server select](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20at%20server%20select) 
-- change agentip address(ping 999 issue): [change agentip address(ping issue)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20agentip)
-- change gunz folder: [change gunz folder](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20nameapp)
-- run gunz on localipaddress: [run gunz on localipaddress](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20ping%20on%20local%20server)
-- shop lobby stage fix: [shop lobby stage fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20lobby-stage%20fix)
-- automatic ranking system: [automatic ranking system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic%20ranking%20system)
-- duel dots disable: [duel dots disable](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20dots%20disable)
-- fix nationalgunz vipwall: [fix nationalgunz vipwall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20nationalgunz%20vipwall)
-- remove ¿î¿µÀÚ and °³¹ßÀÚ not ready: [remove ¿î¿µÀÚ and °³¹ßÀÚ not ready](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remove%20administrator%20is%20not%20ready)
-- remember password at login: [remember password at login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remember%20password)
-- clan 8 players: [clan 8 players](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clanwar%208%20players)
-- duel admin hidden in que: [duel admin hidden in que](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20hidden%20admin)
-- dual daggers fix: [dual daggers fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20dual%20daggers)
-- whisper long name fix: [whisper long name fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/whisper%20long%20name%20fix)
-- select character camera not more moving: [select character camera not more moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/character%20select%20camera)
-- instant bgm / effect slider: [instant bgm / effect slider](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20bgm%20effect%20slider)
-- fps drop fix (jur13n): [fps drop fix (jur13n)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20drop%20fix)
+**SQL Server versions** (choose based on your source / Windows version)
 
-(anticheat and such) <br>
-- anti-inject: [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject)
-- anti shotbot: [anti shotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot)
-- anti hack: [anti hack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-hackandsuch)
-- bunch of anti scripts: [bunch of anti scripts](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-hackandsuch)
-- client protection: [1.5 client protection hashcalc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/1.5%20files%20client%20protection)
+| Version       | Edition                  | Architecture | Download Link                                                                 | Notes                                      |
+|---------------|--------------------------|--------------|-------------------------------------------------------------------------------|--------------------------------------------|
+| **2005**      | SQL Management Studio       | x64          | [archive.org](https://archive.org/details/SQLEXPR)                            | Classic choice – best compatibility with old 1.5 sources |
+| **2005**      | SQL Server Express       | x86          | [archive.org](https://archive.org/details/sqlserver-2005-ssmsee_202203)       | For 32-bit legacy systems                  |
+| **2014**      | SQL Server Express       | x64          | [Microsoft – Express](https://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/Express%2064BIT/SQLEXPR_x64_ENU.exe) | Good middle ground – still widely used     |
+| **2014**      | SQL Management Studio    | x64          | [Microsoft – SSMS](https://download.microsoft.com/download/E/A/E/EAE6F7FC-767A-4038-A954-49B8B05D04EB/MgmtStudio%2064BIT/SQLManagementStudio_x64_ENU.exe) | Management tool for 2014                   |
+| **2022**      | SQL Server Express       | x64          | [Microsoft – Eval/Express](https://download.microsoft.com/download/4/8/6/486005eb-7aa8-4128-aac0-6569782b37b0/SQL2019-SSEI-Eval.exe) | Modern / Windows 11 compatible (recommended for new setups) |
+| **2022**      | SQL Management Studio    | –            | [Microsoft – SSMS 2022](https://download.microsoft.com/download/c/7/c/c7ca93fc-3770-4e4a-8a13-1868cb309166/SSMS-Setup-ENU.exe) | Latest management tool (works with older DBs too) |
 
-(quests) <br>
-- goblin super boss: [goblin super boss](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/goblin%20super%20boss)
-- shark monster: [shark monster](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/shark%20monster)
-- boo quest: [boo quest](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/boo%20quest)
-- mario cyber boo: [mario cyber boo](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/quest/mario-cyber-boo)
+## 🛠️ Essential Development Tools
 
-(2007/2008 server) <br>
-- gunzexp v2 modded june: [gunzexp v2](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunzexp%20v2%20%5Bmodded%5D%20june)
-- anti exploit chatmake (08 version): [anti exploit chatmake](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti%20exploit%20chatmake%20(08))
-- gunz asm (2007/2008 servers): [gunz asm](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20asm%202007-2008)
+These legacy tools are still required for compiling older GunZ sources (especially 2003–2010 era).
 
-(commands)<br>
-- hitbox simple: [hitbox simple](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20hitbox%20simple)
-- maptexture: [maptexture](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20maptexture)
-- bunch of admin commands: [bunch of admin commands](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20hacks%20admin)
-- find: [find](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20find)
-- wireframe: [wireframe](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20wireframe)
-- time: [time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20time)
-- damage: [damage](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20damage)
-- getdirection & getposition [getdirection & getposition](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/getPosition%20&%20getDirection)
-- colourlist/mods/commands list [colourlist/mods/commands list](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20colourlist%20%26%20mods%20%26%20commands%20list)
-- staffchat [staffchat](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/command:%20staffchat/README.md)
-- extra: [extra](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20extra)
-- serverping: [serverping](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20pingserver)
-- admin_muteall: [admin_muteall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20muteall)
-- admin_teleport: [admin_teleport](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleport-too)
-- admin_esp: [admin_esp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_esp)
-- admin_senditem: [admin_senditem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20senditem)
-- admin_godmode: [admin_godmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20godmode)
-- admin_teleportall: [admin_teleportall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleportall)
-- admin_alive: [admin_alive](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20alive)
-- admin_revive: [admin_revive](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_revive)
-- admin_spawnmover [admin spawnmover](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin%20spawnmover)
-- admin_speed: [admin_speed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_speed)
-- clearchat: [clearchat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20clearchat)
-- teleporthere: [teleporthere](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20teleporthere)
-- 3dsound: [3dsound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%203dsound)
-- camera: [camera](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20camera)
-- admin_kill: [admin_kill](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_kill)
-- admin_killall: [admin_killall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_killall)
-- exit: [exit](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20exit)
-- myfps: [myfps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20myfps)
-- admin_flip & admin_slash: [admin_flip & admin_slash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_slash%20&%20admin_flip)
-- forcenat: [forcenat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20forcenat)
-- servertime: [servertime](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20servertime)
-- music stop play prev next: [music stop play prev next](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20music%20stop%20next%20prev%20play)
-- back & save teleport: [back & save teleport](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20save%20&%20back%20teleport)
-- fps: [fps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20fps)
+| Tool                          | Purpose                                      | Download Link                                                                 |
+|-------------------------------|----------------------------------------------|-------------------------------------------------------------------------------|
+| Visual C++ All Runtimes       | All-in-one Visual C++ redistributables       | [archive.org (Aug 2020 pack)](https://archive.org/details/visual-c-runtimes-all-in-one-aug-2020) |
+| Visual Studio .NET 2003       | Required for original GunZ 1.5 source builds | [archive.org](https://archive.org/details/visual-studio.-net-2003)            |
+| DirectX SDK June 2010         | DirectX headers/libs for rendering & sound   | [archive.org](https://archive.org/details/dxsdk-jun-10)                       |
 
-(gamemodes) <br>
-- team training: [team training](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/gamemode:%20training)
-- staffmode: [staffmode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20staffmode)
-- gungame packet: [gungame packet](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gungame%20packet)
-- playerwars: [playerwars](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/playerwars)
-- ninja: [ninja](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20ninja)
-- vampire: [vampire](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20vampire)
-- paintball: [paintball](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20paintball)
-- gunmode(client side only): [gunmode(client side only)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gunmode)
-- infected: [infected](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20infected)
-- no-kstyle: [no-kstyle](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20nokstyle)
-- spymode: [spymode](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20spy)
-- reverse berserker: [reverse berserker](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20reverse%20berserker)
-- gungame(server&client side): [gungame(server&client side)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gamemode:%20gungame)
+## 🎮 GunZ 2 Resources
 
-(others)<br>
-- basic antihack: [basic antihack](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/basic%20anti-hack)
-- crashu: [crashu](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crashu)
-- launcher: [darkgunz launcher](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/darkgunz%20launcher)
-- memory writer: [memory writer](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/memory%20writer)
-- sql administrative querys: [sql administrative querys](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20administrative%20querys)
-- gunz debugging console: [gunz debugging console](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20debugging%20console)
-- shop maker: [shop maker source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20maker)
-- unreal engine 4 gunz: [unreal engine](https://www.youtube.com/watch?v=wIzNnBJiVO4)
-- gunz ranking source: [gunz ranking source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz%20source%20ranking)
-- zlauncher: [zlauncher](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/zlauncher)
-- zpatchbuilder: [zpatchbuilder](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/zpatchbuilder)
-- [sql] receive coins for hours our minutes: [receive coins for hours our minutes](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/query/receive%20coins%20for%20hours%20our%20minutes)
+GunZ 2: The Second Duel files, engine parts, and private server attempts (mostly archived).
 
-(not done yet)
-- rocketguided: [rocketguided](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20rocketguided)
-- hwid: [hwid](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hwid%20ban)
-- admin_slap: [admin_slap](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_slap)
-- admin_pause: [admin_pause](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/command:%20admin_pauze)
-- quest late join: [quest late join](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20late%20join)
+| Resource                      | Description                                  | Link                                                                                  |
+|-------------------------------|----------------------------------------------|---------------------------------------------------------------------------------------|
+| GunZ 2 Client Collection      | Full clients & installers archive            | [archive.org – GunZ 2](https://archive.org/details/gunz-2)                            |
+| GunZ 2 Data (2012)            | Additional data pack (20120524)              | [archive.org](https://archive.org/details/gunz2_20120524.7z)                          |
+| RealSpace3 Engine             | Core engine files (part 1)                   | [archive.org](https://archive.org/details/gunz-2-real-space-3-engine)                 |
+| RealSpace3 Engine (part 2)    | Continuation / extra engine files            | [archive.org](https://archive.org/details/gunz-2-real-space-3-engine-p-2)             |
+| RealSpace3 Engine (part 3)    | Final engine parts                           | [archive.org](https://archive.org/details/gunz-2-real-space-3-engine-p-3)             |
+| Standalone Edition            | Standalone GunZ 2 client edition             | [archive.org #1](https://archive.org/details/gun-z-2-standalone-edition_202011)       |
+| Standalone Edition (alt)      | Alternate standalone pack                    | [archive.org #2](https://archive.org/details/gun-z-2-standalone-edition)              |
+| GunZ 2 SDK                    | Development SDK files                        | [archive.org](https://archive.org/details/sdk_20201112)                               |
+| GunZ 2 DATA                   | Additional data/files (2020 archive)         | [archive.org](https://archive.org/details/data_20201112_202011)                       |
+| TrinityEnt GunZ 2 Files       | Alternative mirror (clients, tools, etc.)    | [files.trinityent.net – GunZ 2](https://files.trinityent.net/?dir=GunZ%202)           |
 
-<br>
+## 🎯 Selected Clients & Sources (Community Repos)
 
-<b>[gunz international]</b> <br>
-- gunz international client/launcher: [gunz international clients](https://archive.org/details/gunz-international-20060726_202211)
-- gunz international launcher/updates: [gunz international launcher/updates](https://github.com/Durial06/GunZ-The-Duel-Items/tree/main/internationalgunz)
-- history for now unofficial maiet.net: [history for now unonfficial maiet.net](https://archive.org/details/history-for-now-unofficial-maiet.net)
-
-<b>[unpack clients]</b>
-- infinitygunz: [infinitygunz](https://github.com/Duzopy/InfinityGunZ-Unpacked-)
-- freestylegunzv7: [freestylegunzv7](https://github.com/Duzopy/FGunZV7-Unpack)
-- herogamersgunz: [herogamersgunz](https://github.com/Duzopy/HeroGamersGunZ-Unpack)
-- masangsoft: [3rd playtest](https://github.com/Duzopy/Masangsoft-3rd-Playtest)
-
-<b>[custom clients]</b>
-- mpogspain gunz(27/08/2007): [mpogspain gunz(27/08/2007)](https://archive.org/details/mpogspain-gun-z-27082007-ful)
-- legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
-- competitive V3: [competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
-- fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
-- fxp gunz (installer): [fxp gunz (installer)](https://archive.org/details/fxp-gun-z)
-- masangsoftgunz: [masangsoftgunz](https://archive.org/details/gun-zsetup-masang)
-- maximogunz: [maximogunz](https://archive.org/details/maximo-gun-z)
-- vinagunzv12: [vinagunzv12](https://archive.org/details/vinagun-zv-12-1)
-- freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
-- freestylegunzv7: [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer)
-- gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client)
-- trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
-- gunz mtg v8: [gunz mtg v8](https://archive.org/details/setup-gunz-mtg-v-8_202011)
-- ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
-- trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
-- ghostgunzv3: [ghostgunzv3](https://archive.org/details/ghostgunz-install-v-3)
-- ghostgunzv7: [ghostgunzv7](https://archive.org/details/install-ghost-gunz-v-7)
-- gettinggunzv1: [gettinggunzv1](https://archive.org/details/getting-gunz-install-v-1)
-- abbygamerz: [abbygamerz 2015](https://archive.org/details/abby-gamerz-2015)
-- accelgamersgunz: [accelgamersgunz](https://archive.org/details/accel-gamers-gun-z-09062015)
-- aerogamers: [aerogamers](https://archive.org/details/aero-gamers)
-- deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014)
-- fantasygunz: [fantasygunz](https://archive.org/details/client-fg-2016)
-- atgunz: [atgunz](https://archive.org/details/atgun-z)
-- bloodlinegunz: [bloodlinegunz](https://archive.org/details/bloodline-gun-z-the-beginning-installer)
-- articgunz: [articgunz](https://archive.org/details/artic-gun-z-installer-23052014)
-- darkgunz: [darkgunz rar](https://archive.org/details/dark-gun-z_202011)
-- darkgunz(2017): [darkgunz(2017)](https://archive.org/details/dar-kgun-z-client-2017)
-- darkgunz: [darkgunz exe](https://archive.org/details/iPlayOG)
-- edengamerzgunz: [edengamerzgunz](https://archive.org/details/eden-gamerz-gun-z-20151001)
-- enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer)
-- fusiongunz: [fusiongunz](https://archive.org/details/fusion-gunz)
-- gunzgo: [gunzgo](https://archive.org/details/gunz-go-2016)
-- dualitygunz: [dualitygunz](https://archive.org/details/instalar-duality-gun-z)
-- eurogunzv10: [eurogunzv10](https://archive.org/details/gunzv-10-1)
-- igunz: [igunz](https://archive.org/details/i-gunz-v-1)
-- drgunz: [drgunz](https://archive.org/details/install-drgun-z)
-- ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
-- knightgunzv3: [knightgunzv3](https://archive.org/details/knight-gun-zv-3)
-- lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1)
-- lastgunzv2: [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer)
-- maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer)
-- netmarblegunz(v811): [netmarblegunz(v811)](https://archive.org/details/netmarble-gunz-811)
-- netmarblegunz(v689): [netmarblegunz(v689)](https://archive.org/details/netmarble-gunz-689)
-- netmarblegunz(v557): [netmarblegunz(v557)](https://archive.org/details/netmarble-gunz-v-557)
-- netmarblegunz(v533): [netmarblegunz(v533)](https://archive.org/details/netmarble-gunz-533)
-- netmarblegunz(v515): [netmarblegunz(v515)](https://archive.org/details/netmarble-gunz-515)
-- netmarblegunz(v236): [netmarblegunz(v236)](https://archive.org/details/netmarble-gunz-v-236)
-- netmarblegunz(v193): [netmarblegunz(v193)](https://archive.org/details/netmarble-gunz-v-193)
-- netmarblegunz(v176): [netmarblegunz(v176)](https://archive.org/details/netmarble-gunz-176)
-- netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115)
-- masangsoft (2016-01-07): [masangsoft(2016-01-07)](https://archive.org/details/gunz-setup-main-20160107)
-- masangsoft (20160728): [masangsoft (20160728)](https://archive.org/details/gunz-setup-main-20160728)
-- masangsoft (20160602): [masangsoft (20160602)](https://archive.org/details/gunz-setup-main-20160602)
-- masangsoft (20160107): [masangsoft (20160107)](https://archive.org/details/gunz-setup-main-20160107)
-- mundialgunzv2: [mundialgunzv2](https://archive.org/details/mundial-gunz-v-2)
-- nationalgunz: [nationalgunz](https://archive.org/details/national-gunz-6.6.2015)
-- savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april)
-- progunzv5: [progunzv5](https://archive.org/details/pro-gunz-v-5)
-- rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
-- p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
-- phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112)
-- reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
-- gunz vietnam: [gunz vietnam](https://archive.org/details/gunz-viet-nam)
-- dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
-- firegunz: [firegunz](https://archive.org/details/fire-gunz)
-- gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra)
-- utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012)
-- devmode: [devmode](https://archive.org/details/devmode)
-- 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603)
-- gunz 20july14: [gunz 20july14](https://archive.org/details/gunz-20-july-14)
-- gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
-- vietgunzv9: [vietgunzv9](https://archive.org/details/viet-gunz-v-9)
-- 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client)
-- mundial gamers gunzv2: [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2)
-- soldiergunz 3.1: [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer)
-- huntxgunz: [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer)
-- alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19)
-- monstergunz: [monstergunz](https://archive.org/details/monster-gunz)
-- gunzv10(2022): [gunzv10 (2022)](https://archive.org/details/gunzv10)
-- gunzv10(2022 oct 19): [gunzv10(2022 oct 19)](https://archive.org/details/gunzv-10.1-october-19-2022)
-- dutygunz: [dutygunz](https://archive.org/details/instalador-duty-gunz)
-- kaosgunz2.0: [kaosgunz 2.0](https://archive.org/details/kaos-gunz-2.0-a-revolucao)
-- vitalgunz: [vitalgunz](https://archive.org/details/vital-gunz)
-- fortrekgunz: [fortrekgunz](https://archive.org/details/fortrek-gunz-stgames)
-- demongunzv1: [demongunzv1](https://archive.org/details/demon-gunz-v-1)
-- enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
-- globalgames: [globalgames](https://archive.org/details/global-games)
-- raulgunz: [raulgunz](https://archive.org/details/cliente-raul-gunz)
-- lggunz beta installer 2005: [lggunz beta installer 2005](https://archive.org/details/lggun-z-beta-installer-2005)
-- ogunz: [ogunz](https://archive.org/details/ogun-z-v-2) big thanks to ogunz no encryption useful!
-- gunz installer 20070624 (ijji): [gunz installer 20070624 (ijji)](https://archive.org/details/gunz-installer-20070624)
-- gunz installer 20081121 (ijji): [gunz installer 20081121 (ijji)](https://archive.org/details/gunz-installer-20081121)
-- masangsoft (december 6 - 2022 latest version): [masangsoft (december 6 - 2022 latest version)](https://archive.org/details/masangsoft-december-6-2022.-7z)
+| Project              | Description                          | Link                                                                 |
+|----------------------|--------------------------------------|----------------------------------------------------------------------|
+| OldGunZ (2007)       | 2007-era source code                 | [WhyWolfie/source2007](https://github.com/WhyWolfie/source2007)      |
+| GunZ Emulator 2013   | 2013 emulator / server source        | [WhyWolfie/Gunz2013](https://github.com/WhyWolfie/Gunz2013)          |
+| FGunZ                | Freestyle GunZ source                | [WhyWolfie/FGunZ](https://github.com/WhyWolfie/FGunZ)                |
+| TrinityGunZ          | TrinityGunZ full source              | [WhyWolfie/TrinityGunZ](https://github.com/WhyWolfie/TrinityGunZ)    |
+| Gregon13Source       | Gregon13 custom source               | [WhyWolfie/Gregon13Source](https://github.com/WhyWolfie/Gregon13Source) |
+| ChallengeQuest       | Challenge Quest gamemode source      | [WhyWolfie/ChallengeQuest](https://github.com/WhyWolfie/ChallengeQuest) |
+| NationalGunZ         | NationalGunZ source & repack         | [WhyWolfie/NationalGunZ](https://github.com/WhyWolfie/NationalGunZ)  |
+| Repack-Aren          | Aren repacked source                 | [WhyWolfie/Repack-Aren](https://github.com/WhyWolfie/Repack-Aren)    |
+| GFZ Source           | GunZFactor / GFZ server source       | [sohchienmin/GunZ (master)](https://github.com/sohchienmin/GunZ/tree/master) |
+| 2005 Source & Old Patches       | Original 2005 source with early patches      | [archive.org – gunz.-7z](https://archive.org/details/gunz.-7z)                        |
+| 2011 Artwork & 3ds Max          | 2011 models, textures & 3ds Max files        | [archive.org – 2011-artwork-Gunz](https://archive.org/details/2011-artwork-Gunz)     |
+| EvilGunZ (full)                 | Complete EvilGunZ client + server + source   | [archive.org – server-client](https://archive.org/details/server-client)             |
+| UniverseGamers (UGG)            | UGG 2017 source with community fixes         | [archive.org – ugg-source-2017-fixes-main](https://archive.org/details/ugg-source-2017-fixes-main) |
+| HazeGunZ (Jur13n)               | Jur13n / HazeGunZ source variant             | [archive.org – haze-gun-z-source](https://archive.org/details/haze-gun-z-source-jur-13n-jurien-hamaker) |
+| Android28 Source                | GunZ Android 28 port / source attempt        | [archive.org – gunz-sourceandroid-28](https://archive.org/details/gunz-sourceandroid-28) |
+| Jur13n 1.5 (cleaned/edited)     | Cleaned & edited Jur13n 1.5 base             | [Mega.nz – jur13n 1.5 cleaned](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw) |
+| NationalGunZ (full)             | Full NationalGunZ client + server + source   | [archive.org – national-gunz-source-client-server](https://archive.org/details/national-gunz-source-client-server-files) |
+| Phoenix 2008                    | Fresh updated 2008 client                    | [archive.org – phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) |
+| Phoenix Repack 2008             | 2008 repack (client + server)                | [archive.org – gunz-2008-server-client-repack](https://archive.org/details/gunz-2008-server-client-repack) |
+| ZER0NIS Gunz-Base               | Very clean & minimal 1.5 base                | [ZER0NIS/Gunz-Base](https://github.com/ZER0NIS/Gunz-Base)                             |
+| Jetman (clean 1.5)              | Clean & well-commented 1.5 base              | [Jetman823/Gunz1.5](https://github.com/Jetman823/Gunz1.5)                     |
+| Challenge Quest Base            | Starter source for Challenge Quest mode      | [WhyWolfie – ChallengeQuest Base.7z](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z) |
+| Summer 1.5 (source)             | Clean Summer 1.5 source code                 | [archive.org – source-code.-7-z](https://archive.org/details/source-code.-7-z) |
+| Phail GunZ (source)             | Phail GunZ custom source                     | [archive.org – phails-gunz-shit.-7z](https://archive.org/details/phails-gunz-shit.-7z) |
+| Repack Aren                     | Aren repacked source / files                 | [archive.org – repack-aren](https://archive.org/details/repack-aren)          |
+| M2O (GunzDuels)                 | GunzDuels / M2O stable source                | [archive.org – stable-m-2-o-gunz](https://archive.org/details/stable-m-2-o-gunz) |
+| ImmortalGunZ (source)           | ImmortalGunZ custom source                   | [archive.org – z-aj-ugg](https://archive.org/details/z-aj-ugg)               |
+| Multi Language (source)         | Multi-language support source (Jorklenis2 + Maiet) | [archive.org – source-multi-lenguage](https://archive.org/details/source-multi-lenguage-by-jorklenis-2-and-maiet) |
+| VIP Shop Parts                  | VIP shop items / parts collection                    | [archive.org – vip-shop-parts.-7z](https://archive.org/details/vip-shop-parts.-7z)                          |
+| Gunbi (source)                  | Gunbi custom server/client source                    | [archive.org – gunbi-source](https://archive.org/details/gunbi-source)                                      |
+| GlobalGunZ (source)             | GlobalGunZ source code                               | [archive.org – globalgunz-source.-7z](https://archive.org/details/globalgunz-source.-7z)                    |
+| EvilGunZ (source)               | EvilGunZ source files                                | [archive.org – evilgunz-source](https://archive.org/details/evilgunz-source)                                |
+| ArticGunZ (source)              | ArticGunZ custom source                              | [archive.org – artic-source](https://archive.org/details/artic-source)                                      |
+| FreshGunZ (source)              | FreshGunZ source                                     | [archive.org – freshgunz-source](https://archive.org/details/freshgunz-source)                              |
+| PlayGunZ (source)               | PlayGunZ full source                                 | [archive.org – play-gun-z-todo](https://archive.org/details/play-gun-z-todo)                                |
+| UnderGunZ (source)              | UnderGunZ source code                                | [archive.org – source-under](https://archive.org/details/source-under)                                      |
+| TrinityGunZ (source)            | TrinityGunZ source archive                   | [archive.org – trinity-gunz-source.-7z](https://archive.org/details/trinity-gunz-source.-7z)               |
+| EvilGunZ (client/server/source) | Full EvilGunZ package (client + server + source) | [archive.org – server-client](https://archive.org/details/server-client)                             |
+| Jork Stuff                      | Various files / tools from Jorklenis         | [archive.org – jork_20201112_202011](https://archive.org/details/jork_20201112_202011)                    |
+| GunZ Resource Files r395        | Classic GunZ resource files (revision 395)   | [archive.org – gunz-resource-files-r-395](https://archive.org/details/gunz-resource-files-r-395)         |
+| UGG Fixed AJ 021017             | UniverseGamers fixed version (Feb 2017)      | [archive.org – ugg-fixed-aj-021017](https://archive.org/details/ugg-fixed-aj-021017)                      |
+| UGG Original Fixed              | Original fixed UniverseGamers build          | [archive.org – ugg-original-fixed](https://archive.org/details/ugg-original-fixed)                        |
+| UGG Source 2017 (Lucas folder)  | UGG 2017 source folder (Lucas version)       | [archive.org – ugg-source-2017-folder-lucas](https://archive.org/details/ugg-source-2017-folder-lucas)    |
+| IG / UGG Fixes                  | InternetGunZ & UniverseGamers fix collection | [archive.org – Fixes](https://archive.org/details/Fixes)                                                 |
+| UGG Source 2017 Fixes Main      | Main UGG 2017 source with fixes              | [archive.org – ugg-source-2017-fixes-main](https://archive.org/details/ugg-source-2017-fixes-main)        |
+| UGG Fixed Atlantis              | Atlantis-fixed UniverseGamers version        | [archive.org – ugg-fixed-atlantis](https://archive.org/details/ugg-fixed-atlantis)                        |
+| Jorklenis2 (source/client/server) | Jorklenis2 full repack (source + client + server) | [archive.org – Jorklenis2-Scammer-Edition-LOL](https://archive.org/details/Jorklenis2-Scammer-Edition-LOL) |
+| Jetman (1.5 source/client/server) | Full Jetman 1.5 package (source + client + server) | [archive.org – gunz-1.5-main](https://archive.org/details/gunz-1.5-main)                             |
+| GunzDuels (M2O) Source          | GunzDuels / M2O stable source                | [archive.org – stable-m-2-o-gunz](https://archive.org/details/stable-m-2-o-gunz)                          |
+| AbbyGunZ (source/client/server) | AbbyGunZ complete files (source + client + server) | [archive.org – new-gunz](https://archive.org/details/new-gunz)                                       |
 
 
-<b>[tutorials]</b>
-- movements: [movements](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/movements)
-- mrsdecompiler ultimate: [mrsdecompiler ultimate](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/MRSDecompiler%20Ultimate)
-- gunnycrypt: [gunnycrypt](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/gunnycrypt)
-- pro mrs gui: [pro mrs gui](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/mrs/pro_mrs_gui)
-- odbc: [odbc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/odbc)
-- sql2005: [sql2005](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/sql/2005)
-- map xml generator: [map xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/map)
-- shop xml generator: [shop xml generator](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial/xmlgenerator/shop)
-- zitem xml tutorial [zitem xml tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/client/zitem)
-- create a own map(momar): [create a own map(momar)](https://forum.ragezone.com/f497/how-to-make-gunz-map-746408/)
-- watch .gzr replays: [watch .gzr replays](https://www.youtube.com/watch?v=0mUmqhkuiCY)
+### 1.5 Client Snippets
 
-<b>[video tutorials - will update it in the future]</b><br>
-<b>(blender)</b>
-- creating a animated sword: [creating a animated sword](https://www.youtube.com/watch?v=nbOWyAVfnt0)
-- creating gladius sword: [creating gladius sword](https://www.youtube.com/watch?v=ilTBnLPP6W8)
-- import elu blender and export obj: [import elu blender and export obj](https://www.youtube.com/watch?v=nFDcCrKLdVc)
-- import custom item in your game: [import custom item in your game](https://www.youtube.com/watch?v=48gPuvo8pWA)
-- create a katana: [create a katana](https://www.youtube.com/watch?v=zzsfJ6Ok6cs)
-- create a katana2: [create a katana2](https://www.youtube.com/watch?v=vm50YDH1tcY)
-- setup blender & importing maps town.mrs: [setup blender & importing maps town.mrs](https://www.youtube.com/watch?v=MOPi5RvxZgc)
+| Snippet                  | Description                              | Link                                                                 |
+|--------------------------|------------------------------------------|----------------------------------------------------------------------|
+| Automatic Ads            | Auto-display ads in lobby/interface      | [automatic-ads](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic-ads) |
+| Bullet Colored           | Custom colors for bullet trails          | [bullet colored](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bullet%20colored) |
+| Chat Background          | Custom background for chat window        | [chatbackground](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/chatbackground) |
+| Crosshair Size           | Adjustable / larger crosshair size       | [crosshair-size](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/crosshair-size) |
+| Extra Info 1.5           | Additional player/room info display      | [extra info1.5](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/extra%20info1.5) |
+| Hide JJang               | Hide JJang (admin) icon/tag              | [hide-jjang](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide-jjang) |
+| Hillclimb Fix            | Fix/improve hillclimb movement glitch    | [hillclimb fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hillclimb%20fix) |
+| Icon Death Scoreboard    | Custom death icons on scoreboard         | [icon death scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/icon%20death%20scoreboard) |
+| Item Shop Search         | Search function in item/shop menu        | [item-search-shop](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/item-search-shop) |
+| Kill Feed                       | Real-time kill notifications in chat/overlay | [kill-feed](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-feed)                          |
+| Killstreak System               | Track & display kill streaks with rewards    | [kill-streak-system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/kill-streak-system)        |
+| Live Player in Room             | Show live players in event/special channels  | [live-player-in-the-event-channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/live-player-in-the-event-channel) |
+| Multi Language                  | Multi-language support & switching           | [multi-language](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multi-language)                |
+| Duplicate Client                | Allow running multiple GunZ instances        | [multiclient-duplicate-procress](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/multiclient-duplicate-procress) |
+| Pingbar                         | Visual ping/latency bar in UI                | [pingbar](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/pingbar)                              |
+| Player Online Channel           | Show online player count per channel         | [players-online-channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/players-online-channel) |
+| Random Announcement Lobby       | Random messages/announcements in lobby       | [random-annoucement-lobby-interface](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/random-annoucement-lobby-interface) |
+| Room with Empty Name            | Allow creating rooms with blank names        | [room-with-empty-name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room-with-empty-name)    |
+| Simple Levelup Sound            | Basic/custom sound on level up               | [simple-levelup-sound](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/simple-levelup-sound)    |
+| Snowtown Particle System        | Custom particle effects for Snowtown map     | [snowtownparticlesystem](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/snowtownparticlesystem) |
+| VIP Shop Parts              | VIP shop items & parts integration               | [vipshop parts](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/vipshop%20parts) |
+| Weapon Information          | Detailed weapon stats in shop/UI                 | [weapon information](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20information) |
+| RoomTags                    | Custom room tags/labels                          | [roomtags](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/roomtags) |
+| Charging While Moving       | Charge skills while moving                       | [charging while moving](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/charging%20while%20moving) |
+| Effect Spark Shot           | Custom spark shot visual effect                  | [effect spark shot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/effect%20spark%20shot) |
+| Threaded Screenshots        | Faster & threaded screenshot saving              | [threaded screenshots](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/threaded%20screenshots) |
+| Staff JJang for Staff       | Special JJang icon for staff members             | [new jjang for staff](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/new%20jjang%20for%20staff) |
+| Bunch of Features           | Collection of various small client features      | [bunch of features](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/bunch%20of%20features) |
+| Weapon Shoot Nade           | Weapons that can shoot grenades                  | [weapon shoot nade](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/weapon%20shoot%20nade) |
+| Heal Over Time (1+HP)       | Heal-over-time effect (1+ HP per tick)           | [heal over time](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/heal%20over%20time) |
+| Clan 1v1                    | Clan 1v1 war mode                                | [clanwar 1v1](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/clanwar%201v1/) |
+| Shop Layout                 | Custom shop UI layout                            | [shop layout](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20layout) |
+| Emoticon Chat               | Emoticon support in chat                         | [emoticon chat](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/emoticon%20chat) |
+| Upgrade Manager             | Item/equipment upgrade system                    | [ugrade manager](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/ugrade%20manager/) |
+| Duel Tournament 2PP & 4PP      | Duel tournament mode for 2 and 4 players         | [duel tournament 2players & 4 players](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20tournament%202players%20&%204%20players) |
+| Level in Lobby                 | Show player level directly in lobby              | [level in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/level%20in%20lobby) |
+| Taunt After Round              | Taunt animation after round ends                 | [taunt after round is over](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/taunt%20after%20round%20is%20over) |
+| FPS in Lobby                   | Display FPS counter in lobby                     | [fps in lobby](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20in%20lobby) |
+| Rank on Scoreboard             | Show player rank on scoreboard                   | [rank on scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20on%20scoreboard) |
+| Add Maps to CTF & Duel         | Tutorial: add maps to CTF and Duel modes         | [add maps to ctf and duel](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/tutorial/maps/README.md) |
+| Ping Colour                    | Colored ping display (green/yellow/red)          | [ping colour](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20colour) |
+| Load All Loadingscreens        | Load every loading screen instead of random      | [load all loadingscreens](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/load%20all%20loadingscreens/README.md) |
+| Event Channel                  | Dedicated event channel system                   | [event channel](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/event%20channel) |
+| Channel for GM                 | Private GM-only channel                          | [channel for GM](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/channel%20for%20GM) |
+| Medkit Limits                          | Limit medkit usage (amount & cooldown)                | [medkit limits](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/medkit%20limits) |
+| Hide Admin Level & Color System        | Hide admin level + color system + time in chat        | [hide administrator level](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hide%20administrator%20level) |
+| Rank Colour Change                     | Change rank colors in UI                              | [rank colour change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rank%20colour%20change) |
+| Dash in Options                        | Toggle dash in game options menu                      | [dash in options](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dash%20in%20options) |
+| HP Bar                                 | Custom HP bar with source                             | [hpbar with source](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/hpbar) |
+| HP/AP Bar on Quest NPCs                | Show HP/AP bars on quest NPCs                         | [draw hpapbar on quest npcs](https://github.com/WhyWolfie/GunZ-The-Duel/blob/master/source/draw%20hpapbar%20on%20quest%20npcs) |
+| No Lead                                | Remove bullet leading (no-lead mode)                  | [no lead](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20lead) |
+| Room with Map Name                     | Show map name in room title                           | [room with map name](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/room%20with%20map%20name) |
+| Clan Member Text Info                  | Extra text info for clan members                      | [clan member text info](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan%20member%20text%20info) |
+| RFlashWindow                           | Flash taskbar/window on important events              | [rflashwindow](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rflashwindow) |
+| Killcam                                | Killcam / death replay system                         | [killcam](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/killcam) |
+| Discord RPC                            | Discord Rich Presence integration                     | [discord rpc](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/discord%20rpc) |
+| Rotation Base CW & TDM                 | Rotation system for Clan War & Team Deathmatch        | [rotation base (cw and team deathmatch)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/rotation%20base%20(cw%20and%20team%20deathmatch)) |
+| Sword Trail Color                      | Custom sword trail color                              | [sword trail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sword%20trail%20color) |
+| Sword Trail in Options                 | Toggle sword trail color in options menu              | [swordtrail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/swordtrail%20color) |
+| Additional Quest Maps in ComboBox      | Add extra maps to quest stage creation dropdown       | [additional quest maps in comboBox at stagecreate](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/additional%20quest%20maps%20in%20comboBox%20at%20stagecreate) |
 
-<b>(photoshop)</b>
-- how to change gunz dash color: [how to change gunz dash color](https://www.youtube.com/watch?v=kmxnjpJj6CM) 
-- how to change color of gunz items: [how to change color of gunz items](https://www.youtube.com/watch?v=3Og8E55FyNg) 
-- edit gunz lobby interface and clothes: [edit gunz lobby interface and clothes](https://www.youtube.com/watch?v=33SyRy5fkZ0) 
 
-<b>(3ds max)</b>
-- 3ds max gunz: [3ds max gunz](https://www.youtube.com/watch?v=S0LH4cWkC54)
-- gunz render: [gunz render](https://www.youtube.com/watch?v=Wi5PlpP1wk8) 
-- how to rig stuff and more (3ds max 2014): [how to rig stuff and more (3ds max 2014)](https://www.youtube.com/watch?v=WHajSJ9QEdA)
-- how to create animation jjang: [animation jjang](https://www.youtube.com/watch?v=mPn98RElnKg)
 
-<b>(others)</b>
-- how to create a gunz private server: [How to create a Gunz Private Server (less than 10 seconds)](https://www.youtube.com/watch?v=3JuTTnx-Aks)
-- how to add custom maps: [how to add custom maps](https://www.youtube.com/watch?v=hqSnAsM6ezc)
-- how to add a encryption with gunnycrypt: [how to add a encryption with gunnycrypt](https://www.youtube.com/watch?v=qXGwBLxi2Iw)
-- create a server windows 11: [create a server windows 11](https://www.youtube.com/watch?v=TXn9QEJv6VU)
-- convert vs2003 -> vs2019: [convert vs2003 -> vs2019](https://www.youtube.com/watch?v=F36AbuA6UKE)
-- hpap bar in gunz source code: [hpap bar in gunz source code](https://www.youtube.com/watch?v=Y5MdaA1ejlg)
-- add emoticon chat gunz: [add emoticon chat gunz](https://www.youtube.com/watch?v=9OsTuzHPAvs)
-- addition of flags website: [addition of flags website](https://www.youtube.com/watch?v=AZFuvtaBqs8)
-- gunz loading design tutorial: [gunz loading design](https://www.youtube.com/watch?v=Rggd0GeCdTg)
-- tutorial website: [tutorial website](https://www.youtube.com/watch?v=8bVnhDeJLRA)
-- setup website exclusive: [setup website exclusive](https://www.youtube.com/watch?v=ceZOKnMjd2c)
-- how to add a shotgun to gunz: [how to add a shotgun to gunz](https://www.youtube.com/watch?v=D0F95s9NDpc)
-- installing appserv 2.6.0: [installing appserv 2.6.0](https://www.youtube.com/watch?v=UCVrojg_Rnc)
-- configuring appserv: [configuring appserv](https://www.youtube.com/watch?v=ChhXiTLkFug)
-- installing sql server 2005: [installing sql server 2005](https://www.youtube.com/watch?v=DC4kS7CcYy8)
-- adding quest items to gunz: [adding quest items to gunz](https://www.youtube.com/watch?v=a2NoMXWlkNw)
-- how to remove the cancel update from the launcher: [how to remove the cancel update from the launcher](https://www.youtube.com/watch?v=xx4wPKtKjTc)
-- editing gunz experience: [editing gunz experience](https://www.youtube.com/watch?v=OrYg8hjw7Jo)
-- patch exploit matchserver: [patch exploit matchserver](https://www.youtube.com/watch?v=Fh7gHYnMNRY)
-- changing runnable name in launcher: [changing runnable name in launcher](https://www.youtube.com/watch?v=wZtOWz47ktw)
-- query sql: [query sql](https://www.youtube.com/watch?v=S1ePDdjm5Jw)
-- how to hook dll in gunz runnable: [how to hook dll in gunz runnable](https://www.youtube.com/watch?v=9459pUzbA90)
-- how to create an update for your gunz: [how to create an update for your gunz](https://www.youtube.com/watch?v=x64YV1_bWdc)
-- modificando as musicas do the duel: [modificando as musicas do the duel](https://www.youtube.com/watch?v=w5c4oLCsfwo&ab_channel=TudoSobreGunz)
-- como poner cw+quest+survival client jur13n: [como poner cw+quest+survival client jur13n](https://www.youtube.com/watch?v=iZ2_VSHQk0c)
-- how to make maps for gunz [hebrew tut]: [how to make maps for gunz](https://www.youtube.com/watch?v=oOmTfgrhej4)
-- gunz map in gtk radaint speed art [ctfzorv2]: [gunz map in gtk radaint speed art](https://www.youtube.com/watch?v=oY6ZV4V6pHY)
-- gunz map speed art [training room v2]: [gunz map speed art](https://www.youtube.com/watch?v=z8jFaASZ1KY)
-- bulli10 making map live part [1]: [bulli10 making map live part](https://www.youtube.com/watch?v=BnzwZbF_-l4)
-- bulli10 making map live part [2] finished!: [bulli10 making map live part 2 finished!](https://www.youtube.com/watch?v=9nQpo1JqCOE)
-- bulli10 - gunz map make : under : [bulli10 - gunz map make : under](https://www.youtube.com/watch?v=MVu2B0WpGjc)
-- gunz map making [classroom] - 1 / 2: [gunz map making classroom - 1 / 2](https://www.youtube.com/watch?v=j2QBRUuUfbQ)
-- gunz map making [classroom] - 2 / 2: [gunz map making classroom - 2 / 2](https://www.youtube.com/watch?v=LvYWFVQameI)
 
-<b>(gameplay)</b>
-- latedash reload half step(LD RHS): [latedash reload half step(LD RHS)](https://www.youtube.com/watch?v=Xwjr9KQYCpo)
-- k-style intermediate moves: [k-style intermediate moves](https://www.youtube.com/watch?v=7MOrAi5_gRw)
-- gunz basics: [gunz basics](https://www.youtube.com/watch?v=zmXK5rYRZ4M)
-- gdhs guide: [gdhs guide](https://www.youtube.com/watch?v=H6SLeru0l4A)
-- draft of gunz: [draft of gunz](https://www.youtube.com/watch?v=W100yqPiBA4)
-- complete k-style guide 2: [complete k-style guide 2](https://www.youtube.com/watch?v=3ZXC-8pFZGk)
-- complete k-style guide 3: [complete k-style guide 3](https://www.youtube.com/watch?v=1fs5UMY96iE)
-- art of the massive gunz gladiator: [art of the massive gunz gladiator](https://www.youtube.com/watch?v=tvQ_jEgkHMY)
-- tbf tutorial by divinecrave: [tbf tutorial by divinecrave](https://www.youtube.com/watch?v=goxXyvRIH50)
-- tbf tutorial by mujunstyle: [tbf tutorial by mujunstyle](https://www.youtube.com/watch?v=Gi_G_HUOcJ8)
-- in depth angle and phase: [in depth angle and phase](https://www.youtube.com/watch?v=IZeSQaThDcQ)
-- devioks gunz guide slash placement: [devioks gunz guide slash placement](https://www.youtube.com/watch?v=rISQGontAT8)
-- latedash: [latedash](https://www.youtube.com/watch?v=Sv3IHX_fUG4)
-- blockrush and gdhs combos: [blockrush and gdhs combos](https://www.youtube.com/watch?v=jhQyrMIW2OQ)
-- blinkdash: [blinkdash](https://www.youtube.com/watch?v=ivfg7RUyG2Q)
-- quickblocks: [quickblocks](https://www.youtube.com/watch?v=yBjiZNJVQgU)
-- basic k-style guide 2020: [basic k-style guide 2020](https://www.youtube.com/watch?v=cLoTieAVV8E)
-- gunz maps:  [gunz maps](https://www.youtube.com/watch?v=LRBCupfqZb4)
-- gunz 2004 trailer: [gunz 2004 trailer](https://www.youtube.com/watch?v=xZo_FIESUQk)
-- gunz 2006 trailer: [gunz 2006 trailer](https://www.youtube.com/watch?v=5TTyE7cjDJ8)
 
-<b>(gunz soundtracks)</b>
-- character selection: [character selection](https://www.youtube.com/watch?v=4SMyQPz7rtk)
-- game lobby: [game lobby](https://www.youtube.com/watch?v=ABEVoZL6P8I)
-- the duel: [the duel](https://www.youtube.com/watch?v=MK_zQsRF3MY)
-- ost once again: [ost once again](https://www.youtube.com/watch?v=aZjB_msGeDQ)
-- ost assassin: [ost assassin](https://www.youtube.com/watch?v=rnP4gfi9KZ0)
-- lets rock: [lets rock](https://www.youtube.com/watch?v=Itxx_VVzpuk)
-- ryswick style: [ryswick style](https://www.youtube.com/watch?v=8MmBvaGD-IU)
-- vague words: [vague words](https://www.youtube.com/watch?v=WXcbzXb8ObM)
-- ost trance mission tmix: [ost trance mission tmix](https://www.youtube.com/watch?v=i-bPo6ctdaM)
-- ost hardcore: [ost hardcore](https://www.youtube.com/watch?v=8Pr5TY5wApE)
-- ost x-fighter: [ost x-fighter](https://www.youtube.com/watch?v=Q79twuvEO44)
-- ost walk away: [ost walk away](https://www.youtube.com/watch?v=HNC5WrgR0xA)
 
-<b>(documentary)</b>
-- this game could've been the best esport ever: [this game could've been the best esport ever](https://www.youtube.com/watch?v=gMPJ38mSkt0)
-- how glitches created an accidental success: [how glitches created an accidental success](https://www.youtube.com/watch?v=SfAHpQrj0o8)
-- the world's most technical third-person shooter: [the world's most technical third-person shooter](https://www.youtube.com/watch?v=zvC67kmYxPA)
 
-<b>(active youtube channels)</b>
-- GUNZ Cowgirl: [GUNZ Cowgirl](https://www.youtube.com/@gunzcowgirl)
-- gunlin:  [gunlin](https://www.youtube.com/channel/UCV9-zXTdUDeh2RHBNnJH1Tg/videos)
-- 건즈평가사 (masangsoft):  [건즈평가사](https://www.youtube.com/channel/UCljaHynSadfY5DvlTFowWfQ)
-- crusader john gaming:  [crusader john gaming](https://www.youtube.com/channel/UC7aJUUrDmTyNmw_vaHF1cew/videos)
-- magicfingers:  [magicfingers](https://www.youtube.com/channel/UCIwtZ-_DHKMOstYoIe7MKLg)
-- fxpgunz:  [fxpgunz](https://www.youtube.com/channel/UCWGnCS_AxKxM72aF6t6SPKQ/videos)
-- gunzdeveloper: [gunzdeveloper](https://www.youtube.com/channel/UCnKN3Z_hKT9bVUXlTccBr6w)
-- cristina kitty: [cristina kitty](https://www.youtube.com/channel/UCFy-7mZAEYeLZsc1ppJedaQ/videos)
-- vitor komatsu: [vitor komatsu](https://www.youtube.com/c/VitorKomatsu/)
-- vitor macedo: [vitor macedo](https://www.youtube.com/c/k1ngVitin)
-- gunz m2o gaming:  [gunz m2o gaming](https://www.youtube.com/channel/UCAF9RbJrm9B3EDb0ZA_h4Sw)
-- gaudigz:  [gaudigz](https://www.youtube.com/c/GaudiGz)
-- papa pencho: [papa pencho](https://www.youtube.com/c/PAPAPENCHOGAMING)
-- nascimentofps: [nascimentofps](https://www.youtube.com/c/NascimentoFPS)
-- airking990: [airking990](https://www.youtube.com/user/Airking090)
-- acerized: [acerized](https://www.youtube.com/c/Acerized)
-- gunz memories: [gunz memories](https://www.youtube.com/channel/UCM2CustI-EHUw-wK79hgXIA)
 
-<b>(famous youtubers)</b>
-- daequan: [daequan](https://www.youtube.com/watch?v=dSdlUwdHbEA)
 
-<b>[items]</b>
-- articgunz: [articgunz](https://archive.org/details/articgunz)
-- cgunz: [cgunz](https://archive.org/details/cgunz)
-- darkgunz: [darkgunz](https://archive.org/details/darkgunz)
-- dualitygunz: [dualitygunz](https://archive.org/details/dualitygunz)
-- enigmagunz: [enigmagunz](https://archive.org/details/enigmagunz)
-- eurogunz: [eurogunz](https://archive.org/details/eurogunz)
-- fgunz: [fgunz](https://archive.org/details/fgunz)
-- mtg-gunz: [mtg gunz](https://archive.org/details/gunz-mtg)
-- mocrogunz: [mocrogunz](https://archive.org/details/mocrogunz)
-- mundialgunz: [mundialgunz](https://archive.org/details/mundialgunz) 
-- raulgunz: [raulgunz](https://archive.org/details/raulgunz) 
-- unpacked by jorklenis2: [unpacked by jorklenis2](https://archive.org/details/items-un-packed-by-jorklenis-2)
-- wargunz: [wargunz](https://archive.org/details/war-gun-z-itens-adicionados)
-- trinitygunz: [trinitygunz](https://archive.org/details/trinity-gunz-items-by-rafha-gunz)
-- monstergunzv1: [monstergunzv1](https://archive.org/details/itens-monster-gunz-v-1)
-- kekagunz 4.3: [kekagunz 4.3](https://archive.org/details/itens-do-keka-gunz-4.3)
 
-<b>[official]</b><br>
-- masangsoft: [masangsoft](https://gz.masanggames.co.kr/)
-- gunz.net: [gunz.net](https://gunz.net/)
-- maiet.net: [maiet.net](https://maiet.net/)
-- gunz2: [gunz2 on steam](https://store.steampowered.com/app/242720/GunZ_2_The_Second_Duel/)
-- gunz.kaybo1.com (shutdown)
 
-<b>[servers]</b><br>
-- gunz 2it: [gunz.2it](https://gunz.2it.in/)
-- freestylegunz: [fgunz](https://fgunz.net/)
-- universgamers: [universegunz](https://universegunz.net/)
-- internationalgunz: [igunz](https://igunz.net/) 
-- ragegunz/fxpgunz: [ragegunz](http://ragegunz.com/)   / [fxpgunz](https://fxpgunz.com/)   / [gunz2034](https://www.gunz2034.net/) 
-- oldschoolgunz: [oldschoolgunz](https://www.oldschoolgunz.com/) 
-- enigmagunz: [eggunz](https://eggunz.com/)
-- revengegunz(brazil): [revengegunz](https://www.revengegunz.com.br/) 
-- emperialgunz: [emperialgunz](https://www.emperialgunz.com/) 
-- mtg gunz: [mtgvn](https://gunz.mtgvn.net/)
-- theduel.com.br: [theduel.com.br](https://www.theduel.com.br/)
-- gunzvn: [gunzvn.net](https://gunzvn.net/GunZ/)
-- huntxgunz: [huntx](http://gunz.retzu.com/)
-- royalgunz: [royalgunz](https://www.royalgunz.net/)
-- ogunz: [ogunz](http://ogunz.xyz/)
-- empiregunz: [empiregunz](http://empiregunz.com/)
-- gunz competitivo: [gunz competitivo](https://gunz.com.br/)
-- hypergunz: [hypergunz](http://hgunz.kro.kr/GUNZ/MAIN/home)
-- xtremegunz: [xtremegunz](https://xtreme-gunz.com/)
-- gunz.vn: [gunz.vn](https://gunz.vn/gunz/)
-- amanomagunz: [amanomagunz](http://www.amanomagunz.com/)
 
-<b>[resources]</b>
-- archive: [archive](https://archive.org/details/@wolfiecatchchu) (big archive of gunz files)
-- gunz forum: [gunz forum](https://forum.ragezone.com/f311/) (gunz forum - still active)
-- files trinityent: [files trinityent](https://files.trinityent.net/)
-- duelists gunz archive: [duelists gunz archive](https://duelists.io:8443/Gunz-Archive)
-- git trinityent: [git trinityent](https://git.trinityent.net/)
-- gunz.chat: [gunz.chat](https://gunz.chat) / [discord](https://discord.com/invite/xMWZxZSmwq)  (active community)
-- reddit: [gunz reddit](https://www.reddit.com/r/gunz)
-- fxp.co.il: [fxp.co.il](https://www.fxp.co.il/)
-- portalgs: [portalgs](https://portalgs.foroactivo.com/f26-gunz)
-- webcheats: [webcheats](https://www.webcheats.com.br/forum/103-gunz/)
 
-credits too everyone who work on it! <br>
-My goal is to make gunz alive again and new people to learn how to make your own gunz server <br>
-- #GunZNeverDie <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
