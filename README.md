@@ -219,6 +219,64 @@ GunZ 2: The Second Duel files, engine parts, and private server attempts (mostly
 | Sword Trail Color                      | Custom sword trail color                              | [sword trail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sword%20trail%20color) |
 | Sword Trail in Options                 | Toggle sword trail color in options menu              | [swordtrail color](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/swordtrail%20color) |
 | Additional Quest Maps in ComboBox      | Add extra maps to quest stage creation dropdown       | [additional quest maps in comboBox at stagecreate](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/additional%20quest%20maps%20in%20comboBox%20at%20stagecreate) |
+| Window Toggle                    | Fullscreen ↔ Windowed mode toggle fix                 | [fullscreen toggle fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fullscreen%20toggle%20fix) |
+| UC Patch                         | UC (User Control) security patch                      | [uc patch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/uc%20patch) |
+| Login %s Crash                   | Fixes login crash caused by %s format string          | [login %s crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/login%20%25s%20crash%20fix) |
+| Auto Korean Message              | Automatically handles Korean text messages            | [auto korean message](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20korean%20message) |
+| Auto Select Server               | Auto-selects the first/best server on launch          | [auto select server](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/auto%20select%20server) |
+| Instant Login                    | Skips unnecessary login screens / faster login        | [instant login](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20login) |
+| Show My Own Ping at Scoreboard   | Displays your own ping on the scoreboard              | [show my own ping at scoreboard](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/show%20my%20own%20ping) |
+| Clan Close Fix                   | Fixes clan closing / disband issues in DB             | [clan close fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/clan%20close%20fix) |
+| Clan/Quest/Survival Fix          | Enables Clan War + Quest + Survival together          | [clan-quest-survival fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clan-quest-survival%20fix) |
+| Adding Effect Combo              | Adds custom sound/visual effect combos                | [add sound effect combo](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/add%20sound%20effect%20combo) |
+| GunZ Patches                     | Library of general GunZ patches                       | [gunz-patch-library](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/gunz-patch-library) |
+| Optimize Windowed Mode FPS       | Improves FPS when running in windowed mode            | [optimize windowed mode fps](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/optimize%20windowed%20mode%20fps) |
+| Duel Tournament Player Rank      | Fixes player rank display in duel tournament          | [duel tournament player rank fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/database/duel%20tournament%20player%20rank%20fix) |
+| MatchAgent WinVer Change         | Changes MatchAgent Windows version check              | [matchagent winver change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/matchagent%20winver%20change) |
+| Config Changes                   | Various configuration file fixes & improvements       | [config change](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/config%20change) |
+| CTF AE Flaggrab Exploit Patch    | Prevents flaggrab exploit in Capture The Flag         | [ctf ae flaggrab exploit patch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ctf%20ae%20flaggrab%20exploit%20patch) |
+| Shop Jump Fix                    | Prevents jumping/exploits while in shop               | [shop jump fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20jump%20fix) |
+| XP Kernel32 Problem Fix          | Fixes kernel32.dll crash on Windows XP                | [xp kernel32.dll problem fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/xp%20kernel32.dll%20problem%20fix) |
+| Patch for Crashes                | General crash patch (prevents hacker abuse)           | [patch for stupid crash being abused by hackers](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/patch%20for%20stupid%20crash%20being%20abused%20by%20hackers) |
+| Fix Agent Error                  | Fixes common MatchAgent errors                        | [fix agent error](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20agent%20error) |
+| DLL Hacking Fix                  | Prevents DLL injection / hacking attempts             | [dll hacking fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dll%20hacking%20fix) |
+| Activate SerialKey               | Enables serial key activation system                  | [activate serialkey](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/activate%20serialkey) |
+| Disable NHN Auth                 | Removes NHN authentication requirement                | [disable nhn auth](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/disable%20nhn%20auth) |
+| Custom Shotgun Sounds            | Support for custom shotgun sound files                | [custom shotgun sounds](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/custom%20shotgun%20sounds) |
+| Dynamic Light Fix                | Fixes dynamic lighting issues                         | [dynamic light fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/dynamic%20light%20fix) |
+| SQL Cleaning (SQL2005)           | Cleans and optimizes SQL 2005 database                | [sql cleaning(sql2005)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/sql%20cleaning) |
+| Quest Combo Crash                | Fixes quest combo system crash                        | [quest combo crash](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20combo%20crash) |
+| No Item Crash Fix                | Prevents crash when item is missing                   | [no item crash fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/no%20item%20crash%20fix) |
+| Ping at Server Select            | Shows ping on server selection screen                 | [ping at server select](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/ping%20at%20server%20select) |
+| Change AgentIP (Ping 999 Fix)    | Fixes ping 999 issue by changing AgentIP              | [change agentip address (ping issue)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20agentip) |
+| Change GunZ Folder                       | Change GunZ executable name / folder                  | [change nameapp](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/change%20nameapp) |
+| Run GunZ on Local IP                     | Fix ping on local server / run on local IP            | [fix ping on local server](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20ping%20on%20local%20server) |
+| Shop Lobby Stage Fix                     | Fix shop / lobby stage issues                         | [shop lobby-stage fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/shop%20lobby-stage%20fix) |
+| Automatic Ranking System                 | Auto-update ranking system                            | [automatic ranking system](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/automatic%20ranking%20system) |
+| Duel Dots Disable                        | Disable duel dots / indicators                        | [duel dots disable](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20dots%20disable) |
+| Fix NationalGunZ VIP Wall                | Fix VIP wall bug in NationalGunZ                      | [fix nationalgunz vipwall](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20nationalgunz%20vipwall) |
+| Remove Admin Not Ready Message           | Remove "Administrator is not ready" text              | [remove administrator is not ready](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remove%20administrator%20is%20not%20ready) |
+| Remember Password at Login               | Save / remember password on login screen              | [remember password](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/remember%20password) |
+| Clan 8 Players                           | Support for 8-player clan wars                        | [clanwar 8 players](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/clanwar%208%20players) |
+| Duel Admin Hidden in Queue               | Hide admins in duel queue                             | [duel hidden admin](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/duel%20hidden%20admin) |
+| Dual Daggers Fix                         | Fix issues with dual daggers                          | [fix dual daggers](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fix%20dual%20daggers) |
+| Whisper Long Name Fix                    | Fix whispers with long names                          | [whisper long name fix](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/whisper%20long%20name%20fix) |
+| Select Character Camera Fix              | Stop camera movement on character select              | [character select camera](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/character%20select%20camera) |
+| Instant BGM / Effect Slider              | Instant update for BGM & effect volume sliders        | [instant bgm effect slider](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/instant%20bgm%20effect%20slider) |
+| FPS Drop Fix (Jur13n)                    | FPS drop fix by Jur13n                                | [fps drop fix (jur13n)](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/fps%20drop%20fix) |
+
+### Anti-Cheat & Protection
+
+| Feature                  | Description                                           | Link                                                                 |
+|--------------------------|-------------------------------------------------------|----------------------------------------------------------------------|
+| Anti-Inject              | Blocks DLL injection / memory hacking                 | [anti-inject](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-inject) |
+| Anti-Shotbot             | Prevents shotbot / auto-aim cheats                    | [antishotbot](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/antishotbot) |
+| Anti-Hack                | General anti-hack & protection scripts                | [anti-hackandsuch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-hackandsuch) |
+| Bunch of Anti Scripts    | Collection of various anti-cheat scripts              | [anti-hackandsuch](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/anti-hackandsuch) |
+| Client Protection        | 1.5 client file hash protection & verification       | [1.5 files client protection](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/1.5%20files%20client%20protection) |
+
+
+
 
 
 
