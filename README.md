@@ -359,6 +359,12 @@ Or join our Discord (development server)
 - gunz international launcher/updates: [gunz international launcher/updates](https://github.com/Durial06/GunZ-The-Duel-Items/tree/main/internationalgunz)
 - history for now unofficial maiet.net: [history for now unonfficial maiet.net](https://archive.org/details/history-for-now-unofficial-maiet.net)
 
+<b>[unpack clients]</b>
+- infinitygunz: [infinitygunz](https://github.com/Duzopy/InfinityGunZ-Unpacked-)
+- freestylegunzv7: [freestylegunzv7](https://github.com/Duzopy/FGunZV7-Unpack)
+- herogamersgunz: [herogamersgunz](https://github.com/Duzopy/HeroGamersGunZ-Unpack)
+- masangsoft: [3rd playtest](https://github.com/Duzopy/Masangsoft-3rd-Playtest)
+
 <b>[custom clients]</b>
 - mpogspain gunz(27/08/2007): [mpogspain gunz(27/08/2007)](https://archive.org/details/mpogspain-gun-z-27082007-ful)
 - legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
