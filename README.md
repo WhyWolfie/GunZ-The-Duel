@@ -10,9 +10,10 @@
 
 ## 🚀 Quick Start
 
-- **Best beginner tutorials** → [WhyWolfie/GunZ-The-Duel/tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial)  
+- **Best beginner tutorials** → [WhyWolfie/GunZ-The-Duel/tutorial](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/tutorial)
+- **How to create a Gunz Private Server (less than 10 seconds) RefinedGunz** → [YouTube Video](https://www.youtube.com/watch?v=3JuTTnx-Aks)
 - **Full server setup video** → [YouTube Guide](https://www.youtube.com/watch?v=qTIk722vrKE)  
-- **Play GunZ right now in browser** → [gunz.sigr.io](https://gunz.sigr.io/) (by LostMyCode)
+- **Play GunZ right now in browser** → [gunz.sigr.io](https://gunz.sigr.io/) (by [LostMyCode](https://github.com/LostMyCode))
 
 
 ## 📦 Core Sources & Clean Bases (1.5 era)
