@@ -46,7 +46,7 @@
 | three-gunz               | Browser GunZ (Three.js)              | [LostMyCode/three-gunz](https://github.com/LostMyCode/three-gunz)    |
 | Gunzpedia                | GunZ wiki & archive API              | [zkxjzmswkwl/Gunzpedia](https://github.com/zkxjzmswkwl/Gunzpedia)    |
 | gunzcord                 | Discord Rich Presence                | [emisandgunz/gunzcord](https://github.com/emisandgunz/gunzcord)      |
-| GunZ-The-Duel-Items      | Large item collection/XML            | [Durial06/GunZ-The-Duel-Items](https://github.com/Durial06/GunZ-The-Duel-Items) |
+| GunZ-The-Duel-Items      | Large item collection/XML            | [Duzopy/GunZ-The-Duel-Items](https://github.com/Duzopy/GunZ-The-Duel-Items) |
 | Gunz-Set-Rotation        | Fix model rotations                  | [Eronisch/Gunz-Set-Rotation](https://github.com/Eronisch/Gunz-Set-Rotation) |
 | Gunz-CMS                 | Web CMS/control panel                | [Eronisch/Gunz-CMS](https://github.com/Eronisch/Gunz-CMS)            |
 | GunZ-simple-web          | Basic GunZ website                   | [tannous94/GunZ-simple-web](https://github.com/tannous94/GunZ-simple-web) |
