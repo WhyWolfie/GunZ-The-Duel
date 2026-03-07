@@ -1,108 +1,30 @@
-<b>Will update it later (Prefer doing it in a VM)</b> <br>
-<b>[MRS Unpacked]</b> <br>
-- freestylegunzv7: [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer) (FGunZ MRS)
-- enigmagunzv5: [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer) (EnigmaGunZ MRS)
-- utopia client: [utopia client](https://archive.org/details/open-beta-utopia-client-23062012) (MRSDecompiler Ultimate)
-- devmode: [devmode](https://archive.org/details/devmode) (MRSDecompiler Ultimate)
-- 1chgunz: [1chgunz](https://archive.org/details/1ch-gunz-20120603) (MRSDecompiler Ultimate)
-- gunz 20july14: [gunz 20july14](https://archive.org/details/gunz-20-july-14) (MRSDecompiler Ultimate)
-- phoenix(2008): [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) (MRSDecompiler Ultimate)
-- 2008 updated + translated client: [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client) (MRSDecompiler Ultimate)
-- alltimegunz: [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19) (MRSDecompiler Ultimate)
-- monstergunz: [monstergunz](https://archive.org/details/monster-gunz) (MRSDecompiler Ultimate)
-- raulgunz: [raulgunz](https://archive.org/details/cliente-raul-gunz) (raulgunz mrs)
-- ogunz: [ogunz](https://archive.org/details/ogun-z-v-2) big thanks to ogunz no encryption useful! (MRSDecompiler Ultimate)
-- netmarblegunz(v811): [netmarblegunz(v811)](https://archive.org/details/netmarble-gunz-811) (MRSDecompiler Ultimate)
-- netmarblegunz(v689): [netmarblegunz(v689)](https://archive.org/details/netmarble-gunz-689) (MRSDecompiler Ultimate)
-- netmarblegunz(v557): [netmarblegunz(v557)](https://archive.org/details/netmarble-gunz-v-557) (MRSDecompiler Ultimate)
-- netmarblegunz(v533): [netmarblegunz(v533)](https://archive.org/details/netmarble-gunz-533) (MRSDecompiler Ultimate)
-- netmarblegunz(v515): [netmarblegunz(v515)](https://archive.org/details/netmarble-gunz-515) (MRSDecompiler Ultimate)
-- netmarblegunz(v236): [netmarblegunz(v236)](https://archive.org/details/netmarble-gunz-v-236) (MRSDecompiler Ultimate)
-- netmarblegunz(v193): [netmarblegunz(v193)](https://archive.org/details/netmarble-gunz-v-193) (MRSDecompiler Ultimate)
-- netmarblegunz(v176): [netmarblegunz(v176)](https://archive.org/details/netmarble-gunz-176) (MRSDecompiler Ultimate)
-- netmarblegunz(v115): [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115) (MRSDecompiler Ultimate)
-- gunz the duel by bazilio: [duel by bazilio](https://archive.org/details/gunz-the-duel-by-bazilio) (MRSDecompiler Ultimate) (monstergunz items)
-- lastgunz: [lastgunz](https://archive.org/details/last-gun-z-1) (LastGunZ mrs)
-- gunz online chinese: [gunz online chinese](https://archive.org/details/gunz-online) (gunz online chinese mrs)
-- deackglergamerz: [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) (DeackglerGamerzGunz MRS)
-- gunz ultra: [gunz ultra](https://archive.org/details/gunz-ultra) (MRSDecompiler Ultimate)
-- earthgunz: [earthgunz](https://archive.org/details/earth-gunz-install) (earthgunz mrs)
-- mtggunz(v10): [mtggunz(v10)](https://archive.org/details/gunz-viet-nam) (mtggunzv10 mrs)
-- mtggunz(v8): [mtggunz(v8)](https://archive.org/details/setup-gunz-mtg-v-8_202011) (mtggunzv8 mrs)
-- spacegunz: [spacegunz](https://archive.org/details/space-gunz) (spacegunz mrs)
-- spacegunz(2014): [spacegunz(2014)](https://archive.org/details/space-gunz-2014) (spacegunz(2014) mrs)
-- gunz2034: [gunz2034](https://archive.org/details/gun-z-2034-client) (gunz2034 mrs)
-- mocrogunz: [mocrogunz](https://archive.org/details/mocro-gunz) (mocrogunz mrs)
-- maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer) (maximogunz mrs)
-- savagegunz: [savagegunz](https://archive.org/details/savage-gunz-installer-april) (MRSDecompiler Ultimate)
-- startgunzv1: [startgunzv1](https://archive.org/details/start-gunz-v-1)(MRSDecompiler Ultimate)
-- duelgunzv3: [duelgunzv3](https://archive.org/details/duel-gunz-v-3-instalador-new)(duelgunzv3 mrs)
-- wickedgunz: [wickedgunz](https://archive.org/details/winked-gun-z) (MRSDecompiler Ultimate)
+# GunZ: The Duel – Unpacked Clients Collection
 
-<b>[Need Unpacked]</b> <br>
-<b>[custom clients]</b>
-- legacy gamers: [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7)
-- competitive V3: [competitive V3](https://archive.org/details/gunz-competitive-v-3-install)
-- masangsoftgunz: [masangsoftgunz](https://archive.org/details/gun-zsetup-masang)
-- maximogunz: [maximogunz](https://archive.org/details/maximo-gun-z)
-- vinagunzv12: [vinagunzv12](https://archive.org/details/vinagun-zv-12-1)
-- trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
-- ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
-- trinitygunz: [trinitygunz](https://archive.org/details/trinity-gun-z)
-- ghostgunzv3: [ghostgunzv3](https://archive.org/details/ghostgunz-install-v-3)
-- ghostgunzv7: [ghostgunzv7](https://archive.org/details/install-ghost-gunz-v-7)
-- gettinggunzv1: [gettinggunzv1](https://archive.org/details/getting-gunz-install-v-1)
-- abbygamerz: [abbygamerz 2015](https://archive.org/details/abby-gamerz-2015)
-- accelgamersgunz: [accelgamersgunz](https://archive.org/details/accel-gamers-gun-z-09062015)
-- aerogamers: [aerogamers](https://archive.org/details/aero-gamers)
-- fantasygunz: [fantasygunz](https://archive.org/details/client-fg-2016)
-- atgunz: [atgunz](https://archive.org/details/atgun-z)
-- bloodlinegunz: [bloodlinegunz](https://archive.org/details/bloodline-gun-z-the-beginning-installer)
-- articgunz: [articgunz](https://archive.org/details/artic-gun-z-installer-23052014)
-- darkgunz: [darkgunz rar](https://archive.org/details/dark-gun-z_202011)
-- darkgunz(2017): [darkgunz(2017)](https://archive.org/details/dar-kgun-z-client-2017)
-- darkgunz: [darkgunz exe](https://archive.org/details/iPlayOG)
-- edengamerzgunz: [edengamerzgunz](https://archive.org/details/eden-gamerz-gun-z-20151001)
-- fusiongunz: [fusiongunz](https://archive.org/details/fusion-gunz)
-- gunzgo: [gunzgo](https://archive.org/details/gunz-go-2016)
-- dualitygunz: [dualitygunz](https://archive.org/details/instalar-duality-gun-z)
-- eurogunzv10: [eurogunzv10](https://archive.org/details/gunzv-10-1)
-- igunz: [igunz](https://archive.org/details/i-gunz-v-1)
-- drgunz: [drgunz](https://archive.org/details/install-drgun-z)
-- ultimategunz: [ultimategunz](https://archive.org/details/Ultimategunz)
-- knightgunzv3: [knightgunzv3](https://archive.org/details/knight-gun-zv-3)
-- lastgunzv2: [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer)
-- maximogunz: [maximogunz](https://archive.org/details/maximogunz_installer)
-- masangsoft (2016-01-07): [masangsoft(2016-01-07)](https://archive.org/details/gunz-setup-main-20160107)
-- masangsoft (20160728): [masangsoft (20160728)](https://archive.org/details/gunz-setup-main-20160728)
-- masangsoft (20160602): [masangsoft (20160602)](https://archive.org/details/gunz-setup-main-20160602)
-- masangsoft (20160107): [masangsoft (20160107)](https://archive.org/details/gunz-setup-main-20160107)
-- mundialgunzv2: [mundialgunzv2](https://archive.org/details/mundial-gunz-v-2)
-- nationalgunz: [nationalgunz](https://archive.org/details/national-gunz-6.6.2015)
-- progunzv5: [progunzv5](https://archive.org/details/pro-gunz-v-5)
-- rivalgunz beta 2.2: [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2)
-- p4fgunz: [p4fgunz](https://archive.org/details/p-4-f-gun-z)
-- reedgunzv2: [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador)
-- dragongunzv2: [dragongunzv2](https://archive.org/details/dragon-gunz-v-2)
-- firegunz: [firegunz](https://archive.org/details/fire-gunz)
-- gunz.th.in: [gunz.th.in](https://archive.org/details/gunz-th-in)
-- vietgunzv9: [vietgunzv9](https://archive.org/details/viet-gunz-v-9)
-- mundial gamers gunzv2: [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2)
-- soldiergunz 3.1: [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer)
-- huntxgunz: [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer)
-- gunzv10(2022): [gunzv10 (2022)](https://archive.org/details/gunzv10)
-- gunzv10(2022 oct 19): [gunzv10(2022 oct 19)](https://archive.org/details/gunzv-10.1-october-19-2022)
-- dutygunz: [dutygunz](https://archive.org/details/instalador-duty-gunz)
-- kaosgunz2.0: [kaosgunz 2.0](https://archive.org/details/kaos-gunz-2.0-a-revolucao)
-- vitalgunz: [vitalgunz](https://archive.org/details/vital-gunz)
-- fortrekgunz: [fortrekgunz](https://archive.org/details/fortrek-gunz-stgames)
-- demongunzv1: [demongunzv1](https://archive.org/details/demon-gunz-v-1)
-- enigmagunz(2022): [enigmagunz(2022)](https://archive.org/details/enigma-20221008)
-- globalgames: [globalgames](https://archive.org/details/global-games)
-- lggunz beta installer 2005: [lggunz beta installer 2005](https://archive.org/details/lggun-z-beta-installer-2005)
-- igunz legacygamers special: [igunz legacygamers special](https://archive.org/details/i-gun-z-legacy-gamers-special)
-
-<b>[Not worth it]</b> <br>
-- freestylegunzv8: [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer)
-- fxp gunz (update): [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated)
-- fxp gunz (installer): [fxp gunz (installer)](https://archive.org/details/fxp-gun-z)
+| #  | Name / Version                  | Publisher / Region       | Link                                                                 |
+|----|---------------------------------|--------------------------|----------------------------------------------------------------------|
+| 1  | Aeria Games GunZ                | Aeria Games (NA)         | [→ View](https://github.com/Duzopy/AeriaGames-GunZ-Unpack)           |
+| 2  | FreeStyle GunZ V7               | FreeStyleGunZ            | [→ View](https://github.com/Duzopy/FGunZV7-Unpack)                   |
+| 3  | Galaxia GunZ V7.1               | GalaxiaGunZ              | [→ View](https://github.com/Duzopy/GalaxiaGunzV7.1-Unpack)           |
+| 4  | GunZ International (Releases)   | MAIET / International    | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006)      |
+| 5  | GunZ International (Updates)    | MAIET / International    | [→ View](https://github.com/Duzopy/GunzInternationalUpdate-2005-)    |
+| 6  | GunZ Ultra                      | GunZ Ultra               | [→ View](https://github.com/Duzopy/GunzUltra-Unpack)                 |
+| 7  | Gunz International 2005-06-20   | MAIET / IJJI (INT)       | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20050620) |
+| 8  | Gunz International 2005-08-18   | MAIET / IJJI (INT)       | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20050818) |
+| 9  | Gunz International 2006-01-25   | MAIET / IJJI (INT)       | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20060125) |
+|10  | Gunz International 2006-07-26   | MAIET / IJJI (INT)       | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20060726) |
+|11  | HeroGamers GunZ (2016)          | HeroGamers               | [→ View](https://github.com/Duzopy/HeroGamersGunZ-Unpack)            |
+|12  | InfinityGunZ                    | InfinityGunZ private?    | [→ View](https://github.com/Duzopy/InfinityGunZ-Unpacked-)           |
+|13  | LegacyGamers GunZ               | LegacyGamers             | [→ View](https://github.com/Duzopy/LegacyGamers-GunZ-Unpack)         |
+|14  | Masangsoft – 3rd Beta Playtest  | Masangsoft (KR recent)   | [→ View](https://github.com/Duzopy/Masangsoft-3rd-Playtest)          |
+|15  | Netmarble GunZ 1.15             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz115-Unpack-)         |
+|16  | Netmarble GunZ 1.76             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz176-Unpack)          |
+|17  | Netmarble GunZ 1.93             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz193-Unpack)          |
+|18  | Netmarble GunZ 2.36             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz236-Unpack)          |
+|19  | Netmarble GunZ 5.15             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz515-Unpack-)         |
+|20  | Netmarble GunZ 5.33             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz533-Unpack)          |
+|21  | Netmarble GunZ 5.57             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz557-Unpack)          |
+|22  | Netmarble GunZ 6.89             | Netmarble (KR)           | [→ View](https://github.com/Duzopy/NetmarbleGunz689-Unpack)          |
+|23  | Trinity GunZ                    | TrinityGunZ              | [→ View](https://github.com/Duzopy/TrinityGunZ-Unpack)               |
+|24  | Gunz Competitivo                | GunZ Competitivo         | [→ View](https://github.com/Duzopy/Gunz-Competitivo-Unpack)          |
+|25  | Artic GunZ 2014                 | ArticGunZ                | [→ View](https://github.com/Duzopy/ArticGunZ-2014-Unpack)            |
+|26  | Artic GunZ 2016                 | ArticGunZ                | [→ View](https://github.com/Duzopy/ArticGunZ-2016-Unpack)            |
