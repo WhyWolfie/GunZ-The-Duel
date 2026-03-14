@@ -681,29 +681,23 @@ GunZ 2: The Second Duel files, engine parts, and private server attempts (mostly
 
 ### Active / Notable Private Servers
 
-| Server Name                       | Description                                                                 | Link                                                                 |
-|-----------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| GunZ 2IT                          | Popular international private server – custom items, events, active community | [gunz.2it](https://gunz.2it.in/) |
-| FreestyleGunZ                     | Long-running FreestyleGunZ private server – classic feel with custom modes and updates | [fgunz](https://fgunz.net/) |
-| UniverseGunZ                      | UniverseGunZ – large playerbase, custom quests, events, and balanced gameplay | [universegunz](https://universegunz.net/) |
-| InternationalGunZ                 | InternationalGunZ – global-focused server with English support and international events | [igunz](https://igunz.net/) |
-| RageGunZ / FXPGunz / GunZ2034     | RageGunZ (main), FXPGunz (alternative), GunZ2034 – related servers with shared community, custom content, and frequent updates | [ragegunz](http://ragegunz.com/) / [fxpgunz](https://fxpgunz.com/) / [gunz2034](https://www.gunz2034.net/) |
-| OldSchoolGunZ                     | Nostalgia-focused OldSchoolGunZ – aims to recreate classic 2005–2008 GunZ experience | [oldschoolgunz](https://www.oldschoolgunz.com/) |
-| EnigmaGunZ                        | EnigmaGunZ – mystery-themed server with unique items, quests, and events | [eggunz](https://eggunz.com/) |
-| RevengeGunZ (Brazil)              | Brazilian RevengeGunZ – active community, tournaments, custom maps and items | [revengegunz](https://www.revengegunz.com.br/) |
-| EmperialGunZ                      | EmperialGunZ – empire/royal-themed private server with custom progression | [emperialgunz](https://www.emperialgunz.com/) |
-| MTG GunZ (Vietnam)                | MTG GunZ Vietnam – Vietnamese server with tournament focus and local events | [mtgvn](https://gunz.mtgvn.net/) |
-| TheDuel.com.br                    | Brazilian TheDuel server – classic GunZ feel with Brazilian community events | [theduel.com.br](https://www.theduel.com.br/) |
-| GunZVN                            | GunZ Vietnam official/private variant – Vietnamese localization and active play | [gunzvn.net](https://gunzvn.net/GunZ/) |
-| HuntXGunZ                         | HuntXGunZ – hunt/challenge-focused server with custom modes | [huntx](http://gunz.retzu.com/) |
-| RoyalGunZ                         | RoyalGunZ – royal/premium-themed private server with exclusive items | [royalgunz](https://www.royalgunz.net/) |
-| OGunZ                             | OGunZ – "Original GunZ" clean server, often used for modding/testing due to no encryption | [ogunz](http://ogunz.xyz/) |
-| EmpireGunZ                        | EmpireGunZ – empire-building themed server with custom progression | [empiregunz](http://empiregunz.com/) |
-| GunZ Competitivo (Brazil)         | Competitive GunZ Brazil – focused on tournaments, ranked play, and skill-based matchmaking | [gunz competitivo](https://gunz.com.br/) |
-| HyperGunZ                         | HyperGunZ (Korea) – high-speed/custom Korean private server | [hypergunz](http://hgunz.kro.kr/GUNZ/MAIN/home) |
-| XtremeGunZ                        | XtremeGunZ – extreme/custom modes, high XP rates, and community events | [xtremegunz](https://xtreme-gunz.com/) |
-| GunZ.vn                           | GunZ Vietnam – another active Vietnamese server with local support | [gunz.vn](https://gunz.vn/gunz/) |
-| AmanomaGunZ                       | AmanomaGunZ – unique Japanese/Asian-themed private server | [amanomagunz](http://www.amanomagunz.com/) |
+| Server Name        | Description                                                                 | Link |
+|--------------------|-----------------------------------------------------------------------------|------|
+| FGunZ              | FreestyleGunZ private server – active community with classic gameplay and updates | https://fgunz.net/ |
+| FXPGunZ            | FXPGunZ – custom content server with balanced gameplay and active PvP | https://fxpgunz.com/ |
+| GunZ Vietnam       | Vietnamese GunZ server with localized community and occasional events | https://gunz.m2gvn.com/ |
+| GunZ Competitivo   | Brazilian competitive GunZ server focused on tournaments and ranked play | https://gunz.com.br/ |
+| TheDuel (BR)       | Brazilian TheDuel private server with classic gameplay and community events | https://www.theduel.com.br/ |
+| XtremeGunZ         | Custom high-rate GunZ server with experimental modes and events | https://gunz.xtreme.ovh/ |
+| GalaxiaGamers      | Small community GunZ server hosted by GalaxiaGamers network | https://gunz.galaxiagamers.net/ |
+| InternationalGunZ  | International-focused GunZ server with English community and events | https://igunz.net/ |
+| GunZVN             | Vietnamese GunZ server with active local playerbase and localization | https://gunz.vn/gunz |
+| AtGunZ             | Custom private GunZ server with unique items and gameplay tweaks | https://atgunz.com/gunz |
+| GunzArmy           | Community-driven GunZ server with PvP gameplay focus | https://gunzarmy.com/ |
+| EarthGunZ          | Private GunZ server with custom systems and smaller community | https://earthgunz.com/ |
+| M2GunZ             | Vietnamese GunZ server hosted by M2GVN network | https://gunz.m2gvn.com/ |
+| Duelists           | Duelists GunZ server focused on competitive gameplay | https://duelists.io/ |
+| StreakGunZ         | GunZ server with streak-based progression and custom systems | https://streakgunz.com/ |
 
 
 ### Resources & Communities
