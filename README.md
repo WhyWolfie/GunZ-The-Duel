@@ -383,114 +383,61 @@ GunZ 2: The Second Duel files, engine parts, and private server attempts (mostly
 
 ### Unpacked Clients
 
-| Client Version / Name       | Description                                                                 | Link                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| InfinityGunZ                | Fully unpacked & deprotected InfinityGunZ client (private server edition) – includes cleaned source references, removed protections, and ready-to-build setup | [infinitygunz](https://github.com/Duzopy/InfinityGunZ-Unpacked-) |
-| FreestyleGunZ v7            | Unpacked FreestyleGunZ v7 client – original GunZ base with Freestyle modifications, protections stripped, strings & resources exposed | [freestylegunzv7](https://github.com/Duzopy/FGunZV7-Unpack) |
-| HeroGamersGunZ              | Unpacked HeroGamersGunZ client – popular private server client variant, fully decrypted, anti-cheat & obfuscation removed | [herogamersgunz](https://github.com/Duzopy/HeroGamersGunZ-Unpack) |
-| Masangsoft 3rd Playtest     | Unpacked Masangsoft official 3rd playtest client (early GunZ beta/alpha phase) – rare historical client with original strings, assets, and no later protections | [3rd playtest](https://github.com/Duzopy/Masangsoft-3rd-Playtest) |
-
-### Custom / Historical Clients
-
-| Client / Version                  | Description                                                                 | Link                                                                 |
-|-----------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| GunZ International Clients        | Collection of original GunZ International installers (2005–2006 era): multiple versions from June 2005 to July 2006 (e.g. 20050620, 20050818, 20060125, 20060726) – full .exe installers preserved on Archive.org | [gunz international clients](https://archive.org/details/gunz-international-20060726_202211) |
-| GunZ International Launcher/Updates | Folder containing launcher files, patches, and update-related assets for GunZ International (from a community collection repo) | [gunz international launcher/updates](https://github.com/Durial06/GunZ-The-Duel-Items/tree/main/internationalgunz) |
-| History for Now Unofficial Maiet.net | Archived snapshots, images, and documents tracing the history of the unofficial Maiet.net site (GunZ developer/community portal), including compromise notices and emails | [history for now unofficial maiet.net](https://archive.org/details/history-for-now-unofficial-maiet.net) |
-| MPOGSpain GunZ (27/08/2007)       | Full client installer for MPOGSpain GunZ (Spanish private/community server version) dated August 27, 2007 – complete .exe setup | [mpogspain gunz(27/08/2007)](https://archive.org/details/mpogspain-gun-z-27082007-ful) |
-| Legacy Gamers GunZ                | Legacy Gamers GunZ Beta 2.7 client installer – beta/private server variant preserved as .exe (approx. 280 MB) | [legacy gamers](https://archive.org/details/legacy-gamers-gun-z-beta-2-7) |
-| Competitive V3                    | GunZ Competitive V3 installer – modded/competitive-focused client version (likely with custom features/balancing) | [competitive V3](https://archive.org/details/gunz-competitive-v-3-install) |
-| FXP GunZ (Updated)                | Updated version of FXP GunZ client – community/private server build with patches applied | [fxp gunz (update)](https://archive.org/details/fxp-gun-z-updated) |
-| FXP GunZ (Installer)              | Original/base installer for FXP GunZ – full client setup for this variant | [fxp gunz (installer)](https://archive.org/details/fxp-gun-z) |
-| Masangsoft GunZ                   | Masangsoft official GunZ setup/installer – likely an early or Korean server version preserved | [masangsoftgunz](https://archive.org/details/gun-zsetup-masang) |
-| Maximo GunZ                       | Maximo GunZ client – another community/private server variant (full installer) | [maximogunz](https://archive.org/details/maximo-gun-z) |
-| VinaGunZ v12                      | VinaGunZ v12.1 client – Vietnamese/localized GunZ version installer | [vinagunzv12](https://archive.org/details/vinagun-zv-12-1) |
-| FreestyleGunZ v8                  | FreestyleGunZ v8 installer – popular modded/private server client with custom features | [freestylegunzv8](https://archive.org/details/freestyle-gun-z-v-8-installer) |
-| FreestyleGunZ v7                  | FreestyleGunZ version 7 installer – earlier Freestyle variant, full client setup | [freestylegunzv7](https://archive.org/details/freestyle-gun-z-version-7-installer) |
-| GunZ 2034                         | GunZ 2034 client – futuristic/themed or private server version (full installer) | [gunz2034](https://archive.org/details/gun-z-2034-client) |
-| TrinityGunZ                       | Trinity GunZ full client installer – popular private server variant with custom features and branding | [trinitygunz](https://archive.org/details/trinity-gun-z) |
-| GunZ MTG v8                       | GunZ MTG (Multiplayer Tournament Gaming?) version 8 setup – community/modded client from 2020 upload | [gunz mtg v8](https://archive.org/details/setup-gunz-mtg-v-8_202011) |
-| UltimateGunZ                      | UltimateGunZ client installer – high-end private server edition with enhanced features/graphics | [ultimategunz](https://archive.org/details/Ultimategunz) |
-| GhostGunZ v3                      | GhostGunZ install v3 – early version of the GhostGunZ private server client | [ghostgunzv3](https://archive.org/details/ghostgunz-install-v-3) |
-| GhostGunZ v7                      | GhostGunZ install v7 – later/more updated version of GhostGunZ client | [ghostgunzv7](https://archive.org/details/install-ghost-gunz-v-7) |
-| GettingGunZ v1                    | Getting GunZ install v1 – beginner-friendly or introductory private server client | [gettinggunzv1](https://archive.org/details/getting-gunz-install-v-1) |
-| AbbyGamerZ (2015)                 | Abby GamerZ 2015 client – community/private server build from 2015 | [abbygamerz 2015](https://archive.org/details/abby-gamerz-2015) |
-| AccelGamersGunZ                   | Accel Gamers GunZ client (dated June 9, 2015) – accelerated/customized private server version | [accelgamersgunz](https://archive.org/details/accel-gamers-gun-z-09062015) |
-| AeroGamers                        | Aero Gamers GunZ client installer – lightweight or themed private server variant | [aerogamers](https://archive.org/details/aero-gamers) |
-| DeackGlerGamerZ                   | DeackGler GamerZ client (dated April 12, 2014) – another community/private server edition | [deackglergamerz](https://archive.org/details/deackgler-gamerz-12042014) |
-| FantasyGunZ                       | Fantasy GunZ client (2016 build) – fantasy-themed or heavily modded private server client | [fantasygunz](https://archive.org/details/client-fg-2016) |
-| ATGunZ                            | AT GunZ client installer – possibly "All-Time" or branded private server version | [atgunz](https://archive.org/details/atgun-z) |
-| BloodlineGunZ                     | Bloodline GunZ "The Beginning" installer – story-themed or clan-focused private server client | [bloodlinegunz](https://archive.org/details/bloodline-gun-z-the-beginning-installer) |
-| ArticGunZ                         | Artic GunZ installer (dated May 23, 2014) – Arctic/cold-themed private server variant | [articgunz](https://archive.org/details/artic-gun-z-installer-23052014) |
-| DarkGunZ (RAR)                    | DarkGunZ client archive (.rar format) – classic private server build preserved | [darkgunz rar](https://archive.org/details/dark-gun-z_202011) |
-| DarkGunZ (2017)                   | DarkGunZ client from 2017 – updated version with 2017-era modifications | [darkgunz(2017)](https://archive.org/details/dar-kgun-z-client-2017) |
-| DarkGunZ (.exe)                   | DarkGunZ standalone .exe installer (iPlayOG upload) – direct executable client for DarkGunZ private server | [darkgunz exe](https://archive.org/details/iPlayOG) |
-| EdenGamerzGunZ                    | Eden GamerZ GunZ client (dated October 1, 2015) – community/private server build from mid-2015 | [edengamerzgunz](https://archive.org/details/eden-gamerz-gun-z-20151001) |
-| EnigmaGunZ v5                     | Enigma GunZ v5 installer – mystery/themed private server client with custom modifications | [enigmagunzv5](https://archive.org/details/enigma-gunz-v-5-installer) |
-| FusionGunZ                        | Fusion GunZ client installer – merged or heavily customized private server variant | [fusiongunz](https://archive.org/details/fusion-gunz) |
-| GunZGO (2016)                     | GunZGO 2016 client – "GunZ Go" edition, likely mobile-inspired or lightweight private server build | [gunzgo](https://archive.org/details/gunz-go-2016) |
-| DualityGunZ                       | Duality GunZ installer (Spanish-named "instalar") – dual-themed or balanced private server client | [dualitygunz](https://archive.org/details/instalar-duality-gun-z) |
-| EuroGunZ v10                      | EuroGunZ v10.1 client – European/localized or community-focused GunZ version | [eurogunzv10](https://archive.org/details/gunzv-10-1) |
-| iGunZ v1                          | iGunZ v1 installer – possibly "International" or "iPlay" branded private server client | [igunz](https://archive.org/details/i-gunz-v-1) |
-| DrGunZ                            | DrGunZ install client – doctor/healing-themed or medical-branded private server variant | [drgunz](https://archive.org/details/install-drgun-z) |
-| UltimateGunZ                      | UltimateGunZ client installer – premium/high-feature private server edition (duplicate entry preserved from earlier list) | [ultimategunz](https://archive.org/details/Ultimategunz) |
-| KnightGunZ v3                     | Knight GunZ v3 client – knight/medieval-themed private server build | [knightgunzv3](https://archive.org/details/knight-gun-zv-3) |
-| LastGunZ                          | Last GunZ client (v1) – "last stand" or end-game themed private server variant | [lastgunz](https://archive.org/details/last-gun-z-1) |
-| LastGunZ v2                       | Last GunZ v2 installer – updated/sequel version of the LastGunZ client | [lastgunzv2](https://archive.org/details/last-gun-z-v-2-installer) |
-| MaximoGunZ                        | Maximo GunZ installer – community/private server client (duplicate entry from earlier list, different upload) | [maximogunz](https://archive.org/details/maximogunz_installer) |
-| Netmarble GunZ (v811)             | Netmarble GunZ version 8.11 client – Korean Netmarble-published edition (later build) | [netmarblegunz(v811)](https://archive.org/details/netmarble-gunz-811) |
-| Netmarble GunZ (v689)             | Netmarble GunZ version 6.89 client – mid-series Korean official/private variant | [netmarblegunz(v689)](https://archive.org/details/netmarble-gunz-689) |
-| Netmarble GunZ (v557)             | Netmarble GunZ v5.57 installer – earlier Korean Netmarble client build | [netmarblegunz(v557)](https://archive.org/details/netmarble-gunz-v-557) |
-| Netmarble GunZ (v533)             | Netmarble GunZ v5.33 client – progressive Korean version from the series | [netmarblegunz(v533)](https://archive.org/details/netmarble-gunz-533) |
-| Netmarble GunZ (v515)             | Netmarble GunZ v5.15 installer – mid-5xx series Korean client | [netmarblegunz(v515)](https://archive.org/details/netmarble-gunz-515) |
-| Netmarble GunZ (v236)             | Netmarble GunZ v2.36 client – early 2xx series build from Netmarble era | [netmarblegunz(v236)](https://archive.org/details/netmarble-gunz-v-236) |
-| Netmarble GunZ (v193)             | Netmarble GunZ v1.93 installer – very early Netmarble-published client | [netmarblegunz(v193)](https://archive.org/details/netmarble-gunz-v-193) |
-| Netmarble GunZ (v176)             | Netmarble GunZ v1.76 client – one of the earliest preserved Netmarble versions | [netmarblegunz(v176)](https://archive.org/details/netmarble-gunz-176) |
-| Netmarble GunZ (v115)             | Netmarble GunZ v1.15 installer – foundational early Korean client build | [netmarblegunz(v115)](https://archive.org/details/netmarble-gunz-v-115) |
-| Masangsoft GunZ (2016-01-07)      | Masangsoft GunZ main setup dated January 7, 2016 – official Korean server client snapshot | [masangsoft (2016-01-07)](https://archive.org/details/gunz-setup-main-20160107) |
-| Masangsoft GunZ (2016-07-28)      | Masangsoft GunZ main setup dated July 28, 2016 – later 2016 official client version | [masangsoft (20160728)](https://archive.org/details/gunz-setup-main-20160728) |
-| Masangsoft GunZ (2016-06-02)      | Masangsoft GunZ main setup dated June 2, 2016 – mid-2016 Korean client build | [masangsoft (20160602)](https://archive.org/details/gunz-setup-main-20160602) |
-| Masangsoft GunZ (2016-01-07)      | Masangsoft GunZ setup (duplicate entry, same January 7, 2016 upload) – official client | [masangsoft (20160107)](https://archive.org/details/gunz-setup-main-20160107) |
-| MundialGunZ v2                    | Mundial GunZ v2 client – "World" themed or international community/private server variant | [mundialgunzv2](https://archive.org/details/mundial-gunz-v-2) |
-| NationalGunZ                      | National GunZ client (dated June 6, 2015) – national/country-branded private server build | [nationalgunz](https://archive.org/details/national-gunz-6.6.2015) |
-| SavageGunZ                        | Savage GunZ installer (April upload) – savage/aggressive-themed private server client | [savagegunz](https://archive.org/details/savage-gunz-installer-april) |
-| ProGunZ v5                        | Pro GunZ v5 client – professional/competitive-focused private server edition | [progunzv5](https://archive.org/details/pro-gunz-v-5) |
-| RivalGunZ Beta 2.2                | Rival GunZ Beta 2.2 client – early beta/private server variant with custom branding | [rivalgunz beta 2.2](https://archive.org/details/rival-gunz-beta-2.2) |
-| P4FGunZ                           | P4F GunZ (possibly "Play4Fun" or similar) client installer – fun/community-focused private server build | [p4fgunz](https://archive.org/details/p-4-f-gun-z) |
-| Phoenix (2008)                    | Phoenix GunZ fresh updated client (2008 era, re-uploaded 2020) – revived/updated old private server client | [phoenix(2008)](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) |
-| ReedGunZ v2                       | Reed GunZ v2 installer (Spanish "instalador") – community/private server edition | [reedgunzv2](https://archive.org/details/reed-gun-zv-2-instalador) |
-| GunZ Vietnam                      | GunZ Vietnam client – official/localized Vietnamese version of GunZ | [gunz vietnam](https://archive.org/details/gunz-viet-nam) |
-| DragonGunZ v2                     | Dragon GunZ v2 client – dragon-themed or Asian-inspired private server variant | [dragongunzv2](https://archive.org/details/dragon-gunz-v-2) |
-| FireGunZ                          | Fire GunZ client installer – fire-themed private server build with custom modifications | [firegunz](https://archive.org/details/fire-gunz) |
-| GunZ Ultra                        | GunZ Ultra client – enhanced/ultra-featured private server edition (likely with extra modes/items) | [gunz ultra](https://archive.org/details/gunz-ultra) |
-| Utopia Client                     | Utopia Client open beta (dated June 23, 2012) – utopian/fantasy-themed private server client | [utopia client](https://archive.org/details/open-beta-utopia-client-23062012) |
-| DevMode                           | DevMode GunZ client – developer/debug mode enabled build (useful for testing/mapping) | [devmode](https://archive.org/details/devmode) |
-| 1CHGunZ (2012-06-03)              | 1CH GunZ client (dated June 3, 2012) – single-channel or niche private server variant | [1chgunz](https://archive.org/details/1ch-gunz-20120603) |
-| GunZ (20 July 2014)               | GunZ client snapshot dated July 20, 2014 – mid-2010s private server or patched build | [gunz 20july14](https://archive.org/details/gunz-20-july-14) |
-| GunZ.th.in                        | GunZ Thailand India (?) client – localized Southeast Asian private server version | [gunz.th.in](https://archive.org/details/gunz-th-in) |
-| VietGunZ v9                       | Viet GunZ v9 client – Vietnamese GunZ version 9, likely a later localized build | [vietgunzv9](https://archive.org/details/viet-gunz-v-9) |
-| 2008 Updated + Translated Client          | 2008-era GunZ client updated with translations (likely English/localized patches applied to original base) | [2008 updated + translated client](https://archive.org/details/2008-updated-translated-client) |
-| Mundial Gamers GunZ v2                    | Mundial Gamers GunZ v2 – "World Gamers" themed private server client (community/international focus) | [mundial gamers gunzv2](https://archive.org/details/mundial-gamers-gunz-v-2) |
-| SoldierGunZ 3.1                           | Soldier GunZ 3.1 installer – military/soldier-themed private server variant | [soldiergunz 3.1](https://archive.org/details/soldiers-gun-z-3.1-installer) |
-| HuntXGunZ (2022-07-10)                    | HuntX GunZ installer (dated July 10, 2022) – hunting/challenge-focused private server build | [huntxgunz](https://archive.org/details/7-10-2022-huntxgunz-installer) |
-| AllTimeGunZ (2012-05-19)                  | AllTime.cc GunZ client (dated May 19, 2012) – "all-time" or classic private server edition | [alltimegunz](https://archive.org/details/alltime.cc-gun-z-2012-05-19) |
-| MonsterGunZ                               | Monster GunZ client – monster/horror-themed private server variant | [monstergunz](https://archive.org/details/monster-gunz) |
-| GunZ v10 (2022)                           | GunZ v10 client from 2022 – modernized/private server build of version 10 | [gunzv10(2022)](https://archive.org/details/gunzv10) |
-| GunZ v10 (2022 Oct 19)                    | GunZ v10.1 client snapshot (October 19, 2022) – updated October 2022 version | [gunzv10(2022 oct 19)](https://archive.org/details/gunzv-10.1-october-19-2022) |
-| DutyGunZ                                  | Duty GunZ installer (Spanish "instalador") – duty/mission-themed private server client | [dutygunz](https://archive.org/details/instalador-duty-gunz) |
-| KaosGunZ 2.0                              | Kaos GunZ 2.0 "A Revolução" – chaotic/revolutionary-themed Brazilian/Portuguese private server | [kaosgunz2.0](https://archive.org/details/kaos-gunz-2.0-a-revolucao) |
-| VitalGunZ                                 | Vital GunZ client – vitality/life-themed or essential private server build | [vitalgunz](https://archive.org/details/vital-gunz) |
-| FortrekGunZ                               | Fortrek GunZ (STGames upload) – fortress/trek-themed or Brazilian private server client | [fortrekgunz](https://archive.org/details/fortrek-gunz-stgames) |
-| DemonGunZ v1                              | Demon GunZ v1 client – demon/dark-themed private server variant | [demongunzv1](https://archive.org/details/demon-gunz-v-1) |
-| EnigmaGunZ (2022)                         | Enigma GunZ client (October 8, 2022 upload) – mystery/puzzle-themed 2022 private server build | [enigmagunz(2022)](https://archive.org/details/enigma-20221008) |
-| GlobalGames                               | Global Games GunZ client – international/global-themed private server edition | [globalgames](https://archive.org/details/global-games) |
-| RaulGunZ                                  | Raul GunZ client (Spanish "cliente") – personalized/community private server variant | [raulgunz](https://archive.org/details/cliente-raul-gunz) |
-| LGGunZ Beta Installer 2005                | LG GunZ beta installer from 2005 – very early beta/private server client (historical) | [lggunz beta installer 2005](https://archive.org/details/lggun-z-beta-installer-2005) |
-| OGunZ (v2)                                | OGunZ v2 client – "Original GunZ" or clean/encryption-free build (big thanks noted for no encryption – very useful for modding/reverse engineering) | [ogunz](https://archive.org/details/ogun-z-v-2) |
-| GunZ Installer 20070624 (IJJI)            | Official IJJI GunZ installer dated June 24, 2007 – classic North American server client | [gunz installer 20070624 (ijji)](https://archive.org/details/gunz-installer-20070624) |
-| GunZ Installer 20081121 (IJJI)            | Official IJJI GunZ installer dated November 21, 2008 – later IJJI-era client | [gunz installer 20081121 (ijji)](https://archive.org/details/gunz-installer-20081121) |
-| Masangsoft GunZ (December 6, 2022)        | Masangsoft GunZ latest version (December 6, 2022) – one of the most recent official Korean client builds preserved (.7z archive) | [masangsoft (december 6 - 2022 latest version)](https://archive.org/details/masangsoft-december-6-2022.-7z) |
-
+| #  | Name / Version                              | Link                                                                                             | Date / Version info       |
+|----|---------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------------|
+| 1  | Aeria Games GunZ                            | [→ View](https://github.com/Duzopy/AeriaGames-GunZ-Unpack)                                       | ~2012 (installer ref)     |
+| 2  | AeriaGames GunZ (Modified - unknown)        | [→ View](https://github.com/Duzopy/AeriaGames-GunZ-Unpack-Modified---unknown-)                   | 2013                      |
+| 3  | Artic GunZ 2014                             | [→ View](https://github.com/Duzopy/ArticGunZ-2014-Unpack)                                        | 2014                      |
+| 4  | Artic GunZ 2016                             | [→ View](https://github.com/Duzopy/ArticGunZ-2016-Unpack)                                        | 2016                      |
+| 5  | FreeStyle GunZ V7                           | [→ View](https://github.com/Duzopy/FGunZV7-Unpack)                                               | V7 (~2010s private)       |
+| 6  | Galaxia GunZ V7.1                           | [→ View](https://github.com/Duzopy/GalaxiaGunzV7.1-Unpack)                                       | 2026                      |
+| 7  | Gunz Competitivo                            | [→ View](https://github.com/Duzopy/Gunz-Competitivo-Unpack)                                      | 2026                      |
+| 8  | GunZ International (Releases)               | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006)                                  | 2005–2006                 |
+| 9  | GunZ International (Updates)                | [→ View](https://github.com/Duzopy/GunzInternationalUpdate-2005-)                                | 2005                      |
+|10  | GunZ M2G Unpack                             | [→ View](https://github.com/Duzopy/GunZ-M2G-Unpack)                                              | 2026-03-07                |
+|11  | GunZ Ultra                                  | [→ View](https://github.com/Duzopy/GunzUltra-Unpack)                                             | 2013-10-18                |
+|12  | Gunz International 2005-06-20               | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20050620) | 2005-06-20            |
+|13  | Gunz International 2005-08-18               | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20050818) | 2005-08-18            |
+|14  | Gunz International 2006-01-25               | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20060125) | 2006-01-25            |
+|15  | Gunz International 2006-07-26               | [→ View](https://github.com/Duzopy/GunzInternational-2005-2006/tree/main/GunzInternational_20060726) | 2006-07-26            |
+|16  | HeroGamers GunZ (2016)                      | [→ View](https://github.com/Duzopy/HeroGamersGunZ-Unpack)                                        | 2016                      |
+|17  | InfinityGunZ                                | [→ View](https://github.com/Duzopy/InfinityGunZ-Unpacked-)                                       | 2026                      |
+|18  | LegacyGamers GunZ                           | [→ View](https://github.com/Duzopy/LegacyGamers-GunZ-Unpack)                                     | 2007-09-13                |
+|19  | Masangsoft – 3rd Beta Playtest              | [→ View](https://github.com/Duzopy/Masangsoft-3rd-Playtest)                                      | 2026-02-09                |
+|20  | Netmarble GunZ 1.15                         | [→ View](https://github.com/Duzopy/NetmarbleGunz115-Unpack)                                      | 2004-02-09                |
+|21  | Netmarble GunZ 1.76                         | [→ View](https://github.com/Duzopy/NetmarbleGunz176-Unpack)                                      | 2004-05-21                |
+|22  | Netmarble GunZ 1.93                         | [→ View](https://github.com/Duzopy/NetmarbleGunz193-Unpack)                                      | 2004-07-19                |
+|23  | Netmarble GunZ 2.36                         | [→ View](https://github.com/Duzopy/NetmarbleGunz236-Unpack)                                      | 2004-11-10                |
+|24  | Netmarble GunZ 5.15                         | [→ View](https://github.com/Duzopy/NetmarbleGunz515-Unpack-)                                     | 2007-12-10                |
+|25  | Netmarble GunZ 5.33                         | [→ View](https://github.com/Duzopy/NetmarbleGunz533-Unpack)                                      | 2008-11-03                |
+|26  | Netmarble GunZ 5.57                         | [→ View](https://github.com/Duzopy/NetmarbleGunz557-Unpack)                                      | 2008-12-18                |
+|27  | Netmarble GunZ 6.89                         | [→ View](https://github.com/Duzopy/NetmarbleGunz689-Unpack)                                      | 2011-11-16                |
+|28  | Netmarble GunZ Patch 512-821 Unpack         | [→ View](https://github.com/Duzopy/NetmarbleGunzPatch512-821-Unpack)                             | Patches ~512–821          |
+|29  | Phoenix GunZ 1.5 Client (II)                | [→ View](https://github.com/Duzopy/Phoenix-GunZ-1.5-Client-II)                                   | 2012-02-26                |
+|30  | Phoenix July 2008 Client & Server           | [→ View](https://github.com/Duzopy/Phoenix---July-2008-Client-Server-Unpack)                     | July 2008                 |
+|31  | Trinity GunZ                                | [→ View](https://github.com/Duzopy/TrinityGunZ-Unpack)                                           | 2009-08-14                |
+|32  | UniverseGamers Gunz EuroGunZ                | [→ View](https://github.com/Duzopy/UniverseGamersGunz-EuroGunZ-Unpack)                           | 2026-03-07                |
+|33  | DragonGunZ V2                               | [→ View](https://github.com/Duzopy/DragonGunZV2-Unpack)                                          | 2014-10-11                |
+|34  | Soldiers GunZ 3.1                           | [→ View](https://github.com/Duzopy/Soldiers-GunZ-3.1)                                            | 2014-02-17                |
+|35  | Ultimate GunZ V1                            | [→ View](https://github.com/Duzopy/UltimateGunZV1-Unpack)                                        | 2014-08-19                |
+|36  | International GunZ                          | [→ View](https://github.com/Duzopy/International-GunZ-Unpack)                                    | 2026-03-10                |
+|37  | 1chGunz (2012-06-03)                        | [→ View](https://github.com/Duzopy/1chGunz20120603-Unpack)                                       | 2012-06-03                |
+|38 | EliteGunZ                                    | [→ View](https://github.com/Duzopy/EliteGunZ-Unpack)                                             | 2013-07-10                |
+|39 | MocroGunZ                                    | [→ View](https://github.com/Duzopy/MocroGunZ-Unpack)                                             | 2014-12-30                |
+|40 | GettingGunZ V1                               | [→ View](https://github.com/Duzopy/GettingGunZ-V1-Unpack)                                        | 2020-12-22                |
+|41 | DutyGunZ                                     | [→ View](https://github.com/Duzopy/DutyGunZ-Unpack)                                              | 2019-10-15                |
+|42 | MortalityGunzv1                              | [→ View](https://github.com/Duzopy/MortalityGunzv1-Unpack)                                       | 2012-01-16                |
+|43 | NeonGunZ                                     | [→ View](https://github.com/Duzopy/NeonGunZ-Unpack)                                              | 2014-12-19                |
+|44 | InfectiveGunZ                                | [→ View](https://github.com/Duzopy/InfectiveGunZ-Unpack)                                         | 2012-09-07                |
+|45 | Prolib1.5(jetman)                            | [→ View](https://github.com/maietent/prolib-1.5)                                                 | 2025-11-09                |
+|46 | RefinedGunZ                                  | [→ View](https://github.com/Asunaya/RefinedGunz)                                                 | 2018-07-14                |
+|47 | OpenGunZ                                     | [→ View](https://github.com/open-gunz/ogz-source)                                                | 2022-05-28                |
+|48 | EvilGunZ                                     | [→ View](https://github.com/Duzopy/EvilGunZ-Unpack)                                              | 2019-03-14                |
+|49 | HighGunZ                                     | [→ View](https://github.com/Duzopy/HighGunZ-Unpack)                                              | 2013-12-23                |
+|50 | TheDuelBR(LevelUpGames 06)                   | [→ View](https://github.com/Duzopy/TheDuel-LevelUpGames-2006-Unpack)                             | 2006-10-03                |
+|51 | GunzLeague                                   | [→ View](https://github.com/Duzopy/GunzLeague-Unpack)                                            | 2014-08-26                |
+|52 | DictyGunz                                    | [→ View](https://github.com/Duzopy/DictyGunz-Unpack)                                             | 2013-08-28                |
+|53 | StarGunZV8                                   | [→ View](https://github.com/Duzopy/StarGunZV8-Unpack)                                            | 2015-08-23                |
 
 ### Tutorials
 
