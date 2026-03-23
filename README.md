@@ -16,7 +16,7 @@
 - **Play GunZ right now in browser** → [gunz.sigr.io](https://gunz.sigr.io/) (by [LostMyCode](https://github.com/LostMyCode))
 
 
-## 📦 Core Sources & Clean Bases (1.5 era)
+## 📦 Core Sources & Clean Bases (1.5 era)  [Archive](https://archive.org/details/gunz-source-collection)
 | Repository                          | Description                              | Link                                                                 |
 |-------------------------------------|------------------------------------------|----------------------------------------------------------------------|
 | RefinedGunZ                         | Polished & maintained client/server      | https://github.com/Asunaya/refinedgunz                               |
@@ -32,6 +32,17 @@
 | FxpGZ-Repacked           | FXP repacked source                  | [fxpgunz/FxpGZ-Repacked](https://github.com/fxpgunz/FxpGZ-Repacked)  |
 | Repack-Jorklenis2        | Jorklenis2 repacked source           | [Jorklenis/Repack-Jorklenis2](https://github.com/Jorklenis/Repack-Jorklenis2) |
 | GunzFactor               | GunZFactor server source             | [sohchienmin/GunZ](https://github.com/sohchienmin/GunZ/tree/master)  |
+| RealSpaceX RSX           | RealSpaceX RSX                       | [RealSpaceX RSX](https://github.com/WhyWolfie/GunZ-RealSpaceX-RSX-)  |
+| EvilGunZ                 | Client/Source/Server                 | [EvilGunZ](https://github.com/WhyWolfie/EvilGunZ-Client-Server-Source)  |
+| Android28                | Source                               | [Android28](https://github.com/WhyWolfie/GunZ-Client-Source-Android28)  |
+| OldGunZ (2007)           | 2007-era source code                 | [WhyWolfie/source2007](https://github.com/WhyWolfie/source2007)      |
+| GunZ Emulator 2013       | 2013 emulator / server source        | [WhyWolfie/Gunz2013](https://github.com/WhyWolfie/Gunz2013)          |
+| FGunZ                    | Freestyle GunZ source                | [WhyWolfie/FGunZ](https://github.com/WhyWolfie/FGunZ)                |
+| TrinityGunZ              | TrinityGunZ full source              | [WhyWolfie/TrinityGunZ](https://github.com/WhyWolfie/TrinityGunZ)    |
+| Gregon13Source           | Gregon13 custom source               | [WhyWolfie/Gregon13Source](https://github.com/WhyWolfie/Gregon13Source) |
+| ChallengeQuest           | Challenge Quest gamemode source      | [WhyWolfie/ChallengeQuest](https://github.com/WhyWolfie/ChallengeQuest) |
+| NationalGunZ             | NationalGunZ source & repack         | [WhyWolfie/NationalGunZ](https://github.com/WhyWolfie/NationalGunZ)  |
+| Repack-Aren              | Aren repacked source                 | [WhyWolfie/Repack-Aren](https://github.com/WhyWolfie/Repack-Aren)    |
 
 ## 🛠️ Tools & Utilities
 
@@ -99,62 +110,6 @@ GunZ 2: The Second Duel files, engine parts, and private server attempts (mostly
 | GunZ 2 SDK                    | Development SDK files                        | [archive.org](https://archive.org/details/sdk_20201112)                               |
 | GunZ 2 DATA                   | Additional data/files (2020 archive)         | [archive.org](https://archive.org/details/data_20201112_202011)                       |
 | TrinityEnt GunZ 2 Files       | Alternative mirror (clients, tools, etc.)    | [files.trinityent.net – GunZ 2](https://files.trinityent.net/?dir=GunZ%202)           |
-
-## 🎯 Selected Clients & Sources (Community Repos)
-
-| Project              | Description                          | Link                                                                 |
-|----------------------|--------------------------------------|----------------------------------------------------------------------|
-| OldGunZ (2007)       | 2007-era source code                 | [WhyWolfie/source2007](https://github.com/WhyWolfie/source2007)      |
-| GunZ Emulator 2013   | 2013 emulator / server source        | [WhyWolfie/Gunz2013](https://github.com/WhyWolfie/Gunz2013)          |
-| FGunZ                | Freestyle GunZ source                | [WhyWolfie/FGunZ](https://github.com/WhyWolfie/FGunZ)                |
-| TrinityGunZ          | TrinityGunZ full source              | [WhyWolfie/TrinityGunZ](https://github.com/WhyWolfie/TrinityGunZ)    |
-| Gregon13Source       | Gregon13 custom source               | [WhyWolfie/Gregon13Source](https://github.com/WhyWolfie/Gregon13Source) |
-| ChallengeQuest       | Challenge Quest gamemode source      | [WhyWolfie/ChallengeQuest](https://github.com/WhyWolfie/ChallengeQuest) |
-| NationalGunZ         | NationalGunZ source & repack         | [WhyWolfie/NationalGunZ](https://github.com/WhyWolfie/NationalGunZ)  |
-| Repack-Aren          | Aren repacked source                 | [WhyWolfie/Repack-Aren](https://github.com/WhyWolfie/Repack-Aren)    |
-| GFZ Source           | GunZFactor / GFZ server source       | [sohchienmin/GunZ (master)](https://github.com/sohchienmin/GunZ/tree/master) |
-| 2005 Source & Old Patches       | Original 2005 source with early patches      | [archive.org – gunz.-7z](https://archive.org/details/gunz.-7z)                        |
-| 2011 Artwork & 3ds Max          | 2011 models, textures & 3ds Max files        | [archive.org – 2011-artwork-Gunz](https://archive.org/details/2011-artwork-Gunz)     |
-| EvilGunZ (full)                 | Complete EvilGunZ client + server + source   | [archive.org – server-client](https://archive.org/details/server-client)             |
-| UniverseGamers (UGG)            | UGG 2017 source with community fixes         | [archive.org – ugg-source-2017-fixes-main](https://archive.org/details/ugg-source-2017-fixes-main) |
-| HazeGunZ (Jur13n)               | Jur13n / HazeGunZ source variant             | [archive.org – haze-gun-z-source](https://archive.org/details/haze-gun-z-source-jur-13n-jurien-hamaker) |
-| Android28 Source                | GunZ Android 28 port / source attempt        | [archive.org – gunz-sourceandroid-28](https://archive.org/details/gunz-sourceandroid-28) |
-| Jur13n 1.5 (cleaned/edited)     | Cleaned & edited Jur13n 1.5 base             | [Mega.nz – jur13n 1.5 cleaned](https://mega.nz/file/0gMiBb7B#kgao2tqHJ96pNwtB_NVKaPH13tMXoF1VcMRQtd9pPkw) |
-| NationalGunZ (full)             | Full NationalGunZ client + server + source   | [archive.org – national-gunz-source-client-server](https://archive.org/details/national-gunz-source-client-server-files) |
-| Phoenix 2008                    | Fresh updated 2008 client                    | [archive.org – phoenix 2008](https://archive.org/details/gun-z-fresh-updated-client-by-phoenix_20201112) |
-| Phoenix Repack 2008             | 2008 repack (client + server)                | [archive.org – gunz-2008-server-client-repack](https://archive.org/details/gunz-2008-server-client-repack) |
-| ZER0NIS Gunz-Base               | Very clean & minimal 1.5 base                | [ZER0NIS/Gunz-Base](https://github.com/ZER0NIS/Gunz-Base)                             |
-| Jetman (clean 1.5)              | Clean & well-commented 1.5 base              | [Jetman823/Gunz1.5](https://github.com/Jetman823/Gunz1.5)                     |
-| Challenge Quest Base            | Starter source for Challenge Quest mode      | [WhyWolfie – ChallengeQuest Base.7z](https://github.com/WhyWolfie/GunZ-The-Duel/raw/master/source/challenge%20quest%20base/ChallengeQuest%20Base.7z) |
-| Summer 1.5 (source)             | Clean Summer 1.5 source code                 | [archive.org – source-code.-7-z](https://archive.org/details/source-code.-7-z) |
-| Phail GunZ (source)             | Phail GunZ custom source                     | [archive.org – phails-gunz-shit.-7z](https://archive.org/details/phails-gunz-shit.-7z) |
-| Repack Aren                     | Aren repacked source / files                 | [archive.org – repack-aren](https://archive.org/details/repack-aren)          |
-| M2O (GunzDuels)                 | GunzDuels / M2O stable source                | [archive.org – stable-m-2-o-gunz](https://archive.org/details/stable-m-2-o-gunz) |
-| ImmortalGunZ (source)           | ImmortalGunZ custom source                   | [archive.org – z-aj-ugg](https://archive.org/details/z-aj-ugg)               |
-| Multi Language (source)         | Multi-language support source (Jorklenis2 + Maiet) | [archive.org – source-multi-lenguage](https://archive.org/details/source-multi-lenguage-by-jorklenis-2-and-maiet) |
-| VIP Shop Parts                  | VIP shop items / parts collection                    | [archive.org – vip-shop-parts.-7z](https://archive.org/details/vip-shop-parts.-7z)                          |
-| Gunbi (source)                  | Gunbi custom server/client source                    | [archive.org – gunbi-source](https://archive.org/details/gunbi-source)                                      |
-| GlobalGunZ (source)             | GlobalGunZ source code                               | [archive.org – globalgunz-source.-7z](https://archive.org/details/globalgunz-source.-7z)                    |
-| EvilGunZ (source)               | EvilGunZ source files                                | [archive.org – evilgunz-source](https://archive.org/details/evilgunz-source)                                |
-| ArticGunZ (source)              | ArticGunZ custom source                              | [archive.org – artic-source](https://archive.org/details/artic-source)                                      |
-| FreshGunZ (source)              | FreshGunZ source                                     | [archive.org – freshgunz-source](https://archive.org/details/freshgunz-source)                              |
-| PlayGunZ (source)               | PlayGunZ full source                                 | [archive.org – play-gun-z-todo](https://archive.org/details/play-gun-z-todo)                                |
-| UnderGunZ (source)              | UnderGunZ source code                                | [archive.org – source-under](https://archive.org/details/source-under)                                      |
-| TrinityGunZ (source)            | TrinityGunZ source archive                   | [archive.org – trinity-gunz-source.-7z](https://archive.org/details/trinity-gunz-source.-7z)               |
-| EvilGunZ (client/server/source) | Full EvilGunZ package (client + server + source) | [archive.org – server-client](https://archive.org/details/server-client)                             |
-| Jork Stuff                      | Various files / tools from Jorklenis         | [archive.org – jork_20201112_202011](https://archive.org/details/jork_20201112_202011)                    |
-| GunZ Resource Files r395        | Classic GunZ resource files (revision 395)   | [archive.org – gunz-resource-files-r-395](https://archive.org/details/gunz-resource-files-r-395)         |
-| UGG Fixed AJ 021017             | UniverseGamers fixed version (Feb 2017)      | [archive.org – ugg-fixed-aj-021017](https://archive.org/details/ugg-fixed-aj-021017)                      |
-| UGG Original Fixed              | Original fixed UniverseGamers build          | [archive.org – ugg-original-fixed](https://archive.org/details/ugg-original-fixed)                        |
-| UGG Source 2017 (Lucas folder)  | UGG 2017 source folder (Lucas version)       | [archive.org – ugg-source-2017-folder-lucas](https://archive.org/details/ugg-source-2017-folder-lucas)    |
-| IG / UGG Fixes                  | InternetGunZ & UniverseGamers fix collection | [archive.org – Fixes](https://archive.org/details/Fixes)                                                 |
-| UGG Source 2017 Fixes Main      | Main UGG 2017 source with fixes              | [archive.org – ugg-source-2017-fixes-main](https://archive.org/details/ugg-source-2017-fixes-main)        |
-| UGG Fixed Atlantis              | Atlantis-fixed UniverseGamers version        | [archive.org – ugg-fixed-atlantis](https://archive.org/details/ugg-fixed-atlantis)                        |
-| Jorklenis2 (source/client/server) | Jorklenis2 full repack (source + client + server) | [archive.org – Jorklenis2-Scammer-Edition-LOL](https://archive.org/details/Jorklenis2-Scammer-Edition-LOL) |
-| Jetman (1.5 source/client/server) | Full Jetman 1.5 package (source + client + server) | [archive.org – gunz-1.5-main](https://archive.org/details/gunz-1.5-main)                             |
-| GunzDuels (M2O) Source          | GunzDuels / M2O stable source                | [archive.org – stable-m-2-o-gunz](https://archive.org/details/stable-m-2-o-gunz)                          |
-| AbbyGunZ (source/client/server) | AbbyGunZ complete files (source + client + server) | [archive.org – new-gunz](https://archive.org/details/new-gunz)                                       |
-
 
 ### 1.5 Client Snippets
 
@@ -381,7 +336,7 @@ GunZ 2: The Second Duel files, engine parts, and private server attempts (mostly
 | Quest Late Join      | Allows players to join an ongoing quest mid-game: syncs quest state, NPC positions, player inventory, and rewards eligibility without breaking the scenario (server-side handling) | [quest late join](https://github.com/WhyWolfie/GunZ-The-Duel/tree/master/source/quest%20late%20join) |
 
 
-### Unpacked Clients
+### Unpacked Clients  [Archive](https://archive.org/details/gunz-clients-unpacked-collection)
 
 | #  | Name / Version                              | Link                                                                                             | Date / Version info       |
 |----|---------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------------|
