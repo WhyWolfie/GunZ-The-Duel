@@ -43,6 +43,9 @@
 | ChallengeQuest           | Challenge Quest gamemode source      | [WhyWolfie/ChallengeQuest](https://github.com/WhyWolfie/ChallengeQuest) |
 | NationalGunZ             | NationalGunZ source & repack         | [WhyWolfie/NationalGunZ](https://github.com/WhyWolfie/NationalGunZ)  |
 | Repack-Aren              | Aren repacked source                 | [WhyWolfie/Repack-Aren](https://github.com/WhyWolfie/Repack-Aren)    |
+| Prolib1.5(jetman)        | Jetman source                        | [Prolib1.5(Jetman)](https://github.com/maietent/prolib-1.5)    |
+| StasticGunZ              | StasticGunZ Source                   | [StasticGunZ](https://github.com/GjaGtaGva/STASTIC-Gunz-Client-Server)    |
+
 
 ## 🛠️ Tools & Utilities
 
